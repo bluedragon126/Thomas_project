@@ -1,0 +1,47 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # uncomment the following line, if you are having trouble
+  # getting no_script_name to work
+  #RewriteBase /
+
+  # we skip all files with .something
+  #RewriteCond %{REQUEST_URI} \..+$
+  #RewriteCond %{REQUEST_URI} !\.html$
+  #RewriteRule .* - [L]
+
+  # we check if the .html version is here (caching)
+  RewriteRule ^$ index.html [QSA]
+  RewriteRule ^([^.]+)$ $1.html [QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  # no, so we redirect to our front web controller
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive   On
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/x-js text/css application/x-javascript image/jpeg cssimage/jpeg
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  # IE5.x and IE6 get no gzip, but allow 7+
+  BrowserMatch \bMSIE\s7 !no-gzip
+  # IE 6.0 after SP2 has no gzip bugs!
+  BrowserMatch \bMSIE.*SV !no-gzip
+  # Sometimes Opera pretends to be IE with "Mozila/4.0"
+  BrowserMatch \bOpera !no-gzip
+</IfModule>
+
+#Disable short open tags
+#php_value short_open_tag 0

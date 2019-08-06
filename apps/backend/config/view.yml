@@ -1,0 +1,23 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html; charset=utf-8
+    Expires: -1
+    Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    Pragma: no-cache
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main.css, main_back.css, custom-theme/jquery-ui-1.8.2.custom.css, /sfFormExtraPlugin/css/jquery.autocompleter.css]
+
+  javascripts:    [jquery-1.4.2.min.js, common_back.js, newsletter.js, tinymce/js/tinymce/tinymce.min.js,  jquery.dimensions.js, jquery-ui-1.8.2.custom.min.js, /sfFormExtraPlugin/js/jquery.autocompleter.js,jquery.history.js]
+
+  has_layout:     true
+  layout:         layout

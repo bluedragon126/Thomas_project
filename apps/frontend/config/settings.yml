@@ -1,0 +1,45 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         true
+    logging_enabled:        true
+
+dev:
+  .settings:
+    error_reporting:        <?php echo (((E_ALL | E_STRICT) ^ E_NOTICE) ^ E_WARNING )."\n" ?>
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    # Form security secret (CSRF protection)
+    csrf_secret:            dc501d0976f1321eb6f17845e3ff8f2343c29a4f
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+
+    enabled_modules:        [default, isicsBreadcrumbs, sfThumbnailPlugin]
+    #login_module:           sfGuardAuth   # To be called when a non-authenticated user
+    #login_action:           signin        # Tries to access a secure page
+
+    charset:                utf-8
+    i18n:                   true
+    standard_helpers:       [Partial, Cache, I18N]
+
+    timeout:    43200

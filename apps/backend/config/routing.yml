@@ -1,0 +1,34 @@
+reminder_subscription:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReminderSubscription
+    module:               ReminderSubscription
+    prefix_path:          /ReminderSubscription
+    column:               id
+    with_wildcard_routes: true
+
+contact_us_contactus:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ContactUs
+    module:               contactus
+    prefix_path:          /contactus
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: borst, action: borstHome }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,1 @@
+<font color="#014c8f">Your request has been sent to Admin.</font>

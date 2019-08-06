@@ -1,0 +1,8214 @@
+@charset "UTF-8";
+/*
+    Document   : style
+    Created on : Jan 20, 2016, 1:15:56 PM
+    Author     : siddhatech
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+    font-family: "Georgia";
+    src: url("../fonts/Georgia.eot") format('embedded-opentype');
+    src: url("../fonts/Georgia.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+    src: url("../fonts/Georgia.woff") format('woff');
+}
+@font-face {
+    font-family: "FF_Dingbats";
+    src: url("../fonts/FFDingbats-Number.otf") format('embedded-opentype');
+    src: url("../fonts/CircledNumbers_Normal.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "FranklinGothicCondensed";
+    src: url("../fonts/FranklinGothicEF-ExtraCondens.ttf") format('truetype');
+    src: url("../fonts/FranklinGothicEF-ExtraCondens.otf") format('otf');
+}
+@font-face {
+    font-family: "Franklin_Gothic_Demi_Condensed";
+    src: url("../fonts/ITCFranklinGothicStd-DmCd.eot") format('embedded-opentype');
+    src: url("../fonts/ITCFranklinGothicStd-DmCd.ttf") format('truetype');
+    src: url("../fonts/ITCFranklinGothicStd-DmCd.woff") format('webb-open-font-format');
+    src: url("../fonts/ITCFranklinGothicStd-DmCd.svg") format('svg');
+}
+@font-face {
+    font-family: "Franklin_Gothic_Bold";
+    src: url("../fonts/ITCFranklinGothicStd-Demi.otf") format('opentype');
+    src: url("../fonts/FranklinGothicDemi.ttf") format('truetype');
+    src: url("../fonts/FranklinGothicDemi.woff") format('woff');
+}
+@font-face {
+    font-family: "CheltenhamITCW01-Bold";
+    src: url("../fonts/CheltenhamITCW01-Bold.ttf") format('truetype');
+    src: url("../fonts/CheltenhamITCW01-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: "FranklinGothic-Light";
+    src: url("../fonts/FranklinGothic-Light.ttf") format('truetype');
+    src: url("../fonts/FranklinGothic-Light.woff") format('woff');
+	src: url("../fonts/FranklinGothic-Light.eot") format('eot')
+}
+@font-face {
+    font-family: "Franklin Gothic Book Regular";
+    src: url("../fonts/FranklinGothic-Book.eot") format('embedded-opentype');
+    src: url("../fonts/FranklinGothic-Book.ttf") format('truetype');
+    src: url("../fonts/FranklinGothic-Book.woff") format('woff');
+}
+@font-face {
+    font-family: "Franklin Gothic Book Italic";
+    src: url("../fonts/FranklinGothic-BookItalic.eot") format('embedded-opentype');
+    src: url("../fonts/FranklinGothic-BookItalic.ttf") format('truetype');
+    src: url("../fonts/FranklinGothic-BookItalic.woff") format('woff');
+}
+@font-face {
+    font-family: "Franklin Gothic Medium";
+    src: url("../fonts/FranklinGothic-Medium.ttf") format('truetype');
+    src: url("../fonts/FranklinGothic-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: "Arial Narrow Bold";
+    src: url("../fonts/Arial-Narrow-Bold.eot") format('embedded-opentype');
+    src: url("../fonts/Arial-Narrow-Bold.ttf") format('truetype');
+    src: url("../fonts/ArialNarrow-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: "Franklin Gothic Heavy";
+    src: url("../fonts/franklin-gothic-heavy.ttf") format('truetype');
+    src: url("../fonts/FranklinGothic-Heavy.woff") format('woff');
+}
+@font-face {
+    font-family: "ITC Cheltenham Book";
+    src: url("../fonts/CheltenhamBook.ttf") format('truetype');
+    src: url("../fonts/CheltenhamBook.woff") format('woff');
+}
+@font-face {
+    font-family: "ITC Cheltenham Italic";
+    src: url("../fonts/cheltenham-italic.ttf") format('truetype');
+    src: url("../fonts/CheltenhamItalic.woff") format('woff');
+}
+@font-face {
+    font-family: "Georgia Italic";
+    src: url("../fonts/georgia_italic.ttf") format('truetype');
+    src: url("../fonts/georgia_italic.woff") format('woff');
+}
+@font-face {
+    font-family: "Georgia Bold";
+    src: url("../fonts/Georgia-Bold.ttf") format('truetype');
+    src: url("../fonts/Georgia-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: "Georgia Bold Italic";
+    src: url("../fonts/Georgia-BoldItalic.ttf") format('truetype');
+    src: url("../fonts/Georgia-BoldItalic.woff") format('woff');
+}
+@font-face {
+    font-family: "Franklin Gothic Condensed";
+    src: url("../fonts/Franklin-Gothic-Std-Condensed.ttf") format('truetype');
+    src: url("../fonts/FranklinGothicStd-Condensed.woff") format('woff');
+}
+
+/*.body{
+    font-family: "Georgia";
+}*/
+root {
+    display: block;
+}
+.img_100{
+    width: 100%;
+}
+.wrapper_main{
+    margin: 0 auto;
+    width: 1010px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+.wrapper{
+    margin: 0px auto;
+    width: 970px;
+}
+
+.sty_float_left{
+    float: left;
+}
+.sty_float_right{
+    float: right;
+}
+
+/* login bar css start here */
+.loginBar{
+    margin: 0px 0px 0px auto;
+    width: 970px;
+    height: 29px;
+    background: #ebebec;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+}
+.loginDiv{
+    margin-left: 8px;
+    /*margin-right: 5px;*/
+    /*margin-top: 4px;*/
+    float: left;
+    width: 100%;
+}
+.user_login_main{
+    float: left;
+    margin-top: 6px;
+}
+.loginBtn{
+    background: url('../images/new_home/login.png') no-repeat;
+    width: 59px;
+    height: 19px;
+    border: none;
+    color: #fff;
+    font-family: 'Franklin Gothic Book Regular';
+    /*margin-top: 1px;*/
+    background-size: 59px 19px;
+    margin-right: 4px;
+}
+.loginDiv a{
+    color: #232222;
+}
+.freeAccount{
+    background: url('../images/new_home/free_account.png') no-repeat;
+    width: 85px;
+    height: 19px;
+    border: none;
+    /* border-radius: 3px;*/
+    background-size: 80px 19px;
+    margin: 0px 4px 0px 12px;
+}
+.glass{
+    background: url('../images/new_home/glass.png') no-repeat;
+    width: 21px;
+    height: 19px;
+    margin-right: 3px;
+    border: none;
+    background-size: 20px 18px;
+}
+.seek{
+    background: url('../images/new_home/seek.png') no-repeat;
+    width: 33px;
+    height: 18px;
+    border: none;
+}
+.floatLeft{
+    float: left;
+    margin: 0 1px;
+}
+.floatLeft label{
+    float: left;
+    /*margin-top: 2px;*/
+}
+.loginDiv button{
+    /*margin-top: 1px;*/
+}
+/* login bar css end here */
+.adMainDiv{
+    width: 970px;
+    height: 90px;
+    /*margin-top: 20px;*/
+    margin-top: 9px;
+}
+.mandag{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.86em;
+    color: #232222;
+    margin-top: 3px;
+    margin-bottom: -4px;
+}
+.bt_head_date{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.86em;
+	letter-spacing: -0.01em;
+    color: #232222;
+    margin: -2px 0px 0px 1px;
+	width: 100%;
+}
+.headerDiv{
+    width: 970px;
+    height: 104px;
+    margin-bottom: 10px;
+}
+.btHeadSensexUp{
+    margin-left: 11px;
+}
+.bt_head_time{
+    font-family: "Arial Narrow";
+    font-size: 1em;
+    line-height: 0.74em;
+    color: #a7a9ac;
+    margin-top: 7px;
+}
+.bt_head_percent{
+    font-family: "arial black";
+    font-size: 1em;
+    line-height: 1em;
+    color: #a6cc39;
+}
+.bt_head_market{
+    font-family: "arial black";
+    font-size: 1em;
+    line-height: 12px;
+    color: #15a22;
+}
+.bt_head_quote{
+    font-family: "arial narrow";
+    font-size: 1em;
+    line-height: 1.07em;
+    color: #232222;
+}
+.btHeadSensexDown{
+    margin-left: 14px;
+}
+.bt_head_percent_down{
+    font-family: "arial black";
+    font-size: 1em;
+    line-height: 1em;
+    /*color: #f15822;*/
+}
+.btHeadAsk{
+	margin: 42.5px 0 0 130px;
+}
+/*.chart_buttons a span{
+    margin-right: 5px;
+}*/
+.bt_head_askbt{
+	color:#0bb342;
+	text-transform:uppercase; 
+	font-size:0.93em;
+	text-align: center; 
+	line-height:1.1em;
+	letter-spacing: 0.01em;
+}
+.bt_head_askbt_logo{
+	width: 140px;
+	margin: -40px 1px 5px 32px;
+}
+.bt_head-divide{
+    width: 75%;
+    float: left;
+}
+.bt_head-plate-divide{
+    width: 46%;
+    float: left;
+}
+.bt_home_plate{
+    background-color: #f7941d;
+    float: left;
+    margin-top: 2px;
+    padding: 2px 0 4px 4px;
+    width: 92%;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.9em;
+	letter-spacing: 0.01em;
+    color: #ffffff;
+}
+.bt_home_plate a{
+    color: #ffffff;
+    cursor: pointer;
+}
+.bt_home_plate_head{
+    width: 37%;
+    float: left;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    padding-top: 0px;
+}
+.bt_home_plate_img{
+    width: 102%;
+    float: left;
+    margin-bottom: 6px;
+    margin-right: 6px;
+}
+.twitter_top_home{
+    margin-left: 3px;
+}
+.ad_1_img{
+    margin-left: 9px;
+    float: left;
+}
+.ad_2_img{
+    float: left;
+    margin-left: 4px;
+}
+.navBar{
+    float: left;
+    margin-top: 20px;
+}
+.navBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #637281;
+}
+.navBar li{
+    float: left;
+    border-right:1px solid #bbb;
+}
+.navBar li:last-child{
+    border-right: none;
+}
+.navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 13.4px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Franklin Gothic Medium";
+}
+.navBar li a:hover:not(.active){
+    background-color: #19569e;
+}
+.navBar .active{
+    background-color: #19569e;
+}
+.bt_nav_1{
+
+}
+
+.navBar_second{
+    float: left;
+    border-bottom: 1px solid #19569e;
+    width: 100%;
+}
+.navBar_second ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navBar_second li{
+    float: left;
+}
+.navBar_second li:last-child{
+    border-right: none;
+}
+.navBar_second li a{
+    display: block;
+    color: #005baa;
+    text-align: center;
+    padding: 7px 11px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: "Franklin Gothic Medium";
+}
+.navBar_second li a:hover:not(.active){
+    background-color: #cfd5ea;
+}
+.navBar_second .active{
+    background-color: #cfd5ea;
+}
+
+.navBar_third{
+    border-bottom: 2px solid #29282a;
+    width: 100%;
+    float:left;
+    clear: both;
+    margin-bottom: 10px;
+}
+.navBar_third ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 32px;
+}
+.navBar_third li{
+    float: left;
+}
+.navBar_third li:last-child{
+    border-right: none;
+}
+.navBar_third li a{
+    display: block;
+    color: #232222;
+    text-align: center;
+    padding: 7.5px 11px 3px 10px;
+    text-decoration: none;
+    font-size: 0.93em;
+    font-family: "Franklin Gothic Book Regular";
+}
+.navBar_third li a:hover{
+    color: #232222;
+}
+.bt_nav_3{
+
+}
+.bt_head_login{
+    font-size: 0.93em;
+    color: #232222;
+}
+
+/* content area css start here */
+.content_main_div{
+    clear: both;
+    /*float: left;*/
+    margin-top: 14px;
+    width: 100%;
+}
+.content_main_div_left{
+    float: left;
+    /*width: 49%;*/
+    width: 475px;
+    /*margin-top: 20px;*/
+}
+.home_heading_l{
+    float: left;
+    margin-right: 10px;
+}
+.home_heading_l_txt{
+    float: left;
+    margin-top: 0px;
+}
+.home_heading_l_2_main_div{
+    float: left;
+    /*width: 100%;*/
+    width: 465px;
+}
+.home_heading_l_3_head_div{
+    float: left;
+    /*width: 100%;*/
+    width: 465px;
+}
+.home_heading_l_3_main_div{
+    float: left;
+    /*width: 48%;*/
+    width: 223px;
+    /*margin-right: 2%;*/
+    margin-right:19px;
+}
+.home_heading_l_bigimg_main{
+    float: left;
+    margin-top: 6px;
+}
+.home_heading_l_bigimg_txt_big{
+    /*color: #232222;*/
+    font-size: 1em;
+    font-family: 'FranklinGothicCondensed';
+    line-height: 1em;
+}
+.home_heading_l_small_txt{
+    float: left;
+    margin-top: 4px;
+}
+.home_heading_l_2_txt_1{
+    color: #28272a;
+    /*margin-right: 3px;*/
+    font-family: 'Franklin Gothic Book Regular';
+}
+.home_square {
+	width:8px;
+	margin: 0px 1px 0.6px 1px;
+}
+.home_date{
+    font-family: 'Franklin_Gothic_Bold';
+    color: #232222;
+    font-size: 0.7em;
+    float: none;
+    padding-right: 1px;
+}
+.home_type{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #ff561c;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    float: none;
+    letter-spacing: 0.12em;
+	padding: 0px 1px;
+}
+.home_cat{
+    font-family: 'Franklin_Gothic_Bold';
+    color: #232222;
+    font-size: 0.7em;
+	/*text-transform: uppercase;*/
+    float: none;
+    padding: 0px;
+	padding-right: 5px;
+}
+.home_heading_l_2_txt_2{
+    color: #525f70;
+    /*margin-right: 3px;*/
+    font-family: 'Franklin Gothic Book Regular';
+}
+.home_heading_l_2_txt_3{
+    color: #8490a1;
+    /*margin-right: 3px;*/
+    font-family: 'Franklin Gothic Book Regular';
+}
+.home_heading_l_c_txt_main{
+    float: left;
+    margin-top: 3px;
+    width: 100%;
+    word-wrap: break-word;
+}
+.home_heading_l_c_txt_big{
+    color: #232222;
+    font-size: 1.86em;
+    font-family: 'FranklinGothicCondensed';
+    line-height: 1.2em;
+}
+.home_body_l_1{
+   font-family: "Georgia";
+	color: #232222;
+    font-size: 1.2em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.home_body_l_1x{
+   	font-family: "Georgia";
+	color: #232222;
+    font-size: 1.2em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.home_body_l_2{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1.2em;
+	line-height: 1.4em;
+    word-wrap: break-word;	
+}
+.home_body_l_2x{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1.2em;
+	line-height: 1.4em;
+    word-wrap: break-word;	
+}
+.home_body_l_1_red a{
+    color: #f15822;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+    line-height: 1.29em;
+}
+.home_body_l_1_blue a{
+    color: #0f86c3;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+    line-height: 1.29em;
+}
+.home_artline_leftdiv{
+    background: url('../images/new_home/art_line.png') repeat-x;
+    /*width: 98%;*/
+    width: 465px;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    float: left;
+}
+.home_artline_centerdiv{
+    background: url('../images/new_home/art_line.png') repeat-x;
+    width: 96%;
+    height: 1px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 3px;
+    margin-bottom: -1px;
+}
+.home_heading_l_2_img_div{
+    float: left;
+    /*width: 45%;*/
+    width: 200px;
+    margin-right: 15px;
+}
+.home_heading_l_3_img_div{
+    float: left;
+    /*width: 100%;*/
+    /*width:250px;*/
+    width: 223px;
+}
+.home_heading_l_2_txt_div{
+    float: left;
+    width: 53%;
+}
+.home_heading_l_3_txt_div{
+    float: left;
+    /*width: 48%;
+    margin-right: 2%;*/
+    width: 223px;
+    margin-right: 19px;
+}
+.content_main_div_center{
+    float: left;
+    /*width: 19%;*/
+    width: 182px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    /*margin-top: 20px;*/
+}
+home_heading_c{
+    float: left;
+    margin-right: 10px;
+}
+
+
+.content_main_div_right{
+    float: left;
+    width: 30%;
+    margin-left: 10px;
+}
+.home_heading_r{
+    float: left;
+	margin-top: -4px;
+    /*margin-left: 10px;*/
+}
+.home_heading_r_img{
+    float: left;
+    /*margin-bottom: 11px;*/
+    width: 100%;
+}
+.red_border_img{
+    background: url('../images/new_home/red_border.png') repeat-x;
+    width: 100%;
+    height: 4px;
+    float: left;
+}
+.home_body_c_1_blue{
+    color: #0185bb;
+    font-family: 'georgia regular';
+    font-size: 1em;
+}
+.home_headtwtr_m{
+    background-color: #0f86c3;
+    color: #ffffff;
+    float: left;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1.05em;
+    letter-spacing:0.2px;
+    /*margin-left: 2%;*/
+    margin: 14px 0px 0px 0px;
+    padding: 4px 4px 4px 7px;
+    /*width: 95%;*/
+    width:154px;
+}
+.home_head9_m{
+    background-color: #0f86c3;
+    color: #ffffff;
+    float: left;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1.05em;
+    letter-spacing:0.2px;
+    /*margin-left: 2%;*/
+    margin: 4px -2.5px -3px 0px;
+    padding: 4px 4px 4px 8px;
+    /*width: 95%;*/
+    width:153px;
+}
+.twtr_wid_img{
+    height:18px;
+    vertical-align:text-top;
+    margin-left: 2px;
+}
+.home_topart{
+    float: left;
+    text-align: center;
+    width: 92%;
+    margin-left: 3%;
+}
+.home_topart a{
+    color: #232222
+}
+.blue_border_img{
+    background: url('../images/new_home/blue_divider.png') repeat-x;
+    width: 165px;
+    height: 3px;
+    float: left;
+    /* margin-left: ;*/
+    margin: 14px 0px 4px 0px;
+}
+.home_heading_l_3{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 2em;
+    color: #7d8798;
+    line-height: 1em;
+    /*margin-top: 11px;*/
+    float: left;
+    hyphens: none;
+}
+.home_heading_l_2{
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.86em;
+    color: #232222;
+    /*margin-top: 11px;*
+    line-height: 1em;
+    /*margin-top: 11px;*/
+    float: left;
+    hyphens: none;
+}
+.home_ad_m{
+    font-family: "FranklinGothicCondensed";
+    font-size: 0.8em;
+    color: #232222;
+    margin-left: 2px;
+    margin: 2px 0px -2px 0px;
+    letter-spacing: 0.03em;	
+}
+.home_twtr_main{
+    float: left;
+    width: 100%;
+    margin-top: 14px;
+}
+.home_twtr_1{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.93em;
+    color: #232222;
+}
+.home_twtr_2{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #f15822;
+}
+.home_twtr_3{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a9ac;
+}
+.float_l_width_100{
+    float: left;
+    width: 100%;
+}
+.float_l_width_42{
+    float: left;
+    width: 42%;
+}
+.float_l_width_92{
+    float: left;
+    width: 92%;
+}
+.home_twtr_img{
+    float: left;
+    width: 30%;
+}
+.home_twtr_txt{
+    float: left;
+    width: 60%;
+    margin-left: 10px;
+}
+.home_twtr_desc{
+    float: left;
+    width: 100%;
+    margin-top: 4px;
+    font-family: 'Franklin Gothic Book Regular';
+}
+.like_bar_div{
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    /*margin-bottom: 10px;*/
+    text-align: center;
+}
+.home_heading_m_2{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 1.28em;
+    color: #232222;
+    hyphens: none;
+}
+.home_heading_r_1{
+   	font-family: "ITC Cheltenham Book";
+   	font-size: 3.1em;
+	letter-spacing: -0.04em;
+	word-spacing: -0.04em;
+	color: #232222;
+    line-height: 1.05em;
+    margin: 3px 0px 3px 0px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_heading_r_2{
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.5em;
+	letter-spacing: 0.01em;
+    word-spacing: -0.08em;
+    color: #232222;
+    line-height: 1em;/*2.5em;*/
+    margin: 4px 0px 6px 0px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_heading_r_3{
+	font-family: "CheltenhamITCW01-Bold";
+    font-size: 3.1em;
+    letter-spacing: -0.03em;
+    color: #232222;
+    line-height: 1em;
+    margin: 2px 0px 6px 0px;
+    word-wrap: break-word;
+    font-kerning: none;
+    word-spacing: -0.02em;
+    hyphens: none;    
+}
+.home_heading_r_4{
+	font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    letter-spacing: -0.02em;
+    word-spacing: -0.06em;
+    color: #232222;
+    line-height: 1em;
+    margin: 3px 0px 6px 0px;
+    word-wrap: break-word;
+    hyphens: none;   
+}
+.home_body_r_1{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.home_body_r_2{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.home_body_r_3{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.home_body_r_4{
+    font-family: "Georgia";
+	color: #232222;
+    font-size: 1em;
+	line-height: 1.3em;
+    word-wrap: break-word;
+}
+.footer{
+    width: 100%;
+    margin-top: 10px;
+}
+.color_plate_first{
+    float: left;
+    width: 102px;
+    /*background-color: #dfe6ec;*/
+    /*height: 224px;*/
+    margin-right: 12px;
+}
+.color_plate{
+    float: left;
+    width: 102px;
+    /*background-color: #dfe6ec;*/
+    /*height: 224px;*/
+    margin-right: 5px;
+}
+.bt_shop_txt{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: #677080
+}
+.color_plate_img_first{
+	margin-left: -7px;
+	cursor: pointer;
+}
+.color_plate_img{
+}
+.color_plate_img_radius{
+    border-radius: 50px;
+}
+.bottom_shop_txt_main{
+    float: left;
+    line-height: 1em;
+    margin-left: 7px;
+    margin-top: 10px;
+    width: 95px;
+    text-align: center;
+
+}
+.bottom_shop_item{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #f15822;
+}
+.bottom_shop_text{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #232222;
+}
+.bottom_shop_readmore{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #f15822;
+}
+.footer_divider_div{
+    /*background: url('../images/new_home/footer_divider.png') repeat-x;
+    margin-top: 17px;*/
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+.footer_divider_links_main{
+
+}
+.bottom_color_plate{
+    background: #f15822;
+    height: 29px;
+}
+.bottom_link_heading_bg{
+    background-color: #FF561C;
+    height: 30px;
+    width: 100%;
+    float: left;
+	margin-top: 14px;
+}
+.bottom_link_heading{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.4em;
+	letter-spacing: -0.02em;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-top: 5px;
+    float: left;
+}
+.bottom_link_wrap{
+    border: 0 solid red;
+    padding: 0 0 15px;
+    position: relative;
+    width: 295px;
+}
+.bottom_link{
+    border: 0 solid red;
+    float: left;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    margin: 0;
+    padding: 10px 0 0;
+    position: relative;
+    width: 320px;
+}
+.bottom_link li{
+    background-image: url("../images/bullete.png");
+    background-position: left 5px;
+    background-repeat: no-repeat;
+    color: #8898ad;
+    display: block;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 94%;
+}
+.bottom_link li a{
+    color: #8898ad;
+    float: left;
+    line-height: 20px;
+    position: relative;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.bottom_link_divider{
+    float: left;
+    width: 100%;
+    height: 20px;
+}
+.bottom_footer_divider{
+    float: left;
+    width: 100%;
+    height: 103px;
+}
+.copyright_div{
+    background: url('../images/new_home/footerbg.png') /*repeat-x*/;
+    float: left;
+    width: 100%;
+}
+.bottom_copyright{
+    font-family: "Georgia";
+    font-size: 0.86em;
+    color: #232222;
+    padding-left: 5px;
+    padding-top:11px;
+    word-spacing: 0.1em;
+}
+.up_div{
+    margin-bottom: 9px;
+    clear: both;
+    margin-left: 15px;
+}
+.up_sub_div{
+    float: right;
+    /*margin-bottom: 8px;*/
+    margin-top: -8px;
+}
+.floatRight{
+    float: right !important;
+}
+/*.home_heading_r_1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 2em;
+    color: #232222;
+    float: left;
+    margin-top: 11px;
+    line-height: 1em;
+}*/
+/*.home_heading_r_2{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 2.5em;
+    color: #3383a5;
+    float: left;
+    margin-top: 11px;
+}*/
+.width_per_59{
+    width: 58.3%;
+}
+.width_per_40{
+    width: 41%;
+}
+.width_49{
+    width: 49%;
+    float: left;
+}
+.width_51{
+    width: 51%;
+    float: left;
+}
+.margin_lft_9{
+    margin-left: 9px;
+}
+.margin_lft_10{
+    margin-left: 10px;
+}
+.height_16{
+    height: 16px;
+}
+.margin_rgt_4{
+    width: 34px; margin-right: 4px !important;
+}
+.margin_rgt_2{
+    margin-right: 2px;
+}
+.margin_top_11{
+    margin-top: 11px;
+}
+.home_heading_l_btmtxtmain{
+    float: left;
+    margin-bottom: 4px;
+    margin-top: 1px;
+}
+.margin_top_14{
+    margin-top: 14px;
+}
+.content_sub_div_center{
+    float: left;
+    margin-right: 9px;
+    margin-left: 9px;
+    /*width: 89.5%;*/
+    width: 165px;
+}
+.width_50{
+    float: left;
+    width: 50%;
+}
+/* content area css end here */
+.inner-page-contetn-left{
+    float: left;
+    width: 67.5%;
+    border-right: 1px solid #d3d3d3;
+    padding-right: 5px;
+    margin-bottom: -10px;
+}
+#borst_rec_row td{
+    border-bottom: 1px dotted #a7a6b7;
+}
+.list_lista{
+   font-family: "CheltenhamITCW01-Bold";
+	float: left;
+	margin-bottom: 24px;
+	margin-top: 30px;
+	font-size: 2.2em;
+	width: 100%;
+}
+.breadcrumb{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #c7c8c8;/*#232222;*/
+    font-size: 0.7em;
+    padding-top: 1px;
+	text-transform:uppercase;
+}
+.list_heading{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+    color: #232222;
+}
+.list_heading_kategori{
+    color: #232222;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+}
+.list_heading_typ{
+    color: #232222;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+}
+.list_heading_objekt{
+    color: #232222;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.93em;
+}
+.list_date{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #232222;
+    padding-top: 4px;
+}
+.list_topic{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #232222;
+}
+.article_list_kategori{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #a6cc39;
+}
+.article_list_typ{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #1c92af;
+	font-weight: normal;
+}
+.article_list_objekt{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #f7941d;
+	font-weight: normal;
+}
+.list_pagination{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.79em;
+    color: #1c92af;
+}
+#borst_rec_row td{
+    vertical-align: top;
+}
+.list_topic_2{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #8991c8;
+}
+.list_preamble{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #8991c8;
+}
+#borst_rec_row .pright_10{
+    padding-bottom: 31px;
+}
+.whp_title{
+    font-family: "CheltenhamITCW01-Bold";
+    float: left;
+    margin-bottom: 20px;/*30*/
+    margin-top: 12px;
+    font-size: 2.2em;
+	color: #413e3d;
+	line-height: 1.25em;
+	word-spacing: -0.06em;
+    width: 100%;	
+}
+.whp_preamble{
+    font-family: 'Franklin Gothic Book Regular';
+    float: left;
+    font-size: 1.3em;
+    color: #232222;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+	letter-spacing: -0.01em;
+}
+.whp_heading{
+    color: #f15822;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 50px 0px 10px;
+    width: 100%;
+	letter-spacing: -0.01em;
+}
+.whp_heading_2{
+    color: #f15822;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 22px 0px 5px;
+    letter-spacing: -0.02em;
+    width: 100%;
+}
+.whp_heading_chron{
+    color: #f15822;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1em;
+	margin-top: 46px;
+    letter-spacing: -0.02em;
+    width: 100%;
+}
+.whp_heading_mt_0{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 0px 0px 5px;
+    letter-spacing: -0.02em;
+    width: 100%;
+}
+.whp_heading2{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin: 20px 0px 18px;
+    width: 100%;
+}
+.whp_subheading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.15em;
+	color: #f15822;
+    margin: 15px 0px 5px;
+}
+.whp_subheading_chron{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.15em;
+	letter-spacing: 0.02em;
+	color: #232222;
+    margin: 12px 0px 5px;
+}
+.whp_subheading_au{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.25em;
+    letter-spacing: 0.01em;
+    margin: 10px 0px 10px;
+}
+.whp_border{
+	float:left;
+	position:relative; 
+	width:100%; 
+	border-bottom:2px solid #f15822; 
+	padding:0px 0 0 0; 
+	margin:54px 0 34px 0px; 
+	line-height:1px;	
+}
+.borst_subtitle_4{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    letter-spacing: -0.01em;		
+}
+.inner_page_divider{
+    float: left;
+    width: 100%;
+    height: 45px;/*40*/
+}
+.inner_page_content_main{
+    float: left;
+    width: 500px;
+    /*margin-left: 15%;*/
+}
+.inner_page_divider_2{
+    height: 82px;
+    float: left;
+    width: 100%;
+}
+.inner_page_arrow{
+    float: left;
+    margin-left: 15%;
+}
+.inner_page_divider_3{
+    height: 133px;
+    float: left;
+    width: 100%;
+}
+.inner_page_divider_lista{
+    height: 60px;
+    float: left;
+    width: 100%;
+}
+.form_lable{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #232222;
+    float: left;
+    width: 97px;
+}
+input.size{
+    width: 218px;
+}
+input.rounded {
+    border: 1px solid #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 8px;
+    -moz-box-shadow: 2px 2px 3px #8d8d8d;
+    -webkit-box-shadow: 2px 2px 3px #8d8d8d;
+    /*box-shadow: 2px 2px 3px #666;*/
+    /*font-size: 20px;*/
+    /*padding: 4px 7px;*/
+    outline: 0;
+    -webkit-appearance: none;
+    width: 218px;
+}
+.mrg_top_1{
+    margin-top: 1px;
+}
+.mrg_top_2{
+    margin-top: 2px !important;
+}
+.mrg_top_30{
+    margin-top: 30px;
+}
+.mrg_top_32{
+    margin-top: 32px;
+}
+.mrg_top_34{
+    margin-top: 34px;
+}
+.mrg_lft_5{
+    margin-left: 5px;
+}
+.mrg_lft_7{
+    margin-left: 7px;
+}
+.mrg_lft_8{
+    margin-left: 8px;
+}
+.mrg_btm_6{
+    margin-bottom: 6px;
+}
+.mrg_btm_15{
+    margin-bottom: 15px;
+}
+.mrg_lft_10{
+    margin-left: 10px;
+}
+.mrg_top_8{
+    margin-top: 8px;
+}
+.mrg_top_10{
+    margin-top: 10px;
+}
+.mrg_top_25{
+    margin-top: 25px;
+}
+.mrg_top_16{
+    margin-top: 16px;
+}
+.mrg_top_27{
+    margin-top: 27px;
+}
+.mrg_top_21{
+    margin-top: 21px;
+}
+.mrg_top_19{
+    margin-top: 19px;
+}
+.margin_btm_20{
+    margin-bottom: 20px;
+}
+.mrg_top_20{
+    margin-top: 20px;
+}
+.mrg_top_22{
+    margin-top: 22px;
+}
+.mrg_top_26{
+    margin-top: 26px;
+}
+.mrg_rgt_16{
+    margin-right: 16px;
+}
+.mrg_rgt_7{
+    margin-right: 7px;
+}
+.margin_btm_8{
+    margin-bottom: 8px;
+}
+.margin_top_8{
+    margin-top: 8px;
+}
+.mrg_top_15{
+    margin-top: 15px;
+}
+.mrg_top_5{
+    margin-top: 5px;
+}
+.pad_top_2{
+    padding-top: 2px;
+}
+.pad_lft_2{
+    padding-left: 2px;
+}
+.pad_rgt_5{
+    padding-right: 5px;
+}
+.pad_lft_5{
+    padding-left: 5px !important;
+}
+.pad_btm_5{
+    padding-bottom: 5px;
+}
+.pad_btm_10{
+    padding-bottom: 10px;
+}
+.pad_btm_14{
+    padding-bottom: 14px;
+}
+.pad_lft_10{
+    padding-left: 10px !important;
+}
+.pad_lft_6{
+    padding-left: 6px;
+}
+.pad_lft_20{
+    padding-left: 20px;
+}
+.pad_top_20{
+    padding-top: 20px;
+}
+.pad_top_5{
+    padding-top: 5px;
+}
+.pad_top_7{
+    padding-top: 7px;
+}
+.pad_top_8{
+    padding-top: 8px;
+}
+.mrg_toop_3{
+    margin-top: 3px;
+}
+.mrg_lft_60{
+    margin-left: 60px;
+}
+.mrg_top_70{
+    margin-top: 70px;
+}
+.mrg_top_1{
+    margin-top: 1px;
+}
+.mrg_top_6{
+    margin-top: 6px;
+}
+.mrg_top_7{
+    margin-top: 7px;
+}
+.mrg_top_9{
+    margin-top: 9px;
+}
+.mrg_lft_10{
+    margin-left: 10px;
+}
+.mrg_top_30{
+    margin-top: 30px;
+}
+.mrg_btm_10{
+    margin-bottom: 10px;
+}
+.mrg_btm_7{
+    margin-bottom: 7px;
+}
+.mrg_btm_30{
+    margin-bottom: 30px;
+}
+.mrg_btm_18{
+    margin-bottom: 18px;
+}
+.mrg_top_45{
+    margin-top: 45px;
+}
+.whp_title_sub{
+    font-family: 'Franklin Gothic Book Regular';
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 28px;
+    font-size: 1.57em;
+    width: 100%;
+    color: #232222;
+    line-height: 1.57em;
+}
+.inner_page_artline{
+    background: url('../images/new_home/art_line.png') repeat-x;
+    width: 100%;
+    height: 1px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    float: left;
+}
+.form_lable_register{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #232222;
+    float: left;
+    width: 110px;
+}
+.register_sub_heading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    color: #005baa;
+}
+.form_lable_advsearch{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #232222;
+    float: right;
+    width: 200px;
+}
+.normal_search_width{
+    width: 166px;
+    padding-left: 5px;
+}
+.art_title {
+    color: #413e3d;
+    float: left;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    letter-spacing: 0.01em;
+    line-height: 1.25em;
+    margin-bottom: 18px;
+    margin-top: 38px;
+    width: 100%;
+    word-spacing: -0.06em;
+}
+.art_title2 {
+    color: #232222;
+    float: left;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    letter-spacing: -0.01em;
+    line-height: 1.25em;
+    margin-bottom: 38px;
+    margin-top: 54px;
+    width: 100%;
+    word-spacing: -0.06em;
+}
+.art_ABC_words{
+    font-family: 'ITC Cheltenham Book';
+    float: left;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-size: 3em;
+	letter-spacing: -0.04em;
+	word-spacing: -0.01em;
+    color: #554338;
+    line-height: 1.5em;
+	width: 100%;
+}
+.art_detail_date{
+    float: left;
+    width: 11%;
+    line-height: 22px;
+	margin-top: -2px;
+}
+.art_detail_fav{
+    float: left;
+    width: 11.2%;
+    margin-right: 10px;
+}
+.art_detail_print{
+    float: left;
+    width: 1%;
+}
+.art_detail_print span{
+    float: right;
+    margin-top: 5px;
+}
+.art_subheading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.2em;
+	line-height: 1em;
+	letter-spacing: -0.01em;
+    color: #f15822;
+    margin-left: 23.5px;
+}
+.art_subheading2{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 32px 0px 10px;
+    letter-spacing: -0.02em;
+	 width: 100%
+}
+.art_subheading2b{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 6px 0px 10px;
+    letter-spacing: -0.02em;
+	 width: 100%
+}
+.art_subheading3{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin: 22px 0px 10px;
+    letter-spacing: -0.02em;
+	 width: 100%
+}
+.art_subheading2_link{
+    color: #f15822;
+    float: left;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.3em;
+    line-height: 1.25em;
+    margin: 26px 0px 5px;
+    letter-spacing: -0.02em;
+	width: 100%
+}
+.art_topic{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.8em;
+	line-height:2.2em;
+	letter-spacing: 0.01em;
+    color: #8991c8;
+	overflow-wrap: normal;
+}
+.art_topic a{
+    /*padding-left: 10px;*/
+    float: left;
+    padding-left: 16px;
+	color:#000 !important;
+}
+.art_welcome {
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    line-height: 2.4em;
+    margin-top: 24px;
+	word-spacing: -0.06em;
+}
+.bt_contact{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    letter-spacing: -0.02em;
+    float: left;
+    margin-top: 32px;
+    width: 100%;
+}
+.bt_contact a{
+    cursor: pointer;
+    color: #232222;
+    width: 20%;
+}	
+.bt_contact_askBT {
+    float: right;
+    margin-top: -93px;
+	margin-right: 89px;
+    width: 290px;
+}
+/*Bt shop page css start here*/
+.shop_home_heading{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 2.2em;
+    float: left;
+    margin: 60px 0px 20px 4px;
+    color: #413e3d;
+    width: 100%;
+    word-spacing: -0.06em;
+}
+.shop_home_cat_bg{
+    width: 635px;
+    height: 54px;
+    background-color: #febc11;
+    border-bottom-right-radius: 40px;
+    margin-bottom: 15px;
+}
+.shop_home_cat{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    float: left;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+.shop_line_prod{
+    border: 3px solid #d3d3d3;
+    /*margin-bottom: 12px;*/
+    border-radius: 10px;
+    min-height: 294px;
+}
+.shop_home_kr{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #f15822;
+}
+.shop_home_price{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    color: #f15822;
+    line-height:1.8em;
+}
+.shop_home_price_margin{
+    margin: 10px 0px 0px 7px;
+}
+.shop_home_cart_margin{
+    margin-top: 15px !important;
+}
+.shop_heading{
+    /*font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #f15822;*/
+}
+.shop_buy_button_bg{
+    /*background-color: #f15822;
+    height: 16px;
+    width: 40px;*/
+    cursor: pointer;
+}
+.shop_heading{
+    /*font-family: 'Franklin Gothic Book Regular';
+    color: #ffffff;
+    margin-left: 10px;*/
+}
+.shop_home_price_main{
+    float: left;
+    color: #25dff5;
+    margin-right: 13px;
+}
+.back_to_top_btn{
+    float: right;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    width: 40px;
+}
+.shop_home_title{
+    font-family: 'ITC Cheltenham Book';
+    line-height:1.15em;
+    font-size: 1.55em;
+	letter-spacing: -0.01em;
+	word-spacing: -0.02em;
+    color: #232222;
+    margin-bottom: 11px;
+}
+.shop_home_subtitle{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    min-height: 20px;
+}
+.shopsmallblock_separator_1{
+    height: 4px;
+}
+.shopsmallblock_separator_2{
+    height: 8px;
+}
+.shophome_margin_top{
+	margin-top: 4px;
+}
+.shophome_margin_left{
+	margin-left: -8px;
+}
+.wide_div{
+    /*border: 1px solid red;*/
+    /*width: 610px;*/
+    width: 589px;
+    float: left;
+}
+.wide_div .shop_home_title{
+    float: left;
+    /*margin-left: 20px;
+    width: 70%;*/
+}
+.wide_div .shopsmallblockifo{
+    float: left;
+    /*margin-left: 20px;
+    width: 70%;*/
+    width:297px;
+}
+.wide_div .shop_home_price_main{
+
+}
+.width_475{
+    width: 475px;
+}
+.width_184{
+    width: 184px;
+}
+.shop_detail_title{
+    font-family: 'FranklinGothicCondensed';
+    color: #febc11;
+    font-size: 2.3em;
+    line-height: 40px;
+	margin-top: 48px;
+}
+.shop_detail_subtitle{
+    font-family: 'CheltenhamITCW01-Bold';
+    color: #413e3d;
+    font-size: 1.7em;
+    line-height: 1.28em;
+    margin-bottom: 15px;
+}	
+.shop_detail_subtitle2{ 
+    font-family: 'Franklin Gothic Book Italic';
+    color: #413e3d;
+    font-size: 1.5em;
+    line-height: 1.28em;
+    margin-bottom: 1px;
+}	
+.shop_detail_subtitle2_col{ 
+    font-family: 'CheltenhamITCW01-Bold';
+    color: #febc11;
+    font-size: 1.8em;
+    letter-spacing: 0.01em;
+    line-height: 1.25em;
+    margin-bottom: -25px;
+}	
+.shop_detail_subsection {
+    color: #f15822;
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.3em;
+    line-height: 1.25em;
+	margin: 35px 0px -7px 0px;
+}	
+.shop_detail_subsection_line {
+	border-top: 1px solid #f15822;
+    width: 100%;
+    float: left;
+	margin: 40px 0px 15px 0px;
+}
+#BT_Shop_more_section ul{
+    list-style: none;
+}
+#BT_Shop_more_section li:before {
+    /* For a round bullet */
+    content:'\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -17px;
+    top: -0px;
+    color: #f15822;
+    font-size: 12px;
+}
+#borst_desc_div ul{
+    list-style: none;
+}
+#borst_desc_div li:before {
+    /* For a round bullet */
+    content:'\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -17px;
+    top: -0px;
+    color: #f15822;
+    font-size: 12px;
+}
+.shop_detail_subsection2 {
+    color: #0071ac;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.18em;
+    line-height: 0.6em;
+    margin-top: 32px;
+}	
+.shop_detail_lesson1_subsection{ 
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 26px 0 -8px 0px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}	
+.shop_detail_lesson1_wt{ 
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 16px 0 -8px 0px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}	
+.shop_detail_lesson{ 
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    line-height: 0.01em;
+    margin: 36px 0 0px 0px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}	
+.shop_detail_lesson_mr{ 
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 28px 0 -8px 0px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}	
+.shop_detail_lesson2 {
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    line-height: 0.1em;
+    margin: 27px 0px 0px 40px;
+    letter-spacing: 0.08em;
+	text-transform: uppercase;
+}	
+.shop_detail_thumbnail{
+    margin: -5px 0px 40px 0px;
+}
+.shop_detail_preamble{
+    font-family: 'Georgia';
+    color: #9bb4bd;
+    font-size: 1.28em;
+    letter-spacing: 0.02em;
+    line-height: 1.6em;
+}
+.shop_detail_order{
+    font-family: 'Franklin_Gothic_Bold';
+    color: #232222;
+    font-size: 1em;
+    margin-top: 22px;
+    letter-spacing: -0.015em;
+}
+.shop_detail_choose{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #232222;
+    font-size: 1.3em;
+    letter-spacing: -0.02em;
+    margin: 7px 0px 10px;
+}
+.shop_detail_rm{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #febc11;
+    font-size: 1em;
+    /*margin-left: 6px;*/
+}
+.shop_detail_line{
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+    float: left;
+}
+.shop_detail_kr{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 0.86em;
+    margin: 0px 13px 0px 3px;
+}
+.shop_detail_price{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1em;
+}
+.shop_detail_pricetext{
+    font-family: 'Georgia Italic';
+    color: #9bb4bd;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+	margin-top: 0px;
+}
+
+.shop_detail_price_main{
+    float: left;
+    /*width: 1670px;*/
+}
+.shop_r_cart_title{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1.21em;
+	letter-spacing: -0.02em;
+    margin-top: 0px;
+    padding-top: 7px;
+}
+.shop_r_cart_img_top{
+    width:31px;
+    float:right;
+    margin: -18px -4px 10px 0px;
+}
+.shop_r_cart_count{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #232222;
+    font-size: 0.9em;
+    margin: -4px 5px -4px 0px;
+    line-height: 0.8em;
+}
+.shop_r_cart_cat_bg{
+    background-color: #febc11;
+    border-bottom-right-radius: 15px;
+    height: 32px;
+    width: 294px;
+    margin: 8px 0 -6px;
+}
+.shop_r_cart_cat{
+    font-family: 'Franklin Gothic Medium';
+    color: #ffffff;
+    font-size: 1.21em;
+    letter-spacing: 0.01em;
+    margin: 7px 0px 0px 7px;
+    float: left;
+}
+.shop_r_cart_prod_img{
+    float: left;
+    width: 24%;
+}
+.shop_r_cart_prod{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1em;
+    letter-spacing: -0.02em;
+    text-align: left;
+	padding: 22px 6px 0px 0px;
+}
+.shop_r_cart_price_bg{
+    width: 294px;
+    height: 32px;
+    background-color: #f2f1ef;
+}
+/*.shop_r_cart_price_font{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #232222;
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+}*/
+.shop_r_cart_price_bg_white{
+    width: 294px;
+    height: 32px;
+    background-color: #ffffff;
+    float: left;
+}
+.shop_r_cart_price_bg_gray{
+    width: 294px;
+    height: 32px;
+    background-color: #dbe1e1;
+    float: left;
+}
+.shop_r_side_headline{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #232222;
+    font-size: 1.4em;
+    letter-spacing: 0.02em;
+}
+.shop_r_side_cat{
+    font-family: 'Franklin Gothic Medium';
+    color: #febc11;
+    font-size: 1.06em;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
+}
+.shop_r_side_cat_ul ul{
+    list-style: outside;
+    margin-left: 0;
+    padding-left: 1em;
+    margin-top: 0px;
+}
+.shop_r_side_cat_ul ul > li:before {
+    display: inline-block;
+    /*content: "-";*/
+    width: 1em;
+    margin-left: -1em;
+}
+.shop_r_side_prod{
+    color: #9bb2bd;
+    line-height: 1.28em;
+}
+.shop_r_side_prod a{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #9bb2bd;
+    font-size: 0.93em;
+    letter-spacing: 0.01em;
+    line-height: 1.28em;
+}
+.shop_r_side_active{
+    color: #f15822 !important;
+    font-family: 'Franklin Gothic Medium' !important;
+}
+.shop_r_cart_quant input{
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    color: #232222;
+    font-size: 1em;
+}
+.shop_r_cart_text{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #767e88;
+    font-size: 1em;
+}
+.shop_r_cart_pay{
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1em;
+    letter-spacing: -0.01em;
+}
+.shop_r_cart_total{
+    font-family: 'Franklin Gothic Medium';
+    color: #f15822;
+    font-size: 1em;
+}
+.shop_r_cart_quant{
+    font-family: 'Franklin Gothic Medium';
+    color: #767e88;
+    font-size: 1em;
+}
+.shop_cart_fill_prod{ 
+    font-family: 'Franklin Gothic Book Regular';
+    color: #232222;
+    font-size: 1.4em;
+    letter-spacing: -0.01em;
+    margin-bottom: 80px;
+}
+.shop_r_space_thumb{
+    float:left;
+    position:relative;
+    font-size:0;
+    height:2px;
+}
+.bt-shop_passa_sq {
+    background-image: url("../images/new_home/bt-shop_passa_sq.png");
+    background-repeat: no-repeat;
+    float: left;
+    margin: 20px 800px 4px 0;
+    position: relative;
+    width: 80px;
+    height: 47px;
+    background-size:calc(100%)
+}
+#registration_help_section ul{
+    list-style: none;
+}
+#registration_help_section li:before {
+    /* For a round bullet */
+    content:'\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -17px;
+    top: -0px;
+    color: #f15822;
+    font-size: 12px;
+}
+#registration_help_section a {
+    color: #00aeef;
+}
+.marginRigth7{
+    margin-right: 7px !important;
+}
+.marginBottom0{
+    margin-bottom: 0px !important;
+}
+/*Bt shop page css end here*/
+
+/*shoping cart new D start*/
+.scLiatWraper{
+    width:565px;float:left;margin-bottom:29px;font-family:'Franklin Gothic Book Regular';
+}
+.scLiatWraper1{
+    height:80px;width:100%;background-color:#f2f1ef;margin-bottom:6px;float:left;color:#232222;
+}
+.scLiatWraper1 .imgWraper{
+    float:left;margin:10px 11px 10px 10px;background-color:#999;height:60px;width:60px;
+}
+.scLiatWraper1 .imgWraper img{
+    width:60px;height:60px;
+}
+.scLiatWraper1 .titleWraper{
+    float:left;margin-top: 30px;width:214px;margin-right:11px;word-spacing:-0.02em; letter-spacing: -0.01em; font-size: 1em;
+}
+.scLiatWraper1 .qtyWraper{
+    float:left;margin-top: 28.9px;;margin-right:11px;
+}
+.scLiatWraper1 .priceWraper{
+    float:left;margin-top: 30px;width:78px;margin-right:11px;text-align:right;
+}
+.scLiatWraper1 .totalWraper{
+    font-family:'Franklin Gothic Medium';float:left;margin-top: 30px;width:78px;margin-right:11px;text-align:right;
+}
+.scLiatWraper1 .crossWraper{
+    float:left;margin-top: 30px;width:14px;color:#f15822;
+}
+.width_558{
+    width:558px;
+}
+.floatLeftNew{
+    float:left;
+}
+.floatRightNew{
+    float:right;
+}
+.cursorPointer{
+    cursor:pointer;
+}
+	blank_1h{
+    float: left;
+    height: 1px;
+    position: relative;
+}
+blank_3h{
+    float: left;
+    height: 3px;
+    position: relative;
+}
+.blank_6h{
+    float: left;
+    height: 6px;
+    position: relative;	
+}
+.blank_7h{
+    height: 7px;
+}
+blank_5h{
+    float: left;
+    height: 5px;
+    position: relative;
+}
+blank_4h{
+    float: left;
+    height: 4px;
+    position: relative;
+}
+.blank_9h{
+    float: left;
+    height: 9px;
+    position: relative;
+}
+.blank_10h{
+    float: left;
+    height: 10px;
+    position: relative;
+}
+.blank_11h{
+    float: left;
+    height: 11px;
+    position: relative;
+}
+.blank_14h{
+    float: left;
+    height: 14px;
+    position: relative;
+}
+.blank_15h{
+    float: left;
+    height: 15px;
+    position: relative;
+}
+.blank_25h{
+    float: left;
+    height: 25px;
+    position: relative;
+}
+.blank_35h{
+    float: left;
+    height: 35px;
+    position: relative;
+}
+.blank_45h{
+    float: left;
+    height: 45px;
+    position: relative;
+}
+.width_392{
+    width:392px;
+}
+.blank_29h{
+    float: left;
+    height: 29px;
+    position: relative;
+}
+.blank_28h {
+    float: left;
+    height: 28px;
+    position: relative;
+}
+.blank_nhb {
+    float: left;
+    height: 22px;
+    position: relative;
+}
+.blank_nhb2 {
+    float: left;
+    height: 24px;
+    position: relative;
+}
+.margin_left_114{
+    margin-left:114px !important;
+}
+
+.inputBox277 {
+    /*background-color: #f6f9fb;
+    border: 1px solid #ced2d0;
+    height: 30px;
+    padding-left: 6px;
+    width: 277px;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    color:#658094;*/
+}
+.cardDetails .label{
+    /*font-family:'Franklin Gothic Book Regular';
+    font-size:1em;
+    letter-spacing: -0.01px;
+    float:left;
+    width:114px;
+    color:#232222;
+    padding-top: 7.5px;*/
+}
+.cardDetails input {
+    /*font-family:'Franklin Gothic Book Regular';
+    font-size:1em;
+    letter-spacing: -0.02px;
+    color:#658094;*/
+    margin-bottom: 3px;
+}
+.cardDetails select{
+    border-radius: 5px;
+    height: 30px;
+}
+.width_221{
+    width:221px;
+}
+.width_209{
+    width:209px;
+}
+.clearAll{
+    clear:both;
+    height: 0;
+}
+.cartDesign1{
+    font-family: 'Franklin Gothic Medium';
+    font-size:1em;
+    letter-spacing: -0.01px;
+    color:#637281;
+}
+.red_text2Cart{
+    color:#f15822;
+    font-family:"Franklin Gothic Medium";
+    font-size:1em;
+    letter-spacing: -0.01px;
+    position: relative;
+    top: -25px;
+}
+/*shoping cart new D end*/
+/*submenu popup*/
+.supmenuPopupContent{
+    display: none;
+    background-color: #dfe5e8;
+    width: 210px !important;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+    padding: 10px 0px 42px 20px!important;
+    border-radius: 5px;
+    color:#232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    letter-spacing: -0.01px;
+    border: 1px solid #dfe5e8;
+    position: absolute;/*relative !important;*/
+    /*top: 30px !important;*/
+    z-index: 100;
+}
+.supmenuPopupContent li{
+    clear:left;
+    font-weight: normal !important;
+    line-height: 20px;
+    width:100%;
+    padding:2px;
+}
+.supmenuPopupContent li a{
+    color: #000000 !important;
+}
+.supmenuPopupContent li:hover{
+    background-color: #f3fafc;
+}
+/* css for bt shop right panel details listing start here */
+.shop_r_other_title {
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+	font-size: 1.55em;
+	word-spacing: -0.03em;
+	margin: 2px 0px 10px;
+}
+.shop_r_other_subtitle {
+    color: #9bb4bd;
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.35em;
+    line-height: 1.3em;
+    letter-spacing: -0.01em !important;
+	word-spacing: -0.02em;
+}
+.shop_r_other ul{
+    padding-left: 0px;
+    margin-top: 7px;
+}
+.shop_r_other ul li{
+    list-style: none;
+}
+.shop_r_other_subsection {
+    font-family: 'Franklin Gothic Medium';
+    color: #232222;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    margin: 12px 0px 5px;
+    width: 294px;	
+}
+.shop_r_other_bread {
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 13px;
+    line-height: 1.3em;
+}
+.shop_r_other_rm{
+    color: #f15822;
+  	font-family: 'Franklin Gothic Medium'; 
+	font-size: 0.8em; 
+	text-transform:uppercase; 
+	letter-spacing: 0.05em; 
+	margin: 0px 0px 0px;
+}
+.mrg_btm_7{
+    margin-bottom: 7px;
+}
+.shop_r_other_border{
+    float: left;
+    border-bottom: 22px solid #9bb4bd;
+    width: 100%;
+    margin: 15px 0px 20px 0px;
+}
+.shop_r_other_img_main{
+    float: left;
+    width: 100%;
+	margin-top: 2px;
+}
+.shop_r_other_img_sub{
+    float: left;
+    width: 45%;
+	margin-top: 2px;
+}
+.shop_r_other_price_main{
+    margin-top: 19px;
+}
+/* css for bt shop right panel details listing end here */
+.cartStep2{
+    float:left;
+    padding:0px;
+    margin: 0px;
+}
+ul.cartStep2 li {
+    /*display: block;*/
+    float: left;
+    list-style: outside none none;
+    margin: 8px 0 0;
+    padding: 0;
+    position: relative;
+    width: 340px;
+    height:45px;
+    background-color: #f2f1ef;
+    border-bottom-right-radius: 65px;
+    padding-top: 28px;
+}
+.shop_payment_type{
+    color: #232222;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    line-height: 1.21em;
+}
+.cartStep2 .span1{
+    float:left;
+    margin-left:13px;
+}
+.cartStep2 .span2{
+    float:left;
+    margin-left:3px;
+	margin-right: 5px;
+}
+.cartStep2 .span3{
+    float:left;
+    margin-left:5px;
+}
+.shop_paymnet_done{
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.28em;
+	margin-bottom: 4px;
+}
+.shop_paymnet_done_email{
+    color: #232222;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+	margin-bottom: 24px;
+}
+.shop_paymnet_done_link{
+    color: #8991c8;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+}
+.shop_passa1 {
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.3em;
+    line-height: 1.2em;
+    margin: 18px 0px -8px 0px;
+	letter-spacing: 0.01em;
+}
+.shop_passa1_2 {
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.3em;
+    line-height: 1.25em;
+    margin-bottom: -4px;
+	letter-spacing: 0.01em;
+}
+.shop_passa1_col {
+    color: #f15822;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.3em;
+    line-height: 1.25em;
+    margin: 18px 0px -8px 0px;
+	letter-spacing: 0.01em;
+}
+.shop_passa1_col2 {
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.7em;
+    margin-bottom: 18px;
+	letter-spacing: 0.01em;
+}
+.shop_passa2{
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    line-height: 1.7em;
+	margin: 5px 0px -1px 0px;
+	word-spacing: -0.06em;
+}
+.shop_passa3{
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.5em;
+	line-height: 1.8em;
+}
+.shop_passa4{
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.2em;
+	line-height: 1.3em;
+}
+.shop__detail_table{
+    color: #00aeef;
+    font-family: "Franklin Gothic Medium";
+    font-size: 11em;
+	line-height: 2em;
+}
+.shop_welcome {
+    color: #febc11;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 2.2em;
+    line-height: 2.4em;
+    margin-top: 24px;
+	word-spacing: -0.06em;
+}
+.blank_47h{ float:left; position:relative; height:47px;}
+
+/*forum new menu 25-5-2016*/
+.forum-menu-wrapper{
+    width:636px;
+    height:169px;
+    padding-left:15px;
+    background: #f7941d url("../images/new_home/forum_logo_fig1.png") no-repeat scroll right top / 146px auto;
+}
+.forum-menu-logo{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_logo_white.png") no-repeat scroll left 15px / 330px auto;
+    height: 61px;
+    width: 330px;
+    float:left;
+}
+.forum-menu-active-logo{
+    background:url("../images/new_home/forum_subject_orange.png") no-repeat scroll left 11px / 101px auto;
+    height: 43px;
+    width: 115px;
+    float:right;
+}
+.forumnavigationNew{
+    float:left;
+}
+.forumnavigationNew ul{
+    margin:0px;
+    padding:0px;
+    margin: 27px 0 0;
+}
+.forumnavigationNew ul li{
+    display: block;
+    color: #ffffff;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 13px;
+    line-height: 19px;
+}
+.forumnavigationNew ul li a:hover,.forumnavigationNew ul li a.selectedtab{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1px;
+}
+.marginLeft21{
+    margin-left:21px !important;
+}
+.forumsubmenuNew{
+    float:left;
+}
+.forumsubmenuNew li{
+    color:#637281 !important;
+}
+.forumsubmenuNew li a:hover,.forumsubmenuNew li a.select{
+    border-bottom: 1px solid #637281 !important;
+}
+.marginLeft23{
+    margin-left:23px !important;
+}
+.marginLeftcol4{
+    margin-left:38px !important;
+}
+/*forum new Listing 26-5-2016*/
+.width647{
+    width: 647px;
+}
+#forum_topic_list tr, #enquiry_topic_list tr{
+    width:651px !important;
+    border-bottom: 1px solid #e1dfe1;
+}
+#forum_topic_list td{
+    border-top: medium none !important;
+}
+.width322{
+    width:322px;
+}
+.width_317{
+    width:317px;
+}
+.width15{
+    width:15px;
+}
+.forum_table_post_w{
+    width:98px;
+}
+.askBT_table_post_w{
+    width:108px;
+}
+.blog_table_post_w{
+    width:110px;
+}
+.blog_p_table_post_w{
+    width:55px;
+}
+.blog_p_table_vote_w{
+    width:55px;
+}
+.blog_p_table_inlog_w{
+    width:55px;
+}
+.forum_table_date_w{
+    width:76px;
+}
+.blog_table_date_w{
+    width:76px;
+    padding-left: 20px;
+}
+.blog_table_date_detail{
+    width:76px;
+    padding-left: 20px !important;
+}
+.width_9{
+    width: 9px;
+}
+.forum_table_head{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #fff;
+    background-color: #f7941d;
+    border-top:none !important;
+    height: 25px;
+}
+.forum_table_title_w{
+	width: 300px;
+}
+.askBT_table_title_w{
+	width: 317px;
+}
+.blog_table_title_w{
+	width: 346px;
+}
+.blog_p_table_title_w{
+	width: 100px;
+}
+.forum_table_topic_w{
+	width: 117px;
+}
+.blog_table_cat_w{
+	width: 108px;
+}
+.askBT_table_topic_w{
+	width: 141px;
+}
+.blog_p_table_regdate_w{
+	width: 95px;
+}
+.blog_p_table_user_w{
+	width: 150px;
+}
+.blog_p_table_ava_w{
+	width: 55px;
+}
+.forum_table_title{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #f7941d;
+    line-height:1.2em;
+}
+.forum_table_user{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.93em;
+    color: #8991c8;
+    line-height:1.2em;
+	font-style:italic;
+}
+.forum_table_topic{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.8em;
+    color: #232222;
+    line-height:1.4em;
+	text-transform:uppercase;
+	letter-spacing: 0.06em;
+}
+.forum_table_date{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.forum_table_time{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.forum_table_post{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #f7941d;
+    line-height:1.2em;
+    width:97px
+}
+.forum_table_views{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.forum_table_edit{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #EC008D;
+    line-height:1.2em;
+}
+.forum_table_delete{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #00ADEE;
+    line-height:1.2em;
+}
+.padding_top_6{
+    padding-top:6px !important;
+}
+.padding_top_table{
+    padding-top:3px !important;
+}
+/*forum pagination new 27-5-2016 */
+.forum_pag{
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.82em;
+    letter-spacing: 0.01em !important;
+    line-height: 19px;
+    margin: 14px 0 10px 1px;
+}
+.paginationwrapperNew {
+    border: 0 solid red;
+    /*float: right;*/
+    line-height: 16px;
+    position: relative;
+    /*width: 100%;*/
+}
+.forum_pag .selected{
+    color:#f7941d;
+    margin-right: 2px;
+}
+.forum_pag a{
+    word-spacing: 2px;
+    color: #8991c8 !important;
+}
+.forum_pagination_prev_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow1.png") no-repeat scroll left center / 10px auto;
+    padding-left: 10px;
+    margin: 0px 2px 0px 4px;
+}
+.forum_pagination_prev,.forum_pagination_next{
+    letter-spacing: 0.02em;
+}
+.forum_pagination_next_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow2.png") no-repeat scroll left center / 11px auto;
+    margin: 0px 6px 0px 2px;
+    padding-left: 11px;
+}
+.forum_pagination_last_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow3.png") no-repeat scroll left center / 10px auto;
+    margin: 0px 5px 0px 4px;
+    padding-left: 12px;
+}
+.forum_pagination_first_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow5.png") no-repeat scroll left center / 10px auto;
+    padding-left: 12px;
+    margin: 0px 2px 0px 1px;
+}
+.forum_pagination_down_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow4.png") no-repeat scroll left center / 11px auto;
+    margin-left: 4px;
+    padding-left: 11px;
+}
+.margin_rgt_share{
+    margin-right: 3px;
+}
+.margin_lft_3{
+    margin-left: 4px;
+}
+.margin_rgt_7{
+    margin-right: 7px;
+}
+.margin_rgt_8{
+    margin-right: 8px;
+}
+.forun_sorting_arrow{
+    height: 10px;
+    margin-top: 5px;
+}
+.forum_sorting_wrapper{
+    float: right;
+    /*margin-right: 2px;*/
+}
+.blank5h{
+    height: 5px;
+}
+.blank2h{
+    height: 2px;
+}
+.blank_22h{
+    height: 22px;
+}
+.blank_113h{
+    height: 113px;
+}
+.width_100per{
+    width: 100%;
+}
+/*new popup pagination 30-5-2016*/
+.forum_popup_pagination_wrapper{
+    float: left;
+    font-family: "Franklin Gothic Book Regular";
+    height: 70px;
+    width: 136px;
+    position: absolute;
+    /*top: 19px;*/
+    z-index: 999;
+    background-color: #dfe5e8;
+    border-radius: 4px;
+    text-align: center;
+    display:none;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+	margin-top: 3px;
+}
+.colorb9c2cf{
+    color:#b9c2cf;
+}
+.color323030{
+    color: #232222;
+}
+.forum_drop-down-menu_page{
+    padding: 1px 0px 0px 0px;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    width:107px;
+    height:25px;
+    margin: 8px 0 10px;
+}
+.forum_drop-down-menu_go{
+    color: #fff;
+    font-family: "Franklin Gothic Book Regular";
+	letter-spacing: 0.08em;
+    font-size: 14px;
+    line-height: 1.8em;
+    border-radius: 2px;
+    text-align: center;
+    width:30px;
+    height:23px;
+    background-color: #94abb4;
+    cursor: pointer;
+    margin: -6px 16px 0px;
+}
+/* new forum sorting popup */
+.forum_drop-down-menus{
+    float: left;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 12px;
+    line-height: 24px;
+    height: 180px;
+    width: 132px;
+    position: absolute;
+    top: 19px;
+    z-index: 999;
+    background-color: #dfe5e8;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+    letter-spacing: 0.04em;
+    color:#232222;
+    margin: 5px 0px 0px 11px;
+    display: none;
+    text-transform: uppercase;
+}
+.forum_drop-down-menus ul{
+    list-style-type: none !important;
+    margin-top: 10px !important;
+    padding: 0 32px !important;
+    text-align: left !important;
+}
+
+/* start new design for forum reply 7-6-16*/
+.forum_comment_wrapper{
+    float: left;
+    position: relative;
+    width: 582px;
+}
+.forum_comment_top_wraper{
+    width: 570px;
+    height:20px;
+}
+.forum_comment_top_even{
+    background-color:#9cabbf;
+    padding: 0 7px 0 5px;
+}
+.forum_comment_top_even .forum_comment_top_left, .forum_comment_top_even .forum_comment_top_left a{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#fff;
+}
+.forum_comment_top_even .forum_comment_top_right , .forum_comment_top_even .forum_comment_top_right a{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#fff;
+}
+.pad_rgt_13{
+    padding-right: 13px;
+}
+.forum_comment_top_odd{
+    background-color:#d7d8e6;
+    padding: 0 7px 0 5px;
+}
+.forum_comment_top_odd .forum_comment_top_left, .forum_comment_top_odd .forum_comment_top_left a{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#637281;
+}
+.forum_comment_top_odd .forum_comment_top_right, .forum_comment_top_odd .forum_comment_top_right a{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#637281;
+}
+.width_120{
+    width:120px;
+}
+.width_445{
+    width:430px;
+    margin-left: 15px;
+}
+.comment_content_img_wrapper{
+    margin-right:17px;
+}
+.comment_content_img_wrapper img{
+    max-width: 110px;
+    height: auto;
+    max-height: 110px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.forum_comment_user_name a{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.86em;
+	hyphens: manual;
+    color:#f7941d !important;
+    line-height: 17px;
+	letter-spacing: -0.01em;
+}
+.forum_comment_detail{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#232222;
+    line-height: 17px;
+}
+.forum_post_bread{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    color:#232222;
+    line-height: 19px;
+}
+.forum_post_bread p{
+    margin:0px;
+}
+.forum_post_bread ul{
+    margin: 0px !important;
+}
+.forum_post_bread ul li{
+    padding: 0px !important;
+}
+.forum_post_dot{
+    /*font-family:"Wingdings";
+    font-size: 14px;
+    line-height: 19px;*/
+    width: 10px;
+    height: 10px;
+    background-color: #9a9ba7;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.forum_input_title{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.14em;
+    color:#232222;
+    margin-bottom: 4px;
+}
+.forum_input_bread{
+    font-family: "Georgia Regular";
+    font-size: 11px;
+    color:#232222;
+    line-height: 17px;
+    word-spacing:-0.08em
+}
+.mtop_21{
+    margin-top:21px;
+}
+.margin_rgt_10{
+    margin-right: 10px !important;
+}
+.forum_post_quote_ref{
+    font-family: "Franklin Gothic Medium";
+    font-size: 14px;
+    color:#121212;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    margin-bottom: 9px;
+}
+.forum_post_quote{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 14px;
+    color:#121212;
+    line-height: 19px;
+}
+.bb-quote {
+    border-left: 2px solid #637281;
+    border-top: 1px solid #bebdc3;
+    border-right: 1px solid #bebdc3;
+    border-bottom: 1px solid #bebdc3;
+    padding: 10px 14px 21px;
+    border-radius: 0 2px 2px 0;
+    margin: 0 0 21px;
+    background-color: #fbfbfb;
+    /*width: 93%;*/
+}
+/* end new design for forum reply 7-6-16*/
+/*css for forum details page start here*/
+.forum_post_start{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    letter-spacing:-0.02em;
+    color:#232222;
+    line-height: 17px;
+    margin-top: 23px;
+}
+.forum_post_start_name{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #f7941d;
+    line-height: 17px;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+}
+.forum_post_start_date{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#232222;
+    line-height: 19px;
+    margin-bottom: 1px;
+}
+.forum_post_head{
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.4em;
+    color: #232222;
+    line-height: 26px;
+    margin-top: 24.5px;
+}
+.forum_post_count{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #637281;
+    letter-spacing:0.02em;
+	margin-top: 2px;
+}
+.forum_post_fan,.forum_post_unfan{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #F7941d;
+    letter-spacing:0.02em;
+    margin: 2px 2px 0 0;    
+	cursor: pointer;
+}
+.height_43{
+    height:43px;
+}
+.mrg_rgt_10{
+    margin-right:10px;
+}
+.forum_post_line{
+    border-bottom: 1px #9a9ba7 solid;
+    margin: 0;
+}
+.forum_post_tag{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 11px;
+    line-height: 19px;
+    color: #9a9ba7;
+}
+.forum_post_tag a{
+    color: #4092c0 !important;
+}
+.height_1{
+    height: 1px;
+}
+.height_10{
+    height: 10px;
+}
+.login_sugg{ margin: 0 0 4px -15px; 
+}	
+/*css for forum details page end here*/
+/*Post forum form 1-7-16*/
+.forum-menu-active-logo-activated{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_subject_active.png") no-repeat scroll left 11px / 101px auto;
+    float: right;
+    height: 43px;
+    width: 115px;
+}
+.blank_26h{
+    height:26px;
+}
+.width158{
+    width:158px !important;
+}
+.width151{
+    width:151px !important;
+}
+.width440{
+    width:440px !important;
+}
+.height20{
+    height:20px !important;
+}
+.height25{
+    height:25px !important;
+	
+}.height16{
+    height:16px !important;
+}
+.forum_new_topic{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.14em;
+    color:#f7941d;
+    line-height: 19px;
+}
+.cursorDefault{
+    cursor:default !important;
+}
+.forum_line_navpag{
+    border-bottom: #e1dfe1 1px solid;
+}
+.width99per{
+    width:99.99%;
+}
+#forum_topic_div .breadcrumb{
+    width: 100%;
+}
+#forum_topic_div .breadcrumb ul li{
+    float: left;
+    letter-spacing: 0.02em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.forum_login_reminder{
+	font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    color:#f7941d;
+    letter-spacing: -0.01em;   	
+}
+.footer_inner_div{
+    float: left;
+    width: 100%;
+    margin-top: 28px;
+}
+.footer_bottom_div{
+    /*height: 66px;*/
+    border: 1px solid #ffffff;
+    height: 66px;
+    margin-left: -1px;
+    width: 1010px;
+}
+.home_9read_m{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.8em;
+    line-height: 1.1em;
+    color: #232222;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    width: 165px;
+}
+.home_9read_m_count{
+    float: left;
+    width: 15px;
+}
+.home_9read_m_details{
+    float: left;
+    width: 130px;
+}
+.home_heading_m_1{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 1.8em;
+    line-height: 1.05em;
+	letter-spacing: 0.01em;
+   	word-spacing: -0.15em;
+    color: #232222;
+    float: left;
+    margin: 4px 0px 4px;
+    width: 165px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_heading_m_2{
+ 	font-family: 'FranklinGothicCondensed';
+    font-size: 1.8em;
+    line-height: 1.05em;
+	letter-spacing: 0.01em;
+   	word-spacing: -0.1em;
+    color: #232222;
+    float: left;
+    margin: 4px 0px 4px;
+    width: 165px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_heading_m_3{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 1.8em;
+    line-height: 1.05em;
+	letter-spacing: 0.01em;
+   	word-spacing: -0.15em;
+    color: #232222;
+    float: left;
+    margin: 4px 0px 4px;
+    width: 165px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_heading_m_4{
+    font-family: 'FranklinGothicCondensed';
+    font-size: 1.8em;
+    line-height: 1.05em;
+	letter-spacing: 0.01em;
+   	word-spacing: -0.15em;
+    color: #232222;
+    float: left;
+    margin: 4px 0px 4px;
+    width: 165px;
+    word-wrap: break-word;
+    hyphens: none;
+}
+.home_body_m_1{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 14px;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.25em;
+    word-wrap: break-word;
+}
+.home_body_m_2{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 14px;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.25em;
+    word-wrap: break-word;
+}
+.home_body_m_3{
+ font-family: "Franklin Gothic Book Regular";
+    font-size: 14px;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.25em;
+    word-wrap: break-word;
+}
+.home_body_m_4{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 14px;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.25em;
+    word-wrap: break-word;
+}
+.home_heading_l_1{
+   	font-family: 'CheltenhamITCW01-Bold';
+    font-size: 3.7em;
+    line-height: 1em;
+    word-spacing: -0.04em;
+	letter-spacing: -0.02em;
+    color: #232222;
+    float: left;
+    margin-bottom: 9px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.home_heading_l_2{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 2.2em;
+	letter-spacing: -0.01em;
+    word-spacing: -0.06em;
+    line-height: 1.1em;
+    color: #232222;
+    float: left;
+    margin: -8px 0px 6px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.home_heading_l_2b{
+    font-family: 'ITC Cheltenham Italic';
+    font-size: 2.2em;
+	letter-spacing: 0.04em;
+    word-spacing: -0.06em;
+    line-height: 1.1em;
+    color: #232222;
+    float: left;
+    margin: 5px 0px 3px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.home_heading_l_3{
+    font-family: 'ITC Cheltenham Italic';
+    font-size: 2.2em;
+	letter-spacing: 0.04em;
+    word-spacing: -0.06em;
+    line-height: 1.1em;
+    color: #232222;
+    float: left;
+    margin: -4px 0px 1px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.home_heading_l_3b{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 2.2em;
+	letter-spacing: -0.01em;
+    word-spacing: -0.06em;
+    line-height: 1.1em;
+    color: #232222;
+    float: left;
+    margin: 3px 0px 8px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.home_heading_l_4{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 3.6em;
+    line-height: 1em;
+    word-spacing: -0.07em;
+	letter-spacing: -0.01em;
+    color: #232222;
+    float: left;
+    margin: 0px 0px 9px;
+    word-wrap: break-word;
+    width: 100%;
+    hyphens: none;
+}
+.twt_bar_div{
+    float: left;
+    /*width: 100%;*/
+    width: 165px;
+    margin-top: 7px;
+    /*margin-bottom: 10px;*/
+    text-align: center;
+}
+.home_artline1_m_div{
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 1px;
+    float: left;
+    margin-bottom: 11px;
+    margin-top: 6px;
+}
+.home_ad_r{
+    font-family: "FranklinGothicCondensed";
+    font-size: 0.8em;
+    color: #232222;
+    margin: 1px 0px 0px 10px;
+    letter-spacing: 0.03em;	
+	font-size: 12px;
+}
+.home_ad_r_spons{
+    font-family: "FranklinGothicCondensed";
+    font-size: 0.8em;
+    color: #232222;
+    margin: -4px 0 -10px 10px;
+    letter-spacing: 0.03em;
+}
+.home_ad_h{
+    font-family: "FranklinGothicCondensed";
+    font-size: 0.8em;
+    color: #232222;
+    margin:0px 0px -10px 10px;
+    letter-spacing: 0.03em;
+}
+.home_ad_twtr{
+    font-family: "FranklinGothic-Light";
+    font-size: 0.8em;
+    color: #232222;
+    margin:0px 0px 0px 9px;
+    word-spacing: -0.2em;
+}
+.home_adline_r_div{
+    background-color: #d3d3d3;
+    /*width: 96%;*/
+    width: 300px;
+    height: 1px;
+    float: left;
+    /*margin-left: 11px;*/
+    margin-left: 9px;
+	margin-bottom: 6px;
+}
+.footer_main{
+    float: left;
+    width: 970px;
+    margin-bottom: 132px;
+}
+.article_payment_maindiv{
+    float:left;
+    padding: 0px;
+    background-color:#fff;
+}
+.article_payment_innerdiv{
+    float: left;
+    min-height: 1180px;
+    width: 658px;
+    padding:0px;
+    border-right: 1px solid #d3d3d3;
+}
+.article_payment_shoplist{
+    width:636px;
+    float:left;
+}
+.article_payment_shoplist_icon{
+    width:74%;
+}
+.article_payment_form{
+    min-height:626px;
+    border: 0 solid red;
+    float: left;
+    margin-left: 71px;
+    position: relative;
+    width: 565px;
+}
+.art_square {
+	width:15px;
+	height: 30px;
+	margin: 0px 0px 4px 0px;
+}
+/*
+    css for target ie10 and ie11 start here
+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .loginDiv{
+        margin-left: 8px;
+        margin-right: 5px;
+        margin-top: 4px;
+        float: left;
+        width: 100%;
+    }
+}
+/*
+    css for target ie10 and ie11 end here
+*/
+
+/*
+    BT-chart css start here
+*/
+.charts_wrapper{
+    float: left;
+    /*margin-left: 20px;*/
+}
+.charts_heading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.71em;
+    color: #232222;
+}
+.charts_subheading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.28em;
+    margin-left: 14px;
+    color: #232222;
+}
+.charts_graph_main{
+    width: 100%;
+    margin-top: 24px;
+    float: left;
+    margin-left:21px;
+}
+.charts_graph_sub_left{
+    float: left;
+    width: 46%;
+    margin-right: 10px;
+}
+.charts_graph_sub_right{
+    float: left;
+    width: 48%;
+    margin-left: 0;
+}
+.charts_graph{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.15em;
+	line-height: 2em;
+    color: #232222;
+	letter-spacing: -0.01em;
+}
+.charts_btn_1{
+    width: 84px;
+    height: 24px;
+    background-color: #1c92af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_1{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+	letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 15px;
+    margin-top: 3px;
+}
+.charts_btn_2{
+    width: 84px;
+    height: 24px;
+    background-color: #a6cc39;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_2{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+	letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 14px;
+    margin-top: 2px;
+}
+.charts_btn_3{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_3{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+.charts_btn_4{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_4{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 12.5px;
+    margin-top: 2.5px;
+}
+.charts_btn_5{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_5{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 16.5px;
+    margin-top: 2.5px;
+}
+.charts_btn_6{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_6{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2.5px;
+}
+.charts_btn_7{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_7{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 12.5px;
+    margin-top: 2.5px;
+}
+.charts_btn_8{
+    width: 84px;
+    height: 24px;
+    background-color: #2062af;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_button_text_8{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    float: left;
+    margin-left: 9px;
+    margin-top: 2.5px;
+}
+.charts_btn_active{
+    width: 84px;
+    height: 24px;
+    background-color: #a6cc39;
+    display: inline-block;
+    border-radius: 2px;
+}
+.charts_market_heading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.57em;
+    color: #232222;
+    margin:6px 0 2px 2px;
+	letter-spacing: -0.01em;
+}
+.charts_market_subheading{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    line-height: 1.1em;
+    color: #f15822;
+    float:left;
+    margin-bottom: 3px;
+    position:relative;
+    width:100%;
+}
+.charts_market_link{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.28em;
+    color: #8991c8;
+    float:left;
+    position:relative;
+}
+.charts_market_link td{ padding-right:20px;}
+.charts_market_link td ul{ float:left; position:relative; margin:0; padding:0;  list-style-type:none;}
+.charts_market_link td ul li{ float:left; position:relative; margin:0; padding:0; list-style-type:none; display:block; color:#7894a3; clear:left;}
+.charts_market_link td ul li a{ float:left; position:relative; margin:0; padding:0; list-style-type:none; display:block; color:#7894a3; clear:left;}
+
+.bt-charts_line_pag{
+    border-bottom: 1px solid #e1dfe1;
+    float: left;
+    width: 100%;
+}
+.charts_button_text{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.25em;
+    color: #c1cfd8;
+}
+.bt-charts_line{
+    border-bottom: 10px solid #e1dfe1;
+    float: left;
+    width: 100%;
+    margin-top: 62px;
+}
+
+/*
+    BT-chart css end here
+*/
+
+.twt_bar_details iframe .SandboxRoot .timeline-Widget{
+    width: 165px;
+    border: 1px solid red;
+}
+.article_center_list{
+    float: left;
+    /*width: 27.5%;*/
+    width: 183px;
+    border-left: 1px solid #d3d3d3;
+    margin-top: 20px;
+}
+.article_left_list{
+    float: left;
+    /*width: 72%;*/
+    width:475px;
+    margin-top: 20px;
+}
+
+/*
+    Blog css start from here
+*/
+.innerleftdiv_blog{
+    float:left;
+    position:relative;
+    border-right:1px solid #D3D6E1;
+    width:311px;
+    height:auto;
+    /*margin:20px 0 0 0;*/
+}
+.rightbanner_blog{
+    /*width:645px;*/
+    width:649px;
+    float:left;
+    margin-top: 14px;
+    /*margin-left: 10px;*/
+    margin-left: 9px;
+}
+.blog_welc_welc{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 2.2em;
+    letter-spacing: -0.02em;
+	word-spacing: -0.06em;
+    color: #414c62;
+}
+.blog_welc_body{
+    font-family: 'Georgia';
+    font-size: 1.1em;
+    color: #414c62;
+    line-height: 1.64em;
+}
+.home_artline_blog {
+    background-color: #d3d3d3;
+    float: left;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 96%;
+}
+.blog_pro_header{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.4em;
+    color: #414c62;
+    line-height: 1.86;
+    letter-spacing: -0.01em;
+    margin-top: -8px;
+
+}
+.blog_table_head a span{
+    font-family: 'Franklin Gothic Book Regular';
+    /*font-size: 0.86em;*/
+    color: #ffffff;
+}
+.blog_table_head{
+    font-family: "Franklin Gothic Book Regular";
+    /*font-size: 12px;*/
+    color: #fff;
+    background-color: #f15822;
+    border-top:none !important;
+    height:25px;
+    font-size: 0.86em;
+}
+.width_310{
+    width: 310px;
+}
+.width_106{
+    width: 106px;
+}
+.width_97{
+    width: 97px;
+}
+.blog_table_title{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #f15822;
+    line-height: 1.2em;
+}
+.blog_table_user{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #8991c8;
+    line-height: 1em;
+}
+.blog_table_topic{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #232222;
+}
+.blog_table_post{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #f15822;
+    line-height: 1.2em;
+}
+.blog_table_view{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #7f99c3;
+    line-height: 1.2em;
+}
+.blog_prof_table_date{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height: 1.2em;
+}
+.blog_table_time{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height: 1.2em;
+}
+.blog_line_table{
+    border-bottom: 1px solid #e1dfe1;
+    padding: 4px 0 6px 0 !important;
+}
+.pagination_blog{
+    float:left;
+    position:relative;
+    padding:0 10px 0 0;
+    color:#4f5156;
+    font-size:11px;
+    width:100%;
+    text-align:left;
+}
+
+.blog_pagination_prev_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow1.png") no-repeat scroll left center / 12px auto;
+    padding-left: 10px;
+}
+.blog_pagination_prev,.blog_pagination_next{
+    letter-spacing: 0px;
+}
+.blog_pagination_next_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow2.png") no-repeat scroll left center / 12px auto;
+    margin-left: 4px;
+    padding-left: 7px;
+}
+.blog_pagination_last_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow3.png") no-repeat scroll left center / 12px auto;
+    margin-left: 4px;
+    padding-left: 12px;
+}
+.blog_pagination_first_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow5.png") no-repeat scroll left center / 12px auto;
+    padding-left: 12px;
+    margin-right: 4px;
+}
+.blog_pagination_down_img{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/forum_nav_arrow4.png") no-repeat scroll left center / 12px auto;
+    margin-left: 4px;
+    padding-left: 12px;
+}
+.paginationwrapper .pagination_blog .selected{ color:#f7941d; font-weight:normal;}
+
+.blog_drop-down-menus{
+    float: left;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 12px;
+    line-height: 24px;
+    height: 180px;
+    width: 118px;
+    position: absolute;
+    top: 19px;
+    z-index: 999;
+    background-color: #dfe5e8;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+    letter-spacing: 0.08em;
+    text-transform:uppercase;
+    color:#3a4769;
+    margin-left: 11px;
+    display: none;
+    hyphens: manual;
+}
+.blog_drop-down-menus ul{
+    margin-top: 10px !important;
+    padding: 0 26.3px !important;
+    text-align: left !important;
+    list-style-type: none !important;
+}
+.blog_popup_pagination_wrapper{
+    float: left;
+    font-family: "Franklin_Gothic_Bold";
+    height: 98px;
+    width: 156px;
+    position: absolute;
+    top: 19px;
+    z-index: 999;
+    background-color: #dfe5e8;
+    border-radius: 2px;
+    text-align: center;
+    display:none;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+}
+.blog_logo{
+    margin-bottom: 32px;
+    margin-top: 5px;
+}
+.blog_mrg_welc{
+    margin-bottom: 25px;
+}
+.blog_mrg_35{
+    margin-bottom: 35px;
+}
+.blog_mrg_25{
+    margin-bottom: 25px;
+}
+.blog_mrg_22{
+    margin-bottom: 22px;
+}
+.blog_mrg_20{
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.blog_mrg_15{
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.blog_mrg_12{
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
+.blog_initial_span{
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.blog_welc_name{
+    color: #414c62;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.1em;
+    line-height: 1.5em;
+	letter-spacing: -0.01em;
+	margin-bottom: 10px;
+}
+.blog_welc_my{
+    color: #414c62;
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.45em;
+	letter-spacing: -0.01em;
+	word-spacing: -0.02em;
+}
+.blog_welc_pres{
+    color: #414c62;
+    font-family: 'Georgia Italic';
+    font-size: 1.24em;
+    line-height: 1.4em;
+    margin-top: 10px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+.blog_welc_info_q{
+    color: #232222;
+    font-family: 'Georgia';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    font-weight: normal;
+}
+.blog_welc_info_a{
+    color: #9aafba;
+    font-family: 'Georgia';
+    font-size: 0.93em;
+    line-height: 1.36em;
+}
+.blog_welc_links{
+    color: #9aafba;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    width: 100%;
+}
+.blog_first_main{
+    float:left;
+    width: 100%;
+}
+.blog_first{
+    color: #232222;
+    font-family: 'Georgia Italic';
+    font-size: 1em;
+    float: left;
+    width: 80%;
+}
+.blog_first_header a{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #f15822;
+}
+.blog_main_date{
+    font-family: 'Georgia Italic';
+    font-size: 0.93em;
+    line-height: 0.86em;
+    color: #b3c0c9;
+}
+.blog_main_line{
+    border-bottom: 1px solid #c9d5de;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.blog_body{
+    font-family: 'Georgia';
+    font-size: 1.15em;
+    color: #232222;
+}
+.blog_vote{
+    font-family: 'Georgia Bold';
+    font-size: 1em;
+    color: #8991c8;
+}
+.blog_comment_slash{
+    float: left;
+    font-family: 'Georgia Bold';
+    font-size: 1em;
+    color: #92a3af;	
+	margin:10px 2px 0px 12px;
+}
+.blog_poll{
+    font-family: 'Georgia Bold';
+    font-size: 1em;
+    color: #232222;
+}
+.blog_seprator{
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.blog_comment_heading{
+    font-family: 'ITC Cheltenham Italic';
+    font-size: 1.28em;
+    color: #232222;
+    margin: 48px 0px 15px 0px;
+	letter-spacing: 0.05em;
+}
+.blog_username a{
+    font-family: 'Georgia Bold Italic';
+    font-size: 1em;
+    color: #f15822;
+}
+#comment_on{ 
+	letter-spacing:0.06em;
+	word-spacing:-0.05em;
+	color: #8991c8; 
+}
+#vote_div{ 
+	font-family: Georgia Bold; 
+
+}
+.dashboard_title li a{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.14em;
+    color: #232222;
+}
+.blog_user_profile{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.14em;
+    color: #0079a0;
+    float: left;
+    padding: 5px 0 0;/*5px 30px 0;*/
+    margin-top: 38px;
+    margin-bottom: 10px;
+}
+.blog_user_profile_padd{
+    float: left;
+    padding: 5px 0 0;/*5px 30px 0;*/
+}
+.prof_subheader{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1em;
+    color: #f15822;
+}
+.blog_prof_stat{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    color: #232222;
+    line-height: 1.64em;
+}
+.prof_a{
+    font-family: 'Georgia';
+    font-size: 1em;
+    color: #232222;
+    line-height: 1.64em;
+}
+.prof_q{
+    font-family: 'Georgia';
+    font-size: 1em;
+    color: #9897a6;
+    line-height: 1.64em;
+}
+.dashbord_link{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #8f8e9d;
+}
+.dashbord_link_col{
+    border-right: 1px solid;
+    width: 16%;
+    padding-right:  2.7%;
+}
+.dashbord_link_col2{
+    border-right: 1px solid;
+    width: 20%;
+    padding-left: 3%;
+    padding-right: 2.7%;
+}
+.dashbord_link_col3{
+    border-right: 1px solid;
+    width: 15%;
+    padding-left: 3%;
+    padding-right: 2.7%;
+}
+.dashbord_link_col_last{
+    width: 24%;
+    padding-left: 3%;
+}
+.blog_line_nav img{
+    margin: 5px 0px 18px 0px;
+    width: 600px;
+}
+.blog_user_profile_deshboard{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.4em;
+    color: #288cc4;
+    float: left;
+    margin-top: 38px;
+    margin-bottom: 15px;
+}
+.padd_top{
+    padding-top: 5px;
+}
+.form_labels{
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    letter-spacing: -0.02em;
+    padding-top: 7.5px;
+}
+.form_labels_advsearch{
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    letter-spacing: -0.02em;
+    padding-top: 1.5px;
+	margin-left: 5px;
+}
+.form_input{
+    background-color: #f7f5f5;
+    border: 1px solid #f7f5f5;
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;        
+    letter-spacing: -0.02px;
+    padding-left: 6px;
+    height: 30px;	
+}
+.form_select{
+    background-color: #f7f5f5 ;
+    border: 1px solid #f7f5f5;
+    color: #e9e8e6;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;        
+    letter-spacing: -0.02px;
+    padding-left: 6px;
+    height: 30px;
+}
+.form_labels_quest{
+    color: #f15822;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.1em;
+    letter-spacing: -0.01px;
+    padding-top: 7.5px;
+}
+.width_277{
+    width: 277px !important;
+}
+.width_425{
+    width: 425px;
+}
+.width_100{
+    width: 100px;
+}
+.width_170{
+    width: 170px;
+}
+.width_145{
+    width: 145px;
+}
+.width_630{
+    width: 630px;
+}
+.form_input_zip{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #658094;
+    height: 30px;
+    width: 120px;
+    margin-left: 10px;
+}
+.form_input_city{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #658094;
+    height: 30px;
+    width: 140px;
+}
+.form_label_q{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.1em;
+    line-height: 2.2em;
+    color: #f15822;
+    letter-spacing: -0.02em;
+}
+.blog_prof_subtitle{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.21em;
+    color: #232222;
+}
+#blog_rights_plus{ 
+	vertical-align: middle;
+	margin-top: -5px;
+}
+.one{
+	vertical-align: middle;
+}
+.radio_button_text{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    color: #232222;
+	line-height: 1.3em;
+}
+.blog_table_head_text{
+    color: #ffffff;
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.86em;
+}
+.prof_table_no{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #f15822;
+}
+.prof_table_sub{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #786881;
+}
+.prof_table_stat{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #48addb;
+}
+.prof_table_act{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #f15822;
+}
+.blog_art_stat{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    letter-spacing: -1em;
+    color: #232222;
+}
+.blog_save_btn{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll 0 0 / 45px 19px;
+    height: 19px;
+    width: 45px;
+    border: none;
+    margin-left: 10px !important;
+}
+.article_content_maindiv{
+    float: left;
+    margin-left: 20px;
+}
+.mbottom_article{
+	margin-bottom: 21px;
+}
+/*
+    Blog css ends here
+*/
+/* profiler start */
+#blog_list_profiler_page ul{
+    display: inline;
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#blog_list_profiler_page ul li{
+    display: inline;
+    float: left;
+    /*font-size: 12px;*/
+    margin: 0;
+    /*padding: 7px 0 4px;*/
+    position: relative;
+}
+#blog_list_profiler_column_row .first{
+    padding-left:5px;
+}
+.width_36{
+    width: 36px;
+}
+.width_88{
+    width: 88px;
+}
+.width_71{
+    width: 71px;
+}
+.width_49px{
+    width: 49px;
+}
+.width_76px{
+    width : 76px;
+}
+.padding_right_17px{
+    padding-right:17px !important;
+}
+.padding_right_10px{
+    padding-right:10px !important;
+}
+.padding_right_13px{
+    padding-right:13px !important;
+}
+.padding_right_2px{
+    padding-right:2px !important;
+}
+.padding_right_5px{
+    padding-right:5px !important;
+}
+.padding_right_22px{
+    padding-right:22px !important;
+}
+.padding_left_5px{
+    padding-left:5px !important;
+}
+.bolg_table_name{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #f15822;
+}
+.blog_table_label{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #7f99c3;
+}
+.blog_table_post_r{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #f15822;
+}
+.blog_table_votes{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #6e85aa;
+}
+.blog_table_inlog{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.2em;
+    color: #6e85aa;
+}
+.height_260px{
+    height: 260px !important;
+}
+.width_337px{
+    width: 337px;
+}
+/* profiler end */
+.blog_art_heading{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.14em;
+    line-height: 1.2em;
+    color: #f15822;
+}
+.blog_prof_entry{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #8d8d8d;
+}
+.blog_profile_crop_reply{
+	margin-top: -8px
+}
+.blog_invisible_input{
+    border-width: 0;
+}
+.height_130px{
+    height: 130px !important;
+}
+.blog_pro_header_all {
+    color: #0079a0;
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.21em;
+    letter-spacing: 0.02em;
+    line-height: 1.86;
+}
+.blank4h{
+    height:4px;
+}
+.blank57h{
+    height:57px;
+}
+.blank36h{
+    height:36px;
+}
+
+/*blog detail page start*/
+.blog_post_date{
+    color: #b3c0c9;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    line-height: 1.86em;
+}
+.width_585px{
+    width: 585px !important;
+}
+.textAlignRight{
+    text-align: right;
+}
+.fontItalic{
+    font-style: italic;
+}
+.blog_first_header{
+    color: #f15822;
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.28em;
+    line-height: 1.5em;
+	letter-spacing: -0.01em;
+    margin-top: 25px;
+}
+.blog_first_header_list{
+    color: #f15822;
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.28em;
+    line-height: 1.5em;
+	letter-spacing: -0.01em;
+    margin-top: 9px;
+}
+.blog_first_header_list a{
+    /*font-family: 'ITC Cheltenham Book';
+    font-size: 1.28em;
+    line-height: 1.5em;*/
+    color: #f15822;
+}
+.blank_33h{
+    height: 33px;
+}
+.height_2px{
+    height: 2px !important;
+}
+.width_490px{
+    width: 490px !important;
+}
+.paddingLeft0px{
+    padding-left: 0px !important;
+}
+#myaccount_data_container table tr td{
+    border-bottom: 1px solid #e1dfe1;
+}
+.marginBottom0px{
+    margin-bottom: 0px !important;
+}
+.blogCommentTextArea{
+    padding: 22px 23px 21px;
+    /*border: 0 solid #232222;*/
+    margin: 0;
+    resize: both;
+    width: 443px !important;
+}
+.orangefont{
+    color: #f15822
+}
+.prof_table_download{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #f15822;
+}
+.blog_input_title{
+    color: #232222;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+.blog_input_bread{
+    color: #232222;
+    font-family: "Georgia Regular";
+    font-size: 1em;
+    letter-spacing: -0.01em;
+    line-height: 1.5em;
+}
+.prof_email_y{
+    font-family: "Franklin Gothic Book Regular";
+    color: #7f99c3;
+    font-size: 0.93em;
+}
+.pro_email_n{
+    font-family: "Franklin Gothic Book Regular";
+    color: #f15822;
+    font-size: 0.93em;
+}
+.width_350{
+    width: 350px;
+}
+.prof_table_sub a{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.36em;
+    color: #7f99c3;
+}
+.dashbord_link span .selectedtab{
+    color: #f15822;
+}
+.blog_heading{
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.14em;
+    color: #0079a0;
+}
+.blog_input_subtitle{
+    /*font-family: 'Franklin Gothic Medium';*/
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em !important;
+    color: #232222;
+}
+.blog_td_border{
+    border-bottom:1px solid #ced2d0;
+}
+/*blog detail page end*/
+/*9-10-16 N*/
+.width_600px{
+    width: 600px !important;
+}
+.height_39px{
+    height: 39px !important;
+}
+.contactus-inputs{
+    /*background-color: #f7f9fb;
+    border: 1px solid #b9bdbc;*/
+    /*margin: 3px 0 0;*/
+    /*padding-left: 5px !important;*/
+}
+.border-radius-5px{
+    border-radius: 5px;
+}
+.margin_top_10{
+    margin-top: 10px;
+}
+.width_70per{
+    width:70%
+}
+.margin_lft_117{
+    margin-left: 117px;
+}
+.margin_lft_110{
+    margin-left: 110px;
+}
+/*9-10-16 N end*/
+.blogright_heading .blog_welc_info_a{
+    cursor: pointer;
+}
+.lineht_25{
+    line-height: 25px;
+}
+.margin_top_7{
+    margin-top: 7px;
+}
+.margin_top_6{
+    margin-top: 6px;
+}
+.width_65{
+    width: 65px;
+}
+.redColor{
+	
+    color: red;
+}
+.redBorder{
+    border: 0.5px solid red;
+}
+.registrationValidField{
+    background: url('../images/right_green.png') no-repeat;
+    padding: 14px 1px 9px 19px;
+    background-position: center center;
+}
+.ptop_11{
+    padding-top: 11px;
+}
+.margin_lft_24{
+    margin-left: 24px;
+}
+.margin_lft_20{
+    margin-left: 20px;
+}
+.margin_reg_ei{
+    margin: 0px 0px 0px 25px;
+}
+.margin_reg_ey{
+    margin: 0px 0px 0px 10px;
+}
+.height_17{
+    height: 17px !important;
+}
+.height_18{
+    height: 18px !important;
+}
+.border-radius-3px{
+    border-radius: 3px;
+}
+.border-none{
+    border:transparent;
+}
+.width_59{
+    width: 59px;
+}
+.margin_rgt_0{
+    margin-right: 0px;
+}
+.mrg_top_23{
+    margin-top:23px;
+}
+.mrg_top_logo_head{
+    margin-top:22px;
+}
+.line_height0{
+    line-height: 0px;
+    display: inline-block;
+}
+.closePopup{
+    background: url('../images/new_home/popup-close.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+	background-size:calc(100%)
+}
+.top_nine_article ul{
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.top_nine_article ul li{
+    list-style: none;
+}
+.width223{
+    width: 223px;
+}
+.margin_rgt_19{
+    margin-right: 19px;
+}
+.copyright_div{
+    width:1010px;
+    height: 31px;
+    margin-left: -22px!important;
+}
+.margin_bottom_72{
+    margin-bottom: 72px;
+}
+.margin_bottom_92{
+    margin-bottom: 92px;
+}
+#shop_rightbanner{
+    /*border-left: 1px solid #d3d3d3;*/
+    padding-top: 0;
+}
+.min_height_36px{
+    min-height: 36px;
+}
+.forum_post_arrow{
+    background: url("../images/new_home/arrow_orange-right.png") no-repeat scroll;
+    width: 6px;
+    height: 16px;
+    float: right;
+    background-size: 5px;
+    background-position: 0px 3px;
+    margin-left: 6px;
+}
+.forum_post_brcr{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #f7941d;
+    line-height: 1.07em;
+    float:left;
+    margin-top:8px;
+    width: 57%;
+}
+.forum_post_brcr ul{
+    float: left;
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 0px 0 0 0;
+    display: inline;
+    font-size: 0.93em;
+}
+.forum_post_brcr ul li{
+    float: left;
+    position: relative;
+    margin-top: -3px;
+    padding: 0px 0 0 0;
+    list-style-type: none;
+    letter-spacing: 0.02em;
+}
+.mrg_top_24{
+    margin-top: 24px;
+}
+.mrg_left_70{
+    margin-left: 70px;
+}
+.lista_mrg_top_7{
+    margin-top: 7px;
+}
+.shopphoto img{
+    width:135px;
+}
+.kr_wrapper{
+    margin: 23px 0px 0px 26px;
+}
+.add_to_cart{
+    font-family: 'Franklin Gothic Book Regular';
+	font-size: 0.93em;
+    letter-spacing: 0.01em;
+    color: #f15822;
+}
+.add_to_cart img{
+    margin-bottom: 2px;
+}
+.add_to_cart_margin{
+    margin: 3px 0px 0px 3px;
+}
+.wide_div .infoWrapper{
+    width:297px;
+    margin-left:26px;
+    float:left;
+}
+.wide_div .shopphoto{
+    padding: 0px;
+}
+.wide_div.shop_line_prod{
+    min-height: 182px;
+}
+.margin_top_12imp{
+    margin-top: 12px !important;
+}
+.authHeightImp{
+    height: auto !important;
+    margin-bottom: 20px;
+}
+.edit_this{
+    font-family: 'Franklin Gothic Book Regular';
+    color: #f15822;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.blog_drop-down-menus ul li{
+    padding : 0px !important;
+}
+.wide_div .shopsmallblockifo{
+    height: auto;
+}
+input.reg{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/reg.png") no-repeat scroll;
+    height: 19px;
+    width: 71px;
+    border: none;
+    /*margin-top: 12px;*/
+    cursor: pointer;
+    background-size: 71px 19px;
+}
+input.advsearch_reset{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/re-set.png") no-repeat scroll;
+    height: 20px;
+    width: 62px;
+    border: none;
+    background-size: 62px 20px;
+}
+input.sok{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/seek.png") no-repeat scroll;
+    height: 20px;
+    width: 34px;
+    border: none;
+    background-size: 34px 20px;
+}
+.lastDiv{/*margin-bottom:7px;*/}
+input.send_contact{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    cursor: pointer;
+    background-size: 49px 19px;
+}
+.loading{
+    background-image:url(../images/loader.gif);
+    height: 55px;
+    width: 54px;
+}
+.margin_top_23px{
+    margin-top:23px;
+}
+#pop-box-over {
+    background: none repeat scroll 0 0 #232222;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    float: left;
+    height: 130ch;
+    left: 0;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 1200px;
+    display:none;
+}
+.loader_posiotion{
+    left:-13%;
+    top:50%;
+    position:fixed;
+}
+.my_visibility_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    background-size: 45px 19px;
+}
+.my_e_newsletter_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    background-size: 45px 19px;
+}
+.header_annons{
+    float: right;
+    margin-right: 265px;
+    height: 16px;
+    margin-top: 2px;
+}
+.article_leftinner_marginTop_6px{
+   /*margin-top:6px;*/
+}
+.print_ancr{ margin: -3px 0px 0px 10px;}
+
+.navBar_third a span:hover{
+    border-bottom: 5px solid #29282a;
+    padding-bottom: 2px;
+}
+.mrg_toop_32{
+    margin-top: 32px;
+}
+.related_article_date{
+    color:#000;
+	vertical-align:top;
+}
+.related_article_title{
+    color:#000 !important;
+	letter-spacing: 0.02em;
+}
+.margin-right{margin-right: 10px;}
+.margin-right-3{margin-right: 3px;}
+input.newsletter_reg{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/reg.png") no-repeat scroll;
+    height: 19px;
+    width: 71px;
+    border: none;
+    cursor: pointer;
+    background-size: 71px 19px;
+}
+.margin_top_12{
+    margin-top: 12px;
+}
+input.send_forgetpass{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    background-size: 49px 19px;
+}
+.send_article{
+    background: url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    background-size: 49px 19px;
+}
+.send_blog{
+    background: url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    background-size: 49px 19px;
+}
+.padding_left_24px{
+    padding-left: 24px !important;
+}
+.padding_left_28px{
+    padding-left: 28px !important;
+}
+.adv_cal_input{
+    width: 90px;
+    margin-right: 3px;
+}
+.till{
+    width: 23px;
+    text-align: center;
+	padding-top: 9px
+}
+.mrg_btm_5{
+    margin-bottom: 5px;
+}
+.adv_search_inputs{
+    /*background-color: #f7f9fb;
+    border: 1px solid #b9bdbc;*/
+    /*margin: 3px 0 0;*/
+    /*padding-left: 8px !important;*/
+}
+.padding_0imp{
+    padding: 0px !important;
+}
+.bottom_shop_cart{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1em;
+    line-height: 1.26em;
+    letter-spacing: -0.01em;
+    margin-top: 2.3px;
+    color: #febc11;
+}
+.bottom_shop_rub2{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #0066a8;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_ingress2{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #829fcb;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_price2{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #0066a8;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_rub1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #f15822;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_ingress1{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #f9a980;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_price1{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0.86em;
+    line-height: 1.1em;
+    letter-spacing: -0.01em;
+    color: #f15822;
+    text-align: center;
+    width: 100%;
+}
+.bottom_shop_border{
+    border-bottom: 2px solid #ffffff;
+    float: left;
+    width: 100%;
+	margin: -14px 0px 2px 0px;
+}
+.bottom_shop_border2{
+   /* border-bottom: 3px solid #c9d0cf;*/
+    float: left;
+    width: 100%;
+    margin-top: 4px;
+}
+.home_footer_divider{
+    float: left;
+    width: 100%;
+    height: 5px;
+}
+.article_details_ad_wrap{
+    float: left; width:650px;
+}
+.article_pict_mrg{
+    margin: 32px 0px -7px 0px;
+	}
+.width648{
+    width: 648px;
+}
+.width_650{
+    width: 650px;
+}
+#blog_topic_list ul{
+    /*margin: 0 0 0 1px;*/
+}
+.width_584px{
+    width: 584px;
+}
+.blog_prof_detail{
+    width: 523px;
+}
+#blog_list_profiler_page{
+    width: 560px;
+}
+.cookie_bg{
+    width: 100%;
+    background-color: #ffcf01;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 7px;
+    display: none;
+}
+.cookie{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.14em;
+    color: #f15822;
+    float: left;
+    margin-left: 101px;
+}
+.cookie_link{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.14em;
+    color: #ffffff;
+    float: left;
+    margin-left: 3px;
+}
+.cookie_button_bg{
+    background-color: #f15822;
+    border-radius: 12px;
+    padding: 1px 18px 3px;
+    margin-left: 7px;
+    margin-top: -1px;
+    float: left;
+    cursor: pointer;
+}
+.cookie_button{
+    font-family: 'Franklin Gothic Medium';
+    font-size: 1.57em;
+    color: #ffffff;
+}
+.cookie_wrap{
+    padding-top: 10px;
+    text-align: center;
+}
+.forum_drop-down-menu_page{
+    /*color: #3a4769;
+    cursor: pointer;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    height: 284px;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    list-style: outside none none;
+    overflow-y: scroll;
+    padding-right: 9px;
+    text-align: right;
+    width: 64px;*/
+}
+.forum_popup_pagination_wrapper_new {
+    background-color: #dfe5e8;
+    border-radius: 4px;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+    display: none;
+    float: left;
+    position: absolute;
+    text-align: center;
+    top: 19px;
+    z-index: 999;
+    height:310px;
+    width:78px;
+}
+.margin_top_4{
+    margin-top:4px;
+}
+.top_0px{
+    top: 0px;
+}
+.shop_guide_active{
+    color: #637281;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: -0.01em;
+    line-height: 4px;
+    margin-left: 7px;
+}
+.shop_guide_passive{
+    color: #dddfe9;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: -0.01em;
+    line-height: 4px;
+    margin-left: 7px;
+}
+.width_31_25{
+    width:31.25px;
+}
+.bt-shop-step-top-margin{
+    height: 29px;
+}
+.marginBottom13{
+    margin-bottom: 13px;
+}
+.bt-shop-step-bottom-margin{
+    height: 45px;
+}
+.shop_note{
+    color: #f15822;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: -0.01em;
+    margin: 32px 0px 0px 25px;
+}
+.shop_1_step_right_panel{
+    background: url("../images/new_home/shop_pattern_baskets.png");
+    left: -14px;
+    position:relative;
+    background-size: 330px;
+    width:330px;
+    height:100%;
+}
+.right_border_payment_type_d3d3d3{
+    border-right: 1px solid #d3d3d3;
+}
+.margin_left_0{
+    margin-left: 0px !important;
+}
+.clear_none{
+    clear: none;
+}
+.width9_2per{
+    width:9.2% !important;
+}
+.width_108{
+    width: 108px;
+}
+.contactUsreadmore{
+    background: rgba(0, 0, 0, 0) url("../images/addplusicon.png") repeat scroll;
+    float: left;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-size: 16px;
+}
+.contactUsreadLes{
+    background: rgba(0, 0, 0, 0) url("../images/minusucon.png") repeat scroll;
+    float: left;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    background-size: 16px;
+}
+/*#borst_desc_div img{
+    margin-left: -50px;
+}*/
+.blog_head_wrap{
+    float: left;
+    background-color: #d1d1d8;
+    width: 100%;
+}
+.blog_head_title{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.86em;
+    line-height: 1.4em;
+	letter-spacing: 0.02em;
+    color: #232222;
+    margin: 20px 0px 25px 0px;
+}
+.blog_head_text{
+    font-family: 'Georgia';
+    font-size: 1.57em;
+    line-height: 1.2em;
+    padding: 18px 22.5px 30px 22.5px;
+
+}
+.blog_head_caption{
+    font-family: 'Georgia';
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #8695a0;
+	margin-top: 10px;
+}
+.blog_first_detail{
+    font-family: 'Georgia Italic';
+    font-size: 0.93em;
+    line-height: 0.86em;
+    color: #b3c0c9;
+    float: left;
+    margin: 5px 0px 0px 245px;
+}
+.blog_first_detail a{
+    color: #8991c8;
+}
+.blog_first_detail_date{
+    font-family: 'Georgia Italic';
+    font-size: 0.93em;
+    line-height: 0.86em;
+    color: #b3c0c9;
+    float: left;
+    margin: 5px 0px 0px 15px;    
+}
+.blog_fav_wrap{
+    float: left;
+    margin-top: 5px;
+}
+.blog_head_text_wrap{
+    background-color: #ffffff;
+    float: right;
+    width: 230px;
+    -webkit-box-shadow: 0 8px 8px -6px black;
+    -moz-box-shadow: 0 8px 8px -6px black;
+    box-shadow: -6px 8px 8px -6px black;
+    border-bottom-left-radius: 2px; 
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
+.edit_blog_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    background-size: 45px 19px;
+}
+.blogdetail_desc p{
+    margin-top: 6px;
+}
+.blog_head_edit_profile{
+    font-family: 'Georgia Italic';
+    font-size: 0.93em;
+    line-height: 0.93em;
+    color: #8991c8;
+    margin-bottom: 5px;
+    margin-top: 18px;
+}
+.blog_head_edit_profile a{
+    color: #73829c;
+}
+.bhc_h{
+    float: left;
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+.comment_user_img{
+    width: 74px;
+}
+.blog1advrt p{
+	line-height: 1.8em;
+}
+/*
+    ask-BT css start here
+*/
+.askBT_title{
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.75em;
+    color:#0e284c;
+	letter-spacing: -0.02em;
+    margin: -1px 0px 13px 24px;
+}
+.askBT_nav{
+    font-family: "Franklin Gothic Book Condensed";
+    font-size: 0.93em;
+    line-height: 1.2em;
+    letter-spacing: -0.01em;
+    color:#00e3fb;
+    margin-bottom: 12px;
+} 
+.askBT_table_topic{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.8em;
+    color: #232222;
+    line-height:1.9em;
+	text-transform:uppercase;
+	letter-spacing: 0.08em;
+	
+}
+.askBT_table_date{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.askBT_table_time{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.askBT_table_post{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #0bb342;
+    line-height:1.2em;
+}
+.askBT_table_views{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #a7a6b7;
+    line-height:1.2em;
+}
+.askBT_pag{
+    color: #9a9ba7;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.82em;
+    letter-spacing: 0.02em !important;
+    line-height: 19px;
+    margin: 7px 0 7px 1px;
+}
+.askBT_table_user{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.93em;
+    color: #00aeef;
+    line-height:1.2em;
+	font-style:italic;
+}
+.askBT_table_title{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #0bb342;
+    line-height:1.2em;
+}
+.askBT_post_head{
+    font-family: "ITC Cheltenham Book";
+    font-size: 1.4em;
+    color: #f7941d;
+    line-height: 2em;
+}
+.askBT_post_start{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    color: #232222;
+    line-height: 15px;
+}
+.askBT_post_start_name{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    line-height: 15px;
+	margin-right:2px;
+    color: #232222; 
+	text-transform:uppercase;
+	letter-spacing: 0.03em;
+}
+.askBT_comment_user_name a{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color:#232222 !important;
+    line-height: 14px;
+    letter-spacing: 0.02em !important;
+}
+.askBT_user_left{    
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #00609c;
+    padding-left: 10px;
+}
+.askBT_user_right{    
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #00609c;
+    margin-right:5px;
+} 
+.askBT_admin_left{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #ffffff;
+    padding-left: 10px;
+}
+.askBT_admin_right{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #ffffff;
+} 
+.askBT_table_head{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #fff;
+    background-color: rgb(11, 179, 66);
+    border-top:none !important;
+    height:25px;
+}
+.askBT-menu-logo{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/askBT_logo.png") no-repeat scroll left;
+    height: 71px;    
+    width: 172px;
+    float:left;
+    background-size: 166px;
+    margin: 2px 0px 0px -7px;
+}
+.askBTNew{
+    float:left;
+}
+.askBTNew ul{
+    margin:0px;
+    padding:0px;
+    margin: 0 5px 0 3px;
+}
+.askBTNew ul li{
+    display: block;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    line-height: 1.21em;
+    letter-spacing: -0.01em;
+    width: 85px;
+    border-right: 1px solid #0bb342; 
+}
+.askBTNew ul li a:hover,.askBTNew_tabs ul li a.selectedtab{
+    /*border-bottom: 1px solid #fff;*/
+    padding-bottom: 1px;
+    color: #f7941d;
+}
+.askBTNew_tabs{
+	margin-left:18px;
+}
+.askBT-menu-wrapper{
+    height: 90px;
+    /*padding-left: 15px;*/
+    width: 623px;
+    padding: 16px 13px 8px 10px;
+	/*background: #e2e41a;*/
+}
+.askBT-menu-wrapper a{
+    color: #0bb342;
+}
+.width181{
+    width:29.5%;
+}
+.askBT_title_div{
+    float: right;
+    width: 70%;
+}
+.askBT-menu-active-logo{
+    background:url("../images/new_home/askBT.png") no-repeat scroll left;
+    height: 33px;
+    width: 85px;
+    float:right;
+    margin-right: -18px;
+    margin-top: -19px;
+    background-size: 85px;
+}
+#last_ul_askBT li{width: 60px;border-right: medium none;}
+#first_ul_askBT{ margin-left: 8px;}
+.border_left_askBT{
+	border-left: 1px solid #0bb342; 
+	margin-left: 22px;
+}
+.askBT-active-logo-div{float: right; }
+/*#enquiry_content{border-bottom: 1px solid #0bb342;}*/
+.askBT_comment_user_name{
+    font-family: "Franklin Gothic Medium";
+    font-size: 0.86em;
+    color:#232222 !important;
+    line-height: 14px;
+    letter-spacing: -0.01em !important;
+    padding-top: 8px;
+    padding-bottom: 10px;
+	border-radius: 5px;
+}
+.askBT_user_left{    
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #3e637a;
+    padding-left: 7px;
+}
+.askBT_user_right{    
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #3e637a;
+    margin-right:5px;
+} 
+.askBT_admin_left{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #ffffff;
+    padding-left: 7px;
+}
+.askBT_admin_right{
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    color: #ffffff;
+    margin-right:5px;
+}
+.askBT_user_question img{
+	float: left; 
+	margin:0px 70px 0px -2px;
+   	max-width: 120px;
+    rubrikmax-height: 120px;
+    border-radius: 5px;
+}
+.askBT_background_img{
+    background: url('/images/new_home/askBT_fig.png') repeat-y;
+    background-size: 3em;
+    background-position: right top -5px;
+    float: left;
+    margin-right: 5px;
+    
+}
+/*
+    ask-BT css end here
+*/
+/*
+    Site map css start here
+*/
+.sitemap_bg{
+    background: url('/images/new_home/sitemap1.png') no-repeat;
+    background-size: 30em 30em;
+}
+.sitemap_wrap{
+    margin-left: 112px;
+    float: left;
+    width: 858px;
+	padding-bottom: 90px;
+}
+.sitemap_title{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 3em;
+    letter-spacing: -0.01em;
+    color: #232222;
+    text-align: center;
+    margin-left: -130px;
+}
+.sitemap_shop_subtitle{
+    font-family: 'Frankling Gothic Medium';
+    font-size: 1.14em;
+	line-height: 1.64em;
+    letter-spacing: -0.01em;
+    color: #f15822;
+    /*text-align: center;*/
+    margin-left: -185px;
+}
+.sitemap_button_wrap{
+    float: left;
+    margin-top: 46px;
+}
+.sitemap_button_wrap ul{
+    padding-left: 0;
+    margin: 0;
+}
+.sitemap_button_wrap ul li{
+    list-style: none;
+}
+.sitemap_button_1st{
+    width: 122px;
+    height: 34px;
+    background-color: #005baa;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_1st ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_2nd{
+    width: 122px;
+    height: 34px;
+    background-color: #FEBC11;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_2nd ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_3rd{
+    width: 122px;
+    height: 34px;
+    background-color: #1c92af;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_3rd ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_4th{
+    width: 122px;
+    height: 34px;
+    background-color: #F7941D;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_4th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_5th{
+    width: 122px;
+    height: 34px;
+    background-color: #f15822;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_5th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_6th{
+    width: 122px;
+    height: 34px;
+    background-color: #f15822;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_6th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_7th{
+    width: 122px;
+    height: 34px;
+    background-color: #00e3fb;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_7th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_8th{
+    width: 122px;
+    height: 34px;
+    background-color: #7F8CB9;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_8th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_9th{
+    width: 122px;
+    height: 34px;
+    background-color: #A6CC39;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_9th ul li a:hover{
+    color: #A6CC39;
+}
+.sitemap_button_9th{
+    width: 122px;
+    height: 34px;
+    background-color: #A6CC39;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_9th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_button_10th{
+    width: 122px;
+    height: 34px;
+    background-color: #0bb342;
+    border-radius: 4px; 
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.sitemap_button_10th ul li a:hover{
+    color: #000000;
+	font-family: "Franklin_Gothic_Bold";
+}
+.sitemap_1st{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.07em;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.sitemap_1st a{
+    color: #ffffff;
+	letter-spacing: 0.03em;
+}
+.sitemap_text_wrap_1st{
+    margin-top: 41px;
+}
+.sitemap_text_wrap_2nd{
+    float: left;
+    margin-left: 40px;
+    margin-top: 33px;
+}
+.sitemap_text_wrap_3rd{
+    float: left;
+    margin-left: 67px;
+    margin-top: 70px;    
+}
+.sitemap_text_wrap_4th{
+    float: left;
+    margin-left: 67px;
+    margin-top: 33px;    
+}
+.sitemap_3rd{
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.2em;
+    letter-spacing: -0.01em;
+    color: #f15822;
+    cursor: pointer;
+}
+.sitemap_3rd a{
+	font-family: 'Franklin Gothic Medium';
+    color: #232222;
+}
+.sitemap_col_text{
+    margin-bottom: 18px;
+}
+.sitemap_text_col_2nd{
+    margin-bottom: 18px;
+}
+.sitemap_text_col_3rd{
+    margin-bottom: 18px;
+}
+.sitemap_text_col_4th{
+    margin-bottom: 18px;
+}
+.sitemap_plus{
+    float: left;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.sitemap_img_wrap{
+    float: left;
+    margin-left: 42px;
+}
+.sitemap_img{
+    background-image: url('../images/new_home/sitemap1.png');
+    width: 595px;
+    height: 536px;
+    margin-top: -50px;
+}
+.sitemapborst_wrap{
+    /*display: none;*/
+}
+.sitemapborst_wrap ul li{
+    list-style: none;
+}
+.sitemapborst_wrap ul li:hover{
+    color: #1968B1;
+}
+.sitemapborst_wrap{
+    float: left;
+    position: relative;
+    margin-top: 95px;
+}
+.sitemapborst_wrap ul{
+    padding-left: 0px;
+    margin-top: 12px;
+}
+.sitemap_2nd{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.64em;
+    letter-spacing: -0.01em;
+    color: #73829c;
+}
+.sitemap_2nd a{
+    color: #73829c;
+}
+.sitemap_nav_line{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #1968B1;
+}
+.sitemap_nav_line_2nd{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #febc11;
+}
+.sitemap_nav_line_3rd{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #1c92af;
+}
+.sitemap_nav_line_4th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #f7941d;
+}
+.sitemap_nav_line_5th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #f15822;    
+}
+.sitemap_nav_line_6th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #f15822;    
+    margin-top: 13px;
+}
+.sitemap_nav_line_7th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #00e3fb;    
+    margin-top: 13px;
+}
+.sitemap_nav_line_8th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #7f8cb9;    
+    margin-top: 13px;    
+}
+.sitemap_nav_line_9th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #a6cc39;    
+    margin-top: 13px; 
+}
+.sitemap_nav_line_10th{
+    width: 114px;
+    height: 3px;
+    margin-bottom: 12px;
+    background-color: #0bb342;    
+    margin-top: 13px; 
+}
+.sitemap_detail{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.14em;
+    line-height: 1.64em;
+    letter-spacing: -0.01em;
+    color: #232222;
+    display: none;
+}
+.sitemap_detail_wrap{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 34px;
+    position: absolute;
+}
+.sitemap_detail_wrap_btshop{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 70px;
+    position: absolute;
+}
+.sitemap_detail_wrap_btcharts{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 106px;
+    position: absolute;
+}
+.sitemap_detail_wrap_forum{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 141px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_blog{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 176px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_profile_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 240px;
+    position: absolute;
+}
+.sitemap_detail_wrap_profile_second{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 214px;
+    position: absolute;
+}
+.sitemap_detail_wrap_profile_third{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 240px;
+    position: absolute;
+}
+.sitemap_detail_wrap_profile_fourth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 188px;
+    position: absolute;
+}
+.sitemap_detail_wrap_profile_fifth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 214px;
+    position: absolute;
+}
+.sitemap_detail_wrap_klubben_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 250px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_klubben_second{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 250px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_klubben_third{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 225px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_klubben_fourth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 225px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_klubben_fifth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 225px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_second{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_third{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_fourth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_fifth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_din_artikel_sixth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 312px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 322px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_second{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 322px;
+    position: absolute;
+}
+.sitemap_detail_wrap_utbildningar_third{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 296px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_fourth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 322px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_fifth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 296px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_sixth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 322px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_utbildningar_seventh{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 270px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 359px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_second{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 332px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_third{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 359px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_fourth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 359px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_fifth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 359px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_sixth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 332px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_seventh{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 384px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_eighth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 358px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_nineth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 332px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_tenth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 358px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_eleventh{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 358px;
+    position: absolute;    
+}
+.sitemap_detail_wrap_fraga_twelveth{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 384px;
+    position: absolute;    
+}
+.sitemap_button_wrap li ul{
+    display: none;
+}
+.sitemap_button_wrap li:hover > ul {
+    display: block;
+    position: absolute;
+}
+.sitemap_button_1st ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+}
+.sitemap_button_2nd ul{
+    margin-left: 122px;
+    width: 180px;    
+    z-index: 9999;
+}
+.sitemap_button_2nd ul{
+    margin-left: 122px;
+    width: 180px;    
+    z-index: 9999;
+}
+.sitemap_button_3rd ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+}
+.sitemap_button_4th ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+}
+.sitemap_button_5th ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+}
+.sitemap_button_6th ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+    margin-top: -89px;
+}
+.sitemap_button_7th ul{
+    margin-left: 122px;
+    width: 160px;
+    z-index: 9999;
+    margin-top: -89px;
+}
+.sitemap_button_8th ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+    margin-top: -110px;
+}
+.sitemap_button_9th ul{
+    margin-left: 122px;
+    width: 174px;
+    z-index: 9999;
+    margin-top: -131px;
+}
+.sitemap_button_10th ul{
+    margin-left: 122px;
+    width: 144px;
+    z-index: 9999;
+    margin-top: -238px;
+}
+.bt_shop_subcat{
+    width: 100% !important;
+    float: left;
+    margin-top: -68px !important;
+}
+.bt_shop_subcat_third{
+    width: 100% !important;
+    float: left;
+    margin-top: -88px !important;
+}
+.bt_shop_subcat_fourth{
+    width: 100% !important;
+    float: left;
+    margin-top: -108px !important;    
+}
+/*.sitemap_button_2nd ul li span:hover{
+    color: #febc11;
+}*/
+
+.borstlink{
+    float: left;
+}
+.sitemap_detail_text_bg{
+    width: 310px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: absolute;
+    margin-left: 264px;
+    margin-top: 226px;
+    display: none;
+	border: 1px solid #a6a9ab;
+}
+.sitemap_detail_text{
+    margin: 30px 33px 43px 33px;
+    display: none;
+}
+.sitemap_info{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1em;
+    line-height: 1.3571em;
+    letter-spacing: -0.01em;
+    color: #232222;
+    margin-top: 10px;
+}
+.sitemap_plus_detail{
+    width: 340px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-left: 502px;
+    margin-top: 226px;
+    position: absolute;
+    display: none;
+	border: 1px solid #a6a9ab;
+}
+.borstbtshop_abonnemang_title_text_0{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -28px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_abonnemang_detail_text_0{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: 0px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_abonnemang_title_text_1{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -48px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_abonnemang_detail_text_1{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -22px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_abonnemang_title_text_2{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -68px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_abonnemang_detail_text_2{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -48px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_abonnemang_title_text_3{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -88px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_abonnemang_detail_text_3{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -47px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_abonnemang_title_text_4{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -108px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_abonnemang_detail_text_4{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -67px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_0{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -28px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_0{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -1px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_1{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -48px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_1{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -22px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_2{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -68px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_2{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -42px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_3{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -88px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_3{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -64px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_4{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -108px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_4{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -86px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_5{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -128px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_5{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -108px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_6{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -148px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_6{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -110px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_7{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -168px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_7{
+    display: block;
+    margin-left: 99px;
+   /* margin-top: -128px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_8{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -188px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_8{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_9{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -208px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_9{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_10{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -228px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_10{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_11{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -248px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_11{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_12{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -268px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_12{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_13{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -288px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_13{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_14{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -318px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_14{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_utbildningar_title_text_15{
+    font-family: Franklin Gothic Medium;
+    font-size:1.2em;
+    line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -338px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_utbildningar_detail_text_15{
+    display: block;
+    margin-left: 99px;
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_metastock_title_text_0{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -28px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_metastock_detail_text_0{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: 0px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_metastock_title_text_1{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -48px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_metastock_detail_text_1{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: 0px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_metastock_title_text_2{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -68px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 370px;
+    color: #febc11;
+}
+.borstbtshop_metastock_detail_text_2{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -43px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_metastock_title_text_3{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -88px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_metastock_detail_text_3{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -64px;*/
+    position: relative;
+    width: 264px;
+}
+.borstbtshop_metastock_title_text_4{
+	font-family: Franklin Gothic Medium;
+	font-size:1.2em;
+	line-height: 1.3571em;
+    display: block;
+    margin-left: 99px;
+    margin-top: -108px;
+	margin-bottom: 6px;
+    position: relative;
+    width: 264px;
+    color: #febc11;
+}
+.borstbtshop_metastock_detail_text_4{
+    display: block;
+    margin-left: 99px;
+    /*margin-top: -63px;*/
+    position: relative;
+    width: 264px;
+}
+.sitemap_sublink{
+    margin-left: 20px;
+}
+.sitemap_btn_detail{
+    display: none;
+}
+.sitemap_btn_detail{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.14em;
+    line-height: 1.64em;
+    letter-spacing: -0.01em;
+    color: #232222;
+}
+.sitemap_btn_detail_wrap{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 34px;
+    position: absolute;
+}
+.sitemap_btn_detail_wrap_btshop{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 70px;
+    position: absolute;
+}
+.sitemap_btn_detail_wrap_btcharts{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 106px;
+    position: absolute;
+}
+.sitemap_btn_detail_wrap_forum{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 141px;
+    position: absolute;    
+}
+.sitemap_btn_detail_wrap_blog{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 176px;
+    position: absolute;    
+}
+.sitemap_btn_detail_wrap_profile_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 136px;
+    position: absolute;
+}
+.sitemap_btn_detail_wrap_klubben_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 250px;
+    position: absolute;    
+}
+.sitemap_btn_detail_wrap_din_artikel_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 286px;
+    position: absolute;    
+}
+.sitemap_btn_detail_wrap_utbildningar_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 322px;
+    position: absolute;    
+}
+.sitemap_btn_detail_wrap_fraga_first{
+    width: 264px;
+    float: left;
+    margin-left: 301px;
+    margin-top: 333px;
+    position: absolute;    
+}
+.sitemap_shop_detail{
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    line-height: 1.64em;
+    letter-spacing: -0.01em;
+    color: #232222;
+}
+
+/*
+    Site map css end here
+*/
+.height_25{
+    height: 25px;
+}
+.radio-mrg{
+    margin-left: -5px;
+}
+
+#container .popup_left{border-bottom-left-radius: 6px; border-top-left-radius: 6px; box-shadow: 2px 2px 12px #eae8e8; background-color: #4f88f9; width:40px;height: 546px; float: left; }
+#container .popup_right{border-bottom-left-radius: 6px; border-top-left-radius: 6px; border-bottom-right-radius: 6px; border-top-right-radius: 6px;  box-shadow: 2px 2px 12px #8d8d8d; background-color: #2160dd; width:600px;height: 546px;}
+#container .pop_title{font-family: 'Franklin Gothic Book Regular';    font-size: 4.6em;    line-height: 1.3em;    letter-spacing: -0.02em;    color: #ffffff;  padding: 18px 0px 0px 121px;}
+#container .pop_sub_title{font-family: 'Franklin Gothic Medium';    font-size: 1.7em;    line-height: 1.2em;   color: #081734;  padding: 0px 50px 0px 88px; text-align: center;}
+#container .pop_e-mail{font-family: 'Franklin Gothic Book Regular';    font-size: 1em;    line-height: 2.14em;    letter-spacing: 0.07em;    color: #081734;   margin-left: 156px; text-align: center; width: 240px; margin-top:15px;}
+#container .popup_btn{cursor:pointer; font-family: 'Franklin Gothic Book Regular'; border-radius: 3px; border: medium none; font-size: 1.3em;    color: #fff;  background-color: #f2440e; margin:0px 0px 4px 220px; text-align: center; width: 120px; height: 50px;}
+#container .pop_subtitle{font-family: 'Georgia';    font-size: 2em; color: #ffffff;  padding: 0px 50px 11px 88px; text-align: center; margin-top: 28px;}
+#container .pop_img_div{padding: 6px 0 0 132px;}
+#container .closePopup{margin: 8px 8px 0 0;}
+.margin_bottom_33{margin-bottom: 33px;}
+.mrg_top_76{margin-top: 76px;}
+.margin_top_89{margin-top: 89px; float: left;    margin-bottom: 10px;    position: relative;    width: 100%;}
+.mrg_top_63{margin-top: 63px;}
+.greyOut_backgnd{background-color: #e3e3e4 !important;}
+#final_disc_div{background-color: #ff9999;}
+.disp_inline{display: inline-block;}
+.width_214{width:214px;}
+.margin_testimonial{margin-bottom: 135px;}
+.mrg_left_testimonial{margin-left: 70px;}
+.margin_right_testimonial{margin-right: 110px;}
+.margin_right_testimonial_II{margin-right: 50px;}
+.margin_bottom_50{margin-bottom: 50px;}
+.mrg_top_49{margin-top: 49px;}
+.shop_home_heading img{margin: -76px -3px 0px 0px; float: right; padding-right:12px; width:80px;}
+.BTshop_lessmar{font-family: 'Franklin Gothic Medium'; font-size: 0.8em; text-transform:uppercase; letter-spacing: 0.03em; padding-left:3px;}
+.BTshop_lessmar a{color:#f15822;}
+.BTshop_product_logo{margin: 0px -8px 10px 0px; float: right; width: 45px;}
+.width_58{width:58.8%;}
+.width_180{width:180px;}
+.width_100_per{width:100%;}
+.shop_heading_bg a{color:#f7c900;}
+.width_74_per{width:74%;}
+.margin_rgt_6{margin-right: 6px;}
+.shop_cart_logo{margin:-24px 75px 45px 0px; float:right;}
+.margin_top_2{margin-top:2px;}
+.margin_top_188{margin-top:188px;}
+.margin_top_15{margin-top:15px;}
+.error_popup{
+    float: left;
+    margin-left: 135px;
+}
+.error_valid_email{
+    color: #ffff00;
+    font-family: 'Franklin Gothic Book Regular';
+    display: none;
+	font-size: 18px;
+}
+.error_email_exist, .success_message{
+    color: #ffff00;
+    font-family: 'Franklin Gothic Book Regular';
+    display: none;
+    float:left;
+    font-size: 18px;
+}
+.margin_0{margin: 0;}
+.margin_top_25{margin-top: 25px;}
+.margin_top_18{margin-top: 18px;}
+.margin_top_9{margin-top: 9px;}
+.margin_top_3{margin-top: 3px;}
+.margin_left_7{margin-left: 7px;}
+.shop_cart_data_div ul.rows5{width: 99%;}
+.cardDetails .jqTransformSelectWrapper{
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        font-size: 1em !important;
+}
+.cardDetails .jqTransformSelectWrapper div span{
+    height: 24px !important;
+    font-size: 1em !important;
+}
+.email_checkbox_1{
+    width:100px;
+    width:23px;
+}
+.email_checkbox_2{
+    width:300px;
+    height:19px;
+}
+.pad_top_1{
+    padding-top:1px;
+}
+.pad_top_3{
+    padding-top:3px;
+}
+.pad_left_0{
+    padding-top:0px;
+}
+.email_success_text{
+    width:300px;
+    height:19px;
+}
+.email_success_text_color{
+    color:#232222;
+    padding:3px 0px 0px 5px;
+}
+.edit_profile_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    background-size: 45px 19px;
+}
+.edit_profile_send{
+    background: url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    float: left;
+    cursor: pointer;
+    background-size: 45px 19px;
+}
+.edit_profile_cancel{
+    background: url("../images/new_home/cancel.png") no-repeat scroll;
+    height: 19px;
+    width: 49px;
+    border: none;
+    float: left;
+    cursor: pointer;
+    background-size: 45px 19px;
+}
+.edit_block_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 12px;
+    background-size: 45px 19px;
+}
+.contactus_radio_label{
+    line-height: 29px;
+    margin-left: 5px;
+}
+.mrg_left_89{
+    margin-left: 89px;
+}
+.mrg_left_82{
+    margin-left: 82px;
+}
+.contactus_subscription_text{
+    margin-left: 22px;
+    width: 440px;
+    display: none;
+	margin-top:-3px;
+	margin-bottom:8px;
+}
+.reg_line{
+    border-bottom: 1px solid #d3d3d3;
+    width: 97%;
+    height: 1px;
+    float: left;
+    margin-bottom: 22px;
+}
+.mrg_top_1{
+    margin-top:2px !important;
+}
+.use_alias_input{
+    margin-bottom: 21px;
+    margin-top: 10px;
+}
+.use_alias_label{
+    margin-top: 20px;
+}
+.captcha_error{
+    float: left;
+    position: relative;
+    color: #FF0000;
+}
+.reg_type_chkbox{
+    margin-top: 4px;
+    margin-left:2px;
+}
+.form_heading{
+    color: #232222;
+    float: left;
+    font-family: 'Franklin_Gothic_Bold';
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-transform:uppercase;
+    letter-spacing: 0.02em;
+    margin: 50px 0px 3px;
+    width: 100%;
+}
+#shoparticledetailsMain .rightbanner{padding-left: 14px; padding-right: 0; width: 294px;}
+.shop_payment_type_div{float:left;padding: 0px;background-color:#fff;/*padding: 0px;background-color:#fff;position: relative;top: -19px;*/}
+.shop_payment_type_div1{float: left;width: 655px;padding:0px;}
+.shop_payment_type_content{min-height:626px;border: 0 solid red;float: left; margin-left: 71px;;position: relative;width: 565px;}
+.bt-shop-payment_done-logo{margin:28px 0px 90px 0px;}
+.bt-shop_border{margin:8px 0px 30px 0px;}
+.bt-shop_border2{margin:118px 0px 20px 0px;}
+.bt-shop_border_home{margin: -12px 0px 26px 0px;}
+.bt-shop_border_home2{margin: 0px 0px 20px 0px;}
+.shop_paymnet_done-right-banner{padding-left: 14px; width:294px;}
+.display-none{display: none!important;}
+.display-none-comment{display: none;}
+.margin-top-15m{margin-top: -20px;}
+.margin-bottom-27{margin-bottom: 27px;}
+#shop-article-payment-title{width:294px;}
+#margin_top_10{margin-top: 10px;}
+.margin-bottom-10m{margin-bottom: -10px;}
+.margin_bottom_60{margin-bottom:60px;}
+.margin_bottom_home_shop{margin-bottom:20px;}
+.article_list_img{
+    margin-top: 5px;
+}
+.article_list_text{
+    float: left;
+	font-family: 'Franklin Gothic Book Regular';
+    /*margin-top: 4px;*/
+}
+.bt_head_plate_mrg{
+    margin-top: 22px;
+}
+.width_514{width:514px;}
+.width_370_height_80{height:80px; width:370px;}
+.width_370{width:370px;}
+.user_reg .jqTransformSelectWrapper{
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        color: #658094 !important;
+        font-size: 12px !important;
+        min-width: 153px !important;
+}
+.user_reg .jqTransformSelectWrapper div span{
+        height: 24px !important;
+        color: #232222 !important;
+        font-size: 14px !important;
+        min-width: 153px !important;
+}
+.user_reg .error_list {
+        margin: 0px 0px 13px 0px;
+}
+#user_borstChartsHome .stock_name{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #322F31;
+    display: block;
+}
+#user_borstChartsHome .chart_title{
+    float: left;    
+    font-size: 19px;
+    color: #005892;
+    display: block;
+    margin-top: 15px;
+}
+#user_borstChartsHome .update_status{
+    float: right;
+    width: 60%;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #322F31;
+    text-align: right;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+#user_borstChartsHome .stock{
+    float: left;
+    width: 100%;
+    padding-top: 0px;
+}
+#user_borstChartsHome .chart_image{
+    max-width: 310px;
+}
+#user_borstChartsHome .innerleftdiv{ padding:0px;}
+#user_borstChartsHome .leftinnercolor { background-color: #FAF8F9; border-bottom: none; }
+#user_borstChartsHome .main_link_color{
+    line-height: 18px;
+}
+.margin_top_5{margin-top:5px;}
+.text_decoration_none{text-decoration: none;}
+.height_625{height:625px;}
+.padding_top_10{padding-top: 10px;}
+.padding_top_15{padding-top: 15px;}
+.color_FF0000{color:#FF0000;}
+.padding_top_0{padding-top: 0px;}
+.padding_bottom_0{padding-bottom: 0px;}
+#getActivated .forumlistingleftdiv, #newRegistrationDone .forumlistingleftdiv{width:950px;}
+#getActivated .flag_status_div_2{color: #00CC33; font-size:12px; font-weight:bold; padding:10px 0 10px 0px;}
+#getActivated .flag_status_div_3{padding:10px 0 10px 0px;}
+#getActivated .flag_status_div_3 a{color:#114993;}
+#getActivated .flag_status_div_1{color:#FF0000; font-size:12px; font-weight:bold; padding:10px 0 10px 0px; margin-bottom:20px;}
+#newRegistrationDone a{color:#114993;}
+.forum_select_option_color{color:#b9c2cf;}
+.loader_posiotion{text-align: center; width: 100%;}
+.height_width_auto{height:auto;width:auto;}
+.height_auto{height:auto;}
+.width_auto{width:auto;}
+#post_comment_on_forum_topic_div{padding-left:155px;width: 425px;}
+.height_450{height:450px;}
+#forum_data_container { overflow:hidden }
+/*#forum_data_container .forumlistingleftdiv {padding-bottom:3000px; margin-bottom:-3000px}
+#forum_data_container .rightbanner {padding-bottom:3000px; margin-bottom:-3000px}*/
+.forum_category_selectbox{margin-top:15px;margin-bottom:11px;}
+.forum_input_title{margin-right: 0.2em;}
+#btforum_btforum_subcategory_id{width: 158px;height:25px;margin-bottom:11px;}
+.padding_top_5{padding-top: 5px;}
+.lineht_13{line-height: 13px;}
+.paginationwrapperNew_margin{margin: 10px 0 10px;}
+#last-li-chart{margin-top:5px;}
+.color_plate_img_first img{margin: 4px 0px 0px 10px;}
+.color_plate_img_first_article img{margin: 0px 0px 0px 1px;}
+#leftinnercolor-chart{padding-top: 0px;background-color: #FFFFFF; border: 0px;}
+.no_result {padding: 12px 0px 40px 21px;}
+.stock_chart_img{        max-width: 600px;/*640px*/        margin-left: -9px;    }
+.fav_put_ht_wdth{width:90px;}
+#leftinnercolor-chart .update_status{color:#69696b; font-weight: normal; font-size: 0.93em;}
+#leftinnercolor-chart .stock_name{float: left; font-size: 1.71em; font-weight: bold; color: #232222; display: block; }    
+#leftinnercolor-chart .stock{float: left; width: 100%;padding-top: 0px;}    
+#leftinnercolor-chart .chart_image{/*max-width: 310px;*/}
+#leftinnercolor-chart .chart_title{float: left; font-size: 1.3em;color: #232222; display: block; margin-top: 9px; letter-spacing: -0.02em; }
+#leftinnercolor-chart .innerleftdiv{ padding:0px; }
+#leftinnercolor-chart .main_link_color{line-height: 16px;}
+#borstChartsList{height: 870px;}
+#borstChartsList #success_msg{float: right; color: #FF9900;}
+.width_18_per{width: 18%;}
+.width_12_per{width: 12%;}
+.width_15_per{width: 15%;}
+.width_20_per{width: 20%;}
+#borstChartsList #subscription_other_links a {color:#114993;}
+#borstChartsList .heading{    font-weight: bold;}
+#borstChartsList.stock_filter{float: left; font-weight: bold; margin-bottom: 30px;}
+#btShopProdUrl{padding: 50px; color:red; font-weight: bold;float:left}
+.color_f15822{color:#f15822;}
+.width_34_per{width:34%;}
+.width_26_per{width:26%;}
+.width_38_per{width:38%;}
+.mrg_top_62{margin-top:62px;}
+.comment_forum_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/send.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    background-size: 45px 19px;
+}
+.test_mrg_forum_topic{margin:56px 0 50px 135px;}
+#article_lista #article_list_table th, #article_list_table td { border-color:#7894a3; border-style:dotted; border-width:0 0 1px; margin:0; vertical-align: middle;}
+#article_lista #pagination_div a{ color:#000000;}
+#borst_advanced_search #adv_search_error{color:#FF0000; padding: 0px 0px 4px 2px;}
+#borst_advanced_search #adv_ser_section{margin: 2.4px 7px 0px 0px;}
+#borst_advanced_search #adv_search_combo_set{border:0px solid red; display:none;}
+#borst_article_detail .add_to_favorite{height: 20px; margin: 0px;}
+#borst_article_detail .paginationwrapperNew{margin: 20px 0 10px;}
+#borstChronicles .redfont img{margin: 0px 4px 0px 0px;}
+#borstChronicles .chronicle_img{margin: 20px 0px 0px 0px;}
+.margin_rgt_2{margin-right: 2px;}
+.margin_top_9m{margin-top: -9px;}
+.margin_bottom_20{margin-bottom: 20px;}
+.borstportImg{margin: 0px 0px 5px;}whp_heading
+/*.rightbanner .advertdiv,.advertdiv2{margin-top: -5px;}*/
+.load_article{
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    margin-top: 12px;
+    margin-bottom: -2px;
+    cursor: pointer;
+}
+.loading_home{
+    background-image:url(../images/loader.gif);
+    height: 55px;
+    width: 54px;
+    float: left;
+    margin-left: 50%;
+}
+#padding_top_0{padding-top: 0px;}
+#radio_1 { padding-top: 0px; }
+#radio_2 { padding-top: 2px; }
+.lineht_2em{line-height: 2.2em;}
+.padding_bottom_1{padding-bottom: 1px;}
+.padding_top_7_5px{padding-top: 7.5px;}
+.width_174{width:174px;}
+.mrg_btm_2{margin-bottom: 2px;}
+.margin_left_5{margin-left:5px;}
+.margin_bottom_4{margin-bottom: 4px;}
+.margin_bottom_3m{margin-bottom: -3px;}
+.margin_bottom_2m{margin-bottom: -9px;}
+#padding_top_0{padding-top: 0px;}
+.form_input_textarea{
+    background-color: #f7f5f5;
+    border: 1px solid #f7f5f5;
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    height: 33px;
+    letter-spacing: -0.02px;
+    padding-left: 6px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+.width312{width:312px;}
+.width326{width:326px;}
+.width136{width:136px;}
+.width106{width:106px;}
+.width78{width:78px;}
+.width99{width:99px;}
+.width85{width:85px;}
+.width108{width:108px;}
+.mrg_top_14{margin-top: 14px;}
+.forum_show{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/show.png") no-repeat scroll;
+    height: 19px;
+    width: 89px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    background-size: 89px 19px;
+}
+.forum_preview_ok{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/ok.png") no-repeat scroll;
+    height: 26px;
+    width: 38px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    background-size: 38px 26px;
+    float: right;
+}
+/*#sbtBlog_div .advertdiv, .advertdiv2{
+    margin-left: 0px;
+}*/
+#sbtBlog_div .sponseror{
+    margin-left: 0px;
+}
+#sbtBlog_div .home_adline_r_div{
+    margin-left: 0px;
+}
+#askBT_mainDiv .breadcrumb ul li a, .breadcrumb{ color: #c7c8c8;}
+.width_55{width:55px;}
+.width_150{width:150px;}
+.width_81{width:81px;}
+.padding_right_23{padding-right: 23px;}
+.pos_left_14per{left:14%}
+.height_1639{height: 1639px;}
+.margin_top_38{margin-top: 38px;}
+.blog_initial_span img{margin: 4.9px 0px 0px -1px;}
+#sbtBlog_div .home_ad_r{margin:0 0 2px;}
+.width445{ width: 430px  !important;
+}
+.height15{
+    height: 15px !important;
+}
+.blogheadtext_height{
+    height: 35px !important;
+}
+.blank_2h {
+    float: left;
+    height: 2px;
+    position: relative;
+}
+.border_radius_7{
+    border-radius: 7px;
+}
+.blog_prof_entry{height: 27px;}
+.chk_error{color:red;margin-left: 10px;}
+#contactus .for_labels{ margin-top:6px;}
+#contactus .jqTransformSelectWrapper,
+#create_forumtopic_form .jqTransformSelectWrapper{
+        width: 161px !important;
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        color: #232222 !important;
+        font-size: 1em !important;
+        height: 29px;
+}
+#contactus .jqTransformSelectWrapper div span,
+#create_forumtopic_form .jqTransformSelectWrapper div span{
+        width: 160px !important;
+        height: 24px !important;
+        color: #232222 !important;
+        font-size: 1em !important;
+        padding: 7px 0 0 6px;
+}
+#contactus .jqTransformSelectWrapper ul {
+        width: 160px !important;
+}
+#contactus .jqTransformRadio {
+        height: 18px;
+        width: 16px;
+        margin-top: 4px;
+}
+#contactus .jqTransformRadioWrapper{
+        margin:0px;
+}
+.border_bottom_none{border-bottom: none;}
+.rubrik{font-family: 'ITC Cheltenham Italic'; padding:0px 0px 16px 3px; color:#0e284c; font-size:1.6em; letter-spacing: 0.03em;}
+#action_msg{width:600px; padding:5px; margin-top:10px; border:1px solid #339966; color:#339966; display:none;}
+.enquiry_detail_title_div{margin: 25px 0pt 3px; border: 0px solid green; width: 550px;}
+.enquiry_detail_content_div{border: 0px solid blue; margin-bottom: 10px; width: 550px;}
+.enquiry_detail_title_div #post_enquiry_reply_error{border:0px solid red; padding-left:10px; color:red;}
+#enquiry_detail_main_div .name_span{padding:9px 0 7px; font-size: 12px; font-weight:bold;}
+#enquiry_detail_main_div .date_span{padding:9px 0 7px; color:#999999; font-size: 10px; font-weight:bold;}
+#enquiry_detail_main_div .user_question{border-bottom:1px #ffaf4d dotted; line-height:16px;}
+#enquiry_detail_main_div #enquiry_post_list p{ float:left; position:relative; font-size:12px;}
+#enquiry_detail_main_div .btshopleftdiv{width:659px;padding: 0;border-right: 1px solid #ced2d0;}
+#enquiry_detail_main_div .btshopleftdivinner{width:659px;}
+#enquiry_detail_main_div #pagination_div a{ color:#000000;}
+#enquiry_detail_main_div .breadcrumb ul li a, .breadcrumb{ color: #f15822;}
+#enquiry_detail_main_div .breadcrumb{width:600px; border-top: 1px solid #c7c8c8;}
+#enquiry_detail_main_div .askBT_user{float: right;}
+#enquiry_detail_main_div .name_date_row_td{padding: 0;}
+#enquiry_detail_main_div .name_span, .date_span{padding: 0;}
+#enquiry_detail_main_div .askBT_user_question_row{background-color: #e2e41a;}
+#enquiry_detail_main_div .askBT_user_answer td, .askBT_user_question_reply_row_image td{padding-top: 20px;}
+#enquiry_detail_main_div .user_question{border-bottom: none;}
+#enquiry_detail_main_div .askBT_user_question{vertical-align: top;}
+#enquiry_detail_main_div .askBT_user_question_reply_row{background-color: #0bb342;}
+#enquiry_detail_main_div #enquiry_post_list{margin-top: 30px;}
+#enquiry_detail_main_div .askBT_enruiry_last_row{margin-top: 10px;}
+#enquiry_detail_main_div .askBT_user_question_reply_row_image_td{width:150px;}
+#enquiry_detail_main_div .paginationwrapper .pagination .selected {color: #f7941d; margin-right: 2px;}
+#enquiry_detail_main_div .pagination a {    color: #9a9ba7;  }
+#enquiry_detail_main_div .paginationwrapper .pagination a:hover {color: #9a9ba7; font-weight: normal;}
+#enquiry_detail_main_div .pagination_td{width: 190px;}
+#enquiry_detail_main_div .forum_sorting_wrapper{margin-right: 10px;}
+#faq_main_div .inner_page_content_main img{margin: -25px 0px 14px 0px;}
+.getArticleData_table .sbt_article_title{color:#4B6386;}
+.getArticleData_table .sbt_article_a{color:#197D7D;}
+.color_489AE7{color:#489AE7;}
+.color_1A4797{color:#1A4797;}
+#friday_checkbox{margin:5px 0px 0px -3px;}
+.google_form_div{width:590px; border:0px solid red;}
+.margin_bottom_10{margin-bottom: 10px;}
+.tip_a_frnd_img{margin: -6px 0px 16px 0px;}
+#post_list_comment_div{width:100%; margin-top:25px;}
+.width_85{width:85px;}
+.vote_panel_option_row .img_div{width:85px; padding:2px 1px 1px 5px;}
+.vote_radio{border:0px solid blue;padding:2px 1px 1px 2px;}
+.vote_title{padding:2px 1px 1px 2px;font-weight:bold; color:#000000;}
+.margin_top_30{margin-top: 30px;}
+.padding_right_11{padding-right: 11px !important; }
+.padding_left_10{padding-left: 10px !important; }
+.edit_analysis_img_div{background-color:#BDE5F8;background-image:url(/images/info.png);background-position:10px center;
+background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding:15px 10px 15px 50px;position:relative; width:590px;z-index: 10;
+}
+#edit_analysis .form_out{float:left; position:relative; border:0px solid red; margin:10px 0 10px 0;}
+#edit_analysis .first_row_outer_blue{float:left; position:relative;border:0px solid blue; width:560px;}
+#edit_analysis .first_block1{float:left; position:relative;border:0px solid brown; width:100px; height:20px;}
+#edit_analysis .analysis_labels{float:left; position:relative;border:0px solid brown; width:70px; height:20px;}
+#edit_analysis .analysis_textfield{float:left; position:relative;border:0px solid brown; width:156px;}
+#edit_analysis .analysis_ingressbild_textfield{float:left; position:relative;border:0px solid brown; width:262px;}
+#edit_analysis .error_list {color:#FF0000;list-style-type:none;margin:0 0 0 10px;padding:0;}
+#profile_data_container .om_miginfo{border-bottom:0px solid #9C9E9F;}
+#forumlistingleftdiv {width:964px;}
+#change_userblogprofile_image_box, #upload_bloguserprofile_image_box, #show_blog_profile_image_reply_box, #change_userprofile_image_box, #upload_userprofile_image_box,#show_reply_box{border:0px solid red;}
+#minsid .paginationwrapper .jqTransformSelectWrapper{
+        background: #e9e8e6 none repeat scroll 0 0 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        color: #000 !important;
+        font-family: "Franklin Gothic Book Regular";
+        font-size: 12px;
+        height: 23px;
+        letter-spacing: 0.1em;
+        line-height: 0;
+        margin: 13px 23px 10px;
+        padding: 0;
+        width: 107px !important;
+    }
+#minsid .paginationwrapper .jqTransformSelectWrapper div span{
+        cursor: pointer;
+        float: none;
+        font-size: 12px;
+        height: auto !important;
+        line-height: 15px;
+        overflow: hidden;
+        padding: 5px 0 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 107px !important
+    }
+#minsid .paginationwrapper .jqTransformSelectWrapper ul {
+        width: 107px !important;
+        top: 23px !important;
+        height: auto !important;
+    }
+#minsid .advertdiv, .advertdiv2{
+        margin-left: 0px;
+    }
+#minsid .mleft_16{
+        margin-left: 0px;
+    }
+#minsid .sponseror{
+        margin-left: 0px;
+    }
+#minsid .home_adline_r_div{
+        margin-left: 0px;
+    }
+#blog_image_container, #image_container{float:left; position:relative;width:560px; height:560px; border:0px solid red; text-align:center;}
+#show_blog_profile_image_reply_message, #show_reply_message{float:left; position:relative; width:250px; font-weight:bold; margin-top:10px;}
+.list_cancel{
+    float: left;
+    margin-left: 15px;
+}
+.width_388{
+    width: 388px;
+}
+.width51{
+    width: 51px;
+}
+.width_610{
+    width: 610px;
+}
+.width_433{
+    width: 433px;
+}
+.width_72{
+    width: 72px;
+}
+#friend_req_msg{border:1px solid #00CC33; margin-bottom:10px; padding:5px; color:#00CC33;}
+#editpro .jqTransformSelectWrapper{
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        font-size: 1em !important;
+        min-width: 153px !important;
+        color: #232222 !important;
+    }
+#editpro .jqTransformSelectWrapper div span{
+        height: 24px !important;
+        font-size: 1em !important;
+        min-width: 153px !important;
+        color: #232222 !important;
+}
+.text_align_left{text-align: left;}    
+#article_fav_reply, #forum_fav_reply, #blog_fav_reply{color:#FF0000;padding:4px 5px 0px 0px;}
+#article_fav_container .all_favorite_pagination{text-align: left}
+#article_fav_container .blog_drop-down-menus ul{
+        padding: 0 22px !important;
+}
+#article_fav_container .blog_drop-down-menus{
+        height: 55px;
+}
+#article_fav_container #blog_fav_list table th, #blog_fav_list table td{float:none}
+#profile_ads .advertdiv, .advertdiv2{
+    margin-left: 0px;
+}
+#profile_ads .sponseror{
+    margin: 0px;
+}
+.margin_right_110{
+    margin-right: 110px;
+}
+#whitepage_ads .sponseror{
+    margin-top: 0px;
+    margin-bottom: 1px;
+	line height:0;
+}
+.padding_right_9{padding-right: 9px !important;}
+#my_subscription_list ul, #my_active_subscription_list ul {
+        display: inline;
+        float: left;
+        list-style: outside none none;
+        margin: 0;
+        padding: 0 22px !important;
+        position: relative;
+}
+#my_subscription_list ul li, #my_active_subscription_list ul li {
+        display: inline;
+        float: left;
+        font-size: 12px;
+        margin: 0;
+        padding: 7px 0 4px 5px;
+        position: relative;
+}
+#my_subscription_list .blog_drop-down-menus{
+        height: 155px;
+}
+#my_subscription_list  .all_my_subscription_pagination, .all_my_active_subscription_pagination{text-align: left;}
+.height_15{height:15px !important;}
+.padding_left_4{padding-left: 4px !important;}
+.color_9fb6c7{color:#9fb6c7;}
+.blog_chaticon_m{margin:0px 10px 0px 2px;}
+.margin_left_10{margin-left: 10px;}
+.border_blue{border:0px solid blue;}
+.border_green{border:0px solid green;}
+.border_green img{margin: 4px 0px 0px 5px;}
+.ratingstar_org_m{margin: 4px 0px 0px 5px;}
+.ublog_votes{color:#547184; margin-left:5px; margin-top: 7px;}
+.paddiing_left_25{padding-left: 25px;}
+#blog_text_error{padding:15px 0 0 30px; color:#FF0000; width:70%;}
+.margin_top_7{margin-top: 7px;}
+.padding_right_25{padding-right: 25px;}
+.padding_bottom_20{padding-bottom: 20px;}
+#profile_data_container #blog_list_profiler_page{width:610px;}
+#reg_help h2 { padding-top:20px;}
+.home_right_column{
+    float: left;
+    margin-left: 9px;
+}
+.blog_detail_edit{
+    float: left;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.search_title_h2{ float:left; position:relative; width:86%; color:#232222; font-size:2.2em; line-height: 1.1em; font-weight:normal; word-spacing: -0.06em; margin:40px 0 32px 75px;}
+.search_title{color:#a6cc39;}
+.listingheading{ float:left; position:relative; width:100%; color:#232222; font-size:1.2em; font-weight:normal; word-spacing: -0.06em; margin:0px 0px 5px 0px; padding:0 0 7px 0;}
+.listingtab{ float:left; position:relative; width:90%; margin:0 0 41px 50px; padding:0; height: 70px;}
+.listingtab li{  float:left; position:relative; margin:0 3px 3px 0; padding:0; display:inline; height:33px; width:109px;}
+.listingtab li .selectedtab{background-color: #ffffff; color:#a6cc39;}
+.listingtab li a{  float:left; position:relative; padding-top:4px; display:inline;  text-align:center; line-height:22px;}
+.search_nav{font-family: "Franklin Gothic Book Regular";height:29px; background-color:#a6cc39; width:109px; color:#ffffff;font-size:1em;}
+.search_nav_top_left{border-top-left-radius: 12px;}
+.search_nav_top_right{border-top-right-radius: 12px;}
+.search_nav_bottom_left{border-bottom-left-radius: 12px;}
+.search_nav_bottom_right{border-bottom-right-radius: 12px;}
+.no_result_found{ font-size:0.93em; }
+#article_list_table th{font-family: "Franklin Gothic Book Regular";font-weight: normal;}
+#article_list_table td{padding: 4px 0px 4px 0px;}
+.btshop_table_head a span{
+    font-family: 'Franklin Gothic Book Regular';
+    /*font-size: 0.86em;*/
+    color: #ffffff;
+}
+.btshop_table_head{
+    font-family: "Franklin Gothic Book Regular";
+    /*font-size: 12px;*/
+    color: #fff;
+    background-color: #1c92af;
+    border-top:none !important;
+    height:25px;
+    font-size: 0.86em;
+}
+.btshop_table_post{ color: #febc11;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    line-height: 1.3em;}
+.result_title_fs{font-size: 22px; letter-spacing: -0.02em;}
+.margin_top_38{margin-top: 38px;}
+.margin_left_50{margin-left: 50px;}
+.font_size_18{font-size: 22px; letter-spacing: -0.02em;}
+.blog_comment_count{
+    color: #232222;
+    font-family: "ITC Cheltenham Italic";
+    font-size: 1.28em;
+    letter-spacing: 0.06em;
+    margin: 5px 0 15px;
+}
+.blog_comment_main{
+    margin-left: 95px;
+    width: 490px;
+    padding:0px;
+}
+.forum_comment_wrap{        
+    background: url('/images/new_home/forum_fig_grey.png') repeat-y;
+    background-size: 3em;
+    background-position: center right;
+    float: left;
+}
+.width_40{width:40px;}
+.sbt_result_table_head{ background-color: #7F8CB9;
+    border-top: medium none;
+    color: #fff;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.86em;
+    height: 25px;
+}
+.blog_table_post_r{ 
+	color: #6e85aa;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 0.93em;
+    line-height: 1.2em;
+}
+.margin_left_40{margin-left: 40px;}
+.margin_bottom_2{margin-bottom: 2px;}
+.width461{
+    width: 461px;
+}
+.mrg_top_3{
+    margin-top: 3px;
+}
+.textarea_resize{
+    resize: none;
+}
+.margin_bottom_2{margin-bottom: 2px;}
+.margin_top_4m{margin-top:-4px;}
+.margin_right_23{margin-right: 23px;}
+#search_select .jqTransformSelectWrapper{
+        width: 283px !important;
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        color: #232222 !important;
+        font-size: 1em !important;
+        height: 29px;
+}
+#search_select .jqTransformSelectWrapper div span{
+        height: 24px !important;
+        color: #232222 !important;
+        font-size: 14px !important;
+        min-width: 153px !important;
+}
+#search_select .jqTransformSelectWrapper ul {
+        width: 282px !important;
+}
+#serch_type_select .jqTransformSelectWrapper{
+        width: 212px !important;
+        background: none !important;
+        background-color: #e9e8e6 !important;
+        border: 1px solid #e9e8e6 !important;
+        border-radius: 5px !important;
+        color: #232222 !important;
+        font-size: 1em !important;
+        height: 29px;
+}
+#serch_type_select .jqTransformSelectWrapper div span{
+        width: 284px !important;
+        height: 24px !important;
+        color: #232222 !important;
+        font-size: 1em !important;
+        padding: 7px 0 0 6px;
+}
+#serch_type_select .jqTransformSelectWrapper ul {
+        width: 282px !important;
+}
+#adv_search_form .jqTransformCheckbox{
+    margin-top: -4px;
+}
+.my_own_writing{
+    width:425px;
+    height:175px;
+}
+.editaddArticle{ float:left; position:relative; width:598px; padding-bottom:15px;}
+
+.editaddArticle .article_top {
+    padding-left: 28px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+.editaddArticle .article_content ul{
+	float:left;
+	position:relative;
+	padding:0px;
+	/*margin:0px;*/		
+	list-style:none;
+	display:inline;
+	width:100%;
+	padding-left:0px;
+
+}
+.editaddArticle .article_content ul li{	float:left;	position:relative; padding-right:10px; padding:0px;	margin:0px;	list-style:none; display:inline;}
+.editaddArticle .article_content ul li img{	border:0px;}
+.editaddArticle .article_content ul li span{float:left;position: relative;width:100%;color:#111111;padding-top:4px;font-size:11px; font-family: Franklin Gothic Medium;}
+.editaddArticle .article_content .row{ float:left; position:relative; width:100%; padding-bottom:10px;}
+.editaddArticle .article_content .column{ float:left; position:relative; /*width:50%; padding-bottom:10px;*/ width:100%;}
+.editaddArticle .article_content .column a{ text-decoration:none; text-align:center; float:left; position:relative; color:#232222;}
+.editaddArticle .article_content .column a span{float:left; position:relative; width:100%;}
+
+.editaddArticle .article_content .detail_section{ color: #232222; float: left;font-size: 12px; padding-top: 5px; position: relative;}
+.editaddArticle .article_content .img_upload_outer{ float:left; position:relative; width:500px; padding-bottom:10px;}
+.editaddArticle .article_content .img_upload_outer span{float:left; position:relative; width:100%; text-align:left;}
+.editaddArticle .article_content .img_upload_outer a{ float:left; position:relative; color:#232222; text-decoration: underline;}
+.editaddArticle .article_content .img_upload_outer .upload_img_div{ float:left; position:relative; color:#232222; width:450px;}
+.editaddArticle .article_content .img_upload_outer .upload_img_text{ float:left; position:relative; text-align:left; color:#232222; width:150px;}
+.editaddArticle .article_content .img_upload_outer .upload_img_report{ float:left; position:relative; text-align:left; color:#FF3300;width:298px;}
+
+
+.editaddArticle .article_content .label_text {color: #232222; float: left; font-size: 12px; padding-top: 5px; position: relative; width: 100px;}
+.editaddArticle .article_content .input_box{float:left;position:relative;width:286px;}
+.editaddArticle .article_content .column .input_box{ width:auto;} 
+.editaddArticle .article_content .input_box input{float:left; position:relative;height:22px;width:250px;/*border:1px solid #C5D7E5;*/}
+
+.editaddArticle .article_content .input_box select{float:left; position:relative;height:30px;width:135px;/*border:1px solid #C5D7E5;*/color:#658094;}
+
+.editaddArticle .article_content ul li a.activelink{padding-top: 10px; padding-bottom: 5px; border: 1px solid #f15822;/*#C5D7E5*/color: #f15822;width: 75px;height: 55px;border-radius: 12px;}
+.editaddArticle .article_content .error_box{float:left;position:relative;width:160px; padding-left:5px; color:#FF3300; padding-top:5px;}
+
+
+.editaddArticle .article_content .combine_article_div{ float:left; position:relative; padding-left:12px; width:500px;}
+.editaddArticle .article_content .combined_author_names_error{ float:left; position:relative; padding-left:12px; width:500px; color:#FF3300;}
+.editaddArticle .article_content .author_name_div{float:left; position:relative; display:none; padding-left:12px;}
+.editaddArticle .article_content .combine_author_note{float:left; position:relative; padding:5px 0 5px 0; width:500px;}
+.editaddArticle .article_content .combine_author_input_container{float:left; position:relative; width:200px;}
+.editaddArticle .article_content .combine_author_input{float:left; position:relative; width:100%; margin-bottom:10px;}
+.editaddArticle .article_content .author_limit_error{float:left; position:relative; width:100%; color:#FF0000;}
+.editaddArticle .article_content .list_div{float:left; position:relative; width:250px; margin-left:10px;}
+.editaddArticle .article_content .article_status{float:left; position:relative; padding-top:25px;}
+.editaddArticle .article_content .article_status select { /*border: 1px solid #C5D7E5;*/ float: left; height: 30px;position: relative; width: 70px;}
+.edit_article_save{
+    background: rgba(0, 0, 0, 0) url("../images/new_home/save_btn.png") no-repeat scroll;
+    height: 19px;
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    float: left;
+    margin-left: 12px;
+    background-size: 45px 19px;
+}
+.askBT_user_question_detail img{
+    max-width: 400px !important;
+    max-height: 400px !important;
+}
+.width_651{
+    width: 651px;
+}
+.askBT_blank_row{
+   float: left;
+   margin-bottom: 4px; 
+}
+.load_article_details{
+    float: left;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    cursor: pointer; 
+}
+.zindex{
+    z-index: 999;
+}
+#textarea_div .mce-tinymce{
+    z-index: 9999;
+}
+.zindex-contact{
+    z-index: 99999;
+}
+.error_shop_payment{
+    width: 100%;
+    float: left;
+    margin-left: 8.2em;
+}
+.error_shop_payment_email{
+    width: 100%;
+    float: left;
+}
+.form_labels_reg_radio{
+    color: #232222;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1em;
+    letter-spacing: -0.02em;
+    padding-top: 7.5px;
+}
+.reg_btn_mrg{
+    margin-top: -3px;
+}
+.label_text_blogtitle{
+    color: #232222;
+    float: left;
+    padding-top: 5px;
+    position: relative;
+    width: 100px;
+    padding-left: 28px;
+}
+.article_content .jqTransformSelectWrapper ul li{
+    width: 96% !important;
+}
+.add_blog_head{
+    float: left;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.btchart_last_left{
+    float: left;
+    height: 80px;
+    width: 100%;
+}
+.btshop_logo_text{
+    margin: 18px 0px 18px -5px;
+}
+.ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #fa9300 url(images/img_pink1x100.png) 50% 50% repeat-x !important;
+    color: #101009;
+    font-weight: bold;
+}
+.blog_comment_login_error{
+    display: none;
+    color: #f15822;
+}
+.margin_rgt_icon{
+	margin: 0px 4px 0px 2px;
+}
+#unclickableDiv
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background-color: #7A7A7A;
+    display:none;
+    top:0;
+    left:0;
+    position:absolute;
+}
+#popup_container_swish {
+	position: fixed; z-index: 99999;	
+	font-family: Franklin Gothic Book Regular;
+        font-size: 14px;
+        line-height: 19px;	
+        color: #000;	
+        overflow-y: auto;
+        height: 250px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 12px #8d8d8d;
+        background-color: #20c4f4;
+}
+#popup_content_swish {	
+	padding:25px;
+}
+#popup_content_swish p{
+    line-height: 18px;
+    font-size: 20px;
+    color: #fff;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+    cursor: pointer;
+    margin-top: -7px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 210px;
+    height: 130px;    
+    background-color: #febc11;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 15px 20px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 115%;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    line-height: 30px;
+}
+.tooltip .tooltiptext::after {
+    /*content: "";*/
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    /*border-color: transparent none transparent transparent;*/
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltip .tooltiptext p{line-height: 8px;}
+.popup_container_swish{
+    width:650px; max-width:650px; display: none;
+}
+#swish_input{border-bottom-right-radius: 0px;background-color: rgb(255, 255, 255);padding: 0px;height: 40px;}
+#swishcell_num{background-color: #f2f1ef;}
+#msg-poll{float: left; color: red; height: 60px;position: relative;width: 100%;}
+#tooltiptext_title{font-size: 18px;line-height: 22px;
+}
+.arrow_home{
+    width: 18px; 
+	heigth: 24px;
+	margin-right: 4px !important;
+}
+.wizdom-one{
+	font-family: "CheltenhamITCW01-Bold";
+	letter-spacing: -0.01em;
+	color: #B5BAC2;
+	font-size: 3.6em;
+	font-style: italic;
+	line-height: 1.5em;
+	margin: -5px 0 5px;
+} 
+.wizdom-one img{
+	height:40px; 
+	margin-right:16px;
+}
+.wizdom-two{
+	font-family: "CheltenhamITCW01-Bold";
+	letter-spacing: -0.01em;
+	color: #B5BAC2;
+	font-size: 2.2em;
+	font-style: italic;
+	line-height: 1em;
+	word-spacing: -0.06em;
+	margin: 0px 0 0px;
+} 
+.wizdom-two img{
+	height:23px; 
+	margin-right:4px;
+}    
+.wizdom-three{
+	font-family: "CheltenhamITCW01-Bold";
+	letter-spacing: -0.01em;
+	color: #B5BAC2;
+	font-size: 1.8em;
+	font-style: italic;
+	line-height: 1em;
+	margin: 5px 0 5px;
+} 
+.wizdom-three img{
+	height:20px; 
+	margin:5px;
+}
+.width_25{width: 25%;}
+.width_75{width: 75%;}
+.bt_head_week{font-family: 'Franklin Gothic Medium';font-size: 1em;letter-spacing: 0.02em;color: #232222;text-align: center;display: inline-block;width: 100%;line-height: 1em;}
+.bt_head_day{font-family: 'Franklin Gothic Book Regular';font-size: 1em;letter-spacing: 0.01em;color: #232222;text-align: center;display: inline-block;width: 100%;line-height: 1em;margin-top: 6px;}
+.bt_head_date{font-family: 'FranklinGothicCondensed';font-size: 2.5em;letter-spacing: 0.01em;color: #232222;text-align: center;display: inline-block;width: 100%;line-height: 1.2em;margin-top: 5px;margin-bottom: 1px;}
+.bt_head_month{font-family: 'Franklin Gothic Book Regular';font-size: 1em;letter-spacing: 0.01em;color: #232222;text-align: center;display: inline-block;width: 100%;line-height: 0.6em;}
+.bt_head_date_wrap{margin-top: 12px;width: 84px;}
+.bt_head-ad-wrap{margin-top: 14px;}
+
+
+.nav-bar-wrap{ width: 970px;background-color: #f15822;float: left; margin-top:4px; }
+.nav-bar li{list-style: none;}
+.nav-bar{height: 36px;padding-left: 0px;margin: 0;}
+.nav-bar li a span{   
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    letter-spacing: 1.7px;
+    font-family: "Franklin Gothic Book Regular";
+    padding-top: 8px;
+    padding-bottom: 9px;
+    float: left;
+    padding-left: 11px;
+    padding-right: 16px;
+}
+.nav-bar li a span:hover{background-color: #e54e26;}
+.nav-bar-wrap-left{width: 52%;float: left;}
+.nav-bar-wrap-right{
+    float: left;
+    width: 48%;
+    color: #232222;
+    text-align: right;
+    font-size: 1em;
+    font-family: "Franklin Gothic Book Regular";
+    color: #fff;
+    margin-top: 8px;
+}
+.nav-bar-wrap-right span{padding: 9px 8px 10px;}
+.nav-bar-wrap-right span:hover{background-color: #e54e26;}
+.nav-bar-wrap-right span:last-child{ padding-right: 9px; }
+
+.subnav-bar-wrap{width: 970px;border-bottom: 1px solid #000;float: left;margin-bottom: 10px;}
+.subnav-bar-wrap-left{float: left;width: 60%;}
+.subnav-bar-wrap-left ul{margin: 0;padding-left: 0;}
+.subnav-bar-wrap-left ul li{list-style: none;float: left;}
+
+.subnav-bar-wrap-right{    
+    float: right;
+    width: 35.1%;
+	margin-right:-7px;
+}
+.subnav-bar-wrap-right span{
+    text-align: right;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Franklin Gothic Book Regular";
+    padding-top: 8px;
+    padding-bottom: 9px;
+    float: left;
+    padding: 8.5px 7px 8px 14px;
+    color: #232222;
+	letter-spacing: 0.03em;
+}
+.nav-bar ul{display: none;}
+.nav-active{background-color: #e54e26;}
+
+.nav-bar-sub li a span{color: #000; padding-right: 7px;}
+.nav-bar li:hover > ul{position: absolute;margin-top: 30px;padding-left: 0;display: block;width: 45%;}
+.nav-bar ul li{
+    float: left;
+}
+.nav-bar ul li a span{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: "Franklin Gothic Book Regular";
+    color: #232222;
+    letter-spacing: 0.03em;
+    padding-top: 14.5px;
+    padding-bottom: 8px;
+}
+.nav-bar ul li a span:hover{
+    color: #8e8a8b;
+    background-color: transparent;
+    background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
+    background-size: auto auto;
+    background-size: 16px;
+}
+/*.nav-active ul{display: block;}*/
+#first{position: absolute;margin-top: 30px;padding-left: 0px;}
+.top_menu_right{
+    font-size: 1em;
+    font-family: "Franklin Gothic Book Regular";
+    color: #ffffff;
+    letter-spacing: 0.03em;
+}
+.top_menu_right a{color: #ffffff;}
+.sub-active{    
+    color: #8e8a8b;
+    background-color: transparent;
+    background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
+    background-size: auto auto;
+    background-size: 16px;
+}
+.subnav-bar-wrap-right .subnav-bar:hover{
+    color: #8e8a8b;
+    background-color: transparent;
+    background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
+    background-size: auto auto;
+    background-size: 16px;
+}
+.subnav-bar-wrap-right .subnav-bar a{
+    color: #8e8a8b;
+}
+.subnav-bar-wrap-right .subnav-bar a:hover{
+    color: #232222;
+}
+.text-uppercase{text-transform: uppercase;}
+.col-first-date{margin-top: 6px;margin-bottom: 5px;}
+.col-middle-date{margin-top: 4px;margin-bottom: 5px;}
+
+
+
+
+

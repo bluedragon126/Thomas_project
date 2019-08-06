@@ -1,0 +1,35 @@
+/* 
+    Document   : style_ie
+    Created on : Sep 13, 2016, 6:00:59 PM
+    Author     : siddhatech
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.loginDiv{
+    margin-left: 8px;
+    /*margin-right: 5px;*/
+    margin-top: 4px;
+    float: left;
+    width: 100%;
+}
+.first_navbar_fe {
+    padding-left: 11px;
+    padding-right: 11px;
+    
+}
+.leftmenu li a span{padding: 1px 10px;}
+.loginDiv{
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-top: -1px;
+    float: left;
+    width: 100%;
+}
+.bt_head_plate_mrg{
+    margin-top: 20px;
+}
+

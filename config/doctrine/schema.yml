@@ -1,0 +1,4516 @@
+Abon:
+  connection: doctrine
+  tableName: abon
+  columns:
+    abonid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    abon_name:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUserProfile:
+      local: abonid
+      foreign: abonid
+      type: many
+Ads:
+  connection: doctrine
+  tableName: ads
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    ad_position:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: top_mid
+      notnull: true
+      autoincrement: false
+    ad_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ad_type:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: img
+      notnull: true
+      autoincrement: false
+    is_enabled:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: N
+      notnull: true
+      autoincrement: false
+    ccounter_id:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    priority:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '10'
+      notnull: true
+      autoincrement: false
+    ad_title:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_target:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: N
+      notnull: true
+      autoincrement: false
+    display_count:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+Article:
+  connection: doctrine
+  tableName: article
+  columns:
+    article_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    article_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    category_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    btshop_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    price:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    title:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    listheader:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    image:
+      type: string(90)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    image_text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    author:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    art_statid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+  relations:
+    ArticleCategory:
+      local: category_id
+      foreign: category_id
+      type: one
+    ArticleType:
+      local: type_id
+      foreign: type_id
+      type: one
+    Objekt:
+      local: object_id
+      foreign: object_id
+      type: one
+    ArticleStatus:
+      local: art_statid
+      foreign: art_statid
+      type: one
+    ArticleCount:
+      local: article_id
+      foreign: art_id
+      type: many
+    BorstArticleComment:
+      local: article_id
+      foreign: article_id
+      type: many
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+    BtShopArticle:
+      local: btshop_id
+      foreign: id
+      type: one
+ArticleCategory:
+  connection: doctrine
+  tableName: article_category
+  columns:
+    category_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    category_name:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    category_icon:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Article: 
+      local: category_id
+      foreign: category_id
+      type: many
+ArticleCount:
+  connection: doctrine
+  tableName: article_count
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    art_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    click_cnt:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Article:
+      local: art_id
+      foreign: article_id
+      type: one
+ArticleStatus:
+  connection: doctrine
+  tableName: article_status
+  columns:
+    art_statid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    art_status:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Article:
+      local: art_statid
+      foreign: art_statid
+      type: many
+ArticleTemplate:
+  connection: doctrine
+  tableName: article_template
+  columns:
+    template_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    template_name:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    article_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    category_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    title:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    listheader:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    image:
+      type: string(90)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    image_text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    author:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    art_statid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+ArticleType:
+  connection: doctrine
+  tableName: article_type
+  columns:
+    type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    type_name:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Article:
+      local: type_id
+      foreign: type_id
+      type: many
+Btforum:
+  connection: doctrine
+  tableName: btforum
+  columns:
+    id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    skapare:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    rubrik:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    textarea:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    datum:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    andratdatum:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    visningar:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ant_inlagg:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    amne:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    koppling:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    btforum_category_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btforum_subcategory_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    BtforumCategory:
+      local: btforum_category_id
+      foreign: id
+      type: one
+    BtforumSubcategory:
+      local: btforum_subcategory_id
+      foreign: id
+      type: one
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+Classroom:
+  connection: doctrine
+  tableName: classroom
+  columns:
+    id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    creator:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    title:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    textarea:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    post_date:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    other_dates:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    views:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    reply_post:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    topic:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    parent_id:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    group_id:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+ClassroomSubscribtion:
+  connection: doctrine
+  tableName: classroom_subscribtion
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    group_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    topic_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    mail_subscribe:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+ContactEnquiry:
+  connection: doctrine
+  tableName: contact_enquiry
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    enq_type:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    enq_subject:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    firstname:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lastname:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    user_question:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    comm_id:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+    is_answered:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    enq_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    faster_ans_flag:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    user_signature:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+    visningar:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    replycount:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+ContactEnquiryPost:
+  connection: doctrine
+  tableName: contact_enquiry_post
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    reply_text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    enq_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    author_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    post_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    reply_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    admin_or_user:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    ContactEnquiry:
+      local: enq_id
+      foreign: id
+      type: many
+Dailyfx:
+  connection: doctrine
+  tableName: dailyfx
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    ad_date:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_time:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_currency:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_description:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_importance:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_actual:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_forecast:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_previous:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_tmstamp:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ad_tmzone:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Moderatebatch:
+  connection: doctrine
+  tableName: moderatebatch
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    currentcnt:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    currentmails:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    start_time:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    end_time:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    process_status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Movies:
+  connection: doctrine
+  tableName: movies
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    movie_title:
+      type: string(512)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    movie_link:
+      type: string(512)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    movie_desc:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    movie_status:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    movie_display_count:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+NewsletterAccount:
+  connection: doctrine
+  tableName: newsletter_account
+  columns:
+    id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    email:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+NewsletterPublic:
+  connection: doctrine
+  tableName: newsletter_public
+  columns:
+    id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    email:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+NewsletterSent:
+  connection: doctrine
+  tableName: newsletter_sent
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    recipiants:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    kundgrupp:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    subject:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    body:
+      type: string(60)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Objekt:
+  connection: doctrine
+  tableName: objekt
+  columns:
+    object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    object_name:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    object_date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    object_country:
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    object_logo:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Article:
+      local: object_id
+      foreign: object_id
+      type: many
+SbtAnalysis:
+  connection: doctrine
+  tableName: sbt_analysis
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_category_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_market_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    analysis_stocklist_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    analysis_sector_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    analysis_title:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    image:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    image_text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_votes:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    analysis_views:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    analysis_medal_achived:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    published:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+    SbtArticleCategory:
+      local: analysis_category_id
+      foreign: id
+      type: one
+    SbtArticleType:
+      local: analysis_type_id
+      foreign: id
+      type: one
+    SbtObject:
+      local: analysis_object_id
+      foreign: id
+      type: one
+    SbtAnalysisStatus:
+      local: published
+      foreign: id
+      type: one
+SbtAnalysisComment:
+  connection: doctrine
+  tableName: sbt_analysis_comment
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    analysis_comment:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    subject:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false  
+    analysis_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    comment_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtBlogProfile:
+  connection: doctrine
+  tableName: sbt_blog_profile
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    my_own_writing:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    user_title:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    not_on_stock:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    type_of_speculator:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    broker_used:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    my_trade:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    my_occupation:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    is_millionaire:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    my_best_trade:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    my_worst_trade:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    my_five_best_recommendations:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    my_shortlist:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SfGuardUserProfile:
+  connection: doctrine
+  tableName: sf_guard_user_profile
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    kundnr:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    abonid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    userstatid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    priv:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    year_of_birth:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    gender:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    username:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    firstname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    lastname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    co:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    street:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zipcode:
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    land:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    phone:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    signature:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    regdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    stopdate:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    betdate:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    inlog:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    inlogdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    activity_cnt:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    from_sbt:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    sbt_active:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    sbt_activation_code:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    hide_profile:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    usernamealias:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    use_alias:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+    SbtMessages:
+      local: user_id
+      foreign: message_to
+      type: many
+    Abon:
+      local: abonid
+      foreign: abonid
+      type: one
+    UserStatus:
+      local: userstatid
+      foreign: userstatid
+      type: one
+UserStatus:
+  connection: doctrine
+  tableName: user_status
+  columns:
+    userstatid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    userstat:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SfGuardUserProfile:
+      local: userstatid
+      foreign: userstatid
+      type: many
+UserTransaction:
+  connection: doctrine
+  tableName: user_transaction
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    amount_added:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    transaction_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+Authors:
+   connection: doctrine
+   tableName: authors
+   columns:
+     id:
+       type: integer(4)
+       fixed: false
+       primary: true
+       autoincrement: true
+     user_id:
+       type: integer(4)
+       notnull: true
+     name:
+       type: string(50)
+       fixed: false
+       notnull: true
+     code:
+       type: string(2)
+       notnull: true
+   relations:
+     sfGuardUser:
+       local: user_id
+       foreign: id
+       type: one
+Users:
+  connection: doctrine
+  tableName: users
+  columns:
+    username:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    kundnr:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    password:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    abonid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    userstatid:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    priv:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    year_of_birth:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    gender:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    firstname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    lastname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    co:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    street:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zipcode:
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    city:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    land:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    phone:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    regdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    stopdate:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    betdate:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00'
+      notnull: true
+      autoincrement: false
+    inlog:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    inlogdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+SbtArticleCategory :
+  connection: doctrine
+  tableName: sbt_article_category
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sbt_category_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtAnalysis:
+      local: id
+      foreign: analysis_category_id
+      type: many
+    SbtUserBlog:
+      local: id
+      foreign: ublog_category_id
+      type: many
+SbtArticleType :
+  connection: doctrine
+  tableName: sbt_article_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    type_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtObject: 
+      local: id
+      foreign: type_id
+      type: many
+    SbtAnalysis:
+      local: id
+      foreign: analysis_type_id
+      type: many
+    SbtUserBlog:
+      local: id
+      foreign: ublog_type_id
+      type: many
+SbtMarket :
+  connection: doctrine
+  tableName: sbt_market
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sbt_market_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtMarketStockList: 
+      local: id
+      foreign: sbt_market_id
+      type: many
+    SbtObject: 
+      local: id
+      foreign: market_id
+      type: many
+SbtStockList :
+  connection: doctrine
+  tableName: sbt_stock_list
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    stock_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    display_order:
+      type: integer(11)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtMarketStockList: 
+      local: id
+      foreign: sbt_stocklist_id
+      type: many
+    SbtObject: 
+      local: id
+      foreign: stocklist_id
+      type: many
+SbtSector :
+  connection: doctrine
+  tableName: sbt_sector
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sector_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtStocklistSector: 
+      local: id
+      foreign: sbt_sector_id
+      type: many
+    SbtObject: 
+      local: id
+      foreign: sector_id
+      type: many
+SbtObject :
+  connection: doctrine
+  tableName: sbt_object
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    object_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    object_short_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    market_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    stocklist_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sector_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    SbtMarket:
+      local: market_id
+      foreign: id
+      type: one
+    SbtSector:
+      local: sector_id
+      foreign: id
+      type: one
+    SbtStockList:
+      local: stocklist_id
+      foreign: id
+      type: one
+    SbtArticleType:
+      local: type_id
+      foreign: id
+      type: one
+    SbtAnalysis:
+      local: id
+      foreign: analysis_object_id
+      type: many
+    SbtUserBlog:
+      local: id
+      foreign: ublog_object_id
+      type: many
+SbtStocklistSector :
+  connection: doctrine
+  tableName: sbt_stocklist_sector
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sbt_stocklist_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sbt_sector_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtSector:
+      local: sbt_sector_id
+      foreign: id
+      type: one
+    SbtStockList:
+      local: sbt_stocklist_id
+      foreign: id
+      type: one
+SbtMarketStocklist :
+  connection: doctrine
+  tableName: sbt_market_stocklist
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sbt_market_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sbt_stocklist_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtMarket:
+      local: sbt_market_id
+      foreign: id
+      type: one
+    SbtStockList:
+      local: sbt_stocklist_id
+      foreign: id
+      type: one
+SbtUserBlog:
+  connection: doctrine
+  tableName: sbt_user_blog
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ublog_category_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ublog_type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ublog_object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ublog_market_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ublog_stocklist_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ublog_sector_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ublog_title:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    ublog_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ublog_views:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    ublog_votes:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+    SbtBlogComment:
+      local: id
+      foreign: blog_id
+      type: many
+    SbtObject:
+      local: ublog_object_id
+      foreign: id
+      type: one
+    SbtArticleCategory:
+      local: ublog_category_id
+      foreign: id
+      type: one
+    SbtArticleType:
+      local: ublog_type_id
+      foreign: id
+      type: one
+BtforumCategory :
+  connection: doctrine
+  tableName: btforum_category
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btforum_category_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btforum_subcategory_id_list:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Btforum: 
+      local: id
+      foreign: btforum_category_id
+      type: many
+BtforumSubcategory :
+  connection: doctrine
+  tableName: btforum_subcategory
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btforum_subcategory_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Btforum: 
+      local: id
+      foreign: btforum_subcategory_id
+      type: many
+SbtVisits:
+  connection: doctrine
+  tableName: sbt_visits
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    visit_count:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+SbtVoteDetails :
+  connection: doctrine
+  tableName: sbt_vote_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    art_blog_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    vote_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+BorstArticleComment:
+  connection: doctrine
+  tableName: borst_article_comment
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    article_comment:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    subject:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false  
+    article_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    comment_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Article:
+      local: article_id
+      foreign: article_id
+      type: one
+SbtMessages:
+  connection: doctrine
+  tableName: sbt_messages
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    message_to:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    message_from:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    message_detail:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    SfGuardUserProfile:
+      local: message_to
+      foreign: user_id
+      type: one
+SbtFriendRequest:
+  connection: doctrine
+  tableName: sbt_friend_request
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    contactor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    contactee_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    message:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtRecentVisitor:
+  connection: doctrine
+  tableName: sbt_recent_visitor
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    profile_user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    profile_visitor_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtBlogComment:
+  connection: doctrine
+  tableName: sbt_blog_comment
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    blog_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    blog_comment:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    comment_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    followup_by_mail:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    SbtUserBlog:
+      local: blog_id
+      foreign: id
+      type: one
+SbtBlogVoteDetails :
+  connection: doctrine
+  tableName: sbt_blog_vote_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    blog_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    vote_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+ArticleHtml:
+  connection: doctrine
+  tableName: article_html
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    article_id:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    html_file_path:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtAnalysisSuggestion:
+  connection: doctrine
+  tableName: sbt_analysis_suggestion
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    analysis_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_suggestion:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    suggestion_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtAnalysisMedalType:
+  connection: doctrine
+  tableName: sbt_analysis_medal_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    analysis_medal_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+SbtAnalysisMedalDetails:
+  connection: doctrine
+  tableName: sbt_analysis_medal_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    analysis_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    analysis_medal_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    award_note_by_admin:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    awarded_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtAuthorMedalType:
+  connection: doctrine
+  tableName: sbt_author_medal_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_medal_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+SbtAuthorMedalDetails:
+  connection: doctrine
+  tableName: sbt_author_medal_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    author_medal_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    award_note_by_admin:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    awarded_by:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtPublisherRequest:
+  connection: doctrine
+  tableName: sbt_publisher_request
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    request_status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    sfGuardUser:
+      local: author_id
+      foreign: id
+      type: one
+SbtPublisherRequestStatus:
+  connection: doctrine
+  tableName: sbt_publisher_request_status
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    request_status_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+SbtUserprofilePhoto:
+  connection: doctrine
+  tableName: sbt_userprofile_photo
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    profile_photo_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtCombinedAnalysisData:
+  connection: doctrine
+  tableName: sbt_combined_analysis_data
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    analysis_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    combined_usernames:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+BtShopArticle:
+  connection: doctrine
+  tableName: btshop_article
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btshop_article_author_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btchart_type_id:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_article_title:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    btshop_article_subtitle:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    btshop_product_image:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    btshop_product_intro_text:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_product_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    product_weight:
+      type: float
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    published:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    is_downloadable:
+      type: boolean
+      default: false
+    is_sellable:
+      type: boolean
+      default: false
+    download_url:
+      type: string(200)
+      default: ''
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BtShopArticleType:
+      local: btshop_type_id
+      foreign: id
+      type: one
+    BtShopPriceDetails:
+      local: id
+      foreign: btshop_article_id
+      type: many
+    Subscription: 
+      local: id
+      foreign: product_id
+      type: many
+    Article: 
+      local: id
+      foreign: btshop_id
+      type: many
+BtShopArticleType:
+  connection: doctrine
+  tableName: btshop_article_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btshop_type_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    login_required:
+      type: boolean
+      default: 0
+  relations:
+    BtShopArticle:
+      local: id
+      foreign: btshop_type_id
+      type: many
+BtShopPriceDetails:
+  connection: doctrine
+  tableName: btshop_price_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btshop_article_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_product_quantity:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_price_unit_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_product_price:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    btshop_product_text:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BtShopArticle:
+      local: btshop_article_id
+      foreign: id
+      type: one
+BtShopPriceQtyUnit:
+  connection: doctrine
+  tableName: btshop_price_qty_unit
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    btshop_price_unit:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+SbtAds:
+  connection: doctrine
+  tableName: sbt_ads
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    ad_position:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: top_mid
+      notnull: true
+      autoincrement: false
+    ad_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    ad_type:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: img
+      notnull: true
+      autoincrement: false
+    is_enabled:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: N
+      notnull: true
+      autoincrement: false
+    ccounter_id:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    priority:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '10'
+      notnull: true
+      autoincrement: false
+    ad_title:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ad_target:
+      type: string(5)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: N
+      notnull: true
+      autoincrement: false
+    display_count:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    total_display_count:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    is_archive:
+      type: boolean
+      default: 0
+Purchase:
+  connection: doctrine
+  tableName: purchase
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    firstname:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    lastname:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    street:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    zipcode:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    city:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    telephone:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    country:
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    total_price:
+      type: float
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    payment_method:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    transaction_id:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    response_code:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    checkout_status:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    order_processed:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    payment_date:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Subscription: 
+      local: id
+      foreign: purchase_id
+      type: many
+PurchasedItem:
+  connection: doctrine
+  tableName: purchased_item
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    purchase_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    articleornot:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    quantity:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    price_per_unit:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_text:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false	  
+    total_price:
+      type: float
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    shipping:
+      type: float
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    vat:
+      type: float
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Subscription:
+  connection: doctrine
+  tableName: subscription
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    purchase_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    btchart_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+      default: 0
+    articleornot:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    subscription_duration:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    subscription_duration_unit:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    scheme_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    start_date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false	  
+    end_date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Purchase:
+      local: purchase_id
+      foreign: id
+      type: one
+    BtShopArticle:
+      local: product_id
+      foreign: id
+      type: one
+SbtUserBlogProfile:
+  connection: doctrine
+  tableName: sbt_user_blog_profile
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    blog_header_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_header_name_color:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_header_info:
+      type: string(1000)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_header_info_color:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_header_image:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_page_background_color:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_profile_img_text:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    blog_profile_comment:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtFavorite:
+  connection: doctrine
+  tableName: sbt_favorite
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    f_type:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    f_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    f_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    f_notification:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+BtNewsletterType:
+  connection: doctrine
+  tableName: bt_newsletter_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    newsletter_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+BtNewsletterSubscriber:
+  connection: doctrine
+  tableName: bt_newsletter_subscriber
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(128)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    newsletter_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    is_subscribed:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    sbt_activation_code:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Countries:
+  connection: doctrine
+  tableName: countries
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    iso_code:
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country_name:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country_region_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+CountryRegion:
+  connection: doctrine
+  tableName: country_region
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    country_region_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+CountryShipping:
+  connection: doctrine
+  tableName: country_shipping
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    country_region_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    item_weight:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    price:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+BtchartCompanyCategory:
+  connection: doctrine
+  tableName: btchart_company_category
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    company_type:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+  relations:
+    BtchartCompanyDetails:
+      local: id
+      foreign: company_type_id
+      type: many      
+BtchartCompanyDetails:
+  connection: doctrine
+  tableName: btchart_company_details
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    company_type_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    company_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    company_symbol:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    country:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    list:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    sector:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    active:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+    default_chart:
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+      autoincrement: false
+      notnull: true  
+    object_id:
+      type: integer(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+  relations:
+    Objekt:
+      local: object_id
+      foreign: object_id
+      type: one
+BtchartType:
+  connection: doctrine
+  tableName: btchart_type
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    chart_type_category:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false       
+    chart_type_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false 
+    chart_type_text:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false  
+    chart_type_short_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false 
+    chart_type_image:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    chart_type_file:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false 
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0000-00-00 00:00:00'
+      notnull: true
+      autoincrement: false
+BtchartFavorite:
+  connection: doctrine
+  tableName: btchart_favorite
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    stock_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    stock_type:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    chart_type:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    description:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false       
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+SbtAnalysisStatus:
+  connection: doctrine
+  tableName: sbt_analysis_status
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    status_name:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    SbtAnalysis:
+      local: id
+      foreign: published
+      type: many
+NewsLetter:
+  connection: doctrine
+  tableName: news_letter
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    name:
+      type: string(100)
+      notnull: false
+    ads:
+      type: string(100)
+      notnull: false
+    article:
+      type: string(500)
+      notnull: false
+    sbt_article:
+      type: string(100)
+      notnull: false
+    blog:
+      type: string(100)
+      notnull: false
+    publish:
+      type: boolean
+      default: 0
+    sent:
+      type: boolean
+      default: 0
+OrderCount:
+  connection: doctrine
+  tableName: order_count
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    action:
+      type: string(100)
+      notnull: true
+    order_count:
+      type: integer(4)
+      default: 0
+ContactUs:
+  connection: doctrine
+  tableName: contact_us
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    code:
+      type: string(100)
+      notnull: true
+      unique: true
+    subject:
+      type: string(100)
+      default: null
+    content:
+      type: string()
+      default: null
+    type:
+      type: string(100)
+
+ReminderSubscription:
+  connection: doctrine
+  tableName: reminder_subscription
+  actAs: [Timestampable]
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    subscription_type:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nof_days:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    subject:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    email_contain:
+      type: string(500)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Coupon:
+  connection: doctrine
+  tableName: coupon
+  actAs: [Timestampable]
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    code:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    code_desc:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    coupon_code:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    status:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+CouponDetails:
+  connection: doctrine
+  tableName: coupon_details
+  actAs: [Timestampable]
+  columns:
+    id:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    product_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    couponcode_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    status:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    is_inactive:
+      type: integer(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+EmailCollection:
+  connection: doctrine
+  tableName: email_collection
+  actAs: [Timestampable]
+  columns:
+    eid:
+      type: integer(4)
+      autoincrement: true
+      primary: true
+    email:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    updated_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false

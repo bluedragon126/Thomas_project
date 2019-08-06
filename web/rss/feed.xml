@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.mangaritrading.com/rss/rss.php">
+        <title>Börstjänaren RSS-feed</title>
+        <description></description>
+        <link>http://www.mangaritrading.com</link>
+       <dc:date>2019-07-23T02:49:14+01:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16607"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16610"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16618"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16619"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16614"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16615"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16613"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16612"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16617"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16584"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16585"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16605"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16588"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16604"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16594"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16597"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16583"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16611"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16591"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16602"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16589"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16601"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16608"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16598"/>
+                <rdf:li rdf:resource="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16616"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16607">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The average professional</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16607</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16610">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>People don't change</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16610</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16618">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Paul Tudor Jones</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16618</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16619">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Wizdom from an old trader</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16619</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16614">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>A final answer?</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16614</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16615">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Live on the extremes</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16615</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16613">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Portfolio Manager</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16613</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16612">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The minority</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16612</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16617">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>What is money?</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16617</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16584">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Dennis uses charts</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16584</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16585">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The last bull market</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16585</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16605">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Stay with your winners</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16605</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16588">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>What´s obvious is wrong!</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16588</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16604">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Never risk more than 1%!</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16604</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16594">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The unexpected and the impossible</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16594</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16597">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Like what you are doing</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16597</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16583">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Out of the question!</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16583</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16611">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Right is wrong</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16611</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16591">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The key to success</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16591</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16602">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Extensive experience and mistakes</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16602</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16589">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Successful investment</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16589</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16601">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>The stop</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16601</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16608">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Acquiring wealth</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16608</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16598">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>Confidence</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16598</link>
+        <description></description>
+    </item>
+    <item rdf:about="http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16616">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.mangaritrading.com</dc:source>
+        <title>When things go wrong</title>
+        <link>http://www.mangaritrading.com/borst/borstArticleDetails/article_id/16616</link>
+        <description></description>
+    </item>
+</rdf:RDF>

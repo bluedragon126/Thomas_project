@@ -1,0 +1,42 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+
+default:
+  is_secure: true
+  credentials: [ super_admin ]
+  
+createArticle:
+  is_secure: true
+  credentials: [[ super_admin, addArticle ]]
+  
+articleList:
+  is_secure: true
+  credentials: [[ super_admin, listArticle ]]
+
+articleProperties:
+  is_secure: true
+  credentials: [[ super_admin, articleProperties ]]
+  
+listObject:
+  is_secure: true
+  credentials: [[ super_admin, listObject ]]
+  
+editObject:  
+  is_secure: true
+  credentials: [[ super_admin, editObject ]]
+  
+sendArticleUpdateForm:
+  is_secure: true
+  credentials: [ super_admin ]
+
+btIngressImageUpload:
+  is_secure: true
+  credentials: [[ super_admin, addArticle ]]
+  
+btDetailImageUpload:
+  is_secure: true
+  credentials: [[ super_admin, addArticle ]]
+  
+getSearchArticleList:
+  is_secure: true
+  credentials: [[ super_admin, listArticle ]]

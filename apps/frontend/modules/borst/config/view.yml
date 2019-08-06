@@ -1,0 +1,35 @@
+borstHomeSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]
+  
+borstArticleDetailsSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js]
+  
+enquirySuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]
+  
+articleListSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]
+  
+borstAboutUsSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]
+  
+contactUsSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jquery.dotdotdot.min.js]
+  
+borstRiskSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]
+  
+siteMapSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]  
+  
+borstAdvanceSearchSuccess:
+  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
+  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]    

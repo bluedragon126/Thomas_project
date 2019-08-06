@@ -1,0 +1,41 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  recaptcha:
+    public_key:  6LdlbicUAAAAAIUV2X87UN0QjKaJW6UEiYkaKHsa
+    private_key:  6LdlbicUAAAAAJNFaWSukC2zni6mejOz5KDXABND
+
+  system_culture: en,es
+
+  sf_guard_plugin:
+    allow_login_with_email: true
+    routes_register: false
+    #check_password_callable: [CheckUser, checkPassword]
+    profile_class:      sfGuardUserProfile
+    profile_field_name: user_id
+    algorithm_callable: md5
+
+  sf_guard_plugin_algorithm_callable: md5
+
+  mail_sender_email: systerbt@borstjanaren.se
+  mail_reply_email: systerbt@borstjanaren.se
+  mail_shop_email_1: info@borstjanaren.se
+  mail_sender_notification: info@borstjanaren.se
+ 
+  mail_shop_email: btshop@borstjanaren.se
+  
+  mail_avafx_email: n.lourie@avatrade.com
+  launch_date: '2011.10.28'
+ 
+  google_right_ads_id: 27.50.
+  google_top_count: 0
+  google_top_ads: 54
+  host_name: www.borstjanaren.se
+  mail_to_1: henrik.hallenborg@borstjanaren.se
+  mail_to_2: goran.hogberg@minmail.net
+  mail_to_3: thomas.sandstrom@borstjanaren.se  
+#  mail_to_1: jayeshk@siddhatech.com
+#  mail_to_2: jayeshsk13@gmail.com
+#  mail_to_3: t2@thephpprojects.com  

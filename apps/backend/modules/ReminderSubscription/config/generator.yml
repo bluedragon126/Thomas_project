@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ReminderSubscription
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reminder_subscription
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [ subscription_type, nof_days,  subject, email_contain, created_at]
+        fields:
+          nof_days: { label: No. of Days}
+      filter:
+        #subscription_type
+        display: [ marca, nof_days,  subject]
+        fields:
+          marca: { label: Subscription Type}
+          nof_days: { label: No. of Days}
+      form:    ~
+      edit:
+        fields:
+          nof_days: { label: No. of Days}
+      new:
+        fields:
+          nof_days: { label: No. of Days}

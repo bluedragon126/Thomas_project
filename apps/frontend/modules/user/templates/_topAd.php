@@ -1,0 +1,1 @@
+<div class="headerbanner"><?php echo html_entity_decode($sf_user->getAttribute('ad_8')); ?><!--<img src="/images/new_home/home_banner_1.gif" />--></div>

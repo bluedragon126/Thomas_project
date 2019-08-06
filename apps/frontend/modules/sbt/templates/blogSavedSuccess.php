@@ -1,0 +1,1 @@
+<div class="shoph3 widthall margin_top_30"><?php echo 'Your Blog Data has been saved...!'; ?></div>

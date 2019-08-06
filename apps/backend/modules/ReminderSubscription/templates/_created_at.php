@@ -1,0 +1,1 @@
+<?php echo date('M d, Y', strtotime($reminder_subscription->getCreatedAt()));?>

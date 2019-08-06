@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* top login section */
+ul.loginmenu{  padding-top:4px;   }
+
+/* Profile Blog Listing */
+#myblog_list_page table{ float:left; position:relative;}
+#myblog_list_page table th, #myblog_list_page table tr, #myblog_list_page table td{ float:left; position:relative;}
+
+/* Profile Show All Post Listing */
+#profile_useralldata_borst_list_table{ float:left; position:relative;}
+#profile_useralldata_sbt_list_table{ float:left; position:relative;}
+#profile_useralldata_blog_list_table{ float:left; position:relative;}
+#profile_useralldata_forum_list_table{ float:left; position:relative;}
+#profile_useronly_forum_list_table{ float:left; position:relative;}
+
+#profile_useralldata_borst_list_table th, #profile_useralldata_borst_list_table tr, #profile_useralldata_borst_list_table td{ float:left; position:relative;}
+#profile_useralldata_sbt_list_table th, #profile_useralldata_sbt_list_table tr, #profile_useralldata_sbt_list_table td{ float:left; position:relative;}
+#profile_useralldata_blog_list_table th, #profile_useralldata_blog_list_table tr, #profile_useralldata_blog_list_table td{ float:left; position:relative;}
+#profile_useralldata_forum_list_table th, #profile_useralldata_forum_list_table tr, #profile_useralldata_forum_list_table td{ float:left; position:relative;}
+#profile_useronly_forum_list_table th, #profile_useronly_forum_list_table tr, #profile_useronly_forum_list_table td{ float:left; position:relative;}
+
+#profile_useronly_forum_list_table #profile_useronly_forum_list_column_row th a{ float:left; position:relative; }
+#profile_useronly_forum_list_table .classnot a{ float:left; position:relative; }
+
+/* Profile Show My Favorate Post Listing */
+#blog_fav_container #blog_fav_list #table_myFav td{ border-bottom:1px solid #CED2D0; }
+
+#bt_article_comment_list_div th, #bt_article_comment_list_div tr, #bt_article_comment_list_div td{ float:left; position:relative;}
+#comment_table th, #comment_table tr, #comment_table td{ float:left; position:relative;}
+#comment_table{ float:left; position:relative;}
+
+#borst_comment_table th, #borst_comment_table tr, #borst_comment_table td{ float:left; position:relative;}
+#borst_comment_table{ float:left; position:relative;}
+
+.dotted_line{ border-bottom:1px dotted #666666; padding-bottom:5px; float:left; position:relative;}
+
+/* Forum Home page Listing */
+#forum_topic_list th, #forum_topic_list tr, #forum_topic_list td{ float:left; position:relative;}
+
+.forum_title{ float: left; height: auto; position: relative; text-align: left; width: 645px; word-wrap: break-word; border:0px solid red;}
+.forum_desc{ float: left; height: auto; position: relative; text-align: left; width: 455px; word-wrap: break-word; border:0px solid red;}
+
+/* Top Ad Message */
+.ieadj{ margin-top:-2px;}
+

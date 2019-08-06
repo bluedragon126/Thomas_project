@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html; charset=utf-8
+    Expires: -1
+    Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    Pragma: no-cache
+
+  metas:
+    #title:        symfony project
+    #description:  symfony project
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    [main.css, custom-theme/jquery-ui-1.8.2.custom.css, jquery.Jcrop.css, colorpicker.css, style.css, jqtransformplugin/jqtransform.css, style_ie.css]
+
+  javascripts:    [jquery-1.4.2.min.js,common.js, tinymce/js/tinymce/tinymce.min.js,simpleCaptcha/jquery.simpleCaptcha-0.2.min.js, jquery.dimensions.js, jquery-ui-1.8.2.custom.min.js, jquery.Jcrop.js, jquery.scrollTo-min.js, colorpicker.js, jquery.jqprint.js, jquery.corner.js, jquery.dotdotdot.min.js, jqtransformplugin/jquery.jqtransform.js]
+  #javascripts:     [combined.js, tiny_mce/tiny_mce.js]
+
+  has_layout:     true
+  layout:         layout
