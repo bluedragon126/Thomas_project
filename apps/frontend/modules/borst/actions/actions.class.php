@@ -2786,7 +2786,7 @@ class borstActions extends sfActions
                             }
                             else if($submenu_menu == 'borst_menu_ppm'){
                                 $query = ArticleTable::getInstance()->getAllBorstArticleQuery($column_id,$order);
-                            }else{echo "==other cond==>";
+                            }else{
                                 $query = ArticleTable::getInstance()->getAllBorstArticleQuery($column_id,$order);
                             }
                             if(!$this->getUser()->getAttribute('isSuperAdmin', '', 'userProperty'))

@@ -1,3 +1,6 @@
+<?php
+echo('111'); exit;
+?>
 <table width="100%" border="0" cellspacing="0" cellpadding="3" id="article_list_table" class="getArticleData_table">
   <input type="hidden" id="parent_menu" name="parent_menu" value="<?php echo $sf_user->getAttribute('parent_menu'); ?>"/>
   <input type="hidden" id="submenu_menu" name="submenu_menu" value="<?php echo $sf_user->getAttribute('submenu_menu'); ?>"/>
@@ -5,11 +8,11 @@
   <input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
   <tr id="article_list_column_row" valign="top" height="35">
     <th align="left" width="8%">Art</th>
-	<th align="left" width="17%"><a id="sortby_date" class="float_left cursor width_80"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-	<th align="left" width="28%"><a id="sortby_title" class="float_left cursor width_80"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-	<th align="left" width="19%"><a id="sortby_category" class="float_left cursor width_90"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-	<th align="left" width="13%"><a id="sortby_type"  class="float_left cursor width_80"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-	<th align="left" width="15%"><a id="sortby_object" class="float_left cursor width_90"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th align="left" width="17%"><a id="sortby_date" class="float_left cursor width_80"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th align="left" width="28%"><a id="sortby_title" class="float_left cursor width_80"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th align="left" width="19%"><a id="sortby_category" class="float_left cursor width_90"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th align="left" width="13%"><a id="sortby_type"  class="float_left cursor width_80"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th align="left" width="15%"><a id="sortby_object" class="float_left cursor width_90"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
   </tr>
   <?php if($type == 'sbt'):?>
   <?php foreach ($pager->getResults() as $article): ?>

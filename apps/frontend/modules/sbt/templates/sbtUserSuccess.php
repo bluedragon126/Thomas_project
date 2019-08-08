@@ -29,13 +29,13 @@
                         <input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
                         <tr id="user_list_column_row">
                             <th scope="col" width="7%">Avatar</th>
-                            <th scope="col" width="20%"><a id="sortby_author" class="float_left cursor width_107"><span class="float_left">&nbsp;&nbsp;Användare<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="10%"><a id="sortby_title"  class="float_left cursor width_65"><span class="float_left">Titel<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="13%"><a id="sortby_regdate"  class="float_left cursor width_87"><span class="float_left">Regdate<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="10%"><a id="sortby_message"  class="float_left cursor width_75"><span class="float_left">Inlägg<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="10%"><a id="sortby_vote"  class="float_left cursor width_80"><span class="float_left">Röster<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="10%"><a id="sortby_totallogin"  class="float_left cursor width_75"><span class="float_left">Inlogg<img src="/images/bg.gif" alt="down" /></span></a></th>
-                            <th scope="col" width="20%"><a id="sortby_lastlogin"  class="float_left" cursor width_98><span class="float_left">Senaste<img src="/images/bg.gif" alt="down" /></span></a></th>
+                            <th scope="col" width="20%"><a id="sortby_author" class="float_left cursor width_107"><span class="float_left">&nbsp;&nbsp;Användare<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="10%"><a id="sortby_title"  class="float_left cursor width_65"><span class="float_left">Titel<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="13%"><a id="sortby_regdate"  class="float_left cursor width_87"><span class="float_left">Regdate<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="10%"><a id="sortby_message"  class="float_left cursor width_75"><span class="float_left">Inlägg<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="10%"><a id="sortby_vote"  class="float_left cursor width_80"><span class="float_left">Röster<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="10%"><a id="sortby_totallogin"  class="float_left cursor width_75"><span class="float_left">Inlogg<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            <th scope="col" width="20%"><a id="sortby_lastlogin"  class="float_left" cursor width_98><span class="float_left">Senaste<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         </tr>
                         <?php foreach ($pager->getResults() as $user): ?>
                             <tr class="classnot">

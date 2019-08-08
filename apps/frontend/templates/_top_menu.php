@@ -34,6 +34,8 @@ switch ($parent_menu) {
 
 $btshop_article = new BtShopArticle();
 $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
+$utbildningar_data = $btshop_article->getPublishedShopArticleOfType(4);
+$metastock_data = $btshop_article->getPublishedShopArticleOfType(1);
 ?>
 <script>
     function gotoDiv(url){
@@ -47,12 +49,49 @@ $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
         });
     });
 </script>
+
+<?php
+foreach ($utbildningar_data as $article):
+    // echo ("111");
+    // echo("</br>");
+endforeach;
+?>
+<div class = "drop_down_bt_shop first_drop" id = "first_drop">
+    <ul>
+    <?php
+    foreach ($abonnemang_data as $article):?>
+        <li><?php echo $article->btshop_article_title;?></li></br>
+    <?php
+    endforeach;
+    ?>
+    </ul>
+</div>
+<div class = "drop_down_bt_shop second_drop" id = "second_drop">
+    <ul>
+    <?php
+    foreach ($utbildningar_data as $article):?>
+        <li><?php echo $article->btshop_article_title;?></li></br>
+    <?php
+    endforeach;
+    ?>
+    </ul>
+</div>
+<div class = "drop_down_bt_shop third_drop" id = "third_drop">
+    <ul>
+    <?php
+    foreach ($metastock_data as $article):?>
+        <li><?php echo $article->btshop_article_title;?></li></br>
+    <?php
+    endforeach;
+    ?>
+    </ul>
+</div>
 <div class="nav-bar-wrap">
     <div class="nav-bar-wrap-left">
         <ul class="nav-bar">
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><span class="text-uppercase borst <?php echo $parent_menu == 'top_borst_menu' ? 'nav-active' : '' ?>">BÖRSTJÄNAREN</span></a>
-                <ul class="nav-bar-sub" id="first">
-                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><span style="padding-left:0px" class="<?php echo $submenu == 'borst_menu_home' ? 'sub-active' : '' ?>">Hem</span></a></li>
+                <ul class="nav-bar-sub " id="first">
+                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><span  class="<?php echo $submenu == 'borst_menu_home' ? 'sub-active' : '' ?>">Hem</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstShare"><span class="<?php echo $submenu == 'borst_menu_share' ? 'sub-active' : '' ?>">Aktier</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCommodities"><span class="<?php echo $submenu == 'borst_menu_commodities' ? 'sub-active' : '' ?>">Råvaror</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCurrencies"><span class="<?php echo $submenu == 'borst_menu_currencies' ? 'sub-active' : '' ?>">Valutor</span></a></li>
@@ -63,11 +102,12 @@ $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
                 </ul>
             </li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span class="text-uppercase bt-shop <?php echo $parent_menu == 'top_bt_shop' ? 'nav-active' : '' ?>">BT-Shop</span></a>
-                <ul class="nav-bar-sub <?php echo $parent_menu == '2' ? $show_div : $hide_div; ?>" id="second">
+                <ul class="nav-bar-sub" id="second">
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span>Hem</span></a></li>
-                    <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'><span>Abonnemang</span></a></li>
-                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'><span>Utbildningar</span></a></li>
-                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");'><span>Metastock</span></a></li>
+                    <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'><span>Abonnemang</span></a>
+                    </li>
+                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");' id="btshop_utbildningar"><span>Utbildningar</span></a></li>
+                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");' id="btshop_metastock"><span>Metastock</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><span>Villkor</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopCart"><span>Varukorg</span></a></li>
                 </ul>
@@ -114,14 +154,74 @@ $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
         <span class="subnav-bar <?php echo $third_menu == 'contact_us' ? 'sub-active' : '' ?>"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/contactUs'; ?>">Kontakta oss</a></span>
     </div>
 </div>
+
+<?php 
+if($parent_menu == 'top_borst_menu'){
+    echo '<script type="text/javascript">',
+    "$('#first').css('display', 'block');",
+    "$('.bt-shop, .tjanster, .tradingkonto, #second, #third, #fourth').hover(function(){",
+        "$('#first').css('display', 'none');",
+    "},",
+    "function(){",
+        "$('#first').css('display', 'block');",
+    "});",
+    '</script>';
+}
+elseif($parent_menu == 'top_bt_shop'){
+    echo '<script type="text/javascript">',
+    "$('#second').css('display', 'block');",
+    "$('.borst, .tjanster, .tradingkonto, #first, #third, #fourth').hover(function(){",
+        "$('#second').css('display', 'none');",
+    "},",
+    "function(){",
+        "$('#second').css('display', 'block');",
+    "});",
+    '</script>';
+}
+elseif($parent_menu == 'services'){
+    echo '<script type="text/javascript">',
+    "$('#third').css('display', 'block');",
+    "$('.borst, .bt-shop, .tradingkonto, #first, #second, #fourth').hover(function(){",
+        "$('#third').css('display', 'none');",
+    "},",
+    "function(){",
+        "$('#third').css('display', 'block');",
+    "});",
+    '</script>';
+}
+elseif($parent_menu == 'tradingaccount'){
+    echo '<script type="text/javascript">',
+    "$('#fourth').css('display', 'block');",
+    "$('.borst, .bt-shop, .tjanster, #first, #second, #third').hover(function(){",
+        "$('#fourth').css('display', 'none');",
+    "},",
+    "function(){",
+        "$('#fourth').css('display', 'block');",
+    "});",
+    '</script>';
+}
+?>
+
 <script>
     $(document).ready(function(){
-        $('#first').css('display', 'block');
-        $('.bt-shop, .tjanster, .tradingkonto, #second, #third, #fourth').hover(function(){
-            $('#first').css('display', 'none');
+        
+        $('#btshop_abonnemang, #first_drop').hover(function(){
+            $('#first_drop').css('display', 'block');
         },
         function(){
-            $('#first').css('display', 'block');
+            $('#first_drop').css('display', 'none');
+        });
+        $('#btshop_utbildningar, #second_drop').hover(function(){
+            $('#second_drop').css('display', 'block');
+        },
+        function(){
+            $('#second_drop').css('display', 'none');
+        });
+        $('#btshop_metastock, #third_drop').hover(function(){
+            $('#third_drop').css('display', 'block');
+        },
+        function(){
+            $('#third_drop').css('display', 'none');
         });
         
     });

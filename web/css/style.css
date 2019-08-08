@@ -2971,6 +2971,43 @@ ul.cartStep2 li {
     margin: -6px 16px 0px;
 }
 /* new forum sorting popup */
+.first_drop{
+    margin-left: 47px;
+    margin-right: 12px;
+    margin-top: 77px;
+    margin-bottom: 12px;
+}
+.second_drop{
+    margin-left: 148px;
+    margin-right: 12px;
+    margin-top: 77px;
+    margin-bottom: 12px;
+}
+.third_drop{
+    margin-left: 248px;
+    margin-right: 12px;
+    margin-top: 77px;
+    margin-bottom: 12px;
+}
+.drop_down_bt_shop{
+    line-height: normal;
+    float: left;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 12px;
+    position: absolute;
+    z-index: 999;
+    background-color: #dfe5e8;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 7px 5px 7px -4px #8d8d8d;
+    letter-spacing: 0.04em;
+    color:#232222;
+    display: none;
+    text-transform: uppercase;
+    list-style-type: none !important;
+    padding: 2px 32px 0 2px !important;
+    text-align: left !important;
+}
 .forum_drop-down-menus{
     float: left;
     font-family: "Franklin Gothic Book Regular";
@@ -8187,6 +8224,9 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
 }
 /*.nav-active ul{display: block;}*/
 #first{position: absolute;margin-top: 30px;padding-left: 0px;}
+#second{position: absolute;margin-top: 30px;padding-left: 0px;}
+#third{position: absolute;margin-top: 30px;padding-left: 0px;}
+#fourth{position: absolute;margin-top: 30px;padding-left: 0px;}
 .top_menu_right{
     font-size: 1em;
     font-family: "Franklin Gothic Book Regular";

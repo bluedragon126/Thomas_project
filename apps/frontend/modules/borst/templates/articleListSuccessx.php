@@ -196,7 +196,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <input type="hidden" id="sbt_type_id" name="sbt_type_id" value="<?php echo $param['sbt_type_id']; ?>"/>
                     <input type="hidden" id="sbt_obj_id" name="sbt_obj_id" value="<?php echo $param['sbt_obj_id']; ?>"/>
                     <tr id="article_list_column_row_new" valign="top" height="35" class="blackcolor">
-                        <th align="left" width="72"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th align="left" width="72"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         <th width="10">&nbsp;</th>
                         <th align="left" width="276"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width="20"/></span></a>
 
@@ -208,11 +208,11 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                     </th>
                     <th width="21">&nbsp;</th>
-                    <th align="left" width="70"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
+                    <th align="left" width="70"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                     <th width="8">&nbsp;</th>
-                    <th align="left" width="81"><a id="sortby_type" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
+                    <th align="left" width="81"><a id="sortby_type" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                     <th width="8">&nbsp;</th>
-                    <th align="left" width="86"><a id="sortby_object" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+                    <th align="left" width="86"><a id="sortby_object" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                     </tr>
                     <?php if ($type == 'sbt'): ?>
                         <?php foreach ($pager->getResults() as $article): ?>

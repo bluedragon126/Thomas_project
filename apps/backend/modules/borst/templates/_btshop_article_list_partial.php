@@ -13,10 +13,10 @@
     <thead>
       <tr id="borst_shop_article_list_column_row">
         <th scope="col" width="3%">Nr</th>
-		<th scope="col" width="45%"><a id="sortby_subject" class="float_left cursor"><span class="bk_shoplist_col_name">Ämne<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="10%"><a id="sortby_status" class="float_left cursor"><span class="bk_shoplist_col_status">Status<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="15%"><a id="sortby_type" class="float_left cursor"><span class="bk_shoplist_col_type">Type of Article<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="17%"><a id="sortby_date" class="float_left cursor"><span class="bk_shoplist_col_delete">Date<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th scope="col" width="45%"><a id="sortby_subject" class="float_left cursor"><span class="bk_shoplist_col_name">Ämne<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="10%"><a id="sortby_status" class="float_left cursor"><span class="bk_shoplist_col_status">Status<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="15%"><a id="sortby_type" class="float_left cursor"><span class="bk_shoplist_col_type">Type of Article<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="17%"><a id="sortby_date" class="float_left cursor"><span class="bk_shoplist_col_delete">Date<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 		<th scope="col" width="10%">Delete</th>
       </tr>
     </thead>

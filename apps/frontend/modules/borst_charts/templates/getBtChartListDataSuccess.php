@@ -3,7 +3,7 @@
     	  <ul>
     		<li>
                 <?php include_component('isicsBreadcrumbs', 'show', array(
-    	           'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
+    	           'root' => array('text' => 'Bï¿½RSTJï¿½NAREN', 'uri' => 'borst/borstHome')
     	       )) ?> 
            </li>
     	  </ul>
@@ -58,12 +58,12 @@
     <form name="stock_list_main" action="" id="stock_list_main" method="post" >
         <table align="left" style="" cellpadding="0" cellspacing="0">
             <tr id="btchart_stock_list">
-                <td class="heading" style="width: 18%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2"> Namn<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 20%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2"> Symbol<img src="/images/bg.gif" alt="down" /></span></a></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Land<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 20%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Marknadstyp<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 15%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">Lista<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 15%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sektor<img src="/images/bg.gif" alt="down" /></span></a></strong></td>               
+                <td class="heading" style="width: 18%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2"> Namn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 20%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2"> Symbol<img src="/images/bg.gif" alt="down" width = '20' /></span></a></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Land<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 20%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Marknadstyp<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 15%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">Lista<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 15%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sektor<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>               
             </tr>
             <?php foreach($pager->getResults() as $data): ?>
                 <tr class="classnot" id="row_<?php echo $data->id; ?>">

@@ -28,14 +28,14 @@
     <form name="stock_list_main" action="" id="stock_list_main" method="post" >
         <table align="left" style="" cellpadding="0" cellspacing="0">
             <tr id="btchart_stock_list">
-                <td class="heading" style="width: 15%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2">Stock Name<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2">Stock Symbol<img src="/images/bg.gif" alt="down" /></span></strong></a></td>
-                <td class="heading" style="width: 8%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Country<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Stock Type<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">List<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sector<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
+                <td class="heading" style="width: 15%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2">Stock Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2">Stock Symbol<img src="/images/bg.gif" alt="down" width = '20' /></span></strong></a></td>
+                <td class="heading" style="width: 8%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Country<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Stock Type<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">List<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sector<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
                 <!--//change by sandeep-->
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_object" class="float_left cursor"><span id="sortby_object2">Object<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_object" class="float_left cursor"><span id="sortby_object2">Object<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
                 <!--//change by sandeep end-->
                 <td class="heading" style="width: 12%;"><strong>Enable / Disable</strong></td>
                 <td colspan="2"><input type="button" value="Save Changes" class="registerbuttontext submit" style="float:left;" id="btchart_list_button" /></td>

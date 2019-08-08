@@ -32,12 +32,20 @@
             <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
         </div>
     </div>
-    <div class="rightbanner padding_0 font_0 margin_top_none">
-            <div class="home_ad_r float_left font_size_12">Annons</div>
-            <?php //include_partial('global/ad_message') ?>
-            <div id="whitepage_ads">
-                <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'set_margin' => '1', 'ad_3' => $ad_3, 'ad_4' => $ad_4)) ?>
-            </div>
-        </div>        
+<div class="rightbanner autoheight padding_0">
+      <div class="home_heading_r">
+    <div class="home_ad_r float_left font_size_12">Annons</div>
+    <?php //include_partial('global/ad_message') ?>
+        <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
+        <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>        
+        <?php include_partial('global/sponsorer_ad') ?>
+        
+        <!--<div class="home_ad_r_spons float_left">Annons</div> -->
+        <?php include_partial('global/bulk_ads', array('bulk_ads' => $ad_3)) ?>
+        <!--<div class="blank_10h">&nbsp;</div>-->
+        <?php include_partial('global/right_top_ads', array('ad' => $ad_4)) ?>
+        <?php if(count($twentyeight_2_thirtyfive)>0) {?><div class="home_adline_r_div">&nbsp;</div><?php }?>
+    </div>
+  </div>      
     </div>
 </form>

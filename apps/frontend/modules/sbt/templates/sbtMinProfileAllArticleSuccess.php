@@ -6,11 +6,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_article_list_table">
  	  <tr id="profile_article_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th class="width_37">Art</th>
-		<th class="width_83"><a id="sortby_date" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_152"><a id="sortby_title" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_92"><a id="sortby_category" name="profile_article_list_table" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_type" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_object" name="profile_article_list_table" class="float_left width_90 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th class="width_83"><a id="sortby_date" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_152"><a id="sortby_title" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_92"><a id="sortby_category" name="profile_article_list_table" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_type" name="profile_article_list_table" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_object" name="profile_article_list_table" class="float_left width_90 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($article_pager->getResults() as $data): ?>
       <tr class="classnot">
@@ -30,11 +30,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_analysis_list_table">
       <tr id="profile_analysis_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th align="left" class="width_37">Art</th>
-		<th align="left" class="width_83"><a id="ana_sortby_date" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th align="left" class="width_152"><a id="ana_sortby_title" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th align="left" class="width_92"><a id="ana_sortby_category" name="profile_analysis_list_table"  class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th align="left" class="width_84"><a id="ana_sortby_type" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th align="left" class="width_84"><a id="ana_sortby_object" name="profile_analysis_list_table"  class="float_left width_90 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th align="left" class="width_83"><a id="ana_sortby_date" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th align="left" class="width_152"><a id="ana_sortby_title" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th align="left" class="width_92"><a id="ana_sortby_category" name="profile_analysis_list_table"  class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th align="left" class="width_84"><a id="ana_sortby_type" name="profile_analysis_list_table"  class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th align="left" class="width_84"><a id="ana_sortby_object" name="profile_analysis_list_table"  class="float_left width_90 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($analysis_pager->getResults() as $data): ?>
       		<?php //if( ($data->published == 1 || $data->published == 7) || ($show_top_links == 1) || ($isSuperAdmin == 1) ):?>

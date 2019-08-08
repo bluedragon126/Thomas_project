@@ -27,8 +27,8 @@
 			<thead>
 				<tr id="sbt_publisher_request_list_column_row">
 				<th scope="col" width="3%">Nr</th>
-				<th scope="col" width="17%"><a id="sortby_author" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:85px;">Användare<img src="/images/bg.gif" alt="down" /></span></a></th>
-				<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:70px;">Regdate<img src="/images/bg.gif" alt="down" /></span></a></th>
+				<th scope="col" width="17%"><a id="sortby_author" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:85px;">Användare<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+				<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:70px;">Regdate<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 				<th scope="col" width="20%">Assign Group</th>
 				</tr>
 			</thead>

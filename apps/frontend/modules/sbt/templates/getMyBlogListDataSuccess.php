@@ -9,11 +9,11 @@
       <input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
       <tr id="myblog_list_column_row" class="blog_table_head">
         <!--<th class="width_30">Art</th>-->
-        <th class="width_83 pad_lft_5"><a id="sortby_date" class="float_left width_80 cursor"><span class="float_left">Publ.<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
-        <th class="width_133"><a id="sortby_title" class="float_left width_80 cursor"><span class="float_left">Rubrik<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
-        <th class="width_92"><a id="sortby_category" class="float_left width_90 cursor"><span class="float_left">Kategori<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
-        <th class="width_84"><a id="sortby_type" class="float_left width_80 cursor"><span class="float_left">Typ<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
-        <th class="width_84"><a id="sortby_object" class="float_left width_80 cursor"><span class="float_left">Objekt<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
+        <th class="width_83 pad_lft_5"><a id="sortby_date" class="float_left width_80 cursor"><span class="float_left">Publ.<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
+        <th class="width_133"><a id="sortby_title" class="float_left width_80 cursor"><span class="float_left">Rubrik<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
+        <th class="width_92"><a id="sortby_category" class="float_left width_90 cursor"><span class="float_left">Kategori<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
+        <th class="width_84"><a id="sortby_type" class="float_left width_80 cursor"><span class="float_left">Typ<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
+        <th class="width_84"><a id="sortby_object" class="float_left width_80 cursor"><span class="float_left">Objekt<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
         <?php //if($logged_user==$data->author_id || $isSuperAdmin): ?><th class="width_55">&nbsp;</th><?php //endif; ?>
       </tr>
       <?php foreach($pager->getResults() as $data): ?>

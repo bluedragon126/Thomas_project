@@ -25,9 +25,9 @@
 			<thead>
 				<tr id="medal_analysis_list_column_row">
 				<th scope="col" width="5%">Nr</th>
-				<th scope="col" width="55%"><a id="sortby_title" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:80px;">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-				<th scope="col" width="20%"><a id="sortby_vote" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:105px;">Vote Received<img src="/images/bg.gif" alt="down" /></span></a></th>
-				<th scope="col" width="20%"><a id="sortby_date" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:60px;">Datum<img src="/images/bg.gif" alt="down" /></span></a></th>
+				<th scope="col" width="55%"><a id="sortby_title" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:80px;">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+				<th scope="col" width="20%"><a id="sortby_vote" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:105px;">Vote Received<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+				<th scope="col" width="20%"><a id="sortby_date" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:60px;">Datum<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 				</tr>
 			</thead>
 			<?php if($pager->getNbResults()):?>

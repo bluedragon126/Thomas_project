@@ -1,3 +1,10 @@
+
+
+<style>
+.active_item {
+  color: red;
+}
+</style>
 <div class="lista1 widthall list_lista"><?php echo __('Lista') ?></div>
 <div class="shop4">
     <input type="hidden" name="art_id" id="art_id" value="<?php echo $art_id ?>" />
@@ -63,11 +70,11 @@
                         <span class="forum_sorting_wrapper">
                             <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row" style="top:17px;">
                                 <ul noclick="1">
-                                    <li noclick="1"><span noclick="1" id="sortby_date" class="cursor">Publ.</span></li>
-                                    <li noclick="1"><span noclick="1" id="sortby_title" class="cursor">Rubrik</span></li>
-                                    <li noclick="1"><span noclick="1" id="sortby_category" class="cursor">Kategori</span></li>
-                                    <li noclick="1"><span noclick="1" id="sortby_type" class="cursor">Typ</span></li>
-                                    <li noclick="1"><span noclick="1" id="sortby_object" class="cursor">Objekt</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_date" class="cursor date_active">Publ.</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_title" class="cursor title_active">Rubrik</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_category" class="cursor category_active">Kategori</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_type" class="cursor type_active">Typ</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_object" class="cursor object_active">Objekt</span></li>
                                 </ul>
                             </div>
                             <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
@@ -92,10 +99,10 @@
     <input type="hidden" id="sbt_type_id" name="sbt_type_id" value="<?php echo $param['sbt_type_id']; ?>"/>
     <input type="hidden" id="sbt_obj_id" name="sbt_obj_id" value="<?php echo $param['sbt_obj_id']; ?>"/>
     <tr id="article_list_column_row_new" valign="top" height="35" class="blackcolor">
-        <th align="left" width="43" class="list_heading">Art</th>
-        <th align="left" width="71"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <!-- <th align="left" width="43" class="list_heading">Art</th> -->
+        <th align="left" width="71"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" width = "20"/></span></a></th>
         <th width="16">&nbsp;</th>
-        <th align="left" width="253"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" /></span></a>
+        <th align="left" width="253"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a>
 
             <?php if ($show_thumb == 1): ?>
         <div class="preamble" name="0"><span class="float_left">visa utan ingress</span></div>
@@ -105,11 +112,11 @@
 
         </th>
         <th width="23">&nbsp;</th>
-        <th align="left" width="66"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th align="left" width="66"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
         <th width="11">&nbsp;</th>
-        <th align="left" width="80"><a id="sortby_type" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th align="left" width="80"><a id="sortby_type" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
         <th width="11">&nbsp;</th>
-        <th align="left" width="60"><a id="sortby_object" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th align="left" width="60"><a id="sortby_object" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
     </tr>
 <?php if ($type == 'sbt'): ?>
     <?php foreach ($pager->getResults() as $article): ?>
@@ -148,7 +155,7 @@
             $flagga = "no_flag.gif";
         ?>
         <tr id="borst_rec_row" class="classnot">
-            <td width="43"><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td>
+            <!-- <td width="43"><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td> -->
             <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><span class="article_list_text"><?php echo substr($article->article_date, 0, 10); ?></span></td>
             <td width="16">&nbsp;</td>
 
@@ -250,3 +257,53 @@
     </div>
     
 </div>
+
+<!-- <script>
+$(document).ready(function(){
+    console.log("test............");
+    if($column_id == "date")
+        $(".date_active").addClass("active_item");
+    if($column_id == "title")
+        $(".title_active").addClass("active_item");
+    if($column_id == "category")
+        $(".category_active").addClass("active_item");
+    if($column_id == "type")
+        $(".type_active").addClass("active_item");
+    if($column_id == "typobjecte")
+        $(".object_active").addClass("active_item");
+
+});
+</script> -->
+<?php echo $column_id;
+if($column_id == "date"){
+    echo '<script type="text/javascript">',
+     '$(".date_active").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "title"){
+    echo '<script type="text/javascript">',
+     '$(".title_active").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "category"){
+    echo '<script type="text/javascript">',
+     '$(".category_active").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "type"){
+    echo '<script type="text/javascript">',
+     '$(".type_active").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "object"){
+    echo '<script type="text/javascript">',
+     '$(".object_active").addClass("active_item");',
+     '</script>'
+;
+}
+
+?>

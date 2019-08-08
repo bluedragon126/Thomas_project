@@ -4,13 +4,13 @@
     <thead>
       <tr id="update_borst_enquiry_column_row">
         <th scope="col" width="3%">Nr</th>
-		<th scope="col" width="22%"><span class="float_left" style="width:80px;"><a id="sortby_subject" style="cursor:pointer;" class="float_left"><span style="width:54px;" class="float_left">Ämne<img src="/images/bg.gif" alt="down" /></span></a></span></th>
-        <th scope="col" width="15%"><a id="sortby_enq_type" style="cursor:pointer;" class="float_left"><span style="width:110px;" class="float_left">Typ av förfrågan<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="11%"><a id="sortby_firstname" style="cursor:pointer;" class="float_left"><span style="width:71px;" class="float_left">Förnamn<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="12%"><a id="sortby_lastname" class="float_left" style="cursor:pointer;"><span style="width:79px;" class="float_left">Efternamn<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="17%"><a id="sortby_email" style="cursor:pointer;" class="float_left"><span style="width:57px;" class="float_left">E-post<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th scope="col" width="22%"><span class="float_left" style="width:80px;"><a id="sortby_subject" style="cursor:pointer;" class="float_left"><span style="width:54px;" class="float_left">Ämne<img src="/images/bg.gif" alt="down" width = '20' /></span></a></span></th>
+        <th scope="col" width="15%"><a id="sortby_enq_type" style="cursor:pointer;" class="float_left"><span style="width:110px;" class="float_left">Typ av förfrågan<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="11%"><a id="sortby_firstname" style="cursor:pointer;" class="float_left"><span style="width:71px;" class="float_left">Förnamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="12%"><a id="sortby_lastname" class="float_left" style="cursor:pointer;"><span style="width:79px;" class="float_left">Efternamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="17%"><a id="sortby_email" style="cursor:pointer;" class="float_left"><span style="width:57px;" class="float_left">E-post<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
         <th scope="col" width="7%">Status</th>
-        <th scope="col" width="13%"><a id="sortby_date" style="cursor:pointer;" class="float_left"><span style="width:46px;" class="float_left">Date<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th scope="col" width="13%"><a id="sortby_date" style="cursor:pointer;" class="float_left"><span style="width:46px;" class="float_left">Date<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
       </tr>
     </thead>
     <?php $i=1; foreach ($pager->getResults() as $enq): ?>

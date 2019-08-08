@@ -69,10 +69,10 @@
             </div>
             <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
                 <tr id="forum_topic_listing_column_row1" class="askBT_table_head">
-                            <th class="askBT_table_title_w pad_lft_5"><span class="float_left">Rubrik/Namn</span><!--<a id="sortby_subject2" class="float_left cursor"><img src="/images/bg.gif" alt="down" /></a>--></th>
-                            <th class="askBT_table_topic_w"><span class="float_left">Ämne<!--<img src="/images/bg.gif" alt="down" />--></span></th>
-                            <th class="forum_table_post_w"><span class="float_left">Inlägg/visad<!--<img src="/images/bg.gif" alt="down" />--></span></th>
-                            <th class="forum_table_date_w"><span class="float_left">Senaste<!--<img src="/images/bg.gif" alt="down" />--></span></th>
+                            <th class="askBT_table_title_w pad_lft_5"><span class="float_left">Rubrik/Namn</span><!--<a id="sortby_subject2" class="float_left cursor"><img src="/images/bg.gif" alt="down" width = '20' /></a>--></th>
+                            <th class="askBT_table_topic_w"><span class="float_left">Ämne<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></th>
+                            <th class="forum_table_post_w"><span class="float_left">Inlägg/visad<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></th>
+                            <th class="forum_table_date_w"><span class="float_left">Senaste<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></th>
                         </tr>
                 <?php $i = 1;
                 foreach ($pager->getResults() as $forum): //echo "<pre>"; print_r($forum->toarray());?>

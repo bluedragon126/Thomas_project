@@ -47,11 +47,24 @@ $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
         });
     });
 </script>
+
+<style>
+.hide{
+    display : none !important;
+}
+.show{
+    display : block !important;
+}
+</style>
+
+<?php echo('////////////////////////////');
+echo($parent_menu); ?>
+
 <div class="nav-bar-wrap">
     <div class="nav-bar-wrap-left">
         <ul class="nav-bar">
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><span class="text-uppercase borst <?php echo $parent_menu == 'top_borst_menu' ? 'nav-active' : '' ?>">BÖRSTJÄNAREN</span></a>
-                <ul class="nav-bar-sub" id="first">
+                <ul class="nav-bar-sub <?php echo $parent_menu == 'top_borst_menu' ? 'hide' : 'hide' ?>" id="first">
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><span style="padding-left:0px" class="<?php echo $submenu == 'borst_menu_home' ? 'sub-active' : '' ?>">Hem</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstShare"><span class="<?php echo $submenu == 'borst_menu_share' ? 'sub-active' : '' ?>">Aktier</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCommodities"><span class="<?php echo $submenu == 'borst_menu_commodities' ? 'sub-active' : '' ?>">Råvaror</span></a></li>
@@ -63,7 +76,7 @@ $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
                 </ul>
             </li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span class="text-uppercase bt-shop <?php echo $parent_menu == 'top_bt_shop' ? 'nav-active' : '' ?>">BT-Shop</span></a>
-                <ul class="nav-bar-sub <?php echo $parent_menu == '2' ? $show_div : $hide_div; ?>" id="second">
+                <ul class="nav-bar-sub <?php echo $parent_menu == 'top_bt_shop' ? 'show' : 'hide' ?>" id="second">
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span>Hem</span></a></li>
                     <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'><span>Abonnemang</span></a></li>
                     <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'><span>Utbildningar</span></a></li>

@@ -10,11 +10,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_useralldata_borst_list_table">
       <tr id="profile_useralldata_borst_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th class="width_30">Art</th>
-		<th class="width_83"><a id="sortby_date" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_152"><a id="sortby_title" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_92"><a id="sortby_category" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_type" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_object" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th class="width_83"><a id="sortby_date" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_152"><a id="sortby_title" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_92"><a id="sortby_category" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_type" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_object" name="profile_useralldata_borst_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($article_pager->getResults() as $data): ?>
       <tr class="classnot">
@@ -34,11 +34,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_useralldata_sbt_list_table">
       <tr id="profile_useralldata_sbt_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th class="width_30">Art</th>
-		<th class="width_83"><a id="sortby_date" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_152"><a id="sortby_title" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_92"><a id="sortby_category" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_type" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_object" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th class="width_83"><a id="sortby_date" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_152"><a id="sortby_title" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_92"><a id="sortby_category" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_type" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_object" name="profile_useralldata_sbt_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($analysis_pager->getResults() as $data): ?>
       <tr class="classnot">
@@ -58,11 +58,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_useralldata_blog_list_table">
       <tr id="profile_useralldata_blog_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th class="width_30">Art</th>
-		<th class="width_83"><a id="sortby_date" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_152"><a id="sortby_title" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_92"><a id="sortby_category" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_type" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_object" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th class="width_83"><a id="sortby_date" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_152"><a id="sortby_title" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_92"><a id="sortby_category" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_type" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_object" name="profile_useralldata_blog_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($blog_pager->getResults() as $data): ?>
       <tr class="classnot">
@@ -82,11 +82,11 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="profile_useralldata_forum_list_table">
       <tr id="profile_useralldata_forum_list_column_row" valign="top" height="35" style="color:#000000;">
 		<th class="width_30">Art</th>
-		<th class="width_83"><a id="sortby_date" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_152"><a id="sortby_title" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_92"><a id="sortby_category" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_type" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th class="width_84"><a id="sortby_object" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+		<th class="width_83"><a id="sortby_date" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_152"><a id="sortby_title" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_92"><a id="sortby_category" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_type" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th class="width_84"><a id="sortby_object" name="profile_useralldata_forum_list_table" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 	  </tr>
       <?php foreach($forum_pager->getResults() as $data): ?>
       <tr class="classnot">

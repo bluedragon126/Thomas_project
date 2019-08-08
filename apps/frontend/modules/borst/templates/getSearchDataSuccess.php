@@ -96,26 +96,26 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <table width="100%" border="0" cellspacing="0" cellpadding="0" id="article_list_table">
                   <!--<tr id="column_header">
                     <th class="width_30">Art</th>
-                    <th class="width_66"><a id="bt-sortby_date" name="borst_result" class="float_left width_72 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    <th class="width_160"><a id="bt-sortby_title" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    <th class="width_90"><a id="bt-sortby_category" name="borst_result" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    <th class="width_76"><a id="bt-sortby_type" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    <th class="width_81"><a id="bt-sortby_object" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    <th class="width_122"><a id="bt-sortby_author" name="borst_result" class="float_left width_100 cursor"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" /></span></a></th>
+                    <th class="width_66"><a id="bt-sortby_date" name="borst_result" class="float_left width_72 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                    <th class="width_160"><a id="bt-sortby_title" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                    <th class="width_90"><a id="bt-sortby_category" name="borst_result" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                    <th class="width_76"><a id="bt-sortby_type" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                    <th class="width_81"><a id="bt-sortby_object" name="borst_result" class="float_left width_80 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                    <th class="width_122"><a id="bt-sortby_author" name="borst_result" class="float_left width_100 cursor"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                   </tr>-->
 
                     <?php $flagga = "usa.gif"; ?>
                     <tr id="column_header" valign="top" height="35" class="blackcolor">
-                        <th align="left" width="43" class="list_heading">Art</th>
-                        <th align="left" width="71"><a id="bt-sortby_date" name="borst_result" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <!-- <th align="left" width="43" class="list_heading">Art</th> -->
+                        <th align="left" width="71"><a id="bt-sortby_date" name="borst_result" class="float_left cursor "><span class="float_left list_heading" >Publ.<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         <th width="16">&nbsp;</th>
-                        <th align="left" width="253"><a id="bt-sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th align="left" width="253"><a id="bt-sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         <th width="23">&nbsp;</th>
-                        <th align="left" width="66"><a id="bt-sortby_category" name="borst_result"  class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th align="left" width="66"><a id="bt-sortby_category" name="borst_result"  class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         <th width="11">&nbsp;</th>
-                        <th align="left" width="80"><a id="bt-sortby_type" name="borst_result" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th align="left" width="80"><a id="bt-sortby_type" name="borst_result" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                         <th width="11">&nbsp;</th>
-                        <th align="left" width="60"><a id="bt-sortby_object" name="borst_result" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th align="left" width="60"><a id="bt-sortby_object" name="borst_result" class="float_left cursor "><span class="float_left list_heading_objekt">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                     </tr>
                     <?php if ($article_pager): ?>
                         <?php foreach ($article_pager->getResults() as $article): ?>
@@ -156,76 +156,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </table>
             </div>
         <?php endif; ?>
-
-
-        <?php if (($search_tab == 'all' || $search_tab == 'blog') && $blog_pager): ?>        
-            <div class="float_left widthall" id="blog_result">	  
-                <div  class="listingheading result_title_fs margin_top_38">Bloggar</div>
-                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                  <tr id="column_header">
-                        <th class="width_30"><span class="float_left">Art</span></th>
-                        <th class="width_66"><a id="blog-sortby_date" name="blog_result" class="float_left width_72 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_160"><a id="blog-sortby_title" name="blog_result" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_90"><a id="blog-sortby_category" name="blog_result" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_80"><a id="blog-sortby_type" name="blog_result" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_81"><a id="blog-sortby_object" name="blog_result" class="float_left width_80 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_122"><a id="blog-sortby_author" name="blog_result" class="float_left width_100 cursor"><span >Författare<img src="/images/bg.gif" alt="down" /></a></th>
-                  </tr>
-                <?php if ($blog_pager): ?>
-                    <?php foreach ($blog_pager->getResults() as $data): ?>
-                                <tr class="classnot">
-                                      <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                      <td class="datefont width_66"><?php echo substr($data->created_at, 2, 9) ?></td>
-                                      <td class="main_link_color width_160" ><a class="main_link_color float_left float_left cursor" href="http://<?php echo $host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $data->id ?>"><span class="search_result_title"><?php echo $data->ublog_title ?></span></a></td>
-                                      <td class="lightgreenfont width_90"><span class="search_result_cat"><a class="article_cat cursor width_90 float_left" name="<?php echo "sbt_" . $data->ublog_category_id; ?>"><?php echo $cat_arr[$data->ublog_category_id] ? $cat_arr[$data->ublog_category_id] : '&nbsp;'; ?></a></span></td>
-                                      <td class="lightbluefont width_80"><a class="article_type cursor float_left" name="<?php echo "sbt_" . $data->ublog_type_id; ?>"><?php echo $type_arr[$data->ublog_type_id] ? $type_arr[$data->ublog_type_id] : '&nbsp;'; ?></a></td>
-                                      <td class="darkbluefont width_81"><a class="article_object cursor float_left" name="<?php echo "sbt_" . $data->ublog_object_id; ?>"><?php echo $object_arr[$data->ublog_object_id] ? $object_arr[$data->ublog_object_id] : '&nbsp;'; ?></a></td>
-                                      <td class="pinkfont width_122"><a class="pinkfont float_left" href="<?php echo "http://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $profile->getFullUserName($data->author_id) ? $profile->getFullUserName($data->author_id) : '&nbsp;'; ?></a></td>
-                                </tr>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <?php if ($blog_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr>
-                <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                            <tr><td colspan="7" class="last_row">&nbsp;</td></tr>
-                <?php endif; ?>
-                </table>-->
-
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
-                    <tr id="column_header" class="headerList blog_table_head">
-                        <th class="width326 pad_lft_5"><a id="blog-sortby_title" name="blog_result" class="float_left width326 cursor"><span class="float_left width326">Rubrik/Namn</span></a></th>
-                        <th class="width136"><a id="blog-sortby_category" name="blog_result" class="float_left width136 cursor"><span class="float_left width136">Kategori</span></a></th>
-                        <th class="width108"><span class="float_left width108">Inlägg/visad</span></th>
-                        <th class="forum_table_date_w"><a id="blog-sortby_date" name="blog_result" class="float_left forum_table_date_wcursor"><span class="float_left forum_table_date_w">Senaste</span></a></th>
-                    </tr>
-                    <?php
-                    $i = 1;
-                    foreach ($blog_pager->getResults() as $blog):
-                        ?>
-                        <tr <?php
-            if ($i == 1) {
-                echo "class='padding_top_table'";
-            }
-                        ?> >                    
-                            <td class="orgfont width326 pad_lft_5">
-                                <a class="cursor" href="<?php echo "http://" . $host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $blog->id ?>"><span class="forum_table_title_w bloglist_blogtitle blog_table_title"><?php echo html_entity_decode($blog->ublog_title) ?></span></a>
-                                </br>
-                                <a class="bloglist_blogauthor blog_table_user width326" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $blog->author_id; ?>"><?php echo $profile->getFullUserName($blog->author_id) ?></a>
-                            </td>
-                            <td class="blog_cat blog_table_topic width136 "><a class="article_cat" name="<?php echo "sbt_" . $data->ublog_category_id; ?>"><?php echo $cat_arr[$blog->ublog_category_id]; ?></a></br><span class="forum_table_views">&nbsp;</span></td>
-                            <td class="width108" ><span class="blog_table_post"><?php echo $sbt_blog_comment->getBlogCommentsCount($blog->id); ?> Inlägg</span></br><span class="forum_table_views"><?php echo $blog->ublog_views ?> visningar</span> </td>
-                            <td class="forum_table_date_w"><span class="blog_prof_table_date"><?php echo substr($blog->created_at, 0, 10) ?></span></br><span class="blog_table_time"><?php echo substr($blog->created_at, 11, -3) ?></span></td>
-                        </tr>
-                        <?php
-                        $i++;
-                    endforeach;
-                    ?>
-                    <?php if ($blog_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr>
-                    <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <!--<tr><td colspan="10" class="last_row">&nbsp;</td></tr>-->
-                    <?php endif; ?>
-                </table>
-            </div>
-        <?php endif; ?>        
+      
 
 
         <?php if (($search_tab == 'all' || $search_tab == 'btshop') && $btshop_pager): ?>    
@@ -234,9 +165,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
                     <tr id="column_header" height="35">
                           <th class="width_30">Art</th>
-                          <th scope="col" width="38%"><a id="sortby_btshop_article_title" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Artikel<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th scope="col" width="36%"><a id="sortby_btshop_type_id" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th scope="col" width="22%"><a id="sortby_btshop_product_price" name="btshop_result" class="float_left width_100 cursor"><span class="float_left">Pris<img src="/images/bg.gif" alt="down" /></span></a></th>
+                          <th scope="col" width="38%"><a id="sortby_btshop_article_title" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Artikel<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                          <th scope="col" width="36%"><a id="sortby_btshop_type_id" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                          <th scope="col" width="22%"><a id="sortby_btshop_product_price" name="btshop_result" class="float_left width_100 cursor"><span class="float_left">Pris<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                     </tr>
                 <?php if ($btshop_pager): ?>
                     <?php foreach ($btshop_pager->getResults() as $data): ?>
@@ -290,193 +221,8 @@ include_component('isicsBreadcrumbs', 'show', array(
         <?php endif; ?>
 
 
-        <?php if (($search_tab == 'all' || $search_tab == 'forum') && $forum_pager): ?>
-            <div class="float_left widthall" id="forum_result">
-                <div  class="listingheading result_title_fs margin_top_38">Forum</div>
-                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                    <tr id="column_header">
-                          <th class="width_30">Art</th>
-                          <th class="width_66"><a id="forum-sortby_date" name="forum_result" class="float_left width_72 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th class="width_160"><a id="forum-sortby_title" name="forum_result" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th class="width_90"><a id="forum-sortby_category" name="forum_result" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th class="width_76"><a id="forum-sortby_type" name="forum_result" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th class="width_81"><a id="forum-sortby_object" name="forum_result" class="float_left width_80 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
-                          <th class="width_122"><a id="forum-sortby_author" name="forum_result" class="float_left width_100 cursor"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    </tr>
-                <?php if ($forum_pager): ?>
-                    <?php foreach ($forum_pager->getResults() as $data): ?>
-                            <tr class="classnot">
-                                  <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                  <td class="datefont width_66"><?php echo substr($data->andratdatum, 2, 9) ?></td>
-                                  <td class="main_link_color width_160"><a class="main_link_color float_left cursor" href="http://<?php echo $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="search_result_title"><?php echo $data->rubrik ? $data->rubrik : '&nbsp;'; ?></span></a></td>
-                                  <td class="lightgreenfont width_90"><span class="search_result_cat"><a class="article_cat cursor" name="<?php echo "forum_" . $data->btforum_category_id; ?>"><?php echo $forum_cat_arr[$data->btforum_category_id] ? $forum_cat_arr[$data->btforum_category_id] : '&nbsp;'; ?></a></span></td>
-                                  <td class="lightbluefont width_80 talign_center">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo '-' ?></td>
-                                  <td class="darkbluefont width_81">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo '-' ?></td>
-                                  <td class="pinkfont width_122"><a class="pinkfont" href="<?php echo "http://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $data->skapare ?></a></td>
-                            </tr>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <?php if ($forum_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr>  
-                <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <tr><td colspan="7" class="last_row">&nbsp;</td></tr>
-                <?php endif; ?>
-                </table>-->
-
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
-                    <tr id="forum_topic_listing_column_row1" class="forum_table_head">
-                        <th class="forum_table_title_w pad_lft_5"><a id="forum-sortby_title" name="forum_result" class="float_left forum_table_title_w cursor"><span class="float_left forum_table_title_w">Rubrik/Namn</span></a></th>
-                        <th class="width_9">&nbsp;</th>
-                        <th class="forum_table_topic_w"><a id="forum-sortby_category" name="forum_result" class="float_left forum_table_topic_w cursor"><span class="float_left forum_table_topic_w">Ämne</span></a></th>
-                        <th class="width_9">&nbsp;</th>
-                        <th class="width_9">&nbsp;</th>
-                        <th class="width_9">&nbsp;</th>
-                        <th class="forum_table_post_w"><span class="float_left forum_table_post_w">Inlägg/visad</span></th>
-                        <th class="width_9">&nbsp;</th>
-                        <th class="forum_table_date_w"><a id="forum-sortby_date" name="forum_result" class="float_left forum_table_date_wcursor"><span class="float_left forum_table_date_w">Senaste</span></a></th>
-                    </tr>
-                    <?php if ($forum_pager): ?>
-                        <?php
-                        $i = 1;
-                        foreach ($forum_pager->getResults() as $forum):
-                            ?>
-                            <tr <?php
-                if ($i == 1) {
-                    echo "class='padding_top_table'";
-                }
-                            ?> >
-                                <td class="orgfont forum_table_title_w pad_lft_5">
-                                    <a class="cursor" href="<?php echo "http://" . $host_str . "/forum/commentOnForumTopic/forumid/" . $forum->id ?>"><span class="forum_table_title_w forum_table_title"><?php echo $forum->rubrik ?></span></a>
-                                    </br>
-                                    <a class="forum_table_user forum_table_title_w" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $forum->author_id //$profile->getUserFromFullName($forum->skapare)                  ?>"><?php echo $profile->getFullUserName($forum->author_id); ?></a>
-                                </td>
-                                <td class="width_9">&nbsp;</td>
-                                <td class="forum_table_topic_w forum_table_topic"><span class="search_result_cat"><a class="article_cat cursor" name="<?php echo "forum_" . $forum->btforum_category_id; ?>"><?php echo $forum_cat_arr[$forum->btforum_category_id] ? $forum_cat_arr[$forum->btforum_category_id] : '&nbsp;'; ?></a></span></td>                                                                            
-                                <td class="width_9">&nbsp;</td>
-                                <th class="width_9">&nbsp;</th>
-                                <th class="width_9">&nbsp;</th>
-                                <td class="forum_table_post_w" ><span class="forum_table_post"><?php echo $forum->getReplyCount($forum->id) . " Inlägg"; ?></span></br><span class="forum_table_views"><?php echo $forum->visningar . " Visad"; ?> </span> </td>
-                                <td class="width_9">&nbsp;</td>
-                                <td class="forum_table_date_w"><span class="forum_table_date"><?php echo substr($forum->andratdatum, 0, 10); ?></span></br><span class="forum_table_time"><?php echo substr($forum->andratdatum, 11, -3); ?></span></td>
-                            </tr>
-                            <?php
-                            $i++;
-                        endforeach;
-                        ?>
-                    <?php endif; ?>
-                    <?php if ($forum_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr>
-                    <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <!--<tr><td colspan="7" class="last_row">&nbsp;</td></tr>-->
-                    <?php endif; ?>  
-                </table>
-            </div>
-        <?php endif; ?>
 
 
-        <?php if (($search_tab == 'all' || $search_tab == 'userlist') && $userlist_pager): ?>  
-            <div class="float_left widthall" id="userlist_result">
-                <div  class="listingheading result_title_fs margin_top_38">Användare</div>
-                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                  <tr id="column_header" height="35">
-                        <th scope="col" width="7%">Avatar</th>
-                        <th scope="col" width="20%"><a id="sortby_author_userlist" name="userlist_result" class="float_left width_107 cursor"><span class="float_left">&nbsp;&nbsp;Användare<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="10%"><a id="sortby_title_userlist" name="userlist_result" class="float_left width_65 cursor"><span class="float_left">Titel<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="13%"><a id="sortby_regdate" name="userlist_result" class="float_left width_87 cursor"><span class="float_left">Regdate<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="10%"><a id="sortby_message" name="userlist_result" class="float_left width_75 cursor"><span class="float_left">Inlägg<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="10%"><a id="sortby_vote" name="userlist_result" class="float_left width_80 cursor"><span class="float_left">Röster<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="10%"><a id="sortby_totallogin" name="userlist_result" class="float_left width_75 cursor"><span class="float_left">Inlogg<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="20%"><a id="sortby_lastlogin" name="userlist_result" class="float_left width_98 cursor"><span class="float_left">Senaste<img src="/images/bg.gif" alt="down" /></span></a></th>
-                  </tr>
-                <?php if ($userlist_pager): ?>
-                    <?php foreach ($userlist_pager->getResults() as $user): ?>
-                            <tr class="classnot">
-                                <td class="pright_10"><a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
-                        <?php if ($user_arr[$user->user_id] != ''): ?>
-                                        <img src="/uploads/userThumbnail/<?php echo str_replace('.', '_mid.', $user_arr[$user->user_id]); ?>" alt="user_photo"/>
-                        <?php else: ?>
-                            <?php if ($user->gender == 1): ?>
-                                            <img src="/images/user_photo.jpg" alt="adv"/>
-                            <?php else: ?>
-                                            <img src="/images/avatar_photo.jpg" alt="adv"/>
-                            <?php endif; ?>
-                        <?php endif; ?>
-                                </a></td>
-                                <td class="bluegrayfont pright_10 pleft_6">&nbsp;&nbsp;<a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>"><?php echo $profile->getFullUserName($user->user_id) ?></a></td>
-                                <td class="skincolor pright_10"><?php echo $user->how_is_user($user->user_id) ?></td>
-                                <td><?php echo substr($user->regdate, 0, 10); ?></td>
-                                <td class="bluegrayfont pright_10" align="center"><?php echo $user->getTotalMessagesReceived($user->user_id) ?></td>
-                                <td class="lightgreenfont pright_10" align="center">&nbsp;<?php echo $user->getTotalVotesReceived($user->user_id); ?></td>
-                                <td class="lightbluefont pright_10" align="center"><?php echo $user->inlog ?></td>
-                                <td class="darkbluefont"><?php echo $user->inlogdate == '0000-00-00 00:00:00' ? '-' : substr($user->inlogdate, 0, 16); ?></td>
-                          </tr>
-                    <?php endforeach; ?>
-
-                    <?php if ($userlist_pager->getNbResults() < 1): ?> <tr><td colspan="8" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
-                <?php endif; ?>
-                <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <tr><td colspan="8">&nbsp;</td></tr>
-                <?php endif; ?>
-                </table> -->
-
-
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
-                    <tr id="column_header" class="headerList blog_table_head">
-                        <th class="width_55 pad_lft_5"><span class="float_left width_55">Avatar</span></th>
-                        <th class="width_150"><a id="sortby_author_userlist" name="userlist_result" class="float_left width_150 cursor"><span class="float_left width_150">Användare</span></a></th>
-                        <th class="width_100"><a id="sortby_title_userlist" name="userlist_result" class="float_left width_100 cursor"><span class="float_left width_100">Titel</span></a></th>
-                        <th class="width_100"><a id="sortby_regdate" name="userlist_result" class="float_left width_100 cursor"><span class="float_left width_100">Regdate</span></a></th>                    
-                        <th class="width_55"><a id="sortby_message" name="userlist_result" class="float_left width_55 cursor"><span class="float_left width_55">Inlägg</span></a></th>
-                        <th class="width_55"><a id="sortby_vote" name="userlist_result" class="float_left width_55 cursor"><span class="float_left width_55">Röster</span></a></th>
-                        <th class="width_55"><a id="sortby_totallogin" name="userlist_result" class="float_left width_55 cursor"><span class="float_left width_55">Inlogg</span></a></th>
-                        <th class="width_76"><a id="sortby_lastlogin" name="userlist_result" class="float_left width_76 cursor"><span class="float_left width_76">Senaste</span></a></th>
-                    </tr>
-                    <?php if ($userlist_pager): ?>
-                        <?php
-                        $i = 1;
-                        foreach ($userlist_pager->getResults() as $user):
-                            ?>
-                            <tr <?php
-                if ($i == 1) {
-                    echo "class='padding_top_table'";
-                }
-                            ?> >                    
-                                <td class="orgfont width_55 pad_lft_5">
-                                    <a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
-                                        <?php if ($user_arr[$user->user_id] != ''): ?>
-                                            <img width="36" height = "36" src="/uploads/userThumbnail/<?php echo str_replace('.', '_mid.', $user_arr[$user->user_id]); ?>" alt="user_photo"/>
-                                        <?php else: ?>
-                                            <?php if ($user->gender == 1): ?>
-                                                <img src="/images/user_photo.jpg" alt="adv"/>
-                                            <?php else: ?>
-                                                <img src="/images/avatar_photo.jpg" alt="adv"/>
-                                            <?php endif; ?>
-                                        <?php endif; ?>
-                                    </a>
-                                </td>
-                                <td class="width_150 ">                                            
-                                    <a class="bolg_table_name" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>"><?php echo $profile->getFullUserName($user->user_id) ?></a>
-                                </td>
-                                <td class="width_100 blog_table_topic"><span class=""><?php echo $user->how_is_user($user->user_id) ?></span></td>
-                                <td class="width_100"><span class="blog_prof_table_date"><?php echo substr($user->regdate, 0, 10); ?></span></td>
-                                <td class="width_55 talign_right"><span class="blog_table_post_r padding_right_23"><?php echo $user->getTotalMessagesReceived($user->user_id) ?></span></td>
-                                <td class="width_55 talign_right"><span class="blog_table_votes padding_right_23"><?php echo $user->getTotalVotesReceived($user->user_id) ? $user->getTotalVotesReceived($user->user_id) : 0; ?></span></td>
-                                <td class="width_55 talign_right"><span class="blog_table_inlog padding_right_23"><?php echo $user->inlog ?></span></td>
-                                <td class="width_76">
-                                    <span class="blog_prof_table_date"><?php echo substr($user->inlogdate, 0, 10) ?></span>
-                                    <span class="blog_table_time"><?php echo substr($user->inlogdate, 10, 6) ?></span>
-                                </td>
-                            </tr>
-                            <?php
-                            $i++;
-                        endforeach;
-                        ?>
-                        <?php if ($userlist_pager->getNbResults() < 1): ?> <tr><td colspan="8" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
-                    <?php endif; ?>
-                    <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <!--<tr><td colspan="8">&nbsp; </td></tr>-->
-                    <?php endif; ?>
-                </table>
-            </div>
-        <?php endif; ?> 
 
 
         <?php if (($search_tab == 'all' || $search_tab == 'btchart') && $btchart_pager): ?>
@@ -485,9 +231,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
                   <tr id="column_header" height="35">
                         <th class="width_30">Art</th>
-                        <th scope="col" width="38%"><a id="sortby_company_name" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Stock Name<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="36%"><a id="sortby_company_symbol" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Short Name<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th scope="col" width="22%"><a id="sortby_company_type" name="btchart_result" class="float_left width_100 cursor"><span class="float_left">Stock List<img src="/images/bg.gif" alt="down" /></span></a></th>
+                        <th scope="col" width="38%"><a id="sortby_company_name" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Stock Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                        <th scope="col" width="36%"><a id="sortby_company_symbol" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Short Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                        <th scope="col" width="22%"><a id="sortby_company_type" name="btchart_result" class="float_left width_100 cursor"><span class="float_left">Stock List<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
                   </tr>
                 <?php if ($btchart_pager): ?>
                     <?php foreach ($btchart_pager->getResults() as $data): ?>
@@ -541,78 +287,6 @@ include_component('isicsBreadcrumbs', 'show', array(
             </div>
         <?php endif; ?>
 
-        <?php if (($search_tab == 'all' || $search_tab == 'sbt') && $analysis_pager): ?>    
-            <div class="float_left widthall" id="sbt_result">
-                <div  class="listingheading result_title_fs margin_top_38">BT Insider</div>
-                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                    <tr id="column_header">
-                        <th class="width_30">Art</th>
-                        <th class="width_66"><a id="sbt-sortby_date" name="sbt_result" class="float_left width_72 cursor"><span class="float_left">Publ.<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_160"><a id="sbt-sortby_title" name="sbt_result" class="float_left width_80 cursor"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_90"><a id="sbt-sortby_category" name="sbt_result" class="float_left width_90 cursor"><span class="float_left">Kategori<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_80"><a id="sbt-sortby_type" name="sbt_result" class="float_left width_80 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_81"><a id="sbt-sortby_object" name="sbt_result" class="float_left width_80 cursor"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
-                        <th class="width_122"><a id="sbt-sortby_author" name="sbt_result" class="float_left width_100 cursor"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" /></span></a></th>
-                    </tr>
-                <?php if ($analysis_pager): ?>
-                    <?php foreach ($analysis_pager->getResults() as $data): ?>
-                                    <tr class="classnot">
-                                        <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                        <td class="datefont width_66"><?php echo substr($data->created_at, 2, 9) ?></td>
-                                        <td class="main_link_color width_160"><a class="main_link_color float_left cursor" href="http://<?php echo $host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $data->id ?>"><span class="search_result_title"><?php echo $data->analysis_title ?></span></a></td>
-                                        <td class="lightgreenfont width_90"><span class="search_result_cat"><a class="article_cat cursor" name="<?php echo "sbt_" . $data->analysis_category_id; ?>"><?php echo $cat_arr[$data->analysis_category_id] ? $cat_arr[$data->analysis_category_id] : '&nbsp;'; ?></a></span></td>
-                                        <td class="lightbluefont width_80"><a class="article_type cursor" name="<?php echo "sbt_" . $data->analysis_type_id; ?>"><?php echo $type_arr[$data->analysis_type_id] ? $type_arr[$data->analysis_type_id] : '&nbsp;'; ?></a></td>
-                                        <td class="darkbluefont width_81"><a class="article_object cursor" name="<?php echo "sbt_" . $data->analysis_object_id; ?>"><?php echo $object_arr[$data->analysis_object_id] ? $object_arr[$data->analysis_object_id] : '&nbsp;'; ?></a></td>
-                                        <td class="pinkfont width_122"><a class="pinkfont" href="<?php echo "http://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $profile->getFullUserName($data->author_id) ? $profile->getFullUserName($data->author_id) : '&nbsp;'; ?></a></td>
-                                    </tr>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-                <?php if ($analysis_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr>
-                <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                            <tr><td colspan="7" class="last_row">&nbsp;</td></tr>
-                <?php endif; ?>
-                </table>-->
-
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
-                    <tr id="column_header" class="headerList sbt_result_table_head">
-                        <th class="width_40 pad_lft_5"><span class="float_left width_40">Art</span></th>
-                        <th class="width_65"><a id="sbt-sortby_date" name="sbt_result" class="float_left width_65 cursor"><span class="float_left">Publ.</span></a></th>
-                        <th class="width_140"><a id="sbt-sortby_title" name="sbt_result" class="float_left width_140 cursor"><span class="float_left">Rubrik</span></a></th>
-                        <th class="width_100"><a id="sbt-sortby_category" name="sbt_result" class="float_left width_100 cursor"><span class="float_left">Kategori</span></a></th>                    
-                        <th class="width_100"><a id="sbt-sortby_type" name="sbt_result" class="float_left width_100 cursor"><span class="float_left">Typ</span></a></th>
-                        <th class="width_100"><a id="sbt-sortby_object" name="sbt_result" class="float_left width_100 cursor"><span class="float_left">Objekt</span></a></th>
-                        <th class="width_100"><a id="sbt-sortby_author" name="sbt_result" class="float_left width_100 cursor"><span class="float_left">Författare</span></a></th>
-                    </tr>
-                    <?php if ($analysis_pager): ?>
-                        <?php
-                        $i = 1;
-                        foreach ($analysis_pager->getResults() as $data):
-                            ?>
-                            <tr <?php
-                if ($i == 1) {
-                    echo "class='padding_top_table'";
-                }
-                            ?> >                    
-                                <td class="orgfont width_40 pad_lft_5"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                <td class="width_65 blog_prof_table_date"><?php echo substr($data->created_at, 2, 9) ?></td>
-                                <td class="width_140"><a class="blog_table_post_r float_left cursor" href="http://<?php echo $host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $data->id ?>"><span class="search_result_title"><?php echo $data->analysis_title ?></span></a></td>
-                                <td class="width_100 "><span class="blog_table_topic search_result_cat"><a class="article_cat cursor" name="<?php echo "sbt_" . $data->analysis_category_id; ?>"><?php echo $cat_arr[$data->analysis_category_id] ? $cat_arr[$data->analysis_category_id] : '&nbsp;'; ?></a></span></td>
-                                <td class="width_100 "><span class="blog_table_topic"><a class="article_type cursor" name="<?php echo "sbt_" . $data->analysis_type_id; ?>"><?php echo $type_arr[$data->analysis_type_id] ? $type_arr[$data->analysis_type_id] : '&nbsp;'; ?></a></span></td>
-                                <td class="width_100 "><span class="blog_table_topic"><a class="article_object cursor" name="<?php echo "sbt_" . $data->analysis_object_id; ?>"><?php echo $object_arr[$data->analysis_object_id] ? $object_arr[$data->analysis_object_id] : '&nbsp;'; ?></a></span></td>
-                                <td class="width_100 "><a class="blog_table_post_r" href="<?php echo "http://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $profile->getFullUserName($data->author_id) ? $profile->getFullUserName($data->author_id) : '&nbsp;'; ?></a></td>
-                            </tr>
-                            <?php
-                            $i++;
-                        endforeach;
-                        ?>
-                        <?php if ($analysis_pager->getNbResults() < 1): ?> <tr><td colspan="8" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
-                    <?php endif; ?>
-                    <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <!--<tr><td colspan="8">&nbsp; </td></tr>-->
-                    <?php endif; ?>
-                </table>
-            </div>
-        <?php endif; ?>
 
     <?php endif; ?>  
 

@@ -14,14 +14,14 @@
       <tr id="update_article_form_column_row">
         <th scope="col" width="3%">Nr</th>
         <th scope="col" width="12%"><span class="float_left" style="width:55px;">Aktion</span></th>
-        <th scope="col" width="10%"><a id="sortby_art_status" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Status<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="13%"><a id="sortby_date" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Datum<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="14%"><a id="sortby_author" class="float_left" style="cursor:pointer; width:100px;"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="8%"><a id="sortby_title" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="8%"><a id="sortby_category" style="cursor:pointer; width:60px;" class="float_left"><span class="float_left">Kat<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="8%"><a id="sortby_type" style="cursor:pointer; width:60px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="12%"><a id="sortby_object" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="12%"><a id="sortby_art_view" style="cursor:pointer; width:70px;" class="float_left"><span class="float_left">Visad<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th scope="col" width="10%"><a id="sortby_art_status" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Status<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="13%"><a id="sortby_date" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Datum<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="14%"><a id="sortby_author" class="float_left" style="cursor:pointer; width:100px;"><span class="float_left">Författare<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="8%"><a id="sortby_title" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Rubrik<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="8%"><a id="sortby_category" style="cursor:pointer; width:60px;" class="float_left"><span class="float_left">Kat<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="8%"><a id="sortby_type" style="cursor:pointer; width:60px;" class="float_left"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="12%"><a id="sortby_object" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Objekt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="12%"><a id="sortby_art_view" style="cursor:pointer; width:70px;" class="float_left"><span class="float_left">Visad<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
       </tr>
     </thead>
     <?php if($pager->getNbResults() > 0): ?>
