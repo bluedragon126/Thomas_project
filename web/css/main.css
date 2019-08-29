@@ -65,7 +65,7 @@ a{text-decoration:none;color:#8991c8;}
 .comment_content_wrapper a{color:#8991c8;letter-spacing:0.02px;}
 img{border:0;}
 .widthall{width:100%;}
-.float_left{float:left;position:relative;}
+.float_left{float:left;position:relative;margin-top:10px;}
 .float_left_gs{float:left;position:relative;line-height:16px;}
 .float_right{float:right;position:relative;}
 .blank_1h{float:left;position:relative;height:1px;}
@@ -261,7 +261,7 @@ font-size:0;}
 .leftinnercolor{float:left;position:relative;width:650px;border-bottom:2px solid #ced2d0;background-color:#ffffff;}
 .breadcrumb{float:left;position:relative;width:63%;margin: 0px 40px 0px 0px;padding:0 1px 0 0px;}
 .breadcrumb ul{float:left;position:relative;width:auto;margin:-2px 0px 0px 0px;padding:0 1px 0 0px;display:inline;}
-.breadcrumb ul li{float:left;position:relative;margin:-8px 0px 0px 0px; letter-spacing: 0.18em; padding:0 1px 0 0px;list-style-type:none;}
+.breadcrumb ul li{float:left;position:relative;margin:-4px 0px 0px 0px; letter-spacing: 0.18em; padding:0 1px 0 0px;list-style-type:none;}
 .breadcrumb ul li a{color:#979e9f;text-decoration:none;padding:0 1px 0 0px;}
 .breadcrumb ul li a:hover{
 	color:#8991c8;
@@ -282,7 +282,7 @@ font-size:0;}
 .shopsmallblock{float:left;position:relative;border-bottom:12px solid #c2e0ef;padding:15px 23px 12px 20px;}
 .shopsmallblock2{float:left;position:relative;width:290px;border-bottom:20px solid #c2e0ef;padding:30px 0px 20px 0px;}
 .shopphoto{float:left;position:relative;padding:0 0 2px 0;}
-.shopsmallblockifo{height:80px;float:left;position:relative;width:266px;line-height:17px;font-size:13px; color: #232222; margin-top:10px}
+.shopsmallblockifo{height:80px;float:left;position:relative;width:266px;line-height:17px;font-size:13px; color: #232222; margin-top:1px}
 .leftpartsmallshop{margin-bottom:12px;position:relative;width:312px;height:324px}
 .rightpartsmallshop{margin-bottom:12px;float:right;position:relative;width:312px;height:324px}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
