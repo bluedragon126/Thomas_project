@@ -124,7 +124,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
-        </div>
+        </div></div>
         <div class="inner_page_divider_3">&nbsp;</div>
         <div class="float_left mrg_left_testimonial margin_testimonial"><img src="/images/new_home/testimonial_L.png" width="500"/></div>
     </div>

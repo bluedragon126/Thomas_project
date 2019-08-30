@@ -236,7 +236,7 @@
                             <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
                         </a>
                         <?php if($obj['art_statid'] == 5):?>
-                            <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
+                            <a><span><img src="/images/new_home/BT-lock_30x30.png" width="15"/></span></a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                             <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
                         </a>
                         <?php if($obj['art_statid'] == 5):?>
-                            <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
+                            <a><span><img src="/images/new_home/BT-lock_30x30.png" width="15"/></span></a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -405,7 +405,7 @@
                         <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($twentyeight_2_thirtyfive[$l]['article_id']) ?></span>
                     </a>
                     <?php if($twentyeight_2_thirtyfive[$l]['art_statid'] == 5):?>
-                        <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
+                        <a><span><img src="/images/new_home/BT-lock_30x30.png" width="15"/></span></a>
                     <?php endif; ?>                    
                 </div>
                 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="blackcolor cursor">

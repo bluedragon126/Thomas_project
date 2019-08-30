@@ -46,7 +46,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <div class="blank_10h widthall">&nbsp;</div>
                 <div class="whp_preamble">Här kan du teckna dig för en prenumeration på Börstjänarens kostnadsfria veckobrev. På denna sida kan du även, om du så önskar, avsluta din prenumeration.</div>
                 
-                   <br>
+                 
                    
                   
 
@@ -55,7 +55,7 @@ include_component('isicsBreadcrumbs', 'show', array(
               <div class="float_left widthall">
                     
              <br>  
-              <br> 
+              
                 
                    <strong>Veckobrevet</strong> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <strong>VM-Update</strong> (utkommer måndagar). Veckobrevet kräver inget          
                         konto på Börstjänaren.     
@@ -119,11 +119,15 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 
                 <div class="whp_heading">Dagsbrevet</div>                
-                        <strong>Dagsbrevet</strong> BÖRSTJÄNAREN JUST NU! utkommer normalt varje vardag utom måndag till användare som registrerat ett (gratis) konto på Börstjänaren och valt att <a href="/borst/borstDayletter">teckna sig för detta. </a> 
+                        <strong>Dagsbrevet</strong> BÖRSTJÄNAREN JUST NU! utkommer normalt varje vardag utom måndag till användare som registrerat ett (gratis) konto på Börstjänaren och valt att <a href="/borst/borstDayletter">teckna sig för detta. </a>
+                        
+                         <br>
+                         
+                      <p>  <a href="/borst/borstDayletter"><img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin: 2px 0px -6px -6px" /></a>
                         
                      
                         
-                         
+                         </p>
                         
                         
                     

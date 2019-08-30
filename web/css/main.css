@@ -65,7 +65,7 @@ a{text-decoration:none;color:#8991c8;}
 .comment_content_wrapper a{color:#8991c8;letter-spacing:0.02px;}
 img{border:0;}
 .widthall{width:100%;}
-.float_left{float:left;position:relative;margin-top:10px;}
+.float_left{float:left;position:relative;}
 .float_left_gs{float:left;position:relative;line-height:16px;}
 .float_right{float:right;position:relative;}
 .blank_1h{float:left;position:relative;height:1px;}
@@ -442,7 +442,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .menulink ul li span{padding:0 10px 0 10px;}
 .menulink ul li a:hover{color:#bac1ca;}
 .menulink ul li a.selcetdm{color:#bac1ca;}
-.artlineleftdiv{float:left;position:relative;margin-bottom:13px;padding:12px 0px 0px 0px;border-bottom:1px solid #d3d3d3;height:1px;font-size:0;width:465px;}
+.artlineleftdiv{float:left;position:relative;margin-bottom:18px;padding:12px 0px 0px 0px;border-bottom:1px solid #d3d3d3;height:1px;font-size:0;width:465px;}
 .artlinerightdiv{float:left;position:relative;margin-bottom:2px;padding:16px 0px 0px 0px;border-bottom:1px solid #d3d3d3;height:1px;font-size:0;width:465px;}
 div.login{background:transparent url(../images/registerbtn_bg.jpg) no-repeat scroll left top;height:20px;padding-left:4px;}
 input.loginbuttontext{background:transparent url(../images/registerbtn_bg.jpg) no-repeat right top;border:0;cursor:pointer;display:block;text-transform:capitalize;font-weight:normal;color:#202021;height:20px;font-size:10px;margin:0 0 0 0;line-height:20px;padding:0 4px 3px 0;width:auto;float:left;position:relative;overflow:visible;letter-spacing:1px;}
@@ -1557,7 +1557,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;margin:0px 2px 0px 13px;color:#f15822;text-align:right;}
 .navBar_third_cart{margin-left:6px;float:right;}
 .margin_top_none{margin-top:0px!important;}
-.font_size_12{font-size:13px !important;}
+.font_size_12{font-size:12px !important;}
 .bt_shop_image_align{margin-top:8px;}
 .up_sub_div{}
 .shop_image_logo{width:74px;float:right;}

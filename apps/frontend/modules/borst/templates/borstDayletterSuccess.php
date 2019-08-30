@@ -144,6 +144,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                         
                         
                   <strong>Veckobrevet</strong> utgörs huvudsakligen av de kostnadsfria marknadsbreven <strong>VM-Update</strong> (utkommer måndagar) och <strong>Veckans trejd</strong> (utkommer när gynsamma lägen uppstår). Veckobrevet kräver inget konto på Börstjänaren. <a href="/borst/borstNewsletter">Anmäl dig  till veckobrevet här.</a></p>
+                  
+              
+                  
+                 <p> <a href="/borst/borstNewsletter"><img src="/images/new_home/VM-Update.png" style="margin:8px 0 15px" width="300" border="0" alt="imag" /></a></p>
                          
                         
                             
