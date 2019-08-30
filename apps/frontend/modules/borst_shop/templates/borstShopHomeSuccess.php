@@ -68,16 +68,6 @@
                 <?php
                 $countStock = 0;
                 foreach ($abonnemang_data as $article):
-                    /* if ($div_count == $countStock) {
-                      ?>
-                      </div><div class="rightpartsmallshop"><?php
-                      } */
-
-                    if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                        $top_mar_12px = "";
-                    } else {
-                        $top_mar_12px = "margin_top_12";
-                    }
                     if ($countStock % 2 == 0) {
                         if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                             echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
@@ -93,7 +83,7 @@
                     }
                     ?>
                     <?php $rec_cnt = count($abonnemang_data); ?>
-                    <div class="float_left">
+                    <div class="float_left shop_space">
                         <div class="shop_line_prod shopsmallblock no_border <?php
                             // if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                                 echo "wide_div";
@@ -194,7 +184,7 @@
                 <!--</div>-->
                 <!--<div class="shopborder"></div>-->
             </div>
-            <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor">&nbsp;<img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
+            <div class="to_page_top margin_top_12"><a class="cursor">&nbsp;<img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <?php /* ?>
               <div class="shopblock">
               <div id="marknadsbrev_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Marknadsbrev</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
@@ -295,30 +285,10 @@
                 $test = 0;
                 foreach ($utbildningar_data as $article):
                     $test = $test + 1;
-                    if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                        $top_mar_12px = "";
-                    } else {
-                        $top_mar_12px = "margin_top_12";
-                    }
-                    if ($countStock % 2 == 0) {
-                        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        } else {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        }
-                    } else {
-                        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        } else {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        }
-                    }
-                    /* if ($div_count == $countStock) {
-                      ?></div><div class="rightpartsmallshop rf_hg"><?php
-                      } */
+                    echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
                     ?>
 
-                    <div class="float_left">
+                    <div class="float_left shop_space">
                         <div class="shop_line_prod shopsmallblock no_border <?php
                     // if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                         echo "wide_div";
@@ -336,7 +306,7 @@
 
                            <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"> <div class="shoph3 widthall shop_home_title"><?php echo $article->btshop_article_title; //if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;}  ?></div></a>
                             <div>                                
-                                <div class="float_left">
+                                <div class="float_left ">
                                     <a class="blackcolor float_left cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                                         <div class="shopphoto float_left<?php
                                 if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
@@ -449,31 +419,10 @@
                 <?php
                 $countStock = 0;
                 foreach ($liveutbildningar_data as $article):
-
-                    if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                        $top_mar_12px = "";
-                    } else {
-                        $top_mar_12px = "margin_top_12";
-                    }
-                    if ($countStock % 2 == 0) {
-                        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        } else {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        }
-                    } else {
-                        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        } else {
-                            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-                        }
-                    }
-                    /* if ($div_count == $countStock) {
-                      ?></div><div class="rightpartsmallshop rf_hg"><?php
-                      } */
+                    echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
                     ?>
 
-                    <div class="float_left">
+                    <div class="float_left shop_space">
                         <div class="shop_line_prod shopsmallblock no_border wide_div"> 
 
                             <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><div class="shoph3 widthall shop_home_title"><?php echo $article->btshop_article_title; //if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;}  ?></div></a>
@@ -571,7 +520,7 @@
                 ?>
                 <!--</div>-->
             </div>            
-            <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
+            <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             
             <div class="shopblock">
                 <div id="metastock_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Metastock</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
@@ -590,33 +539,12 @@
                     ?>
 
                 <!--<div class="leftpartsmallshop">-->
-<?php
-$countStock = 0;
-foreach ($metastock_data as $article):
-
-    if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-        $top_mar_12px = "";
-    } else {
-        $top_mar_12px = "margin_top_12";
-    }
-    if ($countStock % 2 == 0) {
-        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-        } else {
-            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-        }
-    } else {
-        if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
-            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-        } else {
-            echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
-        }
-    }
-    /* if ($div_count == $countStock) {
-      ?></div><div class="rightpartsmallshop"><?php
-      } */
-    ?>
-                    <div class="float_left">
+            <?php
+            $countStock = 0;
+            foreach ($metastock_data as $article):
+                echo "<div class='leftpartsmallshop lf_hg authHeightImp'>";
+                ?>
+                    <div class="float_left shop_space">
                         <div class="shop_line_prod shopsmallblock no_border <?php
                         // if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                             echo "wide_div";
@@ -722,7 +650,7 @@ foreach ($metastock_data as $article):
         ?>
                 <!--</div>-->
             </div>
-            <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
+            <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <div class="shopblock marginBottom0" >
                     <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                             </a>--></div> 
