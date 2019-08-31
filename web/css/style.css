@@ -3403,14 +3403,16 @@ ul.cartStep2 li {
 .home_body_m_1{
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
    color: #232222;
     word-wrap: break-word;
 }
 .home_body_m_2{
   font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
     color: #232222;
     word-wrap: break-word;
 }
@@ -3420,14 +3422,14 @@ ul.cartStep2 li {
 .home_body_m_3{
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1em;
+    line-height: 1.2em;
     letter-spacing: 0.01em;
    	word-wrap: break-word;
 }
 .home_body_m_4{
    font-family: "Franklin Gothic Book Regular";
        font-size: 14px;
-    line-height: 1em;
+    line-height: 1.2em;
     letter-spacing: 0.01em;
   	word-wrap: break-word;
 }

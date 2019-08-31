@@ -578,14 +578,6 @@ class borstActions extends sfActions
 	//$col1_814_heading_style = array('articleheading3_1st','redheaing2','articleheading3_2nd','articleheading_goda','articleheading3_1st','redheaing2','articleheading3_2nd');
         $col1_814_heading_style = array('home_heading_m_1','home_heading_m_2','home_heading_m_3','home_heading_m_4');
 	$col1_1417_heading_style = array('adheading','adheadinggreen','adheading','adheading_v');
-	//$last_column_style = array('adheading','adheadinggreen','adheading_small','adheading_v','adheading','adheadinggreen','adheading_small','adheading_v');
-        // $last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
-        // $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
-        // $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
-        // $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        // $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
-        // $fcol_body_text_2_3 = array('home_body_m_4','home_body_m_3');
-		// $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
 		
 		$last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
@@ -882,15 +874,6 @@ class borstActions extends sfActions
 	$col1_67_heading_style = array('articleheading_Kina','articleheading_Varldens2');
         $col1_814_heading_style = array('home_heading_m_1','home_heading_m_2','home_heading_m_3','home_heading_m_4');
 	$col1_1417_heading_style = array('adheading','adheadinggreen','adheading','adheading_v');
-        // $last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
-        // $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
-        // $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
-        // $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        // $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
-        // $fcol_body_text_2_3 = array('home_body_m_4','home_body_m_3');
-        // $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
-        // $mcol_body_text = array('home_body_m_3','home_body_m_4','home_body_m_3','home_body_m_4');
-		// $rcol_body_text = array('home_body_r_1','home_body_r_2','home_body_r_3','home_body_r_4');
 		
 		$last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
@@ -944,14 +927,6 @@ class borstActions extends sfActions
 	if($this->getUser()->getAttribute('isSuperAdmin', '', 'userProperty')==1) $isSuperAdmin = 1;
 	else $isSuperAdmin = 0;	
 	
-	/*$this->comm_one_three = ArticleTable::getInstance()->getHomeAktier(0,3,$isSuperAdmin);
-	$this->comm_four_five = ArticleTable::getInstance()->getHomeAktier(3,2,$isSuperAdmin);
-	$this->comm_six_seven = ArticleTable::getInstance()->getHomeAktier(5,2,$isSuperAdmin);
-	$this->comm_eight_fourteen = ArticleTable::getInstance()->getHomeAktier(7,7,$isSuperAdmin);
-	$this->comm_fifteen_eighteen = ArticleTable::getInstance()->getHomeAktier(14,4,$isSuperAdmin);*/
-	
-	//$two_column_articles = ArticleTable::getInstance()->getHomeAktier(0,27,$isSuperAdmin);
-	//$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
         
         $this->article_limit = 27;
         $this->secondLimit = 4;
@@ -1140,15 +1115,6 @@ class borstActions extends sfActions
 	$col1_67_heading_style = array('articleheading_Kina','articleheading_Varldens2');
         $col1_814_heading_style = array('home_heading_m_1','home_heading_m_2','home_heading_m_3','home_heading_m_4');
 	$col1_1417_heading_style = array('adheading','adheadinggreen','adheading','adheading_v');
-        // $last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
-        // $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
-        // $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
-        // $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        // $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
-        // $fcol_body_text_2_3 = array('home_body_m_4','home_body_m_3');
-        // $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
-        // $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
-		// $rcol_body_text = array('home_body_r_1','home_body_r_2','home_body_r_3','home_body_r_4');
 		
 		$last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
@@ -1203,14 +1169,6 @@ class borstActions extends sfActions
 	if($this->getUser()->getAttribute('isSuperAdmin', '', 'userProperty')==1) $isSuperAdmin = 1;
 	else $isSuperAdmin = 0;	
 	
-	/*$this->comm_one_three = ArticleTable::getInstance()->getHomeCommodities(0,3,$isSuperAdmin);
-	$this->comm_four_five = ArticleTable::getInstance()->getHomeCommodities(3,2,$isSuperAdmin);
-	$this->comm_six_seven = ArticleTable::getInstance()->getHomeCommodities(5,2,$isSuperAdmin);
-	$this->comm_eight_fourteen = ArticleTable::getInstance()->getHomeCommodities(7,7,$isSuperAdmin);
-	$this->comm_fifteen_eighteen = ArticleTable::getInstance()->getHomeCommodities(14,4,$isSuperAdmin);*/
-	
-	//$two_column_articles = ArticleTable::getInstance()->getHomeCommodities(0,27,$isSuperAdmin);
-	//$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles );
         
         $this->article_limit = 27;
 	$two_column_articles = ArticleTable::getInstance()->getHomeCommodities(0,$this->article_limit,$isSuperAdmin);
@@ -5371,15 +5329,7 @@ class borstActions extends sfActions
 	$col1_67_heading_style = array('articleheading_Kina','articleheading_Varldens2');
         $col1_814_heading_style = array('home_heading_m_1','home_heading_m_2','home_heading_m_3','home_heading_m_4');
 	$col1_1417_heading_style = array('adheading','adheadinggreen','adheading','adheading_v');
-        // $last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
-        // $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
-        // $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
-        // $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        // $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
-        // $fcol_body_text_2_3 = array('home_body_m_4','home_body_m_3');
-        // $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
-        // $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
-		// $rcol_body_text = array('home_body_r_1','home_body_r_2','home_body_r_3','home_body_r_4');
+
 		
 		$last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
