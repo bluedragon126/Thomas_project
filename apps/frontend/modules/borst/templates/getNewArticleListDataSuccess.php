@@ -2,7 +2,7 @@
 
 <style>
 .active_item {
-  color: red;
+  color:  #9ca1af;
 }
 </style>
 <div class="lista1 widthall list_lista"><?php echo __('Lista') ?></div>

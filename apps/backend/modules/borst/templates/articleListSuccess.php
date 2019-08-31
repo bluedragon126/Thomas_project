@@ -136,4 +136,3 @@
 		<td id="delete_article_msg">Message:</td>
 	</tr>
  </table>
-</div>
