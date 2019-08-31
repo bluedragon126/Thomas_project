@@ -1599,6 +1599,5 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .apply_code{background-color:#a6cc39;color:#ffffff;cursor:pointer;font-family:"Franklin Gothic Medium";;height:16px;padding:6.1px 8px;width:40px;letter-spacing:0.02em;}
 .leftmenu #top_sbt_menu_enquiry a:hover{background-color:#0bb342;}
 .mainmenuwrapper #top_sbt_menu_enquiry .selected{background-color:#0bb342;}
-.shop_space{
-	margin-top: 10px;
-}
+.shop_space{margin-top: 10px;}
+.top_space{margin-top: -5px !important;}

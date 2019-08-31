@@ -173,7 +173,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         </div>
     </div>
     <div class="rightbanner">
-        <div class="home_ad_r float_left font_size_12">Annons</div>
+        <div class="home_ad_r float_left font_size_12 top_space">Annons</div>
         <div class="advertdiv"><img src="/images/1advert.jpg" alt="adv"/></div>
         <div class="advertdiv"><img src="/images/spxad.jpg" alt="adv"/></div>
     </div>

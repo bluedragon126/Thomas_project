@@ -339,7 +339,7 @@ include_component('isicsBreadcrumbs', 'show', array(
     </div>
 </div>
 <div class="rightbanner padding_0 font_0 " style="border:none;">
-    <div class="home_ad_r float_left font_size_12">ANNONS</div>
+    <div class="home_ad_r float_left font_size_12 top_space">ANNONS</div>
         <?php include_partial('global/ad_message') ?>
     <div id="whitepage_ads">
 <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4, 'set_margin' => '1')) ?>

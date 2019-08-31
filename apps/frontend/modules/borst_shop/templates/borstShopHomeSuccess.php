@@ -660,7 +660,7 @@
     
     <div class="rightbanner autoheight padding_0">
       <div class="home_heading_r">
-    <div class="home_ad_r float_left font_size_12">Annons</div>
+    <div class="home_ad_r float_left font_size_12 top_space">Annons</div>
     <?php //include_partial('global/ad_message') ?>
         <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
         <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>        

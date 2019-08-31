@@ -117,7 +117,7 @@
                                                 <span class="next_nobj"></span>
                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                             </span>
-                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px;float: left;width: 100%; margin: -2px 0px 4px 0px;">Annons:</span>
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px;float: left;width: 100%; margin: -2px 0px 4px 0px;">Annons</span>
                                             <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
                                                     <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
                                                         <?php echo html_entity_decode($ads[0]); ?></span></a></span>
@@ -240,7 +240,7 @@
                                             <div style="border-bottom: 2px solid #f15a22; margin-top: 12px; height: 0px;">&nbsp;</div>
 
 
-                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px; margin: 8px 0px 4px 0px; float: left;">Annons:</span>
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px; margin: 8px 0px 4px 0px; float: left;">Annons</span>
 
                                             <span><?php echo html_entity_decode($ads[1]); ?></span>
 

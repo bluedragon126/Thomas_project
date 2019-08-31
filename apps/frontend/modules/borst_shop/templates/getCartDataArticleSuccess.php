@@ -106,11 +106,3 @@
             </div>
         <?php endif; ?>
     </div>
-<!--Detail List end-->
-<?php /*if(!$pid){?>
-<div class="float_left">
-    <div class="home_ad_r float_left font_size_12">Annons</div>
-    <?php include_partial('global/ad_message') ?>
-    <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4, 'set_margin' => '1')); ?>
-</div>
-<?php }*/?>
