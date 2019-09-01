@@ -37,14 +37,7 @@
                         </div>
                         <?php $date = explode('-', substr($arr[$i]['article_date'], 0, 10)); ?>
                             <div class="home_heading_l_3_txt_div mrg_top_4 <?php if($i==1){ echo "margin_rgt_0"; } ?>">
-                                <div>
-                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
-                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        <!--<span><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/></span>-->
-                                    </a>
-                                </div>
+                                
                                 <div class="home_heading_l_c_txt_main">                                
                                     <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
                                     <div class="margin_top_11">
@@ -54,42 +47,20 @@
                                         <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
                                         </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                                        </span>
                                     </div>
+                                </div>
+                                <div class = "home_heading_l_txt dattimeinfo col-first-date">
+                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
+                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
+                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
+                                        <!--<span><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/></span>-->
+                                    </a>
                                 </div>
                             </div>
                         </div>
                             <?php endfor; ?>
                      
-                            <?php /*for ($i = 0; $i < 2; $i++): ?>
-                            <?php $date = explode('-', substr($arr[$i]['article_date'], 0, 10)); ?>
-                            <div class="home_heading_l_3_txt_div mrg_top_9 <?php if($i==1){ echo "margin_rgt_0"; } ?>">
-                                <div>
-                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
-                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        <span><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/></span>
-                                    </a>
-                                </div>
-                                <div class="home_heading_l_c_txt_main">                                
-                                    <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
-                                    <div class="margin_top_11">
-                                        <span>
-                                            <img src="/images/new_home/red_square.png" style="margin-right: 2px;"/>
-                                        </span>
-                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
-                                            <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
-                                        </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                    <?php endfor;*/ ?>
                 </div>
                     <div class="home_artline_leftdiv">&nbsp;</div>
                 <?php endif; ?>
@@ -124,14 +95,6 @@
                                 </a>
                             </div>
                             <div class="home_heading_l_2_txt_div">
-                                <div class="line_height0">
-                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
-                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        <!--<span><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/></span>-->
-                                    </a>
-                                </div>
                                 <div class="home_heading_l_c_txt_main">                                
                                     <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_ver_title[$i] ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
                                     <div class="margin_top_11">
@@ -141,10 +104,15 @@
                                         <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
                                         </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                                        </span>
                                     </div>
+                                </div>
+                                <div class="line_height0 col-first-date">
+                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
+                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
+                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
+                                        <!--<span><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/></span>-->
+                                    </a>
                                 </div>
                             </div>
                             <div class="home_artline_leftdiv">&nbsp;</div>
@@ -167,19 +135,6 @@
                                 <!--<img src="/images/new_home/sensex_img.png" />-->
                         </a>
                     </div>
-                    <div class="home_heading_l_txt dattimeinfo">
-                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
-                            <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                            <span class="update home_type"><?php echo $obj->getArticleCategory()->getCategoryName() ? $obj->getArticleCategory()->getCategoryName() : '' ?></span>
-                            <span class="bluefont home_cat"><?php echo $obj->getArticleType()->getTypeName() ? $obj->getArticleType()->getTypeName() : '' ?></span>
-                        </a>
-                        <a href="<?php echo 'https://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['article_id']; ?>" class="cursor">
-                            <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
-                        </a>
-                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="colorbandWrapper cursor">
-                                <!--<span class="colorband"><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/><!--<img src="/images/smallcolorstrip.jpg" alt="strip" /> </span>-->
-                        </a>
-                    </div>
                     <div class="home_heading_l_bigimg_main">
                         <span class="home_heading_l_bigimg_txt_big">
                             <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">
@@ -194,9 +149,19 @@
                             <img class="home_square" src="/images/new_home/red_square.png" alt="arrow" />
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php echo substr($obj['image_text'],0,122); ?></span>
                         </a>
-                        <span class="home_body_l_1_red">
-                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                        </span>
+                    </div>
+                    <div class="home_heading_l_txt dattimeinfo col-first-date">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
+                            <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                            <span class="update home_type"><?php echo $obj->getArticleCategory()->getCategoryName() ? $obj->getArticleCategory()->getCategoryName() : '' ?></span>
+                            <span class="bluefont home_cat"><?php echo $obj->getArticleType()->getTypeName() ? $obj->getArticleType()->getTypeName() : '' ?></span>
+                        </a>
+                        <a href="<?php echo 'https://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['article_id']; ?>" class="cursor">
+                            <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
+                        </a>
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="colorbandWrapper cursor">
+                                <!--<span class="colorband"><img src="/images/new_home/arrow_bt_art.png" class="margin_rgt_4"/><!--<img src="/images/smallcolorstrip.jpg" alt="strip" /> </span>-->
+                        </a>
                     </div>
                 </div>
                 <div class="artlineleftdiv">&nbsp;</div>
@@ -246,9 +211,7 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'],0,122); ?></span>
                         </a>
-                        <span class="home_body_l_1_blue">
-                            <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="bluelink"> Läs mer...</a>
-                        </span>
+
                     </div>
 
                 </div>

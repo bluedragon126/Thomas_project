@@ -100,18 +100,7 @@ endforeach;
                         echo "margin_rgt_0";
                     }
                     ?>">
-                                    <div>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor"> 
-                                        
-                                        <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
-                                        
-                                        
-                                            <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                            <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                            <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                           
-                                        </a>
-                                    </div>
+                                    
                                     <div class="home_heading_l_c_txt_main">                                
                                         <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
                                         <div class="margin_top_11">
@@ -125,6 +114,18 @@ endforeach;
                                                 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a>
                                             </span>
                                         </div>
+                                    </div>
+                                    <div class = "home_heading_l_txt dattimeinfo col-first-date">
+                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor"> 
+                                        
+                                        <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
+                                        
+                                        
+                                            <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                                            <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
+                                            <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
+                                           
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -159,20 +160,7 @@ endforeach;
                                     <!--<img src="/images/new_home/home_heading_l_2_img.png" />-->
                                 </a>
                             </div>
-                            <div class="home_heading_l_2_txt_div">
-                                <div class="line_height0">
-                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
-                                    
-                                    <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
-                                    
-                                    
-                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        
-                                    </a>
-                                </div>
-                                
+                            <div class="home_heading_l_2_txt_div">                                
                                 <div class="home_heading_l_c_txt_main">                                
                                     <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_ver_title[$i] ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
                                     <div class="margin_top_11">
@@ -186,6 +174,18 @@ endforeach;
                                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a>
                                         </span>
                                     </div>
+                                </div>
+                                <div class="home_heading_l_txt dattimeinfo col-first-date">
+                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
+                                    
+                                    <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
+                                    
+                                    
+                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
+                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
+                                        
+                                    </a>
                                 </div>
                             </div>
                             <div class="home_artline_leftdiv">&nbsp;</div>
@@ -205,21 +205,7 @@ endforeach;
                             <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_large.', $obj['image']); ?>" width="465"/>
                         </a>
                     </div>
-                    <div class="home_heading_l_txt dattimeinfo">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
-                        
-                        <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
-                            <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                            <span class="update home_type"><?php echo $obj->getArticleCategory()->getCategoryName() ? $obj->getArticleCategory()->getCategoryName() : '' ?></span>
-                            <span class="bluefont home_cat"><?php echo $obj->getArticleType()->getTypeName() ? $obj->getArticleType()->getTypeName() : '' ?></span>
-                        </a>
-                        <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['article_id']; ?>" class="cursor">
-                            <span class="chaticon"><?php //echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
-                        </a>
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="colorbandWrapper cursor">
-                                
-                        </a>
-                    </div>
+
                     <div class="home_heading_l_bigimg_main">
                         <span class="home_heading_l_bigimg_txt_big">
                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">
@@ -237,6 +223,21 @@ endforeach;
                         <span class="home_body_l_1_red">
                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a></a>
                         </span>
+                    </div>
+                    <div class="home_heading_l_txt dattimeinfo col-first-date">
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
+                        
+                        <!--<span class="colorband" style="margin: 4px 0px 0px; padding-top: 2px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
+                            <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
+                            <span class="update home_type"><?php echo $obj->getArticleCategory()->getCategoryName() ? $obj->getArticleCategory()->getCategoryName() : '' ?></span>
+                            <span class="bluefont home_cat"><?php echo $obj->getArticleType()->getTypeName() ? $obj->getArticleType()->getTypeName() : '' ?></span>
+                        </a>
+                        <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['article_id']; ?>" class="cursor">
+                            <span class="chaticon"><?php //echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
+                        </a>
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="colorbandWrapper cursor">
+                                
+                        </a>
                     </div>
                 </div>
                 <div class="artlineleftdiv">&nbsp;</div>
@@ -333,19 +334,7 @@ endforeach;
     <?php if ($m == 0): ?>		
         <?php //include_partial('global/bulk_ads',array('bulk_ads'=>$ad_3))            ?>
     <?php endif; ?>
-                <div class="home_heading_l_txt dattimeinfo"> 
-                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="cursor">                    
-                        <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span> 
-                        <span class="update home_type"><?php echo $cat_arr[$last_column_articles[$l]['category_id']] ? $cat_arr[$last_column_articles[$l]['category_id']] : '' ?></span> 
-                        <span class="bluefont home_cat"><?php echo $type_arr[$last_column_articles[$l]['type_id']] ? $type_arr[$last_column_articles[$l]['type_id']] : '' ?></span> 
-                    </a>
-                    <a href="<?php //echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="cursor">
-                        <span class="chaticon"><?php //echo $comment_cnt->getTotalCommentCount($last_column_articles[$l]['article_id']) ?></span>
-                    </a>
-                    <!--<span class="colorband" style="margin:4.5px 0 0 0;">-->
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>"><!--<img src="/images/new_home/arrow_bt.png"  class="margin_rgt_4"/>-->
-                    </span> 
-                </div>
+                
                 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="blackcolor cursor">
                     <span class="<?php echo $last_column_style[$l % 4] ?> float_left"><?php echo $last_column_articles[$l]['title'] ?></span>
                 </a>
@@ -362,6 +351,19 @@ endforeach;
                     <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="bluelink1 cursor">
                         <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_mid.', $last_column_articles[$l]['image']); ?>"  width="300"  />
                     </a>
+                </div>
+                <div class="home_heading_l_txt dattimeinfo col-first-date"> 
+                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="cursor">                    
+                        <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span> 
+                        <span class="update home_type"><?php echo $cat_arr[$last_column_articles[$l]['category_id']] ? $cat_arr[$last_column_articles[$l]['category_id']] : '' ?></span> 
+                        <span class="bluefont home_cat"><?php echo $type_arr[$last_column_articles[$l]['type_id']] ? $type_arr[$last_column_articles[$l]['type_id']] : '' ?></span> 
+                    </a>
+                    <a href="<?php //echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="cursor">
+                        <span class="chaticon"><?php //echo $comment_cnt->getTotalCommentCount($last_column_articles[$l]['article_id']) ?></span>
+                    </a>
+                    <!--<span class="colorband" style="margin:4.5px 0 0 0;">-->
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>"><!--<img src="/images/new_home/arrow_bt.png"  class="margin_rgt_4"/>-->
+                    </span> 
                 </div>
             </div>
     <?php

@@ -627,7 +627,7 @@ class borstActions extends sfActions
 	$this->last_column_img = $last_column_img;
         
         $rcol_body_text = array('home_body_r_1','home_body_r_2','home_body_r_3','home_body_r_4');
-        $mcol_body_text = array('home_body_l_1','home_body_l_2','home_body_l_1','home_body_l_2');
+        $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
         $this->mcol_body_text = $mcol_body_text;
         $this->rcol_body_text = $rcol_body_text;
 	

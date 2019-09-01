@@ -47,7 +47,7 @@
                             <img class="home_square" src="/images/new_home/red_square.png" alt="arrow" />
                             <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php echo substr($twentyeight_2_thirtyfive[$l]['image_text'],0,122); ?></span>
                         </a>
-                        <span class="home_body_l_1_red"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="bluelink"> Läs mer...</a></span>
+                        
                     </div>
                 </div>
                 <div class="advertdiv photo">
@@ -56,6 +56,7 @@
                         <!--<img src="/images/new_home/negativa.png" />-->
                         <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_mid.', $twentyeight_2_thirtyfive[$l]['image']); ?>"  width="300" />
                     </a>
+                    <div class="artlinerightdiv width_300">&nbsp;</div>
                 </div>
             </div>
             <?php
