@@ -1,10 +1,3 @@
-
-
-<style>
-.active_item {
-  color:  #9ca1af;
-}
-</style>
 <div class="lista1 widthall list_lista"><?php echo __('Lista') ?></div>
 <div class="shop4">
     <input type="hidden" name="art_id" id="art_id" value="<?php echo $art_id ?>" />

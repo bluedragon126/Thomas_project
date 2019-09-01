@@ -54,9 +54,7 @@
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'], 0, 122); ?></span>
                                         </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                                        </span>
+
                                     </div>
                                 </div>
                                 <div class="home_heading_l_txt dattimeinfo col-first-date">
@@ -64,7 +62,6 @@
                                         <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
                                         <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        <span><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>
                                     </a>
                                     <?php if($obj['art_statid'] == 5):?>
                                         <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
@@ -116,9 +113,7 @@
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php echo substr($arr[$i]['image_text'], 0, 122); ?></span>
                                         </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                                        </span>
+
                                     </div>
                                 </div>
                                 <div class="home_heading_l_txt dattimeinfo col-first-date">
@@ -126,7 +121,6 @@
                                         <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
                                         <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
-                                        <span><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>
                                     </a>
                                     <?php if($obj['art_statid'] == 5):?>
                                         <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
@@ -166,9 +160,7 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
                         </a>
-                        <span class="home_body_l_1_red">
-                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> Läs mer...</a>
-                        </span>
+
                     </div>
                     <div class="home_heading_l_txt dattimeinfo col-first-date">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
@@ -178,9 +170,6 @@
                         </a>
                         <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['article_id']; ?>" class="cursor">
                             <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['article_id']) ?></span>
-                        </a>
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="colorbandWrapper cursor">
-                                <span class="colorband"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/><!--<img src="/images/smallcolorstrip.jpg" alt="strip" />--> </span>
                         </a>
                         <?php if($obj['art_statid'] == 5):?>
                             <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
@@ -231,9 +220,7 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
                         </a>
-                        <span class="home_body_l_1_blue">
-                            <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="bluelink"> Läs mer...</a>
-                        </span>
+
                     </div>
                     <div class="home_heading_l_btmtxtmain dattimeinfo col-first-date">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="cursor">
@@ -339,9 +326,7 @@
                     <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="cursor">
                         <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($twentyeight_2_thirtyfive[$l]['article_id']) ?></span>
                     </a>
-                    <span class="colorband">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $twentyeight_2_thirtyfive[$l]['article_id']; ?>"><img src="/images/new_home/arrow_bt.png"  class="margin_rgt_4"/>
-                    </span>
+
                     <?php if($twentyeight_2_thirtyfive[$l]['art_statid'] == 5):?>
                         <a><span><img src="/images/new_home/BT-lock_30x30.png" width="17"/></span></a>
                     <?php endif; ?>
@@ -355,7 +340,7 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, 122); ?></span>
                         </a>
-                        <span class="home_body_l_1_red"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="bluelink"> Läs mer...</a></span>
+                       
                     </div>
                 </div>
                 <div class="advertdiv photo">

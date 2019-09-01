@@ -78,7 +78,7 @@ echo($parent_menu); ?>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span class="text-uppercase bt-shop <?php echo $parent_menu == 'top_bt_shop' ? 'nav-active' : '' ?>">BT-Shop</span></a>
                 <ul class="nav-bar-sub <?php echo $parent_menu == 'top_bt_shop' ? 'show' : 'hide' ?>" id="second">
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span>Hem</span></a></li>
-                    <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'><span>Abonnemang</span></a></li>
+                    <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>'><span>Abonnemang</span></a></li>
                     <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'><span>Utbildningar</span></a></li>
                     <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");'><span>Metastock</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><span>Villkor</span></a></li>

@@ -49,7 +49,7 @@ $metastock_data = $btshop_article->getPublishedShopArticleOfType(1);
         });
     });
 </script>
-
+<!-- <style>.highlight:hover{background-color: white;}</style> -->
 <?php
 foreach ($utbildningar_data as $article):
     // echo ("111");
@@ -60,7 +60,7 @@ endforeach;
     <ul>
     <?php
     foreach ($abonnemang_data as $article):?>
-        <li><?php echo $article->btshop_article_title;?></li></br>
+        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
     <?php
     endforeach;
     ?>
@@ -70,7 +70,7 @@ endforeach;
     <ul>
     <?php
     foreach ($utbildningar_data as $article):?>
-        <li><?php echo $article->btshop_article_title;?></li></br>
+        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
     <?php
     endforeach;
     ?>
@@ -80,7 +80,7 @@ endforeach;
     <ul>
     <?php
     foreach ($metastock_data as $article):?>
-        <li><?php echo $article->btshop_article_title;?></li></br>
+        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
     <?php
     endforeach;
     ?>

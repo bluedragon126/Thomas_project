@@ -552,41 +552,41 @@ root {
    font-family: "Georgia";
 	color: #232222;
     font-size: 1.2em;
-	line-height: 1.3em;
+	line-height: 1.2em;
     word-wrap: break-word;
 }
 .home_body_l_1x{
    	font-family: "Georgia";
 	color: #232222;
     font-size: 1.2em;
-	line-height: 1.3em;
+	line-height: 1.2em;
     word-wrap: break-word;
 }
 .home_body_l_2{
     font-family: "Georgia";
 	color: #232222;
     font-size: 1.2em;
-	line-height: 1.4em;
+	line-height: 1.2em;
     word-wrap: break-word;	
 }
 .home_body_l_2x{
     font-family: "Georgia";
 	color: #232222;
     font-size: 1.2em;
-	line-height: 1.4em;
+	line-height: 1.2em;
     word-wrap: break-word;	
 }
 .home_body_l_1_red a{
     color: #f15822;
     font-family: 'Franklin Gothic Medium';
     font-size: 0.93em;
-    line-height: 1.29em;
+    line-height: 1.2em;
 }
 .home_body_l_1_blue a{
     color: #0f86c3;
     font-family: 'Franklin Gothic Medium';
     font-size: 0.93em;
-    line-height: 1.29em;
+    line-height: 1.2em;
 }
 .home_artline_leftdiv{
     background: url('../images/new_home/art_line.png') repeat-x;
@@ -8207,6 +8207,7 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
 .text-uppercase{text-transform: uppercase;}
 .col-first-date{margin-top: 6px;margin-bottom: 5px;}
 .col-middle-date{margin-top: 4px;margin-bottom: 5px;}
+
 
 
 

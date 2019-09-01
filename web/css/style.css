@@ -551,8 +551,8 @@ root {
 .home_body_l_1{
    font-family: "Georgia";
     color: #232222;
-    font-size: 1.2em;
-    line-height: 1.3em;
+    font-size: 14px;
+    line-height: 1.2em;
     word-wrap: break-word;
     word-spacing: -0.02em;
 }
@@ -581,13 +581,13 @@ root {
     color: #f15822;
     font-family: 'Franklin Gothic Medium';
     font-size: 0.93em;
-    line-height: 1.29em;
+    line-height: 1.2em;
 }
 .home_body_l_1_blue a{
     color: #0f86c3;
     font-family: 'Franklin Gothic Medium';
-    font-size: 0.93em;
-    line-height: 1.29em;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 .home_artline_leftdiv{
     background: url('../images/new_home/art_line.png') repeat-x;
