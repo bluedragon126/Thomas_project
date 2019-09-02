@@ -1557,6 +1557,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;margin:0px 2px 0px 13px;color:#f15822;text-align:right;}
 .navBar_third_cart{margin-left:6px;float:right;}
 .margin_top_none{margin-top:0px!important;}
+.margin_top_ann{margin-top:-4px!important;}
 .font_size_12{font-size:12px !important;}
 .bt_shop_image_align{margin-top:8px;}
 .up_sub_div{}
@@ -1600,7 +1601,6 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .leftmenu #top_sbt_menu_enquiry a:hover{background-color:#0bb342;}
 .mainmenuwrapper #top_sbt_menu_enquiry .selected{background-color:#0bb342;}
 .shop_space{margin-top: 10px;}
-.top_space{margin-top: -5px !important;}
 .highlight{padding: 4px}
 .highlight:hover{background-color: white;}
 .active_item {color:  #9ca1af;}

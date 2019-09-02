@@ -98,8 +98,8 @@
         <?php echo include_partial('global/borst_bottom_three_article', array('host_str' => $host_str, 'cat_arr' => $cat_arr, 'type_arr' => $type_arr, 'object_arr' => $object_arr, 'col1_13_heading_style_start' => $col1_13_heading_style_start, 'col1_13_heading_style_end' => $col1_13_heading_style_end, 'col1_45_div_style' => $col1_45_div_style, 'col1_67_heading_style' => $col1_67_heading_style, 'col1_814_heading_style' => $col1_814_heading_style, 'col1_1417_heading_style' => $col1_1417_heading_style, 'image_arr_13' => $image_arr_13, 'image_arr_67' => $image_arr_67, 'image_arr_814' => $image_arr_814, 'image_arr_1417' => $image_arr_1417, 'one_2_three' => $one_2_three, 'four_2_five' => $four_2_five, 'six_2_eight' => $six_2_eight, 'nine_2_ten' => $nine_2_ten, 'eleven_2_thirteen' => $eleven_2_thirteen, 'fourteen_2_fifteen' => $fourteen_2_fifteen, 'sixteen_2_nineteen' => $sixteen_2_nineteen, 'twenty_2_twentythree' => $twenty_2_twentythree, 'twentyfour_2_twentyseven' => $twentyfour_2_twentyseven, 'twentyeight_2_thirtyfive' => $twentyeight_2_thirtyfive, 'comment_cnt' => $comment_cnt, 'hide_right_border' => '1', 'month' => $month)); ?>
 
     </div>
-    <div class="rightbanner padding_0 font_0">
-        <div class="home_ad_r float_left font_size_12 top_space">Annons</div>
+    <div class="rightbanner padding_0 font_0 margin_top_ann">
+        <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>
         <div id="whitepage_ads">
             <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4, 'set_margin' => '1')) ?>

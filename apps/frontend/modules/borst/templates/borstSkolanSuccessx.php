@@ -109,8 +109,8 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="inner_page_divider_3">&nbsp;</div>
         <div class="float_left mrg_left_testimonial margin_testimonial"><img src="/images/new_home/testimonial_L.png" width="500"/></div>
     </div>
-    <div class="rightbanner padding_0 font_0">
-        <div class="home_ad_r float_left font_size_12 top_space">ANNONS</div>
+    <div class="rightbanner padding_0 font_0 margin_top_ann">
+        <div class="home_ad_r float_left font_size_12 ">ANNONS</div>
         <?php include_partial('global/ad_message') ?>
         <div id="whitepage_ads">
             <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'set_margin' => '1', 'ad_3' => $ad_3, 'ad_4' => $ad_4)) ?>

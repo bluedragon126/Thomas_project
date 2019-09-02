@@ -474,7 +474,7 @@
   
   <?php include_partial('global/bulk_ads',array('bulk_ads'=>$ad_3)) ?>
   <div class="blank_10h">&nbsp;</div>
-  <?php include_partial('global/right_top_ads',array('ad'=>$ad_4,'top_space'=>'padding-top:10px;')) ?>
+  <?php include_partial('global/right_top_ads',array('ad'=>$ad_4,''=>'padding-top:10px;')) ?>
 </div>
 <div class="colorstrip">&nbsp;</div>
 <?php include_partial('global/six_cube_footer',array('host_str'=>$host_str,'bottom_commodities_links'=>$bottom_commodities_links,'bottom_currencies_links'=>$bottom_currencies_links,'bottom_buysell_links'=>$bottom_buysell_links,'bottom_statistics_links'=>$bottom_statistics_links,'bottom_aktier_links'=>$bottom_aktier_links,'bottom_kronika_links'=>$bottom_kronika_links)) ?>

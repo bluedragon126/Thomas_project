@@ -78,7 +78,7 @@ $(window).load(function(){
       </div>
           
 	</div>
-      <div class="rightbanner padding_0 font_0">
+      <div class="rightbanner padding_0 font_0 margin_top_ann">
 	  <?php include_partial('global/ad_message') ?>
       <?php include_partial('global/right_ads_column',array('ad_1'=>$ad_1,'ad_2'=>$ad_2,'set_margin'=>'1')) ?>
     </div>

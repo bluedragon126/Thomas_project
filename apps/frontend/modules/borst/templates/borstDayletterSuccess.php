@@ -164,8 +164,8 @@ include_component('isicsBreadcrumbs', 'show', array(
             <?php echo include_partial('global/inner_bottom_footer'); ?>
         </div>
     </div>
-    <div class="rightbanner padding_0 font_0">
-        <div class="home_ad_r float_left font_size_12 top_space">Annons</div>
+    <div class="rightbanner padding_0 font_0 margin_top_ann">
+        <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>
      
             <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4,'set_margin' => '1')) ?>

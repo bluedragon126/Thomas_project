@@ -582,9 +582,9 @@ if (count($products_data) > 0):
                     </ul>
                 </div>
     <?php endif; ?>
-
+    <div class="home_heading_r">
     <?php if (count($product_detail) == 1 && $cartEmptyOrNt == 1) { ?>
-                <div class="home_ad_r float_left font_size_12 top_space">Annons</div>
+                <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>
                 <div id="whitepage_ads">
         <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4, 'set_margin' => '1')); ?>
@@ -592,4 +592,5 @@ if (count($products_data) > 0):
     <?php } ?>
         </div>
 <?php endif; ?>
+    </div>
     <!--Detail List end-->

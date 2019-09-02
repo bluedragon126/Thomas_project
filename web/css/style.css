@@ -248,7 +248,7 @@ root {
     font-family: "arial black";
     font-size: 1em;
     line-height: 12px;
-    color: #15a22;
+    color: #1522;
 }
 .bt_head_quote{
     font-family: "arial narrow";
@@ -7693,7 +7693,7 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
 #whitepage_ads .sponseror{
     margin-top: 0px;
     margin-bottom: 1px;
-    line height:0;
+    line-height:0;
 }
 .padding_right_9{padding-right: 9px !important;}
 #my_subscription_list ul, #my_active_subscription_list ul {
@@ -8276,8 +8276,8 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
     margin-bottom: -10px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     line-height: 26px;
 }
 .shop_ul{

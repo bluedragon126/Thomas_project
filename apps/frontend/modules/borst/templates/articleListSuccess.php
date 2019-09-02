@@ -338,7 +338,8 @@ include_component('isicsBreadcrumbs', 'show', array(
         <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
     </div>
 </div>
-<div class="home_ad_r float_left font_size_12 top_space">Annons</div>
+<div class="rightbanner padding_0 font_0 margin_top_ann">
+<div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php //include_partial('global/ad_message') ?>
             <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
 
@@ -349,5 +350,6 @@ include_component('isicsBreadcrumbs', 'show', array(
         <!--<div class="blank_10h">&nbsp;</div>---->
 
         <?php if(count($twentyeight_2_thirtyfive)>0) {?><div class="home_adline_r_div">&nbsp;</div><?php }?>
+                                            </div>
 <!--<div class="inner_page_divider_3">&nbsp;</div>-->
 
