@@ -36,6 +36,7 @@ $btshop_article = new BtShopArticle();
 $abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
 $utbildningar_data = $btshop_article->getPublishedShopArticleOfType(4);
 $metastock_data = $btshop_article->getPublishedShopArticleOfType(1);
+$host_str = $_SERVER['HTTP_HOST'];
 ?>
 <script>
     function gotoDiv(url){
@@ -57,30 +58,37 @@ foreach ($utbildningar_data as $article):
 endforeach;
 ?>
 <div class = "drop_down_bt_shop first_drop" id = "first_drop">
-    <ul>
+    <ul class = "shop_ul">
+        
     <?php
     foreach ($abonnemang_data as $article):?>
-        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
+    <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+        <li class = "highlight shop_li"><?php echo $article->btshop_article_title;?></li></br>
+    </a>
     <?php
     endforeach;
     ?>
     </ul>
 </div>
 <div class = "drop_down_bt_shop second_drop" id = "second_drop">
-    <ul>
+    <ul class = "shop_ul">
     <?php
     foreach ($utbildningar_data as $article):?>
-        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
+    <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+        <li class = "highlight shop_li"><?php echo $article->btshop_article_title;?></li></br>
+    </a>
     <?php
     endforeach;
     ?>
     </ul>
 </div>
 <div class = "drop_down_bt_shop third_drop" id = "third_drop">
-    <ul>
+    <ul class = "shop_ul">
     <?php
     foreach ($metastock_data as $article):?>
-        <li class = "highlight"><?php echo $article->btshop_article_title;?></li></br>
+    <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+        <li class = "highlight shop_li"><?php echo $article->btshop_article_title;?></li></br>
+    </a>
     <?php
     endforeach;
     ?>

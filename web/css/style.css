@@ -8268,6 +8268,17 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
 .col-first-date{margin-top: 10px;margin-bottom: 5px;}
 .col-middle-date{margin-top: 6px;margin-bottom: 5px;}
 
+.shop_li{
+    display: flex;
+    padding: 3px;
+    margin-bottom: -15px;
+    text-transform: capitalize;
+}
+.shop_ul{
+    margin-left: -20px;
+    margin-right: -12px;
+}
+
 
 
 
