@@ -61,7 +61,7 @@
 
                                     </div>
                                 </div>
-                                <div class="home_heading_l_btmtxtmain dattimeinfo col-middle-date">
+                                <div class="home_heading_l_btmtxtmain dattimeinfo home_body_l_double">
                                     <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
                                         <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>

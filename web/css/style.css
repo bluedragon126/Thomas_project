@@ -8266,12 +8266,12 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
 }
 .text-uppercase{text-transform: uppercase;}
 .col-first-date{margin-top: 10px;margin-bottom: 5px;}
+.home_body_l_double{margin-top: 10px;margin-bottom: 5px;}
 .col-middle-date{margin-top: 6px;margin-bottom: 5px;}
 
 .shop_li{
     display: flex;
     padding: 3px;
-    margin-bottom: -15px;
     text-transform: capitalize;
     padding-left: 15px;
     padding-right: 15px;

@@ -70,7 +70,7 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <div class="home_heading_l_txt dattimeinfo col-first-date">
+                                    <div class="home_heading_l_txt dattimeinfo home_body_l_double">
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
                                             <!--<span style="float: none; top: 0px;" class="colorband"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
                                             <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
