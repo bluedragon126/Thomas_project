@@ -2434,10 +2434,10 @@ blank_4h{
     width:100%;
     padding:2px;
 }
-.supmenuPopupContent li a{
+.supmenuPopupContent a li {
     color: #000000 !important;
 }
-.supmenuPopupContent li:hover{
+.supmenuPopupContent a li:hover{
     background-color: #f3fafc;
 }
 /* css for bt shop right panel details listing start here */
@@ -8273,10 +8273,15 @@ background-repeat:no-repeat;border:1px solid;color:#00529B;margin:10px 0;padding
     display: flex;
     padding: 3px;
     text-transform: capitalize;
+    margin-bottom: -10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 26px;
 }
 .shop_ul{
+    
     margin-left: -42px;
     margin-right: -32px;
 }
