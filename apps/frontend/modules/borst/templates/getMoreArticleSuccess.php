@@ -188,7 +188,7 @@
                             if($obj['category_id'] == 6){
                                 $desc = $obj['text'];                                                                               
                                 $abc = explode("em&gt;",strip_tags($desc));
-                                echo "<div class='wizdom-three'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
+                                echo "<div class='wizdom-one'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
                             }else {?>
                             <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_large.', $obj['image']); ?>" width="465"/>
                             <?php }
