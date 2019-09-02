@@ -168,10 +168,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row">
                                         <ul noclick="1">
                                             <li noclick="1"><span noclick="1" id="sortby_date" class="cursor test">Publ.</span></li>
-                                            <li noclick="1"><span noclick="1" id="sortby_title" class="cursor">Rubrik</span></li>
-                                            <li noclick="1"><span noclick="1" id="sortby_category" class="cursor">Kategori</span></li>
-                                            <li noclick="1"><span noclick="1" id="sortby_type" class="cursor">Typ</span></li>
-                                            <li noclick="1"><span noclick="1" id="sortby_object" class="cursor">Objekt</span></li>
+                                            <li noclick="1"><span noclick="1" id="sortby_title" class="cursor test">Rubrik</span></li>
+                                            <li noclick="1"><span noclick="1" id="sortby_category" class="cursor test">Kategori</span></li>
+                                            <li noclick="1"><span noclick="1" id="sortby_type" class="cursor test">Typ</span></li>
+                                            <li noclick="1"><span noclick="1" id="sortby_object" class="cursor test">Objekt</span></li>
                                         </ul>
                                     </div>
                                     <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
@@ -310,7 +310,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <span class="forum_sorting_wrapper">
                                         <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row"  style="top:17px;">
                                             <ul noclick="1">
-                                                <li noclick="1"><span noclick="1" id="sortby_date" class="cursor">Publ111.</span></li>
+                                                <li noclick="1"><span noclick="1" id="sortby_date" class="cursor">Publ.</span></li>
                                                 <li noclick="1"><span noclick="1" id="sortby_title" class="cursor">Rubrik</span></li>
                                                 <li noclick="1"><span noclick="1" id="sortby_category" class="cursor">Kategori</span></li>
                                                 <li noclick="1"><span noclick="1" id="sortby_type" class="cursor">Typ</span></li>
