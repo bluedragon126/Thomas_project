@@ -47,7 +47,7 @@
 </div>
 </noscript>
 <div class="maincontentpage">
-    <div class="inner-page-contetn-left" style="border:none;">
+    <div class="inner-page-contetn-left" >
         <div class="breadcrumb">
             <ul>
                 <li><?php

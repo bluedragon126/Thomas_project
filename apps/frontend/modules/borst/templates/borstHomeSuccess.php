@@ -459,7 +459,7 @@ endfor;
                 <div class="color_plate_img_first"><img src="/images/new_home/bt-shop_logo-home.png" width="92" /></div>
                 <div class="bottom_shop_txt_main">
                     <div class="bottom_shop_cart">Välkommen till BT-shop <br />
-– affären för bättre affärer!</div>
+                        – affären för bättre affärer!</div>
                 </div>
             </div>
             <?php $adCount = 1; ?>
@@ -491,22 +491,22 @@ endfor;
             } ?>"><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?>&nbsp;KR</span>
  
                                 <!--<span class="bottom_shop_readmore">...</span>-->
-    <?php endif ?>
+            <?php endif ?>
                 
                         </div>
                     </div>
                 </a>
-    <?php
-    $adCount++;
-endforeach;
-?>
+             <?php
+            $adCount++;
+            endforeach;
+            ?>
         </div>
         <div class="morearticle"></div>
         <div class="loading_home" style="display: none;">&nbsp;</div>
         <div class="bt-shop_border_home2"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
         <div class="home_footer_divider">&nbsp;</div>
         <div class="footer_main">
-<?php include_partial('global/six_cube_footer', array('host_str' => $host_str, 'bottom_commodities_links' => $bottom_commodities_links, 'bottom_currencies_links' => $bottom_currencies_links, 'bottom_buysell_links' => $bottom_buysell_links, 'bottom_statistics_links' => $bottom_statistics_links, 'bottom_aktier_links' => $bottom_aktier_links, 'bottom_kronika_links' => $bottom_kronika_links)) ?>
+            <?php include_partial('global/six_cube_footer', array('host_str' => $host_str, 'bottom_commodities_links' => $bottom_commodities_links, 'bottom_currencies_links' => $bottom_currencies_links, 'bottom_buysell_links' => $bottom_buysell_links, 'bottom_statistics_links' => $bottom_statistics_links, 'bottom_aktier_links' => $bottom_aktier_links, 'bottom_kronika_links' => $bottom_kronika_links)) ?>
         </div>
     </div>
 </div>

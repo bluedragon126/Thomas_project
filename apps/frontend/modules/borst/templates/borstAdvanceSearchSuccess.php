@@ -39,7 +39,7 @@ margin-bottom:-1px;
         $('form#adv_search_form').jqTransform();
     });
 </script>
-<div class="inner-page-contetn-left" id="borst_advanced_search" style="border:none;">
+<div class="inner-page-contetn-left" id="borst_advanced_search" >
     <div class="breadcrumb">
         <ul>
             <li><?php

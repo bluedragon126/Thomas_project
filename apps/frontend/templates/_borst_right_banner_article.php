@@ -6,7 +6,7 @@
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php //include_partial('global/ad_message') ?>
             <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
-            <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>
+            <!-- <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?> -->
         
         <?php include_partial('global/sponsorer_ad') ?>
          

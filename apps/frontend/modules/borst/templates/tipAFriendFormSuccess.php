@@ -45,7 +45,7 @@
 </script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <div class="inner-page-contetn-left" style="border:none;">
+    <div class="inner-page-contetn-left" >
             <div class="breadcrumb">
                 <ul>
                     <li><?php

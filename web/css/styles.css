@@ -450,7 +450,7 @@ root {
 .content_main_div_left{
     float: left;
     /*width: 49%;*/
-    width: 475px;
+    width: 476px;
     /*margin-top: 20px;*/
 }
 .home_heading_l{
@@ -632,7 +632,7 @@ root {
 .content_main_div_center{
     float: left;
     /*width: 19%;*/
-    width: 182px;
+    width: 183px;
     border-left: 1px solid #d3d3d3;
     border-right: 1px solid #d3d3d3;
     /*margin-top: 20px;*/

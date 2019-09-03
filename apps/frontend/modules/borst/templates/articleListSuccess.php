@@ -93,7 +93,7 @@
     
 </script>
 <span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader.gif" /></span>
-<div class="inner-page-contetn-left" id="article_lista" style="border:none;">
+<div class="inner-page-contetn-left" id="article_lista" >
     <div class="height_auto">
         <div class="breadcrumb lista_mrg_top_7">
             <ul>

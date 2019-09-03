@@ -24,7 +24,7 @@
     });
 </script>
 <div class="maincontentpage  margin-top-15m">
-    <div class="inner-page-contetn-left margin-bottom-10m" style="border:none;">
+    <div class="inner-page-contetn-left margin-bottom-10m" >
         <div class="breadcrumb_div">
             <div>
                 <div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>

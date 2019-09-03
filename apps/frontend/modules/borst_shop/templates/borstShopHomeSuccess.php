@@ -141,25 +141,26 @@
                                     <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
                                 </div>-->
                                 <!--<div class="shoph3 widthall shop_home_title"><?php echo $article->btshop_article_title; //if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;}  ?></div>-->
-                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 55) {
-                                echo substr($article->btshop_article_subtitle, 0, 55);
+                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 80) {
+                                echo substr($article->btshop_article_subtitle, 0, 80);
                             } else {
                                 echo $article->btshop_article_subtitle;
                             } ?></div></font>
                                     <div class="shopsmallblock_separator_1"> </div>
-        <?php if (strlen($article->btshop_article_subtitle) > 35) {
-            if (strlen($article->btshop_product_intro_text) > 65) {
-                echo substr($article->btshop_product_intro_text, 0, 110) . "...";
-            } else {
-                echo substr($article->btshop_product_intro_text, 0, 110);
-            }
-        } else {
-            if (strlen($article->btshop_product_intro_text) > 155) {
-                echo substr($article->btshop_product_intro_text, 0, 155) . "...";
-            } else {
-                echo substr($article->btshop_product_intro_text, 0, 155);
-            }
-        } ?> <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
+                            <?php if (strlen($article->btshop_article_subtitle) > 80) {
+                                if (strlen($article->btshop_product_intro_text) > 80) {
+                                    echo substr($article->btshop_product_intro_text, 0, 250) . "...";
+                                } else {
+                                    echo substr($article->btshop_product_intro_text, 0, 250);
+                                }
+                            } else {
+                                if (strlen($article->btshop_product_intro_text) > 250) {
+                                    echo substr($article->btshop_product_intro_text, 0, 250) . "...";
+                                } else {
+                                    echo substr($article->btshop_product_intro_text, 0, 250);
+                                }
+                            } ?> 
+                    <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
                                     <div class="shopsmallblock_separator_2"> </div>
 
                                                         <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
@@ -358,23 +359,23 @@
                                     <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;  ?>"><span class="shop_heading">KÖP</span></a></div>
                                 </div>
                                 <div class="shoph3 widthall shop_home_title"><?php //echo $article->btshop_article_title; //if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;}  ?></div>-->
-                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 55) {
-                    echo substr($article->btshop_article_subtitle, 0, 55);
+                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 80) {
+                    echo substr($article->btshop_article_subtitle, 0, 80);
                 } else {
                     echo $article->btshop_article_subtitle;
                 } ?></div></font>
                                     <div class="shopsmallblock_separator_1"> </div>
-                        <?php if (strlen($article->btshop_article_subtitle) > 35) {
-                            if (strlen($article->btshop_product_intro_text) > 65) {
-                                echo substr($article->btshop_product_intro_text, 0, 110) . "...";
+                        <?php if (strlen($article->btshop_article_subtitle) > 80) {
+                            if (strlen($article->btshop_product_intro_text) > 80) {
+                                echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                             } else {
-                                echo substr($article->btshop_product_intro_text, 0, 110);
+                                echo substr($article->btshop_product_intro_text, 0, 250);
                             }
                         } else {
-                            if (strlen($article->btshop_product_intro_text) > 155) {
-                                echo substr($article->btshop_product_intro_text, 0, 155) . "...";
+                            if (strlen($article->btshop_product_intro_text) > 250) {
+                                echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                             } else {
-                                echo substr($article->btshop_product_intro_text, 0, 155);
+                                echo substr($article->btshop_product_intro_text, 0, 250);
                             }
                         } ?> <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
                                     <div class="shopsmallblock_separator_2"> </div>
@@ -479,23 +480,23 @@
                                     <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;  ?>"><span class="shop_heading">KÖP</span></a></div>
                                 </div>
                                 <div class="shoph3 widthall shop_home_title"><?php //echo $article->btshop_article_title; //if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;}  ?></div>-->
-                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 55) {
-                    echo substr($article->btshop_article_subtitle, 0, 55);
+                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 80) {
+                    echo substr($article->btshop_article_subtitle, 0, 80);
                 } else {
                     echo $article->btshop_article_subtitle;
                 } ?></div></font>
                                     <div class="shopsmallblock_separator_1"> </div>
-                        <?php if (strlen($article->btshop_article_subtitle) > 35) {
-                            if (strlen($article->btshop_product_intro_text) > 65) {
-                                echo substr($article->btshop_product_intro_text, 0, 110) . "...";
+                        <?php if (strlen($article->btshop_article_subtitle) > 80) {
+                            if (strlen($article->btshop_product_intro_text) > 80) {
+                                echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                             } else {
-                                echo substr($article->btshop_product_intro_text, 0, 110);
+                                echo substr($article->btshop_product_intro_text, 0, 250);
                             }
                         } else {
-                            if (strlen($article->btshop_product_intro_text) > 155) {
-                                echo substr($article->btshop_product_intro_text, 0, 155) . "...";
+                            if (strlen($article->btshop_product_intro_text) > 250) {
+                                echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                             } else {
-                                echo substr($article->btshop_product_intro_text, 0, 155);
+                                echo substr($article->btshop_product_intro_text, 0, 250);
                             }
                         } ?> <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
                                     <div class="shopsmallblock_separator_2"> </div>
@@ -603,10 +604,6 @@
                                     <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
 
                                 </div>
-                                <!--<div class="float_left kr_wrapper">
-                                    <font class="shop_home_price"> <b><?php //echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span>
-                                    <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
-                                </div>-->
             <?php } else { ?>
                 <div class="infoWrapper">
                                 <!--<div class="float_left kr_wrapper">
@@ -614,23 +611,23 @@
                                     <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
                                 </div>-->
                                 <!--<div class="shoph3 widthall shop_home_title"><?php //echo $article->btshop_article_title;//if(strlen($article->btshop_article_title) > 28 ){echo substr($article->btshop_article_title,0,28)."...";}else{echo $article->btshop_article_title;} ?></div>-->
-                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 55) {
-            echo substr($article->btshop_article_subtitle, 0, 55);
+                                <div class="shopsmallblockifo"> <font color="#000000" size="3"> <div class="shop_home_subtitle"><?php if (strlen($article->btshop_article_subtitle) >= 80) {
+            echo substr($article->btshop_article_subtitle, 0, 80);
         } else {
             echo $article->btshop_article_subtitle;
         } ?></div></font>
                                     <div class="shopsmallblock_separator_1"> </div>
-                <?php if (strlen($article->btshop_article_subtitle) > 35) {
-                    if (strlen($article->btshop_product_intro_text) > 65) {
-                        echo substr($article->btshop_product_intro_text, 0, 110) . "...";
+                <?php if (strlen($article->btshop_article_subtitle) > 80) {
+                    if (strlen($article->btshop_product_intro_text) > 80) {
+                        echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                     } else {
-                        echo substr($article->btshop_product_intro_text, 0, 110);
+                        echo substr($article->btshop_product_intro_text, 0, 250);
                     }
                 } else {
-                    if (strlen($article->btshop_product_intro_text) > 155) {
-                        echo substr($article->btshop_product_intro_text, 0, 155) . "...";
+                    if (strlen($article->btshop_product_intro_text) > 250) {
+                        echo substr($article->btshop_product_intro_text, 0, 250) . "...";
                     } else {
-                        echo substr($article->btshop_product_intro_text, 0, 155);
+                        echo substr($article->btshop_product_intro_text, 0, 250);
                     }
                 } ?> <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
                                     <div class="shopsmallblock_separator_2"> </div>

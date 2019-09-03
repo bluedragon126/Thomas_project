@@ -1,4 +1,5 @@
 <div class="footer_divider_links_main">
+    
     <div class="bottom_link_heading_bg">
         <div class="akteirwrapper">
             <span class="bottom_link_heading">Aktier</span>
@@ -69,6 +70,8 @@
             </ul>
         </div>
     </div>
+    <div class="footer_main">
+        </div>
 </div>
 
 </div>

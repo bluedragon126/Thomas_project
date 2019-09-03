@@ -14,7 +14,7 @@
 <form name="contactus" id="contactus" method="post" action="">
     <?php echo $contactEnqForm->renderHiddenFields() ?>
     <div class="maincontentpage">
-        <div class="inner-page-contetn-left" style="border:none;">
+        <div class="inner-page-contetn-left">
             <div class="breadcrumb">
                 <ul>
                     <li><?php

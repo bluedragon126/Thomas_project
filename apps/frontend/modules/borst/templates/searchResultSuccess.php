@@ -77,7 +77,7 @@
     }
 </script>
 <div class="maincontentpage">
-    <div class="inner-page-contetn-left" id="article_lista" style="border:none;">
+    <div class="inner-page-contetn-left" id="article_lista" >
         <div class="listingleftdivinner" id="search_content">
             <div class="breadcrumb width_90p">
                 <ul>
