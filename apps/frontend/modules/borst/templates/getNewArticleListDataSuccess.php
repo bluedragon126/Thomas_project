@@ -115,7 +115,6 @@
     <?php foreach ($pager->getResults() as $article): ?>
         <?php $flagga = "usa.gif"; ?>
         <tr id="borst_rec_row" class="classnot">
-            <td width="43"><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td>
             <td width="71" class="list_date"><?php echo substr($article->created_at, 0, 10); ?></td>
             <td width="16">&nbsp;</td>
 
@@ -190,7 +189,7 @@
                     -
                     <?php endif ?>
                 <?php endforeach ?>
-            <a id="<?php echo $pager->getNextPage(); ?>" class="cursor"> > </a> <a id="<?php echo $pager->getLastPage(); ?>" class="cursor"> <img src="/images/new_home/right_arrow_trans.png" alt="arrow" /> </a>
+            
 <?php endif ?>
     </div>-->
     
@@ -267,7 +266,7 @@ $(document).ready(function(){
 
 });
 </script> -->
-<?php echo $column_id;
+<?php 
 if($column_id == "date"){
     echo '<script type="text/javascript">',
      '$(".date_active").addClass("active_item");',

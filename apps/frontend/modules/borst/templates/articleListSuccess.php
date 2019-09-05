@@ -131,7 +131,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>-->
                 
                 
-                <div class="paginationwrapperNew">
+                <div class="paginationwrapper dummy1">
                     <div class="forum_pag" id="article_list_listing_new">
                         <?php if ($pager->haveToPaginate()): ?>
                             <?php if ($pager->getFirstPage() != $pager->getPage()) { ?>
@@ -196,19 +196,19 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <input type="hidden" id="sbt_type_id" name="sbt_type_id" value="<?php echo $param['sbt_type_id']; ?>"/>
                     <input type="hidden" id="sbt_obj_id" name="sbt_obj_id" value="<?php echo $param['sbt_obj_id']; ?>"/>
                     <tr id="article_list_column_row_new" valign="top" height="35" class="blackcolor">
-                        <th align="left" width="60"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" width="20"/></span></a></th>
-                        <th width="5">&nbsp;</th>
-                        <th align="left" width="305"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width="20"/></span></a>
+                        <th align="left" width="71"><a id="sortby_date" class="float_left cursor "><span class="float_left list_heading">Publ.<img src="/images/bg.gif" alt="down" width="20"/></span></a></th>
+                        <th width="16">&nbsp;</th>
+                        <th align="left" width="253"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width="20"/></span></a>
 
                     <?php if ($show_thumb == 1): ?>
                         <div class="preamble" name="0"><span class="float_left">visa utan ingress</span></div>
                     <?php else: ?>
-                        <!--<div class="preamble" name="1"><span class="float_left">visa med ingress</span></div>-->
+                        <div class="preamble" name="1"><span class="float_left">visa med ingress</span></div>
                     <?php endif; ?>
 
                     </th>
                     <th width="13">&nbsp;</th>
-                    <th align="left" width="82"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" width="20"/></span></a></th>
+                    <th align="left" width="66"><a id="sortby_category" class="float_left cursor "><span class="float_left list_heading_kategori">Kategori<img src="/images/bg.gif" alt="down" width="20"/></span></a></th>
                     <th width="11">&nbsp;</th>
                     <th align="left" width="80"><a id="sortby_type" class="float_left cursor "><span class="float_left list_heading_typ">Typ<img src="/images/bg.gif" alt="down" width="20"/></span></a></th>
                     <th width="11">&nbsp;</th>
@@ -218,7 +218,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <?php foreach ($pager->getResults() as $article): ?>
                         <?php $flagga = "usa.gif"; ?>
                             <tr id="borst_rec_row" class="classnot">
-                                <td width="71" class="list_date"><?php echo substr($article->created_at, 0, 10); ?></td>
+                                <td width="43" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" ><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td><td width="43" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" ><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td>
+                                <td width="73" class="noclass"><?php echo substr($article->created_at, 0, 10); ?></td>
                                 <td width="16">&nbsp;</td>
                                 <td width="253"><a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><span class="article_list_text"><?php echo $article->analysis_title; ?></span></a></td>
                                 <td width="23">&nbsp;</td>
@@ -233,13 +234,13 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <?php else: ?>
                         <?php foreach ($pager->getResults() as $article): ?>
                             <?php
-                            if ($object_country_arr[$article->object_id] != "")
-                                $flagga = $object_country_arr[$article->object_id] . ".gif";
-                            else
-                                $flagga = "no_flag.gif";
+                            // if ($object_country_arr[$article->object_id] != "")
+                            //     $flagga = $object_country_arr[$article->object_id] . ".gif";
+                            // else
+                            //     $flagga = "no_flag.gif";
                             ?>
-                            <tr id="borst_rec_row" class="classnot">
-                                <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?> list_date"><?php echo substr($article->article_date, 0, 10); ?></td>
+                            <tr id="borst_rec_row" class="classnot">                                
+                                <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><span class="article_list_text"><?php echo substr($article->article_date, 0, 10); ?></span></td>
                                 <td width="16">&nbsp;</td>
                                 <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'list_topic' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
                                 <td width="23">&nbsp;</td>
@@ -274,7 +275,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </div>-->
                     
                     
-                    <div class="paginationwrapperNew">
+                    <div class="paginationwrapper dummy1">
                         <div class="forum_pag" id="article_list_listing_new">
                             <?php if ($pager->haveToPaginate()): ?>
                                 <?php if ($pager->getFirstPage() != $pager->getPage()) { ?>

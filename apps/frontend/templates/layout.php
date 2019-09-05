@@ -99,11 +99,7 @@
                     <div class="floatLeft"><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] ?>" class="logo"><img src="/images/new_home/logo_bt.png" alt="logo"/></a></div>
                     <div class="floatLeft bt_head_date_wrap">
                         <div class="bt_head_week"><?php echo date("W");?></div>
-                        <div class="bt_head_day">
-                            <?php
-                                echo date('l');
-                            ?>
-                        </div>
+                        <div class="bt_head_day"> <?php echo date('l');?></div>
                         <div class="bt_head_date"><?php echo date("d");?></div>
                         <div class="bt_head_month"><?php echo date("M");?></div>
                     </div>
