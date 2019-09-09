@@ -74,8 +74,8 @@
                                                 // echo substr($arr[$i]['image_text'], 0, 130); 
                                                 ?></span>
                                             </a>
-                                            <span class="home_body_l_1_red">
-                                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="bluelink cursor">...</a>
+                                            
+                                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
                                             </span>
                                         </div>
                                     </div>
@@ -113,8 +113,7 @@
                           <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                           <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'], 0, 122); ?></span>
                           </a>
-                          <span class="home_body_l_1_red">
-                          <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor">...</a>
+                          <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="article_dots_l cursor">...</a>
                           </span>
                           </div>
                           </div>
@@ -178,8 +177,8 @@
                                             // echo substr($arr[$i]['image_text'], 0, 122); 
                                             ?></span>
                                         </a>
-                                        <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="bluelink cursor">...</a>
+                                        
+                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
                                         </span>
                                     </div>
                                 </div>
@@ -246,8 +245,8 @@
                             
                             ?></span>
                         </a>
-                        <span class="home_body_l_1_red">
-                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor">...</a>
+                    
+                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="article_dots_l cursor">...</a>
                         </span>
                     </div>
                     <div class="home_heading_l_txt dattimeinfo col-first-date">
@@ -293,7 +292,7 @@
         <?php } ?>
                 <div>
                     <div class="home_heading_c">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink1 cursor">
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="a.bluelink cursor">
         <?php /* ?><img src="/images/<?php echo $image_arr_814[$l] ?>" alt="photo" /><?php */ ?>                            
                             
                             <?php 
@@ -318,8 +317,8 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
                         </a>
-                        <span class="home_body_l_1_blue">
-                            <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="bluelink">...</a>
+                        
+                            <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="article_dots_m cursor">...</a>
                         </span>
                     </div>
                     <div class="home_heading_l_btmtxtmain dattimeinfo col-middle-date">
@@ -462,7 +461,7 @@
                                 <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
                             <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, 122); ?></span>
                         </a>
-                        <span class="home_body_l_1_red"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="bluelink">...</a></span>
+                        <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="article_dots_r cursor">...</a></span>
                     </div>
                 </div>
                 <div class="advertdiv photo">

@@ -305,7 +305,7 @@
                             ?>
                         </div>
                     </div>
-                   <div class="bottom_shop_border2">&nbsp;</div>
+                
                     <div class="bt-shop_border2"><img src="/images/new_home/bt-shop_border.png" width="640"/></div>
                 </div>
 

@@ -1,4 +1,4 @@
-<style>.forum_drop-down-menus ul{padding:0 31px;}.forum_drop-down-menus{top:90px;}</style>
+<style>.forum_drop-down-menus ul{padding:0 31px;}.forum_drop-down-menus{top:40px;}</style>
 <script type="text/javascript" language="javascript">
     $(window).load(function(){
 
@@ -309,7 +309,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                         <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
                                     </div>
                                     <span class="forum_sorting_wrapper">
-                                        <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row"  style="top:17px;">
+                                        <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row"  style="top:40px;">
                                             <ul noclick="1">
                                                 <li noclick="1"><span noclick="1" id="sortby_date" class="cursor">Publ.</span></li>
                                                 <li noclick="1"><span noclick="1" id="sortby_title" class="cursor">Rubrik</span></li>
