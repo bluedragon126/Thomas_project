@@ -1471,7 +1471,7 @@ a.article_dots_r {
     line-height: 1.25em;
     margin: 44px 0px 10px;
     width: 100%;
-    letter-spacing: -0.01em;
+    letter-spacing: 0em;
 }
 
 .whp_heading_2 {
@@ -2147,7 +2147,7 @@ input.rounded {
     letter-spacing: -0.01em;
     word-spacing: -0.02em;
     color: #232222;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .shop_home_subtitle {
@@ -2157,11 +2157,11 @@ input.rounded {
     line-height: 1.2em;
     letter-spacing: -0.02em;
     min-height: 20px;
-    margin-top: 8px;
+    margin-top: -2px;
 }
 
 .shopsmallblock_separator_1 {
-    height: 4px;
+    height: 8px;
 }
 
 .shopsmallblock_separator_2 {
@@ -2169,7 +2169,7 @@ input.rounded {
 }
 
 .shophome_margin_top {
-    margin-top: -1px;
+    margin-top: -3px;
 }
 
 .shophome_margin_left {

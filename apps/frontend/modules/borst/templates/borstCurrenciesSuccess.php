@@ -54,6 +54,8 @@
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'], 0, 122); ?></span>
                                         </a>
+                                        
+                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
 
                                     </div>
                                 </div>
@@ -113,6 +115,8 @@
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php echo substr($arr[$i]['image_text'], 0, 122); ?></span>
                                         </a>
+                                        
+                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
 
                                     </div>
                                 </div>
@@ -160,6 +164,8 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
                         </a>
+                        
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="article_dots_l cursor">...</a>
 
                     </div>
                     <div class="home_heading_l_txt dattimeinfo col-first-date">
@@ -220,6 +226,8 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
                         </a>
+                        
+                        <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="article_dots_m cursor">...</a>
 
                     </div>
                     <div class="home_heading_l_btmtxtmain dattimeinfo col-first-date">
@@ -340,6 +348,8 @@
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, 122); ?></span>
                         </a>
+                        
+                        <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="article_dots_r cursor">...</a>
                        
                     </div>
                 </div>

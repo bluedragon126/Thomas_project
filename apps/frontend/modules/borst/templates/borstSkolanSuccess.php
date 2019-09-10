@@ -46,7 +46,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                    
                   
 
-                <img src="/images/new_home/graf.png" style="margin:-40px 0px 0px -15px" width="400" border="0" alt="graf" />
+                <img src="/images/new_home/graf.png" style="margin:8px 0px 0px 0px" width="400" border="0" alt="graf" />
                 
               <div class="float_left widthall">
                     
