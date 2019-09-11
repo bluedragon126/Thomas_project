@@ -1454,6 +1454,18 @@ a.article_dots_r {
     width: 100%;
 }
 
+.whp_title_b {
+    font-family: "CheltenhamITCW01-Bold";
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    font-size: 2.2em;
+    color: #413e3d;
+    line-height: 1.25em;
+    word-spacing: -0.06em;
+    width: 100%;
+}
+
 .whp_preamble {
     font-family: 'Franklin Gothic Book Regular';
     float: left;
@@ -1471,7 +1483,6 @@ a.article_dots_r {
     line-height: 1.25em;
     margin: 44px 0px 10px;
     width: 100%;
-    letter-spacing: 0em;
 }
 
 .whp_heading_2 {
@@ -1490,7 +1501,6 @@ a.article_dots_r {
     font-size: 1.5em;
     line-height: 1em;
     margin: 46px 0px 15px;
-    letter-spacing: -0.02em;
     width: 100%;
 }
 
@@ -1936,7 +1946,7 @@ input.rounded {
 .art_detail_fav {
     float: left;
     width: 11.2%;
-    margin-right: 10px;
+    margin-right: 11px;
 }
 
 .art_detail_print {
@@ -5758,7 +5768,7 @@ ul.cartStep2 li {
 
 .registrationValidField {
     background: url('../images/right_green.png') no-repeat;
-    padding: 14px 1px 9px 19px;
+    padding: 1px 1px 9px 9px;
     background-position: center center;
 }
 
@@ -8838,7 +8848,7 @@ input.send_forgetpass {
     font-size: 1.2em;
     line-height: 1.4em;
     text-transform: uppercase;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     margin: 50px 0px 3px;
     width: 100%;
 }

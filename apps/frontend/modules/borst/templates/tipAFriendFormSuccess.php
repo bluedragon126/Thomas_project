@@ -67,7 +67,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <?php endif; ?>
                 </div>
 
-                <h1 class="whp_title"><?php echo 'Tipsa en vän om: '?>
+                <h1 class="whp_title_b"><?php echo 'Tipsa en vän om: '?>
                 <?php
                     if(!empty($rub))
                     {
@@ -78,16 +78,13 @@ include_component('isicsBreadcrumbs', 'show', array(
                 ?>
                 </h1>
                 <?php include_partial('global/front_form_header', array('greenmsg' => $greenmsg, 'host_str' => $host_str, 'errormsg' => $errormsg)) ?>
-                <div class="float_left width_100_per margin_bottom_10">
-                    Fyll i formul&auml;ret nedan, s&aring; g&aring;r ett mejl iv&auml;g till din v&auml;n, 
-
-                    med  h&auml;lsningen <br />
-                    att du
-
-                    vill rekommendera denna artikel p&aring; B&ouml;rstj&auml;naren. Du kan &auml;ven <br />
-                    skriva en 
-
-                    personlig h&auml;lsning i meddelanderutan.
+                <div class="float_left whp_preamble width_100_per margin_bottom_10">
+                    Fyll i formul&auml;ret nedan, s&aring; g&aring;r ett mejl iv&auml;g till din v&auml;n, <br/>
+                    
+                    med h&auml;lsningen att du vill rekommendera denna artikel p&aring; B&ouml;rstj&auml;naren. Du kan &auml;ven skriva en personlig h&auml;lsning 
+                    <br/>
+                    
+                    i meddelanderutan.
                 </div>
                 <div class="blank_20h widthall">&nbsp;</div>
                 <div class="float_left width_100_per margin_bottom_10">
@@ -127,7 +124,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                        
                             <td valign="top">
                             
-                            <div class="blank_20h widthall">&nbsp;</div>
+                            <div class="blank_10h widthall">&nbsp;</div>
                             
                             
                            <em> * m&aring;ste fyllas i! </em>

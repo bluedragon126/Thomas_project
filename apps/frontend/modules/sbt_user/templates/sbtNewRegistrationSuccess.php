@@ -244,14 +244,13 @@ width:34%;
             <div class="btshopleftdivinner">
                 <div class="heading_red whp_title"><?php echo __('Registrera dig nedan') ?></div>
                 <div class="whp_preamble">Att registrera sig på Börstjänaren är gratis och du förbinder dig inte till
-                    någonting.<span class="main_link_color"> <a class="main_link_color cursor" id="reg_read_more">Läs mer</a>&nbsp;<img src="/images/addplusicon.png" alt="addplus"  class="icontop3" id="reg_help_plus" width="18"/></span></div>
+                    någonting.<span class="main_link_color"> <a class="main_link_color cursor" id="reg_read_more">Läs mer</a>&nbsp;<img src="/images/addplusicon.png" alt="addplus"  class="icontop3" id="reg_help_plus" width="16"/></span></div>
                 <div id="registration_help_section">
                 <br>
                     <div>
                         <span class="whp_heading">Som registrerad användare kan du utan kostnad:</span>
                         <ul>
                             <li>Ta del av fler artiklar och analyser</li>
-                            <li>Posta inlägg till medlemschatten BT-Forum</li>
                             <li>Söka bland Börstjänarens artiklar</li>
                             <li>Ta del av Börstjänarens nyhetsbrev och utskick</li>
                             <li>Ta del av Börstjänarens inspelade webinarier</li>
@@ -451,7 +450,7 @@ width:34%;
                                 <label>
                                     <input checked= "checked" class="checkbox" type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ON" <?php echo $checked_brev; ?>>
                                 </label>
-                                <span class="float_left width_514"><?php echo __('Ja tack, jag vill ha Börstjänarens kostnadsfria dagsbrev <strong>"Börstjänaren JUST NU!"</strong>') ?> <?php echo __('<br/>(Rekommenderas för att få ut mesta möjliga av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy.') ?></a></span></td>
+                                <span class="float_left width_514"><?php echo __('Ja tack, jag vill ha Börstjänarens kostnadsfria dagsbrev "BÖRSTJÄNAREN JUST NU!"') ?> <?php echo __('<br/>(Rekommenderas för att få ut mesta möjliga av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy.') ?></a></span></td>
                         </tr>
                         <tr>
                             <td  colspan="2"><div class="blank_nhb widthall">&nbsp;</div>
@@ -459,7 +458,7 @@ width:34%;
                                     <input checked= "checked" class="checkbox" type="checkbox" id="nyhetsbrev" name="nyhetsbrev_pub" value="ON" <?php echo $checked_brev_pub; ?>>
                                 </label>
 
-                                <span class="float_left width_514"><?php echo __('Ja, tack jag vill ha Börstjänarens kostnadsfria veckobrev, <strong>"VM-update"</strong> samt <strong>"Veckans trejd!"</strong>') ?> <?php echo __('(Rekommenderas för att få ut det bästa av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy.') ?></a></span></td>
+                                <span class="float_left width_514"><?php echo __('Ja, tack jag vill ha Börstjänarens kostnadsfria veckobrev, "VM-UPDATE" samt "VECKANS TREJD!"') ?> <?php echo __('(Rekommenderas för att få ut det bästa av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy.') ?></a></span></td>
                         </tr>
                         <tr>
                             <td  colspan="2">&nbsp;</td>

@@ -148,7 +148,7 @@ img{border:0;}
 .submenuwrapper #borst_menu_home .selected{}
 .l_height{line-height:180%}
 .font24{font-size:24px;}
-.icontop3{top:2px;left:2px;position:relative;}
+.icontop3{top:1px;left:2px;position:relative;}
 .outercontainer{float:left;position:relative;width:100%;}
 .bgwrapper{float:left;position:relative;width:980px;background-color:#fff;}
 .maincontainer{margin:0px auto 10px;width:980px;border-right:1px solid #bdc2be;overflow:hidden;}
