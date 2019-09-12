@@ -34,7 +34,7 @@ $(window).load(function(){
                                 </ul>
                         </div>
 		</div>
-		<div class="floatLeftNew width_58">
+		<div class="floatLeftNew wh_bt-sh_1">
 		<?php //include_partial('borst_shop/payment_steps_partial',array('step'=>1,'designType'=>1)) ?>
                     <?php if ($sf_user->getAttribute('loginRequired')==true || $loginRequiredForProduct==true){ ?>
                         <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>
@@ -58,7 +58,7 @@ $(window).load(function(){
 		<div class="shop_detail_title">1. Granska och skicka</div>
         <div class="spacer"></div>
 		<div class="my_order_text"><!--Din beställning:--></div>
-		<div class="spacer2"></div>
+		 <!--<div class="spacer2"></div>-->
 		
 			<div class="scLiatWraper">
 				<?php $i=0; foreach($products_data as $data): //echo "<pre>$logged_user=="; print_r($data['p_id']);
@@ -219,10 +219,10 @@ $(window).load(function(){
 				<span id="pay_email_error" class="redcolor user_email_span error_shop_payment_email"></span>
 			</li>
 		</ul>
-            <div class="blank_8h widthall">&nbsp;</div>
+            <div class="blank_4h widthall">&nbsp;</div>
 		<a href="#" class="main_link_color margin_left_114">Ändra e-postadress</a>
 		
-		<div class="blank_50h widthall">&nbsp;</div>
+		<div class="blank_30h widthall">&nbsp;</div>
 		<div class="form_heading">Leveransadress</div>
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
@@ -279,7 +279,7 @@ $(window).load(function(){
 		<ul class="rows margin_left_114">
 			<li> <a id="check_payment_detail" class="red_button cursor set_coupon"><span>KÖP</span></a> <span id="indicator" class="check_payment_detail_indicator"><img src="/images/indicator.gif" /></span></li>
 		</ul>
-           <div class="floatLeftNew width_58">
+           <div class="floatLeftNew wh_bt-sh_2">
 		<?php //include_partial('borst_shop/payment_steps_partial',array('step'=>1,'designType'=>1)) ?>
                     <?php if ($sf_user->getAttribute('loginRequired')==true || $loginRequiredForProduct==true){ ?>
                         <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>

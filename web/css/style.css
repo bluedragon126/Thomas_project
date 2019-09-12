@@ -616,13 +616,13 @@ root {
 }
 
 .home_cat {
-    font-family: 'Franklin_Gothic_Bold';
-    color: #232222;
+    font-family: 'Franklin Gothic Book Regular';
+    color: #8d9ba8;
     font-size: 0.7em;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
+	letter-spacing: 0.1em;
     float: none;
-    padding: 0px;
-    padding-right: 5px;
+    padding-right: 1px;
 }
 
 .home_heading_l_2_txt_2 {
@@ -663,7 +663,7 @@ root {
 .home_body_l_1x {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.3em;
     word-wrap: break-word;
 }
@@ -671,16 +671,16 @@ root {
 .home_body_l_2 {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 1.3em;
+    line-height: 1.3em;
     word-wrap: break-word;
 }
 
 .home_body_l_2x {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 1.3em;
+    line-height: 1.3em;
     word-wrap: break-word;
 }
 
@@ -999,7 +999,7 @@ home_heading_c {
 .home_body_r_1 {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.3em;
     word-wrap: break-word;
 }
@@ -1007,7 +1007,7 @@ home_heading_c {
 .home_body_r_2 {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.3em;
     word-wrap: break-word;
 }
@@ -1015,7 +1015,7 @@ home_heading_c {
 .home_body_r_3 {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.3em;
     word-wrap: break-word;
 }
@@ -1023,7 +1023,7 @@ home_heading_c {
 .home_body_r_4 {
     font-family: "Georgia";
     color: #232222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.3em;
     word-wrap: break-word;
 }
@@ -2220,7 +2220,7 @@ input.rounded {
     font-family: 'FranklinGothicCondensed';
     color: #febc11;
     font-size: 2.3em;
-    line-height: 40px;
+    line-height: 20px;
     margin-top: 48px;
 }
 
@@ -2437,7 +2437,7 @@ input.rounded {
 }
 
 .shop_r_cart_img_top {
-    width: 31px;
+    width: 100px;
     float: right;
     margin: -18px -4px 10px 0px;
 }
@@ -2657,7 +2657,7 @@ input.rounded {
 .scLiatWraper {
     width: 565px;
     float: left;
-    margin-bottom: 29px;
+    margin-bottom: 18px;
     font-family: 'Franklin Gothic Book Regular';
 }
 
@@ -3046,17 +3046,17 @@ blank_4h {
 .cartStep2 {
     float: left;
     padding: 0px;
-    margin: 0px;
+    margin-top: 7px;
 }
 
 ul.cartStep2 li {
     /*display: block;*/
     float: left;
     list-style: outside none none;
-    margin: 8px 0 0;
+    margin: 10px 0 0;
     padding: 0;
     position: relative;
-    width: 340px;
+    width: 380px;
     height: 45px;
     background-color: #f2f1ef;
     border-bottom-right-radius: 65px;
@@ -3068,7 +3068,7 @@ ul.cartStep2 li {
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
     letter-spacing: 0.02em;
-    line-height: 1.21em;
+    line-height: 1.3em;
 }
 
 .cartStep2 .span1 {
@@ -3078,7 +3078,7 @@ ul.cartStep2 li {
 
 .cartStep2 .span2 {
     float: left;
-    margin-left: 3px;
+    margin-left: 1px;
     margin-right: 5px;
 }
 
@@ -4135,7 +4135,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
-    color: #232222;
+    color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -4144,7 +4144,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
-    color: #232222;
+    color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -4157,6 +4157,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
+	color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -4165,6 +4166,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
+	color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -6443,7 +6445,7 @@ input.send_forgetpass {
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
     letter-spacing: -0.01em;
-    margin: 32px 0px 0px 25px;
+    margin: 22px 0px 0px 25px;
 }
 
 .shop_1_step_right_panel {
@@ -8607,6 +8609,14 @@ input.send_forgetpass {
     width: 58.8%;
 }
 
+.wh_bt-sh_1 {
+    width: 99.2%;
+}
+
+.wh_bt-sh_2 {
+    width: 112.2%;
+}
+
 .width_180 {
     width: 180px;
 }
@@ -8705,9 +8715,10 @@ input.send_forgetpass {
 .cardDetails .jqTransformSelectWrapper {
     background: none !important;
     background-color: #e9e8e6 !important;
-    border: 1px solid #e9e8e6 !important;
+    border: 0px solid #e9e8e6 !important;
     border-radius: 5px !important;
     font-size: 1em !important;
+	margin-top: 1px;
 }
 
 .cardDetails .jqTransformSelectWrapper div span {
@@ -8811,10 +8822,10 @@ input.send_forgetpass {
 
 .reg_line {
     border-bottom: 1px solid #d3d3d3;
-    width: 97%;
+    width: 80%;
     height: 1px;
     float: left;
-    margin-bottom: 22px;
+    margin-bottom: 0px;
 }
 
 .mrg_top_1 {
@@ -8844,12 +8855,12 @@ input.send_forgetpass {
 .form_heading {
     color: #232222;
     float: left;
-    font-family: 'Franklin_Gothic_Bold';
+    font-family: 'Franklin Gothic Medium';
     font-size: 1.2em;
     line-height: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 50px 0px 3px;
+    margin: 10px 0px 3px;
     width: 100%;
 }
 
@@ -10937,7 +10948,7 @@ whp_heading
     color: #fff;
     text-align: left;
     border-radius: 6px;
-    padding: 15px 20px;
+    padding: 5px 20px 15px 28px;
     position: absolute;
     z-index: 1;
     top: 0px;
@@ -11272,24 +11283,28 @@ whp_heading
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
+	margin-left: -10px;
 }
 
 #second {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
+	margin-left: -10px;
 }
 
 #third {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
+	margin-left: -10px;
 }
 
 #fourth {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
+	margin-left: -10px;
 }
 
 .top_menu_right {
