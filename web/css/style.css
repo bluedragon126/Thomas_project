@@ -1481,7 +1481,7 @@ a.article_dots_r {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.5em;
     line-height: 1.25em;
-    margin: 44px 0px 10px;
+    margin: 44px 0px 8px;
     width: 100%;
 }
 
@@ -2233,11 +2233,11 @@ input.rounded {
 }
 
 .shop_detail_subtitle2 {
-    font-family: 'Franklin Gothic Book Italic';
+    font-family: 'Franklin Gothic Book Regular';
     color: #413e3d;
-    font-size: 1.5em;
-    line-height: 1.28em;
-    margin-bottom: 1px;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }
 
 .shop_detail_subtitle2_col {
@@ -2383,8 +2383,8 @@ input.rounded {
 .shop_detail_choose {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
-    font-size: 1.3em;
-    letter-spacing: -0.02em;
+    font-size: 1.4em;
+    letter-spacing: -0.01em;
     margin: 7px 0px 10px;
 }
 
@@ -2433,7 +2433,7 @@ input.rounded {
     font-size: 1.21em;
     letter-spacing: -0.02em;
     margin-top: 0px;
-    padding-top: 7px;
+    padding-top: 20px;
 }
 
 .shop_r_cart_img_top {
@@ -2445,8 +2445,8 @@ input.rounded {
 .shop_r_cart_count {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
-    font-size: 0.9em;
-    margin: -4px 5px -4px 0px;
+    font-size: 1.1em;
+    margin: -15px 5px -4px 0px;
     line-height: 0.8em;
 }
 
@@ -2469,7 +2469,7 @@ input.rounded {
 
 .shop_r_cart_prod_img {
     float: left;
-    width: 24%;
+    width: 28%;
 }
 
 .shop_r_cart_prod {
@@ -2521,7 +2521,7 @@ input.rounded {
     color: #232222;
     font-size: 1.06em;
     letter-spacing: 0.08em;
-    line-height: 1.5em;
+    line-height: 1.6em;
     margin-top: 30px;
     text-transform: uppercase;
 }
@@ -2970,7 +2970,7 @@ blank_4h {
 }
 
 .shop_r_other_subtitle {
-    color: #9bb4bd;
+    color: #93aeb8;
     font-family: "ITC Cheltenham Book";
     font-size: 1.3em;
     line-height: 1.3em;
@@ -3019,7 +3019,7 @@ blank_4h {
 
 .shop_r_other_border {
     float: left;
-    border-bottom: 22px solid #9bb4bd;
+    border-bottom: 4px solid #9bb4bd;
     width: 100%;
     margin: 15px 0px 10px 0px;
 }
