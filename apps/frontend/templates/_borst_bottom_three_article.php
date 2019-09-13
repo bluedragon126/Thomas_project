@@ -131,8 +131,16 @@
                     <div class="">
                         <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink1 cursor">
             <?php /* ?><img src="/images/<?php echo $image_arr_13[$i] ?>" alt="photo" /><?php */ ?>
-                            <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_large.', $obj['image']); ?>" width="465"/>
-                                <!--<img src="/images/new_home/sensex_img.png" />-->
+            <?php 
+                            if($obj['category_id'] == 6){                                
+                                $desc = $obj['text'];   
+                                //var_dump($desc);
+                                $abc = explode("em&gt;",strip_tags($desc));
+                                echo "<div class='wizdom-one'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
+                            }else {?>
+                                <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_large.', $obj['image']); ?>" width="465"/>
+                            <?php }
+                            ?>
                         </a>
                     </div>
                     <div class="home_heading_l_bigimg_main">
@@ -188,7 +196,16 @@
                     <div class="home_heading_c">
                         <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink1 cursor">
         <?php /* ?><img src="/images/<?php echo $image_arr_814[$l] ?>" alt="photo" /><?php */ ?>
-                            <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_small.', $obj['image']); ?>" width="165"  />
+        <?php 
+                            if($obj['category_id'] == 6){
+                                $desc = $obj['text'];                                                                               
+                                $abc = explode("em&gt;",strip_tags($desc));
+                                echo "<div class='wizdom-three'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
+                            }else {?>
+                            <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_small.', $obj['image']); ?>" width="165"  />    
+                            <?php }
+                            ?>
+                            
                         </a>
                     </div>
 

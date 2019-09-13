@@ -258,7 +258,7 @@
                                 <div class="color_plate_img_first_article"><img src="/images/new_home/bottom_bt-shop_logo.png" width="97"/></div>
                                 <div class="bottom_shop_txt_main">
                                     <div class="bottom_shop_cart">Välkommen 
-<br /> till BT-shop <br />– affären för<br /> bättre affärer!</div>
+            <br /> till BT-shop <br />– affären för<br /> bättre affärer!</div>
                                 </div>
                             </div>
                             <?php $adCount = 1; ?>
