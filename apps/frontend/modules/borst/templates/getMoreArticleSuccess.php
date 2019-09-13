@@ -1,5 +1,5 @@
 <div class="bt-shop_border_home2"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
-<hr style = 'border-color:#ff471a;'>
+<hr style = 'border-color: #ff561c;'>
 <div class="bottom_shop_border2 margin_bottom_20">&nbsp;</div>
 <div class="content_main_div_left">
     <?php $limit = 1; ?>

@@ -1,4 +1,4 @@
-<div class="bottom_shop_border2 margin_bottom_20">&nbsp;</div>
+<div class="bottom_shop_border2">&nbsp;</div>
     <div class="footer_inner_div">
         <div class="float_left">
             <div class="color_plate_first">
