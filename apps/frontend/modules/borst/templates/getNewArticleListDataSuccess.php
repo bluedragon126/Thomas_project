@@ -234,11 +234,11 @@
                     <span class="forum_sorting_wrapper">
                         <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row"  style="top:17px;">
                             <ul noclick="1">
-                                <li noclick="1"><span noclick="1" id="sortby_date" class="cursor">Publ.</span></li>
-                                <li noclick="1"><span noclick="1" id="sortby_title" class="cursor">Rubrik</span></li>
-                                <li noclick="1"><span noclick="1" id="sortby_category" class="cursor">Kategori</span></li>
-                                <li noclick="1"><span noclick="1" id="sortby_type" class="cursor">Typ</span></li>
-                                <li noclick="1"><span noclick="1" id="sortby_object" class="cursor">Objekt</span></li>
+                            <li noclick="1"><span noclick="1" id="sortby_date" class="cursor date_active test">Publ.</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_title" class="cursor title_active test">Rubrik</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_category" class="cursor category_active test">Kategori</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_type" class="cursor type_active test">Typ</span></li>
+                                    <li noclick="1"><span noclick="1" id="sortby_object" class="cursor object_active test">Objekt</span></li>
                             </ul>
                         </div>
                         <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
@@ -270,30 +270,35 @@ $(document).ready(function(){
 if($column_id == "date"){
     echo '<script type="text/javascript">',
      '$(".date_active").addClass("active_item");',
+    //  '$("sortby_date").addClass("active_item");',
      '</script>'
 ;
 }
 elseif ($column_id == "title"){
     echo '<script type="text/javascript">',
      '$(".title_active").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
      '</script>'
 ;
 }
 elseif ($column_id == "category"){
     echo '<script type="text/javascript">',
      '$(".category_active").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
      '</script>'
 ;
 }
 elseif ($column_id == "type"){
     echo '<script type="text/javascript">',
      '$(".type_active").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
      '</script>'
 ;
 }
 elseif ($column_id == "object"){
     echo '<script type="text/javascript">',
      '$(".object_active").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
      '</script>'
 ;
 }
