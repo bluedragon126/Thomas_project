@@ -90,8 +90,15 @@
                         <div class="home_heading_l_2_main_div">
                             <div class="home_heading_l_2_img_div">
                                 <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">
-                                    <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>" width="200"  />
-                                    <!--<img src="/images/new_home/home_heading_l_2_img.png" />-->
+                                <?php 
+                                    if($arr[$i]['category_id'] == 6){
+                                        $desc = $arr[$i]['text'];                                                                               
+                                        $abc = explode("em&gt;",strip_tags($desc));
+                                        echo "<span class='wizdom-two'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</span>';
+                                    }else {?>
+                                        <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>"  width="200" />
+                                    <?php }
+                                    ?>
                                 </a>
                             </div>
                             <div class="home_heading_l_2_txt_div">
