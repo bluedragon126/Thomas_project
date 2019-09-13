@@ -63,7 +63,7 @@
 
                                     </div>
                                 </div>
-                                <div class="home_heading_l_txt dattimeinfo col-first-date">
+                                <div class="home_heading_l_txt dattimeinfo home_body_l_double">
                                     <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
                                         <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
@@ -288,7 +288,25 @@
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 
                     <a class="twitter-timeline"  href="https://twitter.com/Borstjanaren" data-widget-id="700569445123493888">Tweets by @Borstjanaren</a>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                       $( document ).ready(function() {
+                            let setItv = setInterval(() => {                   
+                                // console.log("aaaaaa");           
+                                if($('.twitter-timeline').contents().find("head")){     
+                                    // console.log("aaaaaa");                               
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet-text{white-space: normal!important;}  </style>"));
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Body{border-top: 1px solid #d3d3d3!important;border-bottom: 1px solid #d3d3d3!important;}  </style>"));
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-TweetList-tweet{border-top: 1px solid #d3d3d3!important;}  </style>"));
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet-brand .Icon{background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2072%2072%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h72v72H0z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23bab8b8%22%20d%3D%22M68.812%2015.14c-2.348%201.04-4.87%201.744-7.52%202.06%202.704-1.62%204.78-4.186%205.757-7.243-2.53%201.5-5.33%202.592-8.314%203.176C56.35%2010.59%2052.948%209%2049.182%209c-7.23%200-13.092%205.86-13.092%2013.093%200%201.026.118%202.02.338%202.98C25.543%2024.527%2015.9%2019.318%209.44%2011.396c-1.125%201.936-1.77%204.184-1.77%206.58%200%204.543%202.312%208.552%205.824%2010.9-2.146-.07-4.165-.658-5.93-1.64-.002.056-.002.11-.002.163%200%206.345%204.513%2011.638%2010.504%2012.84-1.1.298-2.256.457-3.45.457-.845%200-1.666-.078-2.464-.23%201.667%205.2%206.5%208.985%2012.23%209.09-4.482%203.51-10.13%205.605-16.26%205.605-1.055%200-2.096-.06-3.122-.184%205.794%203.717%2012.676%205.882%2020.067%205.882%2024.083%200%2037.25-19.95%2037.25-37.25%200-.565-.013-1.133-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E);}  </style>"));
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet .timeline-Tweet-action .Icon--heart{background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23bab8b8%22%20d%3D%22M12%2021.638h-.014C9.403%2021.59%201.95%2014.856%201.95%208.478c0-3.064%202.525-5.754%205.403-5.754%202.29%200%203.83%201.58%204.646%202.73.813-1.148%202.353-2.73%204.644-2.73%202.88%200%205.404%202.69%205.404%205.755%200%206.375-7.454%2013.11-10.037%2013.156H12zM7.354%204.225c-2.08%200-3.903%201.988-3.903%204.255%200%205.74%207.035%2011.596%208.55%2011.658%201.52-.062%208.55-5.917%208.55-11.658%200-2.267-1.822-4.255-3.902-4.255-2.528%200-3.94%202.936-3.952%202.965-.23.562-1.156.562-1.387%200-.015-.03-1.426-2.965-3.955-2.965z%22%2F%3E%3C%2Fsvg%3E);}  </style>"));
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet .timeline-Tweet-action .Icon--share{background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23bab8b8%22%20d%3D%22M21.78%2011.47l-5.14-5.14c-.292-.292-.767-.292-1.06%200s-.293.77%200%201.062l3.858%203.858H8.918c-.415%200-.75.336-.75.75s.335.75.75.75h10.52l-3.857%203.858c-.29.293-.29.768%200%201.06.148.147.34.22.53.22s.386-.072.53-.22l5.14-5.138c.294-.293.294-.767%200-1.06z%22%2F%3E%3Cpath%20class%3D%22icon%22%20fill%3D%22%23bab8b8%22%20d%3D%22M9.944%2020.5H4.292c-.437%200-.792-.355-.792-.792V4.292c0-.437.355-.792.792-.792h5.652c.414%200%20.75-.336.75-.75S10.358%202%209.944%202H4.292C3.028%202%202%203.028%202%204.292v15.416C2%2020.972%203.028%2022%204.292%2022h5.652c.414%200%20.75-.336.75-.75s-.336-.75-.75-.75z%22%2F%3E%3C%2Fsvg%3E);}  </style>"));
+                                    // clearInterval(setItv);
+                                }                   
+                            }, 500);                     
+                         
+                        });
+                                            
+                    </script>
                 </div>
             <?php endif; ?>
             <?php $mCount++; ?>
@@ -368,6 +386,7 @@
 <div class="bottom_shop_border">&nbsp;</div>
 <div class="footer">
     <div class="footer_inner_div">
+    <div class="bt-shop_border_home"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
         <div class="float_left">
             <div class="color_plate_first">
                 <div class="color_plate_img_first"><img src="/images/new_home/bottom_bt-shop_logo.png" width="102" height="94"  class="margin_left_0" /></div>
@@ -419,7 +438,9 @@
             endforeach;
             ?>
         </div>
+        
         <div class="footer_divider_div">&nbsp;</div>
+        <div class="bt-shop_border_home"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
         <div class="footer_main">
             <?php include_partial('global/six_cube_footer', array('host_str' => $host_str, 'bottom_commodities_links' => $bottom_commodities_links, 'bottom_currencies_links' => $bottom_currencies_links, 'bottom_buysell_links' => $bottom_buysell_links, 'bottom_statistics_links' => $bottom_statistics_links, 'bottom_aktier_links' => $bottom_aktier_links, 'bottom_kronika_links' => $bottom_kronika_links)) ?>
         </div>
