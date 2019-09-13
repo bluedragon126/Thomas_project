@@ -620,7 +620,7 @@ root {
     color: #8d9ba8;
     font-size: 0.7em;
     text-transform: uppercase;
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
     float: none;
     padding-right: 1px;
 }
@@ -1310,9 +1310,8 @@ home_heading_c {
 
 .inner-page-contetn-left {
     float: left;
-    width: 67.5%;
+    width: 660px;
     border-right: 1px solid #d3d3d3;
-    padding-right: 5px;
     margin-bottom: -10px;
 }
 
@@ -1379,21 +1378,21 @@ a.article_dots_l {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.2em;
     color: #232222;
-	letter-spacing: 0.15em;
+    letter-spacing: 0.15em;
 }
 
 a.article_dots_m {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.1em;
     color: #232222;
-	letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
 }
 
 a.article_dots_r {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.15em;
     color: #232222;
-	letter-spacing: 0.12em;
+    letter-spacing: 0.12em;
 }
 
 .article_list_kategori {
@@ -4157,7 +4156,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
-	color: #0c0800;
+    color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -4166,7 +4165,7 @@ ul.cartStep2 li {
     font-size: 14px;
     line-height: 1.2em;
     letter-spacing: 0.01em;
-	color: #0c0800;
+    color: #0c0800;
     word-wrap: break-word;
 }
 
@@ -8718,7 +8717,7 @@ input.send_forgetpass {
     border: 0px solid #e9e8e6 !important;
     border-radius: 5px !important;
     font-size: 1em !important;
-	margin-top: 1px;
+    margin-top: 1px;
 }
 
 .cardDetails .jqTransformSelectWrapper div span {
@@ -11283,28 +11282,28 @@ whp_heading
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
-	margin-left: -10px;
+    margin-left: -10px;
 }
 
 #second {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
-	margin-left: -10px;
+    margin-left: -10px;
 }
 
 #third {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
-	margin-left: -10px;
+    margin-left: -10px;
 }
 
 #fourth {
     position: absolute;
     margin-top: 30px;
     padding-left: 0px;
-	margin-left: -10px;
+    margin-left: -10px;
 }
 
 .top_menu_right {
