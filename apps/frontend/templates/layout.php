@@ -99,9 +99,81 @@
                     <div class="floatLeft"><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] ?>" class="logo"><img src="/images/new_home/logo_bt.png" alt="logo"/></a></div>
                     <div class="floatLeft bt_head_date_wrap">
                         <div class="bt_head_week"><?php echo date("W");?></div>
-                        <div class="bt_head_day"> <?php echo date('l');?></div>
+                        <div class="bt_head_day"> 
+                            <?php 
+                            switch (date('l')) {
+                                case "Monday":
+                                    echo "Mandag";
+                                    break;
+                                case "Tuesday":
+                                    echo "tirsdag";
+                                    break;
+                                case "Wednesday":
+                                    echo "onsdag";
+                                    break;
+                                case "Thursday":
+                                    echo "torsdag";
+                                    break;
+                                case "Friday":
+                                    echo "Fredag";
+                                    break;
+                                case "Saturday":
+                                    echo "lørdag";
+                                    break;
+                                case "Sunday":
+                                    echo "Søndag";
+                                    break;
+                                default:
+                                    echo date('l');
+                            }
+                            // 
+                            ?>
+                        </div>
                         <div class="bt_head_date"><?php echo date("d");?></div>
-                        <div class="bt_head_month"><?php echo date("M");?></div>
+                        <div class="bt_head_month">
+                            <?php 
+                            switch (date('M')) {
+                                case "Jan":
+                                    echo "jan";
+                                    break;
+                                case "Feb":
+                                    echo "februar";
+                                    break;
+                                case "Mar":
+                                    echo "mar";
+                                    break;
+                                case "Apr":
+                                    echo "april";
+                                    break;
+                                case "May":
+                                    echo "kan";
+                                    break;
+                                case "Jun":
+                                    echo "juni";
+                                    break;
+                                case "Jul":
+                                    echo "august";
+                                    break;
+                                case "Aug":
+                                    echo "Mandag";
+                                    break;
+                                case "Sep":
+                                    echo "september";
+                                    break;
+                                case "Oct":
+                                    echo "oktober";
+                                    break;
+                                case "Nov":
+                                    echo "november";
+                                    break;
+                                case "Dec":
+                                    echo "december";
+                                    break;
+                                default:
+                                    echo date('M');
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
                 <div class="bt_head-divide">

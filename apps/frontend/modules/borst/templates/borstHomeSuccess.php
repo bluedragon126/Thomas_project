@@ -315,7 +315,14 @@
                     <div class="articleinfo home_body_l_1">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                        
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
-                            <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'], 0, 122); ?></span>
+                            <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php 
+                            for ($x = 122; $x > 0; $x--) {
+                                if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
+                                    echo substr($obj['image_text'], 0, $x+1);
+                                    break;
+                                }
+                                // echo "The number is: $x <br>";
+                            } ?></span>
                         </a>
                         
                             <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="article_dots_m cursor">...</a>
