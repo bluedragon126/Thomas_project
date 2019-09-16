@@ -3566,8 +3566,8 @@ ul.cartStep2 li {
 .forum_popup_pagination_wrapper {
     float: left;
     font-family: "Franklin Gothic Book Regular";
-    height: 70px;
-    width: 136px;
+    height: 80px;
+    width: 146px;
     position: absolute;
     /*top: 19px;*/
     z-index: 999;
@@ -3595,7 +3595,7 @@ ul.cartStep2 li {
     letter-spacing: 0.04em;
     width: 107px;
     height: 25px;
-    margin: 8px 0 10px;
+    margin: 10px 0 10px;
 }
 
 .forum_drop-down-menu_go {
@@ -3610,7 +3610,7 @@ ul.cartStep2 li {
     height: 23px;
     background-color: #94abb4;
     cursor: pointer;
-    margin: -6px 16px 0px;
+    margin: -4px 16px 0px 20px;
 }
 
 
@@ -8893,7 +8893,7 @@ input.send_forgetpass {
 }
 
 .bt-shop_border {
-    margin: 8px 0px 30px 0px;
+    margin: 8px 0px 22px 0px;
 }
 
 .bt-shop_border2 {

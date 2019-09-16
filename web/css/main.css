@@ -1554,8 +1554,8 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .outercontainer .forumlistingleftdiv{border-right:none !important;}
 .mainheader .leftmenu li a{padding:4px 11px 0 11px;}
 .mainheader .bluecolor_submenu{background-color:#002e7a;}
-.cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;margin:0px 2px 0px 8px;color:#f15822;text-align:right;}
-.navBar_third_cart{margin-left:3px;float:right;}
+.cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;margin:0px 2px 0px 15px;color:#f15822;text-align:right;}
+.navBar_third_cart{margin-left:4px;float:right;}
 .margin_top_none{margin-top:0px!important;}
 .margin_top_ann{margin-top:-4px!important;}
 .font_size_12{font-size:12px !important;}
