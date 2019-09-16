@@ -2428,22 +2428,22 @@ input.rounded {
 .shop_r_cart_title {
     font-family: 'Franklin Gothic Medium';
     color: #232222;
-    font-size: 1.21em;
+    font-size: 1.em;
     letter-spacing: -0.02em;
     margin-top: 0px;
-    padding-top: 20px;
+    padding-top: 14px;
 }
 
 .shop_r_cart_img_top {
     width: 100px;
     float: right;
-    margin: -18px -4px 10px 0px;
+    margin: -18px -12px 10px 0px;
 }
 
 .shop_r_cart_count {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: -15px 5px -4px 0px;
     line-height: 0.8em;
 }
@@ -2453,7 +2453,7 @@ input.rounded {
     border-bottom-right-radius: 15px;
     height: 32px;
     width: 294px;
-    margin: 8px 0 -6px;
+    margin: 22px 0 -6px;
 }
 
 .shop_r_cart_cat {
@@ -2467,14 +2467,13 @@ input.rounded {
 
 .shop_r_cart_prod_img {
     float: left;
-    width: 28%;
+    width: 24%;
 }
 
 .shop_r_cart_prod {
     font-family: 'Franklin Gothic Medium';
     color: #232222;
     font-size: 1em;
-    letter-spacing: -0.02em;
     text-align: left;
     padding: 22px 6px 0px 0px;
 }
@@ -2539,26 +2538,26 @@ input.rounded {
 }
 
 .shop_r_side_prod {
-    color: #9bb2bd;
+    color: #a5bbc6;
     line-height: 1.28em;
 }
 
 .shop_r_side_prod a {
     font-family: 'Franklin Gothic Book Regular';
-    color: #9bb2bd;
+    color: #a5bbc6;
     font-size: 0.93em;
-    letter-spacing: 0.01em;
-    line-height: 1.28em;
+    letter-spacing: 0.02em;
+    line-height: 1.5em;
 }
 
 .shop_r_side_active {
-    color: #f15822 !important;
+    color: #232222 !important;
     font-family: 'Franklin Gothic Book Regular' !important;
     letter-spacing: 0.01em;
 }
 
 .shop_r_cart_quant input {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Book Regular';
     text-align: center;
     color: #232222;
     font-size: 1em;
@@ -2687,8 +2686,7 @@ input.rounded {
     width: 214px;
     margin-right: 11px;
     word-spacing: -0.02em;
-    letter-spacing: -0.01em;
-    font-size: 1em;
+ 	font-size: 1em;
 }
 
 .scLiatWraper1 .qtyWraper {
@@ -3065,7 +3063,6 @@ ul.cartStep2 li {
     color: #232222;
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
-    letter-spacing: 0.02em;
     line-height: 1.3em;
 }
 
@@ -8854,11 +8851,11 @@ input.send_forgetpass {
     color: #232222;
     float: left;
     font-family: 'Franklin Gothic Medium';
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 10px 0px 3px;
+    margin: 15px 0px 3px;
     width: 100%;
 }
 
