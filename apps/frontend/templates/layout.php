@@ -98,30 +98,30 @@
                 <div class="bt_head-divide width_25">
                     <div class="floatLeft"><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] ?>" class="logo"><img src="/images/new_home/logo_bt.png" alt="logo"/></a></div>
                     <div class="floatLeft bt_head_date_wrap">
-                        <div class="bt_head_week"><?php echo date("W");?></div>
+                        <div class="bt_head_week">VECKA <?php echo date("W");?></div>
                         <div class="bt_head_day"> 
                             <?php 
                             switch (date('l')) {
                                 case "Monday":
-                                    echo "Mandag";
+                                    echo "Måndag";
                                     break;
                                 case "Tuesday":
-                                    echo "tirsdag";
+                                    echo "Tisdag";
                                     break;
                                 case "Wednesday":
-                                    echo "onsdag";
+                                    echo "Onsdag";
                                     break;
                                 case "Thursday":
-                                    echo "torsdag";
+                                    echo "Torsdag";
                                     break;
                                 case "Friday":
                                     echo "Fredag";
                                     break;
                                 case "Saturday":
-                                    echo "lørdag";
+                                    echo "Lördag";
                                     break;
                                 case "Sunday":
-                                    echo "Søndag";
+                                    echo "Söndag";
                                     break;
                                 default:
                                     echo date('l');
@@ -134,40 +134,40 @@
                             <?php 
                             switch (date('M')) {
                                 case "Jan":
-                                    echo "jan";
+                                    echo "Januari";
                                     break;
                                 case "Feb":
-                                    echo "februar";
+                                    echo "Februari";
                                     break;
                                 case "Mar":
-                                    echo "mar";
+                                    echo "Mars";
                                     break;
                                 case "Apr":
-                                    echo "april";
+                                    echo "April";
                                     break;
                                 case "May":
-                                    echo "kan";
+                                    echo "Maj";
                                     break;
                                 case "Jun":
-                                    echo "juni";
+                                    echo "Juni";
                                     break;
                                 case "Jul":
-                                    echo "august";
+                                    echo "Juli";
                                     break;
                                 case "Aug":
-                                    echo "Mandag";
+                                    echo "Augusti";
                                     break;
                                 case "Sep":
-                                    echo "september";
+                                    echo "September";
                                     break;
                                 case "Oct":
-                                    echo "oktober";
+                                    echo "Oktober";
                                     break;
                                 case "Nov":
-                                    echo "november";
+                                    echo "November";
                                     break;
                                 case "Dec":
-                                    echo "december";
+                                    echo "December";
                                     break;
                                 default:
                                     echo date('M');
