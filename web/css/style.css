@@ -974,7 +974,7 @@ home_heading_c {
 .home_heading_r_3 {
     font-family: "CheltenhamITCW01-Bold";
     font-size: 3.1em;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
     color: #232222;
     line-height: 1em;
     margin: 2px 0px 6px 0px;
@@ -987,8 +987,8 @@ home_heading_c {
 .home_heading_r_4 {
     font-family: "CheltenhamITCW01-Bold";
     font-size: 2.2em;
-    letter-spacing: -0.02em;
-    word-spacing: -0.06em;
+    letter-spacing: -0.01em;
+    word-spacing: -0.04em;
     color: #232222;
     line-height: 1em;
     margin: 3px 0px 6px 0px;
@@ -1467,9 +1467,9 @@ a.article_dots_r {
 .whp_preamble {
     font-family: 'Franklin Gothic Book Regular';
     float: left;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #232222;
-    line-height: 1.4em;
+    line-height: 1.3em;
     margin-bottom: 10px;
     letter-spacing: -0.01em;
 }
@@ -1899,13 +1899,13 @@ input.rounded {
     color: #413e3d;
     float: left;
     font-family: "CheltenhamITCW01-Bold";
-    font-size: 2.2em;
+    font-size: 2.4em;
     letter-spacing: 0.01em;
-    line-height: 1.25em;
+    line-height: 1.2em;
     margin-bottom: 18px;
     margin-top: 39px;
     width: 100%;
-    word-spacing: -0.06em;
+    word-spacing: -0.05em;
 }
 
 .art_title2 {
@@ -11387,4 +11387,36 @@ p {
 .red_line_margin {
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.art_subtitle {
+    font-family: "ITC Cheltenham Book";
+    float: left;
+   	font-size: 1.6em;
+    color: #f15822;
+    line-height: 4em;
+    letter-spacing: -0.01em;
+	margin: 6px 0xp 85px;
+    width: 100%;
+}
+
+.art_bread {
+    font-family: "Georiga";
+    float: left;
+   	font-size: 1.3em;
+    color: #232222;
+    line-height: 1.25em;
+	letter-spacing: -0.01em;
+    width: 100%;
+}
+
+.art_caption {
+   font-family: "Franklin Gothic Book Regular";
+    float: left;
+   	font-size: 0.85em;
+    color: #232222;
+    line-height: 0.9em;
+	letter-spacing: 0.06em;
+	text-transform:uppercase;
+    width: 100%;
 }
