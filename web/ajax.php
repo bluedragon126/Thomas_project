@@ -188,7 +188,7 @@ function getPayment($paymentId, $config){
 
 // Globals
 $config = array(
-	"callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentType",
+	"callbackUrl"     => "https://www.thetradingaspirants.com/shopPaymentType",
 	"payeeAlias"      => "1233144318", //Swish number of the merchant
 	"currency"        => "SEK", //currency code	
         "CAINFO"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/swishcacert.pem', //Path to root CA

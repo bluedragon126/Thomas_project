@@ -3934,8 +3934,16 @@ $(document).ready(function() {
     $('#payment_conformation').unbind('click');
     $('#payment_conformation').live("click", function() {
 
+        console.log("test");
+
+        // echo('test_click');
+        // exit;
+
         var pay_option = $("input[@name='pay_option']:checked").val();
         var pay_option_bank = $(".bank_selection_outer input[@name='pay_option_bank']:checked").val();
+
+        // echo(pay_option);
+        // exit;
 
         //alert(pay_option+' '+pay_option_bank);
 
@@ -3943,7 +3951,7 @@ $(document).ready(function() {
 
         if (pay_option == 1) para_str = '/typ/' + pay_option;
         if (pay_option == 2) para_str = '/typ/' + pay_option + '/bk/' + pay_option_bank;
-
+        console.log('http://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str);
         window.location = 'http://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str;
     });
 

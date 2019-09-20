@@ -14,9 +14,9 @@
 	<tr><td><?php echo 'Vill du fortsätta ta del av vår träffsäkra portföljservice (70% sedan 2007) med entré- och exitnivåer samt uppdatering via e-post - så är du välkommen att abonnera i vår webbshop.' ?> </td></tr>
     <tr><td><?php echo '(Normalpriset för ett portföljabonnemang är 349 kr/månad.)' ?></td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
-	<tr><td><?php echo 'Klicka ' ?> <a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/21;"><?php echo 'här' ?></a><?php echo ' för att slippa onödigt avbrott i ditt abonnemang.' ?></td></tr>
+	<tr><td><?php echo 'Klicka ' ?> <a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/21;"><?php echo 'här' ?></a><?php echo ' för att slippa onödigt avbrott i ditt abonnemang.' ?></td></tr>
 <tr><td>&nbsp;&nbsp;</td></tr>
-	<tr><td><?php echo 'Om länken inte fungerar kan du även klistra in följande i adressfönstret i din webbläsare: ' ?><a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/21"><?php echo 'http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/21' ?></a></td></tr>
+	<tr><td><?php echo 'Om länken inte fungerar kan du även klistra in följande i adressfönstret i din webbläsare: ' ?><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/21"><?php echo 'http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/21' ?></a></td></tr>
     
     
 	<tr><td>&nbsp;&nbsp;</td></tr>

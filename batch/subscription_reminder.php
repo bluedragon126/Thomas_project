@@ -59,7 +59,7 @@ sfContext::createInstance($configuration);
                             $pur = $purchase->getPurchaseOrder($data_sub->purchase_id);
                             $product_arr = $product->getProductName($data_sub->product_id, $data_sub->btchart_type_id);
                             $subName = $product_arr[0]['title'];
-                            $url = 'https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/' . $data_sub->product_id;
+                            $url = 'https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/' . $data_sub->product_id;
                             $subscription_reminder->sendSubEmail($pur->firstname, $pur->lastname, $subName, $data_sub->end_date, $pur->email, $url);
                         }
                         if ($data_sub->Purchase->getCheckoutStatus() == 1 && $data_sub->Purchase->getOrderProcessed() == 1) {
@@ -71,7 +71,7 @@ sfContext::createInstance($configuration);
                             $pur = $purchase->getPurchaseOrder($data_sub->purchase_id);
                             $product_arr = $product->getProductName($data_sub->product_id, $data_sub->btchart_type_id);
                             $subName = $product_arr[0]['title'];
-                            $url = 'https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/' . $data_sub->product_id;
+                            $url = 'https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/' . $data_sub->product_id;
                             $subscription_reminder->sendSubEmail($pur->firstname, $pur->lastname, $subName, $data_sub->end_date, $pur->email, $url);
                         }
                     }

@@ -53,11 +53,11 @@
                                                 </tr>
                                             </table></td>
                                         <td style="border-left: 1px solid #D3D6E1;padding: 3px 0 3px 10px;" width="148">
-                                         <a href="https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/20"> <img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" alt="" name="Ad" width="148" height="101" id="Ad" /></a></td>
+                                         <a href="https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/20"> <img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" alt="" name="Ad" width="148" height="101" id="Ad" /></a></td>
                                         <td width="148">
                                                 
                                                
-                                            <a href="https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/20"><img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" style="float:right;" alt="" name="Ad2" width="148" height="101" id="Ad2" /></a></td>
+                                            <a href="https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/20"><img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" style="float:right;" alt="" name="Ad2" width="148" height="101" id="Ad2" /></a></td>
                                     </tr>
                                 </table>
                           </td>

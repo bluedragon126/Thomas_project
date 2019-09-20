@@ -51,25 +51,25 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <th scope="col">Samarbetsparner</th>
                         </tr>
                         <tr>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/124">Fredagstrejding</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/124">Fredagstrejding</a></td>
                             <td>27/2-17/4</td>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/borstShopHome">Se BT-SHOP</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome">Se BT-SHOP</a></td>
                             <td>VIP-partners</td>
                         </tr>
                         <tr>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/108">Intensivkurs i Daytrading</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/108">Intensivkurs i Daytrading</a></td>
                             <td>17/3-14/4</td>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/borstShopHome">Se BT-SHOP</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome">Se BT-SHOP</a></td>
                             <td>CMC Markets</td>
                         </tr>
                         <tr>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/120">Lär dig handla med CFD</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/120">Lär dig handla med CFD</a></td>
                             <td>27/1-24/2</td>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/borstShopHome">Se BT-SHOP</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome">Se BT-SHOP</a></td>
                             <td>CMC Markets</td>
                         </tr>
                         <tr>
-                            <td><a href="http://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/99" class="main_link_color">BT-Wizard</a></td>
+                            <td><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/99" class="main_link_color">BT-Wizard</a></td>
                             <td>Tillgänglig via <br />inspelning</td>
                             <td><a href="http://www.borstjanaren.se/borst/contactUs">Kontakta oss</a></td>
                             <td>&nbsp;</td>

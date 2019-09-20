@@ -50,7 +50,7 @@
             <div class="blank_20h widthall"></div>
            
             <div class="shopblock">
-                <div id="abonnemang_title" class="shop_home_cat_bg"><span class="shop_home_cat">Abonnemang</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                <div id="abonnemang_title" class="shop_home_cat_bg"><span class="shop_home_cat">Abonnemang</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
 
                 <?php
                 $stock_counter = count($abonnemang_data);
@@ -188,7 +188,7 @@
             <div class="to_page_top margin_top_12"><a class="cursor">&nbsp;<img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <?php /* ?>
               <div class="shopblock">
-              <div id="marknadsbrev_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Marknadsbrev</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+              <div id="marknadsbrev_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Marknadsbrev</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
 
               <?php
               $stock_counter = count($marknadsbrev_data);
@@ -267,7 +267,7 @@
              * <?php */ ?>
 
             <div class="shopblock">
-                <div id="utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Utbildningar</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                <div id="utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Utbildningar</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
                 <?php
                 $stock_counter = count($utbildningar_data);
                 $top_mar_12px = "";
@@ -403,7 +403,7 @@
            
             
             <!--<div class="shopblock">
-                <div id="live-utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Live-utbildningar</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a></div>-->
+                <div id="live-utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Live-utbildningar</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a></div>-->
                 <?php
                 $stock_counter = count($liveutbildningar_data);
                 $top_mar_12px = "";
@@ -524,7 +524,7 @@
             <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             
             <div class="shopblock">
-                <div id="metastock_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Metastock</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
+                <div id="metastock_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Metastock</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                     </a>--></div>   
                     <?php
                     $stock_counter = count($metastock_data); //die;
@@ -649,7 +649,7 @@
             </div>
             <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <div class="shopblock marginBottom0" >
-                    <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
+                    <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                             </a>--></div> 
             </div>    
         </div>

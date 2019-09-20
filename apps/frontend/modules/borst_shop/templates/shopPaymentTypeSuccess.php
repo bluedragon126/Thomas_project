@@ -301,10 +301,22 @@
                             <input type="text" id="transid-input" placeholder="" >
                             <div id="msg-callback"></div>
                         </li>
-                    </ul>                    
-                    <!--<div class="blank_11h widthall">&nbsp;</div>-->
+                    </ul>  
+
+                    <!-- new payment -->
+                    <script charset="UTF-8" src="https://ssl.ditonlinebetalingssystem.dk/integration/ewindow/paymentwindow.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        paymentwindow = new PaymentWindow({
+                            'merchantnumber': "8036983",
+                            'amount': "<?php echo($total_wth_shipping) ?>",
+                            'currency': "DKK",
+                            'accepturl':"https://www.thetradingaspirants.com/borst_shop/paymentDone",
+                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/paymentFail"
+                        });
+                    </script>               
+                    <!--<div class="blank_11h widthall">&nbsp;</div>  id="payment_conformation" onclick="javascript: paymentwindow.open()"-->
                     <ul class="rows margin_left_0">
-                        <li class="payment_conformation_li"> <a id="payment_conformation" class="red_button payment_conformation_class"><span>BEKRÄFTA</span></a></li>
+                        <li class="payment_conformation_li"> <a onclick="javascript: paymentwindow.open()" class="red_button payment_conformation_class"><span>BEKRÄFTA</span></a></li>
                         <li> <a id="payment_conformation_swish" class="red_button payment_conformation_class swish_input"><span>BEKRÄFTA</span></a></li>
                     </ul>	
                     <div id="msg-poll"></div>

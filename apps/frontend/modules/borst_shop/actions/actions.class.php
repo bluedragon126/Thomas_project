@@ -1248,7 +1248,7 @@ class borst_shopActions extends sfActions {
         //echo "hello";
         //var_dump($this->getUser()->getAttribute('payment_user_info'));
         $config = array(
-            "callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentType",
+            "callbackUrl"     => "https://www.thetradingaspirants.com/borst_shop/shopPaymentType",
             "payeeAlias"      => "1233144318", //Swish number of the merchant
             "currency"        => "SEK", //currency code	
             "CAINFO"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/root.pem', //Path to root CA
@@ -1408,6 +1408,7 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeShopPaymentDone(sfWebRequest $request) {
+        
         $past = time() - 3600;
         setcookie( 'cart_items_cookie_pid', '', $past, '/' );
         setcookie( 'cart_items_cookie_price', '', $past, '/' );
@@ -1438,21 +1439,27 @@ class borst_shopActions extends sfActions {
             $for_price = $purchase->getPurchaseOrder($id);
 
             $i = 0;
+            $total_price = 0;
             $item_detail_str = '';
             $find_arr = array(' ', '.');
             foreach ($item_list as $data) {
                 $price_per_unit = number_format($data['price_per_unit'], 2, '.', '');//original code
                 //$price_per_unit = number_format($data['total_price'], 2, '.', '');//code change by sandeep
                 $article_name = $btshop_article->getProductName($data['product_id']);
-                if ($i == 0)
+                if ($i == 0){
                     $item_detail_str = $data['product_id'] . ':' . urlencode($article_name[0]['title']) . ':' . $data['quantity'] . ':' . $price_per_unit;
-                else
+                    $total_price = $total_price + $data['quantity'] * $price_per_unit;
+                }
+                else{
                     $item_detail_str = $item_detail_str . ',' . $data['product_id'] . ':' . urlencode($article_name[0]['title']) . ':' . $data['quantity'] . ':' . $price_per_unit;
+                    $total_price = $total_price + $data['quantity'] * $price_per_unit;
+                }
 
                 $i++;
             }
 
             $transaction_type = $request->getParameter('typ') ? $request->getParameter('typ') : 3;
+            
             $bank_id = $request->getParameter('bk');
 
             $purchase_record = $purchase->getPurchaseOrder($id);
@@ -1460,24 +1467,29 @@ class borst_shopActions extends sfActions {
             $order_no =$purchase_record->id;
             $purchase_record->payment_method = $payment_mtd[$transaction_type];
             $purchase_record->save();
-
+            
             $host_str = $this->getRequest()->getHost();
-            $url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
+            // $url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
           
-            $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
-            $to = array(sfConfig::get('app_mail_to_1'));
-            $from = sfConfig::get('app_mail_shop_email_1');
-            $message = $this->getMailer()->compose();
-            $message->setSubject('New Transaction');
-            $message->setTo($to);
-            $message->setFrom($from);
-            $message->setBody($mailBody, 'text/html');
-            $this->getMailer()->send($message);
+            // $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
+            // $to = array(sfConfig::get('app_mail_to_1'));
+            // $from = sfConfig::get('app_mail_shop_email_1');
+            // $message = $this->getMailer()->compose();
+            // $message->setSubject('New Transaction');
+            // $message->setTo($to);
+            // $message->setFrom($from);
+            // $message->setBody($mailBody, 'text/html');
+            // $this->getMailer()->send($message);
+            // echo($transaction_type);
+            // exit;
         }
 
 
         //echo $item_detail_str; die;
         if (($transaction_type == 1 || $transaction_type == 2) && (count($product_arr) > 0)) {
+
+            // echo("aaa");
+            // exit;
             $this->saveInvoicePdf($id,1,0);
             /* Payment process. */
             $TellusPayID = "58318125";
@@ -1529,15 +1541,22 @@ class borst_shopActions extends sfActions {
               $Country = "SE";
               $ID = "5214124444";
               $IP = "127.0.0.1"; */
+            // New payment
+            
+
 
             // Check the manual for additional data types / flags
             $URL = "http://unix.telluspay.com/Add/?TP01=$DirectCapture&TP700=$TellusPayID&TP701=$OrderNo&TP740=$Data&TP901=$TransactionType&TP491=$ISOLanguage&TP490=$ISOCurrency&TP801=$Email&TP8021=$FirstName&TP8022=$LastName&TP803=$Address&TP804=$ZipCode&TP805=$City&TP806=$Country&TP8071=$ID&TP5411=$Shipping&TP900=$IP&TP950=$ExtraData";
-
+            // echo($total_price);
+            // echo($URL);
+            // exit;
 
             $handle = fopen($URL, "r");
             $TellusPay_Key = str_replace(' ', '%20', fread($handle, 1000000));
 
             $url_str = 'https://secure.telluspay.com/WebOrder/?' . $TellusPay_Key;
+            // echo($url_str);
+            // exit;
 
             $this->redirect($url_str);
         }

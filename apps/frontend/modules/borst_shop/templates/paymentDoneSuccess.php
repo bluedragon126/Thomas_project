@@ -31,10 +31,10 @@
                 <div class="breadcrumb">
                     <ul>
                         <li><?php
-include_component('isicsBreadcrumbs', 'show', array(
-    'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
-))
-?> </li>
+                            include_component('isicsBreadcrumbs', 'show', array(
+                                'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
+                            ))
+                            ?> </li>
                     </ul>
                 </div>
             </div>
@@ -71,8 +71,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                     foreach ($item_list as $data):
                         ?>
                         <?php if ($i == 0): ?><?php
-                $shipping = $data->shipping;
-                $vat = $data->vat;
+                            $shipping = $data->shipping;
+                            $vat = $data->vat;
                             ?><?php endif; ?>
                         <?php
                         if ($is_Article) {
