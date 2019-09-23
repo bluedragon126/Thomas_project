@@ -74,12 +74,12 @@
     ?>
 
     <?php $total_wth_shipping = $total + $shipping; ?>
-    <?php $vat = $total_wth_shipping * 20 / 100; ?>
+    <?php $vat = $total_wth_shipping * 6 / 106; ?>
     <?php
     //$final_total = $total_wth_shipping + $vat; 
     if (count($products_data) >= 1 && $final_totals != '') {
         $total_final = ($total_wth_shipping - $final_dicount);
-        $vat = $total_final * 20 / 100;
+        $vat = $total_final * 6 / 106;
     } else {
         $total_final = $total_wth_shipping;
     }

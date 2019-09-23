@@ -105,7 +105,7 @@
                 </tr>
 	           	<tr>
                 	<td class="column_heading">&nbsp;</td>
-                    <td class="bold_black">Varav moms 25%:</td>
+                    <td class="bold_black">Varav moms 6%:</td>
                     <td class="pleft_10">480:-</td>
                 </tr>
                 <tr>

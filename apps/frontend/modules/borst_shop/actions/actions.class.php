@@ -1129,6 +1129,7 @@ class borst_shopActions extends sfActions {
         $this->product_article = new BtShopArticle();
 
         $product_arr = $this->getUser()->getAttribute('product_arr');
+        
         $this->products_data = $btshop_article->getProductInOrder($product_arr);
         $this->price_arr = $this->getUser()->getAttribute('price_arr');
         $this->product_qty_arr = $this->getUser()->getAttribute('product_qty_arr');
@@ -1146,12 +1147,13 @@ class borst_shopActions extends sfActions {
             $this->total_shipping_cost = $countryShipping->getShippingCostFromWeight($total_weight, $region_code);
         else
             $this->total_shipping_cost = 0;
-
+            // echo ($this->product_qty_arr[0] * $this->price_arr[0]); exit;
         $i = 0;
         foreach ($this->products_data as $data) {
             $mul = $this->product_qty_arr[$i] * $this->price_arr[$i];
             $total = $total + ($this->product_qty_arr[$i] * $this->price_arr[$i]);
             $i++;
+            
         }
         
         //$total_wth_shipping = $total + $this->total_shipping_cost;//original code
@@ -1166,18 +1168,19 @@ class borst_shopActions extends sfActions {
         //var_dump($this->getUser()->getAttribute('final_dicount').'=='.$this->final_dicount);
         //$total_wth_shipping = floatval(str_replace(',','',$this->final_totals));//code change by sandeep
         //code by sandeep end
+        
         if($this->final_totals!=''){
             $total_wth_shipping = $total + $this->total_shipping_cost;
             $total_wth_shipping = ($total_wth_shipping - $this->final_dicount);
         }else{
             $total_wth_shipping = $total + $this->total_shipping_cost;//original code
         }
-        $this->total_wth_shipping = $total_wth_shipping;//number_format($total_wth_shipping, 2, '.', '');
+        $this->total_wth_shipping = $total_wth_shipping * 100;//number_format($total_wth_shipping, 2, '.', '');
         if ($request->isMethod('post')) {
            $payment_user_info = $this->getUser()->getAttribute('payment_user_info');
            $payment_user_info['shipping'] = $this->total_shipping_cost;
            $payment_user_info['total_price'] = $total_wth_shipping ;
-           $payment_user_info['vat'] = ($total_wth_shipping *.20);
+           $payment_user_info['vat'] = ($total_wth_shipping *.057);
            $this->getUser()->setAttribute('payment_user_info', $payment_user_info);
         }
         //var_dump($this->getUser()->getAttribute('payment_user_info'));
@@ -1223,7 +1226,7 @@ class borst_shopActions extends sfActions {
 
         $cart['total_price'] = number_format($total+$this->total_shipping_cost,2);
         $cart['shipping'] = number_format($this->total_shipping_cost,2);
-        $cart['vat'] = number_format((($total+$this->total_shipping_cost)*.20),2);
+        $cart['vat'] = number_format((($total+$this->total_shipping_cost)*.057),2);
 
         if ( ($paymentInfo = $this->getUser()->getAttribute('payment_user_info')))
         {

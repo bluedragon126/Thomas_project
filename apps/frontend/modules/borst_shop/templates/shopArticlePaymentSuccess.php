@@ -79,7 +79,7 @@
                     </div>
 
                     <?php $total_wth_shipping = number_format($products_data->price); ?>
-                    <?php $vat = $total_wth_shipping * 20 / 100; ?>
+                    <?php $vat = $total_wth_shipping * 6 / 106; ?>
 
                     <div class="float_left shop_cart_data_div">
                         <div class="float_left width_558"> <!--width_550-->

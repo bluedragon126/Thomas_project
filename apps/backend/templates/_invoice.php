@@ -175,7 +175,7 @@
 						</tr>
 						<tr>
 							<td class="column_heading" style="width:110px; height:22px;">&nbsp;</td>
-							<td class="bold_black" style="width:290px;">Varav moms 25%:</td>
+							<td class="bold_black" style="width:290px;">Varav moms 6%:</td>
 							<td class="pleft_10" align="right"><?php echo str_replace(',', ' ', number_format($vat)); ?>:-</td>
 						</tr>
 						<tr>

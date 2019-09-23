@@ -34,7 +34,7 @@
         
         <?php $shipping = $add_shipping_flag == 1 ? $total_shipping_cost : 00.00; ?>
         <?php $total_wth_shipping = $total + $shipping; ?>
-        <?php $vat = $total_wth_shipping * 20 / 100; ?>
+        <?php $vat = $total_wth_shipping * 6 / 106; ?>
 
         <div class="info"> 
             <div class="shop_r_cart_price_bg_white">
