@@ -185,8 +185,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     <?php endif; ?>                        
                     <br/>
-                    <div class="blank_47h widthall">&nbsp;</div>
-                    <div class="float_left widthall"><?php echo __('Välkommen åter!') ?></div>
+                    <div class="blank_done widthall">&nbsp;</div>
+                    <div class="float_left widthall shop_paymnet_done"><?php echo __('Välkommen åter!') ?></div>
                     <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="112" />
                 </div>
                 <div id="pdf_send_report"></div>

@@ -1542,7 +1542,7 @@ a.article_dots_r {
     font-family: 'CheltenhamITCW01-Bold';
     font-size: 1.3em;
     letter-spacing: 0.01em;
-    margin: 10px 0px 10px;
+    margin: 12px 0px 10px;
 }
 
 .whp_border {
@@ -3091,9 +3091,9 @@ ul.cartStep2 li {
 
 .shop_paymnet_done_email {
     color: #232222;
-    font-family: "Franklin Gothic Medium";
-    font-size: 1em;
-    margin-bottom: 24px;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.28em;
+    margin-bottom: 14px;
 }
 
 .shop_paymnet_done_link {
@@ -3176,10 +3176,10 @@ ul.cartStep2 li {
     word-spacing: -0.06em;
 }
 
-.blank_47h {
+.blank_done {
     float: left;
     position: relative;
-    height: 47px;
+    height: 55px;
 }
 
 
@@ -6168,7 +6168,7 @@ input.send_forgetpass {
 }
 
 .till {
-    width: 23px;
+    width: 26px;
     text-align: center;
     padding-top: 9px
 }
@@ -6278,7 +6278,7 @@ input.send_forgetpass {
     /* border-bottom: 3px solid #c9d0cf;*/
     float: left;
     width: 100%;
-    margin: 4px 0px 25px 0px;
+    margin: 1px 0px 20px 0px;
 }
 
 .bottom_shop_mrg {
@@ -8889,17 +8889,16 @@ input.send_forgetpass {
     border: 0 solid red;
     float: left;
     margin-left: 71px;
-    ;
     position: relative;
     width: 565px;
 }
 
 .bt-shop-payment_done-logo {
-    margin: 28px 0px 90px 0px;
+    margin: 20px 0px 90px 0px;
 }
 
 .bt-shop_border {
-    margin: 8px 0px 22px 0px;
+    margin: 12px 0px 22px 0px;
 }
 
 .bt-shop_border2 {
@@ -8911,7 +8910,7 @@ input.send_forgetpass {
 }
 
 .bt-shop_border_home2 {
-    margin: 32px 0px 26px 0px;
+    margin: 32px 0px 21px 0px;
 }
 
 .shop_paymnet_done-right-banner {
