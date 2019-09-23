@@ -37,6 +37,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         </div>
         <div class="btshopleftdiv ptop_10">
             <div class="btshopleftdivinner">
+				
                 <?php if($transaction_type == 4){?>
                 
                     <div class="cart_payment_steps">

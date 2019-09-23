@@ -310,8 +310,8 @@
                             'merchantnumber': "8036983",
                             'amount': "<?php echo($total_wth_shipping) ?>",
                             'currency': "DKK",
-                            'accepturl':"https://www.thetradingaspirants.com/borst_shop/paymentDone",
-                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/paymentFail"
+                            'accepturl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentDone",
+                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentFail"
                         });
                     </script>               
                     <!--<div class="blank_11h widthall">&nbsp;</div>  id="payment_conformation" onclick="javascript: paymentwindow.open()"-->
