@@ -28,10 +28,11 @@
                 <div class="float_left widthall">
                   <div class="whp_heading">
                         E-postadresser</div>
-                    <p>KUNDTJÄNST: kundtjanst#borstjanaren.se<br />
-                      HENRIK HALLENBORG: henrik.hallenborg#borstjanaren.se 
-                    <br>
-                    THOMAS SANDSTRÖM:
+                    <p>KUNDTJÄNST
+                    <br /> kundtjanst#borstjanaren.se<br /><br />
+                      HENRIK HALLENBORG<br /> henrik.hallenborg#borstjanaren.se 
+                    <br><br />
+                    THOMAS SANDSTRÖM<br />
                      thomas.sandstrom#borstjanaren.se 
                     <br>
                   <?php echo include_partial('global/bottom_footer_whitepage'); ?>            </p>

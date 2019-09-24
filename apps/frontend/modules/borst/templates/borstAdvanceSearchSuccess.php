@@ -78,7 +78,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <td  colspan="6"><div class="blank_34h widthall">&nbsp;</div></td>
                         </tr>
                         <tr>
-                            <td colspan="6"><span class="whp_subheading"><img id="adv_ser_section" src="/images/addplusicon.png" class="float_left" alt="icon"  width="14"/> Vill du söka på fler kriterier? </span></td>
+                            <td colspan="6"><span class="whp_subheading2"><img id="adv_ser_section" src="/images/addplusicon.png" class="float_left" alt="icon"  width="14"/> Vill du söka på fler kriterier? </span></td>
                         </tr>
                         <tr>
                             <td colspan="6"><div class="blank_7h widthall">&nbsp;</div></td>
@@ -94,7 +94,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </tr>
 
                         <tr>
-                            <td colspan="6" height="35px" valign="top"><div class="whp_subheading">Begränsa sökningen till: </div></td>
+                            <td colspan="6" height="35px" valign="top"><div class="whp_subheading2">Begränsa sökningen till: </div></td>
                         </tr>
 
                         <tr>
@@ -115,7 +115,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 &nbsp;Sök på BT Charts</td>-->
                         </tr>           
                         <tr>
-                            <td colspan="6" height="22px"><input name="search_from_btshop" type="checkbox" class="checkbox" value="1" id="search_from_btshop" />
+                            <td colspan="6" height="12px"><input name="search_from_btshop" type="checkbox" class="checkbox" value="1" id="search_from_btshop" />
                                 &nbsp;Sök på BT Shop</td>
                         </tr>                         
                         <tr>

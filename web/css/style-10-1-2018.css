@@ -2380,19 +2380,19 @@ ul.cartStep2 li {
     float:left;
     margin-left:16px;
 }
-.shop_paymnet_done{
+.shop_payment_done{
     color: #232222;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1.28em;
 	margin-bottom: 4px;
 }
-.shop_paymnet_done_email{
+.shop_payment_done_email{
     color: #232222;
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
 	margin-bottom: 24px;
 }
-.shop_paymnet_done_link{
+.shop_payment_done_link{
     color: #8991c8;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
@@ -6898,7 +6898,7 @@ input.send_forgetpass{
 .shop_payment_type_div1{float: left;width: 655px;padding:0px;}
 .shop_payment_type_content{min-height:626px;border: 0 solid red;float: left; margin-left: 71px;;position: relative;width: 565px;}
 .bt-shop-payment_done-logo{margin:28px 0px 90px 0px;}
-.shop_paymnet_done-right-banner{padding-left: 14px;    width: 294px;}
+.shop_payment_done-right-banner{padding-left: 14px;    width: 294px;}
 .display-none{display: none;}
 .margin-top-15m{margin-top: -20px;}
 .margin-bottom-27{margin-bottom: 27px;}

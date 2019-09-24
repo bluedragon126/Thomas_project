@@ -173,20 +173,20 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
                 <div class="shop_detail_title">3. Tack för din beställning!</div>
                 <div class="spacer"></div>
-                <div class="float_left widthall shop_paymnet_done"><?php echo __('En orderbekräftelse har skickats till') ?>:</div>
-                <div class="float_left widthall shop_paymnet_done_email"><?php echo $email; ?></div>
+                <div class="float_left widthall shop_payment_done"><?php echo __('En orderbekräftelse har skickats till') ?>:</div>
+                <div class="float_left widthall shop_payment_done_email"><?php echo $email; ?></div>
                 <div class="float_left widthall"><i><?php echo __('Leverans sker när betalningen inkommit till vårt konto.') ?></i></div>
 
                 <div class="my_order_rec_row border_0">
                     <div class="blank_26h widthall">&nbsp;</div><?php if ($purchase_id): ?>
                         <div class="float_left widthall"><img src="/images/new_home/bill_pict.png"/></div>
                         <div>
-                            <a id="save_invoice_article" class="save_mail_bill shop_paymnet_done_link mrg_top_9 float_left" name="<?php echo $purchase_id ?>"><?php echo __('Faktura på din beställning') ?></a>
+                            <a id="save_invoice_article" class="save_mail_bill shop_payment_done_link mrg_top_9 float_left" name="<?php echo $purchase_id ?>"><?php echo __('Faktura på din beställning') ?></a>
                         </div>
                     <?php endif; ?>                        
                     <br/>
                     <div class="blank_done widthall">&nbsp;</div>
-                    <div class="float_left widthall shop_paymnet_done"><?php echo __('Välkommen åter!') ?></div>
+                    <div class="float_left widthall shop_welc4"><?php echo __('Välkommen åter!') ?></div>
                     <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="112" />
                 </div>
                 <div id="pdf_send_report"></div>
