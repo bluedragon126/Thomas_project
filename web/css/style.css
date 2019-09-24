@@ -5262,6 +5262,10 @@ ul.cartStep2 li {
     width: 277px !important;
 }
 
+.input_width {
+    width: 237px !important;
+}
+
 .width_425 {
     width: 425px;
 }
@@ -8838,10 +8842,10 @@ input.send_forgetpass {
 
 .reg_line {
     border-bottom: 1px solid #d3d3d3;
-    width: 80%;
+    width: 68.5%;
     height: 1px;
     float: left;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .mrg_top_1 {

@@ -271,7 +271,7 @@ width:34%;
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Användarnamn') ?></div>
                             </td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $userForm->renderHiddenFields() ?> <?php echo $profileForm->renderHiddenFields() ?> <?php echo $sbtBlogProfile->renderHiddenFields() ?> <?php echo $userForm['username']->render(array('id' => 'username', 'class' => 'form_input width_277 contactus-inputs')) ?>
+                                <?php echo $userForm->renderHiddenFields() ?> <?php echo $profileForm->renderHiddenFields() ?> <?php echo $sbtBlogProfile->renderHiddenFields() ?> <?php echo $userForm['username']->render(array('id' => 'username', 'class' => 'form_input input_width contactus-inputs')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -282,7 +282,7 @@ width:34%;
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('E-post') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['email']->render(array('id' => 'email', 'class' => 'form_input width_277 contactus-inputs')); ?>
+                                <?php echo $profileForm['email']->render(array('id' => 'email', 'class' => 'form_input input_width contactus-inputs')); ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -291,8 +291,8 @@ width:34%;
                                 </div></td>
                         </tr>
                         <tr>
-                            <td  class="td_input" ><div class="form_labels"><?php echo __('Lösenord (minst 6 tecken)') ?></div></td>
-                            <td  class="td_input_right margin_bottom_2m" align="left"><?php echo $userForm['password']->render(array('id' => 'password', 'class' => 'form_input width_277 contactus-inputs')); ?>
+                            <td  class="td_input" ><div class="form_labels"><?php echo __('Lösenord') ?></div></td>
+                            <td  class="td_input_right margin_bottom_2m" align="left"><?php echo $userForm['password']->render(array('id' => 'password', 'class' => 'form_input input_width contactus-inputs')); ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -302,7 +302,7 @@ width:34%;
                         </tr>
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Upprepa lösenord') ?></div></td>
-                            <td  class="td_input_right margin_bottom_2m" align="left"><?php echo $userForm['password_again']->render(array('id' => 'password_again', 'class' => 'form_input width_277 contactus-inputs')) ?>
+                            <td  class="td_input_right margin_bottom_2m" align="left"><?php echo $userForm['password_again']->render(array('id' => 'password_again', 'class' => 'form_input input_width contactus-inputs')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -366,7 +366,7 @@ width:34%;
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Förnamn') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['firstname']->render(array('id' => 'firstname', 'class' => 'form_input width_277 contactus-inputs')) ?>
+                                <?php echo $profileForm['firstname']->render(array('id' => 'firstname', 'class' => 'form_input input_width contactus-inputs')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -377,7 +377,7 @@ width:34%;
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Efternamn') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['lastname']->render(array('id' => 'lastname', 'class' => 'form_input width_277 contactus-inputs')) ?>
+                                <?php echo $profileForm['lastname']->render(array('id' => 'lastname', 'class' => 'form_input input_width contactus-inputs')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -388,10 +388,10 @@ width:34%;
 
                         <?php if ($profileForm->isNew()) {
                             ?>
-                            <tr>
+                            <!--<tr>
                                 <td  class="td_input" ><div class="form_labels"><?php echo __('Forumsignatur') ?></div></td>
                                 <td  class="td_input_right margin_bottom_2m" align="left">
-                                    <?php echo $profileForm['usernamealias']->render(array('id' => 'usernamealias', 'class' => 'form_input width_277 contactus-inputs', 'placeholder' => 'Fyll i om du vill vara anonym på Börstjänaren')) ?>
+                                    <?php echo $profileForm['usernamealias']->render(array('id' => 'usernamealias', 'class' => 'form_input input_width contactus-inputs', 'placeholder' => 'Fyll i om du vill vara anonym på Börstjänaren')) ?>
                                     <span>&nbsp;</span>
                                     <div class="error_list_outer">
                                         <?php echo $profileForm['usernamealias']->renderError(); ?>
@@ -399,12 +399,12 @@ width:34%;
                                             <li><?php echo $firstname_error; ?></li>
                                         </ul>
                                     </div></td>
-                            </tr>
+                            </tr>-->
                         <?php } ?>
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Gatuadress') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['street']->render(array('id' => 'street', 'class' => 'form_input width_277 contactus-inputs')) ?>
+                                <?php echo $profileForm['street']->render(array('id' => 'street', 'class' => 'form_input input_width contactus-inputs')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">
@@ -426,7 +426,7 @@ width:34%;
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Telefon') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['phone']->render(array('id' => 'phone', 'class' => 'form_input width_277 contactus-inputs', 'size' => '32', 'maxlength' => '32')) ?>
+                                <?php echo $profileForm['phone']->render(array('id' => 'phone', 'class' => 'form_input input_width contactus-inputs', 'size' => '32', 'maxlength' => '32')) ?>
                                 <span>&nbsp;</span>
                                 <div class="error_list_outer">
                                     <ul class="error_list">

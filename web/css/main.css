@@ -797,7 +797,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .hide_blog_div{margin-left:10px;}
 .hide_blog_div a{font-family:'Georgia Bold';color:#92a3af;}
 #tableform tr{width:540px;float:left;position:relative;}
-#tableform td.td_input{float:left;position:relative;width:180px;}
+#tableform td.td_input{float:left;position:relative;width:120px;}
 #tableform td.td_input_right{float:left;position:relative;width:316px;margin-left:4px;}
 ul.loginmenu a{line-height:15px;}
 .atclear{float:left;height:0px;display:none;}
