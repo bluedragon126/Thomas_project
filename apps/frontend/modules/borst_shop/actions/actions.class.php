@@ -1136,6 +1136,8 @@ class borst_shopActions extends sfActions {
         $this->price_detail_id_arr = $this->getUser()->getAttribute('price_detail_id_arr');
         $this->add_shipping_flag = 0;
         $this->loginRequiredForProduct = $this->isLoginRequriedForProduct($product_arr);
+
+        
         //For Shipping
         $countries = new Countries();
         $total_weight = 0;
@@ -1176,6 +1178,45 @@ class borst_shopActions extends sfActions {
             $total_wth_shipping = $total + $this->total_shipping_cost;//original code
         }
         $this->total_wth_shipping = $total_wth_shipping * 100;//number_format($total_wth_shipping, 2, '.', '');
+        // $Email = urlencode($arr['user_email']);
+        // $FirstName = urlencode($arr['user_firstname']);
+        //     $LastName = urlencode($arr['user_lastname']);
+        //     $Address = urlencode($arr['user_street']);
+        //     $ZipCode = urlencode($arr['user_zipcode']);
+        //     $City = urlencode($arr['user_city']);
+        //     $Country = urlencode($arr['user_country']);
+        $purchase = new Purchase();
+        $purchasedItem = new PurchasedItem();
+        if (count($product_arr) > 0) {//echo "<pre>";  print_r($arr); die;
+            $id = $purchase->addPaymentEntry($arr);
+            $purchasedItem->savePurchasedItemList($id, $arr, $product_arr, $price_arr, $product_qty_arr, $price_detail_id_arr, 0);
+            //$this->saveInvoicePdf($id,0,0);
+            $item_list = $purchasedItem->fecthPurchasedItemList($id);
+            $result_data = "";
+            $result_data = $this->getUser()->getAttribute('payment_user_info')['user_email'] . "<br>" . $this->getUser()->getAttribute('payment_user_info')['user_firstname'] . 
+                    $this->getUser()->getAttribute('payment_user_info')['user_lastname'] . "<br>" . $this->getUser()->getAttribute('payment_user_info')['user_street'] . "<br>";
+            $j = 0;
+            foreach ($item_list as $data) {
+                $article_name = $btshop_article->getProductName($data['product_id']);
+                $result_data = $result_data . str_replace("+","",($article_name[0]['title'])) . ":" . $this->product_qty_arr[$j] . ":" . $this->price_arr[$j] . "<br>";
+                // echo(urlencode($article_name[0]['title']));
+                // echo($this->price_arr[$j]);
+                // echo($this->product_qty_arr[$j]);
+                // // echo($price_per_unit);
+                // echo "<br>";
+                $j++;
+            }
+
+        }
+        //  echo($result_data);
+        // echo ($this->getUser()->getAttribute('payment_user_info')['user_email']);
+        // echo "<br>";
+        // echo ($this->getUser()->getAttribute('payment_user_info')['user_firstname']);
+        // echo ($this->getUser()->getAttribute('payment_user_info')['user_lastname']);
+        // echo "<br>";
+        // echo ($this->getUser()->getAttribute('payment_user_info')['user_street']);
+        //  exit;
+        $this->user_infomation = $result_data;
         if ($request->isMethod('post')) {
            $payment_user_info = $this->getUser()->getAttribute('payment_user_info');
            $payment_user_info['shipping'] = $this->total_shipping_cost;

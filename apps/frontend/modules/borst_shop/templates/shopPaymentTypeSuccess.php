@@ -309,9 +309,11 @@
                         paymentwindow = new PaymentWindow({
                             'merchantnumber': "8036983",
                             'amount': "<?php echo($total_wth_shipping) ?>",
-                            'currency': "DKK",
+                            'currency': "SEK",
                             'accepturl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentDone",
-                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentFail"
+                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentFail",
+                            'instantcapture':'1',
+                            'description':"<?php echo($user_infomation) ?>"
                         });
                     </script>               
                     <!--<div class="blank_11h widthall">&nbsp;</div>  id="payment_conformation" onclick="javascript: paymentwindow.open()"-->
