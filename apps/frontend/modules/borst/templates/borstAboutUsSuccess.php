@@ -62,7 +62,7 @@
                                        
                   
                     
-                  <p class="whp_subheading_au">Henrik Hallenborg</p>
+                  <p class="whp_subheading">Henrik Hallenborg</p>
                   
                     Henrik Hallenborg är medgrundare till Börstjänaren. Han handlar med  aktier, råvaror, index, obligationer och valutor för egen samt för  investerares räkning. Henrik är registrerad förvaltare och  terminshandlare, så kallad CTA (Commodity Trading Advisor), med pågående  verksamhet i USA, där han tidigare bott. 	
                     
@@ -104,7 +104,7 @@
                               
                   
                     
-                  <p  class="whp_subheading_au">Göran Högberg</p>
+                  <p  class="whp_subheading">Göran Högberg</p>
                   
                     Göran Högberg är Börstjänarens kaxige finansguru med oslagbart bred och djup inblick i och utblick över världsekonomin. Nationalekonom med 40 års marknadserfarenhet och en alldeles egen sifferakrobatik och språkdräkt. 	
                     <br><br>
@@ -152,7 +152,7 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
                                       
                   
                     
-                  <p class="whp_subheading_au">Thomas Sandström</p>
+                  <p class="whp_subheading">Thomas Sandström</p>
                   
                     Thomas Sandström, medgrundare till Börstjänaren, är entreprenör sedan mitten av 80-talet och spindeln i nätet bakom sajten, som sköter kontakterna med administratörer, webbutvecklare, designers, sponsorer och – sist men inte minst: användarna.
                     

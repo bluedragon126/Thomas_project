@@ -144,9 +144,10 @@
                     <input type="hidden" name="total_price" id="total_price" value="<?php echo $total_wth_shipping; ?>" />
                     <input type="hidden" name="shipping" id="shipping" value="<?php echo number_format($shipping, 2); ?>" />
                     <input type="hidden" name="vat" id="vat" value="<?php echo $vat; ?>" />
-                    <!--<div class="blank_22h widthall">&nbsp;</div>-->
-                    <div class="form_heading">E-postadress</div>
-                    <div class="blank_14h width_392 shop_cart_data_div_border">&nbsp;</div>
+          <!--<div class="blank_5h widthall">&nbsp;</div>-->
+		<div class="form_heading">E-postadress</div>
+                <div class="reg_line">&nbsp;</div>
+                <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
                     <div class="clearAll">&nbsp;</div>
                     <div class="blank_29h widthall">&nbsp;</div>
                     <ul class="rows5 m_0 margin_left_114">

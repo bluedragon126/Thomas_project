@@ -4,13 +4,13 @@
 <?php if (count($products_data) > 0): ?>
     <div class="cart pbottom_10">
         <div class="shop_r_cart_title float_left">I varukorgen:</div>
-        <div class="float_right mrg_top_15"><img class="shop_r_cart_img_top" src="/images/new_home/bt-shop_logo_left_wt.png"/></div>
+        <!--<div class="float_right mrg_top_15"><img class="shop_r_cart_img_top" src="/images/new_home/bt-shop_logo_left_wt.png"/></div>-->
         <div class="float_right width_100_per"><span class="float_right shop_r_cart_count">Antal artiklar: <strong>1</strong><?php  $mul = number_format($products_data->price); ?></span></div>
         <?php $i = 0; ?>
         <div class="info"></div>
         <div class="info"> 
             <div class="float_left widthall">
-                <div class="shop_r_cart_cat_bg <?php if($i == 0) { echo 'mrg_toop_3';} else { echo 'mrg_toop_32';} ?>">
+                <div class="shop_r_cart_cat_bg <?php if($i == 0) { echo 'mrg_top_3';} else { echo 'mrg_top_32';} ?>">
                     <span class="shop_r_cart_cat"><?php //echo $product_article->getShopArticleTypeName($data['p_type']) ?></span>
                 </div>
                 <br />
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="blank_1h widthall">&nbsp;</div>
-        <div class="info shop_r_cart_price_bg margin_top_8"> 
+        <div class="info shop_r_cart_price_bg margin_top_5"> 
                 <span class="left margin_top_8 pad_lft_6 shop_r_cart_text"><span>Antal:</span>
                     <?php $mul = 1 * $products_data->price; ?>                        
                     <?php if ($on_last_step != 1): ?>

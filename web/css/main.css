@@ -59,10 +59,10 @@ body{
 	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:19px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
 p{line-height:19px;}
-a{text-decoration:none;color:#8991c8;}
+a{text-decoration:none;color:#00b6ea;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}
-.comment_content_wrapper a{color:#8991c8;letter-spacing:0.02px;}
+.comment_content_wrapper a{color:#00b6ea;letter-spacing:0.02px;}
 img{border:0;}
 .widthall{width:100%;}
 .float_left{float:left;position:relative;}
@@ -148,7 +148,7 @@ img{border:0;}
 .submenuwrapper #borst_menu_home .selected{}
 .l_height{line-height:180%}
 .font24{font-size:24px;}
-.icontop3{top:1px;left:2px;position:relative;}
+.icontop3{top:1px;left:1.5px;position:relative;}
 .outercontainer{float:left;position:relative;width:100%;}
 .bgwrapper{float:left;position:relative;width:980px;background-color:#fff;}
 .maincontainer{margin:0px auto 10px;width:980px;border-right:1px solid #bdc2be;overflow:hidden;}
@@ -166,7 +166,7 @@ img{border:0;}
 .leftmenu{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#748b9e;width:970px;}
 .leftmenu li{float:left;}
 .leftmenu li a{display:block;color:white;text-align:center;text-decoration:none;font-size:1.07em;letter-spacing:2px;font-family:"Franklin Gothic Book Regular";padding-top:8px;padding-bottom:9px;}
-.leftmenu li a:hover{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;background-color:#8991c8;}
+.leftmenu li a:hover{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;background-color:#00b6ea;}
 .leftmenu li a.selected{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;}
 .rightmenu{float:right;position:relative;width:auto;display:inline;margin:0;padding:0 7px 0 0;font-weight:bold;}
 .first_navbar_fe{padding-left:12px !important;padding-right:12px!important;}
@@ -213,7 +213,7 @@ input.submitbuttontext .submit{height:20px;float:left;position:relative;font-siz
 .bottomlink li{float:left;position:relative;width:95%;margin:0;padding:0px 0px 0px 10px;list-style-type:none;display:block;color:#8898ad;background-image:url(../images/bullete.png);background-repeat:no-repeat;background-position:left 5px;}
 .bottomlink li a{float:left;position:relative;color:#8898ad;text-decoration:none;line-height:18px;font-size:12px;letter-spacing:0.02px;}
 .advertdiv{float:left;position:relative;width:284px;padding:0 0 7px 0;}
-.advertdiv2{float:left;position:relative;width:300px;padding:0 0 11px 0;margin-bottom:5px;background-position:bottom left;border-bottom:1px solid #d3d3d3;}
+.advertdiv2{float:left;position:relative;width:300px;padding:0 0 11px 0;margin-bottom:5px;background-position:bottom left;border-bottom:1px solid #bac9d7;}
 .sponseror{float:left;position:relative;color:#FFFFFF;background-image:url(../images/sponsorer.png);height:58px;width:300px;margin:-19px 0px 1px 0px;}
 .sponseror h3{float:left;position:relative;padding:0;margin:0;height:38px;font-size:18px;line-height:38px;padding:0 0 0 15px;}
 .adline{float:left;position:relative;border-bottom:1px solid #ced2d0;width:238px;height:1px;padding:0 0 10px 0;font-size:0;}
@@ -223,7 +223,7 @@ input.submitbuttontext .submit{height:20px;float:left;position:relative;font-siz
 .update{float:left;position:relative;font-size:11px;color:#697a9c;letter-spacing:0.3px;padding:0 0px 0 0px;text-transform:capitalize;}
 .update_usart{float:left;position:relative;font-size:11px;color:#669;font-weight:normal;padding:0 0px 0 3px;text-transform:capitalize;}
 .bluefont{float:left;position:relative;text-transform:uppercase;font-family:"Franklin Gothic Medium";color:#75869f;padding:0 4px 0 1px;font-size:11px;font-weight:normal;}
-.bluefont2{float:left;position:relative;color:#8991c8;padding:0 6px 0 0px;font-size:13px;font-weight:bold;}
+.bluefont2{float:left;position:relative;color:#00b6ea;padding:0 6px 0 0px;font-size:13px;font-weight:bold;}
 .chaticon{float:left;position:relative;display:none;height:10px;background-image:url(../images/chaticon.jpg);background-position:left;margin-top:2px;padding:0 0 0 16px;background-repeat:no-repeat;color:#21569b;font-size:11px;line-height:10px;margin-right:4px;}
 .colorband{
 float:left;
@@ -269,7 +269,7 @@ font-size:0;}
 	padding:0 1px 0 0px;
 }
 .breadcrumb ul li a.selected_b{color:#232222;text-decoration:none;padding:0 1px 0 0px;;font-weight:bold;}
-.in_date{float:right;position:relative;color:#88888a;font-size:0.85em; letter-spacing: 0.01em;}
+.in_date{float:right;position:relative;color:#abb9c8;font-size:0.85em; letter-spacing: 0.01em;}
 .photoimg{float:left;position:relative;padding:0px 0 0 0px;margin-right:9px;}
 .photoimg img{width:30px;padding-top:1.2px;}
 .btshopleftdiv{float:left;position:relative;height:auto;padding:7px 0 0 55px;}
@@ -288,13 +288,13 @@ font-size:0;}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
 .contactdellus{float:left;position:relative;margin:20px 0 0 0;width:100%;}
 .testimonial{float:left;position:relative;padding:10px 0 90px 0;font-size:20px;color:#0e0d0d;}
-.main_link_color{color:#8991c8;letter-spacing:0px;}
+.main_link_color{color:#00b6ea;letter-spacing:0.03px;}
 #btchart{float:left;position:relative;}
 #btchart td{padding-right:20px;}
 #btchart td ul{float:left;position:relative;margin:0;padding:0;list-style-type:none;}
 #btchart td ul li{float:left;position:relative;margin:0;padding:0;list-style-type:none;display:block;color:#4b697d;clear:left;}
 .redfont{color:#dc231a;letter-spacing:0.02em;}
-.bluefont3{color:#8991c8;}
+.bluefont3{color:#00b6ea;}
 .radio{margin:0px 3px 1px 0px;padding:0;width:16px;height:16px;line-height:16px;float:left;position:relative;vertical-align:middle}
 .input174{height:19px;width:174px;border:1px solid #ced2d0;margin:3px 0px 0px 0px;background-color:#f6f9fb;padding-left:5px;}
 .input174b{height:19px;width:174px;border:1px solid #ced2d0;margin:3px 0px 0px -3px;background-color:#f6f9fb;padding-left:3px;}
@@ -309,8 +309,8 @@ input.registerbuttontext{background:transparent url(../images/new_home/registerb
 input.registerbuttontext1{background:transparent url(../images/registerbtn_bg.jpg) no-repeat right top;border:0;cursor:pointer;text-transform:capitalize;font-weight:normal;color:#202021;font-size:11px;margin:0 0 0 0;padding:3px 4px 3px 3px;width:auto;position:relative;overflow:visible;letter-spacing:1px;}
 input.text .submit{height:20px;float:left;position:relative;}
 .Som{float:left;position:relative;width:100%;}
-.Som h3{float:left;position:relative;margin:3px 0 8px 0;padding:0;font-size:18px;font-weight:normal;color:#8991c8;}
-.Som h4{float:left;position:relative;margin:0px;padding:1px 0 18px 0;font-size:21px;font-weight:normal;color:#8991c8;}
+.Som h3{float:left;position:relative;margin:3px 0 8px 0;padding:0;font-size:18px;font-weight:normal;color:#00b6ea;}
+.Som h4{float:left;position:relative;margin:0px;padding:1px 0 18px 0;font-size:21px;font-weight:normal;color:#00b6ea;}
 .Som ul{float:left;position:relative;width:100%;margin:0;padding:5px 0 0 1px;}
 .Som ul li{float:left;position:relative;width:100%;margin:0;padding:0 0 0 10px;list-style-type:none;display:block;background-image:url(../images/roundbullete.jpg);background-repeat:no-repeat;background-position:left center;}
 .leftmenu #top_borst_menu a:hover{background-color:#005baa;}
@@ -344,7 +344,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .submenuwrapper #vip_menu{border-bottom:1px solid #00e3fb;}
 .submenuwrapper #utbildning_menu{border-bottom:1px solid #A6CC39;}
 .submenuwrapper #bt_markets{border-bottom:1px solid #00e3fb;}
-.default_menu_color{background-color:#8991c8;}
+.default_menu_color{background-color:#00b6ea;}
 
 .submenuwrapper #borst_menu li a:hover{
 	background:#dbe1f2 url(../images/new_home/arrow_blue.png) no-repeat center bottom;background-color:#dbe1f2; background-size: 16px;}
@@ -367,27 +367,27 @@ input.text .submit{height:20px;float:left;position:relative;}
 .show_div{visibility:visible;display:block;}
 #registration_help_section{float:left;position:relative;width:100%;display:none;}
 .blog_rights{display:none;}
-.error_list{font-size:12px;line-height:26px;margin:0px 0px 0px 3px;padding:0pt;list-style-type:none;color:#FF0000;float:left;position:relative;}
+.error_list{font-size:12px;line-height:26px;margin:0px 0px 0px 3px;padding:0pt;list-style-type:none;color:#ff7b69;float:left;position:relative;}
 .error_list_outer{position:relative;}
 .for_labels{float:left;position:relative;margin-top:1px;}
 .errormsg, .greenmsg{font-size:12px;line-height:16px;padding:12px 4px 5px 5px;margin:8px 0 22px;}
 .errormsg{color:#ff0000;border:0px solid #070606;}
 .greenmsg{color:#070606;border:0px solid #070606;}
 .noticemsg{color:#070606;font-weight:bold;}
-.blog_rights_error{margin:0pt 0pt 0pt 10px;padding:0pt;list-style-type:none;color:#FF0000;}
-.for_form_error{float:left;position:relative;color:#FF0000;}
+.blog_rights_error{margin:0pt 0pt 0pt 10px;padding:0pt;list-style-type:none;color:#ff7b69;}
+.for_form_error{float:left;position:relative;color:#ff7b69;}
 .loginwrapper a{color:#8191A8;font-size:0.93em;}
 .topic_title{color:#5a7692;float:left;}
 .highlight_topic_title{color:#FF9933;}
 .vote_panel{float:left;position:relative;background-image:url(../images/votepannel.gif);background-repeat:no-repeat;width:166px;height:200px;z-index:9999;}
 #admin_edit_post a{color:#232222;font-weight:normal;}
 #admin_edit_post .edit_link_class{color:#232222;}
-#borst_forum_reply .error_list{margin:0px;padding:0pt;list-style-type:none;color:#FF0000;}
+#borst_forum_reply .error_list{margin:0px;padding:0pt;list-style-type:none;color:#ff7b69;}
 .skincolor{color:#e99585;}
 #user_list td{font-weight:normal;}
-#forget_password_page a{color:#547184;}
+#forget_password_page a{color:#00b6ea;}
 .friend_request{border:0px solid red;padding:0px 5px 0px 5px;margin-top:2px;background-color:#5a7692;color:#FFFFFF;}
-.search_error{float:left;position:relative;height:18px;width:148px;border:1px solid #FF0000 !important;font-size:11px;}
+.search_error{float:left;position:relative;height:18px;width:148px;border:1px solid #ff7b69 !important;font-size:11px;}
 .redcolor{color:#f15822;}
 .blackcolor{color:#232222;}
 .orangetext{color:#FF9900;}
@@ -442,8 +442,8 @@ input.text .submit{height:20px;float:left;position:relative;}
 .menulink ul li span{padding:0 10px 0 10px;}
 .menulink ul li a:hover{color:#bac1ca;}
 .menulink ul li a.selcetdm{color:#bac1ca;}
-.artlineleftdiv{float:left;position:relative;margin-bottom:18px;padding:12px 0px 0px 0px;border-bottom:1px solid #d3d3d3;height:1px;font-size:0;width:465px;}
-.artlinerightdiv{float:left;position:relative;margin-bottom:2px;padding:16px 0px 0px 0px;border-bottom:1px solid #d3d3d3;height:1px;font-size:0;width:465px;}
+.artlineleftdiv{float:left;position:relative;margin-bottom:18px;padding:12px 0px 0px 0px;border-bottom:1px solid #bac9d7;height:1px;font-size:0;width:465px;}
+.artlinerightdiv{float:left;position:relative;margin-bottom:2px;padding:16px 0px 0px 0px;border-bottom:1px solid #bac9d7;height:1px;font-size:0;width:465px;}
 div.login{background:transparent url(../images/registerbtn_bg.jpg) no-repeat scroll left top;height:20px;padding-left:4px;}
 input.loginbuttontext{background:transparent url(../images/registerbtn_bg.jpg) no-repeat right top;border:0;cursor:pointer;display:block;text-transform:capitalize;font-weight:normal;color:#202021;height:20px;font-size:10px;margin:0 0 0 0;line-height:20px;padding:0 4px 3px 0;width:auto;float:left;position:relative;overflow:visible;letter-spacing:1px;}
 input.text .login{height:20px;float:left;position:relative;}
@@ -596,7 +596,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .commenttextarea{float:left;position:relative;width:95%;}
 .voted{float:left;position:relative;width:100%;text-align:center;color:#c50063;font-size:22px;padding:20px 0 20px 0;width:560px;}
 .stariconblog{padding:8px 0 0 0;float:left;position:relative;}
-.innerleftdiv_kronikor{float:left;position:relative;border-right:0px solid #D3D6E1;width:67%;border-right:1px solid #d3d3d3;padding-right:5px;height:auto;padding:15px 0 0 0;}
+.innerleftdiv_kronikor{float:left;position:relative;border-right:0px solid #D3D6E1;width:67%;border-right:1px solid #bac9d7;padding-right:5px;height:auto;padding:15px 0 0 0;}
 .leftinner_kronikor{float:left;position:relative;width:500px;padding:0px 15px 20px 20px;}
 .kronikorinfo h2{float:left;position:relative;font-size:20px;font-weight:normal;width:100%;margin:0;padding:1px 0 18px 0;}
 .forumsubmenuwrapper{float:right;position:relative;height:18px;margin:0;padding:0;width:100%;}
@@ -618,11 +618,11 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .cart .info2{float:left;position:relative;width:100%;line-height:18px;margin-bottom:5px;letter-spacing:0.02px;}
 .cart .info .left{float:left;position:relative;width:62%;}
 .cart .info .right{float:left;position:relative;width:34%;text-align:right;}
-.cart .info input{background-color:#FFFFFF;border:1px solid #bac2ce;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0 3px 0 3px;;}
+.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0 3px 0 3px;;}
 .red_button{float:left;}
 .red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
-.grey_button{background-color:#cad3d4;cursor:pointer;height:16px;width:92px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em;margin-left:190px; border-radius: 2px;}
+.grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:96px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4px 2px 6px;letter-spacing:0.09em;margin-left:188px; border-radius: 2px;}
 .red_text{color:#dc231a;font-weight:normal;}
 .red_text2{color:#FF3333;font-weight:bold;}
 .blue_title_best{font-size:14px;color:#232222;font-weight:bold;}
@@ -692,15 +692,15 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 #pdf_send_report{float:left;position:relative;width:100%;color:#009966;padding:5px 0 5px 0px;}
 .new_forum_topic_outer{float:left;height:16px;margin:12px 0 0;position:relative;width:305px;color:#a3afb8;font-size:12px;font-weight:bold;padding:12px 0 0 10px;letter-spacing:0.02px;}
 .new_fprum_topic_text{color:#a3afb8;letter-spacing:0.02px;}
-#btforum_category_error{float:left;position:relative;color:#FF0000;margin-left:10px;}
+#btforum_category_error{float:left;position:relative;color:#ff7b69;margin-left:10px;}
 #btforum_subcategory_div{float:left;position:relative;width:100%;margin-bottom:5px;display:none;z-index: 99999;}
 #btforum_category_div{float:left;position:relative;width:100%;margin-bottom:5px;}
 #btforum_title_div{float:left;position:relative;width:100%;margin-bottom:15px;}
-#btforum_subject_error{float:left;position:relative;color:#FF0000;margin-left:10px;}
-#btforum_desc_error{float:left;position:relative;color:#FF0000;margin-left:10px;}
+#btforum_subject_error{float:left;position:relative;color:#ff7b69;margin-left:10px;}
+#btforum_desc_error{float:left;position:relative;color:#ff7b69;margin-left:10px;}
 .upload_forum_img_outer{float:left;position:relative;margin-top:6px;width:100%;}
 .cursor_underline{cursor:pointer;text-decoration:underline;font-weight:normal;}
-#forum_detail_img_upload_msg{float:left;position:relative;color:#FF0000;margin-left:10px;}
+#forum_detail_img_upload_msg{float:left;position:relative;color:#ff7b69;margin-left:10px;}
 .testimonial .save_forum_topic_btn{margin-top:10px;margin-right:10px;}
 .testimonial .preview_forum_topic_btn{margin-top:10px;}
 .forum_btn_set{width:425px;font-size:12px;}
@@ -745,7 +745,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .addArticle .article_content .detail_section{color:#232222;float:left;font-size:12px;padding-left:12px;padding-top:5px;position:relative;}
 .addArticle .article_content .img_upload_outer{float:left;position:relative;width:500px;padding-bottom:12px;padding-left:28px;}
 .addArticle .article_content .img_upload_outer span{float:left;position:relative;width:100%;text-align:left;}
-.addArticle .article_content .img_upload_outer a{float:left;position:relative;color:#8991c8;text-decoration:none;}
+.addArticle .article_content .img_upload_outer a{float:left;position:relative;color:#00b6ea;text-decoration:none;}
 .addArticle .article_content .img_upload_outer .upload_img_div{float:left;position:relative;color:#232222;width:450px;margin:30px 0px 5px 0px;}
 .addArticle .article_content .img_upload_outer .upload_img_text{float:left;position:relative;text-align:left;color:#232222;width:150px;}
 .addArticle .article_content .img_upload_outer .upload_img_report{float:left;position:relative;text-align:left;color:#FF3300;width:298px;}
@@ -763,7 +763,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .addArticle .article_content .combine_author_note{float:left;position:relative;padding:5px 0 5px 0;width:500px;}
 .addArticle .article_content .combine_author_input_container{float:left;position:relative;width:200px;}
 .addArticle .article_content .combine_author_input{float:left;position:relative;width:100%;margin-bottom:10px;}
-.addArticle .article_content .author_limit_error{float:left;position:relative;width:100%;color:#FF0000;}
+.addArticle .article_content .author_limit_error{float:left;position:relative;width:100%;color:#ff7b69;}
 .addArticle .article_content .list_div{float:left;position:relative;width:250px;margin-left:10px;}
 .addArticle .article_content .article_status{float:left;position:relative;padding-top:25px;}
 .addArticle .article_content .article_status select{float:left;height:30px;position:relative;width:70px;}
@@ -785,13 +785,13 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .blueText a{color:#94B6DC;text-decoration:none;font-size:11px;font-weight:normal;}
 .blueText{text-align:right;font-weight:bold;}
 .heading_red{color:#232222;float:left;font-size:28px;line-height:40px;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
-.heading_blue{color:#8991c8;float:left;font-size:28px;line-height:40px;font-weight:normal;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
+.heading_blue{color:#00b6ea;float:left;font-size:28px;line-height:40px;font-weight:normal;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
 .heading_yellow{color:#f7c900;float:left;line-height:40px;margin:0;padding:26px 0 2px;position:relative;width:99%;letter-spacing:0.02em;}
 .heading_yellow2{}
 .heading_violet_chart{float:left;padding:20px 0 24px 0;width:99%;}
 .heading_violet_chart_calnder{color:#57afde;float:left;font-size:28px;line-height:40px;margin:0;padding:15px 0 1px;position:relative;width:99%;letter-spacing:0.02em;}
 .inheading{font-size:28px;line-height:40px;float:left;position:relative;margin:0;padding:20px 0 25px 0;color:#232222;font-weight:normal;width:99%;letter-spacing:0.02em;}
-.heading_shop-small{color:#8991c8;float:left;font-size:19px;margin:27px 0px 2px 0px;padding:0px 0px 0px 0px;position:relative;width:99%;display:inline;}
+.heading_shop-small{color:#00b6ea;float:left;font-size:19px;margin:27px 0px 2px 0px;padding:0px 0px 0px 0px;position:relative;width:99%;display:inline;}
 .minprofile_heading{width:50%;height:40px;float:left;display:block;}
 .editprofile_links{width:48%;height:10px;float:right;display:block;margin-top:29px;}
 .hide_blog_div{margin-left:10px;}
@@ -822,7 +822,7 @@ div.registerbutton input.registerbuttontext{padding:3px 3px 3px 0;}
 .chart_heading{padding-top:36px;width:100%;text-align:left;margin-left:21px;}
 .file_content{width:97%;float:left;margin-top:10PX;padding:5px;border:dashed 1px green;}
 .similar_articles{width:100%;float:left;}
-.similar_list_title{font-weight:bold;font-size:12px;color:#8991c8;margin-top:10px;}
+.similar_list_title{font-weight:bold;font-size:12px;color:#00b6ea;margin-top:10px;}
 .two_charts_in_row{float:left;width:640px;}
 .one_chart{width:320px;float:left;}
 #btchart td ul li a{clear:left;color:#4B697D;display:block;float:left;list-style-type:none;}
@@ -837,7 +837,7 @@ div.registerbutton input.registerbuttontext{padding:3px 3px 3px 0;}
 .text_block .image_text{float:left;position:relative;width:80px;margin-left:6px;margin-top:11px;color:#7e99bc;font-size:10px;line-height:12px;}
 .text_block .strong_pink{color:#d04373;font-weight:bold;}
 .text_block .text-inside{float:left;padding-left:12px;position:relative;width:162px;margin-top:16px;}
-#blog_topic_list .dark_blue a{color:#8991c8;padding-top:4px;padding-bottom:4px;padding-right:10px;padding-left:5px;float:left;}
+#blog_topic_list .dark_blue a{color:#00b6ea;padding-top:4px;padding-bottom:4px;padding-right:10px;padding-left:5px;float:left;}
 #blog_topic_list .light_blue{color:#77bee5;padding-top:7px;padding-bottom:4px;}
 #blog_topic_list .pink a{color:#d04373;padding-top:4px;padding-bottom:4px;padding-right:10px;}
 #blog_topic_list .dark_green{color:#348446;padding-top:7px;padding-bottom:4px;}
@@ -1269,7 +1269,7 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 #account_links{border:0px solid red;float:left;padding:0px 30px 8px 0px;position:relative;width:560px;}
 .change_photo_outer{font-weight:normal;margin-bottom:10px;}
 .profile_subpage_title{color:#c50063;border-bottom:1px solid #ced2d0;}
-.profile_visibility_reply_msg{color:#FF0000;padding:3px 0px 0px 5px;}
+.profile_visibility_reply_msg{color:#ff7b69;padding:3px 0px 0px 5px;}
 .art_list_dark_green{color:#197D7D;}
 .art_list_blue{color:#489AE7;}
 .art_list_pink{color:#e99585;}
@@ -1283,7 +1283,7 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 .no_result_found{
 		font-family: "Franklin Gothic Book Regular";
 		text-align:left;
-		color:#FF0000;
+		color:#ff7b69;
 		letter-spacing:-0.01em;
 		float:none;width:647px;
 		border-bottom:solid 1px #f15822;
@@ -1302,13 +1302,13 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 .font_arial{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;}
 }
 .upload_forum_cmnt_img_text{text-decoration:none;}
-#forum_comment_img_upload_msg{color:#FF0000;float:left;margin-left:10px;position:relative;}
+#forum_comment_img_upload_msg{color:#ff7b69;float:left;margin-left:10px;position:relative;}
 .save_btn{background-color:white;background-image:url("../images/save.png");background-position:center top;background-repeat:no-repeat;border:0 none;float:left;padding-top:34px;position:relative;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;cursor:pointer;}
 .added_to_favorite{color:#547184;width:132px;text-align:center;float:left;background:url('/images/add_to_favourate.png') top no-repeat;background-position:top left;height:22px;padding-top:4px;margin-top:-5px;margin-right:50px;font-family:verdana;font-size:11px;letter-spacing:-0.08em;}
 .profile_bloglist_row{cursor:pointer;float:left;position:relative;}
 .comment_img_cnt{margin:2px 0 0 5px;display:none}
 .sbt_violet_font{color:#c50063;}
-.sbt_article_vote_error{color:#FF0000;}
+.sbt_article_vote_error{color:#ff7b69;}
 .sbt_vote_text{color:#547184;}
 .sbt_rating_star{margin:0 3px 0 8px;}
 .sbt_comment_cnt{color:#693256;}
@@ -1460,7 +1460,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .btshop_rub7{float:left;position:absolute;line-height:0px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15822;margin:20px 0px -15px 0px;text-transform:normal;}
 .btshop_rub8{float:left;position:relative;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:0px 0px 0px 0px;}
 .btshop_rub9{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:12px 0px 2px 0px;}
-.btshop_rub10{font-family:'Franklin Gothic Book Regular';float:left;position:relative;width:100%;font-size:1.5em;line-height:1.4px;letter-spacing:-0.02em;color:#f15822;padding-top:30px;margin-bottom:19px;text-transform:normal;}
+.btshop_rub10{font-family:'Franklin Gothic Book Regular';float:left;position:relative;width:100%;font-size:1.4em;line-height:1.4px; color:#abb9c8;padding-top:30px;margin-bottom:22px;text-transform:normal;}
 .btshop_rub10b_bread{float:left;position:absolute;line-height:20px;font-size:15px;font-weight:normal;color:#f15822;margin:-26px 0px 38px 0px;text-transform:normal;}
 .btshop_rub10c_bread{float:left;position:absolute;line-height:20px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15822;margin:-6px 0px -25px 0px;text-transform:normal;}
 .btshop_nr{float:left;position:relative;font-size:22px;font-weight:bold;color:#1d2508;margin:-9px 0px 0px 0px;}
@@ -1578,9 +1578,9 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .shop_error{color:#f15822;}
 .shop_success{color:#a6cc39;}
 .shop_input_header{color:#232222;font-size:1.1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.01em;}
-.shop_cart_topay{color:#f15822;font-size:1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.02em;}
+.shop_cart_topay{color:#f15822;font-size:1em;font-family:"Franklin Gothic Book Regular";letter-spacing:-0.01em;}
 .shop_cart_code{height:20px;color:#a6cc39;font-size:1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.02em;}
-.shop_change_order span{background-color:#fff;color:#f15822;cursor:pointer;font-family:"Franklin Gothic Medium";font-size:1em;line-height:42px;height:16px;letter-spacing:-0.02em;padding:2px 0px;width:40px;}
+.shop_change_order span{background-color:#fff;color:#f15822;cursor:pointer;font-family:"Franklin Gothic Book Regular";font-size:1em;line-height:42px;height:16px;letter-spacing:-0.01em;padding:2px 0px;width:40px;}
 .shop_cart_total{color:#f15822;font-size:1em;letter-spacing:-0.01em;font-family:"Franklin Gothic Medium";}
 .height_35{height:35px;}
 .shop_code{font-family:"Franklin Gothic Medium";color:#a6cc39;font-size:1em;margin-right:8px;background-color:#ffffff;border:1px solid #a6cc39;margin-right:8px;padding:5px 0;text-align:center;}
@@ -1589,9 +1589,9 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .shop_cart_common{padding:5.5px 0 0;color:#232222;font-family:"Franklin Gothic Book Italic";font-size:1em;letter-spacing:-0.02em;}
 .breadcrumb_div{width:636px;float:left;}
 .qtyWraper_span{margin-right:6px;}
-.qtyWraper_input{width:32px;height:16px;border:1px solid #bac2ce;text-align:center;color:#232222;font-size:1em;font-family:"Franklin Gothic Book Regular";}
-.shop_cart_data_div{border-top:1px solid #ddd8d5;padding:5px 0 8px 0;width:565px;}
-.shop_cart_data_div_border{border-bottom:1px solid #ddd8d5;}
+.qtyWraper_input{width:32px;height:16px;border:1px solid #ced9e2;text-align:center;color:#232222;font-size:1em;font-family:"Franklin Gothic Book Regular";}
+.shop_cart_data_div{border-top:1px solid #d4d8e1;padding:5px 0 8px 0;width:565px;}
+.shop_cart_data_div_border{border-bottom:1px solid #d4d8e1;}
 .shop_cart_topay_div{width:558px;}
 .user_email_li{width:451px;}
 .user_email_span{margin-left:2px;}

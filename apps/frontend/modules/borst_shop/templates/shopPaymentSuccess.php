@@ -207,7 +207,7 @@ $(window).load(function(){
 		<input type="hidden" name="total_price" id="total_price" value="<?php echo $total_wth_shipping; ?>" />
 		<input type="hidden" name="shipping" id="shipping" value="<?php echo number_format($shipping,2); ?>" />
 		<input type="hidden" name="vat" id="vat" value="<?php echo $vat; ?>" />
-		<div class="blank_20h widthall">&nbsp;</div>
+		<!--<div class="blank_5h widthall">&nbsp;</div>-->
 		<div class="form_heading">E-postadress</div>
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->

@@ -53,9 +53,11 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
 
-                Börstjänaren har två olika kostnadsfria marknadbrev: <br />Dagsbrevet – rekommenderas för den inbitne Börstjänaren. <br />Veckobrevet – ett måste för alla börsintresserade. <br /><br />Registrering respektive avregistrering för dessa sker på två olika registreringssidor.  <br />
-                <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstDayletter">Här kan du läsa mer om DAGSBREVET</a> och adminsistrera din gratisprenumeration! <br />
-                <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter">Här kan du läsa mer om VECKOBREVET</a> och adminsistrera din gratisprenumeration!<br />
+                Börstjänaren har två olika kostnadsfria marknadbrev: <br /><b>Dagsbrevet</b> – rekommenderas för den inbitne Börstjänaren. <br /><b>Veckobrevet</b> – ett måste för alla börsintresserade. <br /><br />
+                Registrering respektive avregistrering för dessa sker på två olika registreringssidor:  <br />
+                <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstDayletter">Här kan du läsa mer om dagsbrevet</a> och adminsistrera din gratisprenumeration! <br />
+                <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter">Här kan du läsa mer om veckobrevet</a> och adminsistrera din gratisprenumeration!<br />
+                <br />
 
 
                 <!--<div class="whp-border">&nbsp;</div>!-->
@@ -66,12 +68,12 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                 V&auml;lkommen ocks&aring; att registrera dig till BT Insider, B&ouml;rstj&auml;narens n&auml;tverk f&ouml;r dig som vill blogga och skriva egna artiklar eller kommentarer! <br />
                 <br />
-                Medlemskap i  BT Insider &auml;r kostnadsfritt men kr&auml;ver en n&aring;got utf&ouml;rligare registrering, d&auml;r du &auml;ven beh&ouml;ver aktivera ditt konto via epost. <br />
+                <b/>Medlemskap i  BT Insider &auml;r</b> kostnadsfritt men kr&auml;ver en n&aring;got utf&ouml;rligare registrering, d&auml;r du &auml;ven beh&ouml;ver aktivera ditt konto via epost. <br />
                 <br />
-                F&ouml;r att registrera dig för BT Insider, klicka p&aring; texten &quot;Vill du kunna blogga och publicera artiklar?&quot; i 
-                <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt_user/sbtNewRegistration">registeringsformul&auml;ret.</a><br />
+                <b/>F&ouml;r att registrera dig</b> för BT Insider, klicka p&aring; texten &quot;Vill du kunna blogga och publicera artiklar?&quot; i 
+        <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt_user/sbtNewRegistration">registeringsformul&auml;ret.</a><br />
                 <br />
-                Om du redan &auml;r registrerad B&ouml;rstj&auml;nare kan du ut&ouml;ka ditt medlemskap till  BT Insider genom att g&aring; till <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile/take_to_profile/1"> Mitt konto</a> och v&auml;lja &quot;Editera profil&quot;.<br/>
+                <b>Om du redan &auml;r registrerad</b> B&ouml;rstj&auml;nare kan du ut&ouml;ka ditt medlemskap till  BT Insider genom att g&aring; till <a class="main_link_color" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile/take_to_profile/1"> Mitt konto</a> och v&auml;lja &quot;Editera profil&quot;.<br/>
 
                 <!--<div class="whp-border">&nbsp;</div>!-->
 
@@ -115,21 +117,21 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
                 <div class="whp_heading"><?php echo __('BT-shop hjälp') ?></div>
-                BT-shop är Börstjänarens e-handelsbutik. Där kan du köpa våra olika     abonnemang och utbildningar, såväl som böcker och   dataprogram   mm. Du betalar med kort eller mot faktura. <br/>
+                <b>BT-shop</b> är Börstjänarens e-handelsbutik. Där kan du köpa våra olika     abonnemang och utbildningar, såväl som böcker och   dataprogram   mm. Du betalar med kort eller mot faktura. <br/>
 
                 <!--<div class="whp-border">&nbsp;</div>!-->
 
 
 
                 <div class="whp_heading"><?php echo __('BT Charts hjälp') ?></div>
-                BT Charts är Börstjänrens unika service där du kostnadsfritt får dagliga grafer på finansvärldens  mest intressanta marknader. <br />
+                <b>BT Charts</b> är Börstjänarens unika service där du kostnadsfritt får dagliga grafer på finansvärldens  mest intressanta marknader. <br />
                 <br />
-                Dessutom kan du köpa tilläggstjänster med färdiga strategier, utförligt kommenterade, som låter dig på egen hand skanna marknaderna efter köpvärda aktier, valutor och råvaror.<br/>
+                <b>Dessutom kan du</b> köpa tilläggstjänster med färdiga strategier, utförligt kommenterade, som låter dig på egen hand skanna marknaderna efter köpvärda aktier, valutor och råvaror.<br/>
                 <br />
 
-                Som oregistrerad användare har du kostnadsfri tillgång till BT Chartsidans dagsgraf på var och en av de cirka 300 marknader vi följer. <br />
+                <b>Som oregistrerad användare</b> har du kostnadsfri tillgång till BT Chartsidans dagsgraf på var och en av de cirka 300 marknader vi följer. <br />
                 <br />
-                Som registrerad kan du även ta del av veckograferna, och som BT Insider får du också tillgång till långtidsgrafen. De övriga fem graferna är strategiska betaltjänster med expertkommentarer.
+                <b>Som registrerad kan du</b> även ta del av veckograferna, och som BT Insider får du också tillgång till långtidsgrafen. De övriga fem graferna är strategiska betaltjänster med expertkommentarer.
             </div>
             <?php echo include_partial('global/inner_bottom_footer'); ?>
         </div>

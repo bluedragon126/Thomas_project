@@ -38,7 +38,7 @@
     <?php if ($product_detail): ?>
                         <div class="float_left"><input type="hidden" name="product_id" id="product_id" value="<?php echo $product_detail->article_id; ?>"/></div>
                         <div><div class="shop_detail_title margin-bottom-27"><?php echo ' ' . $product_detail->title ?></div></div>                                
-                            <div class="ingress shop_detail_preamble"><div><?php echo html_entity_decode($product_detail->image_text); ?>&nbsp;<span class="disp_inline"><a class="main_link_color cursor shop_detail_rm" id="reg_read_more">Läs mer</a>&nbsp;<img width="18"class="icontop3" id="reg_help_plus" alt="addplus" src="/images/new_home/addplusicon_shop.png"></span></div></div>
+                            <div class="ingress shop_detail_preamble"><div><?php echo html_entity_decode($product_detail->image_text); ?>&nbsp;<span class="disp_inline"><a class="main_link_color cursor shop_detail_rm" id="reg_read_more">Läs mer</a>&nbsp;<img width="16"class="icontop3" id="reg_help_plus" alt="addplus" src="/images/new_home/addplusicon_shop.png"></span></div></div>
                             <div class="spacer"></div>
                             <div id="registration_help_section" class="blog_rights">
                                 <div class="float_left width_554 talign_left ptop_10">

@@ -50,7 +50,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                    
                   
 
-                <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:8px 0 15px" width="300" border="0" alt="imag" /></a>
+                <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:38px 0 10px" width="300" border="0" alt="imag" /></a>
                 
               <div class="float_left widthall">
                     
@@ -123,7 +123,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         
                          <br>
                          
-                      <p>  <a href="/borst/borstDayletter"><img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin: 2px 0px -6px -6px" /></a>
+                      <p>  <a href="/borst/borstDayletter"><img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin: 8px 0px -6px -6px" /></a>
                         
                      
                         

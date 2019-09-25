@@ -142,8 +142,8 @@ root {
 .wrapper_main {
     margin: 0 auto;
     width: 1010px;
-    border-left: 1px solid #d3d3d3;
-    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #bac9d7;
+    border-right: 1px solid #bac9d7;
 }
 
 .wrapper {
@@ -166,7 +166,7 @@ root {
     margin: 0px 0px 0px auto;
     width: 970px;
     height: 29px;
-    background: #ebebec;
+    background: #d9e2e9;
     font-family: "Franklin Gothic Book Regular";
     font-size: 0.93em;
 }
@@ -370,8 +370,8 @@ root {
 .bt_home_plate_head {
     width: 37%;
     float: left;
-    border-left: 1px solid #d3d3d3;
-    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #bac9d7;
+    border-right: 1px solid #bac9d7;
     padding-top: 0px;
 }
 
@@ -617,7 +617,7 @@ root {
 
 .home_cat {
     font-family: 'Franklin Gothic Book Regular';
-    color: #8d9ba8;
+    color: #9baab7;
     font-size: 0.7em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -692,7 +692,7 @@ root {
 }
 
 .home_body_l_1_blue a {
-    color: #0f86c3;
+    color: #00b6ea;
     font-family: 'Franklin Gothic Medium';
     font-size: 1.2em;
     line-height: 1.3em;
@@ -749,8 +749,8 @@ root {
     float: left;
     /*width: 19%;*/
     width: 183px;
-    border-left: 1px solid #d3d3d3;
-    border-right: 1px solid #d3d3d3;
+    border-left: 1px solid #bac9d7;
+    border-right: 1px solid #bac9d7;
     /*margin-top: 20px;*/
 }
 
@@ -791,7 +791,7 @@ home_heading_c {
 }
 
 .home_headtwtr_m {
-    background-color: #0f86c3;
+    background-color: #00b6ea;
     color: #ffffff;
     float: left;
     font-family: "Franklin Gothic Medium";
@@ -805,7 +805,7 @@ home_heading_c {
 }
 
 .home_head9_m {
-    background-color: #0f86c3;
+    background-color: #00b6ea;
     color: #ffffff;
     float: left;
     font-family: "Franklin Gothic Medium";
@@ -821,7 +821,7 @@ home_heading_c {
 .twtr_wid_img {
     height: 18px;
     vertical-align: text-top;
-    margin-left: 2px;
+    margin: 0px 0px 2px 5px;
 }
 
 .home_topart {
@@ -1311,7 +1311,7 @@ home_heading_c {
 .inner-page-contetn-left {
     float: left;
     width: 660px;
-    border-right: 1px solid #d3d3d3;
+    border-right: 1px solid #bac9d7;
     margin-bottom: -10px;
 }
 
@@ -1427,13 +1427,13 @@ a.article_dots_r {
 .list_topic_2 {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #8991c8;
+    color: #00b6ea;
 }
 
 .list_preamble {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #8991c8;
+    color: #00b6ea;
 }
 
 #borst_rec_row .pright_10 {
@@ -1465,40 +1465,31 @@ a.article_dots_r {
 }
 
 .whp_preamble {
-    font-family: 'Franklin Gothic Book Regular';
+    font-family: 'Georgia';
     float: left;
-    font-size: 1.4em;
-    color: #232222;
-    line-height: 1.3em;
+    font-size: 1.5em;
+	letter-spacing: 0.01em;
+    color: #abb9c8;
+    line-height: 1.5em;
     margin-bottom: 10px;
-    letter-spacing: -0.01em;
 }
 
 .whp_heading {
     color: #f15822;
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.5em;
-    line-height: 1.25em;
-    margin: 44px 0px 8px;
+    line-height: 1em;
+    margin: 46px 0px 10px;
     width: 100%;
 }
 
 .whp_heading_2 {
-    color: #f15822;
+    color: #232222;
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.5em;
     line-height: 1.25em;
     margin: 22px 0px 5px;
     letter-spacing: -0.02em;
-    width: 100%;
-}
-
-.whp_heading_chron {
-    color: #f15822;
-    font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
-    line-height: 1em;
-    margin: 46px 0px 15px;
     width: 100%;
 }
 
@@ -1524,10 +1515,12 @@ a.article_dots_r {
 }
 
 .whp_subheading {
-    font-family: 'Franklin Gothic Book Regular';
+    font-family: 'CheltenhamITCW01-Bold';
     font-size: 1.15em;
-    color: #f15822;
-    margin: 15px 0px 5px;
+	line-height: 1.4em;
+    letter-spacing: 0.02em;
+    color: #232222;
+    margin: 12px 0px 5px;
 }
 
 .whp_subheading2 {
@@ -1535,21 +1528,6 @@ a.article_dots_r {
     font-size: 1.15em;
     color: #232222;
     margin: 15px 0px 5px;
-}
-
-.whp_subheading_chron {
-    font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.15em;
-    letter-spacing: 0.02em;
-    color: #232222;
-    margin: 12px 0px 5px;
-}
-
-.whp_subheading_au {
-    font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.3em;
-    letter-spacing: 0.01em;
-    margin: 12px 0px 10px;
 }
 
 .whp_border {
@@ -1799,8 +1777,12 @@ input.rounded {
     padding-top: 8px;
 }
 
-.mrg_toop_3 {
+.mrg_top_3 {
     margin-top: 3px;
+}
+
+.mrg_top_cart {
+    margin-top: 43px;
 }
 
 .mrg_lft_60 {
@@ -1966,43 +1948,39 @@ input.rounded {
 
 .art_subheading {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 1em;
-    letter-spacing: -0.01em;
-    color: #f15822;
+    color: #232222;
     margin-left: 23.5px;
 }
 
 .art_subheading2 {
-    color: #f15822;
+    color: #232222;
     float: left;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 1.25em;
     margin: 32px 0px 10px;
-    letter-spacing: -0.02em;
     width: 100%
 }
 
 .art_subheading2b {
-    color: #f15822;
+    color: #232222;
     float: left;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 1.25em;
     margin: 6px 0px 10px;
-    letter-spacing: -0.02em;
     width: 100%
 }
 
 .art_subheading3 {
-    color: #f15822;
+    color: #232222;
     float: left;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.25em;
-    margin: 20px 0px 8px;
-    letter-spacing: -0.02em;
+    margin: 20px 0px 4px;
     width: 100%
 }
 
@@ -2022,7 +2000,7 @@ input.rounded {
     font-size: 0.8em;
     line-height: 2em;
     letter-spacing: 0.01em;
-    color: #8991c8;
+    color: #00b6ea;
     overflow-wrap: normal;
 }
 
@@ -2047,7 +2025,7 @@ input.rounded {
     font-size: 1em;
     letter-spacing: -0.02em;
     float: left;
-    margin-top: 32px;
+    margin-top: 22px;
     width: 100%;
 }
 
@@ -2096,7 +2074,7 @@ input.rounded {
 }
 
 .shop_line_prod {
-    border: 3px solid #d3d3d3;
+    border: 3px solid #bac9d7;
     /*margin-bottom: 12px;*/
     border-radius: 10px;
     min-height: 294px;
@@ -2223,24 +2201,25 @@ input.rounded {
 
 .shop_detail_title {
     font-family: 'FranklinGothicCondensed';
-    color: #febc11;
-    font-size: 2.3em;
-    line-height: 20px;
+    color: #232222;
+    font-size: 1.6em;
+    line-height: 15px;
+	letter-spacing: 0.01em;
     margin-top: 48px;
 }
 
 .shop_detail_subtitle {
-    font-family: 'CheltenhamITCW01-Bold';
+    font-family: 'ITC Cheltenham Book';
     color: #413e3d;
-    font-size: 1.7em;
+    font-size: 2em;
     line-height: 1.28em;
     margin-bottom: 15px;
 }
 
 .shop_detail_subtitle2 {
-    font-family: 'Franklin Gothic Book Regular';
+    font-family: 'Franklin Gothic Book Italic';
     color: #413e3d;
-    font-size: 1.8em;
+    font-size: 1.7em;
     line-height: 1.2em;
     margin-bottom: 20px;
 }
@@ -2371,7 +2350,7 @@ input.rounded {
 
 .shop_detail_preamble {
     font-family: 'Georgia';
-    color: #9bb4bd;
+    color: #abb9c8;
     font-size: 1.28em;
     letter-spacing: 0.02em;
     line-height: 1.6em;
@@ -2395,13 +2374,13 @@ input.rounded {
 
 .shop_detail_rm {
     font-family: 'Franklin Gothic Book Regular';
-    color: #febc11;
+    color: #00b6ea;
     font-size: 1em;
     /*margin-left: 6px;*/
 }
 
 .shop_detail_line {
-    border-top: 1px solid #d3d3d3;
+    border-top: 1px solid #bac9d7;
     width: 100%;
     float: left;
 }
@@ -2421,7 +2400,7 @@ input.rounded {
 
 .shop_detail_pricetext {
     font-family: 'Georgia Italic';
-    color: #9bb4bd;
+    color: #abb9c8;
     font-size: 1em;
     letter-spacing: 0.01em;
     margin-top: 0px;
@@ -2433,10 +2412,11 @@ input.rounded {
 }
 
 .shop_r_cart_title {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Book Regular';
     color: #232222;
     font-size: 1.em;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.05em;
+	text-transform:uppercase;
     margin-top: 0px;
     padding-top: 14px;
 }
@@ -2451,7 +2431,7 @@ input.rounded {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
     font-size: 1em;
-    margin: -15px 2px -4px 0px;
+    margin: -35px 2px -4px 0px;
     line-height: 0.8em;
 }
 
@@ -2459,8 +2439,8 @@ input.rounded {
     background-color: #febc11;
     border-bottom-right-radius: 15px;
     height: 32px;
-    width: 294px;
-    margin: 12px 0 -6px;
+    width: 194px;
+    margin: 12px 0 -9px;
 }
 
 .shop_r_cart_cat {
@@ -2488,7 +2468,7 @@ input.rounded {
 .shop_r_cart_price_bg {
     width: 294px;
     height: 32px;
-    background-color: #f2f1ef;
+    background-color: #ebeff3;
 }
 
 
@@ -2509,7 +2489,7 @@ input.rounded {
 .shop_r_cart_price_bg_gray {
     width: 294px;
     height: 32px;
-    background-color: #dbe1e1;
+    background-color: #ced9e2;
     float: left;
 }
 
@@ -2524,9 +2504,9 @@ input.rounded {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
     font-size: 1.06em;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     line-height: 1.6em;
-    margin-top: 30px;
+    margin-top: 22px;
     text-transform: uppercase;
 }
 
@@ -2545,15 +2525,15 @@ input.rounded {
 }
 
 .shop_r_side_prod {
-    color: #a5bbc6;
-    line-height: 1.28em;
+    color: #abb9c8;
+    line-height: 1.2em;
 }
 
 .shop_r_side_prod a {
     font-family: 'Franklin Gothic Book Regular';
-    color: #a5bbc6;
+    color: #abb9c8;
     font-size: 0.93em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     line-height: 1.5em;
 }
 
@@ -2572,15 +2552,14 @@ input.rounded {
 
 .shop_r_cart_text {
     font-family: 'Franklin Gothic Book Regular';
-    color: #767e88;
+    color: #768897;
     font-size: 1em;
 }
 
 .shop_r_cart_pay {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Book Regular';
     color: #232222;
     font-size: 1em;
-    letter-spacing: -0.01em;
 }
 
 .shop_r_cart_total {
@@ -2591,7 +2570,7 @@ input.rounded {
 
 .shop_r_cart_quant {
     font-family: 'Franklin Gothic Medium';
-    color: #767e88;
+    color: #768897;
     font-size: 1em;
 }
 
@@ -2668,7 +2647,7 @@ input.rounded {
 .scLiatWraper1 {
     height: 80px;
     width: 100%;
-    background-color: #f2f1ef;
+    background-color: #ebeff3;
     margin-bottom: 6px;
     float: left;
     color: #232222;
@@ -3022,7 +3001,7 @@ blank_4h {
 
 .shop_r_other_border {
     float: left;
-    border-bottom: 4px solid #9bb4bd;
+    border-bottom: 4px solid #abb9c8;
     width: 100%;
     margin: 15px 0px 10px 0px;
 }
@@ -3061,7 +3040,7 @@ ul.cartStep2 li {
     position: relative;
     width: 380px;
     height: 45px;
-    background-color: #f2f1ef;
+    background-color: #ebeff3;
     border-bottom-right-radius: 65px;
     padding-top: 28px;
 }
@@ -3104,7 +3083,7 @@ ul.cartStep2 li {
 }
 
 .shop_payment_done_link {
-    color: #8991c8;
+    color: #00b6ea;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
 }
@@ -3400,7 +3379,7 @@ ul.cartStep2 li {
 .forum_table_user {
     font-family: "Franklin Gothic Medium";
     font-size: 0.93em;
-    color: #8991c8;
+    color: #00b6ea;
     line-height: 1.2em;
     font-style: italic;
 }
@@ -3486,12 +3465,13 @@ ul.cartStep2 li {
 }
 
 .forum_pag .selected {
-    color: #f7941d;
+    color: #f15822;
+	margin: 0 2px 0 1px;
 }
 
 .forum_pag a {
     word-spacing: 2px;
-    color: #8991c8 !important;
+    color: #abb9c8 !important;
 }
 
 .forum_pagination_prev_img {
@@ -3659,11 +3639,11 @@ ul.cartStep2 li {
     font-size: 12px;
     position: absolute;
     z-index: 999;
-    background-color: #dfe5e8;
+    background-color: #abb9c8;
     border-radius: 4px;
     text-align: center;
     box-shadow: 7px 5px 7px -4px #8d8d8d;
-    color: #232222;
+    color: #000;
     display: none;
     text-transform: uppercase;
     list-style-type: none !important;
@@ -4274,7 +4254,7 @@ ul.cartStep2 li {
 }
 
 .home_artline1_m_div {
-    background-color: #a5b5c9;
+    background-color: #bac9d7;
     width: 100%;
     height: 5px;
     float: left;
@@ -4315,7 +4295,7 @@ ul.cartStep2 li {
 }
 
 .home_adline_r_div {
-    background-color: #d3d3d3;
+    background-color: #bac9d7;
     /*width: 96%;*/
     width: 300px;
     height: 1px;
@@ -4342,7 +4322,7 @@ ul.cartStep2 li {
     min-height: 1180px;
     width: 658px;
     padding: 0px;
-    border-right: 1px solid #d3d3d3;
+    border-right: 1px solid #bac9d7;
 }
 
 .article_payment_shoplist {
@@ -4616,7 +4596,7 @@ ul.cartStep2 li {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
     line-height: 1.28em;
-    color: #8991c8;
+    color: #00b6ea;
     float: left;
     position: relative;
 }
@@ -4688,7 +4668,7 @@ ul.cartStep2 li {
     float: left;
     /*width: 27.5%;*/
     width: 183px;
-    border-left: 1px solid #d3d3d3;
+    border-left: 1px solid #bac9d7;
     margin-top: 20px;
 }
 
@@ -4738,7 +4718,7 @@ ul.cartStep2 li {
 }
 
 .home_artline_blog {
-    background-color: #d3d3d3;
+    background-color: #bac9d7;
     float: left;
     height: 1px;
     margin-bottom: 10px;
@@ -4793,7 +4773,7 @@ ul.cartStep2 li {
 .blog_table_user {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #8991c8;
+    color: #00b6ea;
     line-height: 1em;
 }
 
@@ -5065,7 +5045,7 @@ ul.cartStep2 li {
 .blog_vote {
     font-family: 'Georgia Bold';
     font-size: 1em;
-    color: #8991c8;
+    color: #00b6ea;
 }
 
 .blog_comment_slash {
@@ -5105,7 +5085,7 @@ ul.cartStep2 li {
 #comment_on {
     letter-spacing: 0.06em;
     word-spacing: -0.05em;
-    color: #8991c8;
+    color: #00b6ea;
 }
 
 #vote_div {
@@ -5229,8 +5209,8 @@ ul.cartStep2 li {
 }
 
 .form_input {
-    background-color: #f7f5f5;
-    border: 1px solid #f7f5f5;
+    background-color: #ebeff3;
+    border: 1px solid #ebeff3;
     color: #232222;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
@@ -5240,8 +5220,8 @@ ul.cartStep2 li {
 }
 
 .form_select {
-    background-color: #f7f5f5;
-    border: 1px solid #f7f5f5;
+    background-color: #ebeff3;
+    border: 1px solid #ebeff3;
     color: #e9e8e6;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
@@ -5775,11 +5755,12 @@ ul.cartStep2 li {
 }
 
 .redColor {
-    color: red;
+    color: #f15822;
 }
 
 .redBorder {
-    border: 0.5px solid red;
+    border: 0.5px solid; 
+	color: #f15822;
 }
 
 .registrationValidField {
@@ -5886,7 +5867,7 @@ ul.cartStep2 li {
 }
 
 #shop_rightbanner {
-    /*border-left: 1px solid #d3d3d3;*/
+    /*border-left: 1px solid #bac9d7;*/
     padding-top: 0;
 }
 
@@ -6114,7 +6095,7 @@ input.send_contact {
     padding-bottom: 2px;
 }
 
-.mrg_toop_32 {
+.mrg_top_32 {
     margin-top: 32px;
 }
 
@@ -6477,8 +6458,8 @@ input.send_forgetpass {
     height: 100%;
 }
 
-.right_border_payment_type_d3d3d3 {
-    border-right: 1px solid #d3d3d3;
+.right_border_payment_type_bac9d7 {
+    border-right: 1px solid #bac9d7;
 }
 
 .margin_left_0 {
@@ -6560,7 +6541,7 @@ input.send_forgetpass {
 }
 
 .blog_first_detail a {
-    color: #8991c8;
+    color: #00b6ea;
 }
 
 .blog_first_detail_date {
@@ -6607,7 +6588,7 @@ input.send_forgetpass {
     font-family: 'Georgia Italic';
     font-size: 0.93em;
     line-height: 0.93em;
-    color: #8991c8;
+    color: #00b6ea;
     margin-bottom: 5px;
     margin-top: 18px;
 }
@@ -8734,8 +8715,8 @@ input.send_forgetpass {
 
 .cardDetails .jqTransformSelectWrapper {
     background: none !important;
-    background-color: #e9e8e6 !important;
-    border: 0px solid #e9e8e6 !important;
+    background-color: #ebeff3 !important;
+    border: 0px solid #ebeff3 !important;
     border-radius: 5px !important;
     font-size: 1em !important;
     margin-top: 1px;
@@ -8841,7 +8822,7 @@ input.send_forgetpass {
 }
 
 .reg_line {
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d4d8e1;
     width: 68.5%;
     height: 1px;
     float: left;
@@ -8864,7 +8845,7 @@ input.send_forgetpass {
 .captcha_error {
     float: left;
     position: relative;
-    color: #FF0000;
+    color: #ff7b69;
 }
 
 .reg_type_chkbox {
@@ -8880,7 +8861,7 @@ input.send_forgetpass {
     line-height: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 15px 0px 3px;
+    margin: 40px 0px 3px;
     width: 100%;
 }
 
@@ -8991,6 +8972,10 @@ input.send_forgetpass {
     width: 514px;
 }
 
+.reg_width {
+    width: 340px;
+}
+
 .width_370_height_80 {
     height: 80px;
     width: 370px;
@@ -9002,8 +8987,8 @@ input.send_forgetpass {
 
 .user_reg .jqTransformSelectWrapper {
     background: none !important;
-    background-color: #e9e8e6 !important;
-    border: 1px solid #e9e8e6 !important;
+    background-color: #ebeff3 !important;
+    border: 1px solid #ebeff3 !important;
     border-radius: 5px !important;
     color: #658094 !important;
     font-size: 12px !important;
@@ -9092,8 +9077,8 @@ input.send_forgetpass {
     padding-top: 15px;
 }
 
-.color_FF0000 {
-    color: #FF0000;
+.color_ff7b69 {
+    color: #ff7b69;
 }
 
 .padding_top_0 {
@@ -9125,7 +9110,7 @@ input.send_forgetpass {
 }
 
 #getActivated .flag_status_div_1 {
-    color: #FF0000;
+    color: #ff7b69;
     font-size: 12px;
     font-weight: bold;
     padding: 10px 0 10px 0px;
@@ -9369,7 +9354,7 @@ input.send_forgetpass {
 }
 
 #borst_advanced_search #adv_search_error {
-    color: #FF0000;
+    color: #ff7b69;
     padding: 0px 0px 4px 2px;
 }
 
@@ -9488,8 +9473,8 @@ whp_heading
 }
 
 .form_input_textarea {
-    background-color: #f7f5f5;
-    border: 1px solid #f7f5f5;
+    background-color: #ebeff3;
+    border: 1px solid #ebeff3;
     color: #232222;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
@@ -9977,7 +9962,7 @@ whp_heading
 }
 
 #edit_analysis .error_list {
-    color: #FF0000;
+    color: #ff7b69;
     list-style-type: none;
     margin: 0 0 0 10px;
     padding: 0;
@@ -10126,7 +10111,7 @@ whp_heading
 #article_fav_reply,
 #forum_fav_reply,
 #blog_fav_reply {
-    color: #FF0000;
+    color: #ff7b69;
     padding: 4px 5px 0px 0px;
 }
 
@@ -10247,7 +10232,7 @@ whp_heading
 
 #blog_text_error {
     padding: 15px 0 0 30px;
-    color: #FF0000;
+    color: #ff7b69;
     width: 70%;
 }
 
@@ -10779,7 +10764,7 @@ whp_heading
     float: left;
     position: relative;
     width: 100%;
-    color: #FF0000;
+    color: #ff7b69;
 }
 
 .editaddArticle .article_content .list_div {
@@ -11011,7 +10996,7 @@ whp_heading
 }
 
 #swishcell_num {
-    background-color: #f2f1ef;
+    background-color: #ebeff3;
 }
 
 #msg-poll {
@@ -11036,7 +11021,7 @@ whp_heading
 .wizdom-one {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #B5BAC2;
+    color: #abb9c8;
     font-size: 3.6em;
     font-style: italic;
     line-height: 1em;
@@ -11051,7 +11036,7 @@ whp_heading
 .wizdom-two {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #B5BAC2;
+    color: #abb9c8;
     font-size: 2.2em;
     font-style: italic;
     line-height: 1em;
@@ -11067,7 +11052,7 @@ whp_heading
 .wizdom-three {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #B5BAC2;
+    color: #abb9c8;
     font-size: 1.8em;
     font-style: italic;
     line-height: 1em;
@@ -11246,9 +11231,9 @@ whp_heading
     padding-top: 8px;
     padding-bottom: 9px;
     float: left;
-    padding: 8.5px 9px 8px 9px;
+    padding: 8.5px 7px 8px 13px;
     color: #232222;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
 }
 
 .nav-bar ul {
@@ -11282,13 +11267,13 @@ whp_heading
     font-size: 1em;
     font-family: "Franklin Gothic Book Regular";
     color: #232222;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     padding-top: 14.5px;
     padding-bottom: 8px;
 }
 
 .nav-bar ul li a span:hover {
-    color: #b3b2b4;
+    color: #abb9c8;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
@@ -11358,7 +11343,7 @@ whp_heading
 }
 
 .subnav-bar-wrap-right .subnav-bar a:hover {
-    color: #b3b2b4;
+    color: #abb9c8;
 }
 
 .text-uppercase {
