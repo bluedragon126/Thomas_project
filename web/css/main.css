@@ -161,7 +161,7 @@ img{border:0;}
 .headerbanner{float:left;position:relative;width:728px;height:90px;}
 .leftpartheader{float:left;position:relative;border:0px solid red;width:224px;padding:0 0 0 10px;}
 .logowrapper{float:left;position:relative;width:60%;border:0px solid green;margin-top:8px;}
-.logo img{float:left;position:relative;width:144px;height:auto;margin-top:23px;}
+.logo img{float:left;position:relative;width:144px;height:auto;margin:23px 1px 0px 0px;}
 .mainmenuwrapper{width:970px;}
 .leftmenu{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#748b9e;width:970px;}
 .leftmenu li{float:left;}
@@ -289,6 +289,7 @@ font-size:0;}
 .contactdellus{float:left;position:relative;margin:20px 0 0 0;width:100%;}
 .testimonial{float:left;position:relative;padding:10px 0 90px 0;font-size:20px;color:#0e0d0d;}
 .main_link_color{color:#00b6ea;letter-spacing:0.03px;}
+.main_link_col2{color:#232222;letter-spacing:0.03px;}
 #btchart{float:left;position:relative;}
 #btchart td{padding-right:20px;}
 #btchart td ul{float:left;position:relative;margin:0;padding:0;list-style-type:none;}
@@ -622,7 +623,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .red_button{float:left;}
 .red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
-.grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:96px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4px 2px 6px;letter-spacing:0.09em;margin-left:188px; border-radius: 2px;}
+.grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:97px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4px 2px 6px;letter-spacing:0.09em;margin-left:188px; border-radius: 2px;}
 .red_text{color:#dc231a;font-weight:normal;}
 .red_text2{color:#FF3333;font-weight:bold;}
 .blue_title_best{font-size:14px;color:#232222;font-weight:bold;}

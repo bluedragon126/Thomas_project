@@ -55,7 +55,7 @@
 
                     Som <strong>abonnent</strong> kan du ta del av vår portföljförvaltning via e-post och artiklar där affärsförslag presenteras och kommenteras.
 
-                    <div class="whp_heading">Vi som syns på Börstjänaren:</div>
+                    <div class="whp_heading">Vi som syns på Börstjänaren</div>
                     
                                         <p>
                                         
@@ -86,9 +86,9 @@
                     
                     <strong>Läs mer om</strong> Henrik Hallenborg på vår amerikanska hemsida: <a href="http://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
                     
-                    <br><br>
+                    <br>
                     
-<a href="http://www.borstjanaren.se/borst/articleList/obj_id/368"><img src="/images/new_home/sign_II_HH.png" alt="signHH" width="38"/></a>
+<a href="http://www.borstjanaren.se/borst/articleList/obj_id/368"><img src="/images/grafik/HH.png" style="margin:14px 0 2px" alt="signHH" width="38"/></a>
                     
                     <br><br> 
                     
@@ -141,8 +141,8 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
                     
                     <strong>Jag bor utanför</strong> Göteborg, i Sävedalen. Jag är uppvuxen i Hovås och är med i golfklubben. Jag spelar mycket, men mitt handikapp har tyvärr stigit till 19.
                     
-                  <br> <br>  
-                      <a href="http://www.borstjanaren.se/borst/articleList/kat_id/12"><img src="/images/new_home/sign_II_GH.png" alt="signGH" width="38" style="margin-top:5px"/></a>
+                  <br>
+                      <a href="http://www.borstjanaren.se/borst/articleList/kat_id/12"><img src="/images/grafik/GH.png" style="margin:14px 0 2px" alt="signGH" width="38"/></a>
                                         
                               
                  
@@ -167,12 +167,12 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
                     <br><br>
                     
                     <strong>Läs mer om</strong> Thomas Sandström på vår amerikanska hemsida: <a href="http://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
-                    <br><br>
-                    
-                    
-                          <a href="http://www.borstjanaren.se/borst/articleList/obj_id/374"><img src="/images/new_home/sign_II_TS.png" alt="signTS" width="38" style="margin-top:5px"/></a>
-                    
                     <br>
+                    
+                    
+                          <a href="http://www.borstjanaren.se/borst/articleList/obj_id/374"><img src="/images/grafik/TS.png" style="margin:14px 0 2px" alt="signTS" width="38"/></a>
+                    
+                   
                     <br>
                     
               
