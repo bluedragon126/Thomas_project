@@ -1185,19 +1185,20 @@ class borst_shopActions extends sfActions {
         //     $ZipCode = urlencode($arr['user_zipcode']);
         //     $City = urlencode($arr['user_city']);
         //     $Country = urlencode($arr['user_country']);
-        $purchase = new Purchase();
-        $purchasedItem = new PurchasedItem();
+        //$purchase = new Purchase();
+        //$purchasedItem = new PurchasedItem();
         if (count($product_arr) > 0) {//echo "<pre>";  print_r($arr); die;
-            $id = $purchase->addPaymentEntry($arr);
-            $purchasedItem->savePurchasedItemList($id, $arr, $product_arr, $price_arr, $product_qty_arr, $price_detail_id_arr, 0);
+           // $id = $purchase->addPaymentEntry($arr);
+            //$purchasedItem->savePurchasedItemList($id, $arr, $product_arr, $price_arr, $product_qty_arr, $price_detail_id_arr, 0);
             //$this->saveInvoicePdf($id,0,0);
-            $item_list = $purchasedItem->fecthPurchasedItemList($id);
+            //$item_list = $purchasedItem->fecthPurchasedItemList($id);
             $result_data = "";
             $result_data = $this->getUser()->getAttribute('payment_user_info')['user_email'] . "<br>" . $this->getUser()->getAttribute('payment_user_info')['user_firstname'] . 
                     $this->getUser()->getAttribute('payment_user_info')['user_lastname'] . "<br>" . $this->getUser()->getAttribute('payment_user_info')['user_street'] . "<br>";
             $j = 0;
-            foreach ($item_list as $data) {
-                $article_name = $btshop_article->getProductName($data['product_id']);
+			//echo "<pre>";  print_r($btshop_article->getProductName(116)); die;
+            foreach ($product_arr as $data) {
+                $article_name = $btshop_article->getProductName($data);
                 $result_data = $result_data . str_replace("+","",($article_name[0]['title'])) . ":" . $this->product_qty_arr[$j] . ":" . $this->price_arr[$j] . "<br>";
                 // echo(urlencode($article_name[0]['title']));
                 // echo($this->price_arr[$j]);
@@ -1289,19 +1290,17 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeSwishApi(sfWebRequest $request) {
-        // return "hello";
-        // exit;
+        //echo "hello";
         //var_dump($this->getUser()->getAttribute('payment_user_info'));
         $config = array(
             "callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentType",
-            "payeeAlias"      => "8036983", //Swish number of the merchant
+            "payeeAlias"      => "1233144318", //Swish number of the merchant
             "currency"        => "SEK", //currency code	
             "CAINFO"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/root.pem', //Path to root CA
-            "SSLCERT"         => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swentcert.pem', //Path to client certificate
+            "SSLCERT"         => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientcert.pem', //Path to client certificate
             "SSLKEY"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientkey.key', //Path to private key*/
             "SSLCERTTYPE"     => 'PEM'
         );
-
         $userData = $this->getUser()->getAttribute('payment_user_info');
         //var_dump($userData['total_price']);
         $amount = $userData['total_price'];
@@ -1405,7 +1404,6 @@ class borst_shopActions extends sfActions {
                             //$ch = curl_init('https://mss.swicpc.bankgirot.se/swish-cpcapi/api/v1/paymentrequests/' . $paymentId); 
                             //$ch = curl_init('https://swicpc.bankgirot.se/swish-cpcapi/api/v1/paymentrequests/' . $paymentId);
                             $ch = curl_init('https://cpc.getswish.net/swish-cpcapi/api/v1/paymentrequests/'. $paymentId);
-                            
 
                             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
                             //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); //Uncomment this if you didn't add the root CA, curl will then ignore the SSL verification error.
@@ -1455,7 +1453,7 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeShopPaymentDone(sfWebRequest $request) {
-
+		
         $past = time() - 3600;
         setcookie( 'cart_items_cookie_pid', '', $past, '/' );
         setcookie( 'cart_items_cookie_price', '', $past, '/' );
@@ -1473,6 +1471,7 @@ class borst_shopActions extends sfActions {
         //var_dump($price_detail_id_arr);die;
         $payment_mtd = array('1' => 'Online Payment', '2' => 'Direct Payment (bank)', '3' => 'Prepayment (via the plus-or bank transfer)', '4' => 'Swish');
         $this->loginRequiredForProduct = $this->isLoginRequriedForProduct($product_arr);
+		
         if(!$this->loginRequiredForProduct){
 
 
