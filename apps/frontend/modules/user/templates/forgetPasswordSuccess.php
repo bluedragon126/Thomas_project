@@ -52,7 +52,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <td><?php echo __('Ange den epost-adress du använde när du skapade ditt konto, så skickas ett mail med dina användaruppgifter dit på en gång: ') ?></td>
                             </tr>
                             <tr>
-                                <td class="color_FF0000"><?php echo $msg ?></td>
+                                <td class="redColor"><?php echo $msg ?></td>
                             </tr>
                             <tr>
                                 <td><input type="text" name="email" id="email" class="width_277 contactus-inputs form_input"/></td>
@@ -70,7 +70,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><?php echo __('Om du inte längre har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnr och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
+                                <td><?php echo __('<b>Om du inte längre</b> har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnr och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
                             </tr>
                         </table>
                     </div>

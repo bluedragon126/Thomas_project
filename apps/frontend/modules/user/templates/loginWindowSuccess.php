@@ -60,14 +60,14 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <tr>
                                 <td>
                                     <div class="blank_20h widthall">&nbsp;</div>
-                                    <div class="form_labels width_115 float_left">Användarnamn</div>
+                                    <div class="form_labels width_110 float_left">Användarnamn</div>
                                     <div class="width_70per float_left margin_bottom_2"><?php echo $form['username']->render(array('id' => 'username', 'class' => 'form_input width_277 contactus-inputs', 'size' => '25')) ?></div>	
                                     <div class="float_left redcolor pad_lft_2"><div class="for_labels mrg_left_89" id="contact_firstname_error"><?php //echo $errors["username"]; ?></div></div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="form_labels width_115 float_left">Lösenord</div>
+                                    <div class="form_labels width_110 float_left">Lösenord</div>
                                     <div class="width_70per float_left margin_bottom_2"><?php echo $form['password']->render(array('id' => 'password', 'class' => 'form_input width_277 contactus-inputs', 'size' => '25')) ?></div>
                                     <div class="float_left redcolor pad_lft_2"><div class="for_labels mrg_left_89" id="contact_lastname_error"><?php //echo $errors["password"]; ?></div></div>
                                 </td>
@@ -90,11 +90,11 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <div class="blank_5h widthall">&nbsp;</div></td>
                             </tr>-->
                             <tr>
-                                <td colspan="6" class="main_link_color padding_top_10" height="25 px" vertical-align="bottom"><a style="margin-left:115px" class="main_link_color" href="<?php echo 'http://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
+                                <td colspan="6" class="main_link_color padding_top_5" height="30 px" vertical-align="bottom"><a style="margin-left:110px" class="main_link_color" href="<?php echo 'http://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
                             </tr>
                         </table>
                         <div class="blank_2h widthall">&nbsp;</div>
-                        <div class="registerbtn" style="margin-left:115px;">
+                        <div class="registerbtn" style="margin-left:110px;">
                             <input type="submit" class="loginBtn submit cursor" value="" name="submit" />
                         </div>
                     </div>

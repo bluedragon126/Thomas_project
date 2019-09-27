@@ -212,51 +212,51 @@ $(window).load(function(){
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
 		<div class="clearAll">&nbsp;</div>
-		<div class="blank_20h widthall">&nbsp;</div>
-		<ul class="rows5 m_0 margin_left_114">
+		<div class="blank_5h widthall">&nbsp;</div>
+		<ul class="rows5 m_0 margin_left_96">
 			<li class="user_email_li">
-				<input type="text" size="25" class="inputBox277 form_input width_277" id="user_email" name="user_email" value="<?php echo $userData ? $userData->email : ($payment_user_info['user_email'] ? $payment_user_info['user_email'] : '');?>">
+				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_email" name="user_email" value="<?php echo $userData ? $userData->email : ($payment_user_info['user_email'] ? $payment_user_info['user_email'] : '');?>">
 				<span id="pay_email_error" class="redcolor user_email_span error_shop_payment_email"></span>
 			</li>
 		</ul>
-            <div class="blank_4h widthall">&nbsp;</div>
-		<a href="#" class="main_link_color margin_left_114">Ändra e-postadress</a>
+            <!--<div class="blank_4h widthall">&nbsp;</div>
+		<a href="#" class="main_link_color margin_left_96">Ändra e-postadress</a>-->
 		
-		<div class="blank_30h widthall">&nbsp;</div>
+		<div class="blank_20h widthall">&nbsp;</div>
 		<div class="form_heading">Leveransadress</div>
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
 		<div class="clearAll">&nbsp;</div>
-		<div class="blank_20h widthall">&nbsp;</div>
+		<div class="blank_5h widthall">&nbsp;</div>
 		<ul class="rows5 m_0 cardDetails">
 			<li>
-				<span class="label form_labels width_114 float_left">Förnamn</span>
-				<input type="text" size="25" class="inputBox277 form_input width_277" id="user_firstname" name="user_firstname" value="<?php echo $userData->firstname ? $userData->firstname : ($payment_user_info['user_firstname'] ? $payment_user_info['user_firstname'] : '');?>">
+				<span class="label form_labels width_96 float_left">Förnamn</span>
+				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_firstname" name="user_firstname" value="<?php echo $userData->firstname ? $userData->firstname : ($payment_user_info['user_firstname'] ? $payment_user_info['user_firstname'] : '');?>">
 				<span id="pay_firstname_error" class="redcolor error_shop_payment"></span>
 			</li>
 			<li>
-				<span class="label form_labels width_114 float_left">Efternamn</span>
-				<input type="text" size="25" class="inputBox277 form_input width_277" id="user_lastname" name="user_lastname" value="<?php echo $userData->lastname ? $userData->lastname : ($payment_user_info['user_lastname'] ? $payment_user_info['user_lastname'] : '');?>">
+				<span class="label form_labels width_96 float_left">Efternamn</span>
+				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_lastname" name="user_lastname" value="<?php echo $userData->lastname ? $userData->lastname : ($payment_user_info['user_lastname'] ? $payment_user_info['user_lastname'] : '');?>">
 				<span id="pay_lastname_error" class="redcolor error_shop_payment"></span>
 			</li>
 			<li>
-				<span class="label form_labels width_114 float_left">Gatuadress</span>
-				<input type="text" size="25" class="inputBox277 form_input width_277" id="user_street" name="user_street" value="<?php echo $userData->street ? $userData->street : ($payment_user_info['user_street'] ? $payment_user_info['user_street'] : '');?>">
+				<span class="label form_labels width_96 float_left">Gatuadress</span>
+				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_street" name="user_street" value="<?php echo $userData->street ? $userData->street : ($payment_user_info['user_street'] ? $payment_user_info['user_street'] : '');?>">
 				<span id="pay_street_error" class="redcolor error_shop_payment"></span>
 			</li>
 			<li>
-				<span class="label form_labels width_114 float_left">Postnr / Ort</span>
+				<span class="label form_labels width_96 float_left">Postnr / Ort</span>
 				<input type="text" size="25" maxlength="6" class="inputBox277 small form_input" id="user_zipcode" name="user_zipcode" value="<?php echo $userData->zipcode ? $userData->zipcode : ($payment_user_info['user_zipcode'] ? $payment_user_info['user_zipcode'] : '');?>">
-				<input type="text" size="25" class="inputBox277 form_input width_214" id="user_city" name="user_city" value="<?php echo $userData->city ? $userData->city : ($payment_user_info['user_city'] ? $payment_user_info['user_city'] : '');?>">
+				<input type="text" size="25" class="inputBox277 form_input width_114" id="user_city" name="user_city" value="<?php echo $userData->city ? $userData->city : ($payment_user_info['user_city'] ? $payment_user_info['user_city'] : '');?>">
 				<span id="pay_zipcode_error" class="redcolor error_shop_payment"></span>
 			</li>    
 			<li>
-				<span class="label form_labels width_114 float_left">Telefon</span>
-				<input type="text" size="25" class="inputBox277 form_input width_277" id="user_telephone" name="user_telephone" value="<?php echo $userData->phone ? $userData->phone : ($payment_user_info['user_telephone'] ? $payment_user_info['user_telephone'] : '');?>">
+				<span class="label form_labels width_96 float_left">Telefon</span>
+				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_telephone" name="user_telephone" value="<?php echo $userData->phone ? $userData->phone : ($payment_user_info['user_telephone'] ? $payment_user_info['user_telephone'] : '');?>">
 				<span id="pay_telephone_error" class="redcolor error_shop_payment"></span>
 			</li>               
 			<li>
-				<span class="label form_labels width_114 float_left">Land</span>
+				<span class="label form_labels width_96 float_left">Land</span>
                 <?php $land = is_numeric($userData->land) ?  $contry_arr[$userData->land] : $userData->land ; if ($land=='OTHER'){$land = 'SE';} ?>
 
                 <select class="input174 m_0 width_180" id="user_country" name="user_country">
@@ -276,7 +276,7 @@ $(window).load(function(){
 			</li> 
 		</ul>
 		<!--<div class="blank_10h widthall">&nbsp;</div>-->
-		<ul class="rows margin_left_114">
+		<ul class="rows margin_left_96">
 			<li> <a id="check_payment_detail" class="red_button cursor set_coupon"><span>KÖP</span></a> <span id="indicator" class="check_payment_detail_indicator"><img src="/images/indicator.gif" /></span></li>
 		</ul>
            <div class="floatLeftNew wh_bt-sh_2">

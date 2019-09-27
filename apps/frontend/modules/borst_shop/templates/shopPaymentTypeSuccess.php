@@ -306,7 +306,7 @@
                             <span class="span3"></span>
                         </li>
                         <li id="swish_input" class="swish_input">
-                            <span class="span1" style="margin: 0;"><input placeholder="Börstjänarens Swish fn ur funktion" type="text" size="25" class="inputBox277 form_input width_277" id="swishcell_num" name="swishcell_num" value=""></span>
+                            <span class="span1" style="margin: 0;"><input placeholder="Börstjänarens Swish fn ur funktion" type="text" size="25" class="inputBox277 form_input input_width" id="swishcell_num" name="swishcell_num" value=""></span>
                         </li>
                         <li class="hidenew">
                             <input type="text" id="transid-input" placeholder="" >

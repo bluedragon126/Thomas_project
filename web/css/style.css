@@ -841,7 +841,7 @@ home_heading_c {
     height: 3px;
     float: left;
     /* margin-left: ;*/
-    margin: 16px 0px 4px 0px;
+    margin: 14px 0px 4px 0px;
 }
 
 .home_heading_l_3 {
@@ -934,7 +934,7 @@ home_heading_c {
 .like_bar_div {
     float: left;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 3px;
     /*margin-bottom: 10px;*/
     text-align: center;
 }
@@ -1477,7 +1477,7 @@ a.article_dots_r {
 .whp_heading {
     color: #f15822;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1em;
     margin: 46px 0px 10px;
     width: 100%;
@@ -1486,7 +1486,7 @@ a.article_dots_r {
 .whp_heading_2 {
     color: #232222;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.25em;
     margin: 22px 0px 5px;
     letter-spacing: -0.02em;
@@ -1497,7 +1497,7 @@ a.article_dots_r {
     color: #f15822;
     float: left;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.25em;
     margin: 0px 0px 5px;
     letter-spacing: -0.02em;
@@ -2836,6 +2836,10 @@ blank_4h {
     margin-left: 114px !important;
 }
 
+.margin_left_96 {
+    margin-left: 96px !important;
+}
+
 .inputBox277 {
     /*background-color: #f6f9fb;
     border: 1px solid #ced2d0;
@@ -4047,10 +4051,10 @@ ul.cartStep2 li {
 .home_9read_m {
     font-family: 'Franklin Gothic Medium';
     font-size: 0.8em;
-    line-height: 1.1em;
+    line-height: 1.2em;
     color: #232222;
     margin-top: 6px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     width: 165px;
 }
 
@@ -4123,7 +4127,7 @@ ul.cartStep2 li {
 .home_body_m_1 {
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1.15em;
     letter-spacing: 0.01em;
     color: #0c0800;
     word-wrap: break-word;
@@ -4132,7 +4136,7 @@ ul.cartStep2 li {
 .home_body_m_2 {
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1.15em;
     letter-spacing: 0.01em;
     color: #0c0800;
     word-wrap: break-word;
@@ -4145,7 +4149,7 @@ ul.cartStep2 li {
 .home_body_m_3 {
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1.15em;
     letter-spacing: 0.01em;
     color: #0c0800;
     word-wrap: break-word;
@@ -4154,7 +4158,7 @@ ul.cartStep2 li {
 .home_body_m_4 {
     font-family: "Franklin Gothic Book Regular";
     font-size: 14px;
-    line-height: 1.1em;
+    line-height: 1.15em;
     letter-spacing: 0.01em;
     color: #0c0800;
     word-wrap: break-word;
@@ -5246,6 +5250,11 @@ ul.cartStep2 li {
     width: 237px !important;
 }
 
+.8826
+{
+    width: 217px !important;
+}
+
 .width_425 {
     width: 425px;
 }
@@ -5755,12 +5764,12 @@ ul.cartStep2 li {
 }
 
 .redColor {
-    color: #f15822;
+    color: #f58767;
 }
 
 .redBorder {
     border: 0.5px solid; 
-	color: #f15822;
+	color: #f58767;
 }
 
 .registrationValidField {
@@ -6408,7 +6417,7 @@ input.send_forgetpass {
 }
 
 .shop_guide_active {
-    color: #637281;
+    color: #7d8c9b;
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
     letter-spacing: -0.01em;
@@ -8443,7 +8452,7 @@ input.send_forgetpass {
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
     box-shadow: 2px 2px 12px #eae8e8;
-    background-color: #4f88f9;
+    background-color: #928d87;
     width: 40px;
     height: 546px;
     float: left;
@@ -8455,25 +8464,25 @@ input.send_forgetpass {
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     box-shadow: 2px 2px 12px #8d8d8d;
-    background-color: #2160dd;
+    background-color: #a5a09a;
     width: 600px;
     height: 546px;
 }
 
 #container .pop_title {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 4.6em;
+    font-size: 4em;
     line-height: 1.3em;
     letter-spacing: -0.02em;
     color: #ffffff;
-    padding: 18px 0px 0px 121px;
+    padding: 18px 0px 10px 138px;
 }
 
 #container .pop_sub_title {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Book Regular';
     font-size: 1.7em;
     line-height: 1.2em;
-    color: #081734;
+    color: #1b2337;
     padding: 0px 50px 0px 88px;
     text-align: center;
 }
@@ -8493,7 +8502,8 @@ input.send_forgetpass {
 #container .popup_btn {
     cursor: pointer;
     font-family: 'Franklin Gothic Book Regular';
-    border-radius: 3px;
+	letter-spacing: 0.02em;
+    border-radius: 23px;
     border: medium none;
     font-size: 1.3em;
     color: #fff;
@@ -8507,6 +8517,7 @@ input.send_forgetpass {
 #container .pop_subtitle {
     font-family: 'Georgia';
     font-size: 2em;
+	letter-spacing: 0.03em;
     color: #ffffff;
     padding: 0px 50px 11px 88px;
     text-align: center;
@@ -8670,7 +8681,7 @@ input.send_forgetpass {
 }
 
 .error_valid_email {
-    color: #ffff00;
+    color: #f58767;
     font-family: 'Franklin Gothic Book Regular';
     display: none;
     font-size: 18px;
@@ -8678,7 +8689,7 @@ input.send_forgetpass {
 
 .error_email_exist,
 .success_message {
-    color: #ffff00;
+    color: #f58767;
     font-family: 'Franklin Gothic Book Regular';
     display: none;
     float: left;
@@ -8845,7 +8856,7 @@ input.send_forgetpass {
 .captcha_error {
     float: left;
     position: relative;
-    color: #ff7b69;
+    color: #f58767;
 }
 
 .reg_type_chkbox {
@@ -9301,7 +9312,7 @@ input.send_forgetpass {
 
 #btShopProdUrl {
     padding: 50px;
-    color: red;
+    color: #f15822;
     font-weight: bold;
     float: left
 }
@@ -9354,7 +9365,7 @@ input.send_forgetpass {
 }
 
 #borst_advanced_search #adv_search_error {
-    color: #ff7b69;
+    color: #f58767;
     padding: 0px 0px 4px 2px;
 }
 
@@ -9631,7 +9642,7 @@ whp_heading
 }
 
 .chk_error {
-    color: red;
+    color: #f58767;
     margin-left: 10px;
 }
 
@@ -9710,7 +9721,7 @@ whp_heading
 .enquiry_detail_title_div #post_enquiry_reply_error {
     border: 0px solid red;
     padding-left: 10px;
-    color: red;
+    color: #f58767;
 }
 
 #enquiry_detail_main_div .name_span {
@@ -9962,7 +9973,7 @@ whp_heading
 }
 
 #edit_analysis .error_list {
-    color: #ff7b69;
+    color: #f58767;
     list-style-type: none;
     margin: 0 0 0 10px;
     padding: 0;
@@ -10232,7 +10243,7 @@ whp_heading
 
 #blog_text_error {
     padding: 15px 0 0 30px;
-    color: #ff7b69;
+    color: #f58767;
     width: 70%;
 }
 
@@ -10714,7 +10725,7 @@ whp_heading
     position: relative;
     width: 160px;
     padding-left: 5px;
-    color: #FF3300;
+    color: #f58767;
     padding-top: 5px;
 }
 
@@ -10730,7 +10741,7 @@ whp_heading
     position: relative;
     padding-left: 12px;
     width: 500px;
-    color: #FF3300;
+    color: #f58767;
 }
 
 .editaddArticle .article_content .author_name_div {
@@ -10764,7 +10775,7 @@ whp_heading
     float: left;
     position: relative;
     width: 100%;
-    color: #ff7b69;
+    color: #f58767;
 }
 
 .editaddArticle .article_content .list_div {
@@ -10893,7 +10904,7 @@ whp_heading
 
 .blog_comment_login_error {
     display: none;
-    color: #f15822;
+    color: #f58767;
 }
 
 .margin_rgt_icon {
@@ -11001,7 +11012,7 @@ whp_heading
 
 #msg-poll {
     float: left;
-    color: red;
+    color: #f15822;
     height: 60px;
     position: relative;
     width: 100%;
