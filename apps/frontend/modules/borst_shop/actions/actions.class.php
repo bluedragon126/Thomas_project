@@ -1453,7 +1453,7 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeShopPaymentDone(sfWebRequest $request) {
-		
+		//echo "<pre>";  print_r($request); die;
         $past = time() - 3600;
         setcookie( 'cart_items_cookie_pid', '', $past, '/' );
         setcookie( 'cart_items_cookie_price', '', $past, '/' );
@@ -1469,7 +1469,7 @@ class borst_shopActions extends sfActions {
         $product_qty_arr = $this->getUser()->getAttribute('product_qty_arr');
         $price_detail_id_arr = $this->getUser()->getAttribute('price_detail_id_arr');
         //var_dump($price_detail_id_arr);die;
-        $payment_mtd = array('1' => 'Online Payment', '2' => 'Direct Payment (bank)', '3' => 'Prepayment (via the plus-or bank transfer)', '4' => 'Swish');
+        $payment_mtd = array('1' =>'Prepayment (via the plus-or bank transfer)', '2' => 'Direct Payment (bank)', '3' =>  'Online Payment', '4' =>  'Online Payment');
         $this->loginRequiredForProduct = $this->isLoginRequriedForProduct($product_arr);
 		
         if(!$this->loginRequiredForProduct){
@@ -1498,14 +1498,19 @@ class borst_shopActions extends sfActions {
 
                 $i++;
             }
-
-            $transaction_type = $request->getParameter('typ') ? $request->getParameter('typ') : 3;
+			//echo "<pre>";  print_r($request->getParameter('paymenttype')); die;
+            $transaction_type = $request->getParameter('paymenttype') ? $request->getParameter('paymenttype') : 1;
             $bank_id = $request->getParameter('bk');
 
             $purchase_record = $purchase->getPurchaseOrder($id);
            
             $order_no =$purchase_record->id;
             $purchase_record->payment_method = $payment_mtd[$transaction_type];
+			$purchase_record->payment_date =  $request->getParameter('date');
+			if($transaction_type == 3 || $transaction_type == 4){
+                $purchase_record->checkout_status = 1;
+				$purchase_record->order_processed = 1;
+            }
             $purchase_record->save();
 
             $host_str = $this->getRequest()->getHost();
@@ -1524,7 +1529,7 @@ class borst_shopActions extends sfActions {
 
 
         //echo $item_detail_str; die;
-        if (($transaction_type == 1 || $transaction_type == 2) && (count($product_arr) > 0)) {
+        if (($transaction_type == 2) && (count($product_arr) > 0)) {
             $this->saveInvoicePdf($id,1,0);
             /* Payment process. */
             $TellusPayID = "58318125";

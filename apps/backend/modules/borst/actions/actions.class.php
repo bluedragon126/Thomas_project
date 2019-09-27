@@ -3885,6 +3885,7 @@ class borstActions extends sfActions
      */
     public function executeShopTransactionList(sfWebRequest $request)
     {
+        //echo "<pre>";  print_r($request); die;
         $this->getUser()->setAttribute('parent_menu', 'top_borst_menu');
         $this->getUser()->setAttribute('submenu_menu', 'borst_menu_transaction_list');
         $this->getUser()->setAttribute('third_menu', '');
