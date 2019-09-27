@@ -23,7 +23,7 @@ $(window).load(function(){
 <div class="btshopleftdiv ptop_10 inner-page-contetn-left margin-bottom-10m" id="cartcontentDiv">
         <div class="breadcrumb_div">
 		<div>
-                    <div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>
+                    <!--<div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>-->
                         <div class="breadcrumb">
                                 <ul>
                                         <li><?php

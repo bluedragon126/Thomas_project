@@ -22,7 +22,7 @@
     <div class="inner-page-contetn-left margin-bottom-10m">
         <div class="breadcrumb_div">
             <div>
-                <div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>
+                <!--<div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>-->
                 <div class="breadcrumb">
                     <ul>
                         <li><?php
