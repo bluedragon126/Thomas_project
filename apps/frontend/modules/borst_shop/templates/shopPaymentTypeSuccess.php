@@ -70,6 +70,7 @@
         $('.bank_selection_outer').hide();
 
         $('.span1').jqTransform();
+        $('#payment_conformation').css({'display' : 'none'});
 
         var leftHeight = $(".btshopleftdiv").height();
         var rightHeight = $(".rightbanner").height();
@@ -93,12 +94,21 @@
         
         $('.radio').unbind('click');	
         $('.radio').live("click",function(){
-                if ($(this).val() == '1' || $(this).val() == '3') {
+                if ($(this).val() == '1' ) {
                     $('#swishcell_num').val('');
                     $('.swish_input').hide();
                     $('.payment_conformation_li').css({'display' : 'block'});
+                    // $('#payment_conformation').css({'display' : 'none !important'});
                     $('#payment_conformation_swish').hide();
-                } else {
+                } 
+                else if($(this).val() == '3'){
+                    $('#swishcell_num').val('');
+                    $('.swish_input').hide();
+                    $('#payment_visa').css({'display' : 'none'});
+                    $('#payment_conformation').css({'display' : 'block'});
+                    $('#payment_conformation_swish').hide();
+                }
+                else {
                     $('.swish_input').css({'display' : 'block'});                     
                     //$('#swishcell_num').val('');
                     $('.payment_conformation_li').hide();
@@ -169,15 +179,16 @@
                         var cellNum = '46'+nr;
                     }
                     //console.log('entered number is ' + nr); 
-                    //console.log('converted number is ' + cellNum);
+                    console.log('converted number is ' + cellNum);
                     //return false;                        samt
                     //var swishAmt = $("#samt").val();
                     //var msg = $("#msg-select").val();
                    //$.get("/ajax.php?orderId=" + $("#order").val() + "&phone=" + cellNum + "&samt=" + swishAmt + "&msg=" + msg, function (data) {
                    $.get("/borst_shop/swishApi?phone=" + cellNum, function (data) {
                         if (typeof (data) != "object") {
-                            //console.log('hi');
+                            console.log('hi');
                             data = JSON.parse(data);
+                            console.log(data);
                         }                            
                         transId = data.transactionId;
                         var resStatus = data.status;
@@ -318,7 +329,8 @@
                     </script>               
                     <!--<div class="blank_11h widthall">&nbsp;</div>  id="payment_conformation" onclick="javascript: paymentwindow.open()"-->
                     <ul class="rows margin_left_0">
-                        <li class="payment_conformation_li"> <a onclick="javascript: paymentwindow.open()" class="red_button payment_conformation_class"><span>BEKRÄFTA</span></a></li>
+                        <li class="payment_conformation_li"> <a id="payment_visa" onclick="javascript: paymentwindow.open()" class="red_button payment_conformation_class"><span>BEKRÄFTA</span></a></li>
+                        <li class="payment_conformation_li"> <a id="payment_conformation" class="red_button payment_conformation_class"><span>BEKRÄFTA</span></a></li>
                         <li> <a id="payment_conformation_swish" class="red_button payment_conformation_class swish_input"><span>BEKRÄFTA</span></a></li>
                     </ul>	
                     <div id="msg-poll"></div>

@@ -1289,17 +1289,19 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeSwishApi(sfWebRequest $request) {
-        //echo "hello";
+        // return "hello";
+        // exit;
         //var_dump($this->getUser()->getAttribute('payment_user_info'));
         $config = array(
             "callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentType",
-            "payeeAlias"      => "1233144318", //Swish number of the merchant
+            "payeeAlias"      => "8036983", //Swish number of the merchant
             "currency"        => "SEK", //currency code	
             "CAINFO"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/root.pem', //Path to root CA
-            "SSLCERT"         => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientcert.pem', //Path to client certificate
+            "SSLCERT"         => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swentcert.pem', //Path to client certificate
             "SSLKEY"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientkey.key', //Path to private key*/
             "SSLCERTTYPE"     => 'PEM'
         );
+
         $userData = $this->getUser()->getAttribute('payment_user_info');
         //var_dump($userData['total_price']);
         $amount = $userData['total_price'];
@@ -1403,6 +1405,7 @@ class borst_shopActions extends sfActions {
                             //$ch = curl_init('https://mss.swicpc.bankgirot.se/swish-cpcapi/api/v1/paymentrequests/' . $paymentId); 
                             //$ch = curl_init('https://swicpc.bankgirot.se/swish-cpcapi/api/v1/paymentrequests/' . $paymentId);
                             $ch = curl_init('https://cpc.getswish.net/swish-cpcapi/api/v1/paymentrequests/'. $paymentId);
+                            
 
                             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
                             //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); //Uncomment this if you didn't add the root CA, curl will then ignore the SSL verification error.
