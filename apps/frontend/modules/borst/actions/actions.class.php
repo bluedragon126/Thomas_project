@@ -795,6 +795,9 @@ class borstActions extends sfActions
 	
 	$this->comment_cnt = new BorstArticleComment();
 	//---------------------------------------------------------------------------------
+	$btshop_article = new BtShopArticle();
+        $btshop_article->checkAttribute();
+	$this->metastock_data = $btshop_article->getPublishedShopArticle();
 	
 	$second_menu = $this->article_data ? ucfirst($this->article_data->title) : 'Article Detail';
 	$second_url = $breadcrum_menu->getMenuUrl($submenu_menu);

@@ -258,7 +258,7 @@
                                 <div class="color_plate_img_first_article"><img src="/images/new_home/bottom_bt-shop_logo.png" width="97"/></div>
                                 <div class="bottom_shop_txt_main">
                                     <div class="bottom_shop_cart">Välkommen 
-            <br /> till BT-shop <br />– affären för<br /> bättre affärer!</div>
+                        <br /> till BT-shop <br />– affären för<br /> bättre affärer!</div>
                                 </div>
                             </div>
                             <?php $adCount = 1; ?>
@@ -332,11 +332,69 @@
         <?php echo include_partial('global/borst_right_banner_article', array('host_str' => $host_str, 'cat_arr' => $cat_arr, 'type_arr' => $type_arr, 'object_arr' => $object_arr, 'col1_13_heading_style_start' => $col1_13_heading_style_start, 'col1_13_heading_style_end' => $col1_13_heading_style_end, 'col1_45_div_style' => $col1_45_div_style, 'col1_67_heading_style' => $col1_67_heading_style, 'col1_814_heading_style' => $col1_814_heading_style, 'col1_1417_heading_style' => $col1_1417_heading_style, 'last_column_style' => $last_column_style, 'image_arr_13' => $image_arr_13, 'image_arr_67' => $image_arr_67, 'image_arr_814' => $image_arr_814, 'image_arr_1417' => $image_arr_1417, 'last_column_img' => $last_column_img, 'twentyeight_2_thirtyfive' => $twentyeight_2_thirtyfive, 'comment_cnt' => $comment_cnt, 'ad_1' => $ad_1, 'ad_2' => $ad_2, 'ad_3' => $ad_3, 'ad_4' => $ad_4, 'month' => $month, 'rcol_body_text' => $rcol_body_text)); ?>
     </div>
     
-        <div class="morearticledetails"></div>
-        <div class="load_article_details" id="load_article_details_1" pageno="2"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
-        <div class="loading_home" style="display: none;">&nbsp;</div>
-
-    <?php include_partial('global/six_cube_footer', array('host_str' => $host_str, 'bottom_commodities_links' => $bottom_commodities_links, 'bottom_currencies_links' => $bottom_currencies_links, 'bottom_buysell_links' => $bottom_buysell_links, 'bottom_statistics_links' => $bottom_statistics_links, 'bottom_aktier_links' => $bottom_aktier_links, 'bottom_kronika_links' => $bottom_kronika_links, 'month' => $month)) ?>
+    <div class="load_article" id="load_article_1" pageno="2"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
+    <div class="bottom_shop_border">&nbsp;</div>
+    <div class="footer">
+        <div class="footer_inner_div">
+            <div class="float_left margin_bottom_home_shop">
+            
+                    <div class="bt-shop_border_home"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
+                    
+                <div class="color_plate_first">
+                    <div class="color_plate_img_first"><img src="/images/new_home/bt-shop_logo-home.png" width="92" /></div>
+                    <div class="bottom_shop_txt_main">
+                        <div class="bottom_shop_cart">Välkommen till BT-shop <br />
+                            – affären för bättre affärer!</div>
+                    </div>
+                </div>
+                <?php $adCount = 1; ?>
+                <?php foreach ($metastock_data as $article): ?>
+                    <?php $modAdCount = $adCount % 2; ?>
+                    <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                        <div class="color_plate">
+                            <?php if ($article->btshop_product_image): ?>
+                                <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>
+                            <?php else: ?>
+                                <div class="color_plate_img"><img src="/images/new_home/bottom_shop_img1.png" width="102" height="94" class="color_plate_img_radius"/></div>
+                            <?php endif; ?>
+                            <div class="bottom_shop_txt_main">
+                                <div class="<?php if ($modAdCount == 1) {
+                            echo 'bottom_shop_rub2';
+                        } else {
+                            echo 'bottom_shop_rub1';
+                        } ?>"><?php echo $article->btshop_article_title; ?></div>
+                                <?php if ($article->btshop_article_subtitle): ?>
+                                    <span class="<?php if ($modAdCount == 1) {
+                                echo 'bottom_shop_ingress2';
+                            } else {
+                                echo 'bottom_shop_ingress1';
+                            } ?>"><?php echo substr($article->btshop_article_subtitle, 0, 58); ?></span>
+                                    <span class="<?php if ($modAdCount == 1) {
+                    echo 'bottom_shop_price2';
+                } else {
+                    echo 'bottom_shop_price1';
+                } ?>"><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?>&nbsp;KR</span>
+    
+                                    <!--<span class="bottom_shop_readmore">...</span>-->
+                <?php endif ?>
+                    
+                            </div>
+                        </div>
+                    </a>
+                <?php
+                $adCount++;
+                endforeach;
+                ?>
+            </div>
+            <div class="morearticle"></div>
+            <div class="loading_home" style="display: none;">&nbsp;</div>
+            <div class="bt-shop_border_home2"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
+            <div class="home_footer_divider">&nbsp;</div>
+            <div class="footer_main">
+                <?php include_partial('global/six_cube_footer', array('host_str' => $host_str, 'bottom_commodities_links' => $bottom_commodities_links, 'bottom_currencies_links' => $bottom_currencies_links, 'bottom_buysell_links' => $bottom_buysell_links, 'bottom_statistics_links' => $bottom_statistics_links, 'bottom_aktier_links' => $bottom_aktier_links, 'bottom_kronika_links' => $bottom_kronika_links)) ?>
+            </div>
+        </div>
+    </div>
 
 <?php } else { ?>
     <div class="in_date">&nbsp;</div>
