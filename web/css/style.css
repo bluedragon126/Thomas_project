@@ -11436,3 +11436,9 @@ p {
 	text-transform:uppercase;
     width: 100%;
 }
+
+.right_banner_cart{
+    width: 294px;
+    padding-left: 14px;
+    padding-right: 0px;
+}

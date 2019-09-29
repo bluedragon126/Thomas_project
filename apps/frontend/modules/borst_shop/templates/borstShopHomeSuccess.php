@@ -655,22 +655,25 @@
         </div>
     <input type="hidden" name="product_id" id="product_id" value="<?php //echo $product_detail->id;  ?>"/>
     
-    <div class="rightbanner autoheight padding_0">
-      <div class="home_heading_r">
-    <div class="home_ad_r float_left font_size_12 ">Annons</div>
-    <?php //include_partial('global/ad_message') ?>
-        <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
-        <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>        
-        <?php include_partial('global/sponsorer_ad') ?>
-        
-        <!--<div class="home_ad_r_spons float_left">Annons</div> -->
-        <?php include_partial('global/bulk_ads', array('bulk_ads' => $ad_3)) ?>
-        <!--<div class="blank_10h">&nbsp;</div>-->
-        <?php include_partial('global/right_top_ads', array('ad' => $ad_4)) ?>
-        <?php if(count($twentyeight_2_thirtyfive)>0) {?><div class="home_adline_r_div">&nbsp;</div><?php }?>
-    </div>
-  </div>
-</div>
+    <!-- <div class = "maincontentpageshop"> -->
+        <div class="rightbanner autoheight padding_0">
+            <div class="home_heading_r">
+                <div class="home_ad_r float_left font_size_12 ">Annons</div>
+                <?php //include_partial('global/ad_message') ?>
+                    <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
+                    <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>        
+                    <?php include_partial('global/sponsorer_ad') ?>
+                    
+                    <!--<div class="home_ad_r_spons float_left">Annons</div> -->
+                    <?php include_partial('global/bulk_ads', array('bulk_ads' => $ad_3)) ?>
+                    <!--<div class="blank_10h">&nbsp;</div>-->
+                    <?php include_partial('global/right_top_ads', array('ad' => $ad_4)) ?>
+                    <?php if(count($twentyeight_2_thirtyfive)>0) {?><div class="home_adline_r_div">&nbsp;</div><?php }?>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    
    
 </div>
 <?php echo include_partial('global/inner_bottom_footer'); ?>

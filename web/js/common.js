@@ -2593,6 +2593,7 @@ $(document).ready(function() {
             url: '/borst_shop/getCartData?price=' + price + '&product_id=' + product_id + '&price_detail_id=' + price_detail_id,
             success: function(data) {
                 $('#shop_rightbanner').addClass('shopcart_right_banner');
+                $(".rightbanner").addClass('right_banner_cart');
                 $(".rightbanner").html(data);
                 $.ajax({
                     url: '/borst_shop/getCartDataCount',
