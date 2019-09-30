@@ -943,6 +943,17 @@ class borst_shopActions extends sfActions {
         $this->total_shipping_cost = $countryShipping->getShippingCostFromWeight($total_weight, ($paymentInfo['user_country']? $countries->getOneRegionCode($paymentInfo['user_country']):$this->region_code));
         
         //code by sandeep
+        $this->metastock_data = $btshop_article->getPublishedShopArticleOfType(1);
+        $this->falcon_computer_data = $btshop_article->getPublishedShopArticleOfType(2);
+        $this->bocker_data = $btshop_article->getPublishedShopArticleOfType(3);
+        $this->utbildningar_data = $btshop_article->getPublishedShopArticleOfType(4);
+        $this->marknadsbrev_data = $btshop_article->getPublishedShopArticleOfType(5);
+        $this->abonnemang_data = $btshop_article->getPublishedShopArticleOfType(6);
+        $this->btcart_data = $btshop_article->getPublishedShopArticleOfType(7);
+        // xmas offer
+        $this->xmas_offer_data = $btshop_article->getPublishedShopArticleOfType(8);
+        $this->liveutbildningar_data = $btshop_article->getPublishedShopArticleOfType(10);
+        
         $this->final_vat = $this->getUser()->getAttribute('final_vat');
         $this->final_totals = $this->getUser()->getAttribute('final_total');
         $this->final_dicount = $this->getUser()->getAttribute('final_dicount');

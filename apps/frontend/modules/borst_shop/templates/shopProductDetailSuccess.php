@@ -13,7 +13,7 @@
             maxHeight = leftHeight;
         }
 
-        $(".rightbanner").css({"height": maxHeight + "px"});
+        //$(".rightbanner").css({"height": maxHeight + "px"});
         $(".btshopleftdiv").css({"min-height": maxHeight + "px"});
         $('.btshopleftdiv').jqTransform();
     });
@@ -25,10 +25,10 @@
             <div class="breadcrumb">
                 <ul>
                     <li><?php
-    include_component('isicsBreadcrumbs', 'show', array(
-        'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
-    ))
-    ?> </li>
+include_component('isicsBreadcrumbs', 'show', array(
+    'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome'),
+))
+?> </li>
                 </ul>
             </div>
             <div class="btshopleftdiv ptop_10" >
@@ -53,7 +53,7 @@
                                     <img src="/uploads/btshopThumbnail/<?php echo $product_detail->btshop_product_image; ?>" class="shop_detail_thumbnail" />
                                 <?php else: ?>
                                     <img src="/images/shopphoto.jpg" alt="photo" />
-                                <?php endif; ?>
+                                <?php endif;?>
                             </div>
 
                             <div class="shop_detail_subtitle2"><?php echo $product_detail->btshop_article_subtitle; ?></div>
@@ -61,11 +61,11 @@
 
                             <?php if ($cart_in_cart && !$logged_user): ?>
                                 <div class="redcolor"> Du måste vara inloggad för att köpa detta abonnemang! </div>
-                            <?php endif; ?>
+                            <?php endif;?>
                             <div class="blank_15h widthall">&nbsp;</div>
                         </div>
 
-                        <?php if ($product_detail->is_sellable) : ?>
+                        <?php if ($product_detail->is_sellable): ?>
 
 
                             <div class="blank_20h widthall">&nbsp;</div>
@@ -76,15 +76,18 @@
                             <div class="shop_detail_line">&nbsp;</div>
                             <?php if ($product_detail->btshop_type_id > 4): ?>
                                 <div class="shop_detail_choose pbottom_7 floatLeft">Välj abonnemangsperiod</div>
-                            <?php endif; ?>
+                            <?php endif;?>
                             <ul class="rows">
                                 <?php $i = 0;
-                                foreach ($price_data as $data):
-                                    ?>
-                                    <li><div class="shop_detail_price_main"><div class="floatLeft shop_detail_price"><input id="<?php echo $data->id; ?>" type="radio" class="radio" value="<?php echo $data->btshop_product_price; ?>" <?php if ($i == 0) echo 'checked="checked"'; ?> name="product_price"><?php echo $data->btshop_product_quantity . ' ' . $unit_arr[$data->btshop_price_unit_id] . ' ' . str_replace(',', ' ', number_format($data->btshop_product_price)) ?></div><div class="floatLeft shop_detail_kr">KR</div></div><div class="floatLeft shop_detail_pricetext"><?php echo $data->btshop_product_text; ?></div></li>
-                                    <?php $i++;
-                                endforeach;
-                                ?>
+foreach ($price_data as $data):
+?>
+                                                                        <li><div class="shop_detail_price_main"><div class="floatLeft shop_detail_price"><input id="<?php echo $data->id; ?>" type="radio" class="radio" value="<?php echo $data->btshop_product_price; ?>" <?php if ($i == 0) {
+    echo 'checked="checked"';
+}
+?> name="product_price"><?php echo $data->btshop_product_quantity . ' ' . $unit_arr[$data->btshop_price_unit_id] . ' ' . str_replace(',', ' ', number_format($data->btshop_product_price)) ?></div><div class="floatLeft shop_detail_kr">KR</div></div><div class="floatLeft shop_detail_pricetext"><?php echo $data->btshop_product_text; ?></div></li>
+                                                                        <?php $i++;
+endforeach;
+?>
                             </ul>
                             <div class="blank_12h widthall">&nbsp;</div>
 
@@ -92,32 +95,32 @@
 
                                 <a id="to_payment" class="red_button cursor"><span>KÖP</span></a>
 
-                                <div class="blank_6h widthall">&nbsp;</div> 
+                                <div class="blank_6h widthall">&nbsp;</div>
                                 <a id="add" class="red_button cursor"><span>LÄGG I VARUKORG</span></a>
                             </div>
                             <div class="spacer"></div>
                             <div class="spacer"></div>
 
-                        <?php endif; ?>
+                        <?php endif;?>
                         <?php if ($isAdmin): ?>
                             <div class="float_left width_550 edit_this height_16"><a class="float_left width_550 main_link_color height_16" href=<?php echo "http://" . $_SERVER['HTTP_HOST'] . "/backend.php/borst/createShopArticle/edit_shop_article_id/" . $pid; ?>>Editera denna artikel</a></div>
-        <?php endif ?>
+                        <?php endif?>
 
                         <div class="spacer"></div>
                         <div class="spacer"></div>
                         <div class="spacer"></div>
                         <div class="spacer"></div>
                         <div class="spacer"></div>
-    <?php endif; ?> 
+    <?php endif;?>
                 </div>
 
             </div>
-            <div class="<?php if (count($products_data)) { ?>mrg_top_49<?php } else { ?>mrg_top_76<?php } ?> float_left mrg_left_testimonial margin_testimonial">
+            <div class="<?php if (count($products_data)) {?>mrg_top_49<?php } else {?>mrg_top_76<?php }?> float_left mrg_left_testimonial margin_testimonial">
                 <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
             </div>
         </div>
         <div class="rightbanner" id="shop_rightbanner" >
-    <?php include_partial('borst_shop/get_cart_data_partial', array('final_vat' => $final_vat, 'final_totals' => $final_totals, 'final_dicount' => $final_dicount, 'host_str' => $host_str, 'products_data' => $products_data, 'price_arr' => $price_arr, 'product_qty_arr' => $product_qty_arr, 'price_detail_id_arr' => $price_detail_id_arr, 'product_article' => $product_article, 'add_shipping_flag' => $add_shipping_flag, 'total_shipping_cost' => $total_shipping_cost, 'logged_user' => $logged_user, 'payment_user_info' => $payment_user_info, 'product_detail' => $product_detail, 'metastock_data' => $metastock_data, 'falcon_computer_data' => $falcon_computer_data, 'bocker_data' => $bocker_data, 'utbildningar_data' => $utbildningar_data, 'marknadsbrev_data' => $marknadsbrev_data, 'abonnemang_data' => $abonnemang_data, 'btcart_data' => $btcart_data, 'xmas_offer_data' => $xmas_offer_data, 'productID' => $productID)) ?>
+    <?php include_partial('borst_shop/get_cart_data_partial', array('final_vat' => $final_vat, 'final_totals' => $final_totals, 'final_dicount' => $final_dicount, 'host_str' => $host_str, 'products_data' => $products_data, 'price_arr' => $price_arr, 'product_qty_arr' => $product_qty_arr, 'price_detail_id_arr' => $price_detail_id_arr, 'product_article' => $product_article, 'add_shipping_flag' => $add_shipping_flag, 'total_shipping_cost' => $total_shipping_cost, 'logged_user' => $logged_user, 'payment_user_info' => $payment_user_info, 'product_detail' => $product_detail, 'metastock_data' => $metastock_data, 'falcon_computer_data' => $falcon_computer_data, 'bocker_data' => $bocker_data, 'utbildningar_data' => $utbildningar_data, 'marknadsbrev_data' => $marknadsbrev_data, 'abonnemang_data' => $abonnemang_data, 'btcart_data' => $btcart_data, 'xmas_offer_data' => $xmas_offer_data, 'productID' => $productID))?>
         </div>
     </div>
 <?php else: ?>
@@ -129,4 +132,4 @@
     <div class="float_left widthall mbottom_10">
         <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
     </div>
-<?php endif; ?>
+<?php endif;?>
