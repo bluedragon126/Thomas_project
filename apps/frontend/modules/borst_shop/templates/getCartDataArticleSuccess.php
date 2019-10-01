@@ -27,7 +27,7 @@
                     <?php endif; ?>
                 st<span class="float_right shop_r_cart_text"> á <?php echo $products_data->price; ?></span>
                 </span>                
-                <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($mul, 2) ?></span>
+                <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($mul, 2 , ",", " ") ?></span>
         </div>
         <?php $total = $total + ($product_qty_arr * $products_data->price); ?>
         <?php  $i++;?>
@@ -39,17 +39,17 @@
         <div class="info"> 
             <div class="shop_r_cart_price_bg_white">
                 <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Frakt (inom Sverige:)</span> 
-                <span class="float_right frakt pad_rgt_5 margin_top_8 shop_r_cart_text"><?php echo number_format($shipping, 2) ?></span>
+                <span class="float_right frakt pad_rgt_5 margin_top_8 shop_r_cart_text"><?php echo number_format($shipping, 2, ",", " ") ?></span>
             </div>
 
             <div class="shop_r_cart_price_bg float_left">
-                <span class="left margin_top_8 pad_lft_6 shop_r_cart_text">Total:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($total_wth_shipping, 2) ?></span> 
+                <span class="left margin_top_8 pad_lft_6 shop_r_cart_text">Total:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($total_wth_shipping, 2, ",", " ") ?></span> 
             </div>
             <div class="shop_r_cart_price_bg_white">
-                <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Varav moms:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($vat, 2); ?></span> 
+                <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Varav moms:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($vat, 2, ",", " "); ?></span> 
             </div>
             <div class="shop_r_cart_price_bg_gray">
-                <span class="left pad_lft_6 margin_top_8 shop_r_cart_pay">Att betala:</span> <span class="right red_text margin_top_8 shop_r_cart_total"><?php echo number_format($total_wth_shipping, 2);?></span>
+                <span class="left pad_lft_6 margin_top_8 shop_r_cart_pay">Att betala:</span> <span class="right red_text margin_top_8 shop_r_cart_total"><?php echo number_format($total_wth_shipping, 2, ",", " ");?></span>
             </div>
             <div class="blank_5h widthall">&nbsp;</div>
         </div>

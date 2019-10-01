@@ -33,10 +33,10 @@
                     <span class="qtyWraper_span"><input type="text" readonly="true" value="<?php echo $product_qty_arr[$i]; ?> " class="qtyWraper_input" /></span><span>st</span>
                 </div>
                 <div class="priceWraper">
-                    á <?php echo number_format($price_arr[$i], 2); ?>
+                    á <?php echo number_format($price_arr[$i], 2, ",", " "); ?>
                 </div>
                 <div class="totalWraper">
-                    <span><?php echo number_format($mul, 2); ?></span>
+                    <span><?php echo number_format($mul, 2, ",", " "); ?></span>
                 </div>
                 <div class="crossWraper">
                     <span id="delete_<?php echo $i; ?>" class="remove_from_cart1 cursorPointer">X</span>
@@ -90,9 +90,9 @@
 				<div class="float_left">Frakt <?php echo !$payment_user_info['user_country'] ? "(inom Sverige) " : '' ?>:&nbsp;</div>
 				<div class="float_right frakt" id="shipping_charge">
 				<?php if($logged_user):?>
-					<?php echo number_format($shipping, 2) ?>
+					<?php echo number_format($shipping, 2, ",", " ") ?>
                                     <?php else:?>
-                                            <?php echo number_format($shipping, 2) ?>
+                                            <?php echo number_format($shipping, 2, ",", " ") ?>
                                     <?php endif;?>
                 </div>
 			</div>
@@ -100,34 +100,34 @@
 			<div class="float_left width_558">
 			<div class="blank_5h widthall">&nbsp;</div>
 				<div class="float_left">Total:</div>
-                                <div class="float_right total_amt" id="total_amt_art"><?php echo number_format($total_wth_shipping, 2) ?></div>
+                                <div class="float_right total_amt" id="total_amt_art"><?php echo number_format($total_wth_shipping, 2, ",", " ") ?></div>
 			</div>
                         <?php if($final_dicount){?>
                         <div class="blank_6h widthall shop_cart_data_div_border">&nbsp;</div>
 			<div class="float_left width_558">
 			<div class="blank_5h widthall">&nbsp;</div>
 				<div class="float_left shop_cart_topay">Kampanjrabatt <?php if($final_discount_percentage) {echo $final_discount_percentage;}?>%</div>
-                                <div class="float_right final_discount shop_cart_total"><?php if ($final_dicount) { echo '- '.number_format($final_dicount, 2);} ?></div>
+                                <div class="float_right final_discount shop_cart_total"><?php if ($final_dicount) { echo '- '.number_format($final_dicount, 2, ",", " ");} ?></div>
 			</div>
                          <div class="blank_6h widthall shop_cart_data_div_border">&nbsp;</div>
 			<div class="float_left width_558">
 			<div class="blank_5h widthall">&nbsp;</div>
 				<div class="float_left">Summa inklusive kampanjrabatt:</div>
-                                <div class="float_right"><?php echo number_format($total_final, 2); ?></div>
+                                <div class="float_right"><?php echo number_format($total_final, 2, ",", " "); ?></div>
 			</div>
                          <?php } ?>
                         <div class="blank_5h widthall shop_cart_data_div_border">&nbsp;</div>
 			<div class="float_left width_558">
 				<div class="blank_5h widthall">&nbsp;</div>
 				<div class="float_left">Varav moms:</div>
-				<div class="float_right vat_amt"><?php echo number_format($vat, 2); ?></div>
+				<div class="float_right vat_amt"><?php echo number_format($vat, 2, ",", " "); ?></div>
 			</div>                  
                               <div class="blank_5h widthall shop_cart_data_div_border">&nbsp;</div>
                               <div class="float_left shop_cart_topay_div">
                                   <div class="blank_5h widthall">&nbsp;</div>
                                   <div class="float_left red_text shop_cart_topay">Att betala inkl moms:</div>
                                   <div class="float_right red_text total_amt shop_cart_total" id="final_amount">
-                                      <?php echo number_format($total_final, 2); ?>
+                                      <?php echo number_format($total_final, 2, ",", " "); ?>
                                       <input type="hidden" name="final_amount_num" id="final_amount_num" value="<?php echo $total_final;?>"/>
                                   </div>
                               </div>

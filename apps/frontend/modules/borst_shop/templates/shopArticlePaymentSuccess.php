@@ -86,9 +86,9 @@
                             <div class="float_left">Frakt <?php echo!$payment_user_info['user_country'] ? "(inom Sverige) " : '' ?>:&nbsp;</div>
                             <div class="float_right frakt" id="shipping_charge">
                                 <?php if ($logged_user): ?>
-                                    <?php echo number_format($shipping, 2) ?>
+                                    <?php echo number_format($shipping, 2, ",", " ") ?>
                                 <?php else: ?>
-                                    <?php echo number_format($shipping, 2) ?>
+                                    <?php echo number_format($shipping, 2, ",", " ") ?>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                             } else {
                                 echo $total_wth_shipping;
                             }
-                            ?>"><?php echo number_format($total_wth_shipping, 2) ?></div>
+                            ?>"><?php echo number_format($total_wth_shipping, 2, ",", " ") ?></div>
                         </div>
                         <div class="blank_6h widthall shop_cart_data_div_border">&nbsp;</div>
 
@@ -113,7 +113,7 @@
                                 if ($final_vat) {
                                     echo $final_vat;
                                 } else {
-                                    echo number_format($vat, 2);
+                                    echo number_format($vat, 2, ",", " ");
                                 }
                                 ?></div>
                         </div>
@@ -126,7 +126,7 @@
                                 if ($final_totals) {
                                     echo $final_totals;
                                 } else {
-                                    echo number_format($total_wth_shipping, 2);
+                                    echo number_format($total_wth_shipping, 2, ",", " ");
                                 }
                                 ?></div>
                         </div>
@@ -142,7 +142,7 @@
                 <form id="payment_detail" name="payment_detail" method="post" action="<?php echo url_for('borst_shop/shopArticlePaymentType') ?>">
                     <input type="hidden" name="user_id" id="user_id" value="<?php echo $userData->user_id; ?>" />
                     <input type="hidden" name="total_price" id="total_price" value="<?php echo $total_wth_shipping; ?>" />
-                    <input type="hidden" name="shipping" id="shipping" value="<?php echo number_format($shipping, 2); ?>" />
+                    <input type="hidden" name="shipping" id="shipping" value="<?php echo number_format($shipping, 2, ",", " "); ?>" />
                     <input type="hidden" name="vat" id="vat" value="<?php echo $vat; ?>" />
           <!--<div class="blank_5h widthall">&nbsp;</div>-->
 		<div class="form_heading">E-postadress</div>

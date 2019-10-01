@@ -73,7 +73,7 @@
             <?php endif; ?>
                         st<span class="float_right shop_r_cart_text"> á <?php echo $price_arr[$i]; ?></span>
                     </span> 
-                    <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($mul, 2) ?>
+                    <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($mul, 2, ",", " ") ?>
                 <?php if ($on_last_step != 1): ?>
                             <a id="delete_<?php echo $i; ?>" class="remove_from_cart cursor"><span class="redColor">X</span></a>
                 <?php endif; ?>
@@ -105,30 +105,30 @@
         <div class="info"> 
             <div class="shop_r_cart_price_bg_white">
                 <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Frakt (inom Sverige):</span> 
-                <span class="float_right frakt pad_rgt_5 margin_top_8 shop_r_cart_text"><?php echo number_format($shipping, 2) ?></span>
+                <span class="float_right frakt pad_rgt_5 margin_top_8 shop_r_cart_text"><?php echo number_format($shipping, 2, ",", " ") ?></span>
             </div>
 
             <div class="shop_r_cart_price_bg float_left">
-                <span class="left margin_top_8 pad_lft_6 shop_r_cart_text">Total:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($total_wth_shipping, 2) ?></span> 
+                <span class="left margin_top_8 pad_lft_6 shop_r_cart_text">Total:</span> <span class="right margin_top_8 shop_r_cart_text"><?php echo number_format($total_wth_shipping, 2, ",", " ") ?></span> 
             </div>
                     <?php if ($final_dicount) { ?>
                 <div class="shop_r_cart_price_bg_white"  id="final_disc_div">
                     <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Rabatt:</span> <span class="right red_text margin_top_8 shop_r_cart_text"><?php
                         if ($final_dicount) {
-                            echo number_format($final_dicount, 2);
+                            echo number_format($final_dicount, 2, ",", " ");
                         }
                         ?></span> 
                 </div>
                     <?php } ?>
             <div class="shop_r_cart_price_bg_white">
                 <span class="left pad_lft_6 margin_top_8 shop_r_cart_text">Varav moms:</span> <span class="right margin_top_8 shop_r_cart_text"><?php
-                echo number_format($vat, 2);
+                echo number_format($vat, 2, ",", " ");
                 ?></span> 
             </div>
 
             <div class="shop_r_cart_price_bg_gray">
                 <span class="left pad_lft_6 margin_top_8 shop_r_cart_pay">Att betala:</span> <span class="right red_text margin_top_8 shop_r_cart_total"><?php
-                echo number_format($total_final, 2);
+                echo number_format($total_final, 2, ",", " ");
                 ?></span> 
             </div>
 

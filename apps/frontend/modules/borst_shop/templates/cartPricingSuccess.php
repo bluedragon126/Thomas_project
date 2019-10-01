@@ -25,10 +25,10 @@
                 <span class="margin_rgt_6"><input type="text" readonly="true" value="<?php echo $saved_cart_items_qty[$i]; ?> " class="qtyWraper_input" /></span><span>st</span>
             </div>
             <div class="priceWraper">
-                á <?php echo number_format($saved_cart_items_price[$i], 2); ?>
+                á <?php echo number_format($saved_cart_items_price[$i], 2 , ",", " "); ?>
             </div>
             <div class="totalWraper">
-                <span><?php echo number_format($mul, 2); ?></span>
+                <span><?php echo number_format($mul, 2 , ",", " "); ?></span>
             </div>
             <div class="crossWraper">
                 <span dId="<?php echo $obj->id; ?>" id="delete_<?php echo $i; ?>" class="remove_from_cart2 cursorPointer">X</span>
