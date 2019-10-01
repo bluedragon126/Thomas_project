@@ -2595,6 +2595,7 @@ $(document).ready(function() {
                 $('#shop_rightbanner').addClass('shopcart_right_banner');
                 $(".rightbanner").addClass('right_banner_cart');
                 $(".rightbanner").html(data);
+                window.scrollTo(0, 0);
                 $.ajax({
                     url: '/borst_shop/getCartDataCount',
                     success: function(data1) {

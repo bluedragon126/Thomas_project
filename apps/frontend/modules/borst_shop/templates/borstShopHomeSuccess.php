@@ -50,7 +50,24 @@
             <div class="blank_20h widthall"></div>
            
             <div class="shopblock">
-                <div id="abonnemang_title" class="shop_home_cat_bg"><span class="shop_home_cat">Abonnemang</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                <div id="abonnemang_title" class="shop_home_cat_bg">
+                    <span class="shop_home_cat">Abonnemang</span>
+                    <div class="title_link">    
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Utbildningar</p>
+                        </div>
+                    </a>                    
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Metastock</p>
+                        </div>
+                    </a>    
+                    </div>
+                    <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>-->
+                </div>
 
                 <?php
                 $stock_counter = count($abonnemang_data);
@@ -267,7 +284,23 @@
              * <?php */ ?>
 
             <div class="shopblock">
-                <div id="utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Utbildningar</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                <div id="utbildningar_title" class="shop_home_cat_bg">
+                    <span class="shop_home_cat">Utbildningar</span>
+                    <div class="title_link">  
+                        <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'>
+                            <div style = "display:flex">
+                                <h2></h2>                            
+                                <p class="link_text"> &nbsp; Abonnemang</p>
+                            </div>
+                        </a>                    
+                        <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");'>
+                            <div style = "display:flex">
+                                <h2></h2>                            
+                                <p class="link_text"> &nbsp; Metastock</p>
+                            </div>
+                        </a> 
+                    </div>
+                 <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
                 <?php
                 $stock_counter = count($utbildningar_data);
                 $top_mar_12px = "";
@@ -524,8 +557,24 @@
             <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             
             <div class="shopblock">
-                <div id="metastock_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Metastock</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
-                    </a>--></div>   
+                <div id="metastock_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Metastock</span> 
+                <div class="title_link">  
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Abonnemang</p>
+                        </div>
+                    </a>                    
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Utbildningar</p>
+                        </div>
+                    </a> 
+                </div>
+                <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
+                    </a>-->
+                </div>   
                     <?php
                     $stock_counter = count($metastock_data); //die;
                     $top_mar_12px = "";
@@ -677,3 +726,10 @@
    
 </div>
 <?php echo include_partial('global/inner_bottom_footer'); ?>
+
+<script>
+    function gotoDiv(url){
+        window.location = url;
+        //window.location.reload();
+    }
+</script>

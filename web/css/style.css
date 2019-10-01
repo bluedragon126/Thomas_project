@@ -5250,10 +5250,10 @@ ul.cartStep2 li {
     width: 237px !important;
 }
 
-.8826
+/* .8826
 {
     width: 217px !important;
-}
+} */
 
 .width_425 {
     width: 425px;
@@ -8725,17 +8725,27 @@ input.send_forgetpass {
 }
 
 .cardDetails .jqTransformSelectWrapper {
-    background: none !important;
+    /* background: none !important;
     background-color: #ebeff3 !important;
     border: 0px solid #ebeff3 !important;
     border-radius: 5px !important;
     font-size: 1em !important;
-    margin-top: 1px;
+    margin-top: 1px; */
+    background: none !important;
+    background-color: #ebeff3 !important;
+    border: 1px solid #ebeff3 !important;
+    border-radius: 5px !important;
+    color: #658094 !important;
+    font-size: 12px !important;
+    min-width: 153px !important;
+    width: 153px !important;
 }
 
 .cardDetails .jqTransformSelectWrapper div span {
     height: 24px !important;
-    font-size: 1em !important;
+    color: #232222 !important;
+    font-size: 14px !important;
+    min-width: 153px !important;
 }
 
 .email_checkbox_1 {
@@ -11441,4 +11451,34 @@ p {
     width: 294px;
     padding-left: 14px;
     padding-right: 0px;
+}
+
+h2 {
+    width: 50px; 
+    text-align: center; 
+    border-bottom: 2px solid #ffffff; 
+    line-height: 0.1em;
+    margin: 0; 
+    margin-bottom: 0.3em;
+ } 
+
+.title_link{
+    font-family: 'FranklinGothicCondensed';
+    font-weight: 100;
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    float: right;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.title_link .link_text{
+    margin: 0;
+    display: flex;
+    font-family: 'FranklinGothicCondensed';
+    font-weight: 100;
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 0.02em;
 }
