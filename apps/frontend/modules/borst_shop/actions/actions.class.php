@@ -1495,7 +1495,7 @@ class borst_shopActions extends sfActions {
         if (count($product_arr) > 0) {//echo "<pre>";  print_r($arr); die;purchase_id_temp
             $id = $this->getUser()->getAttribute('purchase_id_temp');
             $this->getUser()->getAttributeHolder()->remove('purchase_id_temp');
-            
+
             $purchasedItem->savePurchasedItemList($id, $arr, $product_arr, $price_arr, $product_qty_arr, $price_detail_id_arr, 0);
             $this->email = $arr['user_email'];
             $this->getUser()->setAttribute('payment_id', $id);
@@ -1519,6 +1519,7 @@ class borst_shopActions extends sfActions {
             }
 			//echo "<pre>";  print_r($request->getParameter('paymenttype')); die;
             $transaction_type = $request->getParameter('paymenttype') ? $request->getParameter('paymenttype') : 1;
+            $this->transaction_type = $transaction_type;
             $bank_id = $request->getParameter('bk');
 
             $purchase_record = $purchase->getPurchaseOrder($id);
