@@ -449,6 +449,9 @@ class borstActions extends sfActions
 	//$this->article_data->text = $this->decodeDescriptionText($this->article_data->text);
 	$this->article_image_text = $this->decodeDescriptionText($this->article_data->image_text,$this->user_id,$this->host_str);
 	$this->article_description_text = $this->decodeDescriptionText($this->article_data->text,$this->user_id,$this->host_str);
+	// echo ('<pre>');
+	// print_r($article_id);
+	// exit;
 
 	$article_cnt->checkClickCnt($article_id);
 	//$this->similar_article_list = $article->getListOfSimilarArticles($this->article_data->object_id,25);
@@ -822,6 +825,8 @@ class borstActions extends sfActions
 	$main_text = '';
 
 	$ftext = htmlspecialchars(stripslashes($desc));
+
+	
 	
 	if(strstr($ftext, '[img')) $is_old = 1; 
 	elseif(strstr($ftext, '[link=')) $is_old = 1;
@@ -830,6 +835,8 @@ class borstActions extends sfActions
 	$ftext = $stdlib->zitat($ftext);
 	$ftext = $stdlib->make_link($ftext); 
 	$ftext = $stdlib->bbcode($ftext);
+
+	
 	
 	$find = array("artiklar/index.php?kat=","artiklar/index.php?land=","artiklar/index.php?t_id=","artiklar/index.php?k_id=","artiklar/index.php?o_id=","artiklar/index.php?id=", "www.borstjanaren.se","/reklam","artiklar/img2","artiklar/img3","artiklar/img4","artiklar/img5","artiklar/img6","artiklar/img7","artiklar/img8","artiklar/img9","artiklar/img10","artiklar/img11","artiklar/img12","artiklar/img13","artiklar/img_ing","artiklar/img_mb","artiklar/img_portfoljer","artiklar/img","grafik/","userss/edu_signup.php","userss/change_settings.php","autogiro/fullmakt.pdf","artiklar/forum.php","images//images","images/images");
 	
@@ -841,6 +848,9 @@ class borstActions extends sfActions
 	else $main_text = $desc;
 	
 	$main_text = $mymarket->modified_text($main_text);
+	// echo ('<pre>');
+	// print_r($replace);
+	// die;
 	return $main_text;
   }
   

@@ -201,9 +201,13 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <th align="left" width="253"><a id="sortby_title" class="float_left cursor "><span class="float_left list_heading">Rubrik<img src="/images/bg.gif" alt="down" width="20"/></span></a>
 
                     <?php if ($show_thumb == 1): ?>
-                        <div class="preamble" name="0"><span class="float_left">visa utan ingress</span></div>
+                        <div class="preamble" name="0"><span class="float_left">
+                        <!-- visa utan ingress -->
+                        </span></div>
                     <?php else: ?>
-                        <div class="preamble" name="1"><span class="float_left">visa med ingress</span></div>
+                        <div class="preamble" name="1"><span class="float_left">
+                        <!-- visa med ingress -->
+                        </span></div>
                     <?php endif; ?>
 
                     </th>

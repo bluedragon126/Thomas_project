@@ -1148,6 +1148,12 @@ class borst_shopActions extends sfActions {
         $this->add_shipping_flag = 0;
         $this->loginRequiredForProduct = $this->isLoginRequriedForProduct($product_arr);
 
+        $purchase = new Purchase();
+        $id = $purchase->addPaymentEntry($arr);
+        $this->getUser()->setAttribute('purchase_id_temp', $id);
+        $this->purchase_id = $id;
+        
+
         
         //For Shipping
         $countries = new Countries();
@@ -1486,8 +1492,10 @@ class borst_shopActions extends sfActions {
         if(!$this->loginRequiredForProduct){
 
 
-        if (count($product_arr) > 0) {//echo "<pre>";  print_r($arr); die;
-            $id = $purchase->addPaymentEntry($arr);
+        if (count($product_arr) > 0) {//echo "<pre>";  print_r($arr); die;purchase_id_temp
+            $id = $this->getUser()->getAttribute('purchase_id_temp');
+            $this->getUser()->getAttributeHolder()->remove('purchase_id_temp');
+            
             $purchasedItem->savePurchasedItemList($id, $arr, $product_arr, $price_arr, $product_qty_arr, $price_detail_id_arr, 0);
             $this->email = $arr['user_email'];
             $this->getUser()->setAttribute('payment_id', $id);
