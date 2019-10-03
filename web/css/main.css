@@ -774,7 +774,34 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .checkbox{margin:1px 5px 0px 0px;padding:0px;float:left;position:relative;vertical-align:middle}
 .faqborder{float:left;position:relative;width:100%;border-bottom:1px solid #ced2d0;padding:0px 0 0 0;margin-top:8px;line-height:1px;margin-bottom:15px;}
 #top_kontakt{width:53px;height:34px;border:0px solid red;float:left;position:relative;color:#94b6dc;line-height:10px;text-align:right;}
-#borst_desc_div p{width:500px;line-height:19px;}
+#borst_desc_div p{font-family: "Georiga";
+    float: left;
+    font-size: 1.3em;
+    color: #232222;
+    line-height: 1.25em;
+    letter-spacing: -0.01em;
+    width: 100%;}
+#borst_desc_div p strong{
+	font-family: "ITC Cheltenham Book";
+    float: left;
+    font-size: 1.6em;
+    color: #f15822;
+    line-height: 2.5em;
+    width: 100%;
+	font-weight: 100;
+}
+
+#borst_desc_div p em{
+	font-family: "Franklin Gothic Book Regular";
+    float: left;
+    font-size: 0.85em;
+    color: #232222;
+    line-height: 0.9em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 100%;
+	font-style:normal;
+}
 .input220{background-color:#F6F9FB;border:1px solid #ced2d0;height:19px;width:220px;padding-left:3px;margin-bottom:4px;}
 .padtdsmall{padding-bottom:1px;padding-top:0px;}
 .padtdsmallbutton{padding-bottom:3px;padding-top:0px;}

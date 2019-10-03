@@ -6334,20 +6334,28 @@ input.send_forgetpass {
 }
 
 .cookie_bg {
-    width: 100%;
-    background-color: #ffcf01;
-    height: 40px;
+    z-index: 1500;
+    position: fixed;
+    right: calc(50vw - 505px);
+    bottom: 20px;
+    width: 250px;
+    background-color:black;
+    height: auto;
     border-radius: 6px;
     margin-top: 7px;
     display: none;
+    padding: 20px;
+
 }
 
 .cookie {
     font-family: 'Franklin Gothic Medium';
     font-size: 1.14em;
-    color: #f15822;
+    color: white;
     float: left;
-    margin-left: 101px;
+    text-align: left;
+    /* margin-bottom: 10px; */
+    
 }
 
 .cookie_link {
@@ -6361,8 +6369,8 @@ input.send_forgetpass {
 .cookie_button_bg {
     background-color: #f15822;
     border-radius: 12px;
-    padding: 1px 18px 3px;
-    margin-left: 7px;
+    /* padding: 1px 18px 3px; */
+    /* margin-left: 60px; */
     margin-top: -1px;
     float: left;
     cursor: pointer;
@@ -6374,9 +6382,18 @@ input.send_forgetpass {
     color: #ffffff;
 }
 
-.cookie_wrap {
+.cookie_close_btn{
+    color:white; 
+    font-size:30px;
+    padding-left: 10px;
     padding-top: 10px;
+}
+
+.cookie_wrap {
+    /* padding-top: 10px; */
     text-align: center;
+    display: flex;
+
 }
 
 .forum_drop-down-menu_page {
