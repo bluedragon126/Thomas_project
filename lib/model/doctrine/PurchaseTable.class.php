@@ -33,12 +33,12 @@ class PurchaseTable extends Doctrine_Table
         public function getAllPurchaseRecordsByOrders($field,$order,$status,$proccessed,$article_type,$ord_no,$first_name,$last_name){
 		$field = $field ? $field : 2;
 		$order = $order ? $order : 2;
-
 		$arr = array('1'=>'id','2'=>'created_at','3'=>'payment_method','4'=>'checkout_status','5'=>'firstname','6'=>'payment_date','7'=>'order_processed');
 		$order_arr = array('1'=>'ASC','2'=>'DESC');
                 //$orderStr = $status ? 'p.checkout_status '.$order_arr[$status].', ':'';
                // $orderStr .= $status ? 'p.order_processed '.$order_arr[$proccessed].', ':'';
                 $orderStr .='p.'.$arr[$field].' '.$order_arr[$order];
+                
 		$query = Doctrine_Query::create();
 		$query = $query->select('p.id,p.payment_method,p.checkout_status,p.created_at,p.order_processed');
                 if(!$article_type)

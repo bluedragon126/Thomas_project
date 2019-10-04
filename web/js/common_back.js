@@ -692,7 +692,8 @@ $(document).ready(function()
 			"Radera Köp": function() {
 					//$('#update_artiklar').submit();
                                         var str = $('#delete_order_id_page').val();
-                                        var arr = str.split(',');
+										var arr = str.split(',');
+										console.log(arr);
 					deletePurchaseOrder(arr[0],arr[1]);
 					$(this).dialog("close");
 			},

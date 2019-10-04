@@ -181,29 +181,32 @@ $(document).ready(function() {
         function() {
             $("#registration_help_section").toggle();
             var img_name = $('#reg_help_plus').attr('src');
-            if (img_name == '/images/minusicon.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
+            console.log(img_name);
+            if (img_name == '/images/minusicon_btshop.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
             else $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
         },
         function() {
             $("#registration_help_section").toggle();
             var img_name = $('#reg_help_plus').attr('src');
-            if (img_name == '/images/minusucon.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
-            else $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
+            console.log(img_name);
+            if (img_name == '/images/addplusicon_shop.png') $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
+            else $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
         }
     );
 
     $("#reg_help_plus").toggle(
         function() {
+            
             $("#registration_help_section").toggle();
             var img_name = $('#reg_help_plus').attr('src');
-            if (img_name == '/images/minusicon.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
+            if (img_name == '/images/minusicon_btshop.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
             else $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
         },
         function() {
             $("#registration_help_section").toggle();
             var img_name = $('#reg_help_plus').attr('src');
-            if (img_name == '/images/minusucon.png') $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
-            else $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
+            if (img_name == '/images/addplusicon_shop.png') $('#reg_help_plus').attr('src', '/images/new_home/minusicon_btshop.png');
+            else $('#reg_help_plus').attr('src', '/images/new_home/addplusicon_shop.png');
         }
     );
 

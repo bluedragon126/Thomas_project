@@ -195,7 +195,7 @@ class PurchasedItem extends BasePurchasedItem {
         foreach ($item_list as $data) {
             if($data->articleornot){
                 $art_data = $article->getPerticularArticle($data->product_id);
-                $info_arr['title'] = $art_data->getTitle();
+                $info_arr['title'] = $art_data[0]['p_title'];
                 $info_arr['shipping'] = '';
                 $info_arr['individualArt'] = 1;
             }else{

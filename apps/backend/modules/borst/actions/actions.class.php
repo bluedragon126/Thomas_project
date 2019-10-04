@@ -3951,6 +3951,9 @@ class borstActions extends sfActions
      */
     public function executeSearchPurchaseOrder(sfWebRequest $request)
     {
+        // ini_set('display_errors', 1);
+        // ini_set('display_startup_errors', 1);
+        // error_reporting(E_ALL);
         $this->host_str = $this->getRequest()->getHost();
         $this->purchasedItem = new PurchasedItem();
         $this->product_article = new BtShopArticle();
@@ -4008,7 +4011,9 @@ class borstActions extends sfActions
                 }
             }
 
-            
+            // echo ("<pre>");
+            // print_r($arr);
+            // die;
 
 
             //$query = PurchaseTable::getInstance()->getAllPurchaseRecords($arr['purchase_order'],$arr['purchase_sort_order']);
