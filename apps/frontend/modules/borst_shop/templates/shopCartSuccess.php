@@ -88,7 +88,7 @@
                 <span><img class="margin_top_10" src="/images/new_home/bt-shop_cart_empty.png" width="500"></span>
             <?php endif; ?> 
         </div>        
-        <div class="floatLeft mrg_lft_60 margin_bottom_50">
+        <div class="floatLeft mrg_lft_60 margin_testimonial">
                 <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
         </div>
     </div>

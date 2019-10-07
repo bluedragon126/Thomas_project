@@ -217,7 +217,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="blank_30h widthall">&nbsp;</div>            
         </div>
 
-        <div class="mrg_top_49 floatLeft mrg_lft_60 margin_bottom_60">
+        <div class="mrg_top_49 floatLeft mrg_lft_60 margin_testimonial">
             <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
         </div>
     </div>

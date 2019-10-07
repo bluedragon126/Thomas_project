@@ -8603,7 +8603,7 @@ input.send_forgetpass {
 }
 
 .margin_testimonial {
-    margin-bottom: 135px;
+    margin-bottom: 135px !important;
 }
 
 .mrg_left_testimonial {
