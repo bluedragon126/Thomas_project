@@ -212,7 +212,7 @@ $(window).load(function(){
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
 		<div class="clearAll">&nbsp;</div>
-		<div class="blank_5h widthall">&nbsp;</div>
+		<!--<div class="blank_5h widthall">&nbsp;</div>-->
 		<ul class="rows5 m_0 margin_left_96">
 			<li class="user_email_li">
 				<input type="text" size="25" class="inputBox277 form_input input_width" id="user_email" name="user_email" value="<?php echo $userData ? $userData->email : ($payment_user_info['user_email'] ? $payment_user_info['user_email'] : '');?>">
@@ -227,7 +227,7 @@ $(window).load(function(){
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->
 		<div class="clearAll">&nbsp;</div>
-		<div class="blank_5h widthall">&nbsp;</div>
+		<!--<div class="blank_5h widthall">&nbsp;</div>-->
 		<ul class="rows5 m_0 cardDetails">
 			<li>
 				<span class="label form_labels width_96 float_left">Förnamn</span>

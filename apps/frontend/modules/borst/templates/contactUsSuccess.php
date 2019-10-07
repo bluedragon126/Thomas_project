@@ -26,8 +26,8 @@
                 <div class="whp_preamble">
                     Säkraste och bästa sättet att kontakta Börstjänaren är via e-post. Vi läser mejlen varje dag och  kan ofta svara med vändande post.</div>
                 <div class="float_left widthall"> 
-                <div class="whp_heading"> E-postadresser</div>
-                <br />
+                <!--<div class="whp_heading"> E-postadresser</div>-->
+               
                     <div class="whp_subheading">Kundtjänst</div>
                     kundtjanst#borstjanaren.se<br /><br />
                       <div class="whp_subheading">Henrik Hallenborg</div>henrik.hallenborg#borstjanaren.se 

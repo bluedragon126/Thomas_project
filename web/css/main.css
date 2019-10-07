@@ -684,7 +684,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .edit_forum_anchor{cursor:pointer;}
 .bank_selection_outer{float:left;position:relative;padding-top:10px;border-top:1px solid #f7c900;display:none;}
 .payment_conformation_class{cursor:pointer;}
-.my_order_text{float:left;position:relative;width:560px;color:#febc11;font-size:18px;margin-bottom:15px;}
+.my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18px;margin-bottom:10px;}
 .my_order_rec_row{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
 .my_order_sub_row{float:left;position:relative;width:550px;border:0px solid red;}
 .my_order_total_detail_outer{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
