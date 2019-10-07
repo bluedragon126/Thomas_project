@@ -1698,6 +1698,7 @@ class borst_shopActions extends sfActions {
             $this->getUser()->getAttributeHolder()->remove('final_total');
             $this->getUser()->getAttributeHolder()->remove('final_dicount');
             $this->getUser()->getAttributeHolder()->remove('final_discount_percentage');
+
             //code by sandeep end
         }
         }

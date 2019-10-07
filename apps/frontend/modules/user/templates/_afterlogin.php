@@ -1,4 +1,9 @@
-﻿<div class="loginwrapper">
+﻿﻿<?php 
+$payDone = explode("borst_shop/", $_SERVER['REQUEST_URI']);
+$payDone = explode("?", $payDone[1]);
+
+?> 
+<div class="loginwrapper">
     <div class="width_per_59 floatLeft">
         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtUserProfile/take_to_profile/1'; ?>"><?php echo 'INLOGGAD:' ?></a>
         <?php echo ucfirst($sf_user->getAttribute('firstname', '', 'userProperty')); ?>&nbsp;&nbsp;
@@ -18,6 +23,6 @@
             <span class="floatLeft"><input type="submit" class="submitbuttontext submit seek " value="" name="submit" id="submit"/></span>
         </form>
         <span class="floatLeft"><label><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstAdvanceSearch" class="advsearch">Avancerad sökning</a></label></span>
-        <span class="floatLeft"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst_shop/shopCart'; ?>"><img src="/images/new_home/bt-shop_third_menu_cart.png" height="18" class="navBar_third_cart"/></a><span class="cart_count"><?php if($_COOKIE['cart_items_cookie_qty']!=''){ $cart_cnt = explode(',',$_COOKIE['cart_items_cookie_qty']); foreach($cart_cnt as $pqty){ $cookie_cnt += $pqty; } if($cookie_cnt) { if($payDone[1] == 'paymentDone' || $payDone[1] == 'paymentFail'  || $payDone[1] == 'shopPaymentDone' || $payDone[1] ==  'shopArticlePaymentDone'){ echo $cookie_cnt =''; }else{ echo $cookie_cnt;} /*echo $cookie_cnt;*/} } ?></span></span>
+        <span class="floatLeft"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst_shop/shopCart'; ?>"><img src="/images/new_home/bt-shop_third_menu_cart.png" height="18" class="navBar_third_cart"/></a><span class="cart_count"><?php if($_COOKIE['cart_items_cookie_qty']!=''){ $cart_cnt = explode(',',$_COOKIE['cart_items_cookie_qty']); foreach($cart_cnt as $pqty){ $cookie_cnt += $pqty; } if($cookie_cnt) { if($payDone[0] == 'paymentDone' || $payDone[0] == 'paymentFail'  || $payDone[0] == 'shopPaymentDone' || $payDone[0] ==  'shopArticlePaymentDone'){ echo $cookie_cnt =''; }else{ echo $cookie_cnt;} /*echo $cookie_cnt;*/} } ?></span></span>
     </div>
 </div>
