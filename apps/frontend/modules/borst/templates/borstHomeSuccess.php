@@ -465,8 +465,17 @@
                 <div class="advertinfo">
                     <div class="home_heading_l_small_txt">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="blackcolor cursor">                                                                                    
-                                <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
-                            <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, 122); ?></span>
+                                <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />
+                                <span class="<?php echo $rcol_body_text[$l % 4]; ?>"><?php 
+                                    for ($x = 122; $x > 0; $x--) {
+                                        if(substr($twentyeight_2_thirtyfive[$l]['image_text'], $x, 1) == " " || substr($twentyeight_2_thirtyfive[$l]['image_text'], $x, 1) == "."){
+                                            echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, $x+1);
+                                            break;
+                                        }
+                                        // echo "The number is: $x <br>";
+                                    } ?>
+                                </span>                            
+                            <!-- <span class="<?php //echo $rcol_body_text[$l % 4]; ?>"><?php //echo substr($twentyeight_2_thirtyfive[$l]['image_text'], 0, 122); ?></span> -->
                         </a>
                         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['article_id']; ?>" class="article_dots_r cursor">...</a></span>
                     </div>
