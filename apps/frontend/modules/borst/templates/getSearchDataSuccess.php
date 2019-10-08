@@ -18,16 +18,8 @@ include_component('isicsBreadcrumbs', 'show', array(
     <h2 class="search_title_h2">Sökresultat för <span class="search_title"><?php echo '"' . $ext . '..."'; ?></span></h2>
     <ul class="listingtab" id="search_tabs">
         <li><a id="search_in_borst" class="cursor search_nav search_nav_top_left <?php if ($search_tab == 'borst') echo 'selectedtab' ?>">Börstjänaren</a></li>
-        <li><a id="search_in_btshop" class="cursor search_nav <?php if ($search_tab == 'btshop') echo 'selectedtab' ?>">BT-Shop</a></li>
-        <li><a id="search_in_btchart" class="cursor search_nav <?php if ($search_tab == 'btchart') echo 'selectedtab' ?>">BT-Chart</a></li>
-        <li><a id="search_in_forum" class="cursor search_nav <?php if ($search_tab == 'forum') echo 'selectedtab' ?>">Forum</a></li>
-        <li><a id="search_in_askBT" class="cursor search_nav search_nav_top_right <?php if ($search_tab == 'askBT') echo 'selectedtab' ?>">&nbsp;</a></li>
-        <li><a id="search_in_blog" class="cursor search_nav search_nav_bottom_left <?php if ($search_tab == 'blog') echo 'selectedtab' ?>">Bloggar</a></li>
-        <li><a id="search_in_userlist" class="cursor search_nav <?php if ($search_tab == 'userlist') echo 'selectedtab' ?>">Användare</a></li>
-        <li><a id="search_in_sbt" class="cursor search_nav <?php if ($search_tab == 'sbt') echo 'selectedtab' ?>">Dina artiklar</a></li>
-        <li><a id="search_in_askBT" class="cursor search_nav <?php if ($search_tab == 'askBT') echo 'selectedtab' ?>">Fråga BT</a></li>                                
+        <li><a id="search_in_btshop" class="cursor search_nav <?php if ($search_tab == 'btshop') echo 'selectedtab' ?>">BT-Shop</a></li>                    
         <li><a id="search_in_all" class="cursor search_nav search_nav_bottom_right <?php if ($search_tab == 'all') echo 'selectedtab' ?>">Alla</a></li>
-        <li id="loader_li"></li>
     </ul>
     <input type="hidden" id="normal_search_para" name="normal_search_para" value="<?php echo $normal_search_para; ?>"/>
     <input type="hidden" id="search_tab" name="search_tab" value="<?php echo $search_tab; ?>"/>
@@ -82,13 +74,11 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <span>Sid <?php echo $pager->getPage(); ?> av <?php echo $pager->getLastPage(); ?></span>
                                 <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
                                 <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                    <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                                        <option noclick="1" value="0" >Gå till sida...</option>
+                                    <ul class="pagination_ul">
                                         <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
-                                            <option noclick="1" class="color232222" value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
+                                            <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
                                         <?php } ?>
-                                    </select>
-                                    <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                                    </ul>
                                 </div>
                             <?php endif ?>
                     </div>
@@ -136,7 +126,6 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $flagga = "no_flag.gif";
                             ?>
                             <tr class="classnot">
-                                <td width="43" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" ><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td>
                                 <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?> list_date"><?php echo substr($article->article_date, 0, 10); ?></td>
                                 <td width="16">&nbsp;</td>
                                 <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'list_topic' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
@@ -221,73 +210,6 @@ include_component('isicsBreadcrumbs', 'show', array(
         <?php endif; ?>
 
 
-
-
-
-
-        <?php if (($search_tab == 'all' || $search_tab == 'btchart') && $btchart_pager): ?>
-            <div class="float_left widthall" id="btchart_result">
-                <div  class="listingheading result_title_fs margin_top_38">BT-Chart</div>
-                <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
-                  <tr id="column_header" height="35">
-                        <th class="width_30">Art</th>
-                        <th scope="col" width="38%"><a id="sortby_company_name" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Stock Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-                        <th scope="col" width="36%"><a id="sortby_company_symbol" name="btchart_result" class="float_left width_110 cursor"><span class="float_left">Short Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-                        <th scope="col" width="22%"><a id="sortby_company_type" name="btchart_result" class="float_left width_100 cursor"><span class="float_left">Stock List<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-                  </tr>
-                <?php if ($btchart_pager): ?>
-                    <?php foreach ($btchart_pager->getResults() as $data): ?>
-                            <tr class="classnot">
-                                <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                <td class="main_link_color width_240"><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id; ?>"><?php echo ($data->company_name); ?></a></td>
-                                <td class="lightgreenfont width_220"><a class="lightgreenfont" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id; ?>"><?php echo ($data->company_symbol); ?></a></td>
-                                <td class="main_link_color width_120"><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstCharts<?php echo $stock_type_arr[$data->company_type_id] ?>" ><?php echo ($data->BtchartCompanyCategory->company_type); ?></a></td>                
-                            </tr>
-                    <?php endforeach; ?>
-                    <?php if ($btchart_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
-                <?php endif; ?>
-                <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <tr><td colspan="7">&nbsp;</td></tr>
-                <?php endif; ?>
-                </table>-->
-
-
-                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
-                    <tr id="column_header" class="headerList btshop_table_head">
-                        <th class="width326 pad_lft_5"><span class="float_left width326">Rubrik/Namn</span></th>
-                        <th class="width136"><a id="sortby_company_name" name="btchart_result" class="float_left cursor"><span class="float_left width136">Stock Name</span></a></th>
-                        <th class="width108"><a id="sortby_company_symbol" name="btchart_result" class="float_left cursor"><span class="float_left width108">Short Name</span></a></th>
-                        <th class="forum_table_date_w"><a id="sortby_company_type" name="btchart_result" class="float_left cursor"><span class="float_left forum_table_date_w">Stock List</span></a></th>
-                    </tr>
-                    <?php if ($btchart_pager): ?>
-                        <?php
-                        $i = 1;
-                        foreach ($btchart_pager->getResults() as $data):
-                            ?>
-                            <tr <?php
-                if ($i == 1) {
-                    echo "class='padding_top_table'";
-                }
-                            ?> >                    
-                                <td class="orgfont width326 pad_lft_5"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                <td class="width136"><a  class="blog_table_topic" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id; ?>"><?php echo ($data->company_name); ?></a></td>
-                                <td class="width108"><a class="btshop_table_post" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id; ?>"><?php echo ($data->company_symbol); ?></a></td>
-                                <td class="forum_table_date_w"><a class="blog_prof_table_date" href="http://<?php echo $host_str ?>/borst_charts/borstCharts<?php echo $stock_type_arr[$data->company_type_id] ?>" ><?php echo ($data->BtchartCompanyCategory->company_type); ?></a></td>
-                            </tr>
-                            <?php
-                            $i++;
-                        endforeach;
-                        ?>
-                        <?php if ($btchart_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>                                
-                    <?php endif; ?>
-                    <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
-                        <!--<tr><td colspan="7">&nbsp;</td></tr>-->
-                    <?php endif; ?>
-                </table>   
-            </div>
-        <?php endif; ?>
-
-
     <?php endif; ?>  
 
     <?php if ($pager): ?>
@@ -339,13 +261,11 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <span>Sid <?php echo $pager->getPage(); ?> av <?php echo $pager->getLastPage(); ?></span>
                             <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
                             <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                                    <option noclick="1" value="0" >Gå till sida...</option>
-                                    <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
-                                        <option noclick="1" class="color232222" value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-                                    <?php } ?>
-                                </select>
-                                <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                                    <ul class="pagination_ul">
+                                        <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
+                                            <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                                        <?php } ?>
+                                    </ul>
                             </div>
                         <?php endif ?>
                 </div>
