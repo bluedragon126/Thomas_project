@@ -34,13 +34,11 @@
 	<span>Sid <?php echo $pagerForSimilarArticles->getPage(); ?> av <?php echo $pagerForSimilarArticles->getLastPage(); ?></span>
 	<span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
 	<div class="forum_popup_pagination_wrapper" noclick="1" >
-		<select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-			<option noclick="1" value="0" >Gå till sida...</option>
-			<?php for($pg = 1;$pg <= $pagerForSimilarArticles->getLastPage();$pg++ ) { ?>
-				<option noclick="1" class="color232222" value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-			<?php } ?>
-		</select>
-		<div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+		<ul class="pagination_ul">
+		<?php for ($pg = 1; $pg <= $pagerForSimilarArticles->getLastPage(); $pg++) { ?>
+			<li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+		<?php } ?>
+		</ul>
 	</div>
 	<?php endif ?>
   </div>
