@@ -69,7 +69,7 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 			{
 			
 				if($mymarket->email_exists($profileForm_arr["email"]))
-					$email_red = 'E-post redan finns.';
+					$email_red = 'E-post finns redan';
 				else
 					$email_red = '';
 			}

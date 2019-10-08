@@ -42,7 +42,7 @@
                     
                     På onsdagkvällar kl 20.00 håller vi kostnadsfria webinarier,  &quot;Trejdingklubben online&quot;, där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
 
-                    <div class="whp_heading">Tre användarnivåer:</div>
+                    <div class="whp_heading">Tre användarnivåer</div>
                     Som<strong> vanlig besökare </strong>har du kostnadsfri tillgång till det mesta.
                     
                     <br>
@@ -117,7 +117,7 @@
                     
                     <br><br>
                     
-                    <div class="whp_subheading">Du rekommenderar köp och är ganska tvärsäker. Är du inte rädd för att få fel?</div>
+                    <div class="whp_subheading">Du rekommenderar köp och är ganska tvärsäker. <br>Är du inte rädd för att få fel?</div>
                     
 Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av gångerna så är det ok, anser jag.
                     
