@@ -47,18 +47,11 @@
                         <span>Sid <?php echo $pager->getPage(); ?> av <?php echo $pager->getLastPage(); ?></span>
                         <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
                         <div class="forum_popup_pagination_wrapper" noclick="1" >
-                            <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                                <option noclick="1" value="0" >Gå till sida...</option>
+                            <ul class="pagination_ul">
                                 <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
-                                    <option noclick="1" class="color232222" <?php
-                                        if ($pager->getPage() == $pg) {
-                                            echo "selected='selected'";
-                                        }
-                                        ?> value="<?php echo $pg; ?>" ><?php echo $pg; ?>
-                                    </option>
+                                    <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
                                 <?php } ?>
-                            </select>
-                            <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                            </ul>
                         </div>
                         <span class="forum_sorting_wrapper">
                             <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row" style="top:17px;">
@@ -222,18 +215,11 @@
                     <span>Sid <?php echo $pager->getPage(); ?> av <?php echo $pager->getLastPage(); ?></span>
                     <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
                     <div class="forum_popup_pagination_wrapper" noclick="1" >
-                        <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                            <option noclick="1" value="0" >Gå till sida...</option>
+                        <ul class="pagination_ul">
                             <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
-                                <option noclick="1" class="color232222" <?php
-                                    if ($pager->getPage() == $pg) {
-                                        echo "selected='selected'";
-                                    }
-                                    ?> value="<?php echo $pg; ?>" ><?php echo $pg; ?>
-                                </option>
+                                <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
                             <?php } ?>
-                        </select>
-                        <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                        </ul>
                     </div>
                     <span class="forum_sorting_wrapper">
                         <div noclick="1" class="floatRight forum_drop-down-menus article_listing_column_row"  style="top:17px;">

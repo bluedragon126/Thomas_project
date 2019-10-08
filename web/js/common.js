@@ -8145,3 +8145,4 @@ function paginationPopupAllPostsGo(obj) {
         setSearchOrderImageForAll('sortby_' + column_id, current_column_order, parent_id);
     });
 }
+

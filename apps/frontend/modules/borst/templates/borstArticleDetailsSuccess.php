@@ -58,6 +58,47 @@
         });
     });
 
+    function paginationUlGo(obj){
+            var column_id = $('#column_id').val();	
+            var parent_menu = $('#parent_menu').val();
+            var submenu_menu = $('#submenu_menu').val();
+            var parent_sort_by = $('#parent_sort_by').val();
+            var variable_str = '';
+            var page = $(obj).html();
+            
+            var current_column_order = $('#articlelist_current_column_order').val();	
+            var show_thumb = $('#show_thumb').val();
+
+            var kat_id = $('#kat_id').val();
+            var type_id = $('#type_id').val();
+            var obj_id = $('#obj_id').val();
+            var sbt_kat_id = $('#sbt_kat_id').val();
+            var sbt_type_id = $('#sbt_type_id').val();
+            var sbt_obj_id = $('#sbt_obj_id').val();
+
+            if(column_id) variable_str = variable_str+'&column_id='+column_id;
+            if(current_column_order) variable_str = variable_str+'&articlelist_current_column_order='+current_column_order;
+            if(kat_id) variable_str = variable_str+'&kat_id='+kat_id;
+            if(type_id) variable_str = variable_str+'&type_id='+type_id;
+            if(obj_id) variable_str = variable_str+'&obj_id='+obj_id;
+            if(sbt_kat_id) variable_str = variable_str+'&sbt_kat_id='+sbt_kat_id;
+            if(sbt_type_id) variable_str = variable_str+'&sbt_type_id='+sbt_type_id;
+            if(sbt_obj_id) variable_str = variable_str+'&sbt_obj_id='+sbt_obj_id;
+
+            $('#article_list_table').find("tr.classnot").each(function(index){
+                $(this).addClass('withOpacity');
+            });
+            $('.indicator').css('display', 'block');
+            var pagination_numbers = $('#article_list_listing_new').html();
+            $('#article_list_listing_new').html('<span class="">'+pagination_numbers+'</span>');
+            $('.dummy2').html('<span class="">'+pagination_numbers+'</span>');
+            $.post("/borst/getNewArticleListData?page="+page+"&parent_menu="+parent_menu+"&submenu_menu="+submenu_menu+'&show_thumb='+show_thumb+variable_str, function(data){
+                $('.forumlistingleftdivinner').html(data);
+                $('.indicator').hide();
+                setSearchOrderImage('sortby_'+column_id,current_column_order);
+            });
+        }
+
     function paginationPopup(obj){
         var offset = $(obj).position();
         $(obj).next().css("left",offset.left-68);
@@ -230,13 +271,11 @@
                                         <span>Sid <?php echo $pagerForSimilarArticles->getPage(); ?> av <?php echo $pagerForSimilarArticles->getLastPage(); ?></span>
                                         <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
                                         <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                            <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                                                <option noclick="1" value="0">Gå till sida...</option>
-                                                <?php for ($pg = 1; $pg <= $pagerForSimilarArticles->getLastPage(); $pg++) { ?>
-                                                    <option noclick="1" class="color232222" value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-                                                <?php } ?>
-                                            </select>
-                                            <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                                            <ul class="pagination_ul">
+                                            <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
+                                                <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                                            <?php } ?>
+                                            </ul>
                                         </div>
                                     <?php endif ?>
                             </div>
