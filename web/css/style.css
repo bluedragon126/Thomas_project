@@ -11524,9 +11524,9 @@ h2 {
     font-size: 1em;
     color: #ffffff;
     letter-spacing: 0.02em;
-    float: left;
+    float: right;
     margin-top: 7px;
-    margin-left: 304px;
+    margin-right: 40px;
 }
 
 .title_link .link_text{
