@@ -316,7 +316,7 @@ width:34%;
                             <td class="td_input pad_rgt_5">&nbsp;</td>
                             <td  class="" colspan="2" >
                                 <div class="float_left">
-                                    <?php echo $profileForm['year_of_birth']->render(array('id' => 'year_of_birth', 'class' => 'form_labels padding_top_7_5px')) ?> &nbsp; <span class = "form_labels  float_left mrg_lft_5"><?php echo __('Födelseår') ?></span> <?php echo $profileForm['year_of_birth']->renderError() ?>
+                                    <?php echo $profileForm['year_of_birth']->render(array('id' => 'year_of_birth', 'class' => 'form_labels padding_top_7_5px')) ?> &nbsp; <span class = "form_labels  float_left mrg_lft_10"><?php echo __('Födelseår') ?></span> <?php echo $profileForm['year_of_birth']->renderError() ?>
                                     <span>&nbsp;</span>
                                     <div class="blank_12h widthall">&nbsp;</div>
                                 </div>

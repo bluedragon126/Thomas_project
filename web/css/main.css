@@ -59,10 +59,10 @@ body{
 	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:19px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
 p{line-height:19px;}
-a{text-decoration:none;color:#00b6ea;}
+a{text-decoration:none;color:#009cd9;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}
-.comment_content_wrapper a{color:#00b6ea;letter-spacing:0.02px;}
+.comment_content_wrapper a{color:#009cd9;letter-spacing:0.02px;}
 img{border:0;}
 .widthall{width:100%;}
 .float_left{float:left;position:relative;}
@@ -154,7 +154,7 @@ img{border:0;}
 .maincontainer{margin:0px auto 10px;width:980px;border-right:1px solid #bdc2be;overflow:hidden;}
 .mainheader{height:auto;float:left;position:relative;width:100%;border:0px solid blue;}
 .topheaderbg{float:left;position:relative;background-image:url(../images/colorband_top.png);background-repeat:no-repeat;width:100%;height:7px;line-height:7px;}
-.loginwrapper{float:left;position:relative;width:100%;padding:6px 0px 0 0;color:#8191a8;font-size:13px;}
+.loginwrapper{float:left;position:relative;width:100%;padding:6px 0px 0 0;color:#467e9f;font-size:13px;}
 .loginmenu{float:right;position:relative;margin:0;display:inline;width:13.3%;padding:1px 0 0 0;margin-right:18px;border:0px solid white;text-align:right;}
 .loginmenu li{float:right;position:relative;margin:0;padding:0 5px 0 5px;display:inline;list-style-type:none;}
 .loginmenu li a{color:#8191a8;text-decoration:none;}
@@ -166,7 +166,7 @@ img{border:0;}
 .leftmenu{list-style-type:none;margin:0;padding:0;overflow:hidden;background-color:#748b9e;width:970px;}
 .leftmenu li{float:left;}
 .leftmenu li a{display:block;color:white;text-align:center;text-decoration:none;font-size:1.07em;letter-spacing:2px;font-family:"Franklin Gothic Book Regular";padding-top:8px;padding-bottom:9px;}
-.leftmenu li a:hover{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;background-color:#00b6ea;}
+.leftmenu li a:hover{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;background-color:#009cd9;}
 .leftmenu li a.selected{color:#fff;float:left;position:relative;list-style-type:none;text-decoration:none;border:0px solid red;}
 .rightmenu{float:right;position:relative;width:auto;display:inline;margin:0;padding:0 7px 0 0;font-weight:bold;}
 .first_navbar_fe{padding-left:12px !important;padding-right:12px!important;}
@@ -223,7 +223,7 @@ input.submitbuttontext .submit{height:20px;float:left;position:relative;font-siz
 .update{float:left;position:relative;font-size:11px;color:#697a9c;letter-spacing:0.3px;padding:0 0px 0 0px;text-transform:capitalize;}
 .update_usart{float:left;position:relative;font-size:11px;color:#669;font-weight:normal;padding:0 0px 0 3px;text-transform:capitalize;}
 .bluefont{float:left;position:relative;text-transform:uppercase;font-family:"Franklin Gothic Medium";color:#75869f;padding:0 4px 0 1px;font-size:11px;font-weight:normal;}
-.bluefont2{float:left;position:relative;color:#00b6ea;padding:0 6px 0 0px;font-size:13px;font-weight:bold;}
+.bluefont2{float:left;position:relative;color:#009cd9;padding:0 6px 0 0px;font-size:13px;font-weight:bold;}
 .chaticon{float:left;position:relative;display:none;height:10px;background-image:url(../images/chaticon.jpg);background-position:left;margin-top:2px;padding:0 0 0 16px;background-repeat:no-repeat;color:#21569b;font-size:11px;line-height:10px;margin-right:4px;}
 .colorband{
 float:left;
@@ -288,14 +288,14 @@ font-size:0;}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
 .contactdellus{float:left;position:relative;margin:20px 0 0 0;width:100%;}
 .testimonial{float:left;position:relative;padding:10px 0 90px 0;font-size:20px;color:#0e0d0d;}
-.main_link_color{color:#00b6ea;letter-spacing:0.03px;}
+.main_link_color{color:#009cd9;letter-spacing:0.03px;}
 .main_link_col2{color:#232222;letter-spacing:0.03px;}
 #btchart{float:left;position:relative;}
 #btchart td{padding-right:20px;}
 #btchart td ul{float:left;position:relative;margin:0;padding:0;list-style-type:none;}
 #btchart td ul li{float:left;position:relative;margin:0;padding:0;list-style-type:none;display:block;color:#4b697d;clear:left;}
 .redfont{color:#dc231a;letter-spacing:0.02em;}
-.bluefont3{color:#00b6ea;}
+.bluefont3{color:#009cd9;}
 .radio{margin:0px 3px 1px 0px;padding:0;width:16px;height:16px;line-height:16px;float:left;position:relative;vertical-align:middle}
 .input174{height:19px;width:174px;border:1px solid #ced2d0;margin:3px 0px 0px 0px;background-color:#f6f9fb;padding-left:5px;}
 .input174b{height:19px;width:174px;border:1px solid #ced2d0;margin:3px 0px 0px -3px;background-color:#f6f9fb;padding-left:3px;}
@@ -310,8 +310,8 @@ input.registerbuttontext{background:transparent url(../images/new_home/registerb
 input.registerbuttontext1{background:transparent url(../images/registerbtn_bg.jpg) no-repeat right top;border:0;cursor:pointer;text-transform:capitalize;font-weight:normal;color:#202021;font-size:11px;margin:0 0 0 0;padding:3px 4px 3px 3px;width:auto;position:relative;overflow:visible;letter-spacing:1px;}
 input.text .submit{height:20px;float:left;position:relative;}
 .Som{float:left;position:relative;width:100%;}
-.Som h3{float:left;position:relative;margin:3px 0 8px 0;padding:0;font-size:18px;font-weight:normal;color:#00b6ea;}
-.Som h4{float:left;position:relative;margin:0px;padding:1px 0 18px 0;font-size:21px;font-weight:normal;color:#00b6ea;}
+.Som h3{float:left;position:relative;margin:3px 0 8px 0;padding:0;font-size:18px;font-weight:normal;color:#009cd9;}
+.Som h4{float:left;position:relative;margin:0px;padding:1px 0 18px 0;font-size:21px;font-weight:normal;color:#009cd9;}
 .Som ul{float:left;position:relative;width:100%;margin:0;padding:5px 0 0 1px;}
 .Som ul li{float:left;position:relative;width:100%;margin:0;padding:0 0 0 10px;list-style-type:none;display:block;background-image:url(../images/roundbullete.jpg);background-repeat:no-repeat;background-position:left center;}
 .leftmenu #top_borst_menu a:hover{background-color:#005baa;}
@@ -345,7 +345,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .submenuwrapper #vip_menu{border-bottom:1px solid #00e3fb;}
 .submenuwrapper #utbildning_menu{border-bottom:1px solid #A6CC39;}
 .submenuwrapper #bt_markets{border-bottom:1px solid #00e3fb;}
-.default_menu_color{background-color:#00b6ea;}
+.default_menu_color{background-color:#009cd9;}
 
 .submenuwrapper #borst_menu li a:hover{
 	background:#dbe1f2 url(../images/new_home/arrow_blue.png) no-repeat center bottom;background-color:#dbe1f2; background-size: 16px;}
@@ -368,7 +368,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .show_div{visibility:visible;display:block;}
 #registration_help_section{float:left;position:relative;width:100%;display:none;}
 .blog_rights{display:none;}
-.error_list{font-size:12px;line-height:26px;margin:0px 0px 0px 3px;padding:0pt;list-style-type:none;color:#f58767;float:left;position:relative;}
+.error_list{font-size:12px;line-height:22px;margin:0px 0px 0px 3px;padding:0pt;list-style-type:none;color:#f58767;float:left;position:relative;}
 .error_list_outer{position:relative;}
 .for_labels{float:left;position:relative;margin-top:1px;}
 .errormsg, .greenmsg{font-size:12px;line-height:16px;padding:12px 4px 5px 5px;margin:8px 0 22px;}
@@ -386,7 +386,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 #borst_forum_reply .error_list{margin:0px;padding:0pt;list-style-type:none;color:#f58767;}
 .skincolor{color:#e99585;}
 #user_list td{font-weight:normal;}
-#forget_password_page a{color:#00b6ea;}
+#forget_password_page a{color:#009cd9;}
 .friend_request{border:0px solid red;padding:0px 5px 0px 5px;margin-top:2px;background-color:#5a7692;color:#FFFFFF;}
 .search_error{float:left;position:relative;height:18px;width:148px;border:1px solid #f58767 !important;font-size:11px;}
 .redcolor{color:#f15822;}
@@ -746,7 +746,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .addArticle .article_content .detail_section{color:#232222;float:left;font-size:12px;padding-left:12px;padding-top:5px;position:relative;}
 .addArticle .article_content .img_upload_outer{float:left;position:relative;width:500px;padding-bottom:12px;padding-left:28px;}
 .addArticle .article_content .img_upload_outer span{float:left;position:relative;width:100%;text-align:left;}
-.addArticle .article_content .img_upload_outer a{float:left;position:relative;color:#00b6ea;text-decoration:none;}
+.addArticle .article_content .img_upload_outer a{float:left;position:relative;color:#009cd9;text-decoration:none;}
 .addArticle .article_content .img_upload_outer .upload_img_div{float:left;position:relative;color:#232222;width:450px;margin:30px 0px 5px 0px;}
 .addArticle .article_content .img_upload_outer .upload_img_text{float:left;position:relative;text-align:left;color:#232222;width:150px;}
 .addArticle .article_content .img_upload_outer .upload_img_report{float:left;position:relative;text-align:left;color:#FF3300;width:298px;}
@@ -784,9 +784,9 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 #borst_desc_div p strong{
 	font-family: "ITC Cheltenham Book";
     float: left;
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #f15822;
-    line-height: 2.5em;
+    line-height: 2.3em;
     width: 100%;
 	font-weight: 100;
 }
@@ -794,11 +794,11 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 #borst_desc_div p em{
 	font-family: "Franklin Gothic Book Regular";
     float: left;
-    font-size: 0.85em;
+    font-size: 0.8em;
     color: #232222;
-    line-height: 0.9em;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+	word-spacing: -0.02em;
     width: 100%;
 	font-style:normal;
 }
@@ -813,13 +813,13 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .blueText a{color:#94B6DC;text-decoration:none;font-size:11px;font-weight:normal;}
 .blueText{text-align:right;font-weight:bold;}
 .heading_red{color:#232222;float:left;font-size:28px;line-height:40px;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
-.heading_blue{color:#00b6ea;float:left;font-size:28px;line-height:40px;font-weight:normal;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
+.heading_blue{color:#009cd9;float:left;font-size:28px;line-height:40px;font-weight:normal;margin:0;padding:30px 0 15px;position:relative;width:99%;letter-spacing:0.02em;}
 .heading_yellow{color:#f7c900;float:left;line-height:40px;margin:0;padding:26px 0 2px;position:relative;width:99%;letter-spacing:0.02em;}
 .heading_yellow2{}
 .heading_violet_chart{float:left;padding:20px 0 24px 0;width:99%;}
 .heading_violet_chart_calnder{color:#57afde;float:left;font-size:28px;line-height:40px;margin:0;padding:15px 0 1px;position:relative;width:99%;letter-spacing:0.02em;}
 .inheading{font-size:28px;line-height:40px;float:left;position:relative;margin:0;padding:20px 0 25px 0;color:#232222;font-weight:normal;width:99%;letter-spacing:0.02em;}
-.heading_shop-small{color:#00b6ea;float:left;font-size:19px;margin:27px 0px 2px 0px;padding:0px 0px 0px 0px;position:relative;width:99%;display:inline;}
+.heading_shop-small{color:#009cd9;float:left;font-size:19px;margin:27px 0px 2px 0px;padding:0px 0px 0px 0px;position:relative;width:99%;display:inline;}
 .minprofile_heading{width:50%;height:40px;float:left;display:block;}
 .editprofile_links{width:48%;height:10px;float:right;display:block;margin-top:29px;}
 .hide_blog_div{margin-left:10px;}
@@ -850,7 +850,7 @@ div.registerbutton input.registerbuttontext{padding:3px 3px 3px 0;}
 .chart_heading{padding-top:36px;width:100%;text-align:left;margin-left:21px;}
 .file_content{width:97%;float:left;margin-top:10PX;padding:5px;border:dashed 1px green;}
 .similar_articles{width:100%;float:left;}
-.similar_list_title{font-weight:bold;font-size:12px;color:#00b6ea;margin-top:10px;}
+.similar_list_title{font-weight:bold;font-size:12px;color:#009cd9;margin-top:10px;}
 .two_charts_in_row{float:left;width:640px;}
 .one_chart{width:320px;float:left;}
 #btchart td ul li a{clear:left;color:#4B697D;display:block;float:left;list-style-type:none;}
@@ -865,7 +865,7 @@ div.registerbutton input.registerbuttontext{padding:3px 3px 3px 0;}
 .text_block .image_text{float:left;position:relative;width:80px;margin-left:6px;margin-top:11px;color:#7e99bc;font-size:10px;line-height:12px;}
 .text_block .strong_pink{color:#d04373;font-weight:bold;}
 .text_block .text-inside{float:left;padding-left:12px;position:relative;width:162px;margin-top:16px;}
-#blog_topic_list .dark_blue a{color:#00b6ea;padding-top:4px;padding-bottom:4px;padding-right:10px;padding-left:5px;float:left;}
+#blog_topic_list .dark_blue a{color:#009cd9;padding-top:4px;padding-bottom:4px;padding-right:10px;padding-left:5px;float:left;}
 #blog_topic_list .light_blue{color:#77bee5;padding-top:7px;padding-bottom:4px;}
 #blog_topic_list .pink a{color:#d04373;padding-top:4px;padding-bottom:4px;padding-right:10px;}
 #blog_topic_list .dark_green{color:#348446;padding-top:7px;padding-bottom:4px;}

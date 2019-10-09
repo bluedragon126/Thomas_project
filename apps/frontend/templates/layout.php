@@ -65,7 +65,7 @@
                         <div class="pop_subtitle">Nya affärsförslag varje vecka!</div>
                         <div class="pop_img_div">
                             <!-- <img src="/images/new_home/POP-UP_VT.png" alt="ad1" width="188" style="margin-right:1px;" /> -->
-                            <img src="/images/new_home/POP-UP_VM2.png" alt="ad2" width="376"/>                            
+                            <img src="/images/new_home/POP-UP_VM2.png" alt="ad2" width="276"/>                            
                         </div>
                     </div>
                 </div>

@@ -90,7 +90,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="blank_1h widthall">&nbsp;</div>
                     <span class="float_left widthall"><input type="radio" name="pren" id="radio1" value="1" <?php if ($pren == 1) echo("checked"); ?>  class="radio"/>
                         Avsluta</span>
-                    <div class="blank_9h widthall">&nbsp;</div>
+                    <div class="blank_15h widthall">&nbsp;</div>
                     <input id="newsletter_email" name="newsletter_email" value="Fyll i din e-post här!"  onFocus="clearNewsletterEmailField(this)" onBlur="fillNewsletterEmailField()" type="text" class="form_input width_277 contactus-inputs" /><br />
                     <div class="blank_15h widthall">&nbsp;</div>
                     <div class="registerbtn" id="newsletter_form_button_div">
@@ -112,10 +112,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 
                 
-                <div class="blank_29h widthall"></div>
+                <div class="blank_45h widthall"></div>
                 
-                
-               
                 
                 
                 <div class="whp_heading">Dagsbrevet</div>                
