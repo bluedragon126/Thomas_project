@@ -90,7 +90,8 @@
             <div class="cookie_bg">
                 <div class="cookie_wrap">
                     <div class="cookie"> <p>Vi använder cookies för att ge dig en bättre upplevelse av Börstjänarens webbplats.</p> 
-                    <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCookie"><div class="cookie_link">Om våra cookies.</div></a>
+                    <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCookie">
+                    <div class="cookie_link">Om våra cookies</div></a>
                     </div>
                     <!-- <div class="cookie_button_bg" id="cookie_ok"><span class="cookie_button">OK</span></div> -->
                     <a><div id="cookie_ok"> <p class="cookie_close_btn"> &times; </p></div></a>

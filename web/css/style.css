@@ -1526,8 +1526,17 @@ a.article_dots_r {
 .whp_subheading2 {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.15em;
-    color: #232222;
+    color: #00ff00;
     margin: 15px 0px 5px;
+}
+
+.whp_subheading3 {
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.3em;
+	line-height: 1.3em;
+    letter-spacing: 0.02em;
+    color: #232222;
+    margin: 18px 0px 3px;
 }
 
 .whp_border {
@@ -2128,9 +2137,9 @@ input.rounded {
 
 .back_to_top_btn {
     float: left;
-    margin-bottom: 22px;
-    margin-right: 577px;
-    width: 80px;
+	margin-bottom: 22px;
+	margin-right: 610px;
+	width: 35px;
 }
 
 .shop_home_title {
@@ -2200,12 +2209,13 @@ input.rounded {
 }
 
 .shop_detail_title {
-    font-family: 'FranklinGothicCondensed';
-    color: #232222;
-	font-size: 1.7em;
+    font-family: 'Franklin Gothic Book Regular';
+	color: #232222;
+	font-size: 1em;
 	line-height: 15px;
-	letter-spacing: 0.01em;
-	margin: 73px 0px 5px;
+	letter-spacing: 0.15em;
+	margin: 24px 0px 10px;
+	text-transform: uppercase;
 }
 
 .shop_detail_subtitle {
@@ -2214,14 +2224,13 @@ input.rounded {
 	font-size: 1.7em;
 	line-height: 15px;
 	letter-spacing: 0.01em;
-	margin: 12px 0px 25px;
+	margin: 8px 0px 25px;
 }
 
 .shop_detail_subtitle2 {
     font-family: 'Franklin Gothic Book Regular';
 	color: #232222;
 	font-size: 2.2em;
-	letter-spacing: -0.01em;
 	word-spacing: -0.02em;
 	line-height: 1.3em;
 	margin-bottom: 4px;
@@ -2240,14 +2249,14 @@ input.rounded {
     font-family: 'CheltenhamITCW01-Bold';
     font-size: 1.3em;
 	line-height: 1.3em;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     color: #232222;
     margin: 42px 0px -6px;
 }
 
 .shop_detail_subsection_1 {
     font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.15em;
+    font-size: 1.3em;
 	line-height: 1.3em;
     letter-spacing: 0.02em;
     color: #232222;
@@ -2332,8 +2341,8 @@ input.rounded {
     font-family: "Franklin Gothic Book Regular";
     font-size: 1.1em;
     line-height: 0.01em;
-    margin: 26px 0 0px 0px;
-    letter-spacing: 0.08em;
+    margin: 26px 0 16px 0px;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
 }
 
@@ -2358,7 +2367,8 @@ input.rounded {
 }
 
 .shop_detail_thumbnail {
-    margin: -5px 0px 40px 0px;
+  	margin: -5px 0px 30px 0px;
+	width:170px;
 }
 
 .shop_detail_preamble {
@@ -2372,9 +2382,9 @@ input.rounded {
 
 .shop_detail_order {
     font-family: 'Franklin_Gothic_Bold';
-    color: #232222;
+    color: #f15822;
     font-size: 1em;
-    margin-top: 22px;
+    margin: 30px 0 4px;
     letter-spacing: -0.015em;
 }
 
@@ -2604,18 +2614,40 @@ input.rounded {
     background-image: url("../images/new_home/bt-shop_passa_sq.png");
     background-repeat: no-repeat;
     float: left;
-    margin: 22px 800px 44px 0;
-    position: relative;
-    width: 80px;
-    height: 47px;
-    background-size: calc(100%)
+  	margin: 12px 800px 2px 0px;
+	position: relative;
+	width: 70px;
+	height: 47px;
+	background-size: calc(100%);
+}
+
+.bt-shop_passa_sq_title {
+    background-image: url("../images/new_home/bt-shop_passa_sq.png");
+    background-repeat: no-repeat;
+    float: left;
+  	margin: 20px 800px 42px 0px;
+	position: relative;
+	width: 70px;
+	height: 47px;
+	background-size: calc(100%);
 }
 
 .bt-shop_passa_sq_li {
     background-image: url("../images/new_home/bt-shop_passa_sq.png");
     background-repeat: no-repeat;
     float: left;
-    margin: 2px 800px 44px 0;
+  	margin: 12px 800px 8px 0px;
+	position: relative;
+	width: 70px;
+	height: 47px;
+	background-size: calc(100%);
+}
+
+.bt-shop_passa_sq_li_ul {
+    background-image: url("../images/new_home/bt-shop_passa_sq.png");
+    background-repeat: no-repeat;
+    float: left;
+    margin: 8px 800px 14px 0;
     position: relative;
     width: 80px;
     height: 47px;
@@ -2980,7 +3012,7 @@ blank_4h {
 .shop_r_other_subtitle {
     color: #abb9c8;
     font-family: "ITC Cheltenham Book";
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 1.3em;
     letter-spacing: -0.01em !important;
     word-spacing: -0.02em;
@@ -3045,7 +3077,7 @@ blank_4h {
 }
 
 .shop_r_other_price_main {
-    margin-top: 19px;
+    margin-top: 12px;
 }
 
 
@@ -3126,8 +3158,8 @@ ul.cartStep2 li {
 .shop_passa1_2 {
     color: #232222;
 	font-family: "Georgia";
-	font-size: 1.5em;
-	line-height: 1.4em;
+	font-size: 1.2em;
+	line-height: 1.5em;
 	margin-bottom: -4px;
 	letter-spacing: 0.03em;
 }
@@ -3150,13 +3182,13 @@ ul.cartStep2 li {
 }
 
 .shop_passa2 {
-    color: #232222;
+    color: #febc11;
     font-family: "FranklinGothicCondensed";
-    font-size: 2.2em;
+    font-size: 1.7em;
     line-height: 1.7em;
-    margin: 45px 0px 2px 0px;
+    margin-top: 45px;
     word-spacing: -0.06em;
-	letter-spacing: 0.01em;
+	letter-spacing: 0.02em;
 }
 
 .shop_passa3 {
@@ -6043,8 +6075,7 @@ ul.cartStep2 li {
     font-family: 'Franklin Gothic Book Regular';
     color: #f15822;
     font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    /*text-transform: uppercase;*/
 }
 
 .blog_drop-down-menus ul li {
@@ -6400,15 +6431,16 @@ input.send_forgetpass {
     background-color:black;
     height: auto;
     border-radius: 6px;
-    margin-top: 7px;
+    margin-top: 0px;
     display: none;
-    padding: 20px;
+    padding: 15px;
 
 }
 
 .cookie {
-    font-family: 'Franklin Gothic Medium';
-    font-size: 1.14em;
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 1.2em;
+	letter-spacing: 0.02em;
     color: white;
     float: left;
     text-align: left;
@@ -6418,8 +6450,10 @@ input.send_forgetpass {
 
 .cookie_link {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.14em;
-    color: #ffffff;
+    font-size: 0.8em;
+	letter-spacing: 0.2em;
+	text-transform:uppercase;
+    color: #febc11;
     float: left;
     margin-left: 3px;
 }
@@ -8531,7 +8565,7 @@ input.send_forgetpass {
     box-shadow: 2px 2px 12px #dad7d8;
     background-color: #928d87;
     width: 40px;
-    height: 366px;
+    height: 406px;
     float: left;
 }
 
@@ -8543,7 +8577,7 @@ input.send_forgetpass {
     box-shadow: 2px 2px 12px #555555;
     background-color: #a5a09a;
     width: 450px;
-    height: 366px;
+    height: 406px;
 }
 
 #container .pop_title {
@@ -8593,16 +8627,16 @@ input.send_forgetpass {
 
 #container .pop_subtitle {
     font-family: 'Georgia';
-    font-size: 1.4em;
+    font-size: 1.2em;
 	letter-spacing: 0.04em;
     color: #ffffff;
     padding: 0px 50px 11px 88px;
     text-align: center;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 #container .pop_img_div {
-    padding: 3px 0 0 160px;
+    padding: 3px 0 0 105px;
 }
 
 #container .closePopup {
@@ -8689,9 +8723,9 @@ input.send_forgetpass {
 }
 
 .BTshop_product_logo {
-    margin: 0px -8px 10px 0px;
+    margin: 0px 1px 4px 90px;
     float: right;
-    width: 45px;
+    width: 55px;
 }
 
 .width_58 {
@@ -8736,7 +8770,7 @@ input.send_forgetpass {
 }
 
 .shop_cart_logo {
-    margin: -24px 85px 45px 0px;
+    margin: -24px 85px 5px 0px;
     float: right;
 }
 

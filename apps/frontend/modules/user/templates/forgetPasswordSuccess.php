@@ -66,11 +66,13 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <tr>
                                 <td class="padding_top_0"><a href="http://<?php echo $host_str ?>/sbt/sbtHome">Hem</a></td>
                             </tr>
+                           
                             <tr>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td><?php echo __('<b>Om du inte längre</b> har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnr och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
+                                <td>
+								
+								<div class="whp_subheading">Vill ha en rubbe här</div>
+								
+								<?php echo __('<b>Om du inte längre</b> har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnummer och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
                             </tr>
                         </table>
                     </div>

@@ -425,7 +425,7 @@
                 <?php if (count($abonnemang_data) > 0 && $product_detail->btshop_type_id == 6): ?>
                     <div class="shop_r_other_title"><!--Abonnemang-->Produkter i samma kategori:</div>
                     <div class="shop_r_other float_left">
-                    <font color="#000000" size="3">
+                   
                         <ul>
                             <?php foreach ($abonnemang_data as $productAbonnemang): 
                                 if($productAbonnemang->id != $productID) {?>
