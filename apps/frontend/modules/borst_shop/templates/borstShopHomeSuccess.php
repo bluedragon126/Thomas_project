@@ -15,7 +15,7 @@
         }
     
         var checkRight = $(".rightbanner").height();
-        var checkLeft = $(".btshopleftdiv").height();
+        var checkLeft = $(".inner-page-contetn-left").height();
   
         if(checkLeft > checkRight)
         {
@@ -23,7 +23,7 @@
         } 
         else
         {
-            $(".btshopleftdiv").css({"height":checkRight+"px"});
+            $(".inner-page-contetn-left").css({"height":checkRight+"px"});
         }
 
     });
@@ -700,32 +700,22 @@
             <div class="shopblock marginBottom0" >
                     <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                             </a>--></div> 
-            </div>    
+            </div>   
+            <?php echo include_partial('global/inner_bottom_footer'); ?> 
         </div>
     <input type="hidden" name="product_id" id="product_id" value="<?php //echo $product_detail->id;  ?>"/>
     
     <!-- <div class = "maincontentpageshop"> -->
         <div class="rightbanner autoheight padding_0">
-            <div class="home_heading_r">
-                <div class="home_ad_r float_left font_size_12 ">Annons</div>
-                <?php //include_partial('global/ad_message') ?>
-                    <?php include_partial('global/right_top_ads', array('ad' => $ad_1)) ?>
-                    <?php include_partial('global/right_top_ads', array('ad' => $ad_2)) ?>        
-                    <?php include_partial('global/sponsorer_ad') ?>
-                    
-                    <!--<div class="home_ad_r_spons float_left">Annons</div> -->
-                    <?php include_partial('global/bulk_ads', array('bulk_ads' => $ad_3)) ?>
-                    <!--<div class="blank_10h">&nbsp;</div>-->
-                    <?php include_partial('global/right_top_ads', array('ad' => $ad_4)) ?>
-                    <?php if(count($twentyeight_2_thirtyfive)>0) {?><div class="home_adline_r_div">&nbsp;</div><?php }?>
-                </div>
-            </div>
+            <div class="shop_1_step_right_panel">&nbsp;</div>
+            <div class="up_sub_div"><a href="#"><img src="/images/new_home/up_1.png" /></a></div>
+            
         </div>
     <!-- </div> -->
     
    
 </div>
-<?php echo include_partial('global/inner_bottom_footer'); ?>
+
 
 <script>
     function gotoDiv(url){

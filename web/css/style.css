@@ -1205,7 +1205,7 @@ home_heading_c {
 }
 
 .up_div {
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
     clear: both;
     margin-left: 15px;
 }
@@ -1213,7 +1213,7 @@ home_heading_c {
 .up_sub_div {
     float: right;
     /*margin-bottom: 8px;*/
-    margin-top: -8px;
+    margin-top: -17px;
 }
 
 .floatRight {
@@ -6536,8 +6536,9 @@ input.send_forgetpass {
 }
 
 .shop_1_step_right_panel {
+    z-index: -1;
     background: url("../images/new_home/shop_pattern_baskets.png");
-    left: -14px;
+    /* left: -14px; */
     position: relative;
     background-size: 330px;
     width: 330px;
