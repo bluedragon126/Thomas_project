@@ -1205,7 +1205,7 @@ home_heading_c {
 }
 
 .up_div {
-    margin-bottom: 9px;
+    /* margin-bottom: 9px; */
     clear: both;
     margin-left: 15px;
 }
@@ -1213,7 +1213,7 @@ home_heading_c {
 .up_sub_div {
     float: right;
     /*margin-bottom: 8px;*/
-    margin-top: -8px;
+    margin-top: -17px;
 }
 
 .floatRight {
@@ -6570,8 +6570,9 @@ input.send_forgetpass {
 }
 
 .shop_1_step_right_panel {
+    z-index: -1;
     background: url("../images/new_home/shop_pattern_baskets.png");
-    left: -14px;
+    /* left: -14px; */
     position: relative;
     background-size: 330px;
     width: 330px;
@@ -11457,7 +11458,7 @@ whp_heading
 }
 
 .sub-active {
-    color: #8e8a8b;
+    color: #abb9c8;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
@@ -11465,7 +11466,7 @@ whp_heading
 }
 
 .subnav-bar-wrap-right .subnav-bar:hover {
-    color: #8e8a8b;
+    color: #abb9c8 !important;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
