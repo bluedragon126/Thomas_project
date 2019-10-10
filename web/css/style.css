@@ -2368,7 +2368,7 @@ input.rounded {
 
 .shop_detail_thumbnail {
   	margin: -5px 0px 30px 0px;
-	width:170px;
+	width:175px;
 }
 
 .shop_detail_preamble {
@@ -2637,6 +2637,17 @@ input.rounded {
     background-repeat: no-repeat;
     float: left;
   	margin: 12px 800px 8px 0px;
+	position: relative;
+	width: 70px;
+	height: 47px;
+	background-size: calc(100%);
+}
+
+.bt-shop_passa_sq_bread {
+    background-image: url("../images/new_home/bt-shop_passa_sq.png");
+    background-repeat: no-repeat;
+    float: left;
+  	margin: 20px 800px 4px 0px;
 	position: relative;
 	width: 70px;
 	height: 47px;
