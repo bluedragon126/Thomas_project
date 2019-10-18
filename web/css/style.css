@@ -6571,6 +6571,8 @@ input.send_forgetpass {
 .bt-shop-step-bottom-margin {
     height: 45px;
 }
+.main_link_col2
+    {color:#232222;letter-spacing:0.03px;}
 
 .shop_note {
     color: #f15822;

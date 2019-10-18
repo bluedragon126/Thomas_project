@@ -2571,6 +2571,8 @@ $(document).ready(function() {
                 if (id == 'to_payment') {
                     window.location = 'http://' + window.location.hostname + '/borst_shop/shopPayment/product_id/' + product_id;
                 }
+                // console.log("testtest");
+                window.scrollTo(0, 0);
                 $.ajax({
                     url: '/borst_shop/getCartDataCount',
                     success: function(data1) {
