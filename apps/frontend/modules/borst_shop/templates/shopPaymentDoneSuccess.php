@@ -20,6 +20,7 @@
 </script>
 <div class="maincontentpage  margin-top-15m">
     <div class="inner-page-contetn-left margin-bottom-10m">
+        
         <div class="breadcrumb_div">
             <div>
                 <!--<div class="photoimg "><img alt="photo" src="/images/new_home/btshop.gif"></div>-->
@@ -34,6 +35,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
             </div>
             <div class="floatRightNew"></div>
+            <span class="shop_note float_right" style="margin-right:40px"><?php echo __('Transaktionen har genomförts framgångsrikt') ?></span><br />
         </div>
         <div class="btshopleftdiv ptop_10">
             <div class="btshopleftdivinner">
@@ -50,7 +52,6 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                     <div class="float_left widthall">
                         <?php if ($purchase_id): ?>
-                            <span class="success_msg float_left"><?php echo __('Transaktionen har genomförts framgångsrikt') ?></span><br />
                             <div class="float_left widthall"><?php echo __('En bekräftelse på ditt köp har skickats till') ?>: <?php echo $purchase_rec->email; ?></div>
                         <?php endif; ?>
                     </div>
