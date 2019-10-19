@@ -1685,25 +1685,26 @@ class borst_shopActions extends sfActions {
             }
 
             
-            $this->getUser()->getAttributeHolder()->remove('product_arr');
-            $this->getUser()->getAttributeHolder()->remove('price_arr');
-            $this->getUser()->getAttributeHolder()->remove('product_qty_arr');
-            $this->getUser()->getAttributeHolder()->remove('payment_user_info');
-            $this->getUser()->getAttributeHolder()->remove('price_detail_id_arr');
-            $this->getUser()->getAttributeHolder()->remove('payment_id');
-            $this->getUser()->getAttributeHolder()->remove('payment_user_info');
             
-            //code by sandeep
-            $this->getUser()->getAttributeHolder()->remove('final_vat');
-            $this->getUser()->getAttributeHolder()->remove('final_total');
-            $this->getUser()->getAttributeHolder()->remove('final_dicount');
-            $this->getUser()->getAttributeHolder()->remove('final_discount_percentage');
 
             //code by sandeep end
         }
         }
-        isicsBreadcrumbs::getInstance()->addItem('BT-SHOP', 'borst_shop/borstShopHome');
-        isicsBreadcrumbs::getInstance()->addItem('Betalning', 'borst_shop/shopPayment');
+        $this->getUser()->getAttributeHolder()->remove('product_arr');
+        $this->getUser()->getAttributeHolder()->remove('price_arr');
+        $this->getUser()->getAttributeHolder()->remove('product_qty_arr');
+        $this->getUser()->getAttributeHolder()->remove('payment_user_info');
+        $this->getUser()->getAttributeHolder()->remove('price_detail_id_arr');
+        $this->getUser()->getAttributeHolder()->remove('payment_id');
+        $this->getUser()->getAttributeHolder()->remove('payment_user_info');
+        
+        //code by sandeep
+        $this->getUser()->getAttributeHolder()->remove('final_vat');
+        $this->getUser()->getAttributeHolder()->remove('final_total');
+        $this->getUser()->getAttributeHolder()->remove('final_dicount');
+        $this->getUser()->getAttributeHolder()->remove('final_discount_percentage');
+    isicsBreadcrumbs::getInstance()->addItem('BT-SHOP', 'borst_shop/borstShopHome');
+    isicsBreadcrumbs::getInstance()->addItem('Betalning', 'borst_shop/shopPayment');
         isicsBreadcrumbs::getInstance()->addItem('Bekräftelse av betalning', 'borst_shop/borstShopHome');
     }
 
