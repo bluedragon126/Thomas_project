@@ -1008,7 +1008,7 @@ home_heading_c {
     font-family: "Georgia";
     color: #232222;
     font-size: 1.1em;
-    line-height: 1.3em;
+    line-height: 1.35em;
     word-wrap: break-word;
 }
 
@@ -11367,8 +11367,8 @@ whp_heading
 
 .subnav-bar-wrap-right {
     float: right;
-    width: 33.3%;
-    margin-right: -10px;
+    width: 23%;
+    margin-right: -2px;
 }
 
 .subnav-bar-wrap-right span {
