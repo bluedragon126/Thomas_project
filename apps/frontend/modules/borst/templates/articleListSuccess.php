@@ -290,7 +290,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             //     $flagga = "no_flag.gif";
                             ?>
                             <tr id="borst_rec_row" class="classnot">                                
-                                <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><span class="article_list_text"><?php echo substr($article->article_date, 0, 10); ?></span></td>
+                                <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><span class="list_date"><?php echo substr($article->article_date, 0, 10); ?></span></td>
                                 <td width="16">&nbsp;</td>
                                 <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'list_topic' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
                                 <td width="23">&nbsp;</td>
