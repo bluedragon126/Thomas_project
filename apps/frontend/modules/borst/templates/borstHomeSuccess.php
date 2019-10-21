@@ -506,7 +506,7 @@ endfor;
     </div>
 </div>
 
-<div class="load_article" id="load_article_1" pageno="2"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
+<div class="load_article cursor" id="load_article_1" pageno="2"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
 
 <div class="bottom_shop_border">&nbsp;</div>
 <div class="footer">

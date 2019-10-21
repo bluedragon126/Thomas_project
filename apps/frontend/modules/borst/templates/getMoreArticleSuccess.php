@@ -414,7 +414,7 @@ endfor;
         <!-- 28 to 35 start -->
 
     </div>
-<div class="load_article" id="load_article_<?php echo $pageno; ?>" pageno="<?php echo $nextpageno; ?>"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
+<div class="load_article cursor" id="load_article_<?php echo $pageno; ?>" pageno="<?php echo $nextpageno; ?>"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
 <div class="bottom_shop_border">&nbsp;</div>
 <div class="loading" style="display: none;">&nbsp;</div>
 <div class="bt-shop_border_home2"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
