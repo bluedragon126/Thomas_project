@@ -1310,12 +1310,12 @@ class borst_shopActions extends sfActions {
         //echo "hello";
         //var_dump($this->getUser()->getAttribute('payment_user_info'));
         $config = array(
-            "callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentType",
+            "callbackUrl"     => "https://www.borstjanaren.se/borst_shop/shopPaymentDone",
             "payeeAlias"      => "1233144318", //Swish number of the merchant
             "currency"        => "SEK", //currency code	
-            "CAINFO"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/root.pem', //Path to root CA
-            "SSLCERT"         => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientcert.pem', //Path to client certificate
-            "SSLKEY"          => '/var/www/vhosts/borstjanaren.se/httpdocs/swish/cert2782018/swishclientkey.key', //Path to private key*/
+            "CAINFO"          => '/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt', //Path to root CA
+            "SSLCERT"         => '/var/www/vhosts/thetradingaspirants.com/httpdocs/swish/swish_cert.pem', //Path to client certificate
+            "SSLKEY"          => '/var/www/vhosts/thetradingaspirants.com/httpdocs/swish/swish.key', //Path to private key*/
             "SSLCERTTYPE"     => 'PEM'
         );
         $userData = $this->getUser()->getAttribute('payment_user_info');
@@ -1329,8 +1329,7 @@ class borst_shopActions extends sfActions {
                 //echo createPayment($_GET["orderId"], $_GET["phone"], $_GET["samt"], $_GET["msg"], $config);
                 //createPayment($paymentReference, $payerAlias, $amount, $message, $config)
                 try {
-
-                    if ($payerAlias != "") {//echo "1==>";
+					if ($payerAlias != "") {//echo "1==>";
                         $data = array("payeePaymentReference" => $paymentReference, //'234567892'
                             "callbackUrl" => $config["callbackUrl"],
                             "payerAlias" => $payerAlias, //46739866319
@@ -1405,6 +1404,7 @@ class borst_shopActions extends sfActions {
                     header('Content-Type: application/json');
                     //return '{"transactionId":"' . $transactionId . '","transactionURL":"' . $locationURL . '"}';
                     return $this->renderText('{"transactionId":"' . $transactionId . '","transactionURL":"' . $locationURL . '"}');
+                    
             } catch (Exception $e) {
                 //$errVar = trigger_error(sprintf('Curl failed with error #%d: %s', $e->getCode(), $e->getMessage()), E_USER_ERROR);
                 //return '{"errorMessage":"' . $e->getMessage() . '"}';
@@ -1534,17 +1534,17 @@ class borst_shopActions extends sfActions {
             $purchase_record->save();
 
             $host_str = $this->getRequest()->getHost();
-            //$url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
+            $url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
           
-            //$mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
-            //$to = array(sfConfig::get('app_mail_to_1'));
-            //$from = sfConfig::get('app_mail_shop_email_1');
-            //$message = $this->getMailer()->compose();
-            //$message->setSubject('New Transaction');
-            //$message->setTo($to);
-            //$message->setFrom($from);
-            //$message->setBody($mailBody, 'text/html');
-            //$this->getMailer()->send($message);
+            $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
+            $to = array(sfConfig::get('app_mail_to_1'));
+            $from = sfConfig::get('app_mail_shop_email_1');
+            $message = $this->getMailer()->compose();
+            $message->setSubject('New Transaction');
+            $message->setTo($to);
+            $message->setFrom($from);
+            $message->setBody($mailBody, 'text/html');
+            $this->getMailer()->send($message);
         }
 
 
@@ -1665,46 +1665,45 @@ class borst_shopActions extends sfActions {
                 }else{
                     $this->saveInvoicePdf($id,0,0);
                 }
-               // $mailBody = $this->getPartial('user_order', array('is_Article' => 0,'item_list' => $this->item_list, 'product_article' => $this->product_article, 'purchase_rec' => $this->purchase_rec, 'name' => $name));
+                $mailBody = $this->getPartial('user_order', array('is_Article' => 0,'item_list' => $this->item_list, 'product_article' => $this->product_article, 'purchase_rec' => $this->purchase_rec, 'name' => $name));
 
-               // $to = $this->purchase_rec->email;
-               // $from = sfConfig::get('app_mail_shop_email');
+                $to = $this->purchase_rec->email;
+                $from = sfConfig::get('app_mail_shop_email');
 
-               // $message = $this->getMailer()->compose();
-                //if ($this->purchase_rec->checkout_status == 1)
-                //    $message->setSubject('Orderbekräftelse');
-                //if ($this->purchase_rec->checkout_status == 0)
-                //    $message->setSubject('Fakturabeställning');
-                //$message->attach(new Swift_Attachment(file_get_contents("Invoice.pdf"), "Invoice.pdf", "application/pdf"));
-                //$message->setTo($to);
-                //$message->setCc('info@borstjanaren.se');
-                //$message->setFrom($from);
-                //$message->setBody($mailBody, 'text/html');
-                //$this->getMailer()->send($message);
+                $message = $this->getMailer()->compose();
+                if ($this->purchase_rec->checkout_status == 1)
+                    $message->setSubject('Orderbekräftelse');
+                if ($this->purchase_rec->checkout_status == 0)
+                    $message->setSubject('Fakturabeställning');
+                $message->attach(new Swift_Attachment(file_get_contents("Invoice.pdf"), "Invoice.pdf", "application/pdf"));
+                $message->setTo($to);
+                $message->setCc('info@borstjanaren.se');
+                $message->setFrom($from);
+                $message->setBody($mailBody, 'text/html');
+                $this->getMailer()->send($message);
                 //$this->transaction_type = $request->getParameter('typ');
             }
 
             
+            $this->getUser()->getAttributeHolder()->remove('product_arr');
+            $this->getUser()->getAttributeHolder()->remove('price_arr');
+            $this->getUser()->getAttributeHolder()->remove('product_qty_arr');
+            $this->getUser()->getAttributeHolder()->remove('payment_user_info');
+            $this->getUser()->getAttributeHolder()->remove('price_detail_id_arr');
+            $this->getUser()->getAttributeHolder()->remove('payment_id');
+            $this->getUser()->getAttributeHolder()->remove('payment_user_info');
             
+            //code by sandeep
+            $this->getUser()->getAttributeHolder()->remove('final_vat');
+            $this->getUser()->getAttributeHolder()->remove('final_total');
+            $this->getUser()->getAttributeHolder()->remove('final_dicount');
+            $this->getUser()->getAttributeHolder()->remove('final_discount_percentage');
 
             //code by sandeep end
         }
         }
-        $this->getUser()->getAttributeHolder()->remove('product_arr');
-        $this->getUser()->getAttributeHolder()->remove('price_arr');
-        $this->getUser()->getAttributeHolder()->remove('product_qty_arr');
-        $this->getUser()->getAttributeHolder()->remove('payment_user_info');
-        $this->getUser()->getAttributeHolder()->remove('price_detail_id_arr');
-        $this->getUser()->getAttributeHolder()->remove('payment_id');
-        $this->getUser()->getAttributeHolder()->remove('payment_user_info');
-        
-        //code by sandeep
-        $this->getUser()->getAttributeHolder()->remove('final_vat');
-        $this->getUser()->getAttributeHolder()->remove('final_total');
-        $this->getUser()->getAttributeHolder()->remove('final_dicount');
-        $this->getUser()->getAttributeHolder()->remove('final_discount_percentage');
-    isicsBreadcrumbs::getInstance()->addItem('BT-SHOP', 'borst_shop/borstShopHome');
-    isicsBreadcrumbs::getInstance()->addItem('Betalning', 'borst_shop/shopPayment');
+        isicsBreadcrumbs::getInstance()->addItem('BT-SHOP', 'borst_shop/borstShopHome');
+        isicsBreadcrumbs::getInstance()->addItem('Betalning', 'borst_shop/shopPayment');
         isicsBreadcrumbs::getInstance()->addItem('Bekräftelse av betalning', 'borst_shop/borstShopHome');
     }
 
