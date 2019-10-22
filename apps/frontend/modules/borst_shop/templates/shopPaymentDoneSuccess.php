@@ -34,8 +34,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </ul>
                 </div>
             </div>
-            <div class="floatRightNew"></div>
-            <span class="shop_note float_right" style="margin-right:40px"><?php echo __('Transaktionen har genomförts framgångsrikt') ?></span><br />
+            <div class="floatLeftNew wh_bt-sh_1"></div>
+            <div class="shop_note textAlignRight top_0px" ><?php echo __('Transaktionen har genomförts framgångsrikt!') ?></div><br />
         </div>
         <div class="btshopleftdiv ptop_10">
             <div class="btshopleftdivinner">

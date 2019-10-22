@@ -372,8 +372,8 @@ input.text .submit{height:20px;float:left;position:relative;}
 .error_list_outer{position:relative;}
 .for_labels{float:left;position:relative;margin-top:1px;}
 .errormsg, .greenmsg{font-size:12px;line-height:16px;padding:12px 4px 5px 5px;margin:8px 0 22px;}
-.errormsg{color:#f15822;border:0px solid #f58767;}
-.greenmsg{color:#f15822;border:0px solid #f15822;}
+.errormsg{color:#f58767;border:0px solid #f58767;}
+.greenmsg{color:#00e0c5;border:0px solid #00e0c5;}
 .noticemsg{color:#070606;font-weight:bold;}
 .blog_rights_error{margin:0pt 0pt 0pt 10px;padding:0pt;list-style-type:none;color:#f58767;}
 .for_form_error{float:left;position:relative;color:#f58767;}
@@ -684,7 +684,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .edit_forum_anchor{cursor:pointer;}
 .bank_selection_outer{float:left;position:relative;padding-top:10px;border-top:1px solid #f7c900;display:none;}
 .payment_conformation_class{cursor:pointer;}
-.my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18px;margin-bottom:10px;}
+.my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18.1px;margin-bottom:10px;}
 .my_order_rec_row{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
 .my_order_sub_row{float:left;position:relative;width:550px;border:0px solid red;}
 .my_order_total_detail_outer{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
@@ -778,7 +778,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
     float: left;
     font-size: 1.3em;
     color: #232222;
-    line-height: 1.25em;
+    line-height: 1.35em;
     letter-spacing: -0.01em;
     width: 100%;}
 #borst_desc_div p strong{
@@ -1608,7 +1608,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .shop_input_header{color:#232222;font-size:1.1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.01em;}
 .shop_cart_topay{color:#f15822;font-size:1em;font-family:"Franklin Gothic Book Regular";letter-spacing:-0.01em;}
 .shop_cart_code{height:20px;color:#a6cc39;font-size:1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.02em;}
-.shop_change_order span{background-color:#fff;color:#f15822;cursor:pointer;font-family:"Franklin Gothic Book Regular";font-size:1em;line-height:42px;height:16px;letter-spacing:-0.01em;padding:2px 0px;width:40px;}
+.shop_change_order span{background-color:#fff;color:#f15822;cursor:pointer;font-family:"Franklin Gothic Book Regular";font-size:1em;line-height:32px;height:16px;letter-spacing:-0.01em;padding:2px 0px;width:40px;}
 .shop_cart_total{color:#f15822;font-size:1em;letter-spacing:-0.01em;font-family:"Franklin Gothic Medium";}
 .height_35{height:35px;}
 .shop_code{font-family:"Franklin Gothic Medium";color:#a6cc39;font-size:1em;margin-right:8px;background-color:#ffffff;border:1px solid #a6cc39;margin-right:8px;padding:5px 0;text-align:center;}
