@@ -71,7 +71,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <div class="blank_20h widthall">&nbsp;</div>
 
                             <div class="shop_detail_order float_l_width_42">Beställning</div>
-                            <img class="BTshop_product_logo" src="/images/new_home/bt-shop_logo_fyrk.png" alt="basket3" border="0" class="floatLeft" />
+                           <img class="BTshop_product_logo" src="/images/new_home/bt-shop_logo_cart.png" alt="basket3" border="0" class="floatLeft" />
 
                             <div class="shop_detail_line">&nbsp;</div>
                             <?php if ($product_detail->btshop_type_id > 4): ?>

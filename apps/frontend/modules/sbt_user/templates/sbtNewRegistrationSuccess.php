@@ -243,7 +243,7 @@ width:34%;
         <div class="btshopleftdiv">
             <div class="btshopleftdivinner">
                 <div class="heading_red whp_title"><?php echo __('Registrera dig nedan') ?></div>
-                <div class="whp_preamble">Att registrera sig på Börstjänaren är gratis och du förbinder dig inte till
+                <div class="whp_preamble_head">Att registrera sig på Börstjänaren är gratis och du förbinder dig inte till
                     någonting.<span class="main_link_color"> <a class="main_link_color cursor" id="reg_read_more">Läs mer</a>&nbsp;<img src="/images/new_home/addplusicon_shop.png" alt="addplus"  class="icontop3" id="reg_help_plus" width="16"/></span></div>
                 <div id="registration_help_section">
                 <br>
@@ -257,7 +257,7 @@ width:34%;
                             <li>Ta del av Börstjänarens inspelade webinarier</li>
                         </ul>
                     </div>
-                    <div class="blank_15h widthall">&nbsp;</div>
+                    <div class="blank_5h widthall">&nbsp;</div>
                 </div>
                 <div class="blank_5h widthall">&nbsp;</div>
                 <div class="float_left widthall">
@@ -353,12 +353,12 @@ width:34%;
                                 </label>
                                 <span class = "form_labels float_left" id="radio_2"><?php echo __('Man') ?></span>
                             </td>
-                            <td  align="left">
-                                <span class="margin_reg_ei">&nbsp;</span>
-                                &nbsp;</td>
+                            <td align="left">
+                                <span class="margin_reg_ei">&nbsp;</span></td>
                         </tr>
+                        <tr height="24px">&nbsp;</tr>
                         <tr>
-                            <td  class="form_heading" colspan="2"><?php echo __('Adress') ?>
+                            <td class="form_heading" colspan="2"><?php echo __('Adress') ?>
                             </td>
                         </tr>
                         <tr>
@@ -440,6 +440,7 @@ width:34%;
                             <td  class="td_input"><?php echo $profileForm['land']->render(array('id' => 'phone', 'class' => 'inputcountry',)) ?></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">&nbsp;<?php echo $profileForm['land']->renderError() ?></td>
                         </tr>
+                        <tr height="35px">&nbsp;</tr>
                         <tr>
                             <td  class="form_heading" colspan="2">
 							<?php echo __('Nyhetsbrev') ?></td>

@@ -42,9 +42,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <?php if($transaction_type == 4){?>
                 
                     <div class="cart_payment_steps">
-                        <div class="bt-shop-step-top-margin widthall float_left">&nbsp;</div>
+                        <div class="bt-shop-step3-top-margin widthall float_left">&nbsp;</div>
                         <?php include_partial('borst_shop/payment_steps_partial', array('step' => 3, 'designType' => 2)) ?>
-                        <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
+                        <div class="bt-shop-step3-bottom-margin widthall float_left">&nbsp;</div>
                     </div>
                     <div class="shop_detail_title">3. Tack för din beställning!</div>
                     <div class="spacer"></div>
@@ -187,7 +187,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <br/>
                     <div class="blank_done widthall">&nbsp;</div>
                     <div class="float_left widthall shop_welc4"><?php echo __('Välkommen åter!') ?></div>
-                    <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="112" />
+                    <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_cart.png" width="112" />
                 </div>
                 <div id="pdf_send_report"></div>
                 <?php }?>

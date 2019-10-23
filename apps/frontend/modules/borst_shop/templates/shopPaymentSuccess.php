@@ -45,7 +45,7 @@ $(window).load(function(){
   <div class="btshopleftdivinner" id="btshopleftdivinner">
 	<?php if(count($products_data) > 0):?>
         <div class="cart_payment_steps">
-            <div class="bt-shop-step-top-margin widthall float_left">&nbsp;</div>
+            <div class="bt-shop-step1-top-margin widthall float_left">&nbsp;</div>
             <?php include_partial('borst_shop/payment_steps_partial',array('step'=>1,'designType'=>2)) ?>
             <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
         </div>
@@ -222,7 +222,7 @@ $(window).load(function(){
             <!--<div class="blank_4h widthall">&nbsp;</div>
 		<a href="#" class="main_link_color margin_left_96">Ändra e-postadress</a>-->
 		
-		<div class="blank_20h widthall">&nbsp;</div>
+		<div class="blank_30h widthall">&nbsp;</div>
 		<div class="form_heading">Leveransadress</div>
                 <div class="reg_line">&nbsp;</div>
                 <!--<div class="blank_5h width_399 shop_cart_data_div_border">&nbsp;</div>-->

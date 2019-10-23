@@ -159,7 +159,7 @@
                     <div class="blank_8h widthall">&nbsp;</div>
                     <a href="#" class="main_link_color margin_left_114">Ändra e-postadress</a>
 
-                    <div class="blank_28h widthall">&nbsp;</div>
+                    <div class="blank_30h widthall">&nbsp;</div>
                     <div class="form_heading">Leveransadress</div>
                     <div class="blank_14h width_392 shop_cart_data_div_border">&nbsp;</div>
                     <div class="clearAll">&nbsp;</div>

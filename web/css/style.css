@@ -1499,7 +1499,6 @@ a.article_dots_r {
     font-size: 1.4em;
     line-height: 1.25em;
     margin: 22px 0px 5px;
-    letter-spacing: -0.02em;
     width: 100%;
 }
 
@@ -2508,7 +2507,7 @@ input.rounded {
     color: #232222;
     font-size: 1em;
     text-align: left;
-    padding: 6px 6px 0px 1px;
+    padding: 18px 6px 0px 1px;
 }
 
 .shop_r_cart_price_bg {
@@ -2622,6 +2621,7 @@ input.rounded {
 
 .shop_cart_fill_prod {
     font-family: 'Franklin Gothic Book Regular';
+	line-height: 2em;
     color: #232222;
     font-size: 1.28em;
     margin-bottom: 80px;
@@ -2671,7 +2671,7 @@ input.rounded {
     background-image: url("../images/new_home/bt-shop_passa_sq.png");
     background-repeat: no-repeat;
     float: left;
-  	margin: 20px 800px 4px 0px;
+  	margin: 24px 800px 4px 0px;
 	position: relative;
 	width: 70px;
 	height: 47px;
@@ -3226,7 +3226,7 @@ ul.cartStep2 li {
 .shop_passa2 {
     color: #febc11;
     font-family: "FranklinGothicCondensed";
-    font-size: 1.7em;
+    font-size: 1.8em;
     line-height: 1.7em;
     margin-top: 45px;
     word-spacing: -0.06em;
@@ -3264,9 +3264,9 @@ ul.cartStep2 li {
 }
 
 .shop_welc4 {
-    color: #febc11;
-    font-family: "Franklin Gothic Book Regular";
-    font-size: 1.2em;
+    color: #232222;
+    font-family: "CheltenhamITCW01-Bold";
+    font-size: 1.5em;
     line-height: 1.4em;
     margin-top: 4px;
 }
@@ -6600,7 +6600,19 @@ input.send_forgetpass {
 }
 
 .bt-shop-step-top-margin {
-    height: 32px;
+    height: 29px;
+}
+
+.bt-shop-step1-top-margin {
+    height: 44px;
+}
+
+.bt-shop-step2-top-margin {
+    height: 34px;
+}
+
+.bt-shop-step3-top-margin {
+	height: 9px;
 }
 
 .marginBottom13 {
@@ -6617,7 +6629,6 @@ input.send_forgetpass {
     color: #00e0c5;
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
-    letter-spacing: -0.01em;
     margin: 22px 0px 0px 25px;
 }
 
@@ -8823,7 +8834,7 @@ input.send_forgetpass {
 }
 
 .shop_cart_logo {
-    margin: -24px 85px 5px 0px;
+    margin: -64px 115px 5px 5px;
     float: right;
 }
 
@@ -8901,8 +8912,8 @@ input.send_forgetpass {
     border-radius: 5px !important;
     color: #658094 !important;
     font-size: 12px !important;
-    min-width: 153px !important;
-    width: 153px !important;
+    min-width: 152px !important;
+    width: 152px !important;
 }
 
 .cardDetails .jqTransformSelectWrapper div span {
@@ -9939,7 +9950,7 @@ whp_heading
 
 #enquiry_detail_main_div .breadcrumb ul li a,
 .breadcrumb {
-    color: #f15822;
+    color: #00e0c5;
 }
 
 #enquiry_detail_main_div .breadcrumb {
