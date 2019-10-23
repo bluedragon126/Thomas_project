@@ -94,7 +94,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </tr>
 
                         <tr>
-                            <td colspan="6" height="35px" valign="top"><div class="whp_subheading2">Begränsa sökningen till: </div></td>
+                            <td colspan="6" height="48px" valign="top"><div class="whp_subheading3">Begränsa sökningen till: </div></td>
                         </tr>
 
                         <tr>
@@ -123,7 +123,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 &nbsp;Sök på användare</td>-->
                         </tr>                                     
                     </table>
-                    <div class="blank_22h widthall">&nbsp;</div>
+                    <div class="blank_18h widthall">&nbsp;</div>
                     <div class="registerbtn">
                         <div class="float_left">
                             <input type="submit" class="submit sok cursor" value="" name="submit" />

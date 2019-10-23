@@ -35,11 +35,15 @@ Rounded("div#epol","all","#C7C0CB","#FFF","smooth");
 <body>
 <div id="epol" style="margin: 30px 30px 0px 30px;">
 <div style="padding: 25px 45px ; background-color: #FFF">
-<div style="font-family: "ITC Cheltenham Book"; font-size: 1.2em; color: #232222;
+<div style="font-family: "ITC Cheltenham Book"; font-size: 1.5em; color: #232222;
     letter-spacing: 0.01em;
     float: right;
     margin-top: 7px;">Epost-policy</div>
-<div class="e-post_1">B&ouml;rstj&auml;narens epostregister &auml;r endast avsedda f&ouml;r information och promotion av B&ouml;rstj&auml;narens tj&auml;nster och produkter. Vi kommer aldrig, under n&aring;gra omst&auml;ndigheter, att l&auml;mna ut v&aring;ra epostadresser till tredje part. <br>
+    
+    <div class="e-post_1">Epost-policy</div>
+    
+    
+<div class="e-post_2">B&ouml;rstj&auml;narens epostregister &auml;r endast avsedda f&ouml;r information och promotion av B&ouml;rstj&auml;narens tj&auml;nster och produkter. Vi kommer aldrig, under n&aring;gra omst&auml;ndigheter, att l&auml;mna ut v&aring;ra epostadresser till tredje part. <br>
 
   <br>
 

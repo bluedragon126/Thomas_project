@@ -236,7 +236,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                    </div>
             </div>-->
 
-            <div class="paginationwrapperNew margin_top_38" style="float:left;">
+            <div class="paginationwrapperNew margin_top_pag" style="float:left;">
                 <div class="forum_pag" id="search_listing">
                     <?php if ($pager->haveToPaginate()): ?>
                         <?php if ($pager->getFirstPage() != $pager->getPage()) { ?>

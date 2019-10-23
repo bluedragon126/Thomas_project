@@ -72,7 +72,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <b>Klicka i, respektive klicka ur, rutan nedan </b>och spara ditt val med REGISTRERA-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                     
-                <div class="blank_8h widthall">&nbsp;</div>
+                <div class="blank_7h widthall">&nbsp;</div>
                 
                 <div class="float_left widthall margin_bottom_2" id="my_e_newsletter_reply"><?php
                 echo
@@ -83,12 +83,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <form name="my_e_newsletter_form" id="my_e_newsletter_form" method="post" action="">
                     <input type="hidden" id="user_id" name="user_id" value="<?php echo $user_id; ?>" />
                     <input type="hidden" id="email" name="email" value="<?php echo $email_arr[0]; ?>" />
-                    <div class="blank_10h widthall">&nbsp;</div>
+                    <div class="blank_7h widthall">&nbsp;</div>
                     <?php foreach ($all_type as $data): ?>
                         <?php if ($data->id == 4) { ?>
                             <div class="float_left">
                                 <div class="float_left email_checkbox_1"><input type="checkbox" name="news[]" value="<?php echo $data->id; ?>" <?php if ($status_arr[$data->id] == 1) echo "checked"; ?> /></div>
-                                <div class="float_left lineht_25 email_checkbox_2"><span class="float_left radio_button_text pad_top_3 " style = "color:red"><?php echo $data->newsletter_name; ?></span></div>
+                                <div class="float_left lineht_25 email_checkbox_2"><i><span class="float_left radio_button_text pad_top_3 " style = "color:#f15822"><?php echo $data->newsletter_name; ?></span></i></div>
                             </div>
                         <?php } ?>
                     <?php endforeach; ?>
@@ -106,7 +106,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </form>
-                <div class="blank_20h widthall">
+                <div class="blank_8h widthall">
                     
                 </div>
                 
@@ -127,11 +127,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
 
 
-                <div class="float_left"><p><strong>OBS!</strong>  
-                
-                <br>
-                
-                Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras (reg. resp. avreg.) på <a href="/borst/borstNewsletter"> separat sida.</a> (Båda nyhetsbreven kan även administreras under fliken mina e-postutskick i <a href="http://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile">"Mitt konto".)</a>
+                <div class="float_left"><p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras (reg. resp. avreg.) på <a href="/borst/borstNewsletter"> separat sida.</a> (Båda nyhetsbreven kan även administreras under fliken mina e-postutskick i <a href="http://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile">"Mitt konto".)</a>
                 
              
                 
@@ -143,7 +139,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                
                         
                         
-                  <strong>Veckobrevet</strong> utgörs huvudsakligen av de kostnadsfria marknadsbreven <strong>VM-Update</strong> (utkommer måndagar) och <strong>Veckans trejd</strong> (utkommer när gynsamma lägen uppstår). Veckobrevet kräver inget konto på Börstjänaren. <a href="/borst/borstNewsletter">Anmäl dig  till veckobrevet här.</a></p>
+                  <strong>Veckobrevet</strong> utgörs huvudsakligen av de kostnadsfria marknadsbreven <strong>VM-Update</strong> (utkommer måndagar) och <strong>Veckans trejd</strong> (utkommer när gynsamma lägen uppstår). Veckobrevet kräver inget konto på Börstjänaren. <a href="/borst/borstNewsletter">Anmäl dig till veckobrevet här.</a></p>
                   
               
                   

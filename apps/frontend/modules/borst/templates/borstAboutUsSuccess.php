@@ -25,7 +25,7 @@
             
                 <div class="whp_title">Välkommen till Börstjänaren!</div>
                 
-                <div class="whp_preamble">Börstjänaren är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru- och valutamarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
+                <div class="whp_preamble_head">Börstjänaren är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru- och valutamarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
                 </div>
                 <div class="float_left widthall">
                 

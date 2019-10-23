@@ -23,7 +23,7 @@
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
                 <div class="whp_title">Riskvarning</div>
-                <div class="whp_preamble">
+                <div class="whp_preamble_head">
                     Morningbriefing Börstjänaren AB frånsäger sig allt ansvar för direkt eller indirekt förlust eller skada av vad slag det vara må, som grundar sig på användandet av information från Börstjänarens webbplats eller nyhetsbrev.
                 </div>
                 <div class="float_left widthall">

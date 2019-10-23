@@ -109,7 +109,7 @@ img{border:0;}
 .blank_10w{width:10px;float:left;position:relative;}
 .blank_5w{width:5px;float:left;position:relative;}
 .heauto{height:100%;}
-.greencolor{color:#1c92af;}
+.greencolor{color:#00e0c5;}
 .redmintcolor{color:#f15822;}
 .bluecolor{background-color:#005baa;}
 .yellowcolor{color:#febc11;}
@@ -123,7 +123,7 @@ img{border:0;}
 .bluecolor_submenu{color:#005baa;}
 .yellowcolor_submenu{color:#febc11;}
 .orangecolor_submenu{background-color:#f8ae6e;}
-.lightbluecolor_submenu{background-color:#1c92af;}
+.lightbluecolor_submenu{background-color:#0091bb;}
 .darkorangecolor_submenu{color:#F7941D;}
 .darkgreencolor{color:#0bb342;}
 
@@ -317,7 +317,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .leftmenu #top_borst_menu a:hover{background-color:#005baa;}
 .leftmenu #top_sbt_menu a:hover{background-color:#f15822;}
 .leftmenu #top_bt_shop a:hover{background-color:#febc11;}
-.leftmenu #top_bt_charts a:hover{background-color:#1c92af;}
+.leftmenu #top_bt_charts a:hover{background-color:#0091bb;}
 .leftmenu #top_forum_menu a:hover{background-color:#F7941D;}
 .leftmenu #top_bt_markets a:hover{background-color:#77bee5;}
 .leftmenu #top_pluspaket_menu a:hover{background-color:#00e3fb;}
@@ -326,7 +326,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .leftmenu #top_borstjanarfolket_menu a:hover{background-color:#00e3fb;}
 .leftmenu li:last-child{border-right:none;}
 .mainmenuwrapper #top_bt_shop .selected{background-color:#febc11;}
-.mainmenuwrapper #top_bt_charts .selected{background-color:#1c92af;}
+.mainmenuwrapper #top_bt_charts .selected{background-color:#0091bb;}
 .mainmenuwrapper #top_forum_menu .selected{background-color:#F7941D;}
 .mainmenuwrapper #top_sbt_menu .selected{background-color:#f15822;}
 .mainmenuwrapper #top_pluspaket_menu .selected{background-color:#00e3fb;}
@@ -337,7 +337,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .submenuwrapper #borst_menu a{color:#005baa;}
 .submenuwrapper #borst_menu{border-bottom:1px solid #005baa;}
 .submenuwrapper #bt_shop{border-bottom:1px solid #febc11;}
-.submenuwrapper #bt_charts{border-bottom:1px solid #1c92af;}
+.submenuwrapper #bt_charts{border-bottom:1px solid #0091bb;}
 .submenuwrapper #forum_menu{border-bottom:1px solid #F7941D;}
 .submenuwrapper #sbt_menu{border-bottom:1px solid #f15822;}
 .submenuwrapper #pluspaket_menu{border-bottom:1px solid #0bb342;}
@@ -362,7 +362,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .submenuwrapper #forum_menu li a:hover{
 	background:#ffeed7 url(../images/new_home/arrow_orange.png) no-repeat center bottom;background-color:#FFECD5; background-size: 16px;}
 
-.submenuwrapper #bt_markets li a:hover{background-color:#1c92af;}
+.submenuwrapper #bt_markets li a:hover{background-color:#0091bb;}
 
 .hide_div{visibility:hidden;display:none;}
 .show_div{visibility:visible;display:block;}
@@ -409,7 +409,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .eduborder{float:left;position:relative;width:100%;border-bottom:1px solid #ced2d0;padding:0px 0 0 0;margin-top:15px;line-height:1px;margin-bottom:20px;}
 #btchart{font-size:12px;}
 .white_background{background-color:#FFFFFF;}
-.ui-datepicker-trigger{vertical-align:middle;margin-left:2px;height:22px;width:22px;}
+.ui-datepicker-trigger{vertical-align:middle;margin: 0px 4px 0px;height:22px;width:22px;}
 .padtd{padding-top:3px;padding-bottom:3px;}
 .radiodiv{float:left;position:relative;padding-right:10px;}
 .input210{background-color:#F6F9FB;border:1px solid #ced2d0;height:19px;width:210px;}
@@ -553,7 +553,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .messagewrapper{float:left;position:relative;border-top:2px solid #ced2d0;width:100%;padding:10px 0 10px 0}
 .messagewrapper .info{float:left;position:relative;padding:0 0 0 15px;line-height:18px;color:#362a43;width:87%;}
 .l_bluefont{color:#23b6ed;}
-.paginationwrapper{float:left;position:relative;border:0px solid red;width:100%;padding:6px 0 0 0;line-height:16px;margin-bottom:8px;}
+.paginationwrapper{float:left;position:relative;border:0px solid red;width:100%;padding:6px 0 0 0;line-height:16px;margin-bottom:2px;}
 .paginationwrapper .pagination{padding:0;font-weight:normal;}
 .paginationwrapper .pagination a:hover{color:#232222;font-weight:bold;}
 .paginationwrapper .pagination .selected{color:#489AE7;font-weight:normal;}
@@ -576,7 +576,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .blog1advrt{float:left;position:relative;width:585px;}
 .blog1advrt h2{float:left;position:relative;width:100%;font-weight:normal;margin:0;padding:0 0 10px 0;}
 .bloginfo{float:left;position:relative;line-height:17px;font-weight:normal;font-size:13px;width:100%;}
-.greenfont{color:#009932}
+.greenfont{color:# #00e0c5}
 .bloginfo .advrtimg_l{padding:10px 10px 10px 0}
 .bloginfo .advrtimg_r{padding:10px 10px 10px 10px}
 .viocolorinfo{color:#9780a3;font-size:11px;line-height:14px;width:180px;border:0px solid red;font-weight:bold;position:relative;padding:20px 0 0 0}
@@ -1559,7 +1559,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 	background:#dbe1f2 url(../images/new_home/arrow_blue.png) no-repeat center bottom; background-size: 16px;}
 	
 .submenuwrapper #bt_charts li a.selected{
-	background:#eaf6f5 url(../images/new_home/arrow_light_blue.png) no-repeat center bottom;color:#1c92af; background-size: 16px;}
+	background:#eaf6f5 url(../images/new_home/arrow_light_blue.png) no-repeat center bottom;color:#0091bb; background-size: 16px;}
 	
 .submenuwrapper #sbt_menu li a.selected{
 	background:#fee5d4 url(../images/new_home/arrow_red.png) no-repeat center bottom;color:#f15822; background-size: 16px;}

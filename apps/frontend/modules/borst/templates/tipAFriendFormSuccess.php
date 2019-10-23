@@ -81,12 +81,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <div class="float_left whp_preamble width_100_per margin_bottom_10">
                     Fyll i formul&auml;ret nedan, s&aring; g&aring;r ett mejl iv&auml;g till din v&auml;n, med h&auml;lsningen att du vill rekommendera denna artikel p&aring; B&ouml;rstj&auml;naren. Du kan &auml;ven skriva en personlig h&auml;lsning i meddelanderutan.
                 </div>
-                <div class="blank_20h widthall">&nbsp;</div>
+                <div class="blank_30h widthall">&nbsp;</div>
                 <div class="float_left width_100_per margin_bottom_10">
                     <table border="0" cellspacing="0" cellpadding="3" width="100%">
                         <tr>
                             <td valign="top">
-                                <div class="form_labels width_120 float_left"><b>Din väns e-post </b>*</div>
+                                <div class="form_labels width_120 float_left">Din väns e-post *</div>
                                 <div class="width_70per float_left margin_bottom_3m"><input type="text" value="<?php echo $sf_params->get('friend_mail') ? $sf_params->get('friend_mail') : '' ?>" name="friend_mail" size="20" class="form_input width_277 contactus-inputs"></div>
                                 <?php echo $market->err($friend_mail_errors) ?>
                             </td>
@@ -122,7 +122,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <div class="blank_10h widthall">&nbsp;</div>
                             
                             
-                           <em> * m&aring;ste fyllas i! </em>
+                           <em> * M&aring;ste fyllas i! </em>
                             
                             <br>
                             
@@ -131,7 +131,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </table>
                 </div>
 
-                <div class="blank_20h widthall">&nbsp;</div>
+                <div class="blank_30h widthall">&nbsp;</div>
                 <div class="form_labels width_90 float_left"><?php echo __('Meddelande:') ?></div>
                 <div class="blank_2h widthall">&nbsp;</div>
                 <div class="float_left widthall">
