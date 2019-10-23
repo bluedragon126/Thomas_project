@@ -38,7 +38,7 @@
                     <div class="float_left"></div>
                     <div class="height_10"></div>
                     <div class="shop_detail_title">Varukorg</div>
-                    <div class="height_41"></div>                                 
+                    <div class="height_5"></div>                                 
                     <div class="scLiatWraper">
                         <?php
                         $i = 0;

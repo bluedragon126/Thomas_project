@@ -33,7 +33,7 @@
                 <div class="info"> 
                     <div class="float_left widthall">
                         <div class="shop_r_cart_cat_bg <?php if ($i == 0) {
-                echo 'mrg_top_3';
+                echo 'mrg_top_cart_r';
             } else {
                 echo 'mrg_top_bt-shop_r_cart';
             } ?>">

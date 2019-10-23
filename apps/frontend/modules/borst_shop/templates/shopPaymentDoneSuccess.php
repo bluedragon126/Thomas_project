@@ -47,7 +47,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <?php include_partial('borst_shop/payment_steps_partial', array('step' => 3, 'designType' => 2)) ?>
                         <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
                     </div>
-                    <div class="shop_detail_title">3. Tack för din beställning!</div>
+                    <div class="shop_detail_title2">3. Tack för din beställning!</div>
                     <div class="spacer"></div>
 
                     <div class="float_left widthall">
@@ -171,7 +171,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <?php include_partial('borst_shop/payment_steps_partial', array('step' => 3, 'designType' => 2)) ?>
                     <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
                 </div>
-                <div class="shop_detail_title">3. Tack för din beställning!</div>
+                <div class="shop_detail_title2">3. Tack för din beställning!</div>
                 <div class="spacer"></div>
 
 

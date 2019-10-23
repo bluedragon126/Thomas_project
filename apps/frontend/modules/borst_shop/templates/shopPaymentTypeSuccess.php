@@ -287,7 +287,7 @@
                         <?php include_partial('borst_shop/payment_steps_partial',array('step'=>2,'designType'=>2)) ?>
                         <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
                     </div>
-                    <div class="shop_detail_title">2. Välj betalsätt</div>
+                    <div class="shop_detail_title2">2. Välj betalsätt</div>
                     <div class="spacer"></div>
                     <div class="blue_title"><!--Välj betalsätt--></div>
                     <ul class="cartStep2">

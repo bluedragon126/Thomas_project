@@ -1794,6 +1794,10 @@ input.rounded {
     margin-top: 43px;
 }
 
+.mrg_top_cart_r {
+    margin-top: 13px;
+}
+
 .mrg_lft_60 {
     margin-left: 60px;
 }
@@ -2214,6 +2218,16 @@ input.rounded {
 	font-size: 1.2em;
 	line-height: 8px;
 	letter-spacing: 0.15em;
+	margin: 32px 0px 40px;
+	text-transform: uppercase;
+}
+
+.shop_detail_title2 {
+    font-family: 'Franklin Gothic Book Regular';
+	color: #232222;
+	font-size: 1.2em;
+	line-height: 8px;
+	letter-spacing: 0.15em;
 	margin: 24px 0px 1px;
 	text-transform: uppercase;
 }
@@ -2224,13 +2238,13 @@ input.rounded {
 	font-size: 1.7em;
 	line-height: 15px;
 	letter-spacing: 0.01em;
-	margin: 8px 0px 25px;
+	margin: 10px 0px 15px;
 }
 
 .shop_detail_subtitle2 {
-    font-family: 'Franklin Gothic Book Regular';
+    font-family: 'CheltenhamITCW01-Bold';
 	color: #232222;
-	font-size: 2.2em;
+	font-size: 2em;
 	word-spacing: -0.02em;
 	line-height: 1.3em;
 	margin-bottom: 4px;
@@ -2367,7 +2381,7 @@ input.rounded {
 }
 
 .shop_detail_thumbnail {
-  	margin: -5px 0px 30px 0px;
+  	margin: -5px 0px 60px 0px;
 	width:175px;
 }
 
@@ -2440,7 +2454,7 @@ input.rounded {
     color: #232222;
     font-size: 1.em;
     margin-top: 0px;
-    padding-top: 13px;
+    padding-top: 1px;
 }
 
 .shop_r_cart_img_top {
@@ -2452,25 +2466,25 @@ input.rounded {
 .shop_r_cart_count {
     font-family: 'Franklin Gothic Book Regular';
     color: #232222;
-    font-size: 1em;
-    margin: -35px 2px -4px 0px;
+    font-size: 0.93em;
+    margin: -14px 2px -4px 0px;
     line-height: 0.8em;
 }
 
 .shop_r_cart_cat_bg {
     background-color: #febc11;
     border-bottom-right-radius: 25px;
-    height: 32px;
-    width: 130px;
-    margin: 12px 0 -9px;
+  	height: 22px;
+	width: 59px;
+	margin: 22px 0 -9px;
 }
 
 .shop_r_cart_cat {
-    font-family: 'Franklin Gothic Medium';
-    color: #ffffff;
-    font-size: 1.21em;
+    font-family: 'ITC Cheltenham Book';
+    color: #232222;
+    font-size: 1.3em;
     letter-spacing: 0.01em;
-    margin: 7px 0px 0px 7px;
+    margin: 3px 0px 0px 70px;
     float: left;
 }
 
@@ -2484,7 +2498,7 @@ input.rounded {
     color: #232222;
     font-size: 1em;
     text-align: left;
-    padding: 22px 6px 0px 0px;
+    padding: 10px 6px 0px 1px;
 }
 
 .shop_r_cart_price_bg {
@@ -2769,6 +2783,13 @@ input.rounded {
     margin-top: 30px;
     width: 14px;
     color: #f15822;
+}
+
+.scLiatWraper3 {
+    width: 565px;
+    float: left;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Book Regular';
 }
 
 .width_558 {
@@ -6565,7 +6586,7 @@ input.send_forgetpass {
 }
 
 .bt-shop-step-top-margin {
-    height: 29px;
+    height: 32px;
 }
 
 .marginBottom13 {
@@ -8741,7 +8762,7 @@ input.send_forgetpass {
 }
 
 .BTshop_product_logo {
-    margin: 0px 1px 4px 90px;
+    margin: 7px 1px 4px 90px;
     float: right;
     width: 55px;
 }
@@ -9011,7 +9032,7 @@ input.send_forgetpass {
     line-height: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin: 30px 0px 3px;
+    margin: 10px 0px 3px;
     width: 100%;
 }
 

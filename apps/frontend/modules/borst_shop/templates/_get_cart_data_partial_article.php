@@ -10,7 +10,7 @@
         <div class="info"></div>
         <div class="info"> 
             <div class="float_left widthall">
-                <div class="shop_r_cart_cat_bg <?php if($i == 0) { echo 'mrg_top_3';} else { echo 'mrg_top_bt-shop_r_cart';} ?>">
+                <div class="shop_r_cart_cat_bg <?php if($i == 0) { echo 'mrg_top_cart_r';} else { echo 'mrg_top_bt-shop_r_cart';} ?>">
                     <span class="shop_r_cart_cat"><?php //echo $product_article->getShopArticleTypeName($data['p_type']) ?></span>
                 </div>
                 <br />

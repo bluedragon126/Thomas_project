@@ -619,7 +619,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .cart .info2{float:left;position:relative;width:100%;line-height:18px;margin-bottom:5px;letter-spacing:0.02px;}
 .cart .info .left{float:left;position:relative;width:62%;}
 .cart .info .right{float:left;position:relative;width:34%;text-align:right;}
-.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0 3px 0 3px;;}
+.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:1px 3px 0 3px;}
 .red_button{float:left;}
 .red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
@@ -684,7 +684,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .edit_forum_anchor{cursor:pointer;}
 .bank_selection_outer{float:left;position:relative;padding-top:10px;border-top:1px solid #f7c900;display:none;}
 .payment_conformation_class{cursor:pointer;}
-.my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18.1px;margin-bottom:10px;}
+.my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18.1px;margin-bottom:1px;}
 .my_order_rec_row{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
 .my_order_sub_row{float:left;position:relative;width:550px;border:0px solid red;}
 .my_order_total_detail_outer{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}

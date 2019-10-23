@@ -55,12 +55,12 @@ $(window).load(function(){
                     <!--<div class="red_text2Cart"><strong>Vänligen logga in för att köpa detta objekt!</strong></div>-->
             <?php //endif; ?>
 		<div class="float_left"><input type="hidden" name="product_id" id="product_id" value="<?php echo $product_detail->id; ?>"/></div>
-		<div class="shop_detail_title">1. Granska och skicka</div>
+		<div class="shop_detail_title2">1. Granska och skicka</div>
         <div class="spacer"></div>
 		<div class="my_order_text"><!--Din beställning:--></div>
 		 <!--<div class="spacer2"></div>-->
 		
-			<div class="scLiatWraper">
+			<div class="scLiatWraper3">
 				<?php $i=0; foreach($products_data as $data): //echo "<pre>$logged_user=="; print_r($data['p_id']);
 					$mul = $product_qty_arr[$i] * $price_arr[$i];
                                         $prod_Id = $data['p_id'];
