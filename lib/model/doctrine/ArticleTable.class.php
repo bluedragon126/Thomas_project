@@ -529,6 +529,23 @@ class ArticleTable extends Doctrine_Table
 		return $data;
 	}
 
+	public function getArticleListMenu($start,$end,$colname,$id,$isSuperAdmin) 
+	{ 
+		$query = Doctrine_Query::create()->from('Article ba');
+		
+		if($colname=='kat') $query = $query->where('ba.category_id = ? AND ba.article_date <= ? ', array($id, date('Y-m-d H:i:s')));
+		if($colname=='type') $query = $query->where('ba.type_id = ? AND ba.article_date <= ?', array($id, date('Y-m-d H:i:s')));
+		if($colname=='obj') $query = $query->where('ba.object_id = ? AND ba.article_date <= ?', array($id, date('Y-m-d H:i:s')));
+		$query = $query->orderBy('ba.article_date DESC');
+		$query = $query->offset($start);
+		$query = $query->limit($end);
+		$data = $query->execute();
+		// echo ("<pre>");	
+		// print_r() $id;
+		// exit;
+		return $data;
+	}
+
 	public function getHomeBorstBuySellLeft($start,$end,$isSuperAdmin) 
 	{ 
 	

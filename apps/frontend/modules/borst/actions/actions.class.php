@@ -144,7 +144,7 @@ class borstActions extends sfActions
   */
   public function executeBorstHome(sfWebRequest $request)
   {
-        $this->getUser()->setAttribute('parent_menu_common', '1');
+    $this->getUser()->setAttribute('parent_menu_common', '1');
 	$this->getUser()->setAttribute('parent_menu', 'top_borst_menu');
 	$this->getUser()->setAttribute('submenu_menu', 'borst_menu_home');
 	$this->getUser()->setAttribute('third_menu', '');
@@ -222,6 +222,272 @@ class borstActions extends sfActions
         $this->secondLimit = 0;
         
 	$two_column_articles = ArticleTable::getInstance()->getHomeBorstHome(0,$this->article_limit,$isSuperAdmin);
+	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin,$two_column_articles);
+        //var_dump($two_column_articles);
+	$this->left_records = $two_column_articles;
+        //echo 'Left Records :'.$this->left_records;
+	$index = 1;
+	$one_2_three = $four_2_five = $six_2_eight = $nine_2_ten = $eleven_2_thirteen = $fourteen_2_fifteen = array();
+	$sixteen_2_nineteen = $twenty_2_twentythree = $twentyfour_2_twentyseven = array();
+	$twentyeight_2_thirtyfive = array();
+
+	$arr_1 = array(1,3,5);
+	$arr_2 = array(7,8);
+	$arr_3 = array(10,12,14);
+	$arr_4 = array(16,17);
+	$arr_5 = array(19,21,23);
+	$arr_6 = array(25,26);
+	$arr_7 = array(2,4,6,9);
+	$arr_8 = array(11,13,15,18);
+	$arr_9 = array(20,22,24,27);
+
+
+	$i = $j = $k = $l = $m = $n = $p = $q = $r = $s = 0;
+
+	foreach($two_column_articles as $data)
+	{
+		if(in_array($index, $arr_1))
+		{
+			$one_2_three[$i]['article_date'] = $data->article_date;
+			$one_2_three[$i]['article_id'] = $data->article_id;
+			$one_2_three[$i]['category_id'] = $data->category_id;
+			$one_2_three[$i]['type_id'] = $data->type_id;
+			$one_2_three[$i]['image_text'] = $data->image_text;
+			//$one_2_three[$i]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			$one_2_three[$i]['image'] = $data->image;
+			$one_2_three[$i]['title'] = $data->title;
+			$i++;
+		}
+		if(in_array($index, $arr_2))
+		{
+			$four_2_five[$j]['article_date'] = $data->article_date;
+			$four_2_five[$j]['article_id'] = $data->article_id;
+			$four_2_five[$j]['category_id'] = $data->category_id;
+			$four_2_five[$j]['type_id'] = $data->type_id;
+			$four_2_five[$j]['image_text'] = $data->image_text;
+			//$four_2_five[$j]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			$four_2_five[$j]['image'] = $data->image;
+			$four_2_five[$j]['title'] = $data->title;
+			$j++;
+		}
+		if(in_array($index, $arr_3))
+		{
+			$six_2_eight[$k]['article_date'] = $data->article_date;
+			$six_2_eight[$k]['article_id'] = $data->article_id;
+			$six_2_eight[$k]['category_id'] = $data->category_id;
+			$six_2_eight[$k]['type_id'] = $data->type_id;
+			$six_2_eight[$k]['image_text'] = $data->image_text;
+			//$six_2_eight[$k]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			$six_2_eight[$k]['image'] = $data->image;
+			$six_2_eight[$k]['title'] = $data->title;
+			$k++;
+		}
+		if(in_array($index, $arr_4))
+		{
+			$nine_2_ten[$l]['article_date'] = $data->article_date;
+			$nine_2_ten[$l]['article_id'] = $data->article_id;
+			$nine_2_ten[$l]['category_id'] = $data->category_id;
+			$nine_2_ten[$l]['type_id'] = $data->type_id;
+			$nine_2_ten[$l]['image_text'] = $data->image_text;
+			//$nine_2_ten[$l]['image'] =  getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			$nine_2_ten[$l]['image'] =  $data->image;
+			$nine_2_ten[$l]['title'] = $data->title;
+			$l++;
+		}
+		if(in_array($index, $arr_5))
+		{
+			$eleven_2_thirteen[$m]['article_date'] = $data->article_date;
+			$eleven_2_thirteen[$m]['article_id'] = $data->article_id;
+			$eleven_2_thirteen[$m]['category_id'] = $data->category_id;
+			$eleven_2_thirteen[$m]['type_id'] = $data->type_id;
+			$eleven_2_thirteen[$m]['image_text'] = $data->image_text;
+			//$eleven_2_thirteen[$m]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			$eleven_2_thirteen[$m]['image'] = $data->image;
+			$eleven_2_thirteen[$m]['title'] = $data->title;
+			$m++;
+		}
+		if(in_array($index, $arr_6))
+		{
+			$fourteen_2_fifteen[$n]['article_date'] = $data->article_date;
+			$fourteen_2_fifteen[$n]['article_id'] = $data->article_id;
+			$fourteen_2_fifteen[$n]['category_id'] = $data->category_id;
+			$fourteen_2_fifteen[$n]['type_id'] = $data->type_id;
+			$fourteen_2_fifteen[$n]['image_text'] = $data->image_text;
+			//$fourteen_2_fifteen[$n]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			$fourteen_2_fifteen[$n]['image'] = $data->image;
+			$fourteen_2_fifteen[$n]['title'] = $data->title;
+			$n++;
+		}
+		if(in_array($index, $arr_7))
+		{
+			$sixteen_2_nineteen[$p]['article_date'] = $data->article_date;
+			$sixteen_2_nineteen[$p]['article_id'] = $data->article_id;
+			$sixteen_2_nineteen[$p]['category_id'] = $data->category_id;
+			$sixteen_2_nineteen[$p]['type_id'] = $data->type_id;
+			$sixteen_2_nineteen[$p]['image_text'] = $data->image_text;
+			//$sixteen_2_nineteen[$p]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			$sixteen_2_nineteen[$p]['image'] = $data->image;
+			$sixteen_2_nineteen[$p]['title'] = $data->title;
+			$p++;
+		}
+		if(in_array($index, $arr_8))
+		{
+			$twenty_2_twentythree[$q]['article_date'] = $data->article_date;
+			$twenty_2_twentythree[$q]['article_id'] = $data->article_id;
+			$twenty_2_twentythree[$q]['category_id'] = $data->category_id;
+			$twenty_2_twentythree[$q]['type_id'] = $data->type_id;
+			$twenty_2_twentythree[$q]['image_text'] = $data->image_text;
+			//$twenty_2_twentythree[$q]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			$twenty_2_twentythree[$q]['image'] = $data->image;
+			$twenty_2_twentythree[$q]['title'] = $data->title;
+			$q++;
+		}
+		if(in_array($index, $arr_9))
+		{
+			$twentyfour_2_twentyseven[$r]['article_date'] = $data->article_date;
+			$twentyfour_2_twentyseven[$r]['article_id'] = $data->article_id;
+			$twentyfour_2_twentyseven[$r]['category_id'] = $data->category_id;
+			$twentyfour_2_twentyseven[$r]['type_id'] = $data->type_id;
+			$twentyfour_2_twentyseven[$r]['image_text'] = $data->image_text;
+			//$twentyfour_2_twentyseven[$r]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			$twentyfour_2_twentyseven[$r]['image'] = $data->image;
+			$twentyfour_2_twentyseven[$r]['title'] = $data->title;
+			$r++;
+		}
+
+		$index++;
+	}
+
+	foreach($last_column_articles as $data)
+	{
+		$twentyeight_2_thirtyfive[$s]['article_date'] = $data->article_date;
+		$twentyeight_2_thirtyfive[$s]['article_id'] = $data->article_id;
+		$twentyeight_2_thirtyfive[$s]['category_id'] = $data->category_id;
+		$twentyeight_2_thirtyfive[$s]['type_id'] = $data->type_id;
+		$twentyeight_2_thirtyfive[$s]['image_text'] = $data->image_text;
+		$twentyeight_2_thirtyfive[$s]['image'] = $data->image;
+		$twentyeight_2_thirtyfive[$s]['title'] = $data->title;
+                $twentyeight_2_thirtyfive[$s]['art_statid'] = $data->art_statid;
+		$s++;
+	}
+
+	$this->comment_cnt = new BorstArticleComment();
+
+	$this->one_2_three = $one_2_three;
+	$this->four_2_five = $four_2_five;
+	$this->six_2_eight = $six_2_eight;
+	$this->nine_2_ten = $nine_2_ten;
+	$this->eleven_2_thirteen = $eleven_2_thirteen;
+	$this->fourteen_2_fifteen = $fourteen_2_fifteen;
+	$this->sixteen_2_nineteen = $sixteen_2_nineteen;
+	$this->twenty_2_twentythree = $twenty_2_twentythree;
+	$this->twentyfour_2_twentyseven = $twentyfour_2_twentyseven;
+	$this->twentyeight_2_thirtyfive = $twentyeight_2_thirtyfive;
+        
+        /* For random 8 article from Btshop article */
+        $btshop_article = new BtShopArticle();
+        $btshop_article->checkAttribute();
+        
+        $this->metastock_data = $btshop_article->getPublishedShopArticle();
+        
+        $top_article_count = new ArticleCount();
+        //$article = new Article();
+        
+        $this->top_nine_viewed_articles = $this->topNineArticle();
+  } 
+
+
+  //////////////////////////////////////////////////////////////
+
+  public function executeArticleListMenu(sfWebRequest $request)
+  {
+    $this->getUser()->setAttribute('parent_menu_common', '1');
+	$this->getUser()->setAttribute('parent_menu', 'top_borst_menu');
+	$this->getUser()->setAttribute('submenu_menu', 'borst_menu_home');
+	$this->getUser()->setAttribute('third_menu', '');
+	$this->host_str = $this->getRequest()->getHost();
+
+	// Collecting Category, Type and Object.
+	$cat_arr = $type_arr = $object_arr = array();
+	$this->month = array('01'=>'JAN','02'=>'FEB','03'=>'MAR','04'=>'APR','05'=>'MAJ','06'=>'JUN','07'=>'JUL','08'=>'AUG','09'=>'SEP','10'=>'OKT','11'=>'NOV','12'=>'DEC');
+
+	//$col1_13_heading_style_start = array('<h3 class="articleheading">','<h4 class="articleheading_varldens">','<h4 class="articleheading2"><b>');
+        $col1_13_heading_style_start = array('home_heading_l_1','home_heading_l_2','home_heading_l_3');
+	//$col1_13_heading_style_end = array('</h3>','</h4>','</b></h4>');
+	$col1_45_div_style = array('redheaing','blackheaing');
+	$col1_67_heading_style = array('articleheading_Kina','articleheading_Varldens2');
+	//$col1_814_heading_style = array('articleheading3_1st','redheaing2','articleheading3_2nd','articleheading_goda','articleheading3_1st','redheaing2','articleheading3_2nd');
+        $col1_814_heading_style = array('home_heading_m_1','home_heading_m_2','home_heading_m_3','home_heading_m_4');
+	$col1_1417_heading_style = array('adheading','adheadinggreen','adheading','adheading_v');
+	//$last_column_style = array('adheading','adheadinggreen','adheading_small','adheading_v','adheading','adheadinggreen','adheading_small','adheading_v');
+        $last_column_style = array('home_heading_r_1','home_heading_r_2','home_heading_r_3','home_heading_r_4');
+        $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
+        $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
+        $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
+        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
+        $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
+        $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
+        $rcol_body_text = array('home_body_r_1','home_body_r_2','home_body_r_3','home_body_r_4');
+
+	$image_arr_13 = array('articleleft_photo1.jpg','photo6.jpg','photo8.jpg');
+	$image_arr_67 = array('photo7.jpg','photo6.jpg');
+	$image_arr_814 = array('midadd.jpg','photo9.jpg','photo10.jpg','photo11.jpg','midadd.jpg','photo9.jpg','photo11.jpg');
+	$image_arr_1417 = array('photo1.jpg','photo2.jpg','photo3.jpg','photo4.jpg');
+	$last_column_img = array('photo1.jpg','photo2.jpg','photo3.jpg','photo4.jpg','photo1.jpg','photo2.jpg','photo3.jpg','photo4.jpg');
+
+	$cat_data = ArticleCategoryTable::getInstance()->getAllBorstArticleCategories();
+	$type_data = ArticleTypeTable::getInstance()->getAllBorstArticleTypes();
+	$object_data = ObjektTable::getInstance()->getAllBorstArticleObjects();
+
+	foreach($cat_data as $cat)		{	$cat_arr[$cat->category_id] = $cat->category_name;		}
+	foreach($type_data as $type)	{	$type_arr[$type->type_id] = $type->type_name;			}
+	foreach($object_data as $obj)	{	$object_arr[$obj->object_id] = $obj->object_name;		}
+
+	$this->cat_arr = $cat_arr;
+	$this->type_arr = $type_arr;
+	$this->object_arr = $object_arr;
+
+	$this->col1_13_heading_style_start = $col1_13_heading_style_start;
+	//$this->col1_13_heading_style_end = $col1_13_heading_style_end;
+	$this->col1_45_div_style = $col1_45_div_style;
+	$this->col1_67_heading_style = $col1_67_heading_style;
+	$this->col1_814_heading_style = $col1_814_heading_style;
+	$this->col1_1417_heading_style = $col1_1417_heading_style;
+	$this->last_column_style = $last_column_style;
+        $this->fcol_hor_title = $fcol_hor_title;
+        $this->fcol_ver_title = $fcol_ver_title;
+        $this->fcol_big_title = $fcol_big_title;
+        $this->fcol_body_text_6_7 = $fcol_body_text_6_7;
+        $this->fcol_body_text_2_3 = $fcol_body_text_2_3;
+        $this->fcol_body_text_1_4_5 = $fcol_body_text_1_4_5;
+        $this->mcol_body_text = $mcol_body_text;
+        $this->rcol_body_text = $rcol_body_text;
+
+	$this->image_arr_13  = $image_arr_13;
+	$this->image_arr_67 = $image_arr_67;
+	$this->image_arr_814 = $image_arr_814;
+	$this->image_arr_1417 = $image_arr_1417;
+	$this->last_column_img = $last_column_img;
+
+	// Articles related to Commodities.
+	if($this->getUser()->getAttribute('isSuperAdmin', '', 'userProperty')==1) $isSuperAdmin = 1;
+	else $isSuperAdmin = 0;
+	//$this->article_limit = 49;
+        //$this->article_limit = 148;
+        $this->article_limit = 30;
+        $this->secondLimit = 0;
+		// $request->getParameter('kat_id') || $request->getParameter('type_id') || $request->getParameter('obj_id')
+	if($request->getParameter('kat_id')){
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'kat',$request->getParameter('kat_id'),$isSuperAdmin);
+	}
+	if($request->getParameter('type_id')){
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'type',$request->getParameter('type_id'),$isSuperAdmin);
+	}
+	if($request->getParameter('obj_id')){
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'obj',$request->getParameter('obj_id'),$isSuperAdmin);
+	}
+	// $two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin,$two_column_articles);
         //var_dump($two_column_articles);
 	$this->left_records = $two_column_articles;
@@ -642,8 +908,10 @@ class borstActions extends sfActions
 	//$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(5,8,$isSuperAdmin);        
         $this->article_limit = 25;
         $this->secondLimit = 4;
-        
-	$two_column_articles = ArticleTable::getInstance()->getHomeBorstHome(0,$this->article_limit,$isSuperAdmin);
+    if($request->getParameter('kat_id')){
+
+	}
+		$two_column_articles = ArticleTable::getInstance()->getHomeBorstHome(0,$this->article_limit,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin,$two_column_articles);
         
         $this->left_records = $two_column_articles;
@@ -2678,7 +2946,7 @@ class borstActions extends sfActions
 	$this->object_country_arr = $object_country_arr;
 	$this->ext = $mymarket->getExtension($param);
         
-        $this->page_url = $_SERVER['REQUEST_URI']; 
+    $this->page_url = $_SERVER['REQUEST_URI']; 
   }
   
 	/*
@@ -5222,7 +5490,7 @@ class borstActions extends sfActions
     
     public function executeGetMoreArticle(sfWebRequest $request){
         
-        $this->getUser()->setAttribute('parent_menu_common', '1');
+    $this->getUser()->setAttribute('parent_menu_common', '1');
 	$this->getUser()->setAttribute('parent_menu', 'top_borst_menu');
 	$this->getUser()->setAttribute('submenu_menu', 'borst_menu_home');
 	$this->getUser()->setAttribute('third_menu', '');
