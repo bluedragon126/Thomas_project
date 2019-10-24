@@ -1487,7 +1487,7 @@ a.article_dots_r {
 .whp_heading {
     color: #f15822;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1em;
     margin: 46px 0px 10px;
     width: 100%;
@@ -1525,8 +1525,8 @@ a.article_dots_r {
 
 .whp_subheading {
     font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.3em;
-	line-height: 1.3em;
+    font-size: 1.25em;
+	line-height: 1.35em;
     letter-spacing: 0.02em;
     color: #232222;
     margin: 18px 0px 8px;
@@ -1541,8 +1541,8 @@ a.article_dots_r {
 
 .whp_subheading3 {
     font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.3em;
-	line-height: 1.3em;
+    font-size: 1.25em;
+	line-height: 1.35em;
     letter-spacing: 0.02em;
     color: #232222;
     margin: 18px 0px 3px;

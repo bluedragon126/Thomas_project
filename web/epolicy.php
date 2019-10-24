@@ -38,19 +38,19 @@ Rounded("div#epol","all","#C7C0CB","#FFF","smooth");
 <div style="font-family: "ITC Cheltenham Book"; font-size: 1.5em; color: #232222;
     letter-spacing: 0.01em;
     float: right;
-    margin-top: 7px;">Epost-policy</div>
-    
-    <div class="e-post_1">Epost-policy</div>
+    margin-top: 17px;"><b>EPOST-POLICY</b></div>
     
     
-<div class="e-post_2">B&ouml;rstj&auml;narens epostregister &auml;r endast avsedda f&ouml;r information och promotion av B&ouml;rstj&auml;narens tj&auml;nster och produkter. Vi kommer aldrig, under n&aring;gra omst&auml;ndigheter, att l&auml;mna ut v&aring;ra epostadresser till tredje part. <br>
+    
+    
+<div>B&ouml;rstj&auml;narens epostregister &auml;r endast avsedda f&ouml;r information och promotion av B&ouml;rstj&auml;narens tj&auml;nster och produkter. Vi kommer aldrig, under n&aring;gra omst&auml;ndigheter, att l&auml;mna ut v&aring;ra epostadresser till tredje part. <br>
 
   <br>
 
 Som ett s&auml;tt att v&auml;xa och h&aring;lla l&aring;ga priser p&aring; v&aring;ra tj&auml;nster f&ouml;rbeh&aring;ller vi oss dock r&auml;tten att skicka ut e-postmeddelanden och erbjudanden fr&aring;n v&aring;ra partners och sponsorer. 
 <br><br>
 Vi v&auml;ljer ev. sponsorer med omsorg och  skickar endast ut erbjudanden som vi tror kan vara av intresse f&ouml;r B&ouml;rstj&auml;narens kunder. <br><br>
-Du kan n&auml;r som helst avregistrera dig fr&aring;n v&aring;ra nyhetsbrev &ndash; enklast via sidan &quot;Mina kunduppgifter&quot;.</div>
+Du kan n&auml;r som helst avregistrera dig fr&aring;n v&aring;ra nyhetsbrev &ndash; enklast via sidan &quot;Veckobrev&quot;.</div>
 <p style="margin-top: 20px">
  <a href="javascript: self.close ()" class="main_link_color">St&auml;ng f&ouml;nstret</a>
  </p>

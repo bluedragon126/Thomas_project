@@ -289,7 +289,7 @@ a.jqTransformChecked { background-position: center bottom;}
 	position: absolute;
 	width: 43px;
 	top: 30px;
-	left: 0px;
+	left: -1px;
 	list-style: none;
 	background-color: #FFF;
 	border: solid 1px #CCC;
