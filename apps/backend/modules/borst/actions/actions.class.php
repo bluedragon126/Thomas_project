@@ -4313,7 +4313,6 @@ class borstActions extends sfActions
      */
     public function executeNewsletterManager(sfWebRequest $request)
     {
-
         $this->article = $request->getParameter('article');
        $articleCount = $request->getParameter("articleCount");
        if(!$articleCount)
@@ -4321,7 +4320,7 @@ class borstActions extends sfActions
        
         if(!count($this->article)){
             $this->article = array();
-            $arr = Doctrine::getTable('NewsLetter')->getDefaultNewsletterArticle(array(),$articleCount-count($article));
+            $arr = Doctrine::getTable('NewsLetter')->getDefaultNewsletterArticle(array(),$articleCount-count($this->article));
             $ccount = 0;
             foreach($arr as $key =>$value){
                            
@@ -4465,6 +4464,9 @@ class borstActions extends sfActions
      */
     public function executeNewsletterList(sfWebRequest $request)
     {
+        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 1);
+        error_reporting(E_ALL);
         if ($request->isMethod('post')) {
             $obj = $request->getParameter('publish');
             $id= $request->getParameter('id');

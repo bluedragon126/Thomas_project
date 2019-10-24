@@ -67,18 +67,26 @@
                                             <span>
                                                 <img src="/images/new_home/red_square.png" class="home_square"/>
                                             </span>
+                                            
                                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                                 <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php 
-                                                    for ($x = 122; $x > 0; $x--) {
-                                                        if(substr($arr[$i]['image_text'], $x, 1) == " " || substr($arr[$i]['image_text'], $x, 1) == "."){
-                                                            echo substr($arr[$i]['image_text'], 0, $x+1);
-                                                            break;
+                                                $dot_status = 0;
+                                                for ($x = 122; $x > 0; $x--) {
+                                                    if(substr($arr[$i]['image_text'], $x, 1) == " " || substr($arr[$i]['image_text'], $x, 1) == "."){
+                                                        if(substr($arr[$i]['image_text'], $x, 1) == "."){
+                                                            $dot_status = 1;
                                                         }
-                                                        // echo "The number is: $x <br>";
-                                                    } ?>
-                                                </span>
-                                                <!-- <span class="<?php //echo $fcol_body_text_6_7[$i]; ?>"><?php //echo substr($arr[$i]['image_text'], 0, 122); ?></span> -->
+                                                        echo substr($arr[$i]['image_text'], 0, $x+1);
+                                                        break;
+                                                    }
+                                                    // echo "The number is: $x <br>";
+                                                }
+                                                // echo substr($arr[$i]['image_text'], 0, 122); 
+                                                ?></span>
                                             </a>
+                                            <?php if($dot_status == 0){?>
+                                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
+                                            <?php }?>
                                             <span class="home_body_l_1_red">
                                                 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a>
                                             </span>
@@ -153,16 +161,23 @@
                                         </span>
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php 
-                                                for ($x = 122; $x > 0; $x--) {
-                                                    if(substr($arr[$i]['image_text'], $x, 1) == " " || substr($arr[$i]['image_text'], $x, 1) == "."){
-                                                        echo substr($arr[$i]['image_text'], 0, $x+1);
-                                                        break;
+                                            $dot_status = 0;
+                                            for ($x = 122; $x > 0; $x--) {
+                                                if(substr($arr[$i]['image_text'], $x, 1) == " " || substr($arr[$i]['image_text'], $x, 1) == "."){
+                                                    if(substr($arr[$i]['image_text'], $x, 1) == "."){
+                                                        $dot_status = 1;
                                                     }
-                                                    // echo "The number is: $x <br>";
-                                                } ?>
-                                            </span>
-                                            <!-- <span class="<?php //echo $fcol_body_text_2_3[$i]; ?>"><?php //echo substr($arr[$i]['image_text'], 0, 122); ?></span> -->
+                                                    echo substr($arr[$i]['image_text'], 0, $x+1);
+                                                    break;
+                                                }
+                                                // echo "The number is: $x <br>";
+                                            }
+                                            // echo substr($arr[$i]['image_text'], 0, 122); 
+                                            ?></span>
                                         </a>
+                                            <?php if($dot_status == 0){?>
+                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
+                                            <?php }?>
                                         <span class="home_body_l_1_red">
                                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a>
                                         </span>
@@ -224,19 +239,26 @@
                         </span>
                     </div>
                     <div class="home_heading_l_small_txt articleinfo">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">
-                            <img src="/images/new_home/red_square.png" alt="arrow" class="home_square" />
+                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                                                   
+                                <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php 
-                                for ($x = 122; $x > 0; $x--) {
-                                    if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
-                                        echo substr($obj['image_text'], 0, $x+1);
-                                        break;
+                            $dot_status = 0;
+                            for ($x = 122; $x > 0; $x--) {
+                                if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
+                                    if(substr($obj['image_text'], $x, 1) == "."){
+                                        $dot_status = 1;
                                     }
-                                    // echo "The number is: $x <br>";
-                                } ?>
-                            </span>
-                            <!-- <span class="<?php //echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php //echo substr($obj['image_text'], 0, 122); ?></span> -->
+                                    echo substr($obj['image_text'], 0, $x+1);
+                                    break;
+                                }
+                                // echo "The number is: $x <br>";
+                            }
+                            
+                            ?></span>
                         </a>
+                            <?php if($dot_status == 0){?>
+                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="article_dots_l cursor">...</a>
+                            <?php }?>
                         <span class="home_body_l_1_red">
                             <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink cursor"> <!--Läs mer...--></a>
                         </span>
@@ -302,19 +324,24 @@
                         </a>
                     </div>
                     <div class="articleinfo home_body_l_1">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">
-                            <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />
+                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                        
+                            <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php 
-                                for ($x = 122; $x > 0; $x--) {
-                                    if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
-                                        echo substr($obj['image_text'], 0, $x+1);
-                                        break;
+                            $dot_status = 0;
+                            for ($x = 122; $x > 0; $x--) {
+                                if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
+                                    if(substr($obj['image_text'], $x, 1) == "."){
+                                        $dot_status = 1;
                                     }
-                                    // echo "The number is: $x <br>";
-                                } ?>
-                            </span>
-                            <!-- <span class="<?php //echo $mcol_body_text[$cnt]; ?>"><?php //echo substr($obj['image_text'], 0, 122); ?></span> -->
+                                    echo substr($obj['image_text'], 0, $x+1);
+                                    break;
+                                }
+                                // echo "The number is: $x <br>";
+                            } ?></span>
                         </a>
+                            <?php if($dot_status == 0) {?>
+                            <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="article_dots_m cursor">...</a>
+                            <?php }?>
                         <span class="home_body_l_1_blue">
                             <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="bluelink"> <!--Läs mer...--></a>
                         </span>

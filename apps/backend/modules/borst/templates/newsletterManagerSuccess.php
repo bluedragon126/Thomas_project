@@ -27,9 +27,7 @@
                        
 
                         <?php $count = 1; ?>
-                        <?php foreach ($sbtArticle as $obj): ?>
-                        <?php //print '<input type="hidden" name="sbtArticle[]" id="sbtArticle' . $count++ . '" value="' . $obj . '">' ?>
-                        <?php endforeach; ?>
+                        
 
                         <?php $count = 1; ?>
                         <?php foreach ($ads as $obj): ?>

@@ -285,10 +285,10 @@ class SbtUserBlog extends BaseSbtUserBlog
 	*/
 	public static function closeTags($html)
 	{
-	  $tidy = new tidy();
-	  $tidy->parseString($html,array('show-body-only'=>true),'utf8');
-	  $tidy->cleanRepair();
-	  return $tidy;
+	//   $tidy = new tidy();
+	//   $tidy->parseString($html,array('show-body-only'=>true),'utf8');
+	//   $tidy->cleanRepair();
+	//   return $tidy;
 	}
 	/*
 	*

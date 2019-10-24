@@ -1486,7 +1486,7 @@ class borst_shopActions extends sfActions {
         $product_qty_arr = $this->getUser()->getAttribute('product_qty_arr');
         $price_detail_id_arr = $this->getUser()->getAttribute('price_detail_id_arr');
         //var_dump($price_detail_id_arr);die;
-        $payment_mtd = array('1' =>'Prepayment (via the plus-or bank transfer)', '2' => 'Direct Payment (bank)', '3' =>  'Online Payment', '4' =>  'Online Payment');
+        $payment_mtd = array('1' =>'Prepayment (via the plus-or bank transfer)', '2' => 'Direct Payment (bank)', '3' =>  'Online Payment', '4' =>  'Online Payment','5'=>'Swish');
         $this->loginRequiredForProduct = $this->isLoginRequriedForProduct($product_arr);
 		
         if(!$this->loginRequiredForProduct){
@@ -1519,6 +1519,9 @@ class borst_shopActions extends sfActions {
             }
 			//echo "<pre>";  print_r($request->getParameter('paymenttype')); die;
             $transaction_type = $request->getParameter('paymenttype') ? $request->getParameter('paymenttype') : 1;
+            if($request->getParameter('typ')){
+                $transaction_type = 5;
+            }
             $this->transaction_type = $transaction_type;
             $bank_id = $request->getParameter('bk');
 
@@ -1528,6 +1531,10 @@ class borst_shopActions extends sfActions {
             $purchase_record->payment_method = $payment_mtd[$transaction_type];
 			$purchase_record->payment_date =  $request->getParameter('date');
 			if($transaction_type == 3 || $transaction_type == 4){
+                $purchase_record->checkout_status = 1;
+				$purchase_record->order_processed = 1;
+            }
+            if($request->getParameter('typ') == 4){
                 $purchase_record->checkout_status = 1;
 				$purchase_record->order_processed = 1;
             }
