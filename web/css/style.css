@@ -6614,7 +6614,15 @@ input.send_forgetpass {
     {color:#232222;letter-spacing:0.03px;}
 
 .shop_note {
-    color: #00e0c5;
+    color:  #f58767;
+    font-family: "Franklin Gothic Medium";
+    font-size: 1em;
+    letter-spacing: -0.01em;
+    margin: 22px 0px 0px 25px;
+}
+
+.shop_note_success {
+    color:  #00e0c5;
     font-family: "Franklin Gothic Medium";
     font-size: 1em;
     letter-spacing: -0.01em;
