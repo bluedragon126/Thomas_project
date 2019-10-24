@@ -274,7 +274,13 @@ font-size:0;}
 .photoimg img{width:30px;padding-top:1.2px;}
 .btshopleftdiv{float:left;position:relative;height:auto;padding:7px 0 0 55px;}
 .btshopleftdivinner{float:left;position:relative;width:500px;border:0px solid red;}
-.shoph2{font-size:2em;float:left;position:relative;margin:0;color:#febc11;width:99%;font-family:"FranklinGothicCondensed";letter-spacing:0.02em;}
+.shoph2{font-family: 'Franklin Gothic Book Regular';
+color: #232222;
+font-size: 1.2em;
+line-height: 8px;
+letter-spacing: 0.15em;
+margin: 85px 0px 1px;
+text-transform: uppercase;}
 .shoph3{float:left; position:relative; font-size:1.3em; text-align: left; color: #f15822; font-family:"Franklin Gothic Book Regular";letter-spacing:-0.02em;}
 .shopinfo{float:left;position:relative;font-size:15px;font-weight:normal;line-height:21px;}
 .shopborder{float:left;position:relative;width:100%;border-bottom:1px solid #f7c900;padding:5px 0 0 0;line-height:1px;}

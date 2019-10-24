@@ -59,7 +59,7 @@ varför Henry Boy-strategin fungerar.
 
 <div class="spacer"></div>
 <div class="shop_detail_subtitle2">Beställning</div>
-<div class="blue_title">Välj abonnemangsperiod</div>
+<div class="blue_title">Abonnemang</div>
  <ul class="rows">
             <li><input type="radio" class="radio" checked="" value="0" id="radio1" name="">Lösnummer 50:-</li>
             <li><input type="radio" class="radio" checked="" value="0" id="radio1" name="">Månad (8 nr) 295:-</li>

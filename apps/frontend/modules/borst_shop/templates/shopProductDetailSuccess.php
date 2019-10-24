@@ -75,7 +75,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                             <div class="shop_detail_line">&nbsp;</div>
                             <?php if ($product_detail->btshop_type_id > 4): ?>
-                                <div class="shop_detail_choose pbottom_7 floatLeft">Välj abonnemangsperiod</div>
+                                <div class="shop_detail_choose pbottom_7 floatLeft">Abonnemang</div>
                             <?php endif;?>
                             <ul class="rows">
                                 <?php $i = 0;
