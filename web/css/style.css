@@ -2331,6 +2331,25 @@ input.rounded {
     font-size: 12px;
 }
 
+.inner_page_content_main ul {
+    list-style: none;
+}
+
+.inner_page_content_main li:before {
+    /* For a round bullet */
+    content: '\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -17px;
+    top: -0px;
+    color: #f15822;
+    font-size: 12px;
+}
+
 .shop_detail_subsection2 {
     color: #0071ac;
     font-family: "Franklin Gothic Book Regular";
