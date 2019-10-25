@@ -137,12 +137,11 @@
                             <div class="home_heading_l_2_img_div">
                                 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">
                             <?php 
-                            if($obj['category_id'] == 6){
-                                
-                                $desc = $obj['text'];      
+                            if($arr[$i]['category_id'] == 6){                                
+                                $desc = $arr[$i]['text'];      
                                 $abc = explode("em&gt;",strip_tags($desc));
                                 //var_dump($desc);
-                                echo "<div class='wizdom-one'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
+                                echo "<div class='wizdom-two'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
                             }else {?>
                                     <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>"  width="200" />
                                     <?php }
@@ -314,7 +313,15 @@
                 <div>
                     <div class="home_heading_c">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="bluelink1 cursor">
-                            <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_small.', $obj['image']); ?>" width="165"  />
+                            <?php 
+                                if($obj['category_id'] == 6){
+                                    $desc = $obj['text'];                                                                               
+                                    $abc = explode("em&gt;",strip_tags($desc));
+                                    echo "<div class='wizdom-three'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</div>';
+                                }else {?>
+                                <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_small.', $obj['image']); ?>" width="165"  />    
+                                <?php }
+                            ?>
                         </a>
                     </div>
                     
@@ -428,8 +435,17 @@
                     </div>
                 </div>
                 <div class="advertdiv photo">
+                        
                     <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $last_column_articles[$l]['article_id']; ?>" class="bluelink1 cursor">
-                        <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_mid.', $last_column_articles[$l]['image']); ?>"  width="300"  />
+                        <?php 
+                            if($last_column_articles[$l]['category_id'] == 6){
+                                $desc = $last_column_articles[$l]['text'];                                                                               
+                                $abc = explode("em&gt;",strip_tags($desc));
+                                echo "<div class='wizdom-one'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...></div>';
+                            }else {?>
+                                <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_mid.', $last_column_articles[$l]['image']); ?>"  width="300"  />
+                            <?php }
+                        ?>
                     </a>
                 </div>
 
