@@ -320,7 +320,7 @@ width:34%;
                                     <span>&nbsp;</span>
                                     <div class="blank_12h widthall">&nbsp;</div>
                                 </div>
-                                <div class="error_list_outer float_right">
+                                <div class="error_list_outer float_right" style="margin-top: 5px;">
                                     <ul class="error_list">
                                         <li><div class="blank_12h widthall">&nbsp;<?php echo $birth_year_error; ?></div></li>
                                     </ul>
@@ -338,7 +338,7 @@ width:34%;
                             <td align="left">
                                 <span class="margin_reg_ey">&nbsp;</span>
                                 <div class="error_list_outer float_left">
-                                    <ul class="error_list" style="margin-top: -5px;">
+                                    <ul class="error_list" style="margin-top: -2px; margin-bottom: 0px; margin-left: 10px;">
                                         <li><?php echo $gender_error; ?></li>
                                     </ul>
                                 </div>

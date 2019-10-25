@@ -763,7 +763,7 @@ class borst_shopActions extends sfActions {
                             ->where('bsa.id =?', $product)
                             ->fetchArray();                
                 
-                $loginRequiredForProduct = Doctrine::getTable('BtshopArticle')->find($product)->getBtShopArticleType()->login_required;              
+                // $loginRequiredForProduct = Doctrine::getTable('BtshopArticle')->find($product)->getBtShopArticleType()->login_required;              
                 if((($result[0]['btshop_type_id'] == 7 || $result[0]['btshop_type_id'] == 8 || $result[0]['btshop_type_id'] == 9) && $result[0]['BtShopArticleType']['login_required'] == 1 && !$this->getUser()->isAuthenticated()) || (($result[0]['id'] == 132 || $result[0]['id'] == 21 || $result[0]['id'] == 92) && $result[0]['btshop_type_id'] == 6 && $result[0]['BtShopArticleType']['login_required'] == 1 && !$this->getUser()->isAuthenticated())){
                 //if ($loginRequiredForProduct && !$this->getUser()->isAuthenticated()) {
                     $loginRequired = true;
