@@ -178,12 +178,12 @@
                         <div class="float_left widthall mbottom_article">
                             <?php if ($article_data->author_id): ?>
                                 <span class="float_left width_100_per">
-                                    <a  class="cursor main_link_color" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>">
+                                    <a  class="cursor main_link_color" href="<?php echo 'http://' . $host_str . '/borst/contactUs' ?>">
                                         <img src="/images/grafik/<?php echo $author->code ?>.png"  width="38"/>
                                     </a>
                                 </span>
 
-                                <span class="float_left  main_link_color"><a class="cursor main_link_col2" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span>
+                                <span class="float_left  main_link_color"><a class="cursor main_link_col2" href="<?php echo 'http://' . $host_str . '/borst/contactUs' ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span>
                                 
                                 <div class="float_left mtop_5 width_640"> 
                         <?php
