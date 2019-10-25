@@ -27,27 +27,25 @@
                                         
                                         
                                         
-                                        <td width="260"><span style="float: left; margin-top: 4px; margin-left: 2px;color: #52595b;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23px; line-height:30px; font-weight:100; letter-spacing: -0.1px;">Aktuell <br>
+                                        <td width="226"><span style="float: left; margin-top: 4px; margin-left: 2px;color: #232222;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23px; line-height:30px; font-weight:100; letter-spacing: -0.1px;">Aktuell <br>
                                                 information 
                                                 <br> 
                                                 från Börstjänaren</span></td>
                                                 
                                               
-                                      <td width="86">
-                                      <table width="44" style="margin-top:4px">
+                                      <td width="82">
+                                      <table width="64" style="margin-top:0px">
                                                 
                                                 <tr>
-                                                     <td style="margin-left:auto; margin-right:auto; background-color: #232222; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 20px; line-height:24px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; color: #ffffff; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
+                                                     <td style="margin-left:auto; margin-right:auto; background-color: #ffffff; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 44px; line-height:44px; font-family: FranklinGothicCondensed,Arial,Helvetica,sans-serif; color: #232222; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
                                                 </tr>
                                                 <tr>
-                                                   <td height="10" style="font-size: 14px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #232222;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 10px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
+                                                   <td height="10" style="font-size: 18px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #232222;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 6px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:800; line-height: 18px; text-align:center; padding-top: 2px;"><?php echo ' ' . date("Y"); ?></td>
+                                                    <td style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:800; line-height: 18px; text-align:center; padding-top: 8px;"><?php echo ' ' . date("Y"); ?></td>
                                                 </tr>
-                                                <tr>
-                                                  <td style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:700; line-height: 18px; text-align:center; height: 38px;">&nbsp;</td>
-                                                </tr>
+                                               
                                             </table></td>
                                         <td style="border-left: 1px solid #D3D6E1;padding: 3px 0 3px 10px;" width="148">
                                          <a href="https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/20"> <img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" alt="" name="Ad" width="148" height="101" id="Ad" /></a></td>
@@ -114,7 +112,7 @@
                                                 <span class="next_nobj"></span>
                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                             </span>
-                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
                                             <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
                                                     <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
                                                         <?php echo html_entity_decode($ads[0]); ?></span></a></span>
@@ -237,7 +235,7 @@
                                             <div style="border-bottom: 2px solid #f15a22; margin-top: 12px; height: 0px;">&nbsp;</div>
 
 
-                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px; margin: 8px 0px 4px 0px; float: left;">Annons</span>
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: 8px 0px 4px 0px;">ANNONS</span>
 
                                             <span><?php echo html_entity_decode($ads[1]); ?></span>
 

@@ -47,7 +47,7 @@
         <div class="">
 
             <div class="shop_home_heading">Välkommen till BT-shop! <img alt="BT-SHOP" src="/images/new_home/bt-shop_logo_left.png" /></div>
-            <div class="blank_20h widthall"></div>
+            <div class="blank_28h widthall"></div>
            
             <div class="shopblock">
                 <div id="abonnemang_title" class="shop_home_cat_bg">

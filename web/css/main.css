@@ -272,7 +272,7 @@ font-size:0;}
 .in_date{float:right;position:relative;color:#abb9c8;font-size:0.85em; letter-spacing: 0.01em;}
 .photoimg{float:left;position:relative;padding:0px 0 0 0px;margin-right:9px;}
 .photoimg img{width:30px;padding-top:1.2px;}
-.btshopleftdiv{float:left;position:relative;height:auto;padding:7px 0 0 55px;}
+.btshopleftdiv{float:left;position:relative;height:auto;padding:1px 0 0 55px;}
 .btshopleftdivinner{float:left;position:relative;width:500px;border:0px solid red;}
 .shoph2{font-family: 'Franklin Gothic Book Regular';
 color: #232222;

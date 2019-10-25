@@ -210,7 +210,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <br/>
                     <div class="blank_done widthall">&nbsp;</div>
                     <div class="float_left widthall shop_welc4"><?php echo __('Välkommen åter!') ?></div>
-                    <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_cart.png" width="112" />
+                    <img alt="BT-SHOP" class="bt-shop-payment_done-logo" src="/images/new_home/bt-shop_logo_cart_step3.png" width="112" />
                 </div>
                 <div id="pdf_send_report"></div>
                 <?php }?>

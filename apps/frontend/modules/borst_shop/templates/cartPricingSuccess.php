@@ -42,7 +42,7 @@
         </ul>
     <?php } else {?>
                 <div class="height_56"></div>
-                <div class="shop_detail_title">Varukorg</div>
+                <div class="shop_detail_cart">Varukorg</div>
                 
                 <div class="height_41"></div>
               
