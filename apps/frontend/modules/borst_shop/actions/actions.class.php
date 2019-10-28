@@ -2192,9 +2192,9 @@ class borst_shopActions extends sfActions {
                 $product = Doctrine::getTable("BtShopArticle")->find($product_id);
             }
             if (!$purchase) {
-                $this->message = "Du har inte slutfört köpet för denna produkt";
+                $this->message = "Du har inte slutfört köpet för denna produkt.";
             } elseif (!$purchase["order_processed"]) {
-                $this->message = "Du har inte slutfört köpet för denna produkt";
+                $this->message = "Du har inte slutfört köpet för denna produkt.";
             } elseif (!$product) {
                 $this->message = "Produkten finns inte";
             } elseif (!$product['is_downloadable']) {

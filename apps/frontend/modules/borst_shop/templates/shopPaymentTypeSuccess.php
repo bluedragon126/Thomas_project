@@ -280,7 +280,7 @@
                 </div>
             </div>
 
-            <div class="btshopleftdiv ptop_10" >
+            <div class="btshopleftdiv">
                 <div class="btshopleftdivinner">
                     <div class="cart_payment_steps">
                         <div class="bt-shop-step2-top-margin widthall float_left">&nbsp;</div>

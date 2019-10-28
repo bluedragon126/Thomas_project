@@ -20,7 +20,7 @@ $upload_path .= ( $article['name'] == $article_name ? "articleIngressImages/" : 
                         <a href="<?php echo $host . $link_type . $article['article_id']; ?>" style="width: <?php echo $side == 'left' ? '465px' : '300px' ?>;">
                             <img alt=""  src="<?php echo $upload_path . str_replace('.', $imageType, $article['image']); ?>"  style="width: <?php echo $side == 'left' ? '465px' : '300px' ?>;"/>
                         </a>
-                        <table cellpadding="0" cellspacing="0" style=" width:100%; height: 1px; background-color: #ffffff;border-bottom-right-radius: 40px; margin: 1px 0px 20px 0px; padding: 1px 0px 3px 0px;">
+                        <table cellpadding="0" cellspacing="0" style=" width:100%; height: 1px; background-color: #ffffff;border-bottom-right-radius: 40px; margin: -5px 0px 10px 0px; padding: 0px 0px 3px 0px;">
                             <tr>
                                 <td>
                                     <?php $date = explode('-', substr($article['date'], 0, 10)); ?>
