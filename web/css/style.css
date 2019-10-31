@@ -1274,6 +1274,10 @@ home_heading_c {
     margin-right: 4px !important;
 }
 
+#zipcode {
+    width: 50px;
+}
+
 .margin_rgt_2 {
     margin-right: 2px;
 }
