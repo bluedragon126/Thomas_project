@@ -13,7 +13,7 @@
             <div class="inner_page_content_main">
                 <div class="whp_title">Välkommen till Börstjänaren!</div>
                 <div class="whp_preamble_head">
-                    Nybörjare eller gammal i gemet? Vi är en sajt för alla som vill tjäna på börsen – vilket är lättare sagt än gjort.<br />
+                    Nybörjare eller gammal i gemet? Börstjänaren är en sajt för alla som vill tjäna på börsen – något som är avsevärt lättare sagt än gjort.<br />
                     <br />
                     Vi erbjuder börstips, portföljtjänster, utbildningar på alla nivåer, och i vissa fall till och med förvaltning. Mycket, för att inte säga det mesta, på vår sajt är kostnadsfritt.
                 </div>

@@ -44,7 +44,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <?php include_partial('global/body_head', array('rub' => "")) ?>
                 <?php //include_partial('global/front_form_header',array('greenmsg'=>$greenmsg,'errormsg'=>$errormsg,'host_str'=>$host_str))  ?>
                 <div class="blank_10h widthall">&nbsp;</div>
-                <div class="whp_preamble">Här kan du teckna dig för en prenumeration på Börstjänarens kostnadsfria veckobrev. På denna sida kan du även, om du så önskar, avsluta din prenumeration.</div>
+                <div class="whp_preamble">Här kan du teckna dig för en prenumeration på Börstjänarens kostnadsfria veckobrev. På denna sida kan du även avsluta din prenumeration, om du så önskar.</div>
                 
                  
                    
@@ -106,7 +106,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 <p><strong>OBS!</strong> 
                          <br>
-                         Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras (reg. resp. avreg.) på <a href="/borst/borstDayletter"> separat sida.</a> (Båda nyhetsbreven kan även administreras under fliken mina e-postutskick i <a href="/sbt/sbtUserProfile/take_to_profile">"Mitt konto".)</a>
+                         Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras på <a href="/borst/borstDayletter"> separat sida.</a> (Se nedan)
                   </p>
                 
                 

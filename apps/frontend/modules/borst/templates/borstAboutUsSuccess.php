@@ -25,35 +25,24 @@
             
                 <div class="whp_title">Välkommen till Börstjänaren!</div>
                 
-                <div class="whp_preamble_head">Börstjänaren är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru- och valutamarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
+                <div class="whp_preamble_head">Börstjänaren är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru-, valuta- och kryptomarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
                 </div>
                 <div class="float_left widthall">
                 
                     <div class="whp_heading">Börstips online sedan 2006</div>
 
                     Börstjänaren drivs av entusiaster med intresse för utbildning, fria marknader, teknisk trading och investeringar. Sajten Börstjänaren har funnits sedan 2006.
-                <div class="float_left widthall">
+                  <br>
+                    <br>
                 
-                  <div class="whp_heading">Utbildningar och kurser</div>
+                
                   
                     Vi erbjuder utbildningar i aktiehandel och kapitalförvaltning, både nybörjarkurser och mer avancerade program.
                     
-                    <div class="whp_heading">Kostnadsfria webinarier</div>
+                      <br>
+                    <br>
                     
                     På onsdagkvällar kl 20.00 håller vi kostnadsfria webinarier,  &quot;Trejdingklubben online&quot;, där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
-
-                    <div class="whp_heading">Tre användarnivåer</div>
-                    Som<strong> vanlig besökare </strong>har du kostnadsfri tillgång till det mesta.
-                    
-                    <br>
-                    <br>
-                    
-                    Som <strong>registrerad användare</strong>kan du också skriva i vårt forum och ta del av speciella artiklar och  mejlutskick. Välkommen att registrera dig kostnadsfritt och få en gratis  utbildning på köpet!.
-                    
-                    <br>
-                    <br>
-
-                    Som <strong>abonnent</strong> kan du ta del av vår portföljförvaltning via e-post och artiklar där affärsförslag presenteras och kommenteras.
 
                     <div class="whp_heading">Vi som syns på Börstjänaren</div>
                     
@@ -69,7 +58,7 @@
                     <br>
                     <br>
                     
-                    <strong>Henrik har utvecklat </strong><a href="https://www.borstjanaren.se/borst/borst/borstArticleDetails/article_id/14288">Henry Boy</a> och <a href="https://www.borstjanaren.se/borst/borst/borstArticleDetails/article_id/16717">BT Multi-kanalportföljen,</a> två mycket framgångsrika tekniska handelsmodeller, som går att följa  antingen via ett gör-det-själv-abonnemang på här på Börstjänaren, eller  genom att ansluta sitt konto för automatisk orderläggning och  exekvering. (Läs mer om automatisk handel <a href="https://www.borstjanaren.se/borst/borstArticleDetails/article_id/14288">här!)</a>
+                    <strong>Henrik har utvecklat </strong><a href="https://www.borstjanaren.se/borst/borst/borstArticleDetails/article_id/14288">Henry Boy</a> och <a href="https://www.borstjanaren.se/borst/borst/borstArticleDetails/article_id/16717">BT Multi-kanalportföljen,</a> två mycket framgångsrika tekniska handelsmodeller, som går att följa  antingen via ett gör-det-själv-abonnemang  här på Börstjänaren, eller  genom att ansluta sitt konto för automatisk orderläggning och  exekvering. (Läs mer om automatisk handel <a href="https://www.borstjanaren.se/borst/borstArticleDetails/article_id/14288">här!)</a>
                     
                     <br>
                     <br>
@@ -117,7 +106,7 @@
                     
                     <br><br>
                     
-                    <div class="whp_subheading">Du rekommenderar köp och är ganska tvärsäker. <br>Är du inte rädd för att få fel?</div>
+                    <div class="whp_subheading">Du rekommenderar köp och är ganska tvärsäker. Är du inte rädd för att få fel?</div>
                     
 Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av gångerna så är det ok, anser jag.
                     
@@ -181,7 +170,7 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
             </div>
       <?php echo include_partial('global/bottom_footer_whitepage'); ?>
         </div>
-    </div>
+    
     <div class="inner_page_divider_3">&nbsp;</div>
     <div class="float_left mrg_left_testimonial margin_testimonial">
         <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>

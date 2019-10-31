@@ -144,7 +144,7 @@ endforeach;
     </div>
     <div class="nav-bar-wrap-right top_menu_right">
        <span class="<?php echo $third_menu == 'om_oss' ? 'nav-active' : '' ?>"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstAboutUs'; ?>">Om oss</a></span>
-       <span class="<?php echo $third_menu == 'faq' ? 'nav-active' : '' ?>"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/faq">Hjälp</a></span>
+       <!--<span class="<?php echo $third_menu == 'faq' ? 'nav-active' : '' ?>"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/faq">Hjälp</a></span>-->
        <span class="<?php echo $third_menu == 'borstbeginner' ? 'nav-active' : '' ?>"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstBeginner">Nybörjare</a></span>
        <span class="<?php echo $third_menu == 'dayletter' ? 'nav-active' : '' ?>"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstDayletter">Dagsbrev</a></span>
        <span class="<?php echo $third_menu == 'newsletter' ? 'nav-active' : '' ?>"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter">Veckobrev</a></span>

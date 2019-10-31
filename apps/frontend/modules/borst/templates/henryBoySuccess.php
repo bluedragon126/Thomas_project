@@ -22,7 +22,18 @@
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-
+			<div class="whp_title">Henry Boy trade signals</div>
+                <div class="whp_preamble">
+                    Sedan 2010 har Börstjänaren skickat ut Henry Boy tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
+                Henry Boy kan du sköta själv via abonnemanget eller knyta ditt konto till automatisk handel.
+                <div class="float_left widthall">
+                  <div class="whp_heading">Herny Boy abonnemang</div>
+                    <p><strong>Kundtjänst:</strong> kundtjanst#borstjanaren.se<br />
+                      <b>Henrik Hallenborg: </b>henrik.hallenborg#borstjanaren.se 
+                    <br>
+                    <b>Thomas Sandström</b>:
+                     thomas.sandstrom#borstjanaren.se 
+                    <br>
 
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>

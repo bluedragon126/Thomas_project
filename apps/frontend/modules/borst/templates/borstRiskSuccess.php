@@ -31,7 +31,7 @@
                         Överväg noga</div>
                     <b>Risken för förlust vid börshandel</b> kan vara betydande. Du bör därför noga överväga om en sådan handel är lämplig för dig med tanke på din situation och dina ekonomiska resurser.
                     <br><br>
-                    <b>Börshandel har stora potentiella risker</b>, utöver eventuella belöningar. Du måste vara medveten om riskerna och villig att acceptera dem, för att investera enligt de strategier som beskrivs på denna webbplats.
+                    <b>Börshandel har stora potentiella risker</b>, utöver eventuella belöningar. Du måste vara medveten om riskerna och villig att acceptera dem, för att investera enligt de strategier och modeller som beskrivs på denna webbplats.
                     <br><br>
 
                     <b>Riskera inte pengar du inte har råd att förlora.</b> Du kan förlora mer pengar än du avsett att sätta på spel. Investeringar utefter de handelsmodeller som redovisas på denna webbplats görs helt på egen risk. Du bör kontakta din mäklare eller finansiella rådgivare innan du placerar i de här angivna strategierna

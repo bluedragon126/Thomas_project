@@ -127,7 +127,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
 
 
-                <div class="float_left"><p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras (reg. resp. avreg.) på <a href="/borst/borstNewsletter"> separat sida.</a> (Båda nyhetsbreven kan även administreras under fliken mina e-postutskick i <a href="http://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile">"Mitt konto".)</a>
+                <div class="float_left">
+                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras – dvs registreras och avregistreras – på <a href="/borst/borstNewsletter"> separat sida.</a> (Se nedan.)
                 
              
                 
