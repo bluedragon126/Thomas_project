@@ -3560,7 +3560,7 @@ class borstActions extends sfActions
         isicsBreadcrumbs::getInstance()->addItem('Sök', 'borst/borstAdvanceSearch');
         isicsBreadcrumbs::getInstance()->addItem($ext, 'borst/borstPpm');
         //code change by sandeep
-        $normal_search_para = trim($arr['normal_search']) ? trim($arr['normal_search']) : $ext;//$this->getRequestParameter('normal_search');// change by sandeep
+        $normal_search_para = $request->getParameter('normal_search_para');//$this->getRequestParameter('normal_search');// change by sandeep
         //code change by sandeep end 
 		$this->search_tab = $this->getRequestParameter('search_tab') ? $this->getRequestParameter('search_tab') : 'all';
                 
@@ -3574,7 +3574,20 @@ class borstActions extends sfActions
         $search_criteria['forum'] = $arr['search_from_forum'];
         $search_criteria['btchart'] = $arr['search_from_btchart'];
         $search_criteria['btshop'] = $arr['search_from_btshop'];
-        $search_criteria['userlist'] = $arr['search_from_userlist'];
+		$search_criteria['userlist'] = $arr['search_from_userlist'];
+
+		$additional_parameters = array();
+        $category_id = $request->getParameter('category_id');        
+        if($category_id){ $this->category_id = $category_id; $additional_parameters['category_id'] = $category_id; }
+        $type_id = $request->getParameter('type_id');        
+        if($type_id){ $this->type_id = $type_id; $additional_parameters['type_id'] = $type_id;  }        
+        $object_id = $request->getParameter('object_id');        
+        if($object_id){ $this->object_id = $object_id; $additional_parameters['object_id'] = $object_id; }        
+        $shop_type = $request->getParameter('shop_type');
+        if($shop_type){ $this->shop_type = $shop_type; $additional_parameters['shop_type'] = $shop_type; }
+        $stock_type = $request->getParameter('stock_type');
+		if($stock_type){ $this->stock_type = $stock_type; $additional_parameters['stock_type'] = $stock_type; }  
+		
         $count = 0;
         foreach($search_criteria as $key=>$value)
         {
@@ -3597,11 +3610,14 @@ class borstActions extends sfActions
         if(($search_mode=='adv_search')&&(!$arr['search_from_borst'] && !$arr['search_from_sbt'] && !$arr['search_from_blog'] && !$arr['search_from_forum'] && !$arr['search_from_btchart'] && !$arr['search_from_btshop'] && !$arr['search_from_userlist'])){
             $arr['search_from_borst']=$arr['search_from_sbt']=$arr['search_from_blog']=$arr['search_from_forum']=$arr['search_from_btchart']=$arr['search_from_btshop']=$arr['search_from_userlist']=1;
         }
-
-        if($arr['from_adv_search']==1 && $arr['search_from_borst']!=1)
-		  $searched_article_query = null;
+		if($arr['from_adv_search']==1 && $arr['search_from_borst']!=1 && !$search_tab_id)
+			$searched_article_query =null;                 
 		elseif($arr['from_adv_search']==1 || $arr['search_from_borst'])
-			$searched_article_query = ArticleTable::getInstance()->getAdvancedSearchedArticleQuery($arr,$column_id,$order);
+			$searched_article_query = ArticleTable::getInstance()->getAdvancedSearchedArticleQuery($arr,$column_id,$order,$additional_parameters); 
+        // if($arr['from_adv_search']==1 && $arr['search_from_borst']!=1)
+		//   $searched_article_query = null;
+		// elseif($arr['from_adv_search']==1 || $arr['search_from_borst'])
+		// 	$searched_article_query = ArticleTable::getInstance()->getAdvancedSearchedArticleQuery($arr,$column_id,$order);
         else
 			$searched_article_query = ArticleTable::getInstance()->getSearchedArticleQuery(trim($arr['normal_search']),$column_id,$order);
 
@@ -3664,21 +3680,36 @@ class borstActions extends sfActions
 			$this->btchart_pager = $mymarket->getPagerForAll('BtchartCompanyDetails',$rec_per_page,$searched_btchart_query,$request->getParameter('page', 1));
 		}
 		else {	$this->btchart_pager = NULL; $sort_arr[] = 0;}
-        /* -------- btchart end -----------*/
+		/* -------- btchart end -----------*/
+		
+		 
         
 		/* -------- btshop start -----------*/
         if($arr['from_adv_search']==1 && $arr['search_from_btshop']!=1)
 		  $searched_btshop_query = null;
-		elseif($arr['from_adv_search']==1 || $arr['search_from_btshop'])
-			$searched_btshop_query = BtShopArticleTable::getInstance()->getSearchedBtshopQuery($arr['phrase_in_page'],$column_id,$order);
-        else
-			$searched_btshop_query = BtShopArticleTable::getInstance()->getSearchedBtshopQuery(trim($arr['normal_search']),$column_id,$order);
-
-		if($searched_btshop_query)
-		{
-			$this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
+		elseif($arr['from_adv_search']==1 || $arr['search_from_btshop']){
+			// echo($arr['phrase_in_page']);
+			// echo($column_id);
+			// echo($order);
+			// echo($additional_parameters);
+			// exit;
+			$searched_btshop_query = BtShopArticleTable::getInstance()->getSearchedBtshopQuery($arr['phrase_in_page'],$column_id,$order,$additional_parameters);
 		}
-		else {	$this->btshop_pager = NULL; $sort_arr[] = 0;}
+			
+			// $searched_btshop_query = BtShopArticleTable::getInstance()->getSearchedBtshopQuery(trim($normal_search_para),$column_id,$order,$additional_parameters); 
+        else
+			$searched_btshop_query = BtShopArticleTable::getInstance()->getSearchedBtshopQuery(trim($arr['normal_search']),$column_id,$order,$additional_parameters);
+
+		if($searched_btshop_query)	
+			$this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
+		else
+			$this->btshop_pager = null;
+		// 	if($searched_btshop_query)
+		// {
+		// 	$this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
+		// 	//$this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
+		// }
+		// else {	$this->btshop_pager = NULL; $sort_arr[] = 0;}
         /* -------- btshop end -----------*/        
 
 		/* -------- userlist start -----------*/
@@ -3694,6 +3725,8 @@ class borstActions extends sfActions
 			$this->userlist_pager = $mymarket->getPagerForAll('SfGuardUserProfile',$rec_per_page,$searched_userlist_query,$request->getParameter('page', 1));
 		}
 		else {	$this->userlist_pager = NULL; $sort_arr[] = 0;}
+
+		
         /* -------- userlist end -----------*/        
         
         if($this->search_tab == 'all')
@@ -3734,7 +3767,11 @@ class borstActions extends sfActions
             } 
             $this->object_country_arr = $object_country_arr;
             $this->sbt_blog_comment = new SbtBlogComment();
-            $this->methodName = 'getSubCategoryName'; 
+			$this->methodName = 'getSubCategoryName'; 
+			
+			///////////////////////////
+			
+			///////////////////////////
 	}
 	/**
 	 * Executes getTypeCategory action
@@ -4527,7 +4564,7 @@ class borstActions extends sfActions
 		{
 			$rec_per_page = $rec_per_page > 0 ? $rec_per_page : 25;
 		}
-		
+		$column_id= 'date';
 		if($request->getParameter('page'))
 		{
 			$order = $request->getParameter('search_current_column_order');
@@ -4560,6 +4597,7 @@ class borstActions extends sfActions
 		
 		if($normal_search_para)	
 		{
+			
 			$searched_article_query = ArticleTable::getInstance()->getSearchedArticleQuery(trim($normal_search_para),$column_id,$order,$additional_parameters);
 			$searched_analysis_query = SbtAnalysisTable::getInstance()->getSearchedAnalysisQuery(trim($normal_search_para),$column_id,$order,$additional_parameters);
 			$searched_blog_query = SbtUserBlogTable::getInstance()->getSearchedBlogQuery(trim($normal_search_para),$column_id,$order,$additional_parameters);
@@ -4573,7 +4611,7 @@ class borstActions extends sfActions
 			$this->blog_pager = $mymarket->getPagerForAll('SbtUserBlog',$rec_per_page,$searched_blog_query,$request->getParameter('page', 1));
 			$this->forum_pager = $mymarket->getPagerForAll('Btforum',$rec_per_page,$searched_forum_query,$request->getParameter('page', 1));
             $this->btchart_pager = $mymarket->getPagerForAll('BtchartCompanyDetails',$rec_per_page,$searched_btchart_query,$request->getParameter('page', 1));
-            $this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
+			$this->btshop_pager = $mymarket->getPagerForAll('BtShopArticle',$rec_per_page,$searched_btshop_query,$request->getParameter('page', 1));
             $this->userlist_pager = $mymarket->getPagerForAll('SfGuardUserProfile',$rec_per_page,$searched_userlist_query,$request->getParameter('page', 1));            
 			
 			$this->pager = $mymarket->setPagerForAll($this->article_pager,$this->analysis_pager,$this->blog_pager,$this->forum_pager,$this->btchart_pager, $this->btshop_pager,$this->userlist_pager);            
@@ -4614,6 +4652,12 @@ class borstActions extends sfActions
                 $searched_btchart_query = null;		
 			elseif($arr['from_adv_search']==1 || $arr['search_from_btchart'])
                 $searched_btchart_query = BtchartCompanyDetailsTable::getInstance()->getAdvancedSearchedBtchartQuery($arr,$column_id,$order,$additional_parameters);			                 
+				
+				// echo($arr['phrase_in_page']);
+				// echo($column_id);
+				// echo($order);
+				// echo($additional_parameters);
+				// exit;
 
 			if($arr['from_adv_search']==1 && $arr['search_from_btshop']!=1 && !$search_tab_id)
                 $searched_btshop_query = null;		

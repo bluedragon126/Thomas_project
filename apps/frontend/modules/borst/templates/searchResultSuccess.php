@@ -263,6 +263,67 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <?php endif ?>
                         </div>
                     </div>-->
+                    <?php if (($search_tab == 'all' || $search_tab == 'btshop') && $btshop_pager): ?>    
+                    <div class="float_left widthall" id="btshop_result">
+                        <div  class="listingheading result_title_fs margin_top_38">BT-Shop</div>
+                        <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                            <tr id="column_header" height="35">
+                                    <th class="width_30">Art</th>
+                                    <th scope="col" width="38%"><a id="sortby_btshop_article_title" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Artikel<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                                    <th scope="col" width="36%"><a id="sortby_btshop_type_id" name="btshop_result" class="float_left width_110 cursor"><span class="float_left">Typ<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                                    <th scope="col" width="22%"><a id="sortby_btshop_product_price" name="btshop_result" class="float_left width_100 cursor"><span class="float_left">Pris<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+                            </tr>
+                        <?php if ($btshop_pager): ?>
+                            <?php foreach ($btshop_pager->getResults() as $data): ?>
+                                    <tr class="classnot">
+                                        <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
+                                        <td class="main_link_color width_240"><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
+                                        <td class="lightgreenfont width_220"><a class="shop_type cursor" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
+                                        <td class="main_link_color width_120"><a class="main_link_color"><?php echo "från " . BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>                
+                                    </tr>
+                            <?php endforeach; ?>
+                            <?php if ($btshop_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
+                        <?php endif; ?>
+                        <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
+                                <tr><td colspan="7">&nbsp;</td></tr>
+                        <?php endif; ?>
+                        </table>-->
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="forum_topic_list">
+                            <tr id="column_header" class="headerList btshop_table_head">
+                                <th class="width326 pad_lft_5"><span class="float_left width326">Rubrik/Namn</span></th>
+                                <th class="width136"><a id="sortby_btshop_article_title" name="btshop_result" class="float_left width136 cursor"><span class="float_left width136">Artikel</span></a></th>
+                                <th class="width108"><a id="sortby_btshop_type_id" name="btshop_result" class="float_left width108 cursor"><span class="float_left width108">Typ</span></a></th>
+                                <th class="forum_table_date_w"><a id="sortby_btshop_product_price" name="btshop_result" class="float_left forum_table_date_wcursor"><span class="float_left forum_table_date_w">Pris</span></a></th>
+                            </tr>
+                            <?php if ($btshop_pager): ?>
+                                <?php
+                                $i = 1;
+                                foreach ($btshop_pager->getResults() as $data):
+                                    ?>
+                                    <tr <?php
+                        if ($i == 1) {
+                            echo "class='padding_top_table'";
+                        }
+                                    ?> >                    
+                                        <td class="orgfont width326 pad_lft_5" style="color:#5a7692"><?php echo $data->btshop_article_subtitle; ?></td>
+                                        <td class="width136"><a class="blog_table_topic" style="color:#5ec5ed" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
+                                        <td class="width108"><a class="btshop_table_post shop_type cursor" style="color:#171200" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
+                                        <td class="forum_table_date_w"><a class="blog_prof_table_date main_link_color" style="color:#e53520"><?php echo "från " . BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
+
+                                    </tr>
+                                    <?php
+                                    $i++;
+                                endforeach;
+                                ?>
+                                <?php if ($btshop_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
+                            <?php endif; ?>
+                            <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
+                                <!--<tr><td colspan="7">&nbsp;</td></tr>-->
+                            <?php endif; ?>
+                        </table>
+                    </div>        
+                <?php endif; ?>
 
                     <div class="paginationwrapperNew margin_top_pag" style="float:left;">
                         <div class="forum_pag" id="search_listing">
@@ -299,6 +360,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </div>
+                
             <?php else: ?>
                 <h2 class="listingheading margin_left_50">Din sökning gav ingen träff..!</h2>
             <?php endif; ?>
