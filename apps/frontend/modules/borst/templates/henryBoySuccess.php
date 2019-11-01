@@ -26,23 +26,22 @@
                 <div class="whp_preamble">
                     Sedan 2010 har Börstjänaren skickat ut Henry Boy tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
                 Henry Boy kan du sköta själv via abonnemanget eller knyta ditt konto till automatisk handel.
-                <div class="float_left widthall">
+                <div class="float_left widthall"></div>
                   <div class="whp_heading">Herny Boy abonnemang</div>
-                    <p><strong>Kundtjänst:</strong> kundtjanst#borstjanaren.se<br />
-                      <b>Henrik Hallenborg: </b>henrik.hallenborg#borstjanaren.se 
-                    <br>
-                    <b>Thomas Sandström</b>:
-                     thomas.sandstrom#borstjanaren.se 
-                    <br>
-
+                  <p><strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera här!
+                 
+                  
+                  <div class="whp_heading">Herny Boy Automatic</div>
+                    <p>Om man inte vill lägga order själv, går det bra att teckna sig för Henry Boy Automatic. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
-            </div>
-        </div>
+           
+        
         <div class="inner_page_divider_3">&nbsp;</div>
-        <div class="float_left mrg_left_testimonial margin_testimonial">
+        
             <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
-        </div>
-    </div>
+        <div class="float_left mrg_left_testimonial margin_testimonial"></div>
+     </div></div> </div>
+   
     <div class="rightbanner padding_0 font_0 margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>
