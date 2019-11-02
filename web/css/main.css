@@ -786,7 +786,9 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
     color: #232222;
     line-height: 1.35em;
     letter-spacing: -0.01em;
-    width: 100%;}
+    width: 100%;
+}
+	
 #borst_desc_div p strong{
 	font-family: "ITC Cheltenham Book";
     float: left;
@@ -795,6 +797,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
     line-height: 2.3em;
     width: 100%;
 	font-weight: 100;
+	margin: 12px 0px -3px;
 }
 
 #borst_desc_div p em{
@@ -807,7 +810,19 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 	word-spacing: -0.02em;
     width: 100%;
 	font-style:normal;
+	margin-top: -18px;
 }
+	
+.q_name{
+	font-family: "ITC Cheltenham Book";
+    float: left;
+    font-size: 1.3em;
+    color: #232222;
+    width: 100%;
+	font-weight: 100;
+	margin: -8px 0px 11px !important;
+}
+
 .input220{background-color:#F6F9FB;border:1px solid #ced2d0;height:19px;width:220px;padding-left:3px;margin-bottom:4px;}
 .padtdsmall{padding-bottom:1px;padding-top:0px;}
 .padtdsmallbutton{padding-bottom:3px;padding-top:0px;}

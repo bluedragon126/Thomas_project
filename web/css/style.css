@@ -4229,7 +4229,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #232222;
     float: left;
-    margin: 8px 0px 4px;
+    margin: 4px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4243,7 +4243,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #232222;
     float: left;
-    margin: 8px 0px 4px;
+    margin: 4px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4257,7 +4257,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #232222;
     float: left;
-    margin: 8px 0px 4px;
+    margin: 4px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4271,7 +4271,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #232222;
     float: left;
-    margin: 8px 0px 4px;
+    margin: 4px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4321,11 +4321,11 @@ ul.cartStep2 li {
     font-family: 'CheltenhamITCW01-Bold';
     font-size: 3.7em;
     line-height: 1em;
-    word-spacing: -0.04em;
-    letter-spacing: -0.02em;
+    word-spacing: -0.07em;
+    letter-spacing: -0.01em;
     color: #232222;
     float: left;
-    margin-bottom: 9px;
+    margin: 3px 0px 9px;
     word-wrap: break-word;
     width: 100%;
     hyphens: none;
@@ -4353,7 +4353,7 @@ ul.cartStep2 li {
     line-height: 1.07em;
     color: #232222;
     float: left;
-    margin: 5px 0px 3px;
+    margin: 7px 0px 3px;
     word-wrap: break-word;
     width: 100%;
     hyphens: none;
@@ -4361,7 +4361,7 @@ ul.cartStep2 li {
 
 .home_heading_l_3 {
     font-family: 'ITC Cheltenham Italic';
-    font-size: 2.2em;
+    font-size: 2.3em;
     letter-spacing: 0.04em;
     word-spacing: -0.06em;
     line-height: 1.1em;
@@ -4389,13 +4389,13 @@ ul.cartStep2 li {
 
 .home_heading_l_4 {
     font-family: 'CheltenhamITCW01-Bold';
-    font-size: 3.6em;
+    font-size: 3.7em;
     line-height: 1em;
     word-spacing: -0.07em;
     letter-spacing: -0.01em;
     color: #232222;
     float: left;
-    margin: 0px 0px 9px;
+    margin:3px 0px 9px;
     word-wrap: break-word;
     width: 100%;
     hyphens: none;
@@ -5939,7 +5939,7 @@ ul.cartStep2 li {
 
 .regvalidfield_2{
     background: url('../images/right_green.png') no-repeat;
-    padding: 1px 1px 9px 15px;
+    padding: 1px 1px 0px 15px;
     background-position: center center;
 } 
 
@@ -6518,7 +6518,7 @@ input.send_forgetpass {
     border-radius: 6px;
     margin-top: 0px;
     display: none;
-    padding: 15px;
+    padding: 0px 37px 29px 50px;
 
 }
 
@@ -9145,11 +9145,11 @@ input.send_forgetpass {
 }
 
 .bt-shop_border_home {
-    margin: 22px 0px 26px 0px;
+    margin: 22px 0px 22px 0px;
 }
 
 .bt-shop_border_home2 {
-    margin: 32px 0px 21px 0px;
+    margin: 18px 0px 18px 0px;
 }
 
 .shop_payment_done-right-banner {
@@ -11732,4 +11732,14 @@ h2 {
     letter-spacing: 0.01em;
     float: right;
     margin-top: 2px;
+}
+
+.art_preamble {
+    font-family: 'Georgia';
+    float: left;
+    font-size: 1.5em;
+	letter-spacing: 0.01em;
+    color: #abb9c8;
+    line-height: 1.6em;
+    margin-bottom: 20px;
 }

@@ -156,7 +156,7 @@
                     <div class="inner_page_content_main">
                         <div class="art_title"><?php echo $article_data->title; ?></div>
 
-                            <div class="whp_preamble">
+                            <div class="art_preamble">
                                 <?php echo html_entity_decode($article_image_text); ?>
                             </div>
 
