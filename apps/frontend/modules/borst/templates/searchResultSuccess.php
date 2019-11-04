@@ -362,7 +362,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
                 
             <?php else: ?>
-                <h2 class="listingheading margin_left_50">Din sökning gav ingen träff..!</h2>
+                <h2 class="listingheading">Din sökning gav ingen träff..!</h2>
             <?php endif; ?>
         </div>
         <?php echo include_partial('global/inner_bottom_footer'); ?>
