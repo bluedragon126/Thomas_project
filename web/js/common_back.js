@@ -29,7 +29,7 @@ $(document).ready(function()
 	$("#blog_rights_plus").toggle(
 	  function () {
 		$(".blog_rights").toggle();
-		$(this).attr('src','/images/minusicon.jpg');
+		$(this).attr('src','/images/minusicon.png');
 		$('#blog_info_div').val('show');
 	  },
 	  function () {

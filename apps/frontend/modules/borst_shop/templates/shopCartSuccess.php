@@ -1,6 +1,6 @@
 <script type="text/javascript" language="javascript">
     $(window).load(function () {
-        $("#bt_shop_" + $(".shop_detail_title").text().toLowerCase() + " a").addClass("active");
+        $("#bt_shop_" + $(".shop_detail_title3").text().toLowerCase() + " a").addClass("active");
         var leftHeight = $("#btshopleftdivinner").height();
         var rightHeight = $("#shop_rightbanner").height();	
         var maxHeight = 0;
@@ -37,7 +37,7 @@
                 <div class="float-left" id="productlistwr">
                     <div class="float_left"></div>
                     <div class="height_10"></div>
-                    <div class="shop_detail_title">Varukorg</div>
+                    <div class="shop_detail_title3">Varukorg</div>
                     <div class="height_5"></div>                                 
                     <div class="scLiatWraper">
                         <?php

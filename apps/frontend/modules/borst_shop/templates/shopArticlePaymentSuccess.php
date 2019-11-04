@@ -52,7 +52,7 @@
                 <div class="float-left" id="productlistwr">
 
                     <div class="float_left"><input type="hidden" name="product_id" id="product_id" value="<?php echo $product_detail->id; ?>"/></div>
-                    <div class="shoph2">1. Granska och skicka</div>
+                    <div class="shop_detail_title2">1. Granska och skicka</div>
                     <div class="spacer"></div>
                     <div class="my_order_text"><!--Din beställning:--></div>
                     <div class="spacer2"></div>		
@@ -223,7 +223,7 @@
                 </form>
             
             <?php else: ?>
-                <div class="shoph2">1. Granska och skicka</div>
+                <div class="shop_detail_title2">1. Granska och skicka</div>
                 <div class="blank_60h widthall">&nbsp;</div>
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <div class="blank_15h widthall">&nbsp;</div>

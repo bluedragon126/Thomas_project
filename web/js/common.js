@@ -143,7 +143,7 @@ $(document).ready(function() {
         function() {
             $("#BT_Shop_more_section").toggle();
             var img_name = $('#bt_shop_plus').attr('src');
-            if (img_name == '/images/minusicon.jpg') $('#bt_shop_plus').attr('src', '/images/new_home/addplusicon_shop.png');
+            if (img_name == '/images/minusicon.png') $('#bt_shop_plus').attr('src', '/images/new_home/addplusicon_shop.png');
             else $('#bt_shop_plus').attr('src', '/images/new_home/minusicon_btshop.png');
         },
         function() {
@@ -161,7 +161,7 @@ $(document).ready(function() {
         function() {
             $("#BT_Shop_more_section").toggle();
             var img_name = $('#bt_shop_plus').attr('src');
-            if (img_name == '/images/minusicon.jpg') $('#bt_shop_plus').attr('src', '/images/new_home/addplusicon_shop.png');
+            if (img_name == '/images/minusicon.png') $('#bt_shop_plus').attr('src', '/images/new_home/addplusicon_shop.png');
             else $('#bt_shop_plus').attr('src', '/images/new_home/minusicon_btshop.png');
         },
         function() {
@@ -214,12 +214,12 @@ $(document).ready(function() {
     $("#blog_rights_plus").toggle(
         function() {
             $(".blog_rights").toggle();
-            $(this).attr('src', '/images/minusicon.jpg');
+            $(this).attr('src', '/images/minusicon.png');
             $('#blog_info_div').val('show');
         },
         function() {
             $(".blog_rights").toggle();
-            $(this).attr('src', '/images/addplusicon.jpg');
+            $(this).attr('src', '/images/addplusicon.png');
             $('#blog_info_div').val('hide');
         }
     );
@@ -245,12 +245,12 @@ $(document).ready(function() {
             //$(".blog_rights").toggle();
             addSearchComboData();
             $("#adv_search_combo_set").toggle();
-            $(this).attr('src', '/images/minusicon.jpg');
+            $(this).attr('src', '/images/minusicon.png');
         },
         function() {
             //$(".blog_rights").toggle();
             $("#adv_search_combo_set").toggle();
-            $(this).attr('src', '/images/addplusicon.jpg');
+            $(this).attr('src', '/images/addplusicon.png');
             removeSearchComboData()
         }
     );

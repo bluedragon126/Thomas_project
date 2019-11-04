@@ -12,7 +12,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-                <div class="shoph2 redfont"><?php echo __("Glömt lösenord") ?></div>
+                <div class="shop_detail_title2 redfont"><?php echo __("Glömt lösenord") ?></div>
                 <!--    <div class="shoph3 widthall">Rubrik hr d</div>-->
                 <div class="blank_10h widthall">&nbsp;</div>
                 <div class="float_left widthall">

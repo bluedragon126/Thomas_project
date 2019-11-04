@@ -87,7 +87,7 @@
                 <td class="viocolor">&nbsp;</td>
               </tr>
 			  <tr>
-                <td colspan="2" class="borst_subtitle_4"><b><img id="blog_rights_plus" src="/images/addplusicon.jpg"  alt="icon" /> <?php echo __('Vill du kunna blogga och publicera artiklar?') ?> </b></td>
+                <td colspan="2" class="borst_subtitle_4"><b><img id="blog_rights_plus" src="/images/addplusicon.png"  alt="icon" /> <?php echo __('Vill du kunna blogga och publicera artiklar?') ?> </b></td>
               </tr>
               <tr class="blog_rights">
                 <td colspan="2" class="blank_10h"><b>&nbsp;</b></td>

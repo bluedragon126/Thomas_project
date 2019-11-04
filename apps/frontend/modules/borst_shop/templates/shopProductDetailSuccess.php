@@ -41,7 +41,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
                         <div class="ingress shop_detail_preamble"><div><?php echo html_entity_decode($product_detail->btshop_product_intro_text); ?>&nbsp;<span class="disp_inline"><a class="main_link_color cursor shop_detail_rm" id="bt_shop_readmore">Läs mer</a>&nbsp;<img  width="16" class="icontop3" id="bt_shop_plus" alt="addplus" src="/images/new_home/addplusicon_shop.png"></span></div>
-                        <!--<span class="main_link_color"> <b>Läs mer.</b> <img id="reg_help_plus" class="icontop3" alt="addplus" src="/images/addplusicon.jpg"></span>-->
+                        <!--<span class="main_link_color"> <b>Läs mer.</b> <img id="reg_help_plus" class="icontop3" alt="addplus" src="/images/addplusicon.png"></span>-->
                         </div>
 
                         <div class="spacer"></div>

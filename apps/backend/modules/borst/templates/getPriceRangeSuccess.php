@@ -20,6 +20,6 @@
 	<span class="float_left" style="margin:0 5px 0 5px;">Pristext:</span>
 	<input type="text" name="shop_product_text[]" class="float_left" size="25" value="<?php echo $data->btshop_product_text; ?>"/>
 
-	<span class="tem" style="float:left; position:relative;">&nbsp;<img src="/images/minusicon.jpg" alt="arrow" /></span>
+	<span class="tem" style="float:left; position:relative;">&nbsp;<img src="/images/minusicon.png" alt="arrow" /></span>
 </div>
 <?php $i++; endforeach;?>

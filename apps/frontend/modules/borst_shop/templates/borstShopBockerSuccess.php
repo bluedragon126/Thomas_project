@@ -30,14 +30,14 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-                <div class="shoph2">Välkommen till BT-shop!</div>
+                <div class="shop_detail_title2">Välkommen till BT-shop!</div>
                 <div class="shoph3 widthall">Rubrik här då</div>
                 <div class="shopinfo">I samarbete med vår partner Global Futures presenterar vi BT Daytrader
                     Bootcamp; en lärarledd on line-kurs i intradaytrading, där utbildning varvas
                     med livetrading.</div>
                 <div class="shopborder"></div>
                 <div class="shopblock">
-                    <div class="shoph2">Abonnemang </div>
+                    <div class="shop_detail_title2">Abonnemang </div>
                     <div class="leftpartsmallshop">
                         <div class="shopsmallblock">
                             <div class="shoph3 widthall">Henry Boy</div>
@@ -89,7 +89,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="shopborder"></div>
                 </div>
                 <div class="shopblock">
-                    <div class="shoph2">Böcker </div>
+                    <div class="shop_detail_title2">Böcker </div>
                     <div class="leftpartsmallshop">
                         <div class="shopsmallblock">
                             <div class="shoph3 widthall">Henry Boy</div>
@@ -129,7 +129,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="shopborder"></div>
                 </div>
                 <div class="shopblock">
-                    <div class="shoph2">Falcon Computers </div>
+                    <div class="shop_detail_title2">Falcon Computers </div>
                     <div class="leftpartsmallshop">
                         <div class="shopsmallblock">
                             <div class="shoph3 widthall">Henry Boy</div>

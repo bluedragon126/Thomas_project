@@ -29,11 +29,11 @@ $(document).ready(function(){
 	)) ?> </li>
 	  </ul>
 	</div>
-	<div class="shoph2">Metastock</div>
+	<div class="shop_detail_title2">Metastock</div>
 		
         	<div class="shopinfo">Börstjänaren är auktoriserad återförsäljare och utbildare av det världsledande
 aktieanalysprogrammet Metastock. Köp Metastock här!</div>
-<span class="main_link_color"> <b>Läs mer.</b> <img id="reg_help_plus" class="icontop3" alt="addplus" src="/images/addplusicon.jpg"></span>
+<span class="main_link_color"> <b>Läs mer.</b> <img id="reg_help_plus" class="icontop3" alt="addplus" src="/images/addplusicon.png"></span>
             <div class="spacer"></div>
 <div id="registration_help_section display-none">
 

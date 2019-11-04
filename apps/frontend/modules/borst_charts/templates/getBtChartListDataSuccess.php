@@ -12,7 +12,7 @@
    <div id="btchart_list_outer"> 
 	<input type="hidden" id="btchart_column_order" name="shop_article_column_order" value="<?php echo $current_column_order; ?>"/>
 	<input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
-	<div class="shoph2">   <input type="hidden" id="btchart_column" name="shop_article_column" value="<?php echo $cur_column; ?>"/>
+	<div class="shop_detail_title2">   <input type="hidden" id="btchart_column" name="shop_article_column" value="<?php echo $cur_column; ?>"/>
       <?php if($pager->getNbResults()>0) : ?>
       <div class="paginationwrapper float_left widthall ">
     	  <div class="pagination" id="btchart_search_listing">

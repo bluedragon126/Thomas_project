@@ -200,10 +200,10 @@ AIM = {
 						<span class="float_left" style="margin:0 5px 0 5px;">Price Text:</span>
 						<input type="text" name="shop_product_text[]" class="float_left" size="25" />
 
-						<span class="float_left tem">&nbsp;<img src="/images/minusicon.jpg" alt="arrow" /></span>
+						<span class="float_left tem">&nbsp;<img src="/images/minusicon.png" alt="arrow" /></span>
 					</div>
 				</div>
-				<img src="/images/addplusicon.jpg" class="temp_class" alt="arrow" style="float:left; position:relative;" />
+				<img src="/images/addplusicon.png" class="temp_class" alt="arrow" style="float:left; position:relative;" />
 				<div id="price_detail_error" class="float_left redcolor pleft_2"></div>
 				</td>
               </tr>
