@@ -15,14 +15,14 @@
             <ul>
                 <li>
                     <a href="/">Börstjänaren</a> &gt;
-                    Kontakta oss
+                    Webinarium
                 </li>
             </ul>
         </div>
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-                <div class="whp_title">Kontakta oss</div>
+                <div class="whp_title">Börstjänarens webinarium: Tradingklubben online</div>
                 <div class="whp_preamble">
                     Säkraste och bästa sättet att kontakta Börstjänaren är via e-post. Vi läser mejlen varje dag och  kan ofta svara med vändande post. Det går även att ringa till oss.</div>
                 <div class="float_left widthall"> 
