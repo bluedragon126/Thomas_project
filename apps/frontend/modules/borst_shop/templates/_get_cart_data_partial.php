@@ -148,7 +148,7 @@
                 $prod_ids[] = $data['p_id'];
             endforeach;?>
         <div class="float_left">
-     <div> <img  width="110" src="/images/new_home/bt-shop_logo_text.png" class="btshop_logo_text"/></div>
+     <div> <img  width="100" src="/images/new_home/bt-shop_logo_text.png" class="btshop_logo_text"/></div>
     <div class="blank_5h widthall">&nbsp;</div>
 
             <?php if (count($metastock_data) > 0): ?>

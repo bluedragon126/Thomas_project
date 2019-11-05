@@ -1451,7 +1451,7 @@ a.article_dots_r {
     margin-top: 12px;
     font-size: 2.2em;
     color: #232222;
-    line-height: 1.25em;
+    line-height: 1.3em;
     word-spacing: -0.06em;
     width: 100%;
 }
@@ -1463,7 +1463,7 @@ a.article_dots_r {
     margin-top: 12px;
     font-size: 2.2em;
     color: #232222;
-    line-height: 1.25em;
+    line-height: 1.3em;
     word-spacing: -0.06em;
     width: 100%;
 }
@@ -2252,14 +2252,14 @@ input.rounded {
     font-size: 1.5em;
     line-height: 8px;
 	letter-spacing: 0.02em;
-	margin: 62px 0px 15px;
+	margin: 56px 0px 15px;
 }
 
 .shop_detail_cart {
     font-family: 'CheltenhamITCW01-Bold';
 	font-size: 2.2em;
 	float: left;
-	margin: 33px 0px 38px 0px;
+	margin: 32px 0px 38px 0px;
 	color: #232222;
 	width: 100%;
 	letter-spacing: 0.01em;
@@ -2627,7 +2627,7 @@ input.rounded {
 }
 
 .shop_r_side_active {
-    color: #5b7b90 !important;
+    color: #f15822 !important;
     font-family: 'Franklin Gothic Book Regular' !important;
     letter-spacing: 0.03em !important;
 }
@@ -8887,7 +8887,7 @@ input.send_forgetpass {
 }
 
 .shop_cart_logo {
-    margin: -64px 125px 5px 5px;
+    margin: -45px 125px 5px 0px;
     float: right;
 }
 
