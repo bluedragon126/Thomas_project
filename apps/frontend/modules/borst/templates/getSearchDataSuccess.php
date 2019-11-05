@@ -272,9 +272,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
             </div>
         <?php else: ?>
-            <h2 class="listingheading margin_left_50">Din sökning gav ingen träff..!</h2>
+            <h2 class="listingheading">Din sökning gav ingen träff..!</h2>
         <?php endif; ?>
     <?php else: ?>
-        <h2 class="listingheading margin_left_50">Din sökning gav ingen träff..!</h2> 
+        <h2 class="listingheading">Din sökning gav ingen träff..!</h2> 
     <?php endif; ?>
 </div>
