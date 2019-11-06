@@ -863,8 +863,22 @@
             </div>
             <div class="to_page_top margin_top_12"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <div class="shopblock marginBottom0" >
-                    <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://https://www.thetradingaspirants.com/borst_shopborstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
-                            </a>--></div> 
+                <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> 
+                <div class="title_link">  
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Abonnemang</p>
+                        </div>
+                    </a>                    
+                    <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");'>
+                        <div style = "display:flex">
+                            <h2></h2>                            
+                            <p class="link_text"> &nbsp; Utbildningar</p>
+                        </div>
+                    </a> 
+                </div>
+                </div> 
             </div>   
             <?php echo include_partial('global/inner_bottom_footer'); ?> 
         </div>
