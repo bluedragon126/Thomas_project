@@ -9,7 +9,7 @@
                 endforeach;
             endif; ?>
        <div class="float_left">
-     <div> <img  width="165" src="/images/new_home/bt-shop_logo_text2.png" style="margin-top:-5px"/></div>
+     <div> <img  width="165" src="/images/new_home/bt-shop_logo_text2.png" style="margin-top:-10px"/></div>
     <div class="blank_25h widthall">&nbsp;</div>
 
             <?php if (count($metastock_data) > 0): ?>

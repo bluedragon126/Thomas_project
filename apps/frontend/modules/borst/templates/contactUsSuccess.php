@@ -24,7 +24,7 @@
             <div class="inner_page_content_main">
                 <div class="whp_title">Kontakta oss</div>
                 <div class="whp_preamble">
-                    Säkraste och bästa sättet att kontakta Börstjänaren är via e-post. Vi läser mejlen varje dag och  kan ofta svara med vändande post.</div>
+                    Säkraste och bästa sättet att kontakta Börstjänaren är via e-post. Vi läser mejlen varje dag och  kan ofta svara med vändande post. Det går även att ringa till oss.</div>
                 <div class="float_left widthall"> 
                 <!--<div class="whp_heading"> E-postadresser</div>-->
                <br />
@@ -32,8 +32,11 @@
                     kundtjanst#borstjanaren.se<br /><br />
                       <div class="whp_subheading3">Henrik Hallenborg</div>henrik.hallenborg#borstjanaren.se 
                     <br><br />
-                    <div class="whp_subheading3">Thomas sandström</div>
+                    <div class="whp_subheading3">Thomas Sandström</div>
                      thomas.sandstrom#borstjanaren.se 
+                    <br><br />
+                    <div class="whp_subheading3">Telefon</div>
+                     018-495 71 11
                     <br>
                   <?php echo include_partial('global/bottom_footer_whitepage'); ?>            </p>
                 </div>

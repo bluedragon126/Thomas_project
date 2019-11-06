@@ -70,7 +70,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <tr>
                                 <td>
 								
-								<div class="whp_subheading">Vill ha en rubbe här</div>
+								<div class="whp_subheading">E-postadressen ej längre tillgänglig?</div>
 								
 								<?php echo __('<b>Om du inte längre</b> har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnummer och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
                             </tr>

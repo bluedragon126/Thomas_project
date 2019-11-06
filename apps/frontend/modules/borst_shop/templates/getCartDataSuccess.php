@@ -164,7 +164,7 @@ if (count($products_data) > 0):
     endforeach;
     ?>
         <div class="float_left">
-            <div> <img  width="110" src="/images/new_home/bt-shop_logo_text.png" style="margin:2px 0px -4px -4px"/></div>
+            <div> <img  width="100" src="/images/new_home/bt-shop_logo_text.png" style="margin:2px 0px -4px -4px"/></div>
             <div class="blank_5h widthall">&nbsp;</div>
 
     <?php if (count($metastock_data) > 0): ?>
