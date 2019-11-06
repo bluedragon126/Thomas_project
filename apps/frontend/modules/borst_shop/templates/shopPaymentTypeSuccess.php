@@ -275,7 +275,7 @@
                 <div class="floatRightNew">
                     <?php //include_partial('borst_shop/payment_steps_partial',array('step'=>2,'designType'=>1))  ?>
                     <?php if ($sf_user->getAttribute('loginRequired') == true || $loginRequiredForProduct == true) { ?>
-                        <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>
+                        <div class="shop_note textAlignLeft top_0px">Vänligen logga in för att köpa detta objekt!</div>
                     <?php } ?>
                 </div>
             </div>

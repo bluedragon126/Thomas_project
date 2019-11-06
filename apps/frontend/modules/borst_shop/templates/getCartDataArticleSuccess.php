@@ -3,7 +3,7 @@
 <?php $total = $total_wth_shipping = $total_wth_vat = $vat = 0;$product_qty_arr = 1; ?>
 <?php if (count($products_data) > 0): ?>
     <div class="cart pbottom_10">
-        <div class="shop_r_cart_title float_left">I varukorgen:</div>
+        <div class="shop_r_cart_title float_left">Varukorg</div>
         <!--<div class="float_right mrg_top_15"><img class="shop_r_cart_img_top" src="/images/new_home/bt-shop_logo_left_wt.png"/></div>-->
         <div class="float_right width_100_per"><span class="float_right shop_r_cart_count">Antal artiklar: <strong>1</strong><?php  $mul = number_format($products_data->price); ?></span></div>
         <?php $i = 0; ?>
@@ -57,7 +57,7 @@
             <div class="info">
                 <!--<div class="info"> <a href="#" class="red_button" style="width:130px;"><span>uppdatera varukorg</span></a> </div>-->
                 <div class="info"> 
-                    <div class="info"> <a class="empty_cart_article grey_button float_right"><span>TÖM VARUKORG</span></a> </div>
+                    <div class="info"> <a class="empty_cart_article wh_button float_right"><span>Töm varukorg</span></a> </div>
                     <div class="blank_4h widthall">&nbsp;</div>
                     <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_50h widthall">&nbsp;</div>

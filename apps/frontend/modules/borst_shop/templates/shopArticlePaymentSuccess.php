@@ -35,7 +35,7 @@
             </div>
             <div class="floatLeftNew width_58">
                 <?php if ($sf_user->getAttribute('loginRequired') == true || $loginRequiredForProduct == true) { ?>
-                    <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>
+                    <div class="shop_note textAlignLeft top_0px">Vänligen logga in för att köpa detta objekt!</div>
                 <?php } ?>
             </div>
         </div>

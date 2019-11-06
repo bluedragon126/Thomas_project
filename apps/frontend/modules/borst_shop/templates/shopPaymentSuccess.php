@@ -37,7 +37,7 @@ $(window).load(function(){
 		<div class="floatLeftNew wh_bt-sh_1">
 		<?php //include_partial('borst_shop/payment_steps_partial',array('step'=>1,'designType'=>1)) ?>
                     <?php if ($sf_user->getAttribute('loginRequired')==true || $loginRequiredForProduct==true){ ?>
-                        <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>
+                        <div class="shop_note textAlignLeft top_0px">Vänligen logga in för att köpa detta objekt!</div>
                     <?php } ?>
 		</div>
 	</div>
@@ -282,7 +282,7 @@ $(window).load(function(){
            <div class="floatLeftNew wh_bt-sh_2">
 		<?php //include_partial('borst_shop/payment_steps_partial',array('step'=>1,'designType'=>1)) ?>
                     <?php if ($sf_user->getAttribute('loginRequired')==true || $loginRequiredForProduct==true){ ?>
-                        <div class="shop_note textAlignRight top_0px">Vänligen logga in för att köpa detta objekt!</div>
+                        <div class="shop_note textAlignLeft top_0px">Vänligen logga in för att köpa detta objekt!</div>
                     <?php } ?>
 		</div>
         <div class="blank_60h widthall">&nbsp;</div>     

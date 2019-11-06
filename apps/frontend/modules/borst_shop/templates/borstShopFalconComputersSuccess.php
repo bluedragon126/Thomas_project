@@ -165,7 +165,7 @@ Jag vill ha mina Henry Boy ski
         </div>
         
         <div class="info">
-        	<a href="#" class="red_button"><span>TÖM VARUKORG</span></a>
+        	<a href="#" class="red_button"><span>Töm varukorg</span></a>
         </div>
         
     </div>
