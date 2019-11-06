@@ -2559,10 +2559,13 @@ $(document).ready(function() {
         var price = $("input[@name='product_price']:checked").val();
         var price_detail_id = $("input[@name='product_price']:checked").attr("id");
         var product_id = $('#product_id').val();
+        console.log("this is product id");
+        console.log(product_id);
 
         $.ajax({
             url: '/borst_shop/getCartData?price=' + price + '&product_id=' + product_id + '&price_detail_id=' + price_detail_id,
             success: function(data) {
+                console.log("success");
                 if (id == 'add') {
                     $("#shop_rightbanner").html(data);
                     shopChartHeight();

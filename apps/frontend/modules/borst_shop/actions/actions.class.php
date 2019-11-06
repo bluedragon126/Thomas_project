@@ -372,8 +372,16 @@ class borst_shopActions extends sfActions {
         $this->cart_in_cart = 0;  // for unregistred user
         if (in_array($product_id, $cart_products))
             $this->cart_in_cart = 1;
+            
 
         $product_arr = $this->getUser()->getAttribute('product_arr');
+        $this->product_in_cart = 0;
+        if(in_array($product_id, $product_arr)){
+            $this->product_in_cart = 1;
+        }
+        // echo("<pre>");
+        //     print_r($product_arr);
+        //     die;
         $this->products_data = $btshop_article->getProductInOrder($product_arr);
 
         $this->price_arr = $this->getUser()->getAttribute('price_arr');
