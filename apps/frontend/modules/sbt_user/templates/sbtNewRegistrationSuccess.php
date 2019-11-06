@@ -450,8 +450,8 @@ width:34%;
                         </tr>
                         <tr>
                      <td  colspan="2"><div class="blank_5h widthall">&nbsp;</div>
-                                                            <label>
-                                    <input checked= "checked" class="checkbox" type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ON" <?php echo $checked_brev; ?>>
+                                <label>
+                                <input checked= "checked" class="checkbox" type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ON" <?php echo $checked_brev; ?>>
                                 </label>
                                 <span class="float_left reg_width"><?php echo __('JA TACK, jag vill ha Börstjänarens kostnadsfria dagsbrev "BÖRSTJÄNAREN JUST NU!"') ?> <?php echo __('(Rekommenderas för att få ut mesta möjliga av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy') ?></a></span><a href="/borst/borstDayletter"><img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="160" style="margin:12px 0 20px 24px" /></a></td>
                         </tr>
