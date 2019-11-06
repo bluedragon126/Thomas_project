@@ -261,10 +261,10 @@ font-size:0;}
 .leftinnercolor{float:left;position:relative;width:650px;border-bottom:2px solid #ced2d0;background-color:#ffffff;}
 .breadcrumb{float:left;position:relative;width:63%;margin: -3px 40px 0px 0px;padding:0 1px 0 0px;}
 .breadcrumb ul{float:left;position:relative;width:auto;margin:-2px 0px 0px 0px;padding:0 1px 0 0px;display:inline;}
-.breadcrumb ul li{float:left;position:relative;margin:-4px 0px 0px 0px; letter-spacing: 0.18em; padding:0 1px 0 0px;list-style-type:none;}
+.breadcrumb ul li{float:left;position:relative;margin:-4px 0px 0px 0px; letter-spacing: 0.2em; padding:0 1px 0 0px;list-style-type:none;}
 .breadcrumb ul li a{color:#979e9f;text-decoration:none;padding:0 1px 0 0px;}
 .breadcrumb ul li a:hover{
-	color:#8d9ba8;
+	color:#abb9c8;
 	text-decoration:none;
 	padding:0 1px 0 0px;
 }
@@ -637,6 +637,7 @@ div.spacer{float:left;position:relative;width:100%;margin-top:10px;margin-bottom
 div.spacer2{float:left;position:relative;width:100%;margin-top:10px;margin-bottom:5px;}
 div.spacer3{float:left;position:relative;width:100%;margin-top:5px;margin-bottom:5px;}
 div.spacer4{float:left;position:relative;width:100%;margin-top:15px;margin-bottom:10px;}
+div.spacer5{float:left;position:relative;width:100%;margin-top:7px;margin-bottom:7px;}
 .remove_from_chart{}
 .remove_from_chart span{}
 .empty_cart{}
@@ -806,14 +807,26 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 	margin-top: -18px;
 }
 	
+.q_bread{
+	font-family: "Georgia";
+    float: left;
+    font-size: 1.1em;
+	line-height: 1.55em;
+    color: #232222;
+	letter-spacing: 0.01em;
+    width: 100%;
+	font-weight: 100;
+	margin: 0px 0px 11px !important;
+}
+	
 .q_name{
 	font-family: "ITC Cheltenham Book";
     float: left;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: #232222;
     width: 100%;
 	font-weight: 100;
-	margin: -8px 0px 11px !important;
+	margin: 4px 0px 11px !important;
 }
 
 .input220{background-color:#F6F9FB;border:1px solid #ced2d0;height:19px;width:220px;padding-left:3px;margin-bottom:4px;}

@@ -146,7 +146,7 @@
                 <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
             <div class="blank_30h widthall">&nbsp;</div>
         <?php else: ?>
-            <div class="info"> <div class="blank_18h widthall">&nbsp;</div>
+            <div class="info"> <div class="blank_12h widthall">&nbsp;</div>
                 <div class="info"> <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
                 <div class="blank_90h widthall">&nbsp;</div>
             </div>

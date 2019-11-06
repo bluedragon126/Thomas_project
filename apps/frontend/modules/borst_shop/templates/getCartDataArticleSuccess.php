@@ -62,7 +62,7 @@
                     <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_50h widthall">&nbsp;</div>
             <?php else: ?>
-                <div class="info"> <div class="blank_18h widthall">&nbsp;</div>
+                <div class="info"> <div class="blank_12h widthall">&nbsp;</div>
                     <div class="info"> <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
                     <div class="blank_150h widthall">&nbsp;</div>
             <?php endif; ?>

@@ -90,7 +90,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 </div></td>
                         </tr>
                         <tr>
-                            <td colspan="6"><div class="blank_4h widthall">&nbsp;</div></td>
+                            <td colspan="6"><div class="blank_14h widthall">&nbsp;</div></td>
                         </tr>
 
                         <tr>

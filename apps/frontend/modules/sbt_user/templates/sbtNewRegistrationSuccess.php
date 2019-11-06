@@ -320,7 +320,7 @@ width:34%;
                                     <span>&nbsp;</span>
                                     <div class="blank_12h widthall">&nbsp;</div>
                                 </div>
-                                <div class="error_list_outer float_right" style="margin-top: 5px;">
+                                <div class="error_list_outer float_right" style="margin-top: 6px;">
                                     <ul class="error_list">
                                         <li><div class="blank_12h widthall">&nbsp;<?php echo $birth_year_error; ?></div></li>
                                     </ul>

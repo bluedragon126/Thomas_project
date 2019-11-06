@@ -53,7 +53,7 @@
 
                     <div class="float_left"><input type="hidden" name="product_id" id="product_id" value="<?php echo $product_detail->id; ?>"/></div>
                     <div class="shop_detail_title2">1. Granska och skicka</div>
-                    <div class="spacer"></div>
+                    <div class="spacer5"></div>
                     <div class="my_order_text"><!--Din beställning:--></div>
                     <div class="spacer2"></div>		
                     <div class="scLiatWraper">

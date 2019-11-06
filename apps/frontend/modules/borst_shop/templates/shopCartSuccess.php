@@ -81,6 +81,7 @@
                 <div class="shop_detail_cart">Varukorg</div>                
                 <div class="height_15"></div>              
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
+                <div class="blank_15h widthall">&nbsp;</div>
                 <a class="shop_cart_fill_prod cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/borstShopHome' ?>"><span><img class="shop_cart_logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="60"></span>
              
                 <?php echo __('Välkommen att fylla den med produkter!'); ?></a>
