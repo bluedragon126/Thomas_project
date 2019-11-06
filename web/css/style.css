@@ -2258,7 +2258,7 @@ input.rounded {
     font-size: 1.5em;
     line-height: 8px;
 	letter-spacing: 0.02em;
-	margin: 56px 0px 15px;
+	margin: 36px 0px 15px;
 }
 
 .shop_detail_cart {
@@ -6678,17 +6678,18 @@ input.send_forgetpass {
 
 .shop_note {
     color:  #f58767;
-    font-family: "Franklin Gothic Medium";
-    font-size: 1em;
-    letter-spacing: -0.01em;
-    margin: 4px 0px 0px 25px;
+    font-family: "Franklin Gothic Book Regular";
+    font-size: 1.3em;
+    letter-spacing: 0.01em;
+    margin: 36px 0px 10px 25px;
 }
 
 .shop_note_success {
     color:  #00e0c5;
-    font-family: "Franklin Gothic Medium";
-    font-size: 1em;
-    margin: 16px 0px 0px 25px;
+    font-family: "Franklin Gothic Book Regular";
+	font-size: 1.3em;
+	margin: 36px 0px 0px 74px;
+	letter-spacing: 0.01em;
 }
 
 .shop_1_step_right_panel {
@@ -8856,7 +8857,7 @@ input.send_forgetpass {
 }
 
 .wh_bt-sh_1 {
-    width: 99.2%;
+    width: 64.2%;
 }
 
 .wh_bt-sh_2 {
