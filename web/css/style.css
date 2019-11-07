@@ -1855,6 +1855,11 @@ input.rounded {
 
 .mrg_btm_7 {
     margin-bottom: 7px;
+    background-color:  #90959d;
+    border-bottom-right-radius: 40px;
+    width: 290px;
+    color:white;
+    padding: 5px 10px;
 }
 
 .mrg_btm_30 {
@@ -3103,7 +3108,7 @@ blank_4h {
 }
 
 .shop_r_other_subtitle {
-    color: #abb9c8;
+    color: white;
     font-family: "ITC Cheltenham Book";
     font-size: 1.3em;
     line-height: 1.3em;

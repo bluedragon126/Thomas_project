@@ -11,10 +11,12 @@ margin-bottom:-1px;
 }
 </style>
 <![endif]-->
-<script language="javascript" type="text/javascript">
-    $(window).load(function(){
-
-
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        console.log("this is jqtrtans test");
+        // $('form.user_reg').jqTransform();
+        $('form').jqTransform();
         var checkRight = $(".rightbanner").height();
         var checkLeft = $(".btshopleftdiv").height();
 	
@@ -35,9 +37,6 @@ margin-bottom:-1px;
         }
 
     });
-    $(document).ready(function(){
-        $('form#adv_search_form').jqTransform();
-    });
 </script>
 <div class="inner-page-contetn-left" id="borst_advanced_search" >
     <div class="breadcrumb">
@@ -53,7 +52,7 @@ include_component('isicsBreadcrumbs', 'show', array(
     <div class="float_l_width_100 mrg_left_70">
         <div class="inner_page_content_main">
             <div class="whp_title">Avancerad sökning</div>
-            <form name="adv_search_form" id="adv_search_form" method="post" action="<?php echo url_for('borst/searchResult') ?>" onsubmit="return check_adv_search_parameter();">
+            <form  class="adv_search_form" name="adv_search_form" id="adv_search_form" method="post" action="<?php echo url_for('borst/searchResult') ?>" onsubmit="return check_adv_search_parameter();">
                 <input type="hidden" name="from_adv_search" value="1"/>
                 <div class="float_left widthall">
                     <table width="100%" border="0" cellspacing="0" cellpadding="1">
@@ -98,7 +97,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </tr>
 
                         <tr>
-                            <td colspan="6" height="22px"><input name="search_from_borst" type="checkbox"  checked="checked" class="checkbox" id="search_from_borst" value="1" />
+                            <td colspan="6" height="22px">
+                                <input name="search_from_borst" type="checkbox"  checked="checked" class="checkbox" id="search_from_borst" value="1" />
+                                                          <!-- <input checked= "checked" class="checkbox" type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ON" <?php echo $checked_brev; ?>> -->
                                 &nbsp;Sök på Börstjänaren</td>
                         </tr>
                         <tr>

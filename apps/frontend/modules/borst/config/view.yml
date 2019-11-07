@@ -30,6 +30,3 @@ siteMapSuccess:
   stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
   javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]  
   
-borstAdvanceSearchSuccess:
-  stylesheets: [-jquery.Jcrop.css,-colorpicker.css,-jqtransformplugin/jqtransform.css]
-  javascripts: [-jquery.Jcrop.js,-jquery.scrollTo-min.js,-jquery.jqprint.js,-jquery.corner.js,-jqtransformplugin/jquery.jqtransform.js,-jquery.dotdotdot.min.js]    

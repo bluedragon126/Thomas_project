@@ -4464,9 +4464,9 @@ class borstActions extends sfActions
      */
     public function executeNewsletterList(sfWebRequest $request)
     {
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
+        // ini_set('display_errors', 1);
+        // ini_set('display_startup_errors', 1);
+        // error_reporting(E_ALL);
         if ($request->isMethod('post')) {
             $obj = $request->getParameter('publish');
             $id= $request->getParameter('id');

@@ -96,7 +96,11 @@ endforeach;
                                 <a id="to_payment" class="red_button cursor"><span>KÖP</span></a>
 
                                 <div class="blank_6h widthall">&nbsp;</div>
+                                <?php 
+                                if($product_in_cart == 0){
+                                ?>
                                 <a id="add" class="red_button cursor"><span>LÄGG I VARUKORG</span></a>
+                                <?php }?>
                             </div>
                             <div class="spacer"></div>
                             <div class="spacer"></div>
