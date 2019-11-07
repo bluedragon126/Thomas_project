@@ -200,7 +200,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <div class="float_left widthall"><i><?php echo __('Leverans sker när betalningen inkommit till vårt konto.') ?></i></div>
 
                 <div class="my_order_rec_row border_0">
-                    <div class="blank_26h widthall">&nbsp;</div>
+                    <div class="blank_10h widthall">&nbsp;</div>
                     <?php if ($purchase_id): ?>
                         <div class="float_left widthall"><img src="/images/new_home/bill_pict.png"/></div>
                         <div>

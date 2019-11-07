@@ -48,7 +48,7 @@
         <th id="sortby_start_date"  class="cursor padding_right_11" scope="col" width="82" align="left">Startdatum</th>
         <th id="sortby_end_date"  class="cursor padding_right_9" scope="col" width="82" align="left">Stopdatum</th>
         <th id="sortby_status"  class="cursor padding_right_9" scope="col" width="57" align="left">Status </th>                                
-        <th scope="col" width="52" align="left">Atgärd</th>
+        <th scope="col" width="52" align="left">Åtgärd</th>
     </tr>
     <?php
     $i = 1;

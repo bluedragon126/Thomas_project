@@ -105,7 +105,7 @@
                 <tr id="article_fav_list_column_row" class="blog_table_head">
                     <th id="sortby_srno"  class="cursor pad_lft_5" scope="col" width="35" align="left">Nr</th>
                     <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Artikelrubrik</th>
-                    <th scope="col" width="150" align="left">E-postnotofication</th>
+                    <th scope="col" width="150" align="left">E-postbekräftelse</th>
                     <th scope="col" width="50" align="left">Ta bort</th>
                 </tr>
                 <?php
@@ -195,8 +195,8 @@
             <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="fav_forum_listing">
                 <tr id="forums_fav_list_column_row" class="blog_table_head">
                     <th id="sortby_srno"  class="cursor pad_lft_5" scope="col" width="35" align="left">Nr</th>
-                    <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Amne</th>
-                    <th scope="col" width="150" align="left">E-postnotofication</th>
+                    <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Ämne</th>
+                    <th scope="col" width="150" align="left">E-postbekräftelse</th>
                     <th scope="col" width="50" align="left">Ta bort</th>
                 </tr>
                 <?php
@@ -286,8 +286,8 @@
             <table width="100%" border="0" cellspacing="0" cellpadding="0" id="table_myFav" summary="fav_blog_listing">
                 <tr id="blog_fav_list_column_row" class="blog_table_head">
                     <th id="sortby_srno"  class="cursor pad_lft_5" scope="col" width="35" align="left">Nr</th>
-                    <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Amne</th>
-                    <th scope="col" width="150" align="left">E-postnotofication</th>
+                    <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Ämne</th>
+                    <th scope="col" width="150" align="left">E-postbekräftelse</th>
                     <th scope="col" width="50" align="left">Ta bort</th>
                 </tr>
                 <?php
@@ -375,7 +375,7 @@
             <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="fav_chart_listing">
                 <tr id="chart_fav_list_column_row" class="blog_table_head">
                     <th id="sortby_srno"  class="cursor pad_lft_5" scope="col" width="35" align="left">Nr</th>
-                    <th id="sortby_article"  class="cursor" scope="col" width="520" align="left">Abonnemng</th>
+                    <th id="sortby_article"  class="cursor" scope="col" width="520" align="left">Abonnemang</th>
                     <th scope="col" width="50" align="left">Ta bort</th>
                 </tr>	
 

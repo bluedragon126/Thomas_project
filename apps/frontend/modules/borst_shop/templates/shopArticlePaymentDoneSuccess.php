@@ -178,7 +178,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <div class="float_left widthall"><i><?php echo __('Leverans sker när betalningen inkommit till vårt konto.') ?></i></div>
 
                 <div class="my_order_rec_row border_0">
-                    <div class="blank_26h widthall">&nbsp;</div><?php if ($purchase_id): ?>
+                    <div class="blank_10h widthall">&nbsp;</div><?php if ($purchase_id): ?>
                         <div class="float_left widthall"><img src="/images/new_home/bill_pict.png"/></div>
                         <div>
                             <a id="save_invoice_article" class="save_mail_bill shop_payment_done_link mrg_top_9 float_left" name="<?php echo $purchase_id ?>"><?php echo __('Faktura på din beställning') ?></a>

@@ -281,7 +281,7 @@ font-size:0;}
 .shopsmallblock{float:left;position:relative;border-bottom:12px solid #c2e0ef;padding:15px 23px 12px 20px;}
 .shopsmallblock2{float:left;position:relative;width:290px;border-bottom:20px solid #c2e0ef;padding:30px 0px 20px 0px;}
 .shopphoto{float:left;position:relative;padding:0 0 2px 0;}
-.shopsmallblockifo{height:80px;float:left;position:relative;width:266px;line-height:17px;font-size:13px; color: #232222; margin-top:1px}
+.shopsmallblockifo{height:80px;float:left;position:relative;width:266px;line-height:18px;font-size:13px; color: #232222; margin-top:1px}
 .leftpartsmallshop{margin-bottom:12px;position:relative;width:312px;height:324px}
 .rightpartsmallshop{margin-bottom:12px;float:right;position:relative;width:312px;height:324px}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
@@ -539,8 +539,8 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .linkwrapper{float:left;position:relative;width:42%;border:0px solid red;line-height:18px;}
 .minsid_listingtab li{display:inline;margin-right:18px;}
 .minsid_listingtab li a{}
-.minsid_listingtab li a:hover{border-bottom:5px solid #f15822;padding-bottom:4px;}
-.minsid_listingtab li .selectedtab{border-bottom:5px solid #f15822;padding-bottom:4px;}
+.minsid_listingtab li a:hover{border-bottom:5px solid #fff;padding-bottom:4px;}
+.minsid_listingtab li .selectedtab{border-bottom:5px solid #fff621;padding-bottom:4px;}
 .om_miginfo{float:left;position:relative;width:100%;border-bottom:0px solid #c3cacf;}
 .om_miginfotable{float:left;position:relative;width:100%;}
 .om_miginfotable .heading{}
@@ -618,7 +618,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .cart .info2{float:left;position:relative;width:100%;line-height:18px;margin-bottom:5px;letter-spacing:0.02px;}
 .cart .info .left{float:left;position:relative;width:62%;}
 .cart .info .right{float:left;position:relative;width:34%;text-align:right;}
-.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:1px 3px 0 3px;}
+.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0px 3px 1px 3px;}
 .red_button{float:left;}
 .red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
@@ -669,8 +669,8 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .blog_fav{float:left;position:relative;width:610px;}
 .chart_fav{width:610px;}
 #myaccount_data_container table th{font-weight:normal;padding:3px 3px 5px 0;text-align:left;}
-#myaccount_data_container table td{font-weight:normal;padding:4px 3px 4px 0;}
-#myaccount_data_container .favortite_save_changes{float:left;position:relative;width:100%;padding-bottom:5px;border-bottom:1px solid #ced2d0;}
+#myaccount_data_container table td{font-weight:normal;padding:8px 3px 8px 0;}
+#myaccount_data_container .favortite_save_changes{float:left;position:relative;width:100%;padding-bottom:5px;border-bottom:0px solid #ced2d0;}
 #myaccount_data_container table tr{position:relative;border-bottom:1px solid #ced2d0;}
 .remove_from_fav_list{float:left;position:relative;cursor:pointer;}
 .my_e_newsletter{border:0px solid red;float:left;position:relative;padding:10px 30px 20px 0px;width:528px;}
@@ -1322,7 +1322,7 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 }
 .analysis_comment_list{float:left;height:auto;position:relative;text-align:left;width:633px;word-wrap:break-word;border:0px solid red;*margin-top:10px;*padding-bottom:10px;}
 .dotted_line{border-bottom:1px dotted #8b8f9f;}
-#account_links{border:0px solid red;float:left;padding:0px 30px 8px 0px;position:relative;width:560px;}
+#account_links{border:0px solid red;float:left;padding:0px 30px 38px 0px;position:relative;width:560px;}
 .change_photo_outer{font-weight:normal;margin-bottom:10px;}
 .profile_subpage_title{color:#c50063;border-bottom:1px solid #ced2d0;}
 .profile_visibility_reply_msg{color:#ff7b69;padding:3px 0px 0px 5px;}
@@ -1340,10 +1340,11 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 		font-family: "Franklin Gothic Book Regular";
 		text-align:left;
 		color:#ff7b69;
-		letter-spacing:-0.01em;
+		letter-spacing:0.01em;
 		float:none;width:647px;
-		border-bottom:solid 1px #f15822;
-		padding-bottom: 10px;}
+		border-bottom:solid 1px #ff7b69;
+		padding-bottom: 10px;
+		margin-top: 18px;}
 .last_row{width:647px;}
 .rec_per_page{font-size:13px;font-weight:bold;margin-bottom:10px;}
 @media print{.for_table{font-family:Arial, Helvetica, sans-serif;font-size:10pt;}

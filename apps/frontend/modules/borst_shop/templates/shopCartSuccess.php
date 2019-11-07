@@ -70,9 +70,9 @@
                             </div>
                         <?php $i++;
                         endforeach; ?>
-                            <div class="blank_10h widthall">&nbsp;</div>
+                            <div class="blank_20h widthall">&nbsp;</div>
                             <ul class="rows5">                        
-                                    <li class="floatRightNew"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment'?>" class="red_button cursor"><span>GÅ TILL KASSAN</span></a></li>
+                                    <li class="floatRightNew"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment'?>"class="red_button cursor" style="margin-right: 7px;"><span>GÅ TILL KASSAN</span></a></li>
                             </ul>
                     </div>
                 </div>

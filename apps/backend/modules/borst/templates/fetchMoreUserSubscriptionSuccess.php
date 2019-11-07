@@ -5,7 +5,7 @@
 		<th scope="col" width="35%" align="left">Subscription Name</th>
 		<th scope="col" width="15%" align="left">Start Date</th>
 		<th scope="col" width="15%" align="left">End Date</th>
-		<th scope="col" width="30%" align="left">Atgärd</th>
+		<th scope="col" width="30%" align="left">Åtgärd</th>
 	</tr>
 <?php $i = 1; foreach($pager->getResults() as $data): ?>	
 <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
