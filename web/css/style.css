@@ -2564,7 +2564,7 @@ input.rounded {
     color: #232222;
     font-size: 1em;
     text-align: left;
-    padding: 6px 6px 0px 1px;
+    padding: 16px 6px 0px 1px;
 }
 
 .shop_r_cart_price_bg {
@@ -3107,7 +3107,7 @@ blank_4h {
    font-size: 1.em;
    line-height: 8px;
    letter-spacing: 0.15em;
-   margin: 6px 0px 8px;
+   margin: 6px 0px 18px;
    text-transform: uppercase;
 }
 
@@ -3171,12 +3171,12 @@ blank_4h {
 .shop_r_other_img_main {
     float: left;
     width: 100%;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .shop_r_other_img_sub {
     float: left;
-    width: 45%;
+    width: 48%;
     margin-top: 2px;
 }
 
@@ -3738,7 +3738,7 @@ ul.cartStep2 li {
     text-align: center;
     display: none;
     box-shadow: 7px 5px 7px -4px #8d8d8d;
-    margin-top: 1em;
+    margin-top: 6px;
     margin-bottom: 1em;
 }
 
@@ -5329,7 +5329,7 @@ ul.cartStep2 li {
 .dashbord_link {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1em;
-    color: #8f8e9d;
+    color: #fff;
 }
 
 .dashbord_link_col {
@@ -11770,4 +11770,15 @@ h2 {
     color: #abb9c8;
     line-height: 1.6em;
     margin-bottom: 20px;
+}
+
+.note_article {
+	float:left; 
+	position:relative; 
+	font-size:1.3em; 
+	text-align: left; 
+	color: #f15822; 
+	font-family:"ITC Cheltenham Book";
+	letter-spacing:0.01em;
+	margin: 20px 0px 55px 0px;
 }

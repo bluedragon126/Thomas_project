@@ -540,7 +540,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .minsid_listingtab li{display:inline;margin-right:18px;}
 .minsid_listingtab li a{}
 .minsid_listingtab li a:hover{border-bottom:5px solid #fff;padding-bottom:4px;}
-.minsid_listingtab li .selectedtab{border-bottom:5px solid #fff621;padding-bottom:4px;}
+.minsid_listingtab li .selectedtab{border-bottom:5px solid #fff;padding-bottom:4px;}
 .om_miginfo{float:left;position:relative;width:100%;border-bottom:0px solid #c3cacf;}
 .om_miginfotable{float:left;position:relative;width:100%;}
 .om_miginfotable .heading{}
@@ -623,7 +623,17 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
 .grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:92px;color:#768897;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4.5px 2px 6px;letter-spacing:0.06em;margin-left:188px; border-radius: 2px;}
-.wh_button{background-color:#fff;cursor:pointer;height:16px;width:80px;color:#768897;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:0px 0px 2px 6px;letter-spacing:0.03em;margin-left:188px; border-radius: 2px;}
+.wh_button{
+	background-color:#fff;
+	cursor:pointer;
+	height:16px;
+	width:80px;color:#768897;
+	font-family:"Franklin Gothic Book Regular";
+	font-size:0.93em;
+	padding:0px 0px 0px 0px;
+	letter-spacing:0.03em;
+	margin-left:214px; 
+	border-radius: 0px;}
 .red_text{color:#dc231a;font-weight:normal;}
 .red_text2{color:#FF3333;font-weight:bold;}
 .blue_title_best{font-size:14px;color:#232222;font-weight:bold;}

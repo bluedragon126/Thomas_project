@@ -41,10 +41,10 @@
                 <li class="floatRightNew"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment'?>" class="red_button cursor"style="margin-right: 7px;"><span>GÅ TILL KASSAN</span></a></li>
         </ul>
     <?php } else {?>
-                <div class="height_40"></div>
+                <div class="height_41"></div>
                 <div class="shop_detail_cart">Varukorg</div>
                 
-                <div class="height_41"></div>
+                <div class="height_15"></div>
               
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <span><img class="shop_cart_logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="60"></span>

@@ -290,7 +290,7 @@ $(window).load(function(){
         </div>
 	<?php else:?> 
     	<!--<div class="shop_detail_title">1. Granska och skicka</div>-->
-        <div class="height_25"></div>
+        <div class="height_41"></div>
         <div class="shop_detail_title">Varukorg</div>
         <div class="height_15"></div>
         <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>

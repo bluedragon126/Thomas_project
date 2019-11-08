@@ -121,14 +121,14 @@
                 echo number_format($total_final, 2, ',', ' ');
         ?></span> 
             </div>
-            <div class="blank_5h widthall">&nbsp;</div>
+            <div class="blank_2h widthall">&nbsp;</div>
         </div>
         <?php if ($on_last_step != 1): ?>
             
                 <!--<div class="info"> <a href="#" class="red_button" style="width:130px;"><span>uppdatera varukorg</span></a> </div>-->
                 <div class="info"> 
                     <div class="info"> <a class="empty_cart wh_button float_right"><span>Töm varukorg</span></a> </div>
-                    <div class="blank_4h widthall">&nbsp;</div>
+                    <div class="blank_10h widthall">&nbsp;</div>
                     <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_30h widthall">&nbsp;</div>
             <?php else: ?>

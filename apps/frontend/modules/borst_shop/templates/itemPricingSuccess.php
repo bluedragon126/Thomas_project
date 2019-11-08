@@ -168,10 +168,10 @@ if(count($products_data)>=1 && $final_totals!=''){
                 <!--<div class="spacer"></div>-->
 
 <?php else: ?>      
-                <div class="height_40"></div>
+                <div class="height_41"></div>
                 <input type="hidden" name="cart_is_empty" value="cart_is_empty" id="cart_is_empty"/>
                 <div class="shop_detail_cart">Varukorg</div>                
-                <div class="height_41"></div>              
+                <div class="height_15"></div>              
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <span><img class="shop_cart_logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="60"></span>
                 <div class="blank_1h widthall">&nbsp;</div>

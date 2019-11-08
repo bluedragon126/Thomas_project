@@ -159,7 +159,7 @@
                 <div class="photoimg">&nbsp;</div>
                 <br />
                 <br />
-                <div class="shoph3 widthall mtop_30"><?php echo __('Article does not exist..') ?></div>
+                <div class="note_article widthall"><?php echo __('Article does not exist..') ?></div>
                 <div class="float_left widthall mbottom_10">
                     <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
                 </div>

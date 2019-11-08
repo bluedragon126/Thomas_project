@@ -51,14 +51,14 @@
             <div class="shop_r_cart_price_bg_gray">
                 <span class="left pad_lft_6 margin_top_8 shop_r_cart_pay">Att betala:</span> <span class="right red_text margin_top_8 shop_r_cart_total"><?php echo number_format($total_wth_shipping, 2, ',', ' ');?></span>
             </div>
-            <div class="blank_5h widthall">&nbsp;</div>
+            <div class="blank_2h widthall">&nbsp;</div>
         </div>
         <?php if ($on_last_step != 1): ?>
             <div class="info">
                 <!--<div class="info"> <a href="#" class="red_button" style="width:130px;"><span>uppdatera varukorg</span></a> </div>-->
                 <div class="info"> 
                     <div class="info"> <a class="empty_cart_article wh_button float_right"><span>Töm varukorg</span></a> </div>
-                    <div class="blank_4h widthall">&nbsp;</div>
+                    <div class="blank_10h widthall">&nbsp;</div>
                     <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_50h widthall">&nbsp;</div>
             <?php else: ?>

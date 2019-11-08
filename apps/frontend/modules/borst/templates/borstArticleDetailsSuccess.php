@@ -167,7 +167,7 @@
                                     echo include_partial('article_access_text');
                                     echo '<a href="/borst_shop/shopArticleDetail/product_id/' . $article_access_id . '">Klicka h&auml;r f&ouml;r att låsa upp denna artikel i BT Shop! =></a></br></br>';
                                 } elseif ($message) {
-                                    echo '<div class="shoph3 widthall mtop_30">' . $message . '</div>';
+                                    echo '<div class="note_article widthall">' . $message . '</div>';
                                 } else {
                                     echo (html_entity_decode($article_description_text));
                                 }
@@ -328,11 +328,11 @@
                 <div class="photoimg">&nbsp;</div>
                 <br />
                 <br />
-                <div class="shoph3 widthall mtop_30"><?php echo __('Du behöver vara inloggad abonnent för att läsa denna artikel.') ?></div>
+                <div class="note_article widthall"><?php echo __('Du behöver vara inloggad abonnent för att läsa denna artikel.') ?></div>
                 <div class="float_left widthall mbottom_10">
                     <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
                 </div>
-                <div class="float_left widthall"><span class="main_link_color"><?php echo __('För att se en lista över artiklar, klicka') ?><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/borst/articleList' ?>"><?php echo __(' here') ?></a></span></div>	
+                <div class="float_left widthall"><span class="main_link_color"><?php echo __('För att se en lista över artiklar, klicka') ?><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/borst/articleList' ?>"><?php echo __(' här') ?></a></span></div>	
             <?php endif; ?>
         </div>
 
@@ -413,7 +413,7 @@
     <div class="photoimg">&nbsp;</div>
     <br />
     <br />
-    <div class="shoph3 widthall mtop_30"><?php echo __('Du behöver vara inloggad abonnent för att läsa denna artikel.') ?></div>
+    <div class="note_article widthall"><?php echo __('Du behöver vara inloggad abonnent för att läsa denna artikel.') ?></div>
     <div class="float_left widthall mbottom_10">
         <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
     </div>
