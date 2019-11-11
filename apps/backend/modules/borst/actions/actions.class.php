@@ -1616,6 +1616,8 @@ class borstActions extends sfActions
         $this->userForm = new sfGuardUserForm($sfGuardUser);
         $this->wSchema = $this->userForm->getWidgetSchema();
         $this->wSchema['password'] = new sfWidgetFormInputHidden();*/
+        
+
 
         $this->profileForm = new AddSfGuardUserProfileForm($this->user_data);
         $this->wSchema = $this->profileForm->getWidgetSchema();

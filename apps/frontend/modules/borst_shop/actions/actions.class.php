@@ -943,6 +943,12 @@ class borst_shopActions extends sfActions {
 
         $this->all_country_data = $countries->getAllCountries();
 
+        // foreach($this->all_country_data as $data):
+        // echo("<pre>");        	
+        // print_r ($data->country_name );
+        // endforeach;
+        // die;
+
         //For Shipping
 
         $countryShipping = new CountryShipping();

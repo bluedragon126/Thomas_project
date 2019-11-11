@@ -5390,7 +5390,6 @@ ul.cartStep2 li {
     background-color: #ebeff3;
     border: 1px solid #ebeff3;
     color: #232222;
-    font-family: "Georgia";
     font-size: 1.1em;
     letter-spacing: 0.02em;
     padding-left: 6px;
@@ -8979,7 +8978,6 @@ input.send_forgetpass {
     font-size: 1.05em !important;
     min-width: 152px !important;
     width: 152px !important;
-	font-family: Georgia !important;
 }
 
 .cardDetails .jqTransformSelectWrapper div span {
