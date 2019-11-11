@@ -102,6 +102,10 @@ class sbt_userActions extends sfActions
 	foreach($all_country_data as $data){
 		$arrLand[$data->iso_code] = $data->country_name;
 	}	
+
+	// echo("pre");
+	// print_r($arrLand);
+	// die;
 	
 	$arrBirthDate = array();
 	$arrPass = array('','Required','Both password do not match.','Ange korrekt lösenord');
