@@ -189,7 +189,6 @@
                                             <td class="viocolor pad_btm_14">&nbsp;</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="2"><span class="blog_prof_subtitle"><img id="blog_rights_plus" src="/images/addplusicon.png"  alt="icon" /> <?php echo __('Vill du kunna blogga och publicera artiklar?') ?> </span></td>
                                         </tr>
                                         <tr class="blog_rights">
                                             <td  class="blank_10h" colspan="2"><b>&nbsp;</b></td>
@@ -432,9 +431,8 @@
                                         <tr>
                                             <td colspan="2">
                                                 <input type="submit" id="spara" class="submit edit_profile_save" value="" name="submit" />
-                                                <span class="float_left width_10">&nbsp;</span>
-                                                <input type="submit" class="submit edit_profile_send" id="skicka" value="" name="submit" />
-                                                <span class="float_left width_10">&nbsp;</span>
+                                                <span class="float_left width_10">&nbsp;</span>                        
+                                            
                                                 <input type="button" onclick="cancelProfileChanges()" class="submit edit_profile_cancel" value="" name="cancel" />
                                             </td>
                                         </tr>

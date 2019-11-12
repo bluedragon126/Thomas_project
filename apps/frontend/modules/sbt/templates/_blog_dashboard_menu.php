@@ -7,20 +7,15 @@
 <div id="account_links" class="hide-show">
     <div class="dashbord_link mrg_top_10">
         <div class="dashbord_link_col floatLeft">
-            <span class="float-left"><a href="https://<?php echo $host_str ?>/sbt/editProfile/edit_user_id/<?php echo $user_id ?>" class="main_link_color float_left widthall for_profile_dashboard_menu selectedtab">Editera profil</a></span>
-            <span class="float-left"><a id="profile_visibility" name="<?php echo $logged_user; ?>" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Visa/dölj profil</a></span>
+        <span class="float-left"><a href="http://<?php echo $host_str ?>/sbt/editProfile/edit_user_id/<?php echo $user_id ?>" class="main_link_color float_left widthall for_profile_dashboard_menu selectedtab">Editera profil</a></span>
+            <!-- <span class="float-left"><a id="profile_visibility" name="<?php echo $logged_user; ?>" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Visa/dölj profil</a></span> -->
             <span class="float-left"><a id="my_subscription" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Abonnemang</a></span>
-        </div>
-        <div class="dashbord_link_col2 floatLeft">
-            <span class="float-left"><a href="https://<?php echo $host_str?>/sbt/sbtAddAnalysisBlog" class="main_link_color float_left widthall for_profile_dashboard_menu">Skapa art/blogg</a></span>
-            <span class="float-left"><a class="main_link_color float_left widthall cursor for_profile_dashboard_menu editblogprofile" href="<?php echo 'https://'.$host_str.'/sbt/editBlogProfile/edit_user_id/'.$logged_user; ?>">Editera bloggprofil</a></span>
         </div>
         <div class="dashbord_link_col3 floatLeft">
             <span class="float-left"><a  id="invoice_records" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Order</a></span> <?php /*onclick="userInvoice(<?php //echo $logged_user; ?>)"*/?>
             <span class="float-left"><a id="my_e_newsletter"  class="main_link_color float_left widthall cursor for_profile_dashboard_menu"><a id="my_e_newsletter"  class="main_link_color float_left widthall cursor for_profile_dashboard_menu">E-postutskick</a></span>
         </div>
         <div class="dashbord_link_col_last floatLeft">
-            <span class="float-left"><a id="blocked_users" name="<?php echo $logged_user; ?>" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Blockerade användare</a></span>
             <span class="float-left"><a id="my_favorite_links" class="main_link_color float_left widthall cursor for_profile_dashboard_menu">Favoriter</a></span>
         </div>
     </div>

@@ -6,7 +6,7 @@
 <div class="my_e_newsletter" id="my_e_newsletter_container">
 	<?php foreach($all_type as $data):?>
 	<div class="float_left">
-		<div class="float_left email_checkbox_1"><input type="checkbox" name="news[]" value="<?php echo $data->id; ?>" <?php if ($status_arr[$data->id] == 1) echo "checked"; ?> /></div>
+		<!-- <div class="float_left email_checkbox_1"><input type="checkbox" name="news[]" value="<?php echo $data->id; ?>" <?php if ($status_arr[$data->id] == 1) echo "checked"; ?> /></div> -->
 		<div class="float_left lineht_25 email_checkbox_2"><span class="float_left radio_button_text pad_top_1"><?php echo $data->newsletter_name; ?></span></div>
 	</div>
         <?php endforeach; ?>

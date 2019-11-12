@@ -158,6 +158,7 @@ endforeach;
         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList'; ?>"><span class="subnav-bar <?php echo $third_menu == 'list' ? 'sub-active' : '' ?>">Lista</span></a>
        <!-- <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/2127'; ?>"> <span class="subnav-bar <?php echo $third_menu == 'webinarium' ? 'sub-active' : '' ?>">Webinarium</span></a>-->
         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSkolan"><span class="subnav-bar <?php echo $third_menu == 'bt_skolan' ? 'sub-active' : '' ?>">Krönikor</span></a>
+        <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile/take_to_profile"><span class="subnav-bar <?php echo $third_menu == 'bt_skolan' ? 'sub-active' : '' ?>">Mitt konto</span></a>
         <!--<span class="subnav-bar <?php echo $submenu == 'forum_menu_home' ? 'sub-active' : '' ?>">a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome">Forum</a></span>-->
         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/contactUs'; ?>"><span class="subnav-bar <?php echo $third_menu == 'contact_us' ? 'sub-active' : '' ?>">Kontakta oss</span></a>
     </div>
