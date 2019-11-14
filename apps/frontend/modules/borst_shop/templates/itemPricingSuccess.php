@@ -1,5 +1,4 @@
  <?php if ($sf_user->getAttribute('loginRequired')==true || $loginRequiredForProduct==true): ?>
-            <div class="red_text2Cart"><strong>Vänligen logga in för att köpa detta objekt!</strong></div>
          <?php endif; ?>
 <?php if(count($products_data) >0): ?>
     <div class="float_left_gs"><input type="hidden" name="product_id" id="product_id" value="<?php echo $product_detail->id; ?>"/></div>

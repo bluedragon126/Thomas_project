@@ -11496,8 +11496,8 @@ whp_heading
 
 .subnav-bar-wrap-right {
     float: right;
-    width: 32%;
-    margin-right: -2px;
+    width: 31%;
+    margin-right: -10px;
 }
 
 .subnav-bar-wrap-right span {

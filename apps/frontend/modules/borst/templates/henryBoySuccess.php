@@ -28,7 +28,7 @@
                 Henry Boy kan du sköta själv via abonnemanget eller knyta ditt konto till automatisk handel.
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Herny Boy abonnemang</div>
-                  <p><strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera här!
+                  <p><strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
                  
                   
                   <div class="whp_heading">Herny Boy Automatic</div>

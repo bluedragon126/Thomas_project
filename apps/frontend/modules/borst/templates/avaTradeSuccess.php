@@ -44,8 +44,8 @@
               </ul>
               
  <strong>Öppna konto hos AvaTrade </strong> via Börstjänaren och få excellent, personlig kundsupport via vår specielle kundansvarige mäklare Mark Mates!               
-                    <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 32px 0px 70px 0px;" src="../../../../../../images/new_home/open_AT.png" alt="http://www.pursegainer.com/images/new_home/Öppna konto hos Ava Trade här!.png" width="310;" /></a></p>
-              <img src="images/new_home/PEP_728p925713648_cut.png" width="572" height="90" alt="Ava_MCI" longdesc="../../../../../images/new_home/PEP_728p925713648_cut.png" /> <?php echo include_partial('global/bottom_footer_whitepage'); ?>
+                    <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 32px 0px 70px 0px;" src="../../../../../../images/new_home/open_AT.png" alt="" width="310;" /></a></p>
+              <img src="../../../../../../images/new_home/PEP_728p925713648_cut.png" width="500" height="" alt="Ava_MCI" longdesc="../../../../../images/new_home/PEP_728p925713648_cut.png" /> <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>
         <div class="inner_page_divider_3">&nbsp;</div>

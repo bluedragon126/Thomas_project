@@ -22,8 +22,13 @@
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-
-
+			<div class="whp_title">Automatisk handel</div>
+                <div class="whp_preamble">Via AvaTrade kan du ansluta din depå till automatisk handel enligt en  utvald strategi. Du  behöver då inte lägga   order själv. Entré och exit sker automatiskt när modellen ger signal.</div>
+                <div class="float_left widthall"></div>
+                  <div class="whp_heading">Henry Boy Automatic</div>
+                  <p>Henry Boy Automatic är en automatisk applikation av vår vinstrika handelsmodell Henry Boy. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
+                  <div class="whp_heading">BT-Multi Automatic</div>
+                    <p>Om du vill förvalta dina pengar via en aktiv aktiehandel man inte vill, kan eller hinner lägga order själv, kan du ansluta ditt konto till BT Multi Automatic. Öppna då ett konto med vår sponsor AvaTrade och knyt  det till vårt  program BT Multi för automatisk orderläggning med aktiv handel i aktiemarknaden. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>
