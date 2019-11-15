@@ -5074,7 +5074,7 @@ ul.cartStep2 li {
 
 .blog_drop-down-menus ul {
     margin-top: 10px !important;
-    padding: 0 26.3px !important;
+    padding: 0 16px !important;
     text-align: left !important;
     list-style-type: none !important;
 }
@@ -10420,7 +10420,7 @@ whp_heading
     padding-right: 9px !important;
 }
 
-#my_subscription_list ul,
+/* #my_subscription_list ul,
 #my_active_subscription_list ul {
     display: inline;
     float: left;
@@ -10428,9 +10428,9 @@ whp_heading
     margin: 0;
     padding: 0 22px !important;
     position: relative;
-}
+} */
 
-#my_subscription_list ul li,
+/* #my_subscription_list ul li,
 #my_active_subscription_list ul li {
     display: inline;
     float: left;
@@ -10438,7 +10438,7 @@ whp_heading
     margin: 0;
     padding: 7px 0 4px 5px;
     position: relative;
-}
+} */
 
 #my_subscription_list .blog_drop-down-menus {
     height: 155px;
@@ -11779,4 +11779,8 @@ h2 {
 	font-family:"ITC Cheltenham Book";
 	letter-spacing:0.01em;
 	margin: 20px 0px 55px 0px;
+}
+
+.sort_drop:hover{
+    color: #9ca1af;
 }

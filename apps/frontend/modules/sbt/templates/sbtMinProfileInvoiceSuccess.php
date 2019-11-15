@@ -118,52 +118,6 @@
                     <?php endif ?>
             </div>
         </div> */ ?>
-        <div class="paginationwrapperNew widthall">
-                        <div class="forum_pag all_my_order_pagination" id="">
-                            <?php if ($pageractive){ ?>
-                            <?php if ($pageractive->haveToPaginate()): ?>
-                                <?php if ($pageractive->getFirstPage() != $pageractive->getPage()) { ?>
-                                              <a id="<?php echo $pageractive->getFirstPage(); ?>" class="cursor"><span class="forum_pagination_first_img"></span><span class="forum_pagination_prev" >Första</span> <a id="<?php echo $pageractive->getPreviousPage(); ?>" class="cursor"> <span class="forum_pagination_prev_img"></span><span class="forum_pagination_prev margin_rgt_7">Föreg</span></a>
-                                    <?php } ?>
-                                    <?php $links = $pageractive->getLinks(11);
-                                    foreach ($links as $page): ?>
-                                        <?php if ($page == $pageractive->getPage()): ?>
-                                            <?php echo '<span class="selected">' . $page . '</span>' ?>
-                                        <?php else: ?>
-                                            <a id="<?php echo $page; ?>" class="cursor"><?php echo $page; ?> </a>
-                                        <?php endif; ?>
-                                        <?php if ($page != $pageractive->getCurrentMaxLink()): ?>
-
-                                        <?php endif ?>
-                                    <?php endforeach ?>
-                                    <?php if ($pageractive->getLastPage() != $pageractive->getPage()) { ?>
-                <a id="<?php echo $pageractive->getNextPage(); ?>" class="cursor"><span class="margin_lft_3 forum_pagination_next">Nästa</span><span class="forum_pagination_next_img"></span></a> <a id="<?php echo $pageractive->getLastPage(); ?>" class="cursor"><span class="forum_pagination_next" >Sista</span><span class="forum_pagination_last_img" ></span></a>
-    <?php } ?>
-                                    <span>Sid <?php echo $pageractive->getPage(); ?> av <?php echo $pageractive->getLastPage(); ?></span>
-                                    <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
-                                    <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                        <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
-                                            <option noclick="1" value="0" style="color:#b9c2cf" >Gå till sida...</option>
-                                            <?php for ($pg = 1; $pg <= $pageractive->getLastPage(); $pg++) { ?>
-                                                <option noclick="1" class="color232222" value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-    <?php } ?>
-                                        </select>
-                                        <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
-                                    </div>
-                                    <span class="forum_sorting_wrapper">
-                                        <div noclick="1" class="floatRight blog_drop-down-menus blog_topic_listing_column_row_all_order">
-                                            <ul noclick="1">
-                                                <li noclick="1"><span noclick="1" id="sortby_subscription" class="cursor">Abonnemang</span></li>
-                                                <li noclick="1"><span noclick="1" id="sortby_start_date" class="cursor">Datum</span></li>
-                                            </ul>
-                                        </div>
-                                        <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
-                                        <span class="floatRight">Sortera efter</span>
-                                    </span>
-<?php endif ?>
-                            <?php } ?>  
-                        </div>
-                    </div>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr id="analysis_fav_list_column_row" class="blog_table_head">
                 <th id="sortby_srno"  class="cursor" scope="col" width="20" align="left" style="padding-left: 10px; padding-right: 11px;">Nr</th>

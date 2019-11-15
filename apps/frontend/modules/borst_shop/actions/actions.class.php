@@ -1557,15 +1557,15 @@ class borst_shopActions extends sfActions {
             $host_str = $this->getRequest()->getHost();
             $url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
           
-            $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
-            $to = array(sfConfig::get('app_mail_to_1'));
-            $from = sfConfig::get('app_mail_shop_email_1');
-            $message = $this->getMailer()->compose();
-            $message->setSubject('New Transaction');
-            $message->setTo($to);
-            $message->setFrom($from);
-            $message->setBody($mailBody, 'text/html');
-            $this->getMailer()->send($message);
+            // $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
+            // $to = array(sfConfig::get('app_mail_to_1'));
+            // $from = sfConfig::get('app_mail_shop_email_1');
+            // $message = $this->getMailer()->compose();
+            // $message->setSubject('New Transaction');
+            // $message->setTo($to);
+            // $message->setFrom($from);
+            // $message->setBody($mailBody, 'text/html');
+            // $this->getMailer()->send($message);
         }
 
 
@@ -1686,23 +1686,23 @@ class borst_shopActions extends sfActions {
                 }else{
                     $this->saveInvoicePdf($id,0,0);
                 }
-                $mailBody = $this->getPartial('user_order', array('is_Article' => 0,'item_list' => $this->item_list, 'product_article' => $this->product_article, 'purchase_rec' => $this->purchase_rec, 'name' => $name));
+                // $mailBody = $this->getPartial('user_order', array('is_Article' => 0,'item_list' => $this->item_list, 'product_article' => $this->product_article, 'purchase_rec' => $this->purchase_rec, 'name' => $name));
 
-                $to = $this->purchase_rec->email;
-                $from = sfConfig::get('app_mail_shop_email');
+                // $to = $this->purchase_rec->email;
+                // $from = sfConfig::get('app_mail_shop_email');
 
-                $message = $this->getMailer()->compose();
-                if ($this->purchase_rec->checkout_status == 1)
-                    $message->setSubject('Orderbekräftelse');
-                if ($this->purchase_rec->checkout_status == 0)
-                    $message->setSubject('Fakturabeställning');
-                $message->attach(new Swift_Attachment(file_get_contents("Invoice.pdf"), "Invoice.pdf", "application/pdf"));
-                $message->setTo($to);
-                $message->setCc('info@borstjanaren.se');
-                $message->setFrom($from);
-                $message->setBody($mailBody, 'text/html');
-                $this->getMailer()->send($message);
-                //$this->transaction_type = $request->getParameter('typ');
+                // $message = $this->getMailer()->compose();
+                // if ($this->purchase_rec->checkout_status == 1)
+                //     $message->setSubject('Orderbekräftelse');
+                // if ($this->purchase_rec->checkout_status == 0)
+                //     $message->setSubject('Fakturabeställning');
+                // $message->attach(new Swift_Attachment(file_get_contents("Invoice.pdf"), "Invoice.pdf", "application/pdf"));
+                // $message->setTo($to);
+                // $message->setCc('info@borstjanaren.se');
+                // $message->setFrom($from);
+                // $message->setBody($mailBody, 'text/html');
+                // $this->getMailer()->send($message);
+                // //$this->transaction_type = $request->getParameter('typ');
             }
 
             
