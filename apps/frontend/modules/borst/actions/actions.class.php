@@ -2416,8 +2416,9 @@ class borstActions extends sfActions
   */
   public function executeBorstNewsletter(sfWebRequest $request)
   {
-        $this->getUser()->setAttribute('parent_menu_common', '7');
+    $this->getUser()->setAttribute('parent_menu_common', '7');
 	isicsBreadcrumbs::getInstance()->addItem('NYHETSBREV', 'borst/borstNewsletter'); 
+	$this->getUser()->setAttribute('submenu_menu', '');
 	$mymarket = new mymarket();
 	$this->host_str = $this->getRequest()->getHost();
 	$this->errormsg = $this->greenmsg = '';
@@ -2425,13 +2426,13 @@ class borstActions extends sfActions
 	
 	if($request->getParameter('pos')==1)
 	{
-		$this->getUser()->setAttribute('parent_menu', 'top_newsletter_menu');
+		// $this->getUser()->setAttribute('parent_menu', 'top_newsletter_menu');
 		$this->getUser()->setAttribute('submenu_menu', '');
 		$this->getUser()->setAttribute('third_menu', 'newsletter');
 	} 
 	if($request->getParameter('pos')==3) 
 	{	
-		$this->getUser()->setAttribute('parent_menu', ''); 
+		// $this->getUser()->setAttribute('parent_menu', ''); 
 		$this->getUser()->setAttribute('submenu_menu', '');
 		$this->getUser()->setAttribute('third_menu', 'newsletter');
 	}
@@ -2579,7 +2580,7 @@ class borstActions extends sfActions
   public function executeBorstAboutUs(sfWebRequest $request)
   {
 	isicsBreadcrumbs::getInstance()->addItem('OM OSS', 'borst/borstAboutUs'); 
-	$this->getUser()->setAttribute('parent_menu', ''); 
+	// $this->getUser()->setAttribute('parent_menu', ''); 
 	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'om_oss');
   }
@@ -2651,7 +2652,7 @@ class borstActions extends sfActions
   public function executeBorstDayletter(sfWebRequest $request)
   {
 	isicsBreadcrumbs::getInstance()->addItem('Dagsbrev', 'borst/borstDayletter'); 
-	$this->getUser()->setAttribute('parent_menu', ''); 
+	// $this->getUser()->setAttribute('parent_menu', ''); 
 	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'dayletter');
         
@@ -2695,7 +2696,7 @@ class borstActions extends sfActions
   public function executeBorstBeginner(sfWebRequest $request)
   {
 	isicsBreadcrumbs::getInstance()->addItem('Nybörjare', 'borst/borstBeginner'); 
-	$this->getUser()->setAttribute('parent_menu', ''); 
+	// $this->getUser()->setAttribute('parent_menu', ''); 
 	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'borstbeginner');
   }
@@ -2721,10 +2722,29 @@ class borstActions extends sfActions
   public function executeBorstSkolan(sfWebRequest $request)
   {
 	isicsBreadcrumbs::getInstance()->addItem('BT-SKOLAN', 'borst/borstSkolan'); 
-	$this->getUser()->setAttribute('parent_menu', ''); 
+	// $this->getUser()->setAttribute('parent_menu', 'top_borst_menu'); 
 	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'bt_skolan');
 	$this->host_str = $this->getRequest()->getHost();
+
+	// $this->getUser()->setAttribute('third_menu', 'list');
+	// $this->host_str = $this->getRequest()->getHost();
+	// $parent_menu = $this->getUser()->getAttribute('parent_menu');
+	// $submenu_menu = $this->getUser()->getAttribute('submenu_menu');
+	// $this->getUser()->setAttribute('submenu_menu', 'obj_id_1795');
+	
+	
+
+	// if($parent_menu == 'top_sbt_menu' && $submenu_menu == 'sbt_menu_home'){
+	// 	isicsBreadcrumbs::getInstance()->addItem('BT Insider', 'sbt/sbtHome'); 
+	// 	isicsBreadcrumbs::getInstance()->addItem('Lista', 'borst/articleList'); 
+	// }else {
+	// // 	echo("<pre>");
+	// // print_r($parent_menu .":". $submenu_menu);
+	// // exit;
+	// 	isicsBreadcrumbs::getInstance()->addItem('Hem', 'borst/borstHome'); 
+	// 	isicsBreadcrumbs::getInstance()->addItem('Lista', 'borst/articleList'); 
+	// }
 	
 	//Right column articles
 	$cat_arr = $type_arr = $object_arr = array();
@@ -4147,7 +4167,7 @@ class borstActions extends sfActions
                 $private_key = sfConfig::get('app_recaptcha_private_key');
                 $this->public_key = sfConfig::get('app_recaptcha_public_key');
 		$this->host_str = $this->getRequest()->getHost();
-		$this->getUser()->setAttribute('parent_menu', '1'); 
+		// $this->getUser()->setAttribute('parent_menu', '1'); 
 		$this->getUser()->setAttribute('submenu_menu', '');
                 $this->getUser()->setAttribute('parent_menu_common', '1');
 		$this->getUser()->setAttribute('third_menu', 'contact_us');
@@ -4874,7 +4894,7 @@ class borstActions extends sfActions
 	isicsBreadcrumbs::getInstance()->addItem('RISKVARNING', 'borst/borstRisk'); 
 	
 	$this->host_str = $this->getRequest()->getHost();
-	$this->getUser()->setAttribute('parent_menu', ''); 
+	// $this->getUser()->setAttribute('parent_menu', ''); 
 	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'riskvarning');
   }

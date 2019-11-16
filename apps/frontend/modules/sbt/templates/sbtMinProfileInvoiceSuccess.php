@@ -120,7 +120,7 @@
         </div> */ ?>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr id="analysis_fav_list_column_row" class="blog_table_head">
-                <th id="sortby_srno"  class="cursor" scope="col" width="20" align="left" style="padding-left: 10px; padding-right: 11px;">Nr</th>
+                <th id="sortby_srno"  class="cursor alien_center" scope="col" width="20" align="center" style="padding-left: 10px; padding-right: 11px;">Nr</th>
                 <th id="sortby_subscription"  class="cursor" scope="col" width="264" align="left" style="padding-right: 11px;">Abonnemang</th>
                 <th id="sortby_start_date"  class="cursor" scope="col" width="82" align="left" style="padding-right: 11px;">Datum</th>
                 <th scope="col" width="52" align="left">Faktura</th>

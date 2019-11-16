@@ -1394,7 +1394,7 @@ class sbtActions extends sfActions
  	isicsBreadcrumbs::getInstance()->addItem('Sister BT User Profile', 'sbt/sbtUserProfile');
 	
         $this->getUser()->setAttribute('parent_menu_common', '9');
-	$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 	$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
         $this->getUser()->setAttribute('third_menu', 'sbtUserProfile');
 	$this->host_str = $this->getRequest()->getHost();

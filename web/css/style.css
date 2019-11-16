@@ -5334,8 +5334,20 @@ ul.cartStep2 li {
 
 .dashbord_link_col {
     border-right: 1px solid;
-    width: 36%;
+    width: 100%;
     padding-right: 2.7%;
+    display: flex;
+}
+
+.dashbord_link_col span{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: solid 1px  #009dd9 ;
+    margin-right: 10px;
+}
+
+.alien_center{
+    text-align: center !important;
 }
 
 .dashbord_link_col2 {

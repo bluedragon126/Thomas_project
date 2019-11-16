@@ -48,7 +48,7 @@
 <input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr id="analysis_fav_list_column_row" class="blog_table_head">
-        <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11" scope="col" width="20" align="left">Nr</th>
+        <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11 alien_center" scope="col" width="20" align="center">Nr</th>
         <th id="sortby_subscription"  class="cursor padding_right_11" scope="col" width="264" align="left">Abonnemang</th>
         <th id="sortby_start_date"  class="cursor padding_right_11" scope="col" width="82" align="left">Startdatum</th>
         <th id="sortby_end_date"  class="cursor padding_right_9" scope="col" width="82" align="left">Stopdatum</th>
