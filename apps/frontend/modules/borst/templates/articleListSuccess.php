@@ -137,11 +137,13 @@
     <div class="height_auto">
         <div class="breadcrumb lista_mrg_top_7">
             <ul>
-                <li><?php
-include_component('isicsBreadcrumbs', 'show', array(
-    'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
-))
-?> </li>
+                <li>
+                    <?php
+                    include_component('isicsBreadcrumbs', 'show', array(
+                        'root' => array('text' => 'BÖRSTJÄNAREN', 'uri' => 'borst/borstHome')
+                    ))
+                    ?> 
+                </li>
             </ul>
         </div>
         <div class="forumlistingleftdivinner">

@@ -2261,8 +2261,8 @@ $(document).ready(function() {
         });
         $('.indicator').css('display', 'block');
         console.log(column_id);
-        $('.test').addClass("active_item");
-        $('.test1').addClass("active_item");
+        // $('.test').addClass("active_item");
+        // $('.test1').addClass("active_item");
         $.post("/borst/getNewArticleListData?column_id=" + column_id + "&parent_menu=" + parent_menu + "&submenu_menu=" + submenu_menu + '&show_thumb=' + show_thumb + variable_str, function(data) {
             $('.forumlistingleftdivinner').html(data);
 
@@ -3745,6 +3745,7 @@ $(document).ready(function() {
         $('.all_my_subscription_pagination').html(pagination_numbers + '');
         $('#pop-box-over').show();
         $('.indicator').css('display', 'block');
+        $('.cursor').addClass("active_item");
         $.ajax({
             url: '/sbt/fetchMoreMySubscription?column_id=' + column_id + '&page=' + page + '&bloglist_current_column_order=' + current_column_order, //?page='+page,
             success: function(data) {

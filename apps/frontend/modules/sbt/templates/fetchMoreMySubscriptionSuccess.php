@@ -1,3 +1,4 @@
+
 <script type="text/javascript" language="javascript">
 
     function paginationPopupGo(obj) {
@@ -47,7 +48,7 @@
 <input type="hidden" id="column_id" name="column_id" value="<?php echo $column_id; ?>"/>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr id="analysis_fav_list_column_row" class="blog_table_head">
-        <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11" scope="col" width="20" align="left">Nr</th>
+        <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11 alien_center" scope="col" width="20" align="center">Nr</th>
         <th id="sortby_subscription"  class="cursor padding_right_11" scope="col" width="264" align="left">Abonnemang</th>
         <th id="sortby_start_date"  class="cursor padding_right_11" scope="col" width="82" align="left">Startdatum</th>
         <th id="sortby_end_date"  class="cursor padding_right_9" scope="col" width="82" align="left">Stopdatum</th>
@@ -102,7 +103,7 @@
                 <?php } ?>
                 <span>Sid <?php echo $pager->getPage(); ?> av <?php echo $pager->getLastPage(); ?></span>
                 <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopup(this);"></span>
-                <div class="forum_popup_pagination_wrapper" noclick="1" >
+                <!-- <div class="forum_popup_pagination_wrapper" noclick="1" >
                     <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
                         <option noclick="1" value="0" class="colorb9c2cf" >Gå till sida...</option>
                         <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
@@ -114,14 +115,21 @@
                                 <?php } ?>
                     </select>
                     <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGo(this);">GÅ</div>
+                </div> -->
+                <div class="forum_popup_pagination_wrapper" noclick="1" >
+                    <ul class="pagination_ul">
+                    <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
+                        <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                    <?php } ?>
+                    </ul>            
                 </div>
                 <span class="forum_sorting_wrapper">
                     <div noclick="1" class="floatRight blog_drop-down-menus blog_topic_listing_column_row_all_subscription">
                         <ul noclick="1">
-                            <li noclick="1"><span noclick="1" id="sortby_subscription" class="cursor">Abonnemang</span></li>
-                            <li noclick="1"><span noclick="1" id="sortby_start_date" class="cursor">Startdatum</span></li>
-                            <li noclick="1"><span noclick="1" id="sortby_end_date" class="cursor">Stopdatum</span></li>
-                            <li noclick="1"><span noclick="1" id="sortby_status" class="cursor">Status</span></li>
+                            <li noclick="1"><span noclick="1" id="sortby_subscription" class="cursor sortby_subscription">Abonnemang</span></li>
+                            <li noclick="1"><span noclick="1" id="sortby_start_date" class="cursor sortby_start_date">Startdatum</span></li>
+                            <li noclick="1"><span noclick="1" id="sortby_end_date" class="cursor sortby_end_date">Stopdatum</span></li>
+                            <li noclick="1"><span noclick="1" id="sortby_status" class="cursor sortby_status">Status</span></li>
                         </ul>
                     </div>
                     <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
@@ -130,3 +138,35 @@
             <?php endif ?>
     </div>
 </div>
+
+<?php 
+if($column_id == "subscription"){
+    echo '<script type="text/javascript">',
+     '$(".sortby_subscription").addClass("active_item");',
+     'console.log("this is test");',
+     '</script>'
+;
+}
+elseif ($column_id == "start_date"){
+    echo '<script type="text/javascript">',
+     '$(".sortby_start_date").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "end_date"){
+    echo '<script type="text/javascript">',
+     '$(".sortby_end_date").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
+     '</script>'
+;
+}
+elseif ($column_id == "status"){
+    echo '<script type="text/javascript">',
+     '$(".sortby_status").addClass("active_item ");',
+    //  '$(".test1").addClass("active_item");',
+     '</script>'
+;
+}
+
+?>

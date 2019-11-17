@@ -103,7 +103,7 @@
         <div class="float_left widthall" id="article_fav_list">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="fav_article_listing">
                 <tr id="article_fav_list_column_row" class="blog_table_head">
-                    <th id="sortby_srno"  class="cursor pad_lft_5" scope="col" width="35" align="left">Nr</th>
+                    <th id="sortby_srno"  class="cursor pad_lft_5 alien_center" scope="col" width="35" align="center">Nr</th>
                     <th id="sortby_article"  class="cursor" scope="col" width="370" align="left">Artikelrubrik</th>
                     <th scope="col" width="150" align="left">E-postbekräftelse</th>
                     <th scope="col" width="50" align="left">Ta bort</th>

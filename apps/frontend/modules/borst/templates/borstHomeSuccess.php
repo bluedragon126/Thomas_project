@@ -6,9 +6,9 @@
     <?php //echo count($left_records);?>
     <?php foreach ($left_records as $obj): ?>
         <?php if ($count == $limit && $count < $article_limit - $secondLimit): ?>
-            <?php if ($obj_count == 6 || $obj_count == 7): ?>
+            <?php if ($obj_count == 6 || $obj_count == 7 || $obj_count == 2 || $obj_count == 3): ?>
                 <?php $date = explode('-', substr($obj['article_date'], 0, 10)); ?>
-                <?php if ($obj_count == 6): ?>
+                <?php if ($obj_count == 6 || $obj_count == 2): ?>
                     <?php
                     $arr = array();
                     $arr[] = $obj;
@@ -16,7 +16,7 @@
                     <?php $limit+=1; ?>
                 <?php endif; ?>
 
-                <?php if ($obj_count == 7): ?>
+                <?php if ($obj_count == 7 || $obj_count == 3): ?>
                     <?php $arr[] = $obj; ?>
                     <?php $cnt = 0; ?>
                     <?php $obj_count = 0; ?>
@@ -30,10 +30,10 @@
                     }
                     ?>" >
                                 <div class="home_heading_l_3_main_div <?php
-                    if ($i == 1) {
-                        echo "margin_rgt_0";
-                    }
-                    ?>">
+                                    if ($i == 1) {
+                                        echo "margin_rgt_0";
+                                    }
+                                    ?>">
 
                                     <div class="home_heading_l_3_img_div">
                                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">                                           
@@ -130,84 +130,7 @@
                 <?php $obj_count++; ?>
                 <!-- if normal column exist-->
 
-            <?php elseif ($obj_count == 2 || $obj_count == 3): ?>
-                <?php $date = explode('-', substr($obj['article_date'], 0, 10)); ?>
-                <?php if ($obj_count == 2): ?>
-                    <?php
-                    $arr = array();
-                    $arr[] = $obj;
-                    ?>
-                    <?php $limit+=2; ?>
-                <?php endif; ?>
-                <!-- if normal column exist-->
-                <?php if ($obj_count == 3): ?>
-                <?php $arr[] = $obj; ?>
-                <?php //$cnt = 0;  ?>
-                <?php //$obj_count = 0;   ?>
-                <?php $limit+=2; ?>
-
-                <?php for ($i = 0; $i < 2; $i++): ?>
-                        <div class="home_heading_l_2_main_div">
-                            <div class="home_heading_l_2_img_div">
-                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">
-                                    
-                                    <!--<img src="/images/new_home/home_heading_l_2_img.png" />-->                                    
-                                    <?php 
-                                    if($arr[$i]['category_id'] == 6){
-                                        $desc = $arr[$i]['text'];                                                                               
-                                        $abc = explode("em&gt;",strip_tags($desc));
-                                        echo "<span class='wizdom-two'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</span>';
-                                    }else {?>
-                                        <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>"  width="200" />
-                                    <?php }
-                                    ?>
-                                </a>
-                            </div>
-                            <div class="home_heading_l_2_txt_div">
-                                <div class="home_heading_l_c_txt_main">                                
-                                    <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_ver_title[$i] ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
-                                    <div class="margin_top_11">
-                                        <span>
-                                            <img src="/images/new_home/home_square_2.png" class="home_square"/>
-                                        </span>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor">
-                                            <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php 
-                                            $dot_status = 0;
-                                            for ($x = 122; $x > 0; $x--) {
-                                                if(substr($arr[$i]['image_text'], $x, 1) == " " || substr($arr[$i]['image_text'], $x, 1) == "."){
-                                                    if(substr($arr[$i]['image_text'], $x, 1) == "."){
-                                                        $dot_status = 1;
-                                                    }
-                                                    echo substr($arr[$i]['image_text'], 0, $x+1);
-                                                    break;
-                                                }
-                                                // echo "The number is: $x <br>";
-                                            }
-                                            // echo substr($arr[$i]['image_text'], 0, 122); 
-                                            ?></span>
-                                        </a>
-                                            <?php if($dot_status == 0){?>
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="article_dots_l cursor">...</a>
-                                            <?php }?>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="home_heading_l_txt dattimeinfo col-first-date">
-                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor">
-                                        <!--<span class="colorband" style="float:none; top:0px;"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/></span>-->
-                                        
-                                        <span class="home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
-                                        <span class="home_type"><?php echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
-                                        <span class="home_cat"><?php echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>                                        
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="home_artline_leftdiv">&nbsp;</div>
-                        </div>
-                    <?php endfor; ?>
-                    <!--<div class="artlineleftdiv">&nbsp;</div>-->
-                <?php endif; ?>
-                <?php $obj_count++; ?>
+            
                 <!-- if normal column exist-->
         <?php elseif ($obj_count == 1 || $obj_count == 4 || $obj_count == 5): ?>
                             <?php $limit+=2; ?>
