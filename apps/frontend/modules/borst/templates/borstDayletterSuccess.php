@@ -106,7 +106,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </form>
-                <div class="blank_8h widthall">
+                <div class="blank_1h widthall">
                     
                 </div>
                 
@@ -128,7 +128,9 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
                 <div class="float_left">
-                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras – dvs registreras och avregistreras – på <a href="/borst/borstNewsletter"> separat sida.</a> (Se nedan.)
+                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras – 
+                <br>
+                dvs registreras och avregistreras – på <a href="/borst/borstNewsletter"> separat sida</a> (se nedan).
                 
              
                 

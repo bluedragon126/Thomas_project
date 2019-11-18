@@ -4933,6 +4933,7 @@ ul.cartStep2 li {
     border-top: none !important;
     height: 25px;
     font-size: 0.93em;
+	letter-spacing: 0.03em;
 }
 
 .width_310 {
@@ -5068,6 +5069,7 @@ ul.cartStep2 li {
     text-transform: uppercase;
     color: #3a4769;
     margin-left: 11px;
+	margin-top: 6px;
     display: none;
     hyphens: manual;
 }
@@ -5408,7 +5410,7 @@ ul.cartStep2 li {
     background-color: #ebeff3;
     border: 1px solid #ebeff3;
     color: #232222;
-    font-size: 1.1em;
+    font-size: 1.05em;
     letter-spacing: 0.02em;
     padding-left: 6px;
     height: 30px;
@@ -5870,7 +5872,7 @@ ul.cartStep2 li {
 }
 
 .dashbord_link span .selectedtab {
-    color: #f15822;
+    color: #b6b5bb;
 }
 
 .blog_heading {
@@ -10376,7 +10378,7 @@ whp_heading
 
 #editpro .jqTransformSelectWrapper div span {
     height: 24px !important;
-    font-size: 1em !important;
+    font-size: 1.05em !important;
     min-width: 153px !important;
     color: #232222 !important;
 }
