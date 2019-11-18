@@ -1550,7 +1550,8 @@ class borst_shopActions extends sfActions {
             }
             if($request->getParameter('typ') == 4){
                 $purchase_record->checkout_status = 1;
-				$purchase_record->order_processed = 1;
+                $purchase_record->order_processed = 1;
+                $purchase_record->payment_date = date("Y-m-d");
             }
             $purchase_record->save();
 
