@@ -73,12 +73,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <td ></td>
                             <td ><div class="form_labels_advsearch">Artiklar skrivna under perioden</div></td>
                         </tr>
-                        <tr>
+                        <!--<tr>
                             <td  colspan="6"><div class="blank_34h widthall">&nbsp;</div></td>
                         </tr>
                         <tr>
                             <td colspan="6"><span class="whp_subheading2"><img id="adv_ser_section" src="/images/addplusicon.png" class="float_left" alt="icon"  width="14"/> Vill du söka på fler kriterier? </span></td>
-                        </tr>
+                        </tr>-->
                         <tr>
                             <td colspan="6"><div class="blank_7h widthall">&nbsp;</div></td>
                         </tr>
