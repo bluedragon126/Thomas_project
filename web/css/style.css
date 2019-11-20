@@ -2795,9 +2795,12 @@ input.rounded {
     height: 70px;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 0px;
-    float: left;
-    color: #232222;
+	margin: 1px 0px 1px 0px;
+	float: left;
+	color: #232222;
+	border-bottom: 1px solid #bac9d7;
+	height: 1px;
+	padding: 0px 0px 82px 0px;
 }
 
 .scLiatWraper1 .imgWraper {
@@ -11759,7 +11762,7 @@ h2 {
     font-family: "ITC Cheltenham Book";
     font-size: 1.5em;
     color: #232222;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.02em;
     float: right;
     margin: 7px 0px 15px 0px;
  } 
@@ -11769,9 +11772,20 @@ h2 {
     font-size: 1em;
 	line-height: 1em;
     color: #232222;
+    letter-spacing: -0.01em;
+    float: right;
+    margin-top: 8px;
+ } 
+
+.e-post_3{
+    font-family: "Georgia";
+    font-size: 1em;
+	font-style:italic;
+	line-height: 1em;
+    color: #232222;
     letter-spacing: 0.01em;
     float: right;
-    margin-top: 2px;
+    margin-top: 8px;
 }
 
 .art_preamble {
