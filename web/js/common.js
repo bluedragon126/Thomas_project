@@ -1663,12 +1663,12 @@ $(document).ready(function() {
 
         if (comment_subject == '' || article_comment_text == '') {
             if (comment_subject == '') {
-                $('#article_comment_text_error').html('Required');
+                $('#article_comment_text_error').html('Nödvändig');
                 $('#borst_article_comment_subject').focus();
             }
 
             if (article_comment_text == '') {
-                $('#borst_article_comment_subject').after($('<div id ="article_comment_text_error1" class="float_left widthall redcolor"/>').html('Required'));
+                $('#borst_article_comment_subject').after($('<div id ="article_comment_text_error1" class="float_left widthall redcolor"/>').html('Nödvändig'));
                 $('#borst_article_comment_article_comment').focus();
             }
             if (comment_subject == '' && article_comment_text == '') {
@@ -1828,13 +1828,13 @@ $(document).ready(function() {
         var analysis_comment_text = $('#sbt_analysis_comment_analysis_comment').val();
         if (comment_subject == '' || comment_subject.length == 0 || analysis_comment_text == '' || analysis_comment_text.length == 0) {
             if (comment_subject == '') {
-                $('#analysis_comment_text_error').html('Required');
+                $('#analysis_comment_text_error').html('Nödvändig');
                 $('#sbt_analysis_comment_subject').focus();
             }
 
             if (analysis_comment_text == '') {
 
-                $('#sbt_analysis_comment_subject').after($('<div id ="analysis_comment_text_error1" class="float_left widthall redcolor"/>').html('Required'));
+                $('#sbt_analysis_comment_subject').after($('<div id ="analysis_comment_text_error1" class="float_left widthall redcolor"/>').html('Nödvändig'));
                 $('#sbt_analysis_comment_analysis_comment').focus();
             }
             if (comment_subject == '' && analysis_comment_text == '') {
@@ -1986,7 +1986,7 @@ $(document).ready(function() {
             url: '/sbt/AjaxCheckCaptcha',
             success: function(data) {
                 if (blog_text == '' || blog_text.length == 0) {
-                    $('#blog_text_error').html('Required');
+                    $('#blog_text_error').html('Nödvändig');
                     $('#post_blog_comment_div').html(button_html);
                 } else if (data == 0) {
                     $("#captcha_blog_validation").html("OBS! Ange giltig captcha");
@@ -2485,7 +2485,7 @@ $(document).ready(function() {
         var enquiry_reply_text = trim(tinyMCE.activeEditor.getContent());
         var postid = $('#postid').val();
         if (enquiry_reply_text == '' || enquiry_reply_text.length == 0) {
-            $('#post_enquiry_reply_error').html('Required');
+            $('#post_enquiry_reply_error').html('Nödvändig');
             $('#contact_enquiry_post_reply_text').focus();
         } else {
             tinyMCE.triggerSave();
@@ -2659,11 +2659,11 @@ $(document).ready(function() {
 
         //Email
         if (email == '' || email.length == 0) {
-            $('#pay_email_error').html('Required');
+            $('#pay_email_error').html('Nödvändig');
             email_flag = 1;
         } else {
             if (reg.test(email) == false) {
-                $('#pay_email_error').html('Invalid');
+                $('#pay_email_error').html('Ogiltig');
                 email_flag = 2;
             } else {
                 $('#pay_email_error').html('');
@@ -2705,7 +2705,7 @@ $(document).ready(function() {
         }*/
         // Street
         if (user_street == '' || user_street.length == 0) {
-            $('#pay_street_error').html('Required');
+            $('#pay_street_error').html('Nödvändig');
             street_flag = 1;
         } else {
             $('#pay_street_error').html('');
@@ -2738,7 +2738,7 @@ $(document).ready(function() {
 
         // Country
         if (user_country == 0) {
-            $('#pay_country_error').html('Please select Country');
+            $('#pay_country_error').html('Välj land');
             country_flag = 1;
         } else {
             $('#pay_country_error').html('');
@@ -2967,11 +2967,11 @@ $(document).ready(function() {
         var email_flag = firstname_flag = lastname_flag = street_flag = zipcode_flag = telephone_flag = country_flag = city_flag = 0;
 
         if (email == '' || email.length == 0) {
-            $('#pay_email_error').html('Required');
+            $('#pay_email_error').html('Nödvändig');
             email_flag = 1;
         } else {
             if (reg.test(email) == false) {
-                $('#pay_email_error').html('Invalid');
+                $('#pay_email_error').html('Ogiltig');
                 email_flag = 2;
             } else {
                 $('#pay_email_error').html('');
@@ -3017,7 +3017,7 @@ $(document).ready(function() {
 		lastname_flag = result_flag[checkForOnlyCharacters(user_lastname)];*/
 
         if (user_street == '' || user_street.length == 0) {
-            $('#pay_street_error').html('Required');
+            $('#pay_street_error').html('Nödvändig');
             street_flag = 1;
         } else {
             $('#pay_street_error').html('');
@@ -3052,7 +3052,7 @@ $(document).ready(function() {
         telephone_flag = result_flag[checkForOnlyNumber(user_telephone)];
 
         if (user_country == 0) {
-            $('#pay_country_error').html('Please select Country');
+            $('#pay_country_error').html('Välj land');
             country_flag = 1;
         } else {
             $('#pay_country_error').html('');
@@ -3125,7 +3125,7 @@ $(document).ready(function() {
 
         var post_text = trim(tinyMCE.activeEditor.getContent());
         if (post_text == '' || post_text.length == 0) {
-            $('#forum_post_text_error').html('Required');
+            $('#forum_post_text_error').html('Nödvändig');
             $('#post_forum_comment_div').html(button_html);
             var pagination_numbers = $('.forum_comment_list_listing:last').html();
             $('#forum_comment_list_listing, .forum_comment_list_listing').html(pagination_numbers);
@@ -4914,11 +4914,11 @@ function checkForOnlyNumber(str) {
     var noalpha = /^[a-zA-Z]*$/;
 
     if (str == '' || str.length == 0) {
-        return 'Required';
+        return 'Nödvändig';
     }
 
     if (noalpha.test(str)) {
-        return 'Invalid';
+        return 'Ogiltig';
     } else return '';
 }
 
@@ -4926,11 +4926,11 @@ function checkForOnlyCharacters(str) {
     var nonums = /^[0-9]*$/;
 
     if (str == '' || str.length == 0) {
-        return 'Required';
+        return 'Nödvändig';
     }
 
     if (nonums.test(str)) {
-        return 'Invalid';
+        return 'Ogiltig';
     } else return '';
 }
 
@@ -4940,7 +4940,7 @@ function specialCharCheck(str) {
     var error_flag = 0;
 
     if (str == '' || str.length == 0) {
-        return 'Required';
+        return 'Nödvändig';
     }
 
     for (var i = 0; i < str.length; i++) {
@@ -4950,7 +4950,7 @@ function specialCharCheck(str) {
         }
     }
 
-    if (error_flag == 1) return 'Invalid';
+    if (error_flag == 1) return 'Ogiltig';
     else return '';
 }
 
@@ -5208,7 +5208,7 @@ function check_type(content_type) {
 
         // For title
         if (analysis_title == '' || analysis_title.length == 0) {
-            $('#analysis_title_error').html('Required');
+            $('#analysis_title_error').html('Nödvändig');
             //$('#sbt_analysis_title').focus(); 
             analysis_title_flag = 1;
         } else {
@@ -5218,7 +5218,7 @@ function check_type(content_type) {
 
         // For ingress image
         if (ingress_img == '' || ingress_img.length == 0) {
-            $('#upload_msg').html('Required');
+            $('#upload_msg').html('Nödvändig');
             ingress_img_flag = 1;
         } else {
             $('#upload_msg').html('File Uploaded');
@@ -5236,7 +5236,7 @@ function check_type(content_type) {
 
         // For Description 
         if (analysis_description == " " || analysis_description.length == 0) {
-            $('#article_desc_error').html('Required');
+            $('#article_desc_error').html('Nödvändig');
             //$('#sbt_analysis_description').focus(); 
             analysis_desc_flag = 1;
         } else {
@@ -5334,7 +5334,7 @@ function check_type(content_type) {
 
         // For Blog Title
         if (blog_title == '' || blog_title.length == 0) {
-            $('#blog_title_error').html('Required');
+            $('#blog_title_error').html('Nödvändig');
             title_flag = 1;
         } else {
             $('#blog_title_error').html('');
@@ -5352,7 +5352,7 @@ function check_type(content_type) {
 
         // For Blog Description
         if (description == " " || description.length == 0) {
-            $('#blog_desc_error').html('Required');
+            $('#blog_desc_error').html('Nödvändig');
             desc_flag = 1;
         } else {
             $('#blog_desc_error').html('');
@@ -5635,7 +5635,7 @@ function user_all_blog_comment_validation_check(blog_id) {
     var blog_text = $(str).val();
 
     if (blog_text == '' || blog_text.length == 0) {
-        $('#blog_text_error' + blog_id).html('Required');
+        $('#blog_text_error' + blog_id).html('Nödvändig');
         $('#post_blog_comment_div' + blog_id).html(button_html);
     } else {
         $.ajax({
@@ -6965,7 +6965,7 @@ function save_edit_article() {
     var analysis_type_flag = 0;
 
     if (analysis_title == '' || analysis_title.length == 0) {
-        $('#analysis_title_error').html('Required');
+        $('#analysis_title_error').html('Nödvändig');
         $('#sbt_analysis_title').focus();
         analysis_title_flag = 1;
     } else {
@@ -6983,7 +6983,7 @@ function save_edit_article() {
     }
 
     if (analysis_description == " " || analysis_description.length == 0) {
-        $('#article_desc_error').html('Required');
+        $('#article_desc_error').html('Nödvändig');
         $('#sbt_analysis_description').focus();
         analysis_desc_flag = 1;
     } else {
@@ -7894,14 +7894,14 @@ function validateForumTopic() {
         var forum_description = tinyMCE.activeEditor.getContent();
 
         if (rubrik == '' || rubrik.length == 0) {
-            $('#btforum_subject_error').html('Required');
+            $('#btforum_subject_error').html('Nödvändig');
             btforum_subject_flag = 1;
         } else {
             $('#btforum_subject_error').html('');
         }
 
         if (forum_description == '' || forum_description.length == 0) {
-            $('#btforum_desc_error').html('Required');
+            $('#btforum_desc_error').html('Nödvändig');
             btforum_desc_flag = 1;
         } else {
             $('#btforum_desc_error').html('');

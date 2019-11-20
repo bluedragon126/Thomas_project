@@ -1343,26 +1343,27 @@ home_heading_c {
 
 .list_heading {
     font-family: 'Franklin Gothic Medium';
-    font-size: 0.93em;
+    font-size: 13px;
     color: #232222;
+    font-weight: 400;
 }
 
 .list_heading_kategori {
     color: #232222;
     font-family: 'Franklin Gothic Medium';
-    font-size: 0.93em;
+    font-size: 13px;
 }
 
 .list_heading_typ {
     color: #232222;
     font-family: 'Franklin Gothic Medium';
-    font-size: 0.93em;
+    font-size: 13px;
 }
 
 .list_heading_objekt {
     color: #232222;
     font-family: 'Franklin Gothic Medium';
-    font-size: 0.93em;
+    font-size: 13px;
 }
 
 .list_date {
@@ -3466,7 +3467,7 @@ ul.cartStep2 li {
 }
 
 .forum_table_date_w {
-    width: 76px;
+    width: 50px;
 }
 
 .blog_table_date_w {
@@ -9781,7 +9782,9 @@ whp_heading
 .width136 {
     width: 136px;
 }
-
+.width150 {
+    width: 150px;
+}
 .width106 {
     width: 106px;
 }
@@ -9800,6 +9803,12 @@ whp_heading
 
 .width108 {
     width: 108px;
+}
+.width93 {
+    width: 93px;
+}
+.width100 {
+    width: 100px;
 }
 
 .mrg_top_14 {
@@ -10651,14 +10660,13 @@ whp_heading
 .btshop_table_head a span {
     font-family: 'Franklin Gothic Book Regular';
     /*font-size: 0.86em;*/
-    color: #ffffff;
+    color: #232222;
 }
 
 .btshop_table_head {
     font-family: "Franklin Gothic Book Regular";
     /*font-size: 12px;*/
-    color: #fff;
-    background-color: #0091bb;
+    color: #232222;
     border-top: none !important;
     height: 25px;
     font-size: 0.86em;
@@ -11738,9 +11746,10 @@ h2 {
     font-size: 1em;
     color: #ffffff;
     letter-spacing: 0.02em;
-    float: right;
+    /* float: right; */
     margin-top: 7px;
-    margin-right: 40px;
+    margin-left: 445px;
+    padding-top: 10px;
 }
 
 .title_link .link_text{
