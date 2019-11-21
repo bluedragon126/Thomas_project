@@ -6341,6 +6341,18 @@ input.send_forgetpass {
     height: 29px;
 }
 
+.bt-shop-step1-top-margin {
+    height: 48px;
+}
+
+.bt-shop-step2-top-margin {
+    height: 29px;
+}
+
+.bt-shop-step3-top-margin {
+    height: 29px;
+}
+
 .marginBottom13 {
     margin-bottom: 13px;
 }
