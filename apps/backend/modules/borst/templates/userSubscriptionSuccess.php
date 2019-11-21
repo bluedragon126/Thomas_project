@@ -20,7 +20,7 @@
 				<td align="left"><a class="main_link_color cursor" href="<?php echo 'http://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>"><?php echo $product_arr[0]['title']; ?></a></td>
 				<td align="left"><?php echo $data->start_date; ?></td>	
 				<td align="left"><?php echo $data->end_date; ?></td>
-                <td align="left"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'betald':''); ?>	
+                <td align="left"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'Betald':''); ?>	
 				<td align="left"><?php if(date("Y-m-d") >= $data->end_date):?><a href="<?php echo 'http://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>" class="main_link_color cursor">Förnya abonnemang</a><?php else: ?>&nbsp;<?php endif; ?></td>	
 			</tr>
 		<?php $i++;  endforeach;?>	

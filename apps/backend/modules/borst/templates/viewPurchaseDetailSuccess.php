@@ -14,7 +14,7 @@
 			<div class="float_left widthall"><b><?php echo 'Orderdatum: ' ?></b><?php echo substr($purchase_data->created_at,0,10) ?></div>
 			<div class="float_left widthall"><b><?php echo 'Ordernummer: ' ?></b><?php echo $purchase_data->id ?></div>
 			<div class="float_left widthall"><b><?php echo 'Betalsätt: ' ?></b><?php echo $purchase_data->payment_method ?></div>
-			<div class="float_left widthall"><b><?php echo 'Betalt den: ' ?></b><?php echo $purchase_data->checkout_status == 0 ? 'Ej betald' : 'betald'; ?></div>
+			<div class="float_left widthall"><b><?php echo 'Betalt den: ' ?></b><?php echo $purchase_data->checkout_status == 0 ? 'Ej betald' : 'Betald'; ?></div>
 			<div class="float_left widthall"><b><?php echo 'Namn: ' ?></b><?php echo $purchase_data->firstname.' '.$purchase_data->lastname ?></div>
 			<div class="float_left widthall"><b><?php echo 'Adress: ' ?></b><?php echo $purchase_data->street.','.$purchase_data->zipcode.' '.$purchase_data->city.','.$purchase_data->country ?></div>
 			<div class="float_left widthall"><b><?php echo 'E-post: ' ?></b><?php echo $purchase_data->email ?></div>

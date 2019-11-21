@@ -56,9 +56,9 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <?php endif; ?>
                     </div>
 
-                    <div class="spacer"></div>
+                    <div class="spacer_Db1"></div>
                     <div class="my_order_text">Din beställning:</div>
-                    <div class="spacer"></div>
+                    <div class="spacer_Db2"></div>
 
                     <?php if ($item_list): ?>
                         <?php

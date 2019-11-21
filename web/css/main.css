@@ -634,7 +634,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 	letter-spacing:0.03em;
 	margin-left:214px; 
 	border-radius: 0px;}
-.red_text{color:#dc231a;font-weight:normal;}
+.red_text{color:#f15822;font-weight:normal;}
 .red_text2{color:#FF3333;font-weight:bold;}
 .blue_title_best{font-size:14px;color:#232222;font-weight:bold;}
 ul.rows{padding:0px;float:left;position:relative;width:100%;list-style:none;display:block;margin:0px 0px 10px -11px;}
@@ -649,6 +649,8 @@ div.spacer2{float:left;position:relative;width:100%;margin-top:10px;margin-botto
 div.spacer3{float:left;position:relative;width:100%;margin-top:5px;margin-bottom:5px;}
 div.spacer4{float:left;position:relative;width:100%;margin-top:15px;margin-bottom:10px;}
 div.spacer5{float:left;position:relative;width:100%;margin-top:7px;margin-bottom:7px;}
+div.spacer_Db1{float:left;position:relative;width:100%;margin-top:25px;margin-bottom:15px;}
+div.spacer_Db2{float:left;position:relative;width:100%;margin-top:25px;margin-bottom:15px;}
 .remove_from_chart{}
 .remove_from_chart span{}
 .empty_cart{}
@@ -696,11 +698,11 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .bank_selection_outer{float:left;position:relative;padding-top:10px;border-top:1px solid #f7c900;display:none;}
 .payment_conformation_class{cursor:pointer;}
 .my_order_text{float:left; position:relative;width:560px;color:#232222;font-size:18.1px;margin-bottom:1px;}
-.my_order_rec_row{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
+.my_order_rec_row{float:left;position:relative;border-top:1px solid #d4d8e1;padding:5px 0 5px 0;width:555px;}
 .my_order_sub_row{float:left;position:relative;width:550px;border:0px solid red;}
 .my_order_total_detail_outer{float:left;position:relative;border-top:1px solid #8b8f9f;padding:5px 0 5px 0;width:555px;}
 .bill_details{float:left;position:relative;width:100%;border-top:1px solid #ced2d0;border-bottom:1px solid #ced2d0;padding-bottom:10px;margin-top:10px;}
-.save_mail_bill{color:#5a7692;cursor:pointer;}
+.save_mail_bill{color:#009cd9;cursor:pointer;}
 #pdf_send_report{float:left;position:relative;width:100%;color:#009966;padding:5px 0 5px 0px;}
 .new_forum_topic_outer{float:left;height:16px;margin:12px 0 0;position:relative;width:305px;color:#a3afb8;font-size:12px;font-weight:bold;padding:12px 0 0 10px;letter-spacing:0.02px;}
 .new_fprum_topic_text{color:#a3afb8;letter-spacing:0.02px;}
@@ -797,12 +799,13 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 #borst_desc_div p strong{
 	font-family: "ITC Cheltenham Book";
     float: left;
-    font-size: 1.5em;
-    color: #f15822;
-    line-height: 2.3em;
-    width: 100%;
-	font-weight: 100;
-	margin: 12px 0px -3px;
+    font-size: 1em;
+	letter-spacing: 0.01em;
+	color: #232222;
+	line-height: 2.3em;
+	width: 100%;
+	font-weight: 600;
+	margin: 3px 0px 20p;
 }
 
 #borst_desc_div p em{
@@ -833,10 +836,10 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .q_name{
 	font-family: "ITC Cheltenham Book";
     float: left;
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #232222;
     width: 100%;
-	font-weight: 100;
+	font-weight: 600;
 	margin: 4px 0px 11px !important;
 }
 

@@ -37,12 +37,12 @@
                 
                 
                   
-                    Vi erbjuder utbildningar i aktiehandel och kapitalförvaltning, både nybörjarkurser och mer avancerade program.
+                    <strong>Vi erbjuder utbildningar</strong> i aktiehandel och kapitalförvaltning, både nybörjarkurser och mer avancerade program.
                     
                       <br>
                     <br>
                     
-                    På onsdagkvällar kl 20.00 håller vi kostnadsfria webinarier,  &quot;Trejdingklubben online&quot;, där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
+                    <strong>På onsdagkvällar</strong> kl 20.00 håller vi kostnadsfria webinarier,  &quot;Trejdingklubben online&quot;, där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
 
                     <div class="whp_heading">Vi som syns på Börstjänaren</div>
                     
