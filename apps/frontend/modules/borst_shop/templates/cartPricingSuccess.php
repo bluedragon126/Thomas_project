@@ -2,7 +2,7 @@
     if ($saved_cart_items_pid!=''){
 ?><div class="float_left"></div>
 <div class="height_10"></div>
-<div class="shop_detail_title3">Varukorg</div>
+<div class="shop_detail_cart">Varukorg</div>
 <div class="height_5"></div>
 <div class="scLiatWraper">
     <?php 

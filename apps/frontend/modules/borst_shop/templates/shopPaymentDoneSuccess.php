@@ -48,7 +48,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
                     </div>
                     <div class="shop_detail_title2">3. Tack för din beställning!</div>
-                    <div class="spacer"></div>
+                    <div class="spacer_Tfdb"></div>
 
                     <div class="float_left widthall">
                         <?php if ($purchase_id): ?>
@@ -172,7 +172,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="bt-shop-step-bottom-margin widthall float_left">&nbsp;</div>
                 </div>
                 <div class="shop_detail_title2">3. Tack för din beställning!</div>
-                <div class="spacer"></div>
+                <div class="spacer_Tfdb"></div>
 
 
                 <?php if ($item_list): ?>
