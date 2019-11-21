@@ -22,16 +22,16 @@
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-			<div class="whp_title">Henry Boy trade signals</div>
+			<div class="whp_title">Henry Boy Trading</div>
                 <div class="whp_preamble">
                     Sedan 2010 har Börstjänaren skickat ut Henry Boy tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
-                Henry Boy kan du sköta själv via abonnemanget eller knyta ditt konto till automatisk handel.
+                Henry Boy kan du sköta själv via ett abonnemang med aktiva affärsförslag, eller knyta ditt konto till automatisk handel.
                 <div class="float_left widthall"></div>
-                  <div class="whp_heading">Herny Boy abonnemang</div>
+                  <div class="whp_heading">Henry Boy abonnemang</div>
                   <p><strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
                  
                   
-                  <div class="whp_heading">Herny Boy Automatic</div>
+                  <div class="whp_heading">Henry Boy Automatic</div>
                     <p>Om man inte vill lägga order själv, går det bra att teckna sig för Henry Boy Automatic. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
            
