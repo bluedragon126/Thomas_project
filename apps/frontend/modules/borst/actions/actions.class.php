@@ -2723,7 +2723,7 @@ class borstActions extends sfActions
   {
 	isicsBreadcrumbs::getInstance()->addItem('BT-SKOLAN', 'borst/borstSkolan'); 
 	// $this->getUser()->setAttribute('parent_menu', 'top_borst_menu'); 
-	$this->getUser()->setAttribute('submenu_menu', '');
+	// $this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'bt_skolan');
 	$this->host_str = $this->getRequest()->getHost();
 
@@ -2786,7 +2786,7 @@ class borstActions extends sfActions
 	$this->host_str = $this->getRequest()->getHost();
 	$parent_menu = $this->getUser()->getAttribute('parent_menu');
 	$submenu_menu = $this->getUser()->getAttribute('submenu_menu');
-        $this->getUser()->setAttribute('submenu_menu', 'obj_id_1795');
+    // $this->getUser()->setAttribute('submenu_menu', 'obj_id_1795');
 	
 	// Variables
 	$cat_arr = $type_arr = $object_arr = $object_country_arr = $param = array();
@@ -4168,7 +4168,7 @@ class borstActions extends sfActions
                 $this->public_key = sfConfig::get('app_recaptcha_public_key');
 		$this->host_str = $this->getRequest()->getHost();
 		// $this->getUser()->setAttribute('parent_menu', '1'); 
-		$this->getUser()->setAttribute('submenu_menu', '');
+		// $this->getUser()->setAttribute('submenu_menu', '');
                 $this->getUser()->setAttribute('parent_menu_common', '1');
 		$this->getUser()->setAttribute('third_menu', 'contact_us');
 		//$enq_type = array(''=>'Välj kategori','Abonnemang'=>'Abonnemang','Utbildningar'=>'Utbildningar','Fråga Bosse Börstjänare'=>'Fråga Bosse Börstjänare','Metastock'=>'Metastock','Webinarium'=>'Webinarium','Forum'=>'Forum','Henrik Hallenborg'=>'Henrik Hallenborg','Thomas Sandström'=>'Thomas Sandström','Göran Högberg'=>'Göran Högberg','Övrigt'=>'Övrigt');

@@ -270,7 +270,6 @@
                         <?php foreach ($pager->getResults() as $article): ?>
                         <?php $flagga = "usa.gif"; ?>
                             <tr id="borst_rec_row" class="classnot">
-                                <td width="43" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" ><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td><td width="43" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" ><img src="/images/<?php echo $flagga ?>" width="30" height="17" class="article_list_img">&nbsp;</td>
                                 <td width="73" class="noclass"><?php echo substr($article->created_at, 0, 10); ?></td>
                                 <td width="16">&nbsp;</td>
                                 <td width="253"><a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><span class="article_list_text"><?php echo $article->analysis_title; ?></span></a></td>

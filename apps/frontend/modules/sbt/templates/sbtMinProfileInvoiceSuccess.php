@@ -120,7 +120,7 @@
         </div> */ ?>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr id="analysis_fav_list_column_row" class="blog_table_head">
-                <th id="sortby_srno"  class="cursor alien_center" scope="col" width="20" align="center" style="padding-left: 10px; padding-right: 11px;">Nr</th>
+                <th id="sortby_srno"  class="cursor " scope="col" width="20" align="right" style=" padding-right: 20px;text-align: right">Nr</th>
                 <th id="sortby_subscription"  class="cursor" scope="col" width="264" align="left" style="padding-right: 11px;">Abonnemang</th>
                 <th id="sortby_start_date"  class="cursor" scope="col" width="82" align="left" style="padding-right: 11px;">Datum</th>
                 <th scope="col" width="52" align="left">Faktura</th>
@@ -132,7 +132,7 @@
                     ?>	
                     <tr class="classnot">
                     <tr>
-                        <td align="center" class="prof_table_no"><?php echo $i; ?></td>
+                        <td align="right" class="prof_table_no" style=" padding-right: 20px;"><?php echo $i; ?></td>
                         <td align="left" class="prof_table_sub"><?php echo ($data->BtShopArticle) ? $data->BtShopArticle->getBtshopArticleTitle() : ''; ?></td>
                         <td align="left" class="blog_prof_table_date"><?php echo date("Y-m-d", strtotime($data->Purchase->getCreatedAt())) ?></td>
                         <td class="prof_table_download"><a  class="cursor" onclick ="window.location = 'http://'+window.location.hostname+'/borst_shop/saveAsPdf?purchase_id='+<?php echo $data->Purchase->getId() ?>+'&receipt=0' ">Ladda ned</a></td>

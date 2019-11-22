@@ -168,9 +168,9 @@ class sbtActions extends sfActions
 	  $this->metatags_desc = 'Welcome to Syster Bt Description';
 	  $this->metatags_keywords = 'Welcome to Syster Bt Keywords';
 	  
-	  $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	//   $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
           $this->getUser()->setAttribute('parent_menu_common', '7');
-	  $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_home');
+	//   $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_home');
 	  $this->getUser()->setAttribute('third_menu', '');
 	  
 	  $this->host_str = $this->getRequest()->getHost();
@@ -415,9 +415,9 @@ class sbtActions extends sfActions
   {
 	 isicsBreadcrumbs::getInstance()->addItem('Sister BT Blog', 'sbt/sbtBlog');
 	 
-	 $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-	 $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_blog');
-         $this->getUser()->setAttribute('parent_menu_common', '5');
+	//  $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	//  $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_blog');
+    $this->getUser()->setAttribute('parent_menu_common', '5');
 	 $this->host_str = $this->getRequest()->getHost();
 	 $this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 
@@ -1236,10 +1236,10 @@ class sbtActions extends sfActions
   {
  	isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfile');
 	$profile = new SfGuardUserProfile();
-	$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 	
-	if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-	else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+	// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+	// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 	
 	$this->host_str = $this->getRequest()->getHost();
 	$this->user_photo_arr = array();
@@ -1393,10 +1393,10 @@ class sbtActions extends sfActions
   {
  	isicsBreadcrumbs::getInstance()->addItem('Sister BT User Profile', 'sbt/sbtUserProfile');
 	
-        $this->getUser()->setAttribute('parent_menu_common', '9');
-	// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-	$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-        $this->getUser()->setAttribute('third_menu', 'sbtUserProfile');
+    // $this->getUser()->setAttribute('parent_menu_common', '9');
+	// // $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+	$this->getUser()->setAttribute('third_menu', 'sbtUserProfile');
 	$this->host_str = $this->getRequest()->getHost();
 	$this->user_photo_arr = array();
 	$this->type_investor_arr = array('trader'=>'Trejder','investor'=>'Investerare','gambler'=>'Gambler'); 
@@ -1411,10 +1411,10 @@ class sbtActions extends sfActions
 	$this->silver_cnt = $medal_detail->getUserAwardTypeCount($this->logged_user,'2');
 	$this->bronze_cnt = $medal_detail->getUserAwardTypeCount($this->logged_user,'3');
 
-        $this->articleCnt = SbtAnalysis::getCntPublishedArticles($this->getUser()->getGuardUser()->getId());
+    $this->articleCnt = SbtAnalysis::getCntPublishedArticles($this->getUser()->getGuardUser()->getId());
 	
 //	$id = $this->getRequestParameter('id');
-        $this->take_to_profile = $this->getRequestParameter('take_to_profile') ? $this->getRequestParameter('take_to_profile') : 0;
+    $this->take_to_profile = $this->getRequestParameter('take_to_profile') ? $this->getRequestParameter('take_to_profile') : 0;
 	$id = $this->logged_user;
 	
 	$messageForm_arr = $this->data_arr = $this->friend_id = $this->friend_name = $visitor_list_arr = array();
@@ -2564,7 +2564,7 @@ class sbtActions extends sfActions
 	*/	
 	public function executeSbtArticleDetails(sfWebRequest $request)
 	{
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 		//$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_analysis_details');
 		$this->getUser()->setAttribute('submenu_menu', '');
 		$this->host_str = $this->getRequest()->getHost();
@@ -3263,10 +3263,10 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileMessage');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 		
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -3366,7 +3366,7 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileForumPost');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 		//if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
 		//else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
@@ -3437,9 +3437,9 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileBlogPost');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -3588,9 +3588,9 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileAllArticle');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -3686,9 +3686,9 @@ class sbtActions extends sfActions
 		$column_id = trim(str_replace('sortby_','',$request->getParameter('column_id')));
 		$profile = new SfGuardUserProfile();
 		
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		
 		$column_id = trim(str_replace('sortby_','',$request->getParameter('column_id')));
@@ -3777,8 +3777,8 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileAllPost');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		
@@ -3889,8 +3889,8 @@ class sbtActions extends sfActions
 		
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/viewAllRequest');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		
@@ -3942,8 +3942,8 @@ class sbtActions extends sfActions
 		
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/blockedUser');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		
@@ -4043,10 +4043,10 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileFriends');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 		
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -4151,10 +4151,10 @@ class sbtActions extends sfActions
 	public function executeSbtMinProfileMyAccount(sfWebRequest $request)
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileFriends');
-	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+	// 
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -4221,9 +4221,9 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileFriends');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-		else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -4873,8 +4873,8 @@ class sbtActions extends sfActions
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfile');
 
 	        $this->msg = '' ;
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		//$arrLand = array('1'=>'Sverige','2'=>'Norge','3'=>'Finland','4'=>'Danmark','5'=>'Other');
@@ -5281,8 +5281,8 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfile');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		$arrLand = array('1'=>'Sverige','2'=>'Norge','3'=>'Finland','4'=>'Danmark','5'=>'Other');
@@ -5528,10 +5528,10 @@ class sbtActions extends sfActions
   {
  	isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfile');
 	
-	$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
 	
-	if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
-	else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+	// if($this->show_top_links==1) $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_minprofile');
+	// else $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 	
 	$this->host_str = $this->getRequest()->getHost();
 	//$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
@@ -5648,8 +5648,8 @@ class sbtActions extends sfActions
 	{
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileAllPost');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		
@@ -5763,8 +5763,8 @@ class sbtActions extends sfActions
 		
 		isicsBreadcrumbs::getInstance()->addItem('Sister BT Min Profile', 'sbt/sbtMinProfileForumPost');
 	
-		$this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-		$this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
+		// $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+		// $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_user');
 		$this->host_str = $this->getRequest()->getHost();
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		
@@ -6678,8 +6678,8 @@ class sbtActions extends sfActions
 	 $this->host_str = $this->getRequest()->getHost();
 	 isicsBreadcrumbs::getInstance()->addItem('Help', 'sbt/help');
 	 
-	 $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-	 $this->getUser()->setAttribute('submenu_menu', '');
+	//  $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	//  $this->getUser()->setAttribute('submenu_menu', '');
   }
   
    /*
@@ -6724,8 +6724,8 @@ class sbtActions extends sfActions
   {
 	 isicsBreadcrumbs::getInstance()->addItem('Sister BT Blog', 'sbt/Profiler');
 	 
-	 $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
-	 $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_profiler');
+	//  $this->getUser()->setAttribute('parent_menu', 'top_sbt_menu');
+	//  $this->getUser()->setAttribute('submenu_menu', 'sbt_menu_profiler');
          $this->getUser()->setAttribute('parent_menu_common', '9');
 	 $this->host_str = $this->getRequest()->getHost();
 	 $this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');

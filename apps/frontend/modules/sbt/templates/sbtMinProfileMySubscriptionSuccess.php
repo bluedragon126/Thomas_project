@@ -114,7 +114,7 @@
     <div class="float_left widthall" id="my_active_subscription_list">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr id="analysis_fav_list_column_row" class="blog_table_head">
-                <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11 alien_center" scope="col" width="20" align="center">Nr</th>
+                <th id="sortby_srno"  class="cursor padding_left_10 padding_right_13 alien_center" scope="col" width="20" align="right">Nr</th>
                 <th id="sortby_subscription"  class="cursor padding_right_11" scope="col" width="264" align="left">Abonnemang</th>
                 <th id="sortby_start_date"  class="cursor padding_right_11" scope="col" width="82" align="left">Startdatum</th>
                 <th id="sortby_end_date"  class="cursor padding_right_9" scope="col" width="82" align="left">Stopdatum</th>
@@ -128,7 +128,7 @@
                     ?>	
                     <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
                     <tr class="classnot">
-                        <td align="center" class="prof_table_no"><?php echo $i; ?></td>
+                        <td align="right" class="prof_table_no padding_right_13"><?php echo $i; ?></td>
                         <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
                         <td align="left" class="blog_prof_table_date"><?php echo $data->start_date; ?></td>	
                         <td align="left" class="blog_prof_table_date"><?php echo $data->end_date; ?></td>	
@@ -204,7 +204,7 @@
     <div class="float_left widthall" id="my_subscription_list">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr id="analysis_fav_list_column_row" class="blog_table_head">                
-                <th id="sortby_srno"  class="cursor padding_left_10 padding_right_11 alien_center" scope="col" width="20" align="center">Nr</th>
+                <th id="sortby_srno"  class="cursor padding_left_10 padding_right_13 alien_center" scope="col" width="20" align="right">Nr</th>
                 <th id="sortby_subscription"  class="cursor padding_right_11" scope="col" width="264" align="left">Abonnemang</th>
                 <th id="sortby_start_date"  class="cursor padding_right_11" scope="col" width="82" align="left">Startdatum</th>
                 <th id="sortby_end_date"  class="cursor padding_right_9" scope="col" width="82" align="left">Stopdatum</th>
@@ -218,7 +218,7 @@
                     ?>	
                     <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
                     <tr class="classnot">
-                        <td align="center" class="prof_table_no"><?php echo $i; ?></td>
+                        <td align="right" class="prof_table_no padding_right_13"><?php echo $i; ?></td>
                         <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
                         <td align="left" class="blog_prof_table_date"><?php echo $data->start_date; ?></td>	
                         <td align="left" class="blog_prof_table_date"><?php echo $data->end_date; ?></td>	
