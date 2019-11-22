@@ -55,7 +55,7 @@
                     <div class="shop_detail_title2">1. Granska och skicka</div>
                     <div class="spacer5"></div>
                     <div class="my_order_text"><!--Din beställning:--></div>
-                    <div class="spacer2"></div>		
+                    <!--<div class="spacer2"></div>-->		
                     <div class="scLiatWraper">
                         <div class="scLiatWraper1" >
                             <div class="imgWraper">

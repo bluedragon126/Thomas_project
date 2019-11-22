@@ -1486,15 +1486,15 @@ a.article_dots_r {
 	letter-spacing: 0.01em;
     color: #abb9c8;
     line-height: 1.6em;
-    margin-bottom: 18px;
+    margin-bottom: 4px;
 }
 
 .whp_heading {
-    color: #f15822;
-    font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    color: #232222;
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.7em;
     line-height: 1em;
-    margin: 46px 0px 10px;
+    margin: 66px 0px 16px;
     width: 100%;
 }
 
@@ -2269,13 +2269,11 @@ input.rounded {
 
 .shop_detail_cart {
     font-family: 'CheltenhamITCW01-Bold';
-	font-size: 1.5em;
-	float: left;
-	margin: 0px 0px 38px 0px;
-	color: #232222;
-	width: 100%;
+    color: #232222;
+    font-size: 1.5em;
+    line-height: 8px;
 	letter-spacing: 0.02em;
-	word-spacing: -0.06em;
+	margin: 36px 0px 15px;
 }
 
 .shop_detail_subtitle {
@@ -2788,7 +2786,7 @@ input.rounded {
 .scLiatWraper {
     width: 565px;
     float: left;
-    margin-bottom: 26px;
+    margin-bottom: -2px;
     font-family: 'Franklin Gothic Book Regular';
 }
 
@@ -2796,9 +2794,12 @@ input.rounded {
     height: 70px;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 0px;
-    float: left;
-    color: #232222;
+	margin: 1px 0px 1px 0px;
+	float: left;
+	color: #232222;
+	border-bottom: 1px solid #d4d8e1;
+	height: 1px;
+	padding: 0px 0px 82px 0px;
 }
 
 .scLiatWraper1 .imgWraper {
@@ -2858,7 +2859,7 @@ input.rounded {
 .scLiatWraper3 {
     width: 565px;
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: -2px;
     font-family: 'Franklin Gothic Medium';
 }
 
@@ -3114,7 +3115,7 @@ blank_4h {
 
 .shop_r_other_subtitle {
     color: #232222;
-    font-family: "Franklin Gothic Book Regular";
+    font-family: "Franklin Gothic Medium";
     font-size: 1em;
     line-height: 1.1em;
     letter-spacing: 0.01em !important;
@@ -3137,7 +3138,7 @@ blank_4h {
 	font-size: 1.3em;
 	line-height: 1.2em;
 	letter-spacing: 0.05em;
-	margin: 12px 0px 5px;
+	margin: 14px 0px 3px;
 	width: 294px;
 	word-spacing: -0.03em;
 }
@@ -3178,7 +3179,7 @@ blank_4h {
 .shop_r_other_img_sub {
     float: left;
     width: 48%;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .shop_r_other_price_main {
@@ -4934,6 +4935,7 @@ ul.cartStep2 li {
     border-top: none !important;
     height: 25px;
     font-size: 0.93em;
+	letter-spacing: 0.03em;
 }
 
 .width_310 {
@@ -5069,6 +5071,7 @@ ul.cartStep2 li {
     text-transform: uppercase;
     color: #3a4769;
     margin-left: 11px;
+	margin-top: 6px;
     display: none;
     hyphens: manual;
 }
@@ -5381,7 +5384,7 @@ ul.cartStep2 li {
     color: #232222;
     float: left;
     mmargin-top: 12px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .padd_top {
@@ -5409,7 +5412,7 @@ ul.cartStep2 li {
     background-color: #ebeff3;
     border: 1px solid #ebeff3;
     color: #232222;
-    font-size: 1.1em;
+    font-size: 1.05em;
     letter-spacing: 0.02em;
     padding-left: 6px;
     height: 30px;
@@ -5871,7 +5874,7 @@ ul.cartStep2 li {
 }
 
 .dashbord_link span .selectedtab {
-    color: #f15822;
+    color: #b6b5bb;
 }
 
 .blog_heading {
@@ -10389,7 +10392,7 @@ whp_heading
 
 #editpro .jqTransformSelectWrapper div span {
     height: 24px !important;
-    font-size: 1em !important;
+    font-size: 1.05em !important;
     min-width: 153px !important;
     color: #232222 !important;
 }
@@ -11770,7 +11773,7 @@ h2 {
     font-family: "ITC Cheltenham Book";
     font-size: 1.5em;
     color: #232222;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.02em;
     float: right;
     margin: 7px 0px 15px 0px;
  } 
@@ -11780,9 +11783,20 @@ h2 {
     font-size: 1em;
 	line-height: 1em;
     color: #232222;
+    letter-spacing: -0.01em;
+    float: right;
+    margin-top: 8px;
+ } 
+
+.e-post_3{
+    font-family: "Georgia";
+    font-size: 1em;
+	font-style:italic;
+	line-height: 1em;
+    color: #232222;
     letter-spacing: 0.01em;
     float: right;
-    margin-top: 2px;
+    margin-top: 8px;
 }
 
 .art_preamble {

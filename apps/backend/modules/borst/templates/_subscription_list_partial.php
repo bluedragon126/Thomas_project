@@ -63,7 +63,7 @@ if(count($pager)>0)
 	<td><input name="subscriber_email[]" type="hidden" value="<?php echo $pur->email; ?>" id="subscriber_email"></td>
 	<td><input name="subscriber_userid[]" type="hidden" value="<?php echo $pur->user_id; ?>" id="subscriber_userid">
             <input name="article_id[]" type="hidden" value="<?php echo $data->product_id; ?>" id="article_id">
-            &nbsp;&nbsp;<?php echo $purchase->getPaymentStatus($data->purchase_id) == 0 ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == 1 ? 'betald' : '') ?></td>
+            &nbsp;&nbsp;<?php echo $purchase->getPaymentStatus($data->purchase_id) == 0 ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == 1 ? 'Betald' : '') ?></td>
         <!--<td><input name="subscriber_check[]" type="checkbox" value="<?php //echo $j; ?>" id="subscriber_check"></td>-->
 </tr>
 <?php $i++; $j++; endforeach;

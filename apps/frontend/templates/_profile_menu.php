@@ -2,7 +2,7 @@
 
 <?php if($show_top_links == 1):?>
 <ul class="minsid_listingtab dashboard_title" id="profile_top_menu">
-        <li><a id="sbtMinProfileMyAccount" class="for_profile_menu " style="cursor:pointer;">Ordning och reda</a></li>
+        <li><a id="sbtMinProfileMyAccount" class="for_profile_menu " style="cursor:pointer;">Mitt konto</a></li>
         
         
         

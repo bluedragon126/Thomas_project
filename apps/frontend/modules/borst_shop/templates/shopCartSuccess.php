@@ -1,6 +1,6 @@
 <script type="text/javascript" language="javascript">
     $(window).load(function () {
-        $("#bt_shop_" + $(".shop_detail_title3").text().toLowerCase() + " a").addClass("active");
+        $("#bt_shop_" + $(".shop_detail_cart").text().toLowerCase() + " a").addClass("active");
         var leftHeight = $("#btshopleftdivinner").height();
         var rightHeight = $("#shop_rightbanner").height();	
         var maxHeight = 0;
@@ -37,7 +37,7 @@
                 <div class="float-left" id="productlistwr">
                     <div class="float_left"></div>
                     <div class="height_10"></div>
-                    <div class="shop_detail_title3">Varukorg</div>
+                    <div class="shop_detail_cart">Varukorg</div>
                     <div class="height_5"></div>                                 
                     <div class="scLiatWraper">
                         <?php
@@ -78,7 +78,7 @@
                 </div>
             <?php else: ?> 
             	<div class="height_41"></div>
-                <div class="shop_detail_cart">Varukorg</div>                
+                <div class="shop_detail_tile3">Varukorg</div>                
                 <div class="height_15"></div>              
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <div class="blank_15h widthall">&nbsp;</div>

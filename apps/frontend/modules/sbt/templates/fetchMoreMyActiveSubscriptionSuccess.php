@@ -60,7 +60,7 @@
             <td align="left"><a class="prof_table_sub cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
             <td align="left" class="blog_prof_table_date"><?php echo $data->start_date; ?></td>	
             <td align="left" class="blog_prof_table_date"><?php echo $data->end_date; ?></td>	
-            <td align="left" class="prof_table_stat"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'betald' : ''); ?></td>
+            <td align="left" class="prof_table_stat"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'Betald' : ''); ?></td>
             <td align="left"><?php $days = (strtotime(date("Y-m-d")) - strtotime(substr($data->end_date, 0, 10))) / (60 * 60 * 24); ?>
                 <?php if ($days < 0 && $days >= -5): ?>
                     <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förlänga?</a>
