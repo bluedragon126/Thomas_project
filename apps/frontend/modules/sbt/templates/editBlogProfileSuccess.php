@@ -188,9 +188,9 @@
                                                         <div class="width_145 form_labels"><?php echo __('Bakgrundsf&auml;rg') ?>:</div>
                                                         <div id="blogPageBackgroundColor"><div style="background-color: <?php echo $color_arr['background'] ?>"></div></div>
                                                     </div>
-                                                    <div class="padtop_10">&nbsp;</div>
+                                                    <div class="padtop_5">&nbsp;</div>
                                                     <div class="widthall">
-                                                        <div class="padtop_10 width_145">&nbsp;</div>
+                                                        <div class="padtop_5 width_145">&nbsp;</div>
                                                         <div class="mrg_top_10"><input type="submit" class="edit_blog_save submit " value="" name="submit" /></div>
                                                     </div>
 

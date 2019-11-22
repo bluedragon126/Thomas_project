@@ -70,7 +70,7 @@
         
 </script>
 <div class="blog_user_profile_deshboard"><?php echo __('Mina Order'); ?></div>
-<div class="my_subscription_list_outer width_630" id="my_subscription_container">
+<div class="my_subscription_list_outer width_610" id="my_subscription_container">
 
     <div class="float_left widthall" id="my_order_list">
        <?php /*<div class="paginationwrapper">

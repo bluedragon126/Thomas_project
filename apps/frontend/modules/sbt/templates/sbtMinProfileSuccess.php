@@ -251,7 +251,7 @@
 					<td class="heading" colspan="2" >Basfakta</td>
 				  </tr>
 				  <tr>
-					<td class="padtop_10" width="30%">Ålder:</td>
+					<td class="padtop_5" width="30%">Ålder:</td>
 					<td class="viocolor"><?php echo $data_arr['user_age'] ?></td>
 				  </tr>
 				  <?php $my_occ = explode(':',$user_details->my_occupation);?>
@@ -276,7 +276,7 @@
 					<td  class="heading"  colspan="2">Trejdingprofil</td>
 				  </tr>
 				  <tr>
-					<td class="padtop_10" width="30%">Typ av spekulant:</td>
+					<td class="padtop_5" width="30%">Typ av spekulant:</td>
 					<td class="viocolor"><?php echo ucfirst($type_investor_arr[$user_details->type_of_speculator]) ?></td>
 				  </tr>
 				  <tr>
@@ -311,14 +311,14 @@
 					<td  class="heading"  colspan="2">Med egna ord</td>
 				  </tr>
 				  <tr>
-				  <td colspan="2"  class="padtop_10"><?php echo html_entity_decode($user_details->my_own_writing) ?></td>
+				  <td colspan="2"  class="padtop_5"><?php echo html_entity_decode($user_details->my_own_writing) ?></td>
 				  </tr>
 				   <!--<tr><td>&nbsp;</td></tr>
 				  <tr>
 					<td  class="heading"  colspan="2">Röster och medaljer</td>
 				  </tr>
 				  <tr>
-				  <td class="padtop_10" colspan="2">Röster: <span class="viocolor"><?php echo $data_arr['total_votes'] ? $data_arr['total_votes'] : 0; ?></span></td>
+				  <td class="padtop_5" colspan="2">Röster: <span class="viocolor"><?php echo $data_arr['total_votes'] ? $data_arr['total_votes'] : 0; ?></span></td>
 				  </tr>
 				  <tr>
 				  <td colspan="2">Medaljer:</td>
@@ -347,7 +347,7 @@
 					<td  class="heading"  colspan="2">Signature</td>
 				  </tr>
 				  <tr>
-				  <td class="padtop_10" colspan="2">
+				  <td class="padtop_5" colspan="2">
                                     <?php  $signiture = $user_profile->getUserData($user_data->user_id)->signature; echo $signiture; ?>
 				  </td>
 				  </tr>
@@ -359,7 +359,7 @@
 					<td  class="heading"  colspan="2">Tipsa en vän</td>
 				  </tr>
 				  <tr>
-				  <td class="padtop_10" colspan="2">
+				  <td class="padtop_5" colspan="2">
                   <!-- AddThis Button BEGIN -->
                   <div class="addthis_default_style ">
                     <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren" class="addthis_button"  style="text-decoration:none;">
@@ -370,7 +370,7 @@
 				  </td>
 				  </tr>
 				  <tr>
-    				<td class="padtop_10" colspan="2">Denna sida:<br />
+    				<td class="padtop_5" colspan="2">Denna sida:<br />
     					<a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_data->user_id ?>" class="viocolor"><?php echo 'http://'.$host_str.'/sbt/sbtMinProfile/id/'.$user_data->user_id ?></a> </td>
   				  </tr>
 				  <tr><td colspan="2">&nbsp;</td></tr>
@@ -378,7 +378,7 @@
 					<td class="heading" colspan="2" >Statistik</td>
 				  </tr>
 				  <tr>
-					<td class="padtop_10" width="30%"><b>Poster totalt:</b></td>
+					<td class="padtop_5" width="30%"><b>Poster totalt:</b></td>
 					<td class="viocolor">&nbsp;</td>
 				  </tr>
 				  <tr>
@@ -404,7 +404,7 @@
 					<td class="heading" colspan="2" ></td>
 				  </tr>
 				<tr>
-				  <td class="padtop_10" width="30%"><b>Besöksmeddelanden</b></td>
+				  <td class="padtop_5" width="30%"><b>Besöksmeddelanden</b></td>
 				  <td class="viocolor">&nbsp;</td>
 				</tr>
 				<tr>
@@ -421,7 +421,7 @@
 				</tr>
 				<?php if($is_logged_in_user != 1):?>
 				<tr>
-				  <td class="padtop_10 viocolor" colspan="2" > <a id="post_message" class="viocolor" href="#">Skicka meddelande till <?php echo $user_profile->getFullUserName($user_data->user_id) ?></a> </td>
+				  <td class="padtop_5 viocolor" colspan="2" > <a id="post_message" class="viocolor" href="#">Skicka meddelande till <?php echo $user_profile->getFullUserName($user_data->user_id) ?></a> </td>
 				</tr>
 				<?php endif; ?>
 				<tr>
@@ -429,7 +429,7 @@
 				</tr>
 				
 				<tr>
-				  <td class="padtop_10" width="30%"><b>Blogg</b></td>
+				  <td class="padtop_5" width="30%"><b>Blogg</b></td>
 				  <td class="viocolor">&nbsp;</td>
 				</tr>
 				<!--<tr>
@@ -446,7 +446,7 @@
 				</tr>
 				
 				<tr>
-				  <td class="padtop_10" width="30%"><b>Generell information</b></td>
+				  <td class="padtop_5" width="30%"><b>Generell information</b></td>
 				  <td class="viocolor">&nbsp;</td>
 				</tr>
 				 <tr>

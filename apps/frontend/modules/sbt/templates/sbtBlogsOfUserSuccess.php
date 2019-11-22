@@ -38,7 +38,7 @@
               in the marketplace.
               When you’re in a position
               of such importance,
-              it is your res</span> --><span class="float_left widthall clear_l"><span class="main_link_color float_left">Kommentarer &nbsp;</span> <img src="/images/chaticon_violet.jpg" alt="icon"  class="float_left padtop_10"/>&nbsp;<font size="1" color="#c50063">87</font> <b class="main_link_color">Läs mer ></b></span> </div>
+              it is your res</span> --><span class="float_left widthall clear_l"><span class="main_link_color float_left">Kommentarer &nbsp;</span> <img src="/images/chaticon_violet.jpg" alt="icon"  class="float_left padtop_5"/>&nbsp;<font size="1" color="#c50063">87</font> <b class="main_link_color">Läs mer ></b></span> </div>
             <div class="blank_10h widthall">&nbsp;</div>
             <div class="grayline">&nbsp;</div>
             <div class="blank_10h widthall">&nbsp;</div>

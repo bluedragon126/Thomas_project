@@ -145,13 +145,13 @@
                                                 <span class="radio_button_text"><?php echo __('Kvinna') ?></span>&nbsp;<font color="#FF0000"><?php echo $gender_error ?></font></td>
                                         </tr>
                                         <tr>
-                                            <td class="padtop_10">&nbsp;</td>
+                                            <td class="pad_top_1">&nbsp;</td>
                                             <td class="viocolor"><input type="radio" class="radio radio_button_text" name="gender" value="1" <?php if ($gender == 1) echo "checked"; ?> />
                                                 <span class="radio_button_text"><?php echo __('Man') ?></span></td>
                                         </tr>
                                         <tr>
                                             <td class="pad_top_8 width_145"><span class="form_labels"><?php echo __('Förnamn') ?>:</span></td>
-                                            <td class="viocolor pad_top_8"><?php echo $profileForm['firstname']->render(array('id' => 'firstname', 'class' => 'form_input contactus-inputs width_277')) ?>
+                                            <td class="viocolor pad_top_5"><?php echo $profileForm['firstname']->render(array('id' => 'firstname', 'class' => 'form_input contactus-inputs width_277')) ?>
                                                 <font color="#FF0000"><?php echo $firstname_error; ?></font></td>
                                         </tr>
                                         <tr>
@@ -185,7 +185,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="padtop_10 pad_btm_5">&nbsp;</td>
+                                            <td class="padtop_5 pad_btm_5">&nbsp;</td>
                                             <td class="viocolor pad_btm_14">&nbsp;</td>
                                         </tr>
                                         <tr>

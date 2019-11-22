@@ -29,7 +29,7 @@
  <?php if($rec_present == 0):?>
 	<span class="float_left" style="border:0px solid blue;">
 		<a class="float_left" style="cursor:pointer;" onclick="show_vote_meter_on_blog('<?php echo $valid_user; ?>')">
-			<img src="/images/vote_symb.gif" alt="icon"  class="float_left padtop_10"  />
+			<img src="/images/vote_symb.gif" alt="icon"  class="float_left padtop_5"  />
 			<b class="float_left main_link_color f_top">&nbsp;&nbsp;Rösta</b>
 		</a>
 	</span>

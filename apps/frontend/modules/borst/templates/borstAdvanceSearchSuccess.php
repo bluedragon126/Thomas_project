@@ -61,7 +61,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <td width="42%" colspan="5" class=""><input name="phrase_in_page" id="adv_phrase_in_page" type="text"  class="form_input width_277 adv_search_inputs mrg_btm_2"/></td>
                             <td width="58%" class=""><div class="form_labels_advsearch">Artiklar som innehåller denna fras</div></td>
                         </tr>
-                        <tr class="padtop_10">
+                        <tr class="padtop_5">
                             <td colspan="5" class=""><input name="author_name" type="text" id="adv_author_name"  class="form_input width_277 adv_search_inputs mrg_btm_2"/></td>
                             <td  class=""><div class="form_labels_advsearch">Användare/författare</div></td>
                         </tr>
