@@ -105,8 +105,7 @@ endforeach;
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCurrencies"><span class="<?php echo $submenu == 'borst_menu_currencies' ? 'sub-active' : '' ?>">Valutor</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSubscriber"><span class="<?php echo $submenu == 'borst_menu_subscriber' ? 'sub-active' : '' ?>">Portfölj</span></a></li>
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleListMenu/obj_id/1795"><span class="<?php echo $submenu == 'borst_menu_subscriberlist' ? 'sub-active' : '' ?>">VM-Update</span></a></li>
-                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleListMenu/kat_id/12"><span class="<?php echo $submenu == 'borst_menu_subscriberlist' ? 'sub-active' : '' ?>">Högbergs hörna</span></a></li>
-                    <li><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstWebinar'; ?>"><span class="<?php echo $submenu == 'borst_menu_chronicles' ? 'sub-active' : '' ?>">Webinarium</span></a></li>
+                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleListMenu/kat_id/12"><span class="<?php echo $submenu == 'borst_menu_subscriberlist' ? 'sub-active' : '' ?>">Högbergs hörna</span></a></li>                    
                 </ul>
             </li>
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span class="text-uppercase bt-shop <?php echo $parent_menu == 'top_bt_shop' ? 'nav-active' : '' ?>">BT-Shop</span></a>
@@ -155,6 +154,7 @@ endforeach;
 <div class="subnav-bar-wrap">
 
     <div class="subnav-bar-wrap-right">
+    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstWebinar'; ?>"><span class="subnav-bar <?php echo $third_menu == 'borst_menu_chronicles' ? 'sub-active' : '' ?>">Webinarium</span></a>    
         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList'; ?>"><span class="subnav-bar <?php echo $third_menu == 'list' ? 'sub-active' : '' ?>">Lista</span></a>
        <!-- <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/2127'; ?>"> <span class="subnav-bar <?php echo $third_menu == 'webinarium' ? 'sub-active' : '' ?>">Webinarium</span></a>-->
         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstChronicles"><span class="subnav-bar <?php echo $third_menu == 'bt_skolan' ? 'sub-active' : '' ?>">Krönikor</span></a>
