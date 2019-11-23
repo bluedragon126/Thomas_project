@@ -74,17 +74,17 @@ Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 <strong>Följ oss gärna</strong> på <a href="https://www.youtube.com/channel/UCfSGLtCAxSHqGhMZsQumqaQ" target="_blank" rel="noopener">Youtube, klicka här</a> för att se tidigare inspelade event av Trejdingklubben Online!<strong><br /><br />Har du problem med att ansluta dig,</strong> ring då Citrix support öppet dygnet runt: 020 797043 eller 08 525 037 62.
 
                     
-                  </div>
+                  
                    
                   <?php echo include_partial('global/bottom_footer_whitepage'); ?>            </p>
-                </div>
-            </div>
-        </div> 
-        <div class="inner_page_divider_3">&nbsp;</div>
+          
+        <div class="inner_page_divider_3">&nbsp;</div></div> </div>
         <div class="float_left mrg_left_testimonial margin_testimonial">
             <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
-        </div>
-    </div>
+        </div></div>  
+            
+        
+    
     <div class="rightbanner padding_0 margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>

@@ -46,7 +46,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="float_left widthall">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td colspan="6" class=""><span class="color_FF0000"><?php
+                                <td colspan="6" class="whp_subheading"><span class="color_FF0000"><?php
                     if ($login_error) {
                         ?>
                                             <span class="widthall float_left"><img src="/images/utrop.png" width="25" height="25" alt="Frågetecken" /></span><br />

@@ -117,7 +117,7 @@
 .ieadj{ margin-top:-17px;}
 </style>
 <![endif]-->
-<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blk.gif" /></span>
+<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blog.gif" /></span>
 <input type="hidden" id="userLogin" value="<?php echo $sf_user->isAuthenticated(); ?>" />
 <?php if ($valid_user == 1) { ?>
     <input type="hidden" id="object_id" value="<?php echo $article_data->object_id; ?>" />

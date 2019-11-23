@@ -25,8 +25,8 @@
 <div class="whp_title">Tradingportföljen</div>
                 <div class="whp_preamble">
                     Börstjänarens portfölj har har sedan starten 2007 hållit en jämn, hög nivå med en träffsäkerhet på 70% i användarvänliga rekylaffärer. </div> 
-                Tradingportföljen kan du sköta själv via ett abonnemang eller knyta ditt konto till automatisk handel.
-                <div class="float_left widthall"></div>
+                <strong>Tradingportföljen</strong> kan du sköta själv via ett abonnemang eller knyta ditt konto till automatisk handel.
+<div class="float_left widthall"></div>
                   <div class="whp_heading">Tradingportföljen abonnemang</div>
                   <p><strong>Med Tradingportföljen</strong><em> </em> kan du lära sig riktig trading med sunda principer för att hantera risken. Ett abonnemang ger dig insikt i en verklig portfölj och hur den förvaltas med tekniska kvantitativa modeller som grund. Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a>
                  

@@ -135,7 +135,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <div class="form_labels width_90 float_left"><?php echo __('Meddelande:') ?></div>
                 <div class="blank_2h widthall">&nbsp;</div>
                 <div class="float_left widthall">
-                    <textarea name="optional_message" rows="5" class="width_407"><?php echo $optional_message; ?></textarea>
+                    <textarea name="optional_message" rows="5" class="width_407 textarea_padding"><?php echo $optional_message; ?></textarea>
                 </div>
                 <div class="float_left mrg_top_20 widthall">
                     <!--<div class="g-recaptcha" data-sitekey="6Lc4mWMUAAAAAMeqAWz0gOzMo19ROnoKgtWq1TMp"></div>-->
@@ -146,9 +146,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <input type="submit" class="send_contact submit" name="submit" value="">
                 </div>
             </form>
-            </div>
-            </div>
-        </div>		
+          
+        </div>	</div>
+        <div class="inner_page_divider_3">&nbsp;</div>
+        <div class="float_left mrg_left_testimonial margin_testimonial">
+            <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
+        </div>	 </div> 	
     <div class="rightbanner padding_0 font_0 margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>

@@ -25,7 +25,7 @@
 			<div class="whp_title">Henry Boy Trading</div>
                 <div class="whp_preamble">
                     Sedan 2010 har Börstjänaren skickat ut Henry Boy tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
-                Henry Boy kan du sköta själv via ett abonnemang med aktiva affärsförslag, eller knyta ditt konto till automatisk handel.
+                <strong>Henry Boy</strong> kan du sköta själv via ett abonnemang med aktiva affärsförslag, eller knyta ditt konto till automatisk handel.
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Henry Boy abonnemang</div>
                   <p><strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>

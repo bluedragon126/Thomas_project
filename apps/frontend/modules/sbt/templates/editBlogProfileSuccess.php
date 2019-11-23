@@ -118,7 +118,7 @@
         }
     }
 </script>
-<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blk.gif" /></span>
+<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blog.gif" /></span>
 <div class="maincontentpage" id="minsid">
     <?php if ($own_profile == 1): ?>
         <?php if ($user_id): ?>

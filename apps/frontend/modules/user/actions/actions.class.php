@@ -277,7 +277,7 @@ class userActions extends sfActions
       }
 	  else
 	  { //echo $_SERVER['HTTP_REFERER'];die();
-	  	$this->getUser()->setAttribute('loginerror','* Ange giltiga användarnamn och lösenord');
+	  	$this->getUser()->setAttribute('loginerror','* Ange giltigt användarnamn och lösenord');
 	  	$this->redirect('user/loginWindow');
                 //$this->redirect($_SERVER['HTTP_REFERER']);
 	  }
