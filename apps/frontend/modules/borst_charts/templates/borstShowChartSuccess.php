@@ -57,7 +57,7 @@
         }
     }
 </script>
-<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blk.gif" /></span>
+<span class="float_left indicator loader loader_posiotion"><img src="/images/ajax-loader_blog.gif" /></span>
 <div class="innerleftdiv">
     <div class="leftinnercolor" id="leftinnercolor-chart">   
         <div id="chart_data">

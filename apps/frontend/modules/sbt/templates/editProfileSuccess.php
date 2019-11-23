@@ -124,7 +124,7 @@
 
                                         <tr>
                                             <td class="width_145"><span class="form_labels"><?php echo __('Användarnamn') ?>:</span></td>
-                                            <td class="viocolor"><?php
+                                            <td class="usrname"><?php
                                                 echo $user_data->username;
                                                 echo $profileForm['username']->render(array('id' => 'username', 'class' => 'form_input contactus-inputs display-none'));
                                                 ?>
