@@ -65,6 +65,8 @@ Logga in till webinariet via den länk som skickas ut i påminnelsemejlet.
 <li>
 Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 </li>
+<li>
+<a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>">Ta del av tidigare webinarier här!</a></li>
 </ul>
 </div>
 
