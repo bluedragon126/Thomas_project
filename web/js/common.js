@@ -2849,6 +2849,7 @@ $(document).ready(function() {
                         if (data == '') {
                             window.location.href = '/borst_shop/shopCart';
                         }
+                        location.reload();
                     }
                 });
             }
