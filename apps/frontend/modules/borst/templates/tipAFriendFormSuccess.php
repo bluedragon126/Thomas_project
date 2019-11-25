@@ -148,6 +148,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             </form>
             </div>
             </div>
+            <?php echo include_partial('global/inner_bottom_footer'); ?>
         </div>		
     <div class="rightbanner padding_0 font_0 margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>

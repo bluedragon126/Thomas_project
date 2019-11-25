@@ -3,6 +3,27 @@
     function paginationPopupGo(obj) {
         var column_id = $('#column_id').val();
         var page = $(obj).prev().val();
+        // var page = $(obj).html();
+        var current_column_order = $('#bloglist_current_column_order').val();
+        var pagination_numbers = $('.all_my_subscription_pagination').html();
+
+        $('.all_my_subscription_pagination').html('<span class="float_right">' + pagination_numbers + '</span>');
+        $('#pop-box-over').show();
+        $('.indicator').css('display', 'block');
+        $.ajax({
+            url: '/sbt/fetchMoreMySubscription?column_id=' + column_id + '&page=' + page + '&bloglist_current_column_order=' + current_column_order, //?page='+page,
+            success: function (data)
+            {
+                $('#my_subscription_list').html(data);
+                $('.indicator').hide();
+                $('#pop-box-over').hide();
+            }
+        });
+    }
+
+    function paginationUlGo(obj) {
+        var column_id = $('#column_id').val();
+        var page = $(obj).html();
         var current_column_order = $('#bloglist_current_column_order').val();
         var pagination_numbers = $('.all_my_subscription_pagination').html();
 
@@ -160,27 +181,22 @@
                             <span>Sid <?php echo $article_pager->getPage(); ?> av <?php echo $article_pager->getLastPage(); ?></span>
                             <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopupActive(this);"></span>
                             <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
-                                    <option noclick="1" value="0" class="forum_select_option_color" >Gå till sida...</option>
-                                    <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
-                                        <option noclick="1" class="color232222" <?php
-                                        if ($article_pager->getPage() == $pg) {
-                                            echo "selected='selected'";
-                                        }
-                                        ?> value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-                                            <?php } ?>
-                                </select>
-                                <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGoActive(this, 'fav_article_listing');">GA</div>
-                            </div>
+                                        <ul class="pagination_ul">
+                                        <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
+                                            <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                                        <?php } ?>
+                                        </ul>            
+                                    </div>
+                            
                             <span class="forum_sorting_wrapper">
-                                <div noclick="1" class="floatRight blog_drop-down-menus favourite_article_listing_column_row_all_active_subscription">
+                                <div noclick="1" class="floatRight blog_drop-down-menus blog_topic_listing_column_row_all_subscription">
                                     <ul noclick="1">
-                                        <li noclick="1"><span noclick="1" id="sortby_article" class="cursor" summary="fav_article_listing">Artikelrubrik</span></li>
+                                        <li noclick="1"><span noclick="1" id="sortby_article" class="cursor" summary="fav_article_listing">Artikelrubrik</span></li>                                        
                                     </ul>
                                 </div>
                                 <span noclick="1" class="floatRight forum_pagination_down_img forun_sorting_arrow cursor" onclick="javascript:sortingPopUp(this);"></span>
                                 <span class="floatRight">Sortera efter</span>
-                            </span>
+                            </span>            
                         <?php endif ?>
                 </div>
             </div>
