@@ -15,7 +15,7 @@
             <ul>
                 <li>
                     <a href="/">Tjänster</a> &gt;
-                    BT-portföljen
+                    Tradingportföljen
                 </li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
                  
                   
                   <div class="whp_heading">BT Multi Automatic</div>
-                    <p>Om du inte vill lägga order själv, kan du teckna dig för automatisk orderläggning. Det fungerar så att du öppnar ett konto med vår sponsor AvaTrade och knyter det till handelsprogrammet BT Multi Automatic som lägger order på ditt konto. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a><br>
+                    <p>Om du inte vill lägga order själv, kan du teckna dig för automatisk orderläggning. Det fungerar så att du öppnar ett konto med vår sponsor AvaTrade och knyter det till handelsprogrammet BT Multi Automatic som lägger order på ditt konto enligt samma principer som vårt portföljabonnemang. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

@@ -32,7 +32,7 @@
                  
                   
                   <div class="whp_heading">Henry Boy Automatic</div>
-                    <p>Om man inte vill lägga order själv, går det bra att teckna sig för Henry Boy Automatic. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a><br>
+                    <p>Om man inte vill lägga order själv, går det bra att teckna sig för Henry Boy Automatic. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
            
         

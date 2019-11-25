@@ -4,7 +4,7 @@
             <ul>
                 <li>
                     <a href="/">Börstjänaren</a> &gt;
-                    Krönikor</li>
+                    Arkiv</li>
             </ul>
         </div>
         <div class="inner_page_divider">&nbsp;</div>
@@ -14,107 +14,10 @@
             
             
             
-                <div class="whp_title">Krönikor</div>
-                <div class="whp_preamble">Under denna vinjett kan du bland annat finna texter med lite längre hållbarhet, sorterade på författare. Klicka på texten i en avdelning för att få upp en lista med  respektive  artiklar.
-                </div>
-                <div class="float_left widthall">
-                
-                  
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/12' ?>">
-                    <div class="whp_heading">FinansGurun</div>
- <div class="whp_subheading">Göran Högberg</div>
-                  <div class="float_left widthall">Göran Högberg är Börstjänarens kaxige finansguru med oslagbart bred och djup inblick i och utblick över världsekonomin. Nationalekonom med 25 års marknadserfarenhet och en alldeles egen sifferakrobatik och språkdräkt.ppen för utomstående skribenter och krönikörer med intressanta och lärorika texter med anknytning till börs och ekonomi.</div>
-                  <img src="/images/grafik/GH.png" width="38" style="margin-top:8px" alt="signGH"/></a>
-                  
-                 <br> <br>
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/368' ?>">
-                  <div class="whp_heading">Trejdingkrönikor</div>
- <div class="whp_subheading">Henrik Hallenborg</div>
-                  <div class="float_left widthall">Henrik Hallenborg handlar med terminer, aktier och valutor för eget och investerares konton på CME, NYSE, Nasdaq och FOREX. Henrik är en av grundarna till Börstjänaren.</div>
-                  <img src="/images/grafik/HH.png" width="38" alt="signHH"  style="margin-top:8px"/></a>
-                  
-                  <br><br>
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/366' ?>">
-                  <div class="whp_heading">Börsjuridik</div>
- <div class="whp_subheading">med Harry Schüssler</div>
-                  <div class="float_left widthall">Harry Schüsslers aktiekrönikor liknar ingenting annat. Med en unik kombination av juridisk expertis, glasklar analytisk och taktisk blick samt språklig skärpa tar han oss med på vindlande färder i aktuella spörsmål med lagboken som självklart rättesnöre.</div>
-                  <img src="/images/grafik/HS.png" width="38" alt="signHS"  style="margin-top:5px"/></a>
-                  
-                  <br><br>
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/374' ?>">
-                  <div class="whp_heading">Börsfilosofi</div>
- <div class="whp_subheading">med Thomas Sandström</div>
-                  <div class="float_left widthall">Thomas Sandström är redaktör på Börstjänaren och lämnar ibland såväl tekniska analyser som textalster av lite mera filosofisk natur.</div><img src="/images/grafik/TS.png" width="38" alt="signTS"  style="margin-top:8px"/></a>
-                  
-                  <br><br>
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/3' ?>">
-                  <div class="whp_heading">Nattsudd, kåserier</div>
- <div class="whp_subheading">med Professor Larsson</div>
-                  <div class="float_left widthall">Professor Larsson är Börstjänarens självutnämnde börsexpert, som dock inte är mycket att ta rygg på, för den som vill ”göra storkovan”, något som vår käre professor ständig strävar efter men dessvärre ständigt lyckas undvika.</div>
-                  <img src="/images/grafik/PL.png" width="38" alt="signPL"  style="margin-top:8px"/></a>
-                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/18' ?>">
-                        <div class="whp_heading">Gästkrönikor</div>
- <div class="whp_subheading">Fristående skribenter</div>
-                  <div class="float_left widthall">Börstjänaren är öppen för utomstående skribenter och krönikörer med intressanta och lärorika texter med anknytning till börs och ekonomi.</div></a>
-                  <br>
-                  <br>
-                  <br>
-                  
-                </div>
-            </div>
-               
-              <div class="float_left widthall kronikorinfo">
-                                   
-                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/kat_id/9' ?>">
-                        <div class="whp_heading"><?php echo __('Bosse Börstjänare ') ?></div>
-                        <b>Bosse Börstjänare</b>
-                        besvarar läsarbrev och ser till att hjälpa dem som <br/>
-                        på olika sätt hamnat i trångmål eller bryderier på börsen. Utmärkt som <br/>
-                        introduktion för mindre erfarna aktiespekulanter.
-                    </a></div>
-                    
-                     <div class="float_left widthall">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/12' ?>">
-                        <div class="whp_heading"><?php echo __('Börspsykologi ') ?></div>
-                        <b>Det största hindret</b>
-                        mot en lyckosam tradingkarriär är du själv. I våra<br/>
-                        krönikor om tradingpsykologi får du inblick i vilka psykologiska utmaningar<br/>
-                        som möter en trader och vad som kan göras för att övervinna dem
-                    </a>               
+                <div class="whp_title">Arkiv</div>
+                <div class="whp_preamble">Under denna vinjett kan du bland annat finna artikelserier, krönikor och andra texter med lite längre hållbarhet. Klicka på texten i en avdelning för att få upp en lista med  respektive  artiklar.
                 </div>
                 
-                <div class="float_left widthall">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/11' ?>">
-                        <div class="whp_heading"><?php echo __('Riskhantering ') ?></div>
-                        <b>Dessa krönikor är</b>
-                        den allra mest lönsamma läsningen du någonsin<br/>
-                        kommer att finna på Börstjänaren! Riskhantering och money management<br/>
-                        är den oundgängliga nyckeln till vinnande aktiehandel. Läs och lär hur<br/>
-                        man skall tänka och agera för att överleva för att trada även i morgon!
-                    </a>
-                    <!--<div class="whp-border">&nbsp;</div>!-->
-                </div>
-                <div class="float_left widthall">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/13' ?>">
-                        <div class="whp_heading"><?php echo __('Börsstrategi & börstaktik') ?></div>
-                        <b>Varje framgångsrik trader</b>
-                        har sin egen strategi, sitt eget sätt att <br/>
-                        attackera marknaden. Här kan du bl. a. läsa om de olika strategier <br/>
-                        vi tillämpar i våra analyser och vår trading.
-                    </a>
-                    <!--<div class="whp-border">&nbsp;</div>!-->
-                </div>
-               <div class="float_left widthall">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/21' ?>">
-                        <div class="whp_heading"><?php echo __('Klassisk teknisk analys') ?></div>
-                        <b>Den sk tekniska aktieanalysen</b>
-                        bygger på studium av grafer och <br/>
-                        grunderna identifiering av trender. I denna digra artikelserie går vi igen <br/> 
-                        i den klassiska tekniska analysen, dvs det som farfar gjorde utan <br/>
-                        datorernas hjälp.
-                    </a>
-                    <!--<div class="whp-border">&nbsp;</div>!-->
-                </div>
                 <div class="float_left widthall">
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/12' ?>">
                         <div class="whp_heading"><?php echo __('Börspsykologi ') ?></div>
@@ -164,10 +67,65 @@
                         har exploderat på senare år. Optioner,<br/>
                         terminer och warranter har fått sällskap av CFD:er, ETF:er, Open End<br/>
                         Certifikat mm. Här reder vi ut begreppen och förklarar fördelar<br/>
-                        och risker med produkterna.<br/><br/><br/>
+                        och risker med produkterna.
                     </a>
                     <!--<div class="whp-border">&nbsp;</div>-->
                 </div>
+                <div class="float_left widthall">
+                <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/18' ?>"><div class="whp_heading">Gästkrönikor</div>
+ <div class="whp_subheading">Fristående skribenter</div>
+                  <div class="float_left widthall">Börstjänaren är öppen för utomstående skribenter och krönikörer med intressanta och lärorika texter med anknytning till börs och ekonomi.</div></a>
+                  
+                <div class="float_left widthall kronikorinfo">
+                                   
+                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/kat_id/9' ?>">
+                        <div class="whp_heading"><?php echo __('Bosse Börstjänare ') ?></div>
+                        <b>Bosse Börstjänare</b>
+                        besvarar läsarbrev och ser till att hjälpa dem som <br/>
+                        på olika sätt hamnat i trångmål eller bryderier på börsen. Utmärkt som <br/>
+                        introduktion för mindre erfarna aktiespekulanter.
+                    </a></div>
+                <div class="float_left widthall">
+                
+                  
+                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/12' ?>">
+                    <div class="whp_heading">FinansGurun</div>
+ <div class="whp_subheading">Göran Högberg</div>
+                  <div class="float_left widthall">Göran Högberg är Börstjänarens kaxige finansguru med oslagbart bred och djup inblick i och utblick över världsekonomin. Nationalekonom med 25 års marknadserfarenhet och en alldeles egen sifferakrobatik och språkdräkt.ppen för utomstående skribenter och krönikörer med intressanta och lärorika texter med anknytning till börs och ekonomi.</div>
+                  <img src="/images/grafik/GH.png" width="38" style="margin-top:8px" alt="signGH"/></a>
+                  
+                 <br> <br>
+                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/368' ?>">
+                  <div class="whp_heading">Trejdingkrönikor</div>
+ <div class="whp_subheading">Henrik Hallenborg</div>
+                  <div class="float_left widthall">Henrik Hallenborg handlar med terminer, aktier och valutor för eget och investerares konton på CME, NYSE, Nasdaq och FOREX. Henrik är en av grundarna till Börstjänaren.</div>
+                  <img src="/images/grafik/HH.png" width="38" alt="signHH"  style="margin-top:8px"/></a>
+                  
+                  <br><br>
+                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/366' ?>">
+                  <div class="whp_heading">Börsjuridik</div>
+ <div class="whp_subheading">med Harry Schüssler</div>
+                  <div class="float_left widthall">Harry Schüsslers aktiekrönikor liknar ingenting annat. Med en unik kombination av juridisk expertis, glasklar analytisk och taktisk blick samt språklig skärpa tar han oss med på vindlande färder i aktuella spörsmål med lagboken som självklart rättesnöre.</div>
+                  <img src="/images/grafik/HS.png" width="38" alt="signHS"  style="margin-top:5px"/></a>
+                  
+                  <br><br>
+                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/374' ?>">
+                  <div class="whp_heading">Börsfilosofi</div>
+ <div class="whp_subheading">med Thomas Sandström</div>
+                  <div class="float_left widthall">Thomas Sandström är redaktör på Börstjänaren och lämnar ibland såväl tekniska analyser som textalster av lite mera filosofisk natur.</div><img src="/images/grafik/TS.png" width="38" alt="signTS"  style="margin-top:8px"/></a>
+                  
+                  <br><br>
+                  <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/3' ?>">
+                  <div class="whp_heading">Nattsudd, kåserier</div>
+ <div class="whp_subheading">med Professor Larsson</div>
+                  <div class="float_left widthall">Professor Larsson är Börstjänarens självutnämnde börsexpert, som dock inte är mycket att ta rygg på, för den som vill ”göra storkovan”, något som vår käre professor ständig strävar efter men dessvärre ständigt lyckas undvika.</div>
+                  <img src="/images/grafik/PL.png" width="38" alt="signPL"  style="margin-top:8px"/></a>
+                  
+                        
+                  
+                </div>
+            </div>
+                                                      
                     
             <?php echo include_partial('global/bottom_footer_whitepage'); ?>
         </div>

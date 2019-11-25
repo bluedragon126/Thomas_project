@@ -69,7 +69,7 @@ include_component('isicsBreadcrumbs', 'show', array(
              <em>Aktuell information från Börstjänaren!</em>
                 <br />
                 <br />
-                <b>Klicka i, respektive klicka ur, rutan nedan </b>och spara ditt val med REGISTRERA-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
+                <b>Klicka i, respektive klicka ur, rutan nedan </b>och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                     
                 <div class="blank_7h widthall">&nbsp;</div>
@@ -128,33 +128,9 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
                 <div class="float_left">
-                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras – 
-                <br>
-                dvs registreras och avregistreras – på <a href="/borst/borstNewsletter"> separat sida</a> (se nedan).
+                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a><br>
                 
-             
-                
-                
-                  <br>
-                
-                
-                <div class="whp_heading">Veckobrevet</div> 
-                               
-                        
-                        
-                  <strong>Veckobrevet</strong> utgörs huvudsakligen av de kostnadsfria marknadsbreven <strong>VM-Update</strong> (utkommer måndagar) och <strong>Veckans trejd</strong> (utkommer när gynsamma lägen uppstår). Veckobrevet kräver inget konto på Börstjänaren. <a href="/borst/borstNewsletter">Anmäl dig till veckobrevet här.</a></p>
-                  
-              
-                  
-                 <p> <a href="/borst/borstNewsletter"><img src="/images/new_home/VM-Update.png" style="margin:8px 0 15px" width="300" border="0" alt="imag" /></a></p>
-                         
-                        
-                            
-                        
-                        
-                        
-                        
-                        
+                                    
                         
                 </div>
 

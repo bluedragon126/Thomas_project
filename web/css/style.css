@@ -5061,7 +5061,7 @@ ul.cartStep2 li {
     font-size: 12px;
     line-height: 24px;
     height: 180px;
-    width: 118px;
+    width: 139px;
     position: absolute;
     top: 19px;
     z-index: 999;
@@ -5072,7 +5072,7 @@ ul.cartStep2 li {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #3a4769;
-    margin-left: 11px;
+    margin-left: 3px;
 	margin-top: 6px;
     display: none;
     hyphens: manual;

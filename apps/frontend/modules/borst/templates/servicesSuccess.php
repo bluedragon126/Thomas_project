@@ -24,15 +24,15 @@
             <div class="inner_page_content_main">
 <div class="whp_title">Våra två storsäljare</div>
                 <div class="whp_preamble">
-                    Aktiv handlare eller långsiktig investerare? Börstjänarens två storsäljare ger dig allt du behöver för en aktiv trejdning på både kort och lång sikt!</div>
+                    Aktiv handlare eller långsiktig investerare? Börstjänarens två storsäljare ger dig allt du behöver för en aktiv trading på både kort och lång sikt!</div>
                 <strong>Med Börstjänarens abonnemang</strong> lär du dig att trada professionellt så att du en dag kan handla helt på egen hand.
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Tradingportföljen</div>
-                  <p><strong> Tradingportföljen </strong>skannar av aktiemarknaden och   redovisar lättfattligt chansrika affärsförslag både för köp och blankning, så att du själv kan förvalta ditt kapital och tjäna pengar både i uppgång och nedgång<strong>. </strong> Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a>
+                  <p><strong> Tradingportföljen </strong>skannar av aktiemarknaden och   redovisar lättfattligt chansrika affärsförslag både för köp och blankning, så att du själv kan förvalta ditt kapital och tjäna pengar både i uppgång och nedgång<strong>. </strong> Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/portfolio">här!</a>
                  
                   
                   <div class="whp_heading">Henry Boy Trading</div>
-                    <p>Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a><br>
+                    <p>Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

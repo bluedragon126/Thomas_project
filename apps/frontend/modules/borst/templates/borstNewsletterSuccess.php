@@ -106,26 +106,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 <p><strong>OBS!</strong> 
                          <br>
-                         Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras på <a href="/borst/borstDayletter"> separat sida.</a> (Se nedan)
-                  </p>
+                  Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras på <a href="/borst/borstDayletter"> separat sida.</a></p>
                 
                 
                 
                 
-                <div class="blank_45h widthall"></div>
-                
-                
-                
-                <div class="whp_heading">Dagsbrevet</div>                
-                        <strong>Dagsbrevet</strong> BÖRSTJÄNAREN JUST NU! utkommer normalt varje vardag utom måndag till användare som registrerat ett (gratis) konto på Börstjänaren och valt att <a href="/borst/borstDayletter">teckna sig för detta. </a>
-                        
-                         <br>
-                         
-                      <p>  <a href="/borst/borstDayletter"><img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin: 8px 0px -6px -6px" /></a>
-                        
-                     
-                        
-                         </p>
+             
                         
                         
                     

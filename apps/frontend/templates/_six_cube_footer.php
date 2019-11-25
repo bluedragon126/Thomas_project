@@ -38,13 +38,13 @@
     
     <div class="bottom_link_heading_bg2">
         <div class="akteirwrapper">
-            <span class="bottom_link_heading">Statistik</span>
+            <span class="bottom_link_heading">Webinarium</span>
         </div>
         <div class="akteirwrapper">
-            <span class="bottom_link_heading">Köp &amp; Sälj</span>
+            <span class="bottom_link_heading">Högbergs hörna</span>
         </div>
         <div class="akteirwrapper">
-            <span class="bottom_link_heading">Krönika</span>
+            <span class="bottom_link_heading">VM Update</span>
         </div>
     </div>
     <div>
