@@ -59,6 +59,18 @@
         var titletext = $('title').text()+' | '+twitimagetext;
         $('title').text(titletext);
         /* code by sandeep end */
+
+        var checkRight = $(".minsid_rightdiv").height();
+        var checkLeft = $(".innerleftdiv_blog").height();
+  
+        if(checkLeft > checkRight)
+        {
+            $(".minsid_rightdiv").css({"height":checkLeft+"px"});
+        } 
+        else
+        {
+            $(".innerleftdiv_blog").css({"height":checkRight+"px"});
+        }
     });
 	    
     function sortingPopUp(obj){
@@ -159,8 +171,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="inner_page_divider_3">&nbsp;</div>
+                    <div class="float_right margin_right_testimonial ">
+                        <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
+                    </div>
+                    <div class="inner_page_divider_3">&nbsp;</div>
                 </div>
-
+                
             </div>
         </div>
     </div>
@@ -172,7 +189,4 @@
     </div>
 <?php endif; ?>
 <!--</div>-->
-<div class="inner_page_divider_3">&nbsp;</div>
-<div class="float_right margin_right_testimonial margin_testimonial">
-    <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
-</div>
+
