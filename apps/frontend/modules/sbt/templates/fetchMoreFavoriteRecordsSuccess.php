@@ -105,17 +105,11 @@
                     <span>Sid <?php echo $article_pager->getPage(); ?> av <?php echo $article_pager->getLastPage(); ?></span>
                     <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopupActive(this);"></span>
                     <div class="forum_popup_pagination_wrapper" noclick="1" >
-                        <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
-                            <option noclick="1" value="0" class="forum_select_option_color">Gå till sida...</option>
-                            <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
-                                <option noclick="1" class="color232222" <?php
-                                if ($article_pager->getPage() == $pg) {
-                                    echo "selected='selected'";
-                                }
-                                ?> value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
-                                    <?php } ?>
-                        </select>
-                        <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGoActive(this, 'fav_article_listing');">GA</div>
+                        <ul class="pagination_ul">
+                        <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
+                            <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                        <?php } ?>
+                        </ul>            
                     </div>
                     <span class="forum_sorting_wrapper">
                         <div noclick="1" class="floatRight blog_drop-down-menus favourite_article_listing_column_row_all_active_subscription">
