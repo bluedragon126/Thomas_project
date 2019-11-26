@@ -4300,11 +4300,11 @@ class sbtActions extends sfActions
 		$blog_query = $favorite->getSpecifiedFavorite('blog',$logged_user);
         $chart_query = $btchart_favorite->getSpecifiedFavorite($logged_user);
 		
-		$this->analysis_pager = $mymarket->getPagerForAll('SbtFavorite',2,$analysis_query,$request->getParameter('page', 1));
-		$this->article_pager = $mymarket->getPagerForAll('SbtFavorite',2,$article_query,$request->getParameter('page', 1));
-		$this->forum_pager = $mymarket->getPagerForAll('SbtFavorite',2,$forum_query,$request->getParameter('page', 1));
-		$this->blog_pager = $mymarket->getPagerForAll('SbtFavorite',2,$blog_query,$request->getParameter('page', 1));
-        $this->chart_pager = $mymarket->getPagerForAll('BtchartFavorite',2,$chart_query,$request->getParameter('page', 1));
+		$this->analysis_pager = $mymarket->getPagerForAll('SbtFavorite',10,$analysis_query,$request->getParameter('page', 1));
+		$this->article_pager = $mymarket->getPagerForAll('SbtFavorite',10,$article_query,$request->getParameter('page', 1));
+		$this->forum_pager = $mymarket->getPagerForAll('SbtFavorite',10,$forum_query,$request->getParameter('page', 1));
+		$this->blog_pager = $mymarket->getPagerForAll('SbtFavorite',10,$blog_query,$request->getParameter('page', 1));
+        $this->chart_pager = $mymarket->getPagerForAll('BtchartFavorite',10,$chart_query,$request->getParameter('page', 1));
 	}
 	
 	/*

@@ -31,10 +31,10 @@
         $('#pop-box-over').show();
         $('.indicator').css('display', 'block');
         $.ajax({
-            url: '/sbt/fetchMoreMySubscription?column_id=' + column_id + '&page=' + page + '&bloglist_current_column_order=' + current_column_order, //?page='+page,
+            url: '/sbt/fetchMoreFavoriteRecords?id=fav_article_listing' + '&column_id=' + column_id + '&page=' + page + '&bloglist_current_column_order=' + current_column_order, //?page='+page,
             success: function (data)
             {
-                $('#my_subscription_list').html(data);
+                $("#article_fav_list").html(data);
                 $('.indicator').hide();
                 $('#pop-box-over').hide();
             }
@@ -181,12 +181,12 @@
                             <span>Sid <?php echo $article_pager->getPage(); ?> av <?php echo $article_pager->getLastPage(); ?></span>
                             <span noclick="1" class="forum_pagination_down_img cursor" onclick="javascript:paginationPopupActive(this);"></span>
                             <div class="forum_popup_pagination_wrapper" noclick="1" >
-                                        <ul class="pagination_ul">
-                                        <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
-                                            <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
-                                        <?php } ?>
-                                        </ul>            
-                                    </div>
+                                <ul class="pagination_ul">
+                                <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
+                                    <li onclick="javascript:paginationUlGo(this);"><?php echo $pg; ?></li>
+                                <?php } ?>
+                                </ul>            
+                            </div>
                             
                             <span class="forum_sorting_wrapper">
                                 <div noclick="1" class="floatRight blog_drop-down-menus blog_topic_listing_column_row_all_subscription">
