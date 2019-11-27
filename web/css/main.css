@@ -58,7 +58,7 @@
 body{
 	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:19.5px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
-p{line-height:19px;}
+p{line-height:19.5px;}
 a{text-decoration:none;color:#009cd9;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}
@@ -548,7 +548,15 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .padtop_5{padding:5px 0 0 0;position:relative;}
 .padtop_3{padding:3px 0 0 0;position:relative;}
 .viocolor{color:#7D78A0;}
-.usrname{color: #b233ff;font-size:18px;font-weight:bold;} 
+.usrname{background-color:#ebeff3;
+border: 1px solid #ebeff3;
+color: #232222;
+height: 30px;
+width: 286px;
+font-size: 1.05em;
+letter-spacing: 0.02em;
+padding-left: 6px;
+} 
 .msgheading{float:left;position:relative;color:#232222;font-size:18px;padding:0 0 20px 0}
 .messagewrapper{float:left;position:relative;border-top:2px solid #ced2d0;width:100%;padding:10px 0 10px 0}
 .messagewrapper .info{float:left;position:relative;padding:0 0 0 15px;line-height:18px;color:#362a43;width:87%;}

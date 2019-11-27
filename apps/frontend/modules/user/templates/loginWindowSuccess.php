@@ -90,10 +90,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <div class="blank_5h widthall">&nbsp;</div></td>
                             </tr>-->
                             <tr>
-                                <td colspan="6" class="main_link_color padding_top_5" height="30 px" vertical-align="bottom"><a style="margin-left:110px" class="main_link_color" href="<?php echo 'http://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
+                                <td colspan="6" class="main_link_color padding_top_1" height="30 px" vertical-align="bottom"><a style="margin-left:110px" class="main_link_color" href="<?php echo 'http://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
                             </tr>
                         </table>
-                        <div class="blank_2h widthall">&nbsp;</div>
+                        <div class="blank_20h widthall">&nbsp;</div>
                         <div class="registerbtn" style="margin-left:110px;">
                             <input type="submit" class="loginBtn submit cursor" value="" name="submit" />
                         </div>

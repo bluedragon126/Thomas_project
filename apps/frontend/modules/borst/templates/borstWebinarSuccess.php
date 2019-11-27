@@ -30,7 +30,7 @@
               <strong>Då och då</strong> har vi också inbjudna föreläsaree. Det går bra att i förväg <a href="../../../../../../borst/contactUs" target="_blank" rel="noopener noreferrer">kontakta oss</a> med förslag på intressanta marknader att analysera, eller frågor rörande en aktiv börshandel.</p>
               
               
-           <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: 0px 0px 0px 0px;" src="/images/article_images/img/webinarium_wed.png" alt="http://www.thetradingaspirants/images/article_images/img/webinarium_wed.png" width="475px" /></a></p></div>
+           <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: 40px 0px 0px 0px;" src="/images/article_images/img/webinarium_wed.png" alt="http://www.thetradingaspirants/images/article_images/img/webinarium_wed.png" width="475px" /></a></p></div>
            
    
              
@@ -45,12 +45,12 @@
 
 Registrera dig via länken ovan ovan <a href="https://www2.gotomeeting.com/register/117986234">eller klicka här!</a>
 </li>
-
+<br />
 
 <li>
 Du får en bekräftelse skickad till din e-post.
 </li>
-
+<br />
 
 <li>
 I god tid före webinariet skickas ett påminnelsemejl ut.
@@ -65,6 +65,9 @@ Logga in till webinariet via den länk som skickas ut i påminnelsemejlet.
 <li>
 Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 </li>
+<br />
+
+
 <li>
 <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>">Ta del av tidigare webinarier här!</a></li>
 </ul>
