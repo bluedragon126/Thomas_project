@@ -32,7 +32,11 @@
                  
                   
                   <div class="whp_heading">Henry Boy Trading</div>
-                    <p>Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy">här!</a><br>
+                    <p>Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy">här!</a>
+                    
+                    <div class="whp_heading">Automatisk handel</div>
+                  <p><strong> Båda dessa tjänster </strong>kan också anslutas till automatisk handel, så att du inte behöver lägga order själv utan dessa utförs automatiskt på din depå enligt vald strategi. Du behöver då inte ha något abonnemang på Börstjänaren. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/automatic">här!</a>
+                    
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>
