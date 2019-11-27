@@ -65,6 +65,9 @@ class borstActions extends sfActions
 		$this->bottom_commodities_links = ArticleTable::getInstance()->getHomeCommodities(0,10,$isSuperAdmin);
 		$this->bottom_currencies_links = ArticleTable::getInstance()->getHomeCurrencies(0,10);
 		$this->bottom_buysell_links = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin);
+	// $cat_data = ArticleCategoryTable::getInstance()->getAllBorstArticleCategories();
+	// $type_data = ArticleTypeTable::getInstance()->getAllBorstArticleTypes();
+	// $object_data = ObjektTable::getInstance()->getAllBorstArticleObjects();
 		$this->bottom_statistics_links = ArticleTable::getInstance()->getHomeStatisticsArticle(0,10,$isSuperAdmin);
 		$this->bottom_aktier_links = ArticleTable::getInstance()->getHomeAktier(0,10,$isSuperAdmin);
 		$this->bottom_kronika_links = ArticleTable::getInstance()->getHomeKronikaArticle(0,10,$isSuperAdmin);

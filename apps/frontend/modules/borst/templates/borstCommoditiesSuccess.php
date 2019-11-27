@@ -372,6 +372,8 @@ endfor;
     </div>
 </div>
 
+<div class="load_article cursor" id="load_article_1" pageno="2"><img src="/images/new_home/load_articles.png" title="Load more article" width="978" /></div>
+
 <div class="bottom_shop_border">&nbsp;</div>
 <div class="footer">
     <div class="footer_inner_div">
@@ -427,6 +429,7 @@ endfor;
 endforeach;
 ?>
         </div>
+        <div class="morearticle"></div>
         <div class="footer_divider_div">&nbsp;</div>
         <div class="bt-shop_border_home"><img src="/images/new_home/bt-shop_border_home.png" width="970" /></div>
         <div class="footer_main">
