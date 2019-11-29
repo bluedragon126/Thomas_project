@@ -170,7 +170,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_1x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_1x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_1x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -427,7 +427,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -855,7 +855,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
 
@@ -1163,7 +1163,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -1404,7 +1404,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -1654,7 +1654,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -2152,7 +2152,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -5598,7 +5598,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
@@ -5695,7 +5695,7 @@ class borstActions extends sfActions
         $fcol_hor_title = array('home_heading_l_3b','home_heading_l_2b');
         $fcol_ver_title = array('home_heading_l_2','home_heading_l_3');
         $fcol_big_title = array('home_heading_l_1','home_heading_l_4','home_heading_l_1');
-        $fcol_body_text_6_7 = array('home_body_l_1x','home_body_l_2x');
+        $fcol_body_text_6_7 = array('home_body_l_2x','home_body_l_2x');
         $fcol_body_text_2_3 = array('home_body_l_2x','home_body_l_1x');
         $fcol_body_text_1_4_5 = array('home_body_l_1x','home_body_l_2x','home_body_l_1x');
         $mcol_body_text = array('home_body_m_1','home_body_m_2','home_body_m_3','home_body_m_4');
