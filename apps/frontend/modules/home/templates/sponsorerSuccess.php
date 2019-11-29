@@ -54,7 +54,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <br />
                 <br />
                 
-                <!-- <p><img src="../../../../../../images/article_images/border-art-spons.png" alt="border_sponsorer" /></p>
+                <!-- <p><img src="../../../../../../images/border-art-spons.png" alt="border_sponsorer" /></p>
 
                 <div class="whp_heading_2"><?php echo __('Bank Vontobel Europe AG ') ?></div>
                 <a href="https://certificates.vontobel.com/SE/SV/Hem">Vontobel </a> är en schweizisk grupp av privatbanker med internationell inriktning, grundad redan 1924 i Zürich. Med omkring 1 400 medarbetare världen över, erbjuder Vontobel förstklassiga, skräddarsydda tjänster åt internationella kunder. Affärsområdet Financial Products är specialiserat på emission, försäljning och market making av Bull & Bear-certifikat och hävstångsprodukter med svenska, europeiska, amerikanska och schweiziska underliggande tillgångar.<br />
@@ -69,7 +69,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     
                     
                     
-                    <p><img src="../../../../../../images/article_images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
+                    <p><img src="../../../../../../images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
                     
                     
 
@@ -86,7 +86,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 <p><a href="http://www.cmcmarkets.se/sv?iaid=446240"> <img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_CMC.png" alt="http://www.pursegainer.com/images/new_home/Öppna konto hos CMC Markets här!.png" width="310;" /></a></p>
 
 
-<p><img src="../../../../../../images/article_images/border-art-spons.png" alt="border_sponsorer" /></p>!-->
+<p><img src="../../../../../../images//border-art-spons.png" alt="border_sponsorer" /></p>!-->
 
 
                 <div class="whp_heading_2" id="AVA"><?php echo __('AvaTrade') ?></div>
@@ -112,7 +112,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     
                     
                     
-                    <p><img src="../../../../../../images/article_images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
+                    <p><img src="../../../../../../images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
                     
 
 
@@ -131,7 +131,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
 
-<p><img src="../../../../../../images/article_images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
+<p><img src="../../../../../../images/border-art-spons.png" width="500;" alt="border_sponsorer" /></p>
 
             
 

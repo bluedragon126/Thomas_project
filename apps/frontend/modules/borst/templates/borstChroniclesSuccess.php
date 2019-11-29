@@ -86,7 +86,7 @@
                         introduktion för mindre erfarna aktiespekulanter.
                     </a></div>
                 <div class="float_left widthall">
-                
+                <div class="whp_heading">o O o  Signerat  o O o</div>
                   
                   <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/12' ?>">
                     <div class="whp_heading">FinansGurun</div>
@@ -128,12 +128,12 @@
                                                       
                     
             <?php echo include_partial('global/bottom_footer_whitepage'); ?>
-        </div>
+        </div></div>
         <div class="inner_page_divider_3">&nbsp;</div>
         <div class="float_left mrg_left_testimonial margin_testimonial">
             <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
         </div>
-    </div>
+    </div></div>
     <div class="rightbanner padding_0 font_0 margin_top_ann">
             <div class="home_ad_r float_left font_size_12 ">Annons</div>
             <?php //include_partial('global/ad_message') ?>

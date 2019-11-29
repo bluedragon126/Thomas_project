@@ -23,9 +23,7 @@
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
                 <div class="whp_title">Börstjänarens webinarium: Tradingklubben online</div>
-                <div class="whp_preamble">På dessa träffar gör vi lättfattliga genomgångar av t ex någon köpintressant aktie eller marknaden i stort. Det finns också möjlighet att ställa frågor i slutet av varje session, som brukar ta ca 40 min..
-                
-              <br><br />
+                <div class="whp_preamble">På dessa träffar gör vi lättfattliga genomgångar av t ex någon köpintressant aktie eller marknaden i stort. Det finns också möjlighet att ställa frågor i slutet av varje session, som brukar ta ca 40 min.<br><br />
               
               <strong>Då och då</strong> har vi också inbjudna föreläsaree. Det går bra att i förväg <a href="../../../../../../borst/contactUs" target="_blank" rel="noopener noreferrer">kontakta oss</a> med förslag på intressanta marknader att analysera, eller frågor rörande en aktiv börshandel.</p>
               

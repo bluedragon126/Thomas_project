@@ -56,9 +56,9 @@
 	font-family:"Georgia Bold Italic";src:url("../fonts/Georgia-BoldItalic.ttf") format('truetype');src:url("../fonts/Georgia-BoldItalic.woff") format('woff');
 	}
 body{
-	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:19.5px;hyphens:auto;word-wrap:break-word;lang:sv;
+	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:20px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
-p{line-height:19.5px;}
+p{line-height:20px;}
 a{text-decoration:none;color:#009cd9;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}

@@ -417,7 +417,7 @@ width:34%;
                         <tr>
                             <td  class="td_input" ><div class="form_labels"><?php echo __('Postnr') ?> / <?php echo __('Ort') ?></div></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">
-                                <?php echo $profileForm['zipcode']->render(array('id' => 'zipcode', 'class' => 'form_input width65 contactus-inputs float_left margin_rgt_4', 'size' => '10', 'maxlength' => '10')) ?> <?php echo $profileForm['city']->render(array('id' => 'city', 'class' => 'form_input width105 contactus-inputs float_left', 'size' => '20', 'maxlength' => '20')) ?>
+                                <?php echo $profileForm['zipcode']->render(array('id' => 'zipcode', 'class' => 'form_input width65 contactus-inputs float_left margin_rgt_4', 'size' => '10', 'maxlength' => '10')) ?> <?php echo $profileForm['city']->render(array('id' => 'city', 'class' => 'form_input width105 contactus-inputs float_left', 'size' => '12', 'maxlength' => '20')) ?>
                                 <span class="float_left">&nbsp;</span>
                                 <div class="error_list_outer clearAll">
                                     <ul class="error_list">

@@ -23,7 +23,7 @@
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
  <div class="whp_title" id="AVA"><?php echo __('AvaTrade') ?></div>
- <div class="whp_preamble">AvaTrade är Börstjänarens sponsor och rekommenderade mäklare för CFD-handel, som vi samarbetat med kontinuerligt  alltsedan 2010. </div>
+ <div class="whp_preamble">AvaTrade är Börstjänarens sponsor och rekommenderade mäklare för CFD-handel, som vi samarbetat med kontinuerligt  alltsedan 2009. </div>
 
                 <a class="main_link_color" href="https://www.avatrade.se/?fbg=2&tag=8947">AvaTrade</a> är en världsledande nätmäklare som erbjuder handel med mer än 200 Forex- och CFD-instrument, inklusive aktier, index, råvaror, obligationer &amp; ETF:er.<br />
                     <br />
@@ -32,7 +32,7 @@
                     <strong>Dess framgång vilar</strong> på förmågan att leverera de produkter och tjänster som efterfrågas av kunniga handlare, såsom säkerheten i världsvid reglering, oöverträffad kapitalsäkerhet, utmärkt likviditet och en proaktiv kundsupport.<br />
                     <br />
                     <strong>AvaTrade fortsätter att </strong>sträva efter den högsta standarden – något som har uppmärksammats gång på gång inom industrin. Ava har vunnit flera utmärkelser, inklusive Bästa Affiliateprogram och Bästa Mäklare. </br></br>
-                <div class="btshop_rub10c_bread">Därför väljer seriösa handlare AvaTrade:</div>
+                <strong>Därför väljer seriösa handlare AvaTrade:</strong><br />
                 <ul>
                     <li>Handla valutor, aktier, index, ETF:er med mer</li>
                    <li>Handel på PC &amp; mobil med AvaTrader och MT4</li>

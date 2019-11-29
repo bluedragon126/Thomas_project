@@ -3114,8 +3114,8 @@ blank_4h {
 }
 
 .shop_r_other_subtitle {
-    color: #232222;
-    font-family: "Franklin Gothic Medium";
+    color: #ffffff;
+    font-family: "Franklin Gothic Book Regular";
     font-size: 1em;
     line-height: 1.1em;
     letter-spacing: 0.01em !important;
@@ -3799,21 +3799,21 @@ ul.cartStep2 li {
 /* new forum sorting popup */
 
 .first_drop {
-    margin-left: 47px;
+    margin-left: 120px;
     margin-right: 12px;
     margin-top: 70px;
     margin-bottom: 12px;
 }
 
 .second_drop {
-    margin-left: 148px;
+    margin-left: 0px;
     margin-right: 12px;
     margin-top: 70px;
     margin-bottom: 12px;
 }
 
 .third_drop {
-    margin-left: 248px;
+    margin-left: 173px;
     margin-right: 12px;
     margin-top: 70px;
     margin-bottom: 12px;
@@ -11529,8 +11529,8 @@ whp_heading
 
 .subnav-bar-wrap-right {
     float: right;
-    width: 41%;
-    margin-right: -15px;
+    width: 42%;
+    margin-right: -18px;
 }
 
 .subnav-bar-wrap-right span {
@@ -11541,7 +11541,7 @@ whp_heading
     padding-top: 8px;
     padding-bottom: 9px;
     float: left;
-    padding: 5.5px 10px 6px 10px;
+    padding: 5.5px 15px 6px 10px;
     color: #232222;
     letter-spacing: 0.01em;
 }
@@ -11556,7 +11556,7 @@ whp_heading
 
 .nav-bar-sub li a span {
     color: #000;
-    padding-right: 9px;
+    padding-right: 14px;
 }
 
 .nav-bar li:hover>ul {
@@ -11578,7 +11578,7 @@ whp_heading
     font-family: "Franklin Gothic Book Regular";
     color: #232222;
     letter-spacing: 0.01em;
-    padding-top: 11.5px;
+    padding-top: 12.1px;
     padding-bottom: 6px;
 }
 
