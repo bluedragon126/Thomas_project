@@ -3706,9 +3706,17 @@ $(document).ready(function() {
             url: '/sbt/sbtMinProfileMySubscription',
             success: function(data) {
                 $('#myaccount_data_container').html(data);
-                var TrueHeight = $(".mainconetentinner").height();
-                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
-                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
+                var checkRight = $(".minsid_rightdiv").height();
+                var checkLeft = $(".innerleftdiv_blog").height();
+        
+                if(checkLeft > checkRight)
+                {
+                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
+                } 
+                else
+                {
+                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
+                }
             }
         });
 
@@ -3913,9 +3921,17 @@ $(document).ready(function() {
             url: '/sbt/sbtMinProfileInvoice?id=4265',
             success: function(data) {
                 $('#myaccount_data_container').html(data);
-                var TrueHeight = $(".mainconetentinner").height();
-                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
-                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
+                var checkRight = $(".minsid_rightdiv").height();
+                var checkLeft = $(".innerleftdiv_blog").height();
+        
+                if(checkLeft > checkRight)
+                {
+                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
+                } 
+                else
+                {
+                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
+                }
             }
         });
     });

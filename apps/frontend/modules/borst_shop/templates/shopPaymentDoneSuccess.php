@@ -37,7 +37,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="floatLeftNew wh_bt-sh_1"></div>
             <div class="shop_note_success textAlignLeft top_0px" ><?php echo __('Transaktionen har genomförts framgångsrikt!') ?></div>
         </div>
-        <div class="btshopleftdiv">
+        <div class="btshopleftdiv ptop_10">
             <div class="btshopleftdivinner">
 				
                 <?php if($transaction_type == 4 || $transaction_type == 3){?>

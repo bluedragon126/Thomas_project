@@ -2,9 +2,17 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#user_reg').jqTransform();
-        var TrueHeight = $(".mainconetentinner").height();
-                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
-                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
+        var checkRight = $(".minsid_rightdiv").height();
+                var checkLeft = $(".innerleftdiv_blog").height();
+        
+                if(checkLeft > checkRight)
+                {
+                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
+                } 
+                else
+                {
+                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
+                }
     });
     /**
      *
