@@ -2671,10 +2671,12 @@ $(document).ready(function() {
         //Email
         if (email == '' || email.length == 0) {
             $('#pay_email_error').html('Nödvändig');
+            $('#user_email').addClass("redBorder");
             email_flag = 1;
         } else {
             if (reg.test(email) == false) {
                 $('#pay_email_error').html('Ogiltig');
+                $('#user_email').addClass("redBorder");
                 email_flag = 2;
             } else {
                 $('#pay_email_error').html('');
@@ -2688,8 +2690,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_firstname)] == 0) {
             firstname_flag = result_flag[checkForOnlyCharacters(user_firstname)];
             $('#pay_firstname_error').html(checkForOnlyCharacters(user_firstname));
+            if(checkForOnlyCharacters(user_firstname)!=''){
+                $('#user_firstname').addClass("redBorder");
+            }
         } else {
             $('#pay_firstname_error').html(checkForOnlyCharacters(user_firstname));
+            if(checkForOnlyCharacters(user_firstname)!=''){
+                $('#user_firstname').addClass("redBorder");
+            }
             firstname_flag = 1;
         }
         /*}
@@ -2704,8 +2712,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_lastname)] == 0) {
             lastname_flag = result_flag[checkForOnlyCharacters(user_lastname)];
             $('#pay_lastname_error').html(checkForOnlyCharacters(user_lastname));
+            if(checkForOnlyCharacters(user_lastname)!=''){
+                $('#user_lastname').addClass("redBorder");
+            }
         } else {
             $('#pay_lastname_error').html(checkForOnlyCharacters(user_lastname));
+            if(checkForOnlyCharacters(user_lastname)!=''){
+                $('#user_lastname').addClass("redBorder");
+            }
             lastname_flag = 1;
         }
         /*}
@@ -2717,6 +2731,7 @@ $(document).ready(function() {
         // Street
         if (user_street == '' || user_street.length == 0) {
             $('#pay_street_error').html('Nödvändig');
+            $("#user_street").addClass("redBorder");
             street_flag = 1;
         } else {
             $('#pay_street_error').html('');
@@ -2725,6 +2740,9 @@ $(document).ready(function() {
 
         // Zip code 
         $('#pay_zipcode_error').html(checkForOnlyNumber(user_zipcode));
+        if(checkForOnlyNumber(user_zipcode)!=''){
+            $("#user_zipcode").addClass("redBorder");            
+        }
         zipcode_flag = result_flag[checkForOnlyNumber(user_zipcode)];
 
         // City
@@ -2733,8 +2751,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_city)] == 0) {
             city_flag = result_flag[checkForOnlyCharacters(user_city)];
             $('#pay_zipcode_error').html(checkForOnlyCharacters(user_city));
+            if(checkForOnlyCharacters(user_city)!=''){
+                $("#user_city").addClass("redBorder");            
+            }
         } else {
             $('#pay_zipcode_error').html(checkForOnlyCharacters(user_city));
+            if(checkForOnlyCharacters(user_city)!=''){
+                $("#user_city").addClass("redBorder");            
+            }
             city_flag = 1;
         }
         /*}
@@ -2745,11 +2769,15 @@ $(document).ready(function() {
 
         // Telephone
         $('#pay_telephone_error').html(checkForOnlyNumber(user_telephone));
+        if(checkForOnlyNumber(user_telephone)!=''){
+            $("#user_telephone").addClass("redBorder");            
+        }
         telephone_flag = result_flag[checkForOnlyNumber(user_telephone)];
 
         // Country
         if (user_country == 0) {
             $('#pay_country_error').html('Välj land');
+            $("#user_country").addClass("redBorder");
             country_flag = 1;
         } else {
             $('#pay_country_error').html('');
@@ -2980,10 +3008,12 @@ $(document).ready(function() {
 
         if (email == '' || email.length == 0) {
             $('#pay_email_error').html('Nödvändig');
+            $('#user_email').addClass("redBorder");
             email_flag = 1;
         } else {
             if (reg.test(email) == false) {
                 $('#pay_email_error').html('Ogiltig');
+                $('#user_email').addClass("redBorder");
                 email_flag = 2;
             } else {
                 $('#pay_email_error').html('');
@@ -2997,8 +3027,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_firstname)] == 0) {
             firstname_flag = result_flag[checkForOnlyCharacters(user_firstname)];
             $('#pay_firstname_error').html(checkForOnlyCharacters(user_firstname));
+            if(checkForOnlyCharacters(user_firstname)!=''){
+                $('#user_firstname').addClass("redBorder");
+            }
         } else {
             $('#pay_firstname_error').html(checkForOnlyCharacters(user_firstname));
+            if(checkForOnlyCharacters(user_firstname)!=''){
+                $('#user_firstname').addClass("redBorder");
+            }
             firstname_flag = 1;
         }
         /*}
@@ -3010,8 +3046,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_lastname)] == 0) {
             lastname_flag = result_flag[checkForOnlyCharacters(user_lastname)];
             $('#pay_lastname_error').html(checkForOnlyCharacters(user_lastname));
+            if(checkForOnlyCharacters(user_lastname)!=''){
+                $('#user_lastname').addClass("redBorder");
+            }
         } else {
             $('#pay_lastname_error').html(checkForOnlyCharacters(user_lastname));
+            if(checkForOnlyCharacters(user_lastname)!=''){
+                $('#user_lastname').addClass("redBorder");
+            }
             lastname_flag = 1;
         }
         /*}
@@ -3030,6 +3072,7 @@ $(document).ready(function() {
 
         if (user_street == '' || user_street.length == 0) {
             $('#pay_street_error').html('Nödvändig');
+            $("#user_street").addClass("redBorder");
             street_flag = 1;
         } else {
             $('#pay_street_error').html('');
@@ -3038,6 +3081,9 @@ $(document).ready(function() {
 
         //$('#pay_zipcode_error').html(checkForOnlyCharacters(user_city));
         $('#pay_zipcode_error').html(checkForOnlyNumber(user_zipcode));
+        if(checkForOnlyNumber(user_zipcode)!=''){
+            $("#user_zipcode").addClass("redBorder");            
+        }
         //zipcode_flag = result_flag[checkForOnlyCharacters(user_city)];
         zipcode_flag = result_flag[checkForOnlyNumber(user_zipcode)];
 
@@ -3048,8 +3094,14 @@ $(document).ready(function() {
         if (result_flag[checkForOnlyCharacters(user_city)] == 0) {
             city_flag = result_flag[checkForOnlyCharacters(user_city)];
             $('#pay_zipcode_error').html(checkForOnlyCharacters(user_city));
+            if(checkForOnlyCharacters(user_city)!=''){
+                $("#user_city").addClass("redBorder");            
+            }
         } else {
             $('#pay_zipcode_error').html(checkForOnlyCharacters(user_city));
+            if(checkForOnlyCharacters(user_city)!=''){
+                $("#user_city").addClass("redBorder");            
+            }
             city_flag = 1;
         }
         /*}
@@ -3061,10 +3113,14 @@ $(document).ready(function() {
 		city_flag = result_flag[checkForOnlyCharacters(user_city)];*/
 
         $('#pay_telephone_error').html(checkForOnlyNumber(user_telephone));
+        if(checkForOnlyNumber(user_telephone)!=''){
+            $("#user_telephone").addClass("redBorder");            
+        }
         telephone_flag = result_flag[checkForOnlyNumber(user_telephone)];
 
         if (user_country == 0) {
             $('#pay_country_error').html('Välj land');
+            $("#user_country").addClass("redBorder");
             country_flag = 1;
         } else {
             $('#pay_country_error').html('');
