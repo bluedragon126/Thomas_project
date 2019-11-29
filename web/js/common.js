@@ -1500,17 +1500,9 @@ $(document).ready(function() {
         $.post("/sbt/" + action_name + "?id=" + user_id, function(data) {
             //$('#profile_data_container').css('border-bottom','2px solid #C7CCD4');
             $('#profile_data_container').html(data);
-            var checkRight = $(".minsid_rightdiv").height();
-            var checkLeft = $(".innerleftdiv_blog").height();
-    
-            if(checkLeft > checkRight)
-            {
-                $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-            } 
-            else
-            {
-                $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-            }
+            var TrueHeight = $(".mainconetentinner").height();
+            $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
+            $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
         });
     });
 
@@ -3489,17 +3481,9 @@ $(document).ready(function() {
             success: function(data) {
                 $('#myaccount_data_container').html(data);
                 $('#myaccount_data_container form').jqTransform();
-                var checkRight = $(".minsid_rightdiv").height();
-                var checkLeft = $(".innerleftdiv_blog").height();
-        
-                if(checkLeft > checkRight)
-                {
-                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-                } 
-                else
-                {
-                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-                }
+                var TrueHeight = $(".mainconetentinner").height();
+                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
+                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
             }
         });
 
@@ -3678,17 +3662,9 @@ $(document).ready(function() {
             success: function(data) {
                 $('#myaccount_data_container').html(data);
                 $('#myaccount_data_container form').jqTransform();
-                var checkRight = $(".minsid_rightdiv").height();
-                var checkLeft = $(".innerleftdiv_blog").height();
-        
-                if(checkLeft > checkRight)
-                {
-                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-                } 
-                else
-                {
-                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-                }
+                var TrueHeight = $(".mainconetentinner").height();
+                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
+                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
             }
         });
 
@@ -3706,17 +3682,9 @@ $(document).ready(function() {
             url: '/sbt/sbtMinProfileMySubscription',
             success: function(data) {
                 $('#myaccount_data_container').html(data);
-                var checkRight = $(".minsid_rightdiv").height();
-                var checkLeft = $(".innerleftdiv_blog").height();
-        
-                if(checkLeft > checkRight)
-                {
-                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-                } 
-                else
-                {
-                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-                }
+                var TrueHeight = $(".mainconetentinner").height();
+                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
+                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
             }
         });
 
@@ -3921,17 +3889,9 @@ $(document).ready(function() {
             url: '/sbt/sbtMinProfileInvoice?id=4265',
             success: function(data) {
                 $('#myaccount_data_container').html(data);
-                var checkRight = $(".minsid_rightdiv").height();
-                var checkLeft = $(".innerleftdiv_blog").height();
-        
-                if(checkLeft > checkRight)
-                {
-                    $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-                } 
-                else
-                {
-                    $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-                }
+                var TrueHeight = $(".mainconetentinner").height();
+                $(".minsid_rightdiv").css({"height":TrueHeight+"px"});
+                $(".innerleftdiv_blog").css({"height":TrueHeight+"px"});
             }
         });
     });
