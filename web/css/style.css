@@ -1489,12 +1489,22 @@ a.article_dots_r {
     margin-bottom: 4px;
 }
 
+.whp_preamble2 {
+    font-family: 'Franklin Gothic Book Regular';
+    float: left;
+    font-size: 1.2em;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
 .whp_heading {
     color: #232222;
     font-family: 'ITC Cheltenham Book';
     font-size: 1.7em;
     line-height: 1em;
-    margin: 66px 0px 16px;
+    margin: 52px 0px 10px;
     width: 100%;
 }
 
@@ -2174,8 +2184,8 @@ input.rounded {
 
 .shop_home_title {
     font-family: 'ITC Cheltenham Book';
-    line-height: 1.15em;
-    font-size: 1.55em;
+    line-height: 1.3em;
+	font-size: 1.4em;
     letter-spacing: -0.01em;
     word-spacing: -0.02em;
     color: #232222;
@@ -2193,11 +2203,11 @@ input.rounded {
 }
 
 .shopsmallblock_separator_1 {
-    height: 8px;
+    height: 4px;
 }
 
 .shopsmallblock_separator_2 {
-    height: 8px;
+    height: 4px;
 }
 
 .shophome_margin_top {
@@ -4991,7 +5001,7 @@ ul.cartStep2 li {
 .blog_prof_table_date {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #a7a6b7;
+    color: #f15822 !important;
     line-height: 1.2em;
 }
 
@@ -10691,7 +10701,7 @@ whp_heading
 }
 
 .btshop_table_post {
-    color: #febc11;
+    color: #0091bb !important;
     font-family: "Franklin Gothic Book Regular";
     font-size: 0.93em;
     line-height: 1.3em;
@@ -11535,7 +11545,7 @@ whp_heading
 .subnav-bar-wrap-right {
     float: right;
     width: 42%;
-    margin-right: -18px;
+    margin-right: -44px;
 }
 
 .subnav-bar-wrap-right span {
@@ -11546,7 +11556,7 @@ whp_heading
     padding-top: 8px;
     padding-bottom: 9px;
     float: left;
-    padding: 5.5px 15px 6px 10px;
+    padding: 5.5px 8px 6px 10px;
     color: #232222;
     letter-spacing: 0.01em;
 }
@@ -11561,7 +11571,7 @@ whp_heading
 
 .nav-bar-sub li a span {
     color: #000;
-    padding-right: 14px;
+    padding-right: 8px;
 }
 
 .nav-bar li:hover>ul {
@@ -11583,7 +11593,7 @@ whp_heading
     font-family: "Franklin Gothic Book Regular";
     color: #232222;
     letter-spacing: 0.01em;
-    padding-top: 12.1px;
+    padding-top: 12.9px;
     padding-bottom: 6px;
 }
 
