@@ -162,7 +162,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                         $top_mar_12px = "";
                     } else {
-                        $top_mar_12px = "margin_top_12";
+                        $top_mar_12px = "margin_top_up";
                     }
                     if ($countStock % 2 == 0) {
                         if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
@@ -215,7 +215,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <div class="float_left shophome_margin_left shophome_margin_top">
                                         <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span>
                                         <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
-                                        <div class="width_100_per margin_top_18 add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
+                                        <div class="width_100_per margin_top_cart add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                         <span class="BTshop_lessmar"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="">Läs mer</span></a></span>
                                         <div class="shopsmallblock_separator_2"> </div>
                                     </div>
-                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
 
                                 </div>
                                 <!--<div class="float_left kr_wrapper">
@@ -309,7 +309,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                                                         <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                 </div>
-                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
                 <?php } ?>
                             <!--<div class="float_left" style="width:250px; margin-top:1px">
                                 <span class="float_left" style="color:#ddb300;"><a class="cursor" style="color:#f7c900;" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;         ?>"><img src="/images/buy.png" style="vertical-align:text-bottom" alt="buy" border="0" /></span>
@@ -447,7 +447,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                         $top_mar_12px = "";
                     } else {
-                        $top_mar_12px = "margin_top_12";
+                        $top_mar_12px = "margin_top_up";
                     }
                     if ($countStock % 2 == 0) {
                         if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
@@ -504,7 +504,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <div class="float_left shophome_margin_left shophome_margin_top">
                                         <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span>
                                         <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
-                                        <div class="width_100_per margin_top_18 add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
+                                        <div class="width_100_per margin_top_cart add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -536,7 +536,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                                                                                                                                 <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                     </div>
-                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id);  ?>">Lägg i varukorg</span></div>-->
+                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id);  ?>">Lägg i varukorg</span></div>-->
 
                                 </div>
                                 <!--<div class="float_left kr_wrapper">
@@ -600,7 +600,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                                                                                                                             <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                 </div>
-                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
                     <?php } ?>
                             <!--<div class="float_left" style="width:250px; margin-top:1px">
                                 <span class="float_left" style="color:#ddb300;"><a class="cursor" style="color:#f7c900;" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;         ?>"><img src="/images/buy.png" style="vertical-align:text-bottom" alt="buy" border="0" /></span>
@@ -641,7 +641,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
                         $top_mar_12px = "";
                     } else {
-                        $top_mar_12px = "margin_top_12";
+                        $top_mar_12px = "margin_top_up";
                     }
                     if ($countStock % 2 == 0) {
                         if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
@@ -698,7 +698,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <div class="float_left shophome_margin_left shophome_margin_top">
                                         <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span>
                                         <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
-                                        <div class="width_100_per margin_top_18 add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
+                                        <div class="width_100_per margin_top_cart add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -753,7 +753,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                                                                                                                                 <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                     </div>
-                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id);  ?>">Lägg i varukorg</span></div>-->
+                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id);  ?>">Lägg i varukorg</span></div>-->
 
                                 </div>
                                 <!--<div class="float_left kr_wrapper">
@@ -789,7 +789,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                                                                                                                             <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                 </div>
-                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
                     <?php } ?>
                             <!--<div class="float_left" style="width:250px; margin-top:1px">
                                 <span class="float_left" style="color:#ddb300;"><a class="cursor" style="color:#f7c900;" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;         ?>"><img src="/images/buy.png" style="vertical-align:text-bottom" alt="buy" border="0" /></span>
@@ -848,7 +848,7 @@ foreach ($metastock_data as $article):
     if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
         $top_mar_12px = "";
     } else {
-        $top_mar_12px = "margin_top_12";
+        $top_mar_12px = "margin_top_up";
     }
     if ($countStock % 2 == 0) {
         if ($stock_counter % 2 != 0 && $stock_counter == $countStock + 1) {
@@ -904,7 +904,7 @@ foreach ($metastock_data as $article):
                                     <div class="float_left shophome_margin_left shophome_margin_top">
                                         <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($article->getLeastPriceOfProduct($article->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span>
                                         <div class="shop_buy_button_bg"><a class="cursor red_button" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>"><span class="shop_heading">KÖP</span></a></div>
-                                        <div class="width_100_per margin_top_18 add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
+                                        <div class="width_100_per margin_top_cart add_to_cart cursorPointer float_left "><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopCart' ?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span class="width_100_per float_left add_to_cart_margin" id="add_to_cart_<?php echo 'product_id_' . $article->id . '_product_price_' . $article->getLeastPriceOfProduct($article->id) . '_price_id_' . $article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -937,7 +937,7 @@ foreach ($metastock_data as $article):
 
                                                                                                                                                                 <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                     </div>
-                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                    <!--<div class="add_to_cart cursorPointer float_left"><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
 
                                 </div>
                                 <!--<div class="float_left kr_wrapper">
@@ -1001,7 +1001,7 @@ foreach ($metastock_data as $article):
 
                                                                                                                                                             <!--<span class="shop_home_price_main"><b>Läs mer...</b></span>-->
                                 </div>
-                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="36px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
+                                <!--<div class="add_to_cart cursorPointer float_left "><a href="<?php //echo 'http://' . $host_str . '/borst_shop/shopCart'?>"><img alt="BT-SHOP" src="/images/new_home/bt-shop_cart.png" width="30px"></a><span id="add_to_cart_<?php //echo 'product_id_'.$article->id.'_product_price_'.$article->getLeastPriceOfProduct($article->id).'_price_id_'.$article->getLeastPriceOfProductId($article->id); ?>">Lägg i varukorg</span></div>-->
             <?php } ?>
                             <!--<div class="float_left" style="width:250px; margin-top:1px">
                                 <span class="float_left" style="color:#ddb300;"><a class="cursor" style="color:#f7c900;" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id;         ?>"><img src="/images/buy.png" style="vertical-align:text-bottom" alt="buy" border="0" /></span>
