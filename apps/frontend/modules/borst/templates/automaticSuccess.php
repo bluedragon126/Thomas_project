@@ -24,12 +24,12 @@
             <div class="inner_page_content_main">
 			<div class="whp_title">Automatisk handel</div>
                 <div class="whp_preamble">Via AvaTrade kan du ansluta din depå till automatisk handel enligt en utvald strategi. Du behöver då inte lägga order själv. Entré och exit sker automatiskt när modellen ger signal. </div>
-                <strong>När du ansluter ditt konto</strong> till automatisk handel behöver du inte ha något abonnemang på affärsförslagen. 
+                <div class="whp_preamble2">När du ansluter ditt konto</strong> till automatisk handel behöver du inte ha något abonnemang på affärsförslagen.</div> 
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Henry Boy Automatic</div>
-                  <p>Henry Boy Automatic är en automatisk applikation av vår vinstrika handelsmodell Henry Boy. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!
+                  Henry Boy Automatic är en automatisk applikation av vår vinstrika handelsmodell Henry Boy. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!
                   <div class="whp_heading">BT-Multi Automatic</div>
-                    <p>Om du vill förvalta dina pengar via en aktiv aktiehandel man inte vill, kan eller hinner lägga order själv, kan du ansluta ditt konto till BT Multi Automatic. Öppna då ett konto med vår sponsor AvaTrade och knyt  det till vårt  program BT Multi för automatisk orderläggning med aktiv handel i aktiemarknaden. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!<br>
+                    Om du vill förvalta dina pengar via en aktiv aktiehandel man inte vill, kan eller hinner lägga order själv, kan du ansluta ditt konto till BT Multi Automatic. Öppna då ett konto med vår sponsor AvaTrade och knyt  det till vårt  program BT Multi för automatisk orderläggning med aktiv handel i aktiemarknaden. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

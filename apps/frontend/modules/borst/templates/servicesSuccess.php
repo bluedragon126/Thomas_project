@@ -25,17 +25,17 @@
 <div class="whp_title">Våra två storsäljare</div>
                 <div class="whp_preamble">
                     Aktiv handlare eller långsiktig investerare? Börstjänarens två storsäljare ger dig allt du behöver för en aktiv trading på både kort och lång sikt!</div>
-                <strong>Med Börstjänarens abonnemang</strong> lär du dig att trada professionellt så att du en dag kan handla helt på egen hand.
+                <div class="whp_preamble2">Med Börstjänarens abonnemang</strong> lär du dig att trada professionellt så att du en dag kan handla helt på egen hand.</div>
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Tradingportföljen</div>
-                  <p><strong> Tradingportföljen </strong>skannar av aktiemarknaden och   redovisar lättfattligt chansrika affärsförslag både för köp och blankning, så att du själv kan förvalta ditt kapital och tjäna pengar både i uppgång och nedgång<strong>. </strong> Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/portfolio">här!</a>
+                  <strong> Tradingportföljen </strong>skannar av aktiemarknaden och   redovisar lättfattligt chansrika affärsförslag både för köp och blankning, så att du själv kan förvalta ditt kapital och tjäna pengar både i uppgång och nedgång<strong>. </strong> Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/portfolio">här!</a>
                  
                   
                   <div class="whp_heading">Henry Boy Trading</div>
-                    <p>Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy">här!</a>
+                    Henry Boy Trading-abonnemanget ger dig garanterad action med rappa affärsförslag  varje vecka!   Utbrottshandel – köp eller sälj blankt med en beprövad strategi för kort- eller långsiktiga affärer med stor potential. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy">här!</a>
                     
                     <div class="whp_heading">Automatisk handel</div>
-                  <p><strong> Båda dessa tjänster </strong>kan också anslutas till automatisk handel, så att du inte behöver lägga order själv utan köp och sälj utförs automatiskt på din depå enligt vald strategi. Du behöver då inte heller abonnera på affärsförslagen. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/automatic">här!</a>
+                  <strong> Båda dessa tjänster </strong>kan också anslutas till automatisk handel, så att du inte behöver lägga order själv utan köp och sälj utförs automatiskt på din depå enligt vald strategi. Du behöver då inte heller abonnera på affärsförslagen. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/automatic">här!</a>
                     
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
