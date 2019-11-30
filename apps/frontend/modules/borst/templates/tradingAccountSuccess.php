@@ -25,12 +25,12 @@
 <div class="whp_title">Våra Trading Partners</div>
                 <div class="whp_preamble">
                     Vi tror på långsiktiga relationer som ger stabilitet och trygghet. Därför kan vi varmt rekommendera våra två partners sedan mer än tio år, AvaTrade och GFF Brokers för dig som vill öppna ett tradingkonto.</div>
-                <strong>Ava och GFF är de de mäklare vi själva använder</strong>. De har funnits på vår sajt i vått och torrt sedan tidernas begynnelse.
+                <div class="whp_preamble2">Ava och GFF är de de mäklare vi själva använder. De har funnits på vår sajt i vått och torrt sedan tidernas begynnelse.</div>
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">AvaTrade</div>
-                  <p><strong> Dublinbaserade AvaTrade</strong> är en världsledande CFD-mäklare, som vi samarbetat med oavbrutet sedan 2010. Om du vill ha en pålitlig europeisk mäklare med hög integritet och personlig service är AvaTrade, med vår egen personliga mäklare Mark Mates, vår rekommendation. AvaTrade är global partner till Manchester City Football Club. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/avaTrade">här!</a><br>
+                  <strong> Dublinbaserade AvaTrade</strong> är en världsledande CFD-mäklare, som vi samarbetat med oavbrutet sedan 2010. Om du vill ha en pålitlig europeisk mäklare med hög integritet och personlig service är AvaTrade, med vår egen personliga mäklare Mark Mates, vår rekommendation. AvaTrade är global partner till Manchester City Football Club. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/avaTrade">här!</a><br>
                   <div class="whp_heading">Global Futures &amp; Forex (GFF Brokers)</div>
-                    <p>Amerikanska  GFF är vår samarbetspartner sedan 2008 och vår rekommenderade aktör när det gäller terminshandel. GFF är  Introducing Broker till vår amerikanska Commodity Trading Advisor-verksamhet. Vare sig du vill handla terminer själv eller följa något av våra CTA-program är Global det självklara valet med pålitlig service och den vassa handelsplattformen Global Zen Trader. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/gffBrokers">här!</a><br>
+                    Amerikanska  GFF är vår samarbetspartner sedan 2008 och vår rekommenderade aktör när det gäller terminshandel. GFF är  Introducing Broker till vår amerikanska Commodity Trading Advisor-verksamhet. Vare sig du vill handla terminer själv eller följa något av våra CTA-program är Global det självklara valet med pålitlig service och den vassa handelsplattformen Global Zen Trader. Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/gffBrokers">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>
