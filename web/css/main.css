@@ -191,6 +191,7 @@ img{border:0;}
 .menuwrapper ul li a{float:left;position:relative;display:inline;color:#636464;margin:0;padding:0 4px 0 4px;text-decoration:none;}
 .menuwrapper ul li a:hover{float:left;position:relative;display:inline;color:#636464;background-color:#FFFFFF;margin:0;padding:0 4px 0 4px;text-decoration:none;line-height:33px;background:#FFFFFF url(../images/bulletearrow.jpg);background-position:center 26px;background-repeat:no-repeat;}
 .menuwrapper ul li a.select{float:left;position:relative;display:inline;color:#636464;margin:0;padding:0 4px 0 4px;text-decoration:none;line-height:33px;background:#FFFFFF url(../images/bulletearrow.jpg);background-position:center 26px;background-repeat:no-repeat;}
+.inner_page_content_main ul {line-height:25px;}
 .menurightpart{float:right;right:15px;position:relative;width:auto;border:0px solid red;line-height:33px;}
 .go{float:left;position:relative;height:18px;width:148px;border:1px solid #d5d6d7;margin:5px 0 0 0;padding:0 5px 0 5px;font-size:11px;}
 div.submitbutton{background:transparent url(../images/searchbg.gif) no-repeat scroll left top;height:20px;padding-left:4px;color:#fff;top:6px;left:10px;font-size:11px;}
@@ -287,8 +288,8 @@ font-size:0;}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
 .contactdellus{float:left;position:relative;margin:20px 0 0 0;width:100%;}
 .testimonial{float:left;position:relative;padding:10px 0 90px 0;font-size:20px;color:#0e0d0d;}
-.main_link_color{color:#009cd9;letter-spacing:0.03px;}
-.main_link_col2{color:#232222;letter-spacing:0.03px;}
+.main_link_color{color:#009cd9;letter-spacing:0.05px;}
+.main_link_col2{color:#232222;letter-spacing:0.05px;}
 #btchart{float:left;position:relative;}
 #btchart td{padding-right:20px;}
 #btchart td ul{float:left;position:relative;margin:0;padding:0;list-style-type:none;}

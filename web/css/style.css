@@ -1492,11 +1492,32 @@ a.article_dots_r {
 .whp_preamble2 {
     font-family: 'Franklin Gothic Book Regular';
     float: left;
-    font-size: 1.2em;
+    font-size: 1.3em;
 	letter-spacing: -0.01em;
     color: #232222;
-    line-height: 1.4em;
-    margin-bottom: 20px;
+    line-height: 1.5em;
+    margin-bottom: 55px;
+}
+
+.whp_preamble2_it {
+    font-family: 'Franklin Gothic Book Regular';
+    float: left;
+    font-size: 1.3em;
+	letter-spacing: -0.01em;
+    color: #232222;
+    line-height: 1.5em;
+    margin-bottom: 55px;
+	font-style:italic;
+}
+
+.whp_preamble_web {
+    font-family: 'Franklin Gothic Book Regular';
+    float: left;
+    font-size: 1.5em;
+	letter-spacing: 0.01em;
+    color: #3cc5e7;
+    line-height: 1.6em;
+    margin-bottom: 30px;
 }
 
 .whp_heading {
@@ -1549,7 +1570,7 @@ a.article_dots_r {
 
 .whp_subheading2 {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: #232222;
     margin: 15px 0px 5px;
 }
@@ -1561,6 +1582,15 @@ a.article_dots_r {
     letter-spacing: 0.02em;
     color: #232222;
     margin: 18px 0px 3px;
+}
+
+.whp_subheading4 {
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.25em;
+	line-height: 1.35em;
+    letter-spacing: 0.02em;
+    color: #232222;
+    margin: 18px 0px 0px;
 }
 
 .whp_border {

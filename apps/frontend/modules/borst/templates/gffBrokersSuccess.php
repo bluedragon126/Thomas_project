@@ -26,13 +26,13 @@
  <div class="whp_preamble">Global Futures & Forex (GFF Brokers) är Börstjänarens sponsor och rekommenderade mäklare för terminshandel, som vi samarbetat med kontinuerligt sedan 2008. </div>
  <div>
    <div tabindex="0">
-     <p><span lang="sv" xml:lang="sv"><span title="">GFF Brokers är ett växande mäklarföretag ur den nya generationen.</span> <span title="">GFF-teamet består av ett flertal branschveteraner, från mäklare till supportpersonal.</span></span></p>
+     <p><span lang="sv" xml:lang="sv"><span title=""><i>GFF Brokers</i> är ett växande mäklarföretag ur den nya generationen.</span> <span title=""><i>GFF-teamet</i> består av ett flertal branschveteraner, från mäklare till supportpersonal.</span></span></p>
    </div>
  </div>
  <div>
-   <div><span lang="sv" xml:lang="sv"><span title="">Som NFA-medlem och </span></span><span lang="sv" xml:lang="sv"><span title=""> registrerad IB (Introducing Broker) hos CFTC driver GFF Brokers på branschen genom att tillhandahålla kostnadseffektiv termins- och valutahandel med stöd av högkvalitativ kundtjänst, branschkompetens och ett växande utbud av handelsplattformar.</span></span></div>
+   <div><span lang="sv" xml:lang="sv"><span title=""><strong>Som NFA-medlem</strong> och </span></span><span lang="sv" xml:lang="sv"><span title=""> registrerad <i>IB (Introducing Broker)</i> hos <i>CFTC</i> driver <i>GFF Brokers</i> på branschen genom att tillhandahålla kostnadseffektiv termins- och valutahandel med stöd av högkvalitativ kundtjänst, branschkompetens och ett växande utbud av handelsplattformar.</span></span></div>
  </div>
- <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 32px 0px 70px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="" width="310;" /></a></p>
+ <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 22px 0px 23.5px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="" width="310;" /></a></p>
  <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

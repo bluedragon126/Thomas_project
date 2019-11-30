@@ -24,15 +24,17 @@
             <div class="inner_page_content_main">
 			<div class="whp_title">Henry Boy Trading</div>
                 <div class="whp_preamble">
-                    Sedan 2010 har Börstjänaren skickat ut Henry Boy tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
-                <div class="whp_preamble2">Henry Boy</strong> kan du sköta själv via ett abonnemang med aktiva affärsförslag, eller knyta ditt konto till automatisk handel.</div>
+                    Sedan 2010 har Börstjänaren skickat ut <i>Henry Boy</i> tradesignaler varje vecka  via e-post till abonnenter med enastående resultat.</div> 
+                <div class="whp_preamble2_it">Henry Boy</strong> kan du sköta själv via ett abonnemang med aktiva affärsförslag, eller knyta ditt konto till automatisk handel.</div>
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Henry Boy abonnemang</div>
-                  <strong>Henry Boy Trading</strong><em> </em>är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. Henry Boy Trading levereras via  mejl ca en gång per vecka. Sedan starten 2010 har signalerna avkastat osannolika 5307%. Läs mer  Henry Boy Trading och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
+                  <i>Henry Boy Trading</i> är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. <i>Henry Boy Trading</i> levereras via  mejl ca en gång per vecka. <br />
+<br />
+<strong>Sedan starten 2010</strong> har signalerna avkastat osannolika 5307%. Läs mer om <i>Henry Boy Trading</i> och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
                  
                   
                   <div class="whp_heading">Henry Boy Automatic</div>
-                    Om man inte vill lägga order själv, går det bra att teckna sig för Henry Boy Automatic. Det fungerar så att du öppnar konto med vår sponsor AvaTrade och knyter detta konto till vårt Henry Boy program för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
+                    Om man inte vill lägga order själv, går det bra att teckna sig för <i>Henry Boy Automatic.</i> Det fungerar så att du öppnar konto med vår sponsor <i>AvaTrade</i> och knyter detta konto till vårt <i>Henry Boy-program</i> för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
            
         
