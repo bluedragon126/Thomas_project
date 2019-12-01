@@ -23,18 +23,18 @@
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
             
-                                      <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: -40px 0px 0px 40px;" src="/images/new_home/webinarium_wed.png" alt="http://www.thetradingaspirants/images/new_home/webinarium_wed.png" width="425px" /></a></p>
+                                    
                                       
-                                       <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 20px 0px 0px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></div>
+                                       <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 0px 0px 0px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></div>
                 
                 <p><img style="margin: 30px 0px 15px 0px;" src="/images/new_home/webinarium_title.png" width="350"/></p>
                 
                           
                 <div class="whp_preamble_web">På dessa träffar gör vi lättfattliga genomgångar av t ex någon köpintressant aktie eller marknaden i stort. Det finns också möjlighet att ställa frågor i slutet av varje session, som brukar ta ca 40 min.
               
-              <br><br />
+              </div>
               
-              Då och då har vi också inbjudna föreläsaree. Det går bra att i förväg <a href="../../../../../../borst/contactUs" target="_blank" rel="noopener noreferrer"><strong>kontakta oss</strong></a> med förslag på intressanta marknader att analysera, eller frågor rörande en aktiv börshandel.
+              <div class="whp_preamble_web">Då och då har vi också inbjudna föreläsare. Det går bra att i förväg <strong><a href="../../../../../../borst/contactUs" target="_blank" rel="noopener noreferrer">kontakta oss</a></strong> med förslag på intressanta marknader att analysera, eller frågor rörande en aktiv börshandel.
               
               
  </div>
@@ -78,12 +78,16 @@ Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 </ul>
 </div>
 
+  <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: 10px 0px 0px 75px;" src="/images/new_home/webinarium_wed.png" alt="http://www.thetradingaspirants/images/new_home/webinarium_wed.png" width="325px" /></a></p>
+
 
 
 <br />
-<strong>Följ oss gärna</strong> på <a href="https://www.youtube.com/channel/UCfSGLtCAxSHqGhMZsQumqaQ" target="_blank" rel="noopener">Youtube, klicka här</a> för att se tidigare inspelade event av Trejdingklubben Online!<strong><br /><br />Har du problem med att ansluta dig,</strong> ring då Citrix support öppet dygnet runt: 020 797043 eller 08 525 037 62.
+<strong>Följ oss gärna</strong> på <a href="https://www.youtube.com/channel/UCfSGLtCAxSHqGhMZsQumqaQ" target="_blank" rel="noopener">Youtube, klicka här</a> för att se tidigare inspelade event av Trejdingklubben Online!<strong><br /><br />Har du problem med att ansluta dig,</strong> ring då Citrix support öppet dygnet runt: 
+<br />
+020 797043 eller 08 525 037 62.
 
-<br /><br /><br /><br />
+<br /><br /><br />
 
                 
 <div class="whp_preamble"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>">Ta del av tidigare webinarier här!</a></div>

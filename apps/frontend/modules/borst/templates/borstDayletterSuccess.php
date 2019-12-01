@@ -125,7 +125,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <div class="subcribediv"><a class="main_link_color" href="FX-update.html"><img src="/images/Subscribeimg_3.jpg" border="0" alt="imag" /></a><a class="main_link_color" href="FX-update.html">FX-update</a></div>
                              <div class="subcribediv"><a class="main_link_color" href="BT-At large.html"><img src="/images/Subscribeimg_4.jpg" border="0" alt="imag" /></a><a class="main_link_color" href="BT-At large.html">BT-At large</a></div>!-->
                 </div>
-
+                
+ <div class="blank_5h widthall">
 
                 <div class="float_left">
                 <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a><br>
