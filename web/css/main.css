@@ -1320,7 +1320,7 @@ px;overflow-y:hidden;word-wrap:break-word;text-align:left;}
 .profile_allpostlist_title{float:left;height:auto;position:relative;text-align:left;width:100px;word-wrap:break-word;border:0px solid red;}
 .profile_blogpostlist_title{float:left;height:auto;position:relative;text-align:left;word-wrap:break-word;border:0px solid red;}
 .profile_messagepostlist_title{float:left;height:auto;position:relative;text-align:left;width:480px;word-wrap:break-word;border:0px solid red;}
-.profile_favoratelist_title{float:left;height:auto;position:relative;text-align:left;word-wrap:break-word;border:0px solid red;}
+.profile_favoratelist_title{float:left;height:auto;position:relative;text-align:left;word-wrap:break-word;border:0px solid red; font-size: 0.93em;}
 .profile_forumlist_cat{float:left;height:auto;position:relative;text-align:left;width:88px;word-wrap:break-word;border:0px solid red;}
 .profile_friendrequest_message{float:left;height:auto;position:relative;text-align:left;width:490px;word-wrap:break-word;border:0px solid red;}
 .blog_rightpanel_comment{float:left;height:auto;position:relative;text-align:left;width:196px;word-wrap:break-word;border:0px solid red;}

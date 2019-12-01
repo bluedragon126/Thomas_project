@@ -1525,7 +1525,7 @@ a.article_dots_r {
     font-family: 'ITC Cheltenham Book';
     font-size: 1.7em;
     line-height: 1em;
-    margin: 52px 0px 12px;
+    margin: 52px 0px 10px;
     width: 100%;
 }
 
@@ -5903,6 +5903,7 @@ ul.cartStep2 li {
     font-family: "Franklin Gothic Book Regular";
     color: #7f99c3;
     font-size: 0.93em;
+	margin-right: 16px;
 }
 
 .pro_email_n {
@@ -11875,4 +11876,11 @@ h2 {
 
 .sort_drop:hover{
     color: #9ca1af;
+}
+
+.adv_sr_price {
+    font-family: 'Franklin Gothic Book Regular';
+    font-size: 0.93em;
+    color: #f15822 !important;
+    line-height: 1.2em;
 }
