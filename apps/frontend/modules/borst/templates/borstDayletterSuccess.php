@@ -50,7 +50,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 
                 <br />
-                <b>Klicka i, respektive klicka ur, rutan nedan </b>och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
+                Klicka i, respektive klicka ur, rutan nedan och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                     
                 <div class="blank_7h widthall">&nbsp;</div>
@@ -107,7 +107,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                              <div class="subcribediv"><a class="main_link_color" href="BT-At large.html"><img src="/images/Subscribeimg_4.jpg" border="0" alt="imag" /></a><a class="main_link_color" href="BT-At large.html">BT-At large</a></div>!-->
                 </div>
                 
- <div class="blank_5h widthall">
+ <div class="blank_25h widthall">
 
                 <div class="float_left">
                
@@ -126,7 +126,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <br />
                 
                 
-              <a href="https://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin-top:5px; margin-bottom:-6px" /></a>
+              <a href="https://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin-top:10px; margin-bottom:-6px" /></a>
                
                  
                 <!--<a href="BT-nytt.html"><font color="#c72127" line-height="35px">BT-NYTT</font></a> ger dig pedagogiska analyser, skarpa aktietips och underhållande krönikor.<br />

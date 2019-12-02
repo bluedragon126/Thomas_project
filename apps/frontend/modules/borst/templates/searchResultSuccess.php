@@ -334,10 +334,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                             echo "class='padding_top_table'";
                         }
                                     ?> >                    
-                                        <td class="orgfont width326 pad_lft_5" style="color:#5a7692"><?php echo $data->btshop_article_subtitle; ?></td>
+                                        <td class="list_topic_bt-sh width326 pad_lft_5"><?php echo $data->btshop_article_subtitle; ?></td>
                                         <td class="width150"><a class="blog_table_topic" style="color:#5ec5ed" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
                                         <td class="width100"><a class="btshop_table_post shop_type cursor" style="color:#171200" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
-                                        <td class="forum_table_date_w"><a class="blog_prof_table_date main_link_color" style="color:#e53520"><?php echo  BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
+                                        <td class="forum_table_date_w"><a class="adv_sr_price main_link_color" style="color:#e53520"><?php echo  BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
 
                                     </tr>
                                     <?php

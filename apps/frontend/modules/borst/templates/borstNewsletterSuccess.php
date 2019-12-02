@@ -67,7 +67,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="blank_1h widthall">&nbsp;</div>
                     <span class="float_left widthall"><input type="radio" name="pren" id="radio1" value="1" <?php if ($pren == 1) echo("checked"); ?>  class="radio"/>
                         Avsluta</span>
-                    <div class="blank_15h widthall">&nbsp;</div>
+                    <div class="blank_11h widthall">&nbsp;</div>
                     <input id="newsletter_email" name="newsletter_email" value="Fyll i din e-post här!"  onFocus="clearNewsletterEmailField(this)" onBlur="fillNewsletterEmailField()" type="text" class="form_input width_277 contactus-inputs" /><br />
                     <div class="blank_15h widthall">&nbsp;</div>
                     <div class="registerbtn" id="newsletter_form_button_div">
@@ -76,25 +76,25 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </form>
-                <div class="blank_9h widthall">
+                <div class="blank_5h widthall">
                  
                     
                 </div><div class="float_left">
                 
                 <p><strong>OBS!</strong> 
                          <br>
-                  Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras på <a href="/borst/borstDayletter"> separat sida.</a></p>
+                  Prenumerationen på <i>Börstjänarens dagsbrev</i> administreras på <a href="/borst/borstDayletter"> separat sida.</a></p>
                  
                     </div>
                     
-                    <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:38px 0 10px" width="300" border="0" alt="imag" /></a>
+                    <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin-top:32px" width="300" border="0" alt="imag" /></a>
                 
               <div class="float_left widthall">
                     
              <br>  
               
                 
-                   <strong>Veckobrevet</strong> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <strong>VM-Update</strong> (utkommer måndagar). Veckobrevet kräver inget          
+                   <strong>Veckobrevet utgörs huvudsakligen</strong> av det kostnadsfria marknadsbrevet <i>VM-Update</i> (utkommer måndagar). Veckobrevet kräver inget          
                         konto på Börstjänaren.    
                     
                

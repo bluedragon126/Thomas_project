@@ -2490,10 +2490,10 @@ class borstActions extends sfActions
                                                         $this->getMailer()->send($message);
 						}
 						else 
-							$msg = "<font color='#CC3333'><b>OBS!</b> E-post ".$userEmail." finns redan i Börstjänarens veckobrevslista!</font>";
+							$msg = "<font color='#f15822'><b>OBS!</b> E-post ".$userEmail." finns redan i Börstjänarens veckobrevslista!</font>";
 					}
 					else {
-                                            $msg = "<font color='#CC3333'><b>OBS!</b> Inmatad e-post har inte rätt syntax!</font>";
+                                            $msg = "<font color='#f15822'><b>OBS!</b> Inmatad e-post har inte rätt syntax!</font>";
                                         }
 				}
 				elseif($arr["pren"] == 1) 
@@ -2509,7 +2509,7 @@ class borstActions extends sfActions
 					}
                                         else 
 					{
-                                            $msg = "<font color='#CC3333'>E-post ".$userEmail." finns inte registrerad i Börstjänarens veckobrevslista. </ br> Avregistrering av dagsbrev sker via ”Mitt konto”, se nedan.</font>";
+                                            $msg = "<font color='#f15822'>E-post ".$userEmail." finns inte registrerad i Börstjänarens veckobrevslista. </ br> Avregistrering av dagsbrev sker via ”Mitt konto”, se nedan.</font>";
                                         }
                                         
                                         if($NewsletterSubscriber){
@@ -2518,7 +2518,7 @@ class borstActions extends sfActions
                                             }                                                    
                                         }
 					else{
-                                            $msg = "<font color='#CC3333'>E-post ".$userEmail." finns inte registrerad i Börstjänarens veckobrevslista. </ br> Avregistrering av dagsbrev sker via ”Mitt konto”, se nedan.</font>";
+                                            $msg = "<font color='#f15822'>E-post ".$userEmail." finns inte registrerad i Börstjänarens veckobrevslista. </ br> Avregistrering av dagsbrev sker via ”Mitt konto”, se nedan.</font>";
                                         }	
 						
 					//$user_id = $this->getUser()->getAttribute('user_id', '', 'userProperty') ? $this->getUser()->getAttribute('user_id', '', 'userProperty') : '';

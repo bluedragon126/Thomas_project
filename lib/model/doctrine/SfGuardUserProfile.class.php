@@ -74,10 +74,10 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 					$email_red = '';
 			}
 			else
-				$email_red = 'Ogiltig.';
+				$email_red = 'Ogiltig';
 		}
 		else
-			$email_red = 'Nödvändig.';
+			$email_red = 'Nödvändig';
 		
 		return $email_red;
 	}
@@ -117,7 +117,7 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 		$mymarket = new mymarket();
 		
 		if($mymarket->usernamealias_exists($profileForm_arr["usernamealias"]))
-			$email_red = 'Alias finns redan.';
+			$email_red = 'Alias finns redan';
 		else
 			$email_red = '';
 		
@@ -264,11 +264,11 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 			if($mymarket->username_exists($username))
 				$username_red = 'username already exist';
 			elseif(is_numeric($username)) 
-				$username_red = 'Anvndarnamnet fr inte best av enbart siffror.';
+				$username_red = 'Anvndarnamnet fr inte best av enbart siffror';
 			elseif($mymarket->specCharCheck($username) > 0)
-				$username_red = 'Ange korrekt anvndarnamn.';
+				$username_red = 'Ange korrekt anvndarnamn';
 			elseif(strlen(trim($username))==0)
-				$username_red = 'Ange korrekt anvndarnamn.';
+				$username_red = 'Ange korrekt anvndarnamn';
 			else
 				$username_red = '';
 		}
@@ -624,7 +624,7 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 							$profile = new SfGuardUserProfile(); 
 							$profile->reset_password_for_borst($user_data->id, $arr["new_pass"]);
 						}
-						else {	$msg .= "OBS! Nytt lösenord och Bekräfta nytt lösenord matchar inte.<br/>";	}
+						else {	$msg .= "OBS! Nytt lösenord och Bekräfta nytt lösenord matchar inte<br/>";	}
 					}
 					else {	$msg .= "OBS! Den trädde gamla lösenordet är fel.<br/>";	} 
 				}
@@ -638,7 +638,7 @@ class SfGuardUserProfile extends BaseSfGuardUserProfile
 							$user_data->password = $arr["new_pass"];
 							$user_data->save();
 						}
-						else {	$msg .= "OBS! Nytt lösenord och Bekräfta nytt lösenord matchar inte.<br/>";	}
+						else {	$msg .= "OBS! Nytt lösenord och Bekräfta nytt lösenord matchar inte<br/>";	}
 					}
 					else {	$msg .= "OBS! Den trädde gamla lösenordet är fel..111<br/>";	} 
 				}

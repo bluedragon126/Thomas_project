@@ -65,11 +65,11 @@
                                         <tr style="background: #ffffff;width:786px;float:left; height: 4px; vertical-align: middle; margin-top:2px;"  >
                                             <td colspan="5" style="vertical-align: middle;">&nbsp;</td>
                                         </tr>
-                                        <tr style="background: #3d567c;width:786px;float:left; height:28px;  vertical-align: middle; margin-top:2px; margin-bottom:4px;"  >
+                                        <tr style="background: #f15822;width:786px;float:left; height:28px;  vertical-align: middle; margin-top:2px; margin-bottom:4px;"  >
                                         
-                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/" style="letter-spacing: 0.6px; padding-left: 0px; float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 15px; color: #FFFFFF; font-weight:normal; letter-spacing: 0.2px; text-decoration: none; width: 142px;">&nbsp;&nbsp;&nbsp;Läs på webben</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/" style="letter-spacing: 0.6px; padding-left: 0px; float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 15px; color: #FFFFFF; font-weight: 100; letter-spacing: 0.2px; text-decoration: none; width: 142px;">&nbsp;&nbsp;&nbsp;Läs på webben</a></td>
                                             
-                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 15px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 110px;">&nbsp;Gratis konto </a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 14px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 110px;">&nbsp;Gratis konto </a></td>
                                             
                                             <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/borst/borstSubscriber" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 15px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 78px;">&nbsp;&nbsp;Portfölj</a></td>
                                             
@@ -119,35 +119,7 @@
                                                         <div style="border-bottom: 2px solid #d4dae4;height: 10px; margin: 4px 0px 5px;">&nbsp;</div>
                                         </td>
                                     </tr>
-
-                                    <tr style="width: 300px;float: left;">
-                                        <!-- forum post -->
-                                        <td style="padding-top: 10px;">
-                                            <table cellpadding="0" cellspacing="0" width="300" style="background-color: #f99d1e;border-top-left-radius: 18px;border-bottom-right-radius: 18px;height: 176px;padding-left: 10px;">
-                                                <tr>
-                                                    <td style="padding: 10px 10px 5px 10px;">
-                                                        <a href="http://http://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
-
-                                                        <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 22px; color: #ffffff;float: left; margin: 14px 0px -2px 0px; padding-left:2px; font-weight: 300;">Aktuella forumtrådar</span>
-
-                                                        <ul style="color: #ffffff;list-style-position: outside;float: left;margin-top: 9px; padding-left: 15px;width: 225px;" >
-                                                            <?php foreach ($forum_post as $post): ?>
-
-                                                                <li style="color: #ffffff;width: 300px;line-height: 16px;">
-
-                                                                    <a style="word-wrap:break-word;width: 225px;font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; color: #ffffff; text-decoration: none; font-size: 14px; line-height: 18px; letter-spacing:0.2px;" href=<?php echo $host . '/forum/commentOnForumTopic/forumid/' . $post->id; ?>><?php echo $post->rubrik ?></a>
-                                                                </li>
-
-                                                            <?php endforeach; ?>
-                                                        </ul>
-
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-
-                                    <tr style="width: 300px;float: left;">
+<tr style="width: 300px;float: left;">
                                         <td style="width:100%;padding: 14px 0px 5px 0px;">
 
                                             <img width="300px" style="margin: 2px 0px 4px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles1.png" alt="" />
@@ -175,6 +147,34 @@
 
                                         </td>
                                     </tr>
+                                    <tr style="width: 300px;float: left;">
+                                        <!-- forum post -->
+                                        <td style="padding-top: 10px;">
+                                            <table cellpadding="0" cellspacing="0" width="300" style="background-color: #f99d1e;border-top-left-radius: 18px;border-bottom-right-radius: 18px;height: 176px;padding-left: 10px;">
+                                                <tr>
+                                                    <td style="padding: 10px 10px 5px 10px;">
+                                                        <a href="http://http://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
+
+                                                        <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 22px; color: #ffffff;float: left; margin: 14px 0px -2px 0px; padding-left:2px; font-weight: 300;">Aktuella forumtrådar</span>
+
+                                                        <ul style="color: #ffffff;list-style-position: outside;float: left;margin-top: 9px; padding-left: 15px;width: 225px;" >
+                                                            <?php foreach ($forum_post as $post): ?>
+
+                                                                <li style="color: #ffffff;width: 300px;line-height: 16px;">
+
+                                                                    <a style="word-wrap:break-word;width: 225px;font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; color: #ffffff; text-decoration: none; font-size: 14px; line-height: 18px; letter-spacing:0.2px;" href=<?php echo $host . '/forum/commentOnForumTopic/forumid/' . $post->id; ?>><?php echo $post->rubrik ?></a>
+                                                                </li>
+
+                                                            <?php endforeach; ?>
+                                                        </ul>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    
 
                                     <tr id="blog_1" style="width: 300px;float: left;">
                                         <!-- popular bloggar -->

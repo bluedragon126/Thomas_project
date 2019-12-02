@@ -1,4 +1,4 @@
-<script language="javascript" type="text/javascript">
+UPP<script language="javascript" type="text/javascript">
     $(window).load(function(){
         var url = window.location.href;
         $("#bt_shop_home a").addClass("yellowcolor");

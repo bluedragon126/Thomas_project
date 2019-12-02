@@ -50,7 +50,7 @@ $upload_path .= ( $article['name'] == $article_name ? "articleIngressImages/" : 
                             <?php echo $article['title'] ?></a></td> </tr>
 
                 <tr>
-                    <td style="width:100%;float:left;font-family: Georgia, 'Times New Roman', Times, serif;color: #232222;font-size: <?php echo $side == "left" ? "17px" : "15px" ?>;font-weight:300; line-height:<?php echo $side == "left" ? "26px" : "25px" ?>;font-style:normal;font-size-adjust:none;">
+                    <td style="width:100%;float:left;font-family: Georgia, 'Times New Roman', Times, serif;color: #232222;font-size: <?php echo $side == "left" ? "17px" : "15px" ?>;font-weight:300; line-height:<?php echo $side == "left" ? "26px" : "23px" ?>;font-style:normal;font-size-adjust:none;">
 
                         <img style="margin: <?php echo $side == "left" ? "-12px 2px 0px 0px" : "-2px 1px 0px 0px" ?>; vertical-align:-2;" src="<?php echo $host; ?>/images/new_home/btjn_square.png" width="<?php echo $side == "left" ? "13" : "10" ?>" height="<?php echo $side == "left" ? "28" : "24" ?>"alt="fig">
                         <a href="<?php echo $host . $link_type . $article['article_id']; ?>" style="border: 0 none;color: #232222;text-decoration: none;" >

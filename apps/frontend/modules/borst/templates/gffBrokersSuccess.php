@@ -32,8 +32,13 @@
  <div>
    <div><span lang="sv" xml:lang="sv"><span title=""><strong>Som NFA-medlem</strong> och </span></span><span lang="sv" xml:lang="sv"><span title=""> registrerad <i>IB (Introducing Broker)</i> hos <i>CFTC</i> driver <i>GFF Brokers</i> på branschen genom att tillhandahålla kostnadseffektiv termins- och valutahandel med stöd av högkvalitativ kundtjänst, branschkompetens och ett växande utbud av handelsplattformar.</span></span></div>
  </div>
- <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 22px 0px 23.5px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="" width="310;" /></a></p>
+ <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 18px 0px 10px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="" width="310;" /></a></p>
+
+ 
+ <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 2px 0px 15px 0px;" src="../../../../../../images/new_home/gffbrokers.png" alt="" width="110;" /></a></p>
  <?php echo include_partial('global/bottom_footer_whitepage'); ?>
+ 
+ 
             </div>
         </div>
         <div class="inner_page_divider_3">&nbsp;</div>

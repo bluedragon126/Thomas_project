@@ -16,7 +16,7 @@
 </script>
 <div class="minsid_lefttopdiv">
   <!--<h2 class="minleft_heading"><?php //echo ucfirst($user_details->user_title)    ?></h2>-->
-    <div class="mrg_btm_10"><img src="/images/new_home/konto.png" width="300" /></div>
+    <div class="mrg_btm_5"><img src="/images/new_home/konto.png" width="300" /></div>
     
          
         <div class="konto_namn"><?php echo $user_profile->getFullUserName($user_id); ?></div>
