@@ -5428,7 +5428,7 @@ ul.cartStep2 li {
     font-size: 1.2em;
     color: #232222;
     float: left;
-    mmargin-top: 12px;
+    padding: 2px 0;
 	margin-bottom: 5px;
 }
 

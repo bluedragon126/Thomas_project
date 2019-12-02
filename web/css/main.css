@@ -527,12 +527,12 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .photo_container{float:left;position:relative;padding:0 0 5px 0;width:52px;color:#5a7692;}
 .l18_height{line-height:17px;}
 .advert_wrapper{float:left;position:relative;background-color:#fff;width:267px;line-height:0px;}
-.minsid_rightdiv{float:left;position:relative;width:620px;border:0px solid white;padding:0 0 0px 17px;}
+.minsid_rightdiv{float:left;position:relative;width:620px;border:0px solid white;border-left: 1px solid #D3D6E1;margin-left: -1px; padding:0 0 0px 17px;}
 .curverect_topbg{}
 .curverect_midbg{}
 .curverect_bottombg{}
-.midsi_inner_tab{float:left;position:relative;padding:5px 30px 0 30px;border:0px solid red;width:560px;}
-.midsi_inner{float:left;position:relative;padding:0 0 30px 30px;border:0px solid red;width:610px;}
+.midsi_inner_tab{float:left;position:relative;padding:0px 30px 0 30px;border:0px solid red;width:560px;}
+.midsi_inner{float:left;position:relative;padding:0px 0 30px 30px;border:0px solid red;width:610px;}
 .minsid_heading{float:left;position:relative;color:#a7a8aa;margin:0;padding:0;font-size:28px;font-weight:normal;font-family:caslon;}
 .profilelink{float:right;position:relative;}
 .profilelink a{color:#fff;text-decoration:none;}

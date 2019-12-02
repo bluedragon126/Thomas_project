@@ -1,12 +1,4 @@
-<script type="text/JavaScript">
 
-  $(window).load(function(){
-    
-    //$(".user_img").corner("7px");       
-    
-  });
-
-</script>
 <style>
     .advertdiv, .advertdiv2{
         margin-left: 0px;

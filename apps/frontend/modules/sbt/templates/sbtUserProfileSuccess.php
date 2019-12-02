@@ -59,18 +59,6 @@
         var titletext = $('title').text()+' | '+twitimagetext;
         $('title').text(titletext);
         /* code by sandeep end */
-
-        var checkRight = $(".minsid_rightdiv").height();
-        var checkLeft = $(".innerleftdiv_blog").height();
-  
-        if(checkLeft > checkRight)
-        {
-            $(".minsid_rightdiv").css({"height":checkLeft+"px"});
-        } 
-        else
-        {
-            $(".innerleftdiv_blog").css({"height":checkRight+"px"});
-        }
     });
 	    
     function sortingPopUp(obj){
