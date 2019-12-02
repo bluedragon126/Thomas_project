@@ -41,43 +41,22 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="inner_page_divider">&nbsp;</div>
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
-                <div class="whp_title">Dagsbrevet – Börstjänaren Just Nu!</div>
+                <div class="whp_title">Dagsbrevet: Börstjänaren Just Nu!</div>
                 <!-- <div class="shoph3 widthall">Rubrik här då</div>-->
                 <?php include_partial('global/body_head', array('rub' => "")) ?>
                 <?php //include_partial('global/front_form_header',array('greenmsg'=>$greenmsg,'errormsg'=>$errormsg,'host_str'=>$host_str))  ?>
                 <div class="blank_10h widthall">&nbsp;</div>
                 <div class="whp_preamble">Här kan du som  registrerad användare teckna eller säga upp det kostnadsfria dagsbrevet &quot;Börstjänaren Just Nu!&quot; </div>
                 
-                <strong>Dagsbrevet</strong> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på Börstjänaren och valt att teckna sig för detta brev. 
                 
-                
-                <br />
-                        <br />
-                
-                
-              <a href="https://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin-top:5px; margin-bottom:-6px" /></a>
-               
-                 
-                <!--<a href="BT-nytt.html"><font color="#c72127" line-height="35px">BT-NYTT</font></a> ger dig pedagogiska analyser, skarpa aktietips och underhållande krönikor.<br />
-                <div class="blank_3h widthall">&nbsp;</div>
-                
-                          <a href="BT-At large.html"><font color="#c72127">BT AT LARGE</font></a> – kostnadsfri inblick i de intressantaste aktierna på Stockholm Large Cap.<br />
-                      <div class="blank_3h widthall">&nbsp;</div>
-                          <a href="FX-update.html"><font color="#c72127">FX-UPDATE</font></a> ger dig full koll på världens valutamarknader.
-                      <br />!-->
-                    <br />  
-             <em>Aktuell information från Börstjänaren!</em>
-                <br />
                 <br />
                 <b>Klicka i, respektive klicka ur, rutan nedan </b>och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                     
                 <div class="blank_7h widthall">&nbsp;</div>
                 
-                <div class="float_left widthall margin_bottom_2" id="my_e_newsletter_reply"><?php
-                echo
-                html_entity_decode($msg);
-                ?></div>
+                <div class="float_left widthall margin_bottom_2" id="my_e_newsletter_reply">
+				<?php echo html_entity_decode($msg); ?></div>
 
                 <?php $pren = $sf_params->get('pren'); ?>
                 <form name="my_e_newsletter_form" id="my_e_newsletter_form" method="post" action="">
@@ -97,6 +76,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="blank_3h widthall">&nbsp;</div>
             <span class="float_left widthall"><input type="radio" name="pren" id="radio1" value="1" <?php //if ($pren == 1) echo("checked");   ?>  class="radio"/>
                 Avsluta</span>-->
+                
                     <div class="blank_3h widthall">&nbsp;</div>
                     <!--<input id="newsletter_email" name="newsletter_email" value="Fyll i din e-post här!"  onFocus="clearNewsletterEmailField(this)" onBlur="fillNewsletterEmailField()" type="text" class="form_input width_277 contactus-inputs" /><br />-->
                     <div class="blank_7h widthall">&nbsp;</div>
@@ -106,6 +86,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </form>
+                
                 <div class="blank_1h widthall">
                     
                 </div>
@@ -129,13 +110,35 @@ include_component('isicsBreadcrumbs', 'show', array(
  <div class="blank_5h widthall">
 
                 <div class="float_left">
-                <p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a><br>
+               
                 
                                     
                         
                 </div>
 
             </div>
+<br />
+<p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a></p><br>
+<strong>Dagsbrevet</strong> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på Börstjänaren och valt att teckna sig för detta brev. 
+                
+                
+                <br />
+                        <br />
+                
+                
+              <a href="https://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/BT_just_nu_head.png" border="0" alt="logo" width="180" style="margin-right:100%; margin-top:5px; margin-bottom:-6px" /></a>
+               
+                 
+                <!--<a href="BT-nytt.html"><font color="#c72127" line-height="35px">BT-NYTT</font></a> ger dig pedagogiska analyser, skarpa aktietips och underhållande krönikor.<br />
+                <div class="blank_3h widthall">&nbsp;</div>
+                
+                          <a href="BT-At large.html"><font color="#c72127">BT AT LARGE</font></a> – kostnadsfri inblick i de intressantaste aktierna på Stockholm Large Cap.<br />
+                      <div class="blank_3h widthall">&nbsp;</div>
+                          <a href="FX-update.html"><font color="#c72127">FX-UPDATE</font></a> ger dig full koll på världens valutamarknader.
+                      <br />!-->
+                    <br />  
+             <em>Aktuell information från Börstjänaren!</em>
+                <br />
 
             <?php echo include_partial('global/inner_bottom_footer'); ?>
         </div>

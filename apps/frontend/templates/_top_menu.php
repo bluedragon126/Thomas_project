@@ -111,11 +111,11 @@ endforeach;
             <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span class="text-uppercase bt-shop <?php echo $parent_menu == 'top_bt_shop' ? 'nav-active' : '' ?>">BT-Shop</span></a>
                 <ul class="nav-bar-sub" id="second">
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><span>Hem</span></a></li>                    
+                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><span>Villkor</span></a></li>
                     <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title");' id="btshop_utbildningar"><span>Utbildningar</span></a></li>
                     <li id="bt_shop_abonnemang" class="popupmenu"><a id="btshop_abonnemang" href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'><span>Abonnemang</span></a>
                     </li>
-                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");' id="btshop_metastock"><span>Metastock</span></a></li>
-                    <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><span>Villkor</span></a></li>
+                    <li><a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title");' id="btshop_metastock"><span>Metastock</span></a></li>                    
                     <li><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopCart"><span>Varukorg</span></a></li>
                 </ul>
             </li>
@@ -155,11 +155,11 @@ endforeach;
 <div class="subnav-bar-wrap">
 
     <div class="subnav-bar-wrap-right">
-    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstWebinar'; ?>"><span class="subnav-bar <?php echo $third_menu == 'borst_menu_chronicles' ? 'sub-active' : '' ?>">Webinarium</span></a>    
+    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstWebinar'; ?>"><span class="subnav-bar <?php echo $third_menu == 'webinarium' ? 'sub-active' : '' ?>">Webinarium</span></a>    
         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList'; ?>"><span class="subnav-bar <?php echo $third_menu == 'list' ? 'sub-active' : '' ?>">Lista</span></a>
-       <!-- <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/2127'; ?>"> <span class="subnav-bar <?php echo $third_menu == 'webinarium' ? 'sub-active' : '' ?>">Webinarium</span></a>-->
         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstChronicles"><span class="subnav-bar <?php echo $third_menu == 'bt_skolan' ? 'sub-active' : '' ?>">Arkiv</span></a>
-         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstRisk"><span class="subnav-bar <?php echo $third_menu == 'riskvarning' ? 'sub-active' : '' ?>"> Riskvarning </span></a><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/contactUs'; ?>"><span class="subnav-bar <?php echo $third_menu == 'contact_us' ? 'sub-active' : '' ?>">Kontakta oss</span></a>
+         <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstRisk"><span class="subnav-bar <?php echo $third_menu == 'riskvarning' ? 'sub-active' : '' ?>"> Riskvarning </span></a>
+         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/contactUs'; ?>"><span class="subnav-bar <?php echo $third_menu == 'contact_us' ? 'sub-active' : '' ?>">Kontakta oss</span></a>
         <!--<span class="subnav-bar <?php echo $submenu == 'forum_menu_home' ? 'sub-active' : '' ?>">a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome">Forum</a></span>-->
         
     </div>

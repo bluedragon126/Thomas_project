@@ -45,34 +45,11 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <?php //include_partial('global/front_form_header',array('greenmsg'=>$greenmsg,'errormsg'=>$errormsg,'host_str'=>$host_str))  ?>
                 <div class="blank_10h widthall">&nbsp;</div>
                 <div class="whp_preamble">Här kan du teckna dig för en prenumeration på Börstjänarens kostnadsfria veckobrev. På denna sida kan du även avsluta din prenumeration, om du så önskar.</div>
-                
-                 
-                   
                   
-
-                <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:38px 0 10px" width="300" border="0" alt="imag" /></a>
-                
-              <div class="float_left widthall">
-                    
-             <br>  
-              
-                
-                   <strong>Veckobrevet</strong> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <strong>VM-Update</strong> (utkommer måndagar). Veckobrevet kräver inget          
-                        konto på Börstjänaren.     
                 
              
+                <!--<div class="blank_22h widthall">&nbsp;</div>-->
 
-                <!--<a href="BT-nytt.html"><font color="#c72127" line-height="35px">BT-NYTT</font></a> ger dig pedagogiska analyser, skarpa aktietips och underhållande krönikor.<br />
-                <div class="blank_3h widthall">&nbsp;</div>
-                
-                          <a href="BT-At large.html"><font color="#c72127">BT AT LARGE</font></a> – kostnadsfri inblick i de intressantaste aktierna på Stockholm Large Cap.<br />
-                      <div class="blank_3h widthall">&nbsp;</div>
-                          <a href="FX-update.html"><font color="#c72127">FX-UPDATE</font></a> ger dig full koll på världens valutamarknader.
-                      <br />!-->
-                <div class="blank_22h widthall">&nbsp;</div>
-                
-        
-                 <br>
                 
             
                 <b>Fyll i din e-postadress</b> i fältet nedan och klicka REGISTRERA, för att anmäla dig till vårt veckoutskicksregister! <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
@@ -107,19 +84,18 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <p><strong>OBS!</strong> 
                          <br>
                   Prenumerationen på <strong>Börstjänarens dagsbrev</strong> administreras på <a href="/borst/borstDayletter"> separat sida.</a></p>
-                
-                
-                
-                
-             
-                        
-                        
-                    
-                    
-                       
+                 
                     </div>
                     
+                    <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:38px 0 10px" width="300" border="0" alt="imag" /></a>
+                
+              <div class="float_left widthall">
                     
+             <br>  
+              
+                
+                   <strong>Veckobrevet</strong> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <strong>VM-Update</strong> (utkommer måndagar). Veckobrevet kräver inget          
+                        konto på Börstjänaren.    
                     
                
                 <!--<div class="subcribediv"><a class="main_link_color" href="BT-nytt.html"><img src="/images/Subscribeimg_1.jpg" border="0" alt="imag"/></a>
