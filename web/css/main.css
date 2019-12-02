@@ -549,9 +549,9 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .padtop_5{padding:5px 0 0 0;position:relative;}
 .padtop_3{padding:3px 0 0 0;position:relative;}
 .viocolor{color:#7D78A0;}
-.usrname{background-color:#ebeff3;
-border: 1px solid #ebeff3;
-color: #232222;
+.usrname{background-color:#fff;
+border: 1px solid #fff;
+color: #f15822;
 height: 30px;
 width: 286px;
 font-size: 1.05em;

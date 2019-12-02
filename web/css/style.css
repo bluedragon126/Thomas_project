@@ -5033,7 +5033,7 @@ ul.cartStep2 li {
 .blog_prof_table_date {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #f15822 !important;
+    color: #232222 !important;
     line-height: 1.2em;
 }
 
@@ -10446,7 +10446,7 @@ whp_heading
 
 #editpro .jqTransformSelectWrapper div span {
     height: 24px !important;
-    font-size: 1.05em !important;
+    font-size: 1.1em !important;
     min-width: 153px !important;
     color: #232222 !important;
 }
@@ -11612,7 +11612,7 @@ whp_heading
     margin-top: 30px;
     padding-left: 0;
     display: block;
-    width: 42%;
+    width: 48%;
 }
 
 .nav-bar ul li {
