@@ -160,12 +160,6 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </tr>
                 <?php if ($btshop_pager): ?>
                     <?php foreach ($btshop_pager->getResults() as $data): ?>
-                            <tr class="classnot">
-                                <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
-                                <td class="main_link_color width_240"><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
-                                <td class="lightgreenfont width_220"><a class="shop_type cursor" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
-                                <td class="main_link_color width_120"><a class="main_link_color"><?php echo "från " . BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>                
-                            </tr>
                     <?php endforeach; ?>
                     <?php if ($btshop_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
                 <?php endif; ?>
@@ -194,7 +188,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <td class="orgfont width326 pad_lft_5" style="color:#5a7692"><?php echo $data->btshop_article_subtitle; ?></td>
                                 <td class="width136"><a class="blog_table_topic" style="color:#5ec5ed" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
                                 <td class="width108"><a class="btshop_table_post shop_type cursor" style="color:#171200" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
-                                <td class="forum_table_date_w"><a class="blog_prof_table_date main_link_color" style="color:#e53520"><?php echo "från " . BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
+                                <td class="forum_table_date_w"><a class="blog_prof_table_date main_link_color" style="color:#e53520"><?php echo  BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
 
                             </tr>
                             <?php
