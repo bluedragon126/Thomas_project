@@ -25,9 +25,9 @@
             
                                     
                                       
-                                       <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 0px 0px 0px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></div>
+                                       <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 0px 0px 0px 0px;" src="/images/new_home/webinarium_more.png" width="500"/>
                 
-                <p><img style="margin: 30px 0px 15px 0px;" src="/images/new_home/webinarium_title.png" width="350"/></p>
+                <p><img style="margin: 30px 0px 15px 0px;" src="/images/new_home/webinarium_title.png" width="350"/></p></a></div>
                 
                           
                 <div class="whp_preamble_web">På dessa träffar gör vi lättfattliga genomgångar av t ex någon köpintressant aktie eller marknaden i stort. Det finns också möjlighet att ställa frågor i slutet av varje session, som brukar ta ca 40 min.
