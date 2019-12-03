@@ -1375,12 +1375,12 @@ home_heading_c {
 
 .list_topic {
     font-family: 'Franklin Gothic Book Regular';
-    color: #5a7692;
+    color: #8295a8;
 }
 
 .list_topic_bt-sh {
     font-family: 'Franklin Gothic Book Regular';
-    color: #5a7692;
+    color: #8295a8;
 	font-size: 0.93em;
 }
 
@@ -1456,7 +1456,7 @@ a.article_dots_r {
     float: left;
     margin-bottom: 30px;
     margin-top: 12px;
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: #232222;
     line-height: 1.3em;
     word-spacing: -0.06em;
@@ -1468,7 +1468,7 @@ a.article_dots_r {
     float: left;
     margin-bottom: 20px;
     margin-top: 12px;
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: #232222;
     line-height: 1.3em;
     word-spacing: -0.06em;
@@ -1478,9 +1478,9 @@ a.article_dots_r {
 .whp_preamble {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.5em;
+    font-size: 1.6em;
 	letter-spacing: 0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     line-height: 1.6em;
     margin-bottom: 30px;
 }
@@ -1488,9 +1488,9 @@ a.article_dots_r {
 .whp_preamble_head {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.5em;
+    font-size: 1.6em;
 	letter-spacing: 0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     line-height: 1.6em;
     margin-bottom: 4px;
 }
@@ -1519,7 +1519,7 @@ a.article_dots_r {
 .whp_preamble_web {
     font-family: 'Franklin Gothic Book Regular';
     float: left;
-    font-size: 1.5em;
+    font-size: 1.6em;
 	letter-spacing: 0.01em;
     color: #3cc5e7;
     line-height: 1.6em;
@@ -1529,9 +1529,9 @@ a.article_dots_r {
 .whp_heading {
     color: #232222;
     font-family: 'ITC Cheltenham Book';
-    font-size: 1.7em;
+    font-size: 1.8em;
     line-height: 1em;
-    margin: 52px 0px 10px;
+    margin: 52px 0px 15px;
     width: 100%;
 }
 
@@ -1559,7 +1559,7 @@ a.article_dots_r {
     color: #f15822;
     float: left;
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.4em;
     margin: 20px 0px 18px;
     width: 100%;
@@ -2509,7 +2509,7 @@ input.rounded {
     float: left;
     font-size: 1.5em;
 	letter-spacing: 0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     line-height: 1.5em;
 }
 
@@ -2557,7 +2557,7 @@ input.rounded {
 
 .shop_detail_pricetext {
     font-family: 'Georgia Italic';
-    color: #abb9c8;
+    color: #a6b1c2;
     font-size: 1em;
     letter-spacing: 0.01em;
     margin-top: 0px;
@@ -2683,7 +2683,7 @@ input.rounded {
 }
 
 .shop_r_side_prod {
-    color: #abb9c8;
+    color: #a6b1c2;
     line-height: 1.2em;
 }
 
@@ -3691,7 +3691,7 @@ ul.cartStep2 li {
 
 .forum_pag a {
     word-spacing: 2px;
-    color: #abb9c8 !important;
+    color: #a6b1c2 !important;
 }
 
 .forum_pagination_prev_img {
@@ -3861,7 +3861,7 @@ ul.cartStep2 li {
 }
 
 .second_drop {
-    margin-left: 33px;
+    margin-left: 40px;
     margin-right: 12px;
     margin-top: 70px;
     margin-bottom: 12px;
@@ -5199,7 +5199,7 @@ ul.cartStep2 li {
 }
 
 .konto_namn {
-    color: #b6b5bb;
+    color: #232222;
     font-family: 'ITC Cheltenham Book';
     font-size: 1.4em;
     line-height: 1.4em;
@@ -5596,7 +5596,7 @@ ul.cartStep2 li {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
     line-height: 1.35em;
-    color: #5a7692;
+    color: #8295a8;
 }
 
 .prof_table_stat {
@@ -5937,7 +5937,7 @@ ul.cartStep2 li {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 14px;
     line-height: 1.35em;
-    color: #232222;
+    color: #8295a8;
 }
 
 .dashbord_link span .selectedtab {
@@ -6619,37 +6619,41 @@ input.send_forgetpass {
 .cookie_bg {
     z-index: 1500;
     position: fixed;
-    right: calc(50vw - 505px);
+    right: calc(49.3vw - 505px);
     bottom: 20px;
-    width: 250px;
+    width: 260px;
     background-color:black;
     height: auto;
     border-radius: 6px;
     margin-top: 0px;
     display: none;
-    padding: 0px 37px 29px 50px;
-
+    padding: 20px 37px 55px 50px;
+	
 }
 
 .cookie {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1.2em;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.03em;
     color: white;
     float: left;
     text-align: left;
-    /* margin-bottom: 10px; */
-    
 }
 
 .cookie_link {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 0.8em;
-	letter-spacing: 0.2em;
+    font-size: 1em;
+	letter-spacing: 0.3em;
 	text-transform:uppercase;
     color: #febc11;
     float: left;
-    margin-left: 3px;
+	margin-top: 10px;
+
+}
+	
+.cookie p{
+    line-height: 25px;
+    
 }
 
 .cookie_button_bg {
@@ -6663,7 +6667,7 @@ input.send_forgetpass {
 }
 
 .cookie_button {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Franklin Gothic Book Regular';
     font-size: 1.57em;
     color: #ffffff;
 }
@@ -8778,7 +8782,7 @@ input.send_forgetpass {
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
     box-shadow: 2px 2px 12px #dad7d8;
-    background-color: #928d87;
+    background-color: #17b0ba;
     width: 40px;
     height: 406px;
     float: left;
@@ -8790,24 +8794,24 @@ input.send_forgetpass {
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     box-shadow: 2px 2px 12px #555555;
-    background-color: #a5a09a;
+    background-color: #1bc3ce;
     width: 450px;
     height: 406px;
 }
 
 #container .pop_title {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 2.5em;
+    font-size: 2.6em;
     line-height: 1em;
     letter-spacing: 0.03em;
     color: #ffffff;
-    padding: 18px 0px 14px 122px;
+    padding: 30px 0px 14px 116px;
 }
 
 #container .pop_sub_title {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.1em;
-    line-height: 1.2em;
+    font-size: 1.2em;
+    line-height: 1.4em;
     color: #1b2337;
     padding: 0px 50px 0px 88px;
     text-align: center;
@@ -8822,7 +8826,7 @@ input.send_forgetpass {
     margin-left: 80px;
     text-align: center;
     width: 240px;
-    margin-top: 12px;
+    margin-top: 18px;
 }
 
 #container .popup_btn {
@@ -8833,8 +8837,8 @@ input.send_forgetpass {
     border: medium none;
     font-size: 1.1em;
     color: #fff;
-    background-color: #f2440e;
-    margin: 0px 0px 4px 160px;
+    background-color: #465856;
+    margin: 4px 0px 4px 160px;
     text-align: center;
     width: 80px;
     height: 30px;
@@ -8842,7 +8846,7 @@ input.send_forgetpass {
 
 #container .pop_subtitle {
     font-family: 'Georgia';
-    font-size: 1.2em;
+    font-size: 1.3em;
 	letter-spacing: 0.04em;
     color: #ffffff;
     padding: 0px 50px 11px 88px;
@@ -11396,7 +11400,7 @@ whp_heading
 .wizdom-one {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     font-size: 3.6em;
     font-style: italic;
     line-height: 1em;
@@ -11411,7 +11415,7 @@ whp_heading
 .wizdom-two {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     font-size: 2.2em;
     font-style: italic;
     line-height: 1em;
@@ -11427,7 +11431,7 @@ whp_heading
 .wizdom-three {
     font-family: "CheltenhamITCW01-Bold";
     letter-spacing: -0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     font-size: 1.8em;
     font-style: italic;
     line-height: 1em;
@@ -11648,7 +11652,7 @@ whp_heading
 }
 
 .nav-bar ul li a span:hover {
-    color: #abb9c8;
+    color: #a6b1c2;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
@@ -11698,7 +11702,7 @@ whp_heading
 }
 
 .sub-active {
-    color: #abb9c8;
+    color: #a6b1c2;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
@@ -11706,7 +11710,7 @@ whp_heading
 }
 
 .subnav-bar-wrap-right .subnav-bar:hover {
-    color: #abb9c8 !important;
+    color: #a6b1c2 !important;
     background-color: transparent;
     background: url(../images/new_home/arrow_red.png) no-repeat center bottom;
     background-size: auto auto;
@@ -11718,7 +11722,7 @@ whp_heading
 }
 
 .subnav-bar-wrap-right .subnav-bar a:hover {
-    color: #abb9c8;
+    color: #a6b1c2;
 }
 
 .text-uppercase {
@@ -11875,7 +11879,7 @@ h2 {
     float: left;
     font-size: 1.5em;
 	letter-spacing: 0.01em;
-    color: #abb9c8;
+    color: #a6b1c2;
     line-height: 1.6em;
     margin-bottom: 20px;
 }

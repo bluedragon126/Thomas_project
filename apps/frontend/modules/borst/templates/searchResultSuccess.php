@@ -115,7 +115,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <ul class="listingtab" id="search_tabs">
                     <li><a id="search_in_borst" class="cursor search_nav search_nav_top_left <?php if ($search_tab == 'borst') echo 'selectedtab' ?>">Börstjänaren</a></li>
                     <li><a id="search_in_btshop" class="cursor search_nav <?php if ($search_tab == 'btshop') echo 'selectedtab' ?>">BT-Shop</a></li>                                
-                    <li><a id="search_in_all" class="cursor search_nav search_nav_bottom_right <?php if ($search_tab == 'all') echo 'selectedtab' ?>">Alla</a></li>
+                    <li><a id="search_in_all" class="cursor search_nav search_nav_bottom_right <?php if ($search_tab == 'all') echo 'selectedtab' ?>">Båda</a></li>
                 </ul>
                 <input type="hidden" id="normal_search_para" name="normal_search_para" value="<?php echo $normal_search_para; ?>"/>
                 <input type="hidden" id="search_tab" name="search_tab" value="<?php echo $search_tab; ?>"/>

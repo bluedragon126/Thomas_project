@@ -50,7 +50,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 
                 <br />
-                Klicka i, respektive klicka ur, rutan nedan och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (OBS: Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
+                Klicka i, respektive klicka ur, rutan nedan och spara ditt val med Registrera-knappen, för att på- eller avanmäla dig till våra dagsutskicksregister! (<strong>OBS:</strong> Du behöver vara inloggad!) <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                     
                 <div class="blank_7h widthall">&nbsp;</div>
@@ -118,8 +118,10 @@ include_component('isicsBreadcrumbs', 'show', array(
 
             </div>
 <br />
-<p><strong>OBS!</strong> Prenumerationen på <strong>Börstjänarens veckobrev</strong> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a></p><br>
-<strong>Dagsbrevet</strong> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på Börstjänaren och valt att teckna sig för detta brev. 
+<p><strong>OBS!</strong> 
+<br />
+Prenumerationen på <i>Börstjänarens veckobrev</i> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a></p><br>
+<i>Dagsbrevet</i> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på Börstjänaren och valt att teckna sig för detta brev. 
                 
                 
                 <br />

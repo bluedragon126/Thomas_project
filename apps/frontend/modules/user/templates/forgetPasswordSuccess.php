@@ -49,7 +49,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="float_left widthall">
                         <table width="100%" border="0" cellspacing="0" cellpadding="3" id="forget_password_page">
                             <tr>
-                                <td><?php echo __('Ange den epost-adress du använde när du skapade ditt konto, så skickas ett mail med dina användaruppgifter dit på en gång: ') ?></td>
+                                <td><?php echo __('Ange den e-postadress du använde när du skapade ditt konto, så skickas ett mail med dina användaruppgifter dit på en gång: ') ?></td>
                             </tr>
                             <tr>
                                 <td class="redColor"><?php echo $msg ?></td>
@@ -72,7 +72,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 								
 								<div class="whp_subheading">E-postadressen ej längre tillgänglig?</div>
 								
-								<?php echo __('<b>Om du inte längre</b> har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnummer och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
+								<?php echo __('Om du inte längre har tillgång till den e-postadress du valde när du registrerade dig, kontakta oss och lämna namn, personnummer och andra uppgifter du tror kan hjälpa oss att hitta dig!') ?></td>
                             </tr>
                         </table>
                     </div>

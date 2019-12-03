@@ -52,7 +52,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                 
             
-                <b>Fyll i din e-postadress</b> i fältet nedan och klicka REGISTRERA, för att anmäla dig till vårt veckoutskicksregister! <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
+                Fyll i din e-postadress i fältet nedan och klicka REGISTRERA, för att anmäla dig till vårt veckoutskicksregister! <a class="main_link_color" href="javascript: openwindow()">Vår epost-policy.
                     <br /></a>
                 <div class="blank_8h widthall">&nbsp;</div>
                 <div class="float_left widthall margin_bottom_2" id="newsletter_form_error"><?php
@@ -94,7 +94,7 @@ include_component('isicsBreadcrumbs', 'show', array(
              <br>  
               
                 
-                   <strong>Veckobrevet utgörs huvudsakligen</strong> av det kostnadsfria marknadsbrevet <i>VM-Update</i> (utkommer måndagar). Veckobrevet kräver inget          
+                   <i>Veckobrevet</i> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <i>VM-Update</i> (utkommer måndagar). Veckobrevet kräver inget          
                         konto på Börstjänaren.    
                     
                
