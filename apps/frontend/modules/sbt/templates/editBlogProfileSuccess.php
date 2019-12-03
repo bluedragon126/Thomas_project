@@ -150,7 +150,7 @@
                                         <?php echo $blogProfileForm->renderHiddenFields() ?>
                                         <div>
                                             <div>
-                                                <div class="blog_user_profile_deshboard widthall">Editera bloggprofil</div>
+                                                <div class="blog_user_profile_deshboard padding_top_4 widthall">Editera bloggprofil</div>
                                                 <div class="blog_line_nav"><img src="/images/new_home/blog_line_nav.png"/>
                                                     <div class="widthall">
                                                         <div class="form_labels pad_btm_10 width_145">Bloggens namn: </div>
