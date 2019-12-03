@@ -5423,6 +5423,10 @@ ul.cartStep2 li {
     width: 600px;
 }
 
+.padding_top_4{
+    padding-top: 5px !important;
+}
+
 .blog_user_profile_deshboard {
     font-family: 'ITC Cheltenham Book';
     font-size: 1.2em;

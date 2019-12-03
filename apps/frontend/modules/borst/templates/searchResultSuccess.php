@@ -232,7 +232,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
-                                <?php if ($article_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center"> <p class="no_result_found">Din sökning gav ingen träff</p></td></tr>
+                                <?php if ($article_pager->getNbResults() < 1): ?> <tr><td colspan="10" align="center"> <p class="no_result_found">Din sökning gav ingen träff</p></td></tr>
                                 <?php elseif ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
                                                                                                                                 <!--<tr><td colspan="7" class="last_row">&nbsp;</td></tr>-->
                                 <?php endif; ?>
@@ -344,7 +344,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i++;
                                 endforeach;
                                 ?>
-                                <?php if ($btshop_pager->getNbResults() < 1): ?> <tr><td colspan="7" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
+                                <?php if ($btshop_pager->getNbResults() < 1): ?> <tr><td colspan="10" align="center" class="no_result_found">No Result Found</td></tr> <?php endif; ?>
                             <?php endif; ?>
                             <?php if ($search_tab == 'all' || !$pager->haveToPaginate()): ?>
                                 <!--<tr><td colspan="7">&nbsp;</td></tr>-->

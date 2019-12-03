@@ -1,5 +1,5 @@
 <style>.email_success_text_color{color:#0bb342;}</style>
-<div class="blog_user_profile_deshboard widthall">E-postutskick</div>
+<div class="blog_user_profile_deshboard padding_top_4 widthall">E-postutskick</div>
 <div class="blog_line_nav"><img src="/images/new_home/blog_line_nav.png"/></div>
 <form name="my_e_newsletter_form" id="my_e_newsletter_form" method="post" action="">
 <input type="hidden" id="user_id" name="user_id" value="<?php echo $user_id; ?>" />

@@ -118,7 +118,7 @@
     }
 </script>
 <div class="article_fav" id="article_fav_container">
-    <div class="blog_user_profile_deshboard">Artiklar</div>
+    <div class="blog_user_profile_deshboard padding_top_4">Artiklar</div>
     <div class="favortite_save_changes"><span id="article_fav_reply" class="float_right"></span></div>
     <form name="article_notification_change_form" id="fav_article_form" method="post" action="">
         <div class="float_left widthall" id="article_fav_list">
