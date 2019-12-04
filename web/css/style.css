@@ -2231,7 +2231,7 @@ input.rounded {
 .shop_home_title {
     font-family: 'Franklin Gothic Book Regular';
     line-height: 1.3em;
-	font-size: 1.45em;
+	font-size: 1.55em;
     letter-spacing: -0.01em;
     word-spacing: -0.02em;
     color: #232222;
@@ -6619,9 +6619,9 @@ input.send_forgetpass {
 .cookie_bg {
     z-index: 1500;
     position: fixed;
-    right: calc(49.3vw - 505px);
+    right: calc(49vw - 505px);
     bottom: 20px;
-    width: 260px;
+    width: 270px;
     background-color:black;
     height: auto;
     border-radius: 6px;
@@ -6643,16 +6643,16 @@ input.send_forgetpass {
 .cookie_link {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 1em;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.37em;
 	text-transform:uppercase;
     color: #febc11;
     float: left;
-	margin-top: 10px;
+	margin-top: 14px;
 
 }
 	
 .cookie p{
-    line-height: 25px;
+    line-height: 28px;
     
 }
 
@@ -6676,7 +6676,7 @@ input.send_forgetpass {
     color:white; 
     font-size:30px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 19px;
 }
 
 .cookie_wrap {
@@ -8784,7 +8784,7 @@ input.send_forgetpass {
     box-shadow: 2px 2px 12px #dad7d8;
     background-color: #17b0ba;
     width: 40px;
-    height: 406px;
+    height: 456px;
     float: left;
 }
 
@@ -8796,16 +8796,16 @@ input.send_forgetpass {
     box-shadow: 2px 2px 12px #555555;
     background-color: #1bc3ce;
     width: 450px;
-    height: 406px;
+    height: 456px;
 }
 
 #container .pop_title {
     font-family: 'Franklin Gothic Book Regular';
-    font-size: 2.6em;
+    font-size: 2.5em;
     line-height: 1em;
     letter-spacing: 0.03em;
     color: #ffffff;
-    padding: 30px 0px 14px 116px;
+    padding: 30px 0px 14px 120px;
 }
 
 #container .pop_sub_title {
@@ -8845,11 +8845,11 @@ input.send_forgetpass {
 }
 
 #container .pop_subtitle {
-    font-family: 'Georgia';
-    font-size: 1.3em;
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.5em;
 	letter-spacing: 0.04em;
     color: #ffffff;
-    padding: 0px 50px 11px 88px;
+    padding: 0px 50px 15px 88px;
     text-align: center;
     margin-top: 18px;
 }
