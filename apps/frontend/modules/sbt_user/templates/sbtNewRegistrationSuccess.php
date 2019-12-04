@@ -37,7 +37,7 @@ width:34%;
        
         $(".user_reg #username").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             if($(_this).val() != ""){
                 $.ajax({
                     url:'/sbt_user/getUserbyUsername?uname='+$(_this).val(),
@@ -48,7 +48,7 @@ width:34%;
                             $(_this).next().next().find("li").text(data);
                         }else{
                             $(_this).removeClass("redBorder");
-                            $(_this).next().addClass("regvalidfield_3");
+                            $(_this).next().addClass("registrationValidField");
                             $(_this).next().next().find("li").text("");
                         }
                     }
@@ -61,7 +61,7 @@ width:34%;
        
         $(".user_reg #email").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             if($(_this).val() != ""){
                 $.ajax({
                     url:'/sbt_user/getUserbyEmail?email='+$(_this).val(),
@@ -72,7 +72,7 @@ width:34%;
                             $(_this).next().next().find("li").text(data);
                         }else{
                             $(_this).removeClass("redBorder");
-                            $(_this).next().addClass("regvalidfield_3");
+                            $(_this).next().addClass("registrationValidField");
                             $(_this).next().next().find("li").text("");
                         }
                     }
@@ -85,7 +85,7 @@ width:34%;
        
         $(".user_reg #password").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             var str = $(_this).val();
             if(str != ""){
                 if(str.length < 6){
@@ -93,7 +93,7 @@ width:34%;
                     $(_this).next().next().find("li").text("Minst 6 tecken krävs");
                 }else{
                     $(_this).removeClass("redBorder");
-                    $(_this).next().addClass("regvalidfield_3");
+                    $(_this).next().addClass("registrationValidField");
                     $(_this).next().next().find("li").text("");
                 }
             }else{
@@ -104,7 +104,7 @@ width:34%;
        
         $(".user_reg #password_again").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             var str = $(_this).val();
             var str2 = $(".user_reg #password").val();
             if(str == "" ){
@@ -115,57 +115,57 @@ width:34%;
                 $(".user_reg #password_again").next().next().find("li").text("De två lösenorden måste vara samma");
             }else{
                 $(_this).removeClass("redBorder");
-                $(_this).next().addClass("regvalidfield_3");
+                $(_this).next().addClass("registrationValidField");
                 $(_this).next().next().find("li").text("");
             }
         });
         
         $(".user_reg #firstname,.user_reg #lastname,.user_reg #street,.user_reg #phone").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             var str = $(_this).val();
             if(str == "" ){
                 $(_this).addClass("redBorder");
                 $(_this).next().next().find("li").text("Nödvändig");
             }else{
                 $(_this).removeClass("redBorder");
-                $(_this).next().addClass("regvalidfield_3");
+                $(_this).next().addClass("registrationValidField");
                 $(_this).next().next().find("li").text("");
             }
         });
         
         $(".user_reg #firstname").live("focus",function(){
             if($("#year_of_birth").val() == 0){
-                $(".user_reg #year_of_birth").parents("div").next().next().removeClass("regvalidfield_1");
+                $(".user_reg #year_of_birth").parents("div").next().next().removeClass("registrationValidField");
                 $(".user_reg #year_of_birth").parents("div").parents("div").next().find("li").text("Vänligen ange födelseår");
             }else{
-                $(".user_reg #year_of_birth").parents("div").next().next("span").addClass("regvalidfield_1");
+                $(".user_reg #year_of_birth").parents("div").next().next("span").addClass("registrationValidField");
                 $(".user_reg #year_of_birth").parents("div").parents("div").next().find("li").text("");
             }
             if($("[name=gender]").prev().hasClass("jqTransformChecked")){
                 $("[name=gender]:first").parents("td").next().find("li").text("");
-                $(this).parents("td").next().find("span").addClass("regvalidfield_2");
+                $(this).parents("td").next().find("span").addClass("registrationValidField");
             }else{
                 $("[name=gender]:first").parents("td").next().find("li").text("Vänligen ange kön");
-                $("[name=gender]").parents("td").next().find("span:first").removeClass("regvalidfield_2");
+                $("[name=gender]").parents("td").next().find("span:first").removeClass("registrationValidField");
             }
         });
         
         $(".user_reg #zipcode").live("blur",function(){
             var _this = $(this);
-            $(_this).next().next().removeClass("regvalidfield_3");
+            $(_this).next().next().removeClass("registrationValidField");
             zipCityValidation(_this);
         });
        
         $(".user_reg #city").live("blur",function(){
             var _this = $(this).prev();
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             zipCityValidation(_this);
         });
        
         $(".user_reg #usernamealias").live("blur",function(){
             var _this = $(this);
-            $(_this).next().removeClass("regvalidfield_3");
+            $(_this).next().removeClass("registrationValidField");
             if($(_this).val() != ""){
                 $.ajax({
                     url:'/sbt_user/getUserbyUserAlias?uname='+$(_this).val(),
@@ -176,7 +176,7 @@ width:34%;
                             $(_this).next().next().find("li").text(data);
                         }else{
                             $(_this).removeClass("redBorder");
-                            $(_this).next().addClass("regvalidfield_3");
+                            $(_this).next().addClass("registrationValidField");
                             $(_this).next().next().find("li").text("");
                         }
                     }
@@ -188,9 +188,9 @@ width:34%;
         });
        
         $("[name=gender]").live("click",function(){
-            $("[name=gender]").parents("td").next().find("span:first").removeClass("regvalidfield_2");
+            $("[name=gender]").parents("td").next().find("span:first").removeClass("registrationValidField");
             $("[name=gender]:first").parents("td").next().find("li").text("");
-            $(this).parents("td").next().find("span:first").addClass("regvalidfield_2");
+            $(this).parents("td").next().find("span:first").addClass("registrationValidField");
         });
        
         function zipCityValidation(_this){
@@ -199,10 +199,10 @@ width:34%;
             var str2 = $(".user_reg #city").val();
            
             if(str2 == "" || str == ""){
-                $(_this2).next().removeClass("regvalidfield_3");
+                $(_this2).next().removeClass("registrationValidField");
                 $(_this2).next().next().find("li").text("Vänligen ange postnr / ort");
             }else{
-                $(_this2).next().addClass("regvalidfield_3");
+                $(_this2).next().addClass("registrationValidField");
                 $(_this2).removeClass("redBorder");
                 $(_this).removeClass("redBorder");
                 $(_this2).next().next().find("li").text("");
@@ -708,6 +708,17 @@ width:34%;
                         </tr>
 
                         </tbody>
+                    </table>
+                    <table cellpadding="0" cellspacing="0" width="100%" class="margin_top_10">
+                        <tr>
+                            <td class="error_list" colspan="2">
+                                <div class="widthall float_left"><div class="g-recaptcha" data-sitekey=<?php echo $public_key; ?>></div></div>
+                                <div class="float_left redcolor"><div class="for_labels" id="contact_enq_recaptcha_error"><?php echo $capcha_error; ?></div></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  class="blank_10h">&nbsp;</td>
+                        </tr>
                     </table>
 
                     <div class="registerbtn">

@@ -64,13 +64,11 @@ class borstActions extends sfActions
 		// Bottom Cube Links
 		$this->bottom_commodities_links = ArticleTable::getInstance()->getHomeCommodities(0,10,$isSuperAdmin);
 		$this->bottom_currencies_links = ArticleTable::getInstance()->getHomeCurrencies(0,10);
-		$this->bottom_buysell_links = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin);
-	// $cat_data = ArticleCategoryTable::getInstance()->getAllBorstArticleCategories();
-	// $type_data = ArticleTypeTable::getInstance()->getAllBorstArticleTypes();
-	// $object_data = ObjektTable::getInstance()->getAllBorstArticleObjects();
-		$this->bottom_statistics_links = ArticleTable::getInstance()->getHomeStatisticsArticle(0,10,$isSuperAdmin);
+		$this->bottom_buysell_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'kat',true,$isSuperAdmin);
+
+		$this->bottom_statistics_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'type',true,$isSuperAdmin);
 		$this->bottom_aktier_links = ArticleTable::getInstance()->getHomeAktier(0,10,$isSuperAdmin);
-		$this->bottom_kronika_links = ArticleTable::getInstance()->getHomeKronikaArticle(0,10,$isSuperAdmin);
+		$this->bottom_kronika_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'obj',true,$isSuperAdmin);
 		
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		$this->host_str = $this->getRequest()->getHost();

@@ -694,7 +694,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .chart_fav{width:610px;}
 #myaccount_data_container table th{font-weight:normal;padding:3px 3px 5px 0;text-align:left;}
 #myaccount_data_container table td{font-weight:normal;padding:8px 3px 8px 0;}
-#myaccount_data_container .favortite_save_changes{float:left;position:relative;width:100%;padding-bottom:5px;border-bottom:0px solid #ced2d0;}
+#myaccount_data_container .favortite_save_changes{float:left;position:relative;width:100%;padding-bottom:0px;border-bottom:0px solid #ced2d0;}
 #myaccount_data_container table tr{position:relative;border-bottom:1px solid #ced2d0;}
 .remove_from_fav_list{float:left;position:relative;cursor:pointer;}
 .my_e_newsletter{border:0px solid red;float:left;position:relative;padding:10px 30px 20px 0px;width:528px;}
