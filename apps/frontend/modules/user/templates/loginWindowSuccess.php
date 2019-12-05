@@ -99,14 +99,17 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </div>
                 </form>
-                <?php echo include_partial('global/inner_bottom_footer'); ?>
-            </div>
-        </div>
+                <?php echo include_partial('global/bottom_footer_whitepage'); ?>
+            <div class="inner_page_divider_3">&nbsp;</div>
+    <div class="float_left mrg_left_testimonial margin_testimonial">
+        <span><img src="/images/new_home/testimonial_L.png" width="500"/></span>
     </div>
+        </div>
+    </div></div></div>
     <div class="rightbanner margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <div id="whitepage_ads">
             <?php include_partial('global/right_ads_column', array('ad_1' => $ad_1, 'ad_2' => $ad_2, 'set_margin' => '1', 'ad_3' => $ad_3, 'ad_4' => $ad_4)) ?>
         </div>
     </div>
-</div>
+
