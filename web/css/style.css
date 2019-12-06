@@ -2230,7 +2230,7 @@ input.rounded {
 
 .shop_home_title {
     font-family: 'Franklin Gothic Book Regular';
-    line-height: 1.3em;
+    line-height: 1.2em;
 	font-size: 1.55em;
     letter-spacing: -0.01em;
     word-spacing: -0.02em;
@@ -2245,7 +2245,8 @@ input.rounded {
     line-height: 1.25em;
     letter-spacing: -0.02em;
     min-height: 20px;
-    margin-top: 12px;
+    margin-top: 6px;
+	margin-bottom: -3px;
 }
 
 .shopsmallblock_separator_1 {
