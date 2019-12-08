@@ -45,7 +45,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="">
 
             <div class="shop_home_heading">Välkommen till BT-shop! <img alt="BT-SHOP" src="/images/new_home/bt-shop_logo_left.png" /></div>
-            <div class="blank_20h widthall"></div>
+            <div class="blank_5h widthall"></div>
             <!--<div class="shoph3 widthall">Börstjänarens e-handelsbutik</div>
 
             <div class="shopinfo">BT-shop är Börstjänarens e-handelsbutik. Här kan du köpa våra olika   abonnemangs-tjänster och on line-utbildningar, såväl som böcker och dataprogram   m.m.</div>

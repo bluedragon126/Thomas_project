@@ -637,7 +637,7 @@ padding-left: 6px;
 	background-color:#fff;
 	cursor:pointer;
 	height:16px;
-	width:80px;color:#768897;
+	width:80px;color:#a3bbcd;
 	font-family:"Franklin Gothic Book Regular";
 	font-size:0.93em;
 	padding:0px 0px 0px 0px;
@@ -1674,7 +1674,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .qtyWraper_span{margin-right:6px;}
 .qtyWraper_input{width:32px;height:16px;border:1px solid #ced9e2;text-align:center;color:#232222;font-size:1em;font-family:"Franklin Gothic Book Regular";}
 .shop_cart_data_div{border-top:1px solid #d4d8e1;padding:5px 0 8px 0;width:565px;}
-.shop_cart_data_div_border{border-bottom:1px solid #d4d8e1;}
+.shop_cart_data_div_border{border-bottom:1px solid #ced9e2;}
 .shop_cart_topay_div{width:558px;}
 .user_email_li{width:451px;}
 .user_email_span{margin-left:2px;}
