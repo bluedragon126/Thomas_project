@@ -71,7 +71,7 @@
                             <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
                                 <option noclick="1" value="0" class="colorb9c2cf">Gå till sida...</option>
                                 <?php for ($pg = 1; $pg <= $blog_pager->getLastPage(); $pg++) { ?>
-                                    <option noclick="1" class="color232222" <?php
+                                    <option noclick="1" class="color3c3a3a" <?php
                                     if ($blog_pager->getPage() == $pg) {
                                         echo "selected='selected'";
                                     }
@@ -163,7 +163,7 @@
                             <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
                                 <option noclick="1" value="0" class="colorb9c2cf" >Gå till sida...</option>
                                 <?php for ($pg = 1; $pg <= $forum_pager->getLastPage(); $pg++) { ?>
-                                    <option noclick="1" class="color232222" <?php
+                                    <option noclick="1" class="color3c3a3a" <?php
                                     if ($forum_pager->getPage() == $pg) {
                                         echo "selected='selected'";
                                     }
@@ -254,7 +254,7 @@
                             <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelect(this);" >
                                 <option noclick="1" value="0" class="colorb9c2cf" >Gå till sida...</option>
                                 <?php for ($pg = 1; $pg <= $article_pager->getLastPage(); $pg++) { ?>
-                                    <option noclick="1" class="color232222" <?php
+                                    <option noclick="1" class="color3c3a3a" <?php
                                     if ($article_pager->getPage() == $pg) {
                                         echo "selected='selected'";
                                     }

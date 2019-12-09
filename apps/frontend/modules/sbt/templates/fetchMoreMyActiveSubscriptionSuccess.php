@@ -20,22 +20,22 @@
         $(obj).next().css("left", offset.left - 68);
         var obj1 = $(".forum_drop-down-menu_page");
         if ($(obj1).val() == 0) {
-            $(obj1).removeClass("color232222");
+            $(obj1).removeClass("color3c3a3a");
             $(obj1).addClass("colorb9c2cf");
         } else {
             $(obj1).removeClass("colorb9c2cf");
-            $(obj1).addClass("color232222");
+            $(obj1).addClass("color3c3a3a");
         }
         $(obj).next().toggle();
     }
 
     function paginationPopupSelectActive(obj) {
         if ($(obj).val() == 0) {
-            $(obj).removeClass("color232222");
+            $(obj).removeClass("color3c3a3a");
             $(obj).addClass("colorb9c2cf");
         } else {
             $(obj).removeClass("colorb9c2cf");
-            $(obj).addClass("color232222");
+            $(obj).addClass("color3c3a3a");
         }
     }
 </script>
@@ -102,7 +102,7 @@
                     <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
                         <option noclick="1" value="0" class="colorb9c2cf" >Gå till sida...</option>
                         <?php for ($pg = 1; $pg <= $pageractive->getLastPage(); $pg++) { ?>
-                            <option noclick="1" class="color232222" <?php
+                            <option noclick="1" class="color3c3a3a" <?php
                             if ($pageractive->getPage() == $pg) {
                                 echo "selected='selected'";
                             }
