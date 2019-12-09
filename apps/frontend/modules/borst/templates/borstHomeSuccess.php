@@ -309,15 +309,15 @@
                         <div class="like_bar_div">
                             <div class="top_nine_article">
                                 <ul>
-            <?php
-            $countSeq = 1;
-            foreach ($top_nine_viewed_articles as $topViewed):
-                ?>
+                                    <?php
+                                    $countSeq = 1;
+                                    foreach ($top_nine_viewed_articles as $topViewed):
+                                        ?>
                                         <li>
                                             <div class="home_topart"><a class="cursor" href="<?php echo "http://" . $host_str ?>/borst/borstArticleDetails/article_id/<?php echo $topViewed->article_id ?>"><span class="toplisthome_articletitle home_9read_m"><span class="home_9read_m_count"><?php echo $countSeq++ . '   '; ?></span><span class="home_9read_m_details"><?php echo $topViewed->title ?></span></span></a></div>
                                             <div class="home_artline_centerdiv">&nbsp;</div>
                                         </li>
-            <?php endforeach; ?>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                             <div class="home_heading_r_img" style="margin-top: -9px; ">
