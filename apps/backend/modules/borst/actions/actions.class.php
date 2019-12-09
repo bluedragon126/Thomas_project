@@ -4302,10 +4302,6 @@ class borstActions extends sfActions
        
         $record = Doctrine::getTable('NewsLetter')->generateNewsLetterRecords($article, $btArticle,
             count($btArticle), $sbtArticle, count($sbtArticle), $ads, $adsCount, $blog);
-        // $this->top_nine_viewed_articles = $this->topNineArticle();
-        // echo "<pre>";
-        // print_r($this->top_nine_viewed_articles);
-        // exit;
      
         return $this->renderPartial('borst/newsletter_template', array('articleRecords' =>
             $record[0], 'ads' => $record[1], 'forum_post' => $record[2], 'blog_post' => $record[3],

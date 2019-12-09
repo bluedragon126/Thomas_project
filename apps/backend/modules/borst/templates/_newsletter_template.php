@@ -27,7 +27,7 @@
                                         
                                         
                                         
-                                        <td width="226"><span style="float: left; margin-top: 4px; margin-left: 2px;color: #232222;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23px; line-height:30px; font-weight:100; letter-spacing: -0.1px;">Aktuell <br>
+                                        <td width="226"><span style="float: left; margin-top: 4px; margin-left: 2px;color: #3c3a3a;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23px; line-height:30px; font-weight:100; letter-spacing: -0.1px;">Aktuell <br>
                                                 information 
                                                 <br> 
                                                 från Börstjänaren</span></td>
@@ -37,13 +37,13 @@
                                       <table width="64" style="margin-top:0px">
                                                 
                                                 <tr>
-                                                     <td style="margin-left:auto; margin-right:auto; background-color: #ffffff; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 44px; line-height:44px; font-family: FranklinGothicCondensed,Arial,Helvetica,sans-serif; color: #232222; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
+                                                     <td style="margin-left:auto; margin-right:auto; background-color: #ffffff; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 44px; line-height:44px; font-family: FranklinGothicCondensed,Arial,Helvetica,sans-serif; color: #3c3a3a; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
                                                 </tr>
                                                 <tr>
-                                                   <td height="10" style="font-size: 18px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #232222;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 6px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
+                                                   <td height="10" style="font-size: 18px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #3c3a3a;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 6px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:800; line-height: 18px; text-align:center; padding-top: 8px;"><?php echo ' ' . date("Y"); ?></td>
+                                                    <td style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; color: #3c3a3a; font-weight:800; line-height: 18px; text-align:center; padding-top: 8px;"><?php echo ' ' . date("Y"); ?></td>
                                                 </tr>
                                                
                                             </table></td>
@@ -112,11 +112,137 @@
                                                 <span class="next_nobj"></span>
                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                             </span>
-                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
+                                            <span style="color: #3c3a3a; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
                                             <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
                                                     <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
                                                         <?php echo html_entity_decode($ads[0]); ?></span></a></span>
                                                         <div style="border-bottom: 2px solid #d4dae4;height: 10px; margin: 4px 0px 5px;">&nbsp;</div>
+                                        </td>
+                                    </tr>
+<tr style="width: 300px;float: left;">
+                                        <td style="width:100%;padding: 14px 0px 5px 0px;">
+
+                                            <img width="300px" style="margin: 2px 0px 4px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles1.png" alt="" />
+
+                                        </td>
+                                    </tr>
+
+                                    <tr style="width: 300px;float: left;">
+                                        <!-- latest BT article  -->
+                                        <td>
+                                            <ul style="padding-left: 15px; width: 225px;padding-bottom: 2px;color: #3c3a3a; list-style-position: inside;margin: 0;  font-family: Georgia, 'Times New Roman', Times, serif; line-height: 20px;">
+                                                <?php $link_type = '/borst/borstArticleDetails/article_id/'; ?>
+                                                <?php foreach ($btList as $data): ?>
+                                                    <li style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: 100; letter-spacing:-0.1px; color: #f15a22;list-style-position: outside;width: 300px;"><a style="word-wrap:break-word;width: 300px;color: #3c3a3a; text-decoration: none; font-size: 13px; line-height:21px;" href="<?php echo $host . $link_type . $data->article_id ?>"><?php echo $data->title; ?></a></li>
+                                                <?php endforeach; ?>
+                                            </ul>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr style="width: 300px;float: left;">
+                                        <td style="width:100%;padding: 8px 0px 5px 0px;">
+
+                                            <img width="300px" style="margin: 0px 0px -3px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles2.png" alt="" />
+
+                                        </td>
+                                    </tr>
+                                    <tr style="width: 300px;float: left;">
+                                        <!-- forum post -->
+                                        <td style="padding-top: 10px;">
+                                            <table cellpadding="0" cellspacing="0" width="300" style="background-color: #f99d1e;border-top-left-radius: 18px;border-bottom-right-radius: 18px;height: 176px;padding-left: 10px;">
+                                                <tr>
+                                                    <td style="padding: 10px 10px 5px 10px;">
+                                                        <a href="http://http://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
+
+                                                        <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 22px; color: #ffffff;float: left; margin: 14px 0px -2px 0px; padding-left:2px; font-weight: 300;">Aktuella forumtrådar</span>
+
+                                                        <ul style="color: #ffffff;list-style-position: outside;float: left;margin-top: 9px; padding-left: 15px;width: 225px;" >
+                                                            <?php foreach ($forum_post as $post): ?>
+
+                                                                <li style="color: #ffffff;width: 300px;line-height: 16px;">
+
+                                                                    <a style="word-wrap:break-word;width: 225px;font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; color: #ffffff; text-decoration: none; font-size: 14px; line-height: 18px; letter-spacing:0.2px;" href=<?php echo $host . '/forum/commentOnForumTopic/forumid/' . $post->id; ?>><?php echo $post->rubrik ?></a>
+                                                                </li>
+
+                                                            <?php endforeach; ?>
+                                                        </ul>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    
+
+                                    <tr id="blog_1" style="width: 300px;float: left;">
+                                        <!-- popular bloggar -->
+                                        <td id="nobj_blog_" >
+                                            <span style="display: none;" class="n_article_top" >
+                                                <span style="visibility:hidden" class="next_nobj" ></span>
+                                                <input type="hidden" value="<?php echo "Click to edit Blog" ?>" class="hidden_vals"/>
+                                            </span>
+
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td COLSPAN=2><img src="<?php echo $host; ?>/images/new_home/askBT_logo_btjn.png" width="200" style="padding: 4px 0px 3px 18px;"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding-bottom: 7px;">
+                                                        <div style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;font-size: 24px;color: #dbe120;letter-spacing:-0.5px; font-weight: 700; margin-left: 19px;">De senaste frågorna:</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr style="width: 300px;float: left;">
+                                        <!-- Fraga-BT post -->
+                                        <td>
+                                            <?php foreach ($enquiry_data as $post): ?>
+                                            <table cellpadding="0" cellspacing="0" width="300" style="background-color: #dbe120;border-top-left-radius: 18px;border-bottom-right-radius: 18px; padding: 8px 18px 10px 20px; margin-top: 3px;">
+                                                <tr>
+                                          <td style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 13.5px; color: #8486a2;"><?php echo Date('Y-m-d', strtotime($post->enq_date)); ?> 
+                                                    <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 13px; font-weight: 700; color: #f15a22;">&nbsp;&nbsp;<?php echo $post->enq_type; ?></span></td>
+                                                    <td style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: 700; color: #fdfee8; text-align:right;"><?php echo $post->getReplyCount($post->id); ?> / <?php echo $post->visningar; ?></td>
+                                                </tr>
+                                                <tr><td colspan="3">
+                                               <div style="border-bottom: 1px solid #fdfee8; margin: 8px 0px 10px 0px; height: 0px;">&nbsp;</div>
+                                                
+                                                
+                                                    <a style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 13px; color: #0e284c; line-height: 18px; font-weight:700; text-decoration: none;"href="<?php echo $host . '/borst/enquiryDetails/enq_id/' . $post->id; ?>"><?php echo $post->enq_subject ?></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                             <?php endforeach; ?>
+                                        </td>
+                                    </tr>
+                                    <tr id="ads_2" style="width: 300px;float: left;">
+                                        <!-- second ad-->
+
+                                        <td id="nobj_ads_2" valign="top">
+                                            <span style="display: none;" class="n_article_top" >
+                                                <span style="visibility:hidden" class="next_nobj" ></span>
+                                                <input type="hidden" value="<?php echo "Click to edit Ad -2" ?>" class="hidden_vals"/>
+                                            </span>
+
+                                            <div style="border-bottom: 2px solid #f15a22; margin-top: 12px; height: 0px;">&nbsp;</div>
+
+
+                                            <span style="color: #3c3a3a; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: 8px 0px 4px 0px;">ANNONS</span>
+
+                                            <span><?php echo html_entity_decode($ads[1]); ?></span>
+
+                                            <br/>
+
+                                            <div style="border-bottom: 2px solid #f15a22;height: 10px; margin: 4px 0px 8px;">&nbsp;</div>
+
                                         </td>
                                     </tr>
 

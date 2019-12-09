@@ -61,25 +61,14 @@ class borstActions extends sfActions
 	
 	if(!$this->getRequest()->isXmlHttpRequest())
 	{
-		$article = new Article();
-		$mymarket = new mymarket();
-				$query1 = $article->getArticleOrderQuery('kat',12,$column_id,$order);
-			
-				$query2 = $article->getArticleOrderQuery('type',23,$column_id,$order);				
-
-				$query3 = $article->getArticleOrderQuery('obj',1795 ,$column_id,$order);
-
-			$this->bottom_buysell_links = $mymarket->getPagerForAll('Article','10',$query1,1);
-			$this->bottom_statistics_links = $mymarket->getPagerForAll('Article','10',$query2,1);
-			$this->bottom_kronika_links = $mymarket->getPagerForAll('Article','10',$query3,1);
 		// Bottom Cube Links
 		$this->bottom_commodities_links = ArticleTable::getInstance()->getHomeCommodities(0,10,$isSuperAdmin);
 		$this->bottom_currencies_links = ArticleTable::getInstance()->getHomeCurrencies(0,10);
-		// $this->bottom_buysell_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'kat',true,$isSuperAdmin);
+		$this->bottom_buysell_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'kat',true,$isSuperAdmin);
 
-		// $this->bottom_statistics_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'type',true,$isSuperAdmin);
+		$this->bottom_statistics_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'type',true,$isSuperAdmin);
 		$this->bottom_aktier_links = ArticleTable::getInstance()->getHomeAktier(0,10,$isSuperAdmin);
-		// $this->bottom_kronika_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'obj',true,$isSuperAdmin);
+		$this->bottom_kronika_links = ArticleTable::getInstance()->getArticleListMenu(0,10,'obj',true,$isSuperAdmin);
 		
 		$this->logged_user = $this->getUser()->getAttribute('user_id', '', 'userProperty');
 		$this->host_str = $this->getRequest()->getHost();
