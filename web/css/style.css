@@ -2618,7 +2618,7 @@ input.rounded {
 .shop_r_cart_prod {
     font-family: 'FranklinGothicCondensed';
     color: #FranklinGothicCondensed;
-    font-size: 0.93em;
+    font-size: 1em;
 	letter-spacing: 0.03em;
     text-align: left;
     padding: 16px 6px 0px 1px;
@@ -2879,14 +2879,14 @@ input.rounded {
     width: 226px;
     margin-right: 11px;
     letter-spacing: 0.03em;
- 	font-size: 0.93em;
+ 	font-size: 1em;
 }
 
 .scLiatWraper1 .qtyWraper {
     float: left;
     margin-top: 28.9px;
-    ;
     margin-right: 11px;
+	font-family: Franklin Gothic Book Regular;
 }
 
 .scLiatWraper1 .priceWraper {

@@ -15,19 +15,16 @@
                 <div class="whp_preamble">En kaka (eller cookie) är en mycket liten textfil som lagras i din dator. Den används för att komma ihåg dig och dina val på hemsidan. </div>
                 <div class="float_left widthall">
                     <div class="whp_heading">Vad används kakor till?</div>
-                    <br>
-                    Kakor är ett utmärkt sätt för hemsidor att spara viktig information och inställningar. Till exempel när du senast var där, vad du skrev in i ett formulär så att du slipper skriva igen, vilka val du gjort, vad du (i förekommande fall) lagt i varukorgen och så vidare. <br />
-                    <br />
-                    <div class="whp_heading">Ingen fara för spioneri</div><br>
-                    Cookies kan inte innehålla kod och därför behöver du inte oroa dig för reklam, spionprogram, virus eller liknande. Cookies belastar inte ditt system märkbart. Det är bara hemsidan som sparade textfilen som kan läsa den, så ingen annan kan snoka vad du gjort hos oss. <br>
-                    <br>
+           
+                    Kakor är ett utmärkt sätt för hemsidor att spara viktig information och inställningar. Till exempel när du senast var där, vad du skrev in i ett formulär så att du slipper skriva igen, vilka val du gjort, vad du (i förekommande fall) lagt i varukorgen och så vidare. 
+                    <div class="whp_heading">Ingen fara för spioneri</div>
+                    Cookies kan inte innehålla kod och därför behöver du inte oroa dig för reklam, spionprogram, virus eller liknande. Cookies belastar inte ditt system märkbart. Det är bara hemsidan som sparade textfilen som kan läsa den, så ingen annan kan snoka vad du gjort hos oss. 
                     <div class="whp_heading">Två sorters kakor</div>
-                    <br>
-                    Det finns två typer av cookies, sessions-cookies och så kallade fasta cookies. På Börstjänaren används båda typerna. När du besöker vår webbplats skickas en sessionskaka mellan din dator och vår webbserver för att bland annat underlätta navigering. Sessionskakor används också när du använder våra tjänster. Cookien försvinner när du avslutat besöket.<br>
-                    <br>
+                    
+                    Det finns två typer av cookies, sessions-cookies och så kallade fasta cookies. På Börstjänaren används båda typerna. När du besöker vår webbplats skickas en sessionskaka mellan din dator och vår webbserver för att bland annat underlätta navigering. Sessionskakor används också när du använder våra tjänster. Cookien försvinner när du avslutat besöket.
 
                     <div class="whp_heading">Mer om kakor</div>
-                    <br>
+                    
                     Allmän information om kakor och den nya lagen om elektronisk kommunikation finns på <a class="main_link_color" href="http://www.pts.se/sv/Nyheter/Internet/2016/PTS-tar-fram-vagledning-for-anvandning-av-kakor/">Post- och telestyrelsens webbplats.</a><br>
                     <br>
 
