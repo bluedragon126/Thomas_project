@@ -192,7 +192,7 @@
                         <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
                             <option noclick="1" value="0" class="forum_select_option_color">Gå till sida...</option>
                             <?php for ($pg = 1; $pg <= $forum_pager->getLastPage(); $pg++) { ?>
-                                <option noclick="1" class="color232222" <?php
+                                <option noclick="1" class="color3c3a3a" <?php
                                 if ($forum_pager->getPage() == $pg) {
                                     echo "selected='selected'";
                                 }
@@ -284,7 +284,7 @@
                         <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
                             <option noclick="1" value="0" class="forum_select_option_color">Gå till sida...</option>
                             <?php for ($pg = 1; $pg <= $blog_pager->getLastPage(); $pg++) { ?>
-                                <option noclick="1" class="color232222" <?php
+                                <option noclick="1" class="color3c3a3a" <?php
                                 if ($blog_pager->getPage() == $pg) {
                                     echo "selected='selected'";
                                 }
@@ -367,7 +367,7 @@
                         <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
                             <option noclick="1" value="0" class="forum_select_option_color">Gå till sida...</option>
                             <?php for ($pg = 1; $pg <= $chart_pager->getLastPage(); $pg++) { ?>
-                                <option noclick="1" class="color232222" <?php
+                                <option noclick="1" class="color3c3a3a" <?php
                                 if ($chart_pager->getPage() == $pg) {
                                     echo "selected='selected'";
                                 }

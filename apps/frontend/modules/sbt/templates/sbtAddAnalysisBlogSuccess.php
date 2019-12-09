@@ -21,14 +21,14 @@
         background-color: #dddcdb !important;
         border: 1px solid #dddcdb !important;
         border-radius: 5px !important;
-        color: #232222 !important;
+        color: #3c3a3a !important;
         font-size: 1em !important;
         height: 29px;
     }
     .jqTransformSelectWrapper div span{
         width: 284px !important;
         height: 24px !important;
-        color: #232222 !important;
+        color: #3c3a3a !important;
         font-size: 1em !important;
         padding: 8px 0 0 6px;
     }

@@ -81,7 +81,7 @@
                               <select noclick="1" size="1" class="forum_drop-down-menu_page" value="" onchange="javascript:paginationPopupSelectActive(this);" >
                                   <option noclick="1" value="0" style="color:#b9c2cf" >Gå till sida...</option>
                                   <?php for ($pg = 1; $pg <= $pager->getLastPage(); $pg++) { ?>
-                                      <option noclick="1" class="color232222" <?php if ($pager->getPage() == $pg) {  echo "selected='selected'"; }?> value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
+                                      <option noclick="1" class="color3c3a3a" <?php if ($pager->getPage() == $pg) {  echo "selected='selected'"; }?> value="<?php echo $pg; ?>" ><?php echo $pg; ?> </option>
                                   <?php } ?>
                               </select>
                               <div noclick="1" class="forum_drop-down-menu_go" onclick="javascript:paginationPopupGoActive(this);">GA</div>
