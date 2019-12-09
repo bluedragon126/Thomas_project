@@ -1043,7 +1043,6 @@ foreach ($metastock_data as $article):
     <input type="hidden" name="product_id" id="product_id" value="<?php //echo $product_detail->id;  ?>"/>
     <div class="rightbanner autoheight padding_0">
             <div class="shop_1_step_right_panel">&nbsp;</div>
-            <div class="up_sub_div"><a href="#"><img src="/images/new_home/up_1.png" /></a></div>
             
         </div>
 </div>
