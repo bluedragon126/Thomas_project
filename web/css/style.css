@@ -798,7 +798,7 @@ home_heading_c {
     font-size: 1.05em;
     letter-spacing: 0.2px;
     /*margin-left: 2%;*/
-    margin: 19px 0px 0px 0px;
+    margin: 18px 0px 6px 0px;
     padding: 4px 4px 4px 7px;
     /*width: 95%;*/
     width: 154px;
@@ -841,7 +841,7 @@ home_heading_c {
     height: 3px;
     float: left;
     /* margin-left: ;*/
-    margin: 14px 0px 4px 0px;
+    margin: 14px 0px 7px 0px;
 }
 
 .home_heading_l_3 {
@@ -3162,7 +3162,7 @@ blank_4h {
 /* css for bt shop right panel details listing start here */
 
 .shop_r_other_title {
-   font-family: 'Franklin Gothic Medium';
+   font-family: 'CheltenhamITCW01-Bold';
    color: #3c3a3a;
    font-size: 1.1em !important;
    line-height: 8px;
@@ -3171,7 +3171,7 @@ blank_4h {
 
 .shop_r_other_subtitle {
     color: #3c3a3a;
-  	font-family: "Franklin Gothic Medium";
+  	font-family: "CheltenhamITCW01-Bold";
 	font-size: 1em;
 	line-height: 1.1em;
 	word-spacing: -0.02em;
