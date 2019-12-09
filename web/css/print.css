@@ -175,13 +175,13 @@ a:link, a:visited, a:active {
     margin-left: 30px;
 }
 .related_article_date {
-    color: #232222;
+    color: #3c3a3a;
     vertical-align: top;
     font-size: 16px;
     line-height: 20px;
 }
 .related_article_title {
-    color: #232222;
+    color: #3c3a3a;
     letter-spacing: 1px;
     float: left;
     padding-left: 15px;

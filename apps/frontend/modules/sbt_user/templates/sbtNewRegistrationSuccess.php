@@ -441,7 +441,7 @@ width:34%;
                             <td  class="td_input"><?php echo $profileForm['land']->render(array('id' => 'phone', 'class' => 'inputcountry',)) ?></td>
                             <td  class="td_input_right margin_bottom_2m" align="left">&nbsp;<?php echo $profileForm['land']->renderError() ?></td>
                         </tr>
-                        <tr height="35px">&nbsp;</tr>
+                        <tr height="30px">&nbsp;</tr>
                         <tr>
                             <td  class="form_heading" colspan="2">
 							<?php echo __('Nyhetsbrev') ?></td>

@@ -67,7 +67,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <?php if ($data->id == 4) { ?>
                             <div class="float_left">
                                 <div class="float_left email_checkbox_1"><input type="checkbox" name="news[]" value="<?php echo $data->id; ?>" <?php if ($status_arr[$data->id] == 1) echo "checked"; ?> /></div>
-                                <div class="float_left lineht_25 email_checkbox_2"><i><span class="float_left radio_button_text pad_top_3 " style = "color:#f15822"><?php echo $data->newsletter_name; ?></span></i></div>
+                                <div class="float_left lineht_25 email_checkbox_2"><i><span class="float_left radio_button_text pad_top_3 " style = "color:#f15a22"><?php echo $data->newsletter_name; ?></span></i></div>
                             </div>
                         <?php } ?>
                     <?php endforeach; ?>

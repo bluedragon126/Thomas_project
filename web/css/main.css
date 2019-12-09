@@ -110,7 +110,7 @@ img{border:0;}
 .blank_5w{width:5px;float:left;position:relative;}
 .heauto{height:100%;}
 .greencolor{color:#00e0c5;}
-.redmintcolor{color:#f15822;}
+.redmintcolor{color:#f15a22;}
 .bluecolor{background-color:#005baa;}
 .yellowcolor{color:#febc11;}
 .darkpinkcolor{background-color:#693256;}
@@ -118,7 +118,7 @@ img{border:0;}
 .lightbluecolor{color:#7F8CB9;}
 .darkorangecolor{color:#F7941D;}
 .darkpinkcolor_submenu{background-color:#9d7a91;}
-.redmintcolor_submenu{color:#f15822;}
+.redmintcolor_submenu{color:#f15a22;}
 .greencolor_submenu{background-color:#acd783;}
 .bluecolor_submenu{color:#005baa;}
 .yellowcolor_submenu{color:#febc11;}
@@ -275,7 +275,7 @@ font-size:0;}
 .photoimg img{width:30px;padding-top:1.2px;}
 .btshopleftdiv{float:left;position:relative;height:auto;padding:1px 0 0 55px;}
 .btshopleftdivinner{float:left;position:relative;width:500px;border:0px solid red;}
-.shoph3{float:left; position:relative; font-size:1.3em; text-align: left; color: #f15822; font-family:"Franklin Gothic Book Regular";letter-spacing:-0.02em;}
+.shoph3{float:left; position:relative; font-size:1.3em; text-align: left; color: #f15a22; font-family:"Franklin Gothic Book Regular";letter-spacing:-0.02em;}
 .shopinfo{float:left;position:relative;font-size:15px;font-weight:normal;line-height:21px;}
 .shopborder{float:left;position:relative;width:100%;border-bottom:1px solid #f7c900;padding:5px 0 0 0;line-height:1px;}
 .shopblock{float:left;position:relative;width:635px;}
@@ -283,8 +283,8 @@ font-size:0;}
 .shopsmallblock2{float:left;position:relative;width:290px;border-bottom:20px solid #c2e0ef;padding:30px 0px 20px 0px;}
 .shopphoto{float:left;position:relative;padding:0 0 2px 0;}
 .shopsmallblockifo{height:80px;float:left;position:relative;width:266px;line-height:18px;font-size:13px; color: #3c3a3a; margin-top:1px}
-.leftpartsmallshop{margin-bottom:12px;position:relative;width:312px;height:314px;float:left}
-.rightpartsmallshop{margin-bottom:12px;float:right;position:relative;width:312px;height:314px}
+.leftpartsmallshop{margin-bottom:12px;position:relative;width:312px;height:304px;float:left}
+.rightpartsmallshop{margin-bottom:12px;float:right;position:relative;width:312px;height:304px}
 .contactdell{float:left;position:relative;margin:40px 0 0 0;width:100%;}
 .contactdellus{float:left;position:relative;margin:20px 0 0 0;width:100%;}
 .testimonial{float:left;position:relative;padding:10px 0 90px 0;font-size:20px;color:#0e0d0d;}
@@ -315,7 +315,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .Som ul{float:left;position:relative;width:100%;margin:0;padding:5px 0 0 1px;}
 .Som ul li{float:left;position:relative;width:100%;margin:0;padding:0 0 0 10px;list-style-type:none;display:block;background-image:url(../images/roundbullete.jpg);background-repeat:no-repeat;background-position:left center;}
 .leftmenu #top_borst_menu a:hover{background-color:#005baa;}
-.leftmenu #top_sbt_menu a:hover{background-color:#f15822;}
+.leftmenu #top_sbt_menu a:hover{background-color:#f15a22;}
 .leftmenu #top_bt_shop a:hover{background-color:#febc11;}
 .leftmenu #top_bt_charts a:hover{background-color:#0091bb;}
 .leftmenu #top_forum_menu a:hover{background-color:#F7941D;}
@@ -328,7 +328,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .mainmenuwrapper #top_bt_shop .selected{background-color:#febc11;}
 .mainmenuwrapper #top_bt_charts .selected{background-color:#0091bb;}
 .mainmenuwrapper #top_forum_menu .selected{background-color:#F7941D;}
-.mainmenuwrapper #top_sbt_menu .selected{background-color:#f15822;}
+.mainmenuwrapper #top_sbt_menu .selected{background-color:#f15a22;}
 .mainmenuwrapper #top_pluspaket_menu .selected{background-color:#00e3fb;}
 .mainmenuwrapper #top_marknadsbrev_menu .selected{background-color:#7F8CB9;}
 .mainmenuwrapper #top_utbildning_menu .selected{background-color:#A6CC39;}
@@ -339,7 +339,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 .submenuwrapper #bt_shop{border-bottom:1px solid #febc11;}
 .submenuwrapper #bt_charts{border-bottom:1px solid #0091bb;}
 .submenuwrapper #forum_menu{border-bottom:1px solid #F7941D;}
-.submenuwrapper #sbt_menu{border-bottom:1px solid #f15822;}
+.submenuwrapper #sbt_menu{border-bottom:1px solid #f15a22;}
 .submenuwrapper #pluspaket_menu{border-bottom:1px solid #0bb342;}
 .submenuwrapper #marknadsbrev_menu{border-bottom:1px solid #7F8CB9;}
 .submenuwrapper #vip_menu{border-bottom:1px solid #00e3fb;}
@@ -389,7 +389,7 @@ input.text .submit{height:20px;float:left;position:relative;}
 #forget_password_page a{color:#009cd9;}
 .friend_request{border:0px solid red;padding:0px 5px 0px 5px;margin-top:2px;background-color:#5a7692;color:#FFFFFF;}
 .search_error{float:left;position:relative;height:18px;width:148px;border:1px solid #f58767 !important;font-size:11px;}
-.redcolor{color:#f15822;}
+.redcolor{color:#f15a22;}
 .blackcolor{color:#3c3a3a;}
 .orangetext{color:#FF9900;}
 .greycolor{color:#CCC;}
@@ -551,7 +551,7 @@ input.submit_votebuttontext .submit{height:16px;float:left;position:relative;}
 .viocolor{color:#7D78A0;}
 .usrname{background-color:#fff;
 border: 1px solid #fff;
-color: #f15822;
+color: #f15a22;
 height: 30px;
 width: 286px;
 font-size: 1.05em;
@@ -581,7 +581,7 @@ padding-left: 6px;
 .lineheight_16{line-height:16px;}
 .blueinfo{float:left;position:relative;padding:0 0 0 15px;color:#767892;font-size:26px;line-height:28px;font-weight:normal;width:40%;}
 .bloginner_rect{float:left;position:relative;border:0px solid red;width:100%;}
-.viocolor{color:#f15822;}
+.viocolor{color:#f15a22;}
 .blog1advrt{float:left;position:relative;width:585px;}
 .blog1advrt h2{float:left;position:relative;width:100%;font-weight:normal;margin:0;padding:0 0 10px 0;}
 .bloginfo{float:left;position:relative;line-height:17px;font-weight:normal;font-size:13px;width:100%;}
@@ -630,8 +630,8 @@ padding-left: 6px;
 .cart .info .right{float:left;position:relative;width:34%;text-align:right;}
 .cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0px 3px 1px 3px;}
 .red_button{float:left;}
-.red_button span{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
-.red_button_r{background-color:#f15822;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
+.red_button span{background-color:#f15a22;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
+.red_button_r{background-color:#f15a22;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
 .grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:92px;color:#768897;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4.5px 2px 6px;letter-spacing:0.06em;margin-left:188px; border-radius: 2px;}
 .wh_button{
 	background-color:#fff;
@@ -644,7 +644,7 @@ padding-left: 6px;
 	letter-spacing:0.03em;
 	margin-left:214px; 
 	border-radius: 0px;}
-.red_text{color:#f15822;font-weight:normal;}
+.red_text{color:#f15a22;font-weight:normal;}
 .red_text2{color:#FF3333;font-weight:bold;}
 .blue_title_best{font-size:14px;color:#3c3a3a;font-weight:bold;}
 ul.rows{padding:0px;float:left;position:relative;width:100%;list-style:none;display:block;margin:0px 0px 10px -11px;}
@@ -726,7 +726,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 #btforum_desc_error{float:left;position:relative;color:#f58767;margin-left:10px;}
 .upload_forum_img_outer{float:left;position:relative;margin-top:6px;width:100%;}
 .cursor_underline{cursor:pointer;text-decoration:underline;font-weight:normal;}
-#forum_detail_img_upload_msg{float:left;position:relative;color:#f15822;margin-left:10px;}
+#forum_detail_img_upload_msg{float:left;position:relative;color:#f15a22;margin-left:10px;}
 .testimonial .save_forum_topic_btn{margin-top:10px;margin-right:10px;}
 .testimonial .preview_forum_topic_btn{margin-top:10px;}
 .forum_btn_set{width:425px;font-size:12px;}
@@ -780,7 +780,7 @@ input.submitblogcomment{background:transparent url(../images/registerbtn_bg.jpg)
 .addArticle .article_content .column .input_box{width:auto;}
 .addArticle .article_content .input_box input{float:left;position:relative;height:26px;width:250px;}
 .addArticle .article_content .input_box select{float:left;position:relative;height:30px;width:135px;color:#658094;}
-.addArticle .article_content ul li a.activelink{padding-top:10px;padding-bottom:5px;border:1px solid #f15822;color:#f15822;width:75px;height:55px;border-radius:12px;}
+.addArticle .article_content ul li a.activelink{padding-top:10px;padding-bottom:5px;border:1px solid #f15a22;color:#f15a22;width:75px;height:55px;border-radius:12px;}
 .addArticle .article_content .error_box{float:left;position:relative;width:160px;padding-left:5px;color:#f58767;padding-top:5px;}
 .blog_combo_outer{float:left;position:relative;width:500px;}
 .addArticle .article_content .combine_article_div{float:left;position:relative;padding-left:12px;width:500px;}
@@ -1187,6 +1187,7 @@ div.registerbutton input.registerbuttontext{padding:3px 3px 3px 0;}
 .width_80p{width:80%;}
 .width_90p{width:90%;}
 .width_99p{width:99%;}
+.height_2{height:2px;}
 .height_3{height:3px;}
 .height_5{height:5px;}
 .height_10{height:10px;}
@@ -1350,7 +1351,7 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 #account_links{border:0px solid red;float:left;padding:20.5px 30px 38px 0px;position:relative;width:560px;}
 .change_photo_outer{font-weight:normal;margin-bottom:10px;}
 .profile_subpage_title{color:#c50063;border-bottom:1px solid #ced2d0;}
-.profile_visibility_reply_msg{color:#f15822;padding:3px 0px 0px 5px;}
+.profile_visibility_reply_msg{color:#f15a22;padding:3px 0px 0px 5px;}
 .art_list_dark_green{color:#197D7D;}
 .art_list_blue{color:#489AE7;}
 .art_list_pink{color:#e99585;}
@@ -1364,11 +1365,11 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 .no_result_found{
 		font-family: "Franklin Gothic Book Regular";
 		text-align:left;
-		color:#f15822;
+		color:#f15a22;
 		letter-spacing:0.01em;
 		float:left;
 		width:547px;
-		/*border-bottom:solid 1px #f15822;*/
+		/*border-bottom:solid 1px #f15a22;*/
 		padding-bottom: 0px;
 		margin: 4px 0 6px;}
 .last_row{width:747px;}
@@ -1385,7 +1386,7 @@ float:left;height:auto;position:relative;text-align:left;width:117px;word-wrap:b
 .font_arial{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;}
 }
 .upload_forum_cmnt_img_text{text-decoration:none;}
-#forum_comment_img_upload_msg{color:#f15822;float:left;margin-left:10px;position:relative;}
+#forum_comment_img_upload_msg{color:#f15a22;float:left;margin-left:10px;position:relative;}
 .save_btn{background-color:white;background-image:url("../images/save.png");background-position:center top;background-repeat:no-repeat;border:0 none;float:left;padding-top:34px;position:relative;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;cursor:pointer;}
 .added_to_favorite{color:#547184;width:132px;text-align:center;float:left;background:url('/images/add_to_favourate.png') top no-repeat;background-position:top left;height:22px;padding-top:4px;margin-top:-5px;margin-right:50px;font-family:verdana;font-size:11px;letter-spacing:-0.08em;}
 .profile_bloglist_row{cursor:pointer;float:left;position:relative;}
@@ -1530,22 +1531,22 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .indicator{padding:5px;padding-top:5px;display:none}
 .btshop_rub3{float:left;position:relative;line-height:21px;letter-spacing:0.5px;font-size:16px;font-weight:normal;color:#987da8;margin-bottom:0px;}
 .btshop_rub4{
-	color: #f15822;
+	color: #f15a22;
     font-family: "ITC Cheltenham Book";
     font-size: 1.25em;
     line-height: 1.25em;
     letter-spacing: -0.02em;
     margin: 45px 0px -7px 0px;
  }
-.btshop_rub5{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:6px 0px 2px 0px;}
+.btshop_rub5{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15a22;margin:6px 0px 2px 0px;}
 .btshop_rub5_2{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#ee7f00;margin:12px 0px 2px 0px;}
-.btshop_rub6{float:left;position:relative;line-height:14px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:0px 0px -2px 0px;}
-.btshop_rub7{float:left;position:absolute;line-height:0px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15822;margin:20px 0px -15px 0px;text-transform:normal;}
-.btshop_rub8{float:left;position:relative;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:0px 0px 0px 0px;}
-.btshop_rub9{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15822;margin:12px 0px 2px 0px;}
+.btshop_rub6{float:left;position:relative;line-height:14px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15a22;margin:0px 0px -2px 0px;}
+.btshop_rub7{float:left;position:absolute;line-height:0px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15a22;margin:20px 0px -15px 0px;text-transform:normal;}
+.btshop_rub8{float:left;position:relative;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15a22;margin:0px 0px 0px 0px;}
+.btshop_rub9{float:left;position:relative;line-height:18px;letter-spacing:0.5px;font-size:14px;font-weight:normal;color:#f15a22;margin:12px 0px 2px 0px;}
 .btshop_rub10{font-family:'Franklin Gothic Book Regular';float:left;position:relative;width:100%;font-size:1.4em;line-height:1.4px; color:#abb9c8;padding-top:30px;margin-bottom:22px;text-transform:normal;}
-.btshop_rub10b_bread{float:left;position:absolute;line-height:20px;font-size:15px;font-weight:normal;color:#f15822;margin:-26px 0px 38px 0px;text-transform:normal;}
-.btshop_rub10c_bread{float:left;position:absolute;line-height:20px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15822;margin:-6px 0px -25px 0px;text-transform:normal;}
+.btshop_rub10b_bread{float:left;position:absolute;line-height:20px;font-size:15px;font-weight:normal;color:#f15a22;margin:-26px 0px 38px 0px;text-transform:normal;}
+.btshop_rub10c_bread{float:left;position:absolute;line-height:20px;letter-spacing:0px;font-size:15px;font-weight:normal;color:#f15a22;margin:-6px 0px -25px 0px;text-transform:normal;}
 .btshop_nr{float:left;position:relative;font-size:22px;font-weight:bold;color:#1d2508;margin:-9px 0px 0px 0px;}
 .blank_btshop1{float:left;position:relative;height:3px;}
 .blank_btshop2{float:left;position:relative;height:11px;}
@@ -1617,7 +1618,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 	background:#eaf6f5 url(../images/new_home/arrow_light_blue.png) no-repeat center bottom;color:#0091bb; background-size: 16px;}
 	
 .submenuwrapper #sbt_menu li a.selected{
-	background:#fee5d4 url(../images/new_home/arrow_red.png) no-repeat center bottom;color:#f15822; background-size: 16px;}
+	background:#fee5d4 url(../images/new_home/arrow_red.png) no-repeat center bottom;color:#f15a22; background-size: 16px;}
 	
 .submenuwrapper #forum_menu li a.selected{
 	background:#ffeed7 url(../images/new_home/arrow_orange.png) no-repeat center bottom;color:#F7941D; background-size: 16px;}
@@ -1637,7 +1638,7 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .outercontainer .forumlistingleftdiv{border-right:none !important;}
 .mainheader .leftmenu li a{padding:4px 11px 0 11px;}
 .mainheader .bluecolor_submenu{background-color:#002e7a;}
-.cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;width:25px;color:#f15822;text-align:right;}
+.cart_count{font-size:0.9em;float:right;font-family:Franklin Gothic Medium;width:25px;color:#f15a22;text-align:right;}
 .navBar_third_cart{margin-left:4px;float:right;}
 .margin_top_none{margin-top:0px!important;}
 .margin_top_ann{margin-top:-4px!important;}
@@ -1661,10 +1662,10 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .shop_error{color:#f58767;}
 .shop_success{color:#a6cc39;}
 .shop_input_header{color:#3c3a3a;font-size:1.1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.01em;}
-.shop_cart_topay{color:#f15822;font-size:1em;font-family:"Franklin Gothic Book Regular";letter-spacing:-0.01em;}
+.shop_cart_topay{color:#f15a22;font-size:1em;font-family:"Franklin Gothic Book Regular";letter-spacing:-0.01em;}
 .shop_cart_code{height:20px;color:#a6cc39;font-size:1em;font-family:"Franklin Gothic Medium";letter-spacing:-0.02em;}
 .shop_change_order span{background-color:#fff;color:#f58767;cursor:pointer;font-family:"Franklin Gothic Book Regular";font-size:1em;line-height:32px;height:16px;letter-spacing:-0.01em;padding:2px 0px;width:40px;}
-.shop_cart_total{color:#f15822;font-size:1em;letter-spacing:-0.01em;font-family:"Franklin Gothic Medium";}
+.shop_cart_total{color:#f15a22;font-size:1em;letter-spacing:-0.01em;font-family:"Franklin Gothic Medium";}
 .height_35{height:35px;}
 .shop_code{font-family:"Franklin Gothic Medium";color:#a6cc39;font-size:1em;margin-right:8px;background-color:#ffffff;border:1px solid #a6cc39;margin-right:8px;padding:5px 0;text-align:center;}
 .shop_cart_quest{background-image:url("../images/quest.png");background-size:20px auto;float:left;height:20px;margin:0px 5px 0 0;width:20px;}
