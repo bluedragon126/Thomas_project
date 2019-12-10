@@ -1636,7 +1636,7 @@ class borst_shopActions extends sfActions {
             $this->redirect($url_str);
         }
 
-        if ($transaction_type != 1 && $transaction_type != 2) {
+        if ( $transaction_type != 2) {
             $this->product_article = new BtShopArticle();
             $this->purchase_rec = $purchase->getPurchaseOrder($this->getUser()->getAttribute('payment_id'));
             $profile = new SfGuardUserProfile();
@@ -1647,8 +1647,8 @@ class borst_shopActions extends sfActions {
             $this->item_list = $purchasedItem->fecthPurchasedItemList($this->getUser()->getAttribute('payment_id'));
             $this->purchase_id = $this->getUser()->getAttribute('payment_id');
             $profile = new SfGuardUserProfile();
-            if ($this->purchase_id) {                
-                if($transaction_type == 4){//Code for swish payment
+            if ($this->purchase_id) {                        
+                if($transaction_type == 5){//Code for swish payment
                     $this->saveInvoicePdf($id,1,0);
                     if($request->getParameter('swishRes')){
                         $result = json_decode ($request->getParameter('swishRes'));     
@@ -1680,7 +1680,6 @@ class borst_shopActions extends sfActions {
                         $this->is_Article = 0;
                         $this->item_list = $purchasedItem->fecthPurchasedItemList($this->purchase_id);
                     }
-                    $this->purchase_id = $this->purchase_id;
                     $this->profile = new SfGuardUserProfile();
                     $this->subscription = new Subscription();
                     $this->purchase_rec = $purchase->getPurchaseOrder($this->purchase_id);
@@ -1723,6 +1722,10 @@ class borst_shopActions extends sfActions {
 
             //code by sandeep end
         }
+        // echo "<pre>";
+        // print_r($this->purchase_id);
+
+        // exit;
         }
         isicsBreadcrumbs::getInstance()->addItem('BT-SHOP', 'borst_shop/borstShopHome');
         isicsBreadcrumbs::getInstance()->addItem('Betalning', 'borst_shop/shopPayment');

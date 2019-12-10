@@ -40,7 +40,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="btshopleftdiv">
             <div class="btshopleftdivinner">
 				
-                <?php if($transaction_type == 4 || $transaction_type == 3){?>
+                <?php if($transaction_type == 4 || $transaction_type == 3 || $transaction_type == 1){?>
                 
                     <div class="cart_payment_steps">
                         <div class="bt-shop-step-top-margin widthall float_left">&nbsp;</div>
