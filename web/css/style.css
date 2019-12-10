@@ -841,7 +841,7 @@ home_heading_c {
     height: 3px;
     float: left;
     /* margin-left: ;*/
-    margin: 14px 0px 7px 0px;
+    margin: 14px 0px 5px 0px;
 }
 
 .home_heading_l_3 {
@@ -2508,7 +2508,7 @@ input.rounded {
 .shop_detail_preamble {
 	font-family: 'Georgia';
     float: left;
-    font-size: 1.5em;
+    font-size: 1.55em;
 	letter-spacing: 0.01em;
     color: #a3bbcd;
     line-height: 1.5em;
@@ -8780,10 +8780,10 @@ input.send_forgetpass {
 #container .popup_left {
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
-    box-shadow: 2px 2px 12px #b6c4c6;
-    background-color: #12bcd3;
+    box-shadow: 2px 2px 12px #7e96b3;
+    background-color: #6a7d93;
     width: 40px;
-    height: 456px;
+    height: 466px;
     float: left;
 }
 
@@ -8793,9 +8793,9 @@ input.send_forgetpass {
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     box-shadow: 2px 2px 12px #555555;
-    background-color: #13c8de;
+    background-color: #7489a2;
     width: 450px;
-    height: 456px;
+    height: 466px;
 }
 
 #container .pop_title {
@@ -8808,11 +8808,12 @@ input.send_forgetpass {
 }
 
 #container .pop_sub_title {
-    font-family: 'Franklin Gothic Book Regular';
-    font-size: 1.2em;
-    line-height: 1.4em;
-    color: #1b2337;
-    padding: 0px 50px 0px 88px;
+    font-family: 'CheltenhamITCW01-Bold';
+    font-size: 1.3em;
+    line-height: 1.2em;
+	letter-spacing: 0.03em;
+    color: #232222;
+    padding: 2px 30px 2px 78px;
     text-align: center;
 }
 
@@ -8821,11 +8822,11 @@ input.send_forgetpass {
     font-size: 1em;
     line-height: 1.3em;
     letter-spacing: 0.07em;
-    color: #081734;
+    color: #232222;
     margin-left: 80px;
     text-align: center;
     width: 240px;
-    margin-top: 18px;
+    margin-top: 14px;
 }
 
 #container .popup_btn {
@@ -8836,7 +8837,7 @@ input.send_forgetpass {
     border: medium none;
     font-size: 1.1em;
     color: #fff;
-    background-color: #465856;
+    background-color: #97b3d3;
     margin: 4px 0px 4px 160px;
     text-align: center;
     width: 80px;
@@ -8844,17 +8845,17 @@ input.send_forgetpass {
 }
 
 #container .pop_subtitle {
-    font-family: 'ITC Cheltenham Book';
-    font-size: 1.5em;
-	letter-spacing: 0.04em;
-    color: #ffffff;
-    padding: 0px 50px 15px 88px;
+    font-family: 'Franklin Gothic Book Regular'!important;
+    font-size: 1.8em;
+	color: #232222;
+    padding: 8px 40px 15px 78px;
     text-align: center;
     margin-top: 18px;
 }
 
 #container .pop_img_div {
-    padding: 3px 0 0 105px;
+    padding: 0px 0 0 105px;
+	box-shadow: 2px 2px 12px #8aa4c2;
 }
 
 #container .closePopup {
