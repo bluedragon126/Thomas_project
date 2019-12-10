@@ -14,7 +14,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="inner_page_content_main">
                 <div class="whp_title">Villkor för BT-Shop</div>
                 <!-- <div class="shoph3 widthall">Rubrik här då</div>-->
-                <div class="whp_preamble">BT-shop är Börstjänarens e-handelsbutik. Här kan du köpa  våra olika abonnemangstjänster och on line-utbildningar, såväl som böcker och dataprogram mm.</div>
+                <div class="whp_preamble_head">BT-shop är Börstjänarens e-handelsbutik. Här kan du köpa  våra olika abonnemangstjänster och on line-utbildningar, såväl som böcker och dataprogram mm.</div>
                 <div class="float_left widthall">
                   
                     <div class="whp_heading">Ångerrätt</div>

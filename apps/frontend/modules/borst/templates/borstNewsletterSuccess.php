@@ -87,7 +87,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                  
                     </div>
                     
-                    <a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin-top:32px" width="300" border="0" alt="imag" /></a>
+                    <div class="float_left widthall"><a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin-top:32px" width="300" border="0" alt="imag" /></a> </div>
                 
               <div class="float_left widthall">
                     

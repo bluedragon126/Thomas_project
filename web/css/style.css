@@ -8809,11 +8809,11 @@ input.send_forgetpass {
 
 #container .pop_sub_title {
     font-family: 'CheltenhamITCW01-Bold';
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.2em;
 	letter-spacing: 0.03em;
     color: #232222;
-    padding: 2px 30px 2px 78px;
+    padding: 2px 30px 2px 72px;
     text-align: center;
 }
 

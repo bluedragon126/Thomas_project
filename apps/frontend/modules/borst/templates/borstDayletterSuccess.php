@@ -117,7 +117,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </div>
 
             </div>
-<br />
+<br /><br />
 <p><strong>OBS!</strong> 
 <br />
 Prenumerationen på <i>Börstjänarens veckobrev</i> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a></p><br>
@@ -144,7 +144,7 @@ Prenumerationen på <i>Börstjänarens veckobrev</i> administreras  på <a href=
 
             <?php echo include_partial('global/inner_bottom_footer'); ?>
         </div>
-    </div>
+    </div></div>
     <div class="rightbanner padding_0 font_0 margin_top_ann">
         <div class="home_ad_r float_left font_size_12 ">Annons</div>
         <?php include_partial('global/ad_message') ?>
