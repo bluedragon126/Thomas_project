@@ -2604,8 +2604,6 @@ class borstActions extends sfActions
   public function executeBorstWebinar(sfWebRequest $request)
   {
 	isicsBreadcrumbs::getInstance()->addItem('OM OSS', 'borst/borstWebinar'); 
-	$this->getUser()->setAttribute('parent_menu', ''); 
-	$this->getUser()->setAttribute('submenu_menu', '');
 	$this->getUser()->setAttribute('third_menu', 'om_oss');
   }
       /**
