@@ -2565,23 +2565,33 @@ $(document).ready(function() {
         $.ajax({
             url: '/borst_shop/getCartData?price=' + price + '&product_id=' + product_id + '&price_detail_id=' + price_detail_id,
             success: function(data) {
-                console.log("success");
+                
                 if (id == 'add') {
                     $("#shop_rightbanner").html(data);
                     shopChartHeight();
                     //setShippingCost();
                 }
                 if (id == 'to_payment') {
-                    window.location = 'http://' + window.location.hostname + '/borst_shop/shopPayment/product_id/' + product_id;
+                    $("#shop_rightbanner").html(data);
+                    $.ajax({
+                        url: '/borst_shop/getCartDataCount',
+                        success: function(data1) {
+                            $('.cart_count').html(data1);
+                            console.log("success");
+                            window.location = 'http://' + window.location.hostname + '/borst_shop/shopPayment/product_id/' + product_id;
+
+                        }
+                    });
                 }
                 // console.log("testtest");
                 window.scrollTo(0, 0);
-                $.ajax({
-                    url: '/borst_shop/getCartDataCount',
-                    success: function(data1) {
-                        $('.cart_count').html(data1);
-                    }
-                });
+                // $.ajax({
+                //     url: '/borst_shop/getCartDataCount',
+                //     success: function(data1) {
+                //         $('.cart_count').html(data1);
+                //         console.log("success");
+                //     }
+                // });
             }
         });
 

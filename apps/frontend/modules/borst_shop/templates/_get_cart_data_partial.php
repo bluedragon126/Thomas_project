@@ -129,7 +129,7 @@
                 <div class="info"> 
                     <div class="info"> <a class="empty_cart wh_button float_right"><span>Töm varukorg</span></a> </div>
                     <div class="blank_10h widthall">&nbsp;</div>
-                    <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
+                    <a id="check_payment_detail" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_30h widthall">&nbsp;</div>
             <?php else: ?>
                 <div class="info"> <div class="blank_12h widthall">&nbsp;</div>

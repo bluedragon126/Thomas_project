@@ -847,6 +847,8 @@ class borst_shopActions extends sfActions {
      * @param sfRequest $request A request object
      */
     public function executeShopPayment(sfWebRequest $request) {
+        // echo($_COOKIE['cart_items_cookie_qty']);
+        // exit;
         if ($this->getUser()->isAuthenticated()) {
             $this->getUser()->setAttribute('loginRequired', false);
         }
