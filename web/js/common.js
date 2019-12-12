@@ -2569,6 +2569,14 @@ $(document).ready(function() {
                 if (id == 'add') {
                     $("#shop_rightbanner").html(data);
                     shopChartHeight();
+                    $.ajax({
+                        url: '/borst_shop/getCartDataCount',
+                        success: function(data1) {
+                            $('.cart_count').html(data1);
+                            location.reload();
+                            // console.log("ddata");
+                        }
+                    });
                     //setShippingCost();
                 }
                 if (id == 'to_payment') {
