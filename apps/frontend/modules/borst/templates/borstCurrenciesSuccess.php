@@ -266,7 +266,9 @@
                             let setItv = setInterval(() => {                   
                                 // console.log("aaaaaa");           
                                 if($('.twitter-timeline').contents().find("head")){     
-                                    // console.log("aaaaaa");                               
+                                    // console.log("aaaaaa");           
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-InformationCircle-widgetParent{display: none!important;}  </style>"));                        
+                                                       
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet-text{white-space: normal!important;}  </style>"));
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Body{border-top: 1px solid #d3d3d3!important;border-bottom: 1px solid #d3d3d3!important;}  </style>"));
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-TweetList-tweet{border-top: 1px solid #d3d3d3!important;}  </style>"));

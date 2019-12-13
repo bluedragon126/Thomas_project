@@ -24,37 +24,37 @@
                     <div class="home_heading_l_3_head_div">
 
                         <?php for ($i = 0; $i < 2; $i++): ?>
-                            <div class="width223 float_left <?php
-                    if ($i == 0) {
-                        echo "margin_rgt_19";
-                    }
-                    ?>" >
-                                <div class="home_heading_l_3_main_div <?php
+                        <div class="width223 float_left <?php
+                            if ($i == 0) {
+                                echo "margin_rgt_19";
+                            }
+                        ?>" >
+                        <div class="home_heading_l_3_main_div <?php
+                            if ($i == 1) {
+                                echo "margin_rgt_0";
+                            }
+                        ?>">
+
+                        <div class="home_heading_l_3_img_div">
+                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">                                           
+                                <?php 
+                                if($arr[$i]['category_id'] == 6){
+                                    $desc = $arr[$i]['text'];                                                                               
+                                    $abc = explode("em&gt;",strip_tags($desc));
+                                    echo "<span class='wizdom-two'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</span>';
+                                }else {?>
+                                <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>" width="223" />
+                                <?php } ?>
+                            </a>
+                        </div>
+                    </div>
+
+                    <?php $date = explode('-', substr($arr[$i]['article_date'], 0, 10)); ?>
+                                <div class="home_heading_l_3_txt_div mrg_top_1 <?php
                                     if ($i == 1) {
                                         echo "margin_rgt_0";
                                     }
                                     ?>">
-
-                                    <div class="home_heading_l_3_img_div">
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="cursor float_left">                                           
-                                            <?php 
-                                            if($arr[$i]['category_id'] == 6){
-                                                $desc = $arr[$i]['text'];                                                                               
-                                                $abc = explode("em&gt;",strip_tags($desc));
-                                                echo "<span class='wizdom-two'><img src='/images/wizdom-quote.png'/>".implode(' ', array_slice(str_word_count($abc[1], 2), 0, 4)).'...</span>';
-                                            }else {?>
-                                            <img src="/uploads/articleIngressImages/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>" width="223" />
-                                            <?php } ?>
-                                        </a>
-                                    </div>
-                                </div>
-
-                    <?php $date = explode('-', substr($arr[$i]['article_date'], 0, 10)); ?>
-                                <div class="home_heading_l_3_txt_div mrg_top_1 <?php
-                    if ($i == 1) {
-                        echo "margin_rgt_0";
-                    }
-                    ?>">
 
                                     <div class="home_heading_l_c_txt_main">                                
                                         <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $arr[$i]['article_id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['title'] ?></span></a></div>
@@ -166,7 +166,7 @@
                     </div>
                     <div class="home_heading_l_small_txt articleinfo">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                                                   
-                                <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
+                                <img src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                             
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php 
                             $dot_status = 0;
                             for ($x = 122; $x > 0; $x--) {
@@ -215,24 +215,22 @@
 <div class="content_main_div_center">
     <?php $limit = 2; ?>
     <?php $obj_count = 2; ?>
-<?php $count = 1; ?>
+    <?php $count = 1; ?>
     <?php $cnt = 0; ?>
     <?php $mCount = 1 ?>
         <?php //echo count($left_records);  ?>
         <?php foreach ($left_records as $obj): ?>
-            <?php if ($count == $limit || $count > $article_limit - $secondLimit): ?>
+            <?php if ($count == 2 || $count == 5 || $count == 7 || $count == 10 || $count == 12 || $count == 15 || $count == 18 || $count == 20 || $count == 22 || $count == 23 || $count > $article_limit - $secondLimit): ?>
 
 
-        <?php $date = explode('-', substr($obj['article_date'], 0, 10)); ?>
+            <?php $date = explode('-', substr($obj['article_date'], 0, 10)); ?>
             <div class="content_sub_div_center autoheight">
-                            <?php if ($count == 4) { ?>
+                    <?php if ($count == 4) { ?>
                     <div class="home_artline1_m_div" style="margin-top:0px;">&nbsp;</div>
-        <?php } ?>
+                    <?php } ?>
                 <div>
                     <div class="home_heading_c">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="a.bluelink cursor">
-        <?php /* ?><img src="/images/<?php echo $image_arr_814[$l] ?>" alt="photo" /><?php */ ?>                            
-                            
+                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="a.bluelink cursor">                        
                             <?php 
                             if($obj['category_id'] == 6){
                                 $desc = $obj['text'];                                                                               
@@ -252,23 +250,25 @@
                     </div>
                     <div class="articleinfo home_body_l_1">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                        
-                            <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                            
+                            <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />   
+                            <span><?php echo $count;?> </span>                      
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php 
-                            $dot_status = 0;
-                            for ($x = 122; $x > 0; $x--) {
-                                if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
-                                    if(substr($obj['image_text'], $x, 1) == "."){
-                                        $dot_status = 1;
+                                $dot_status = 0;
+                                for ($x = 122; $x > 0; $x--) {
+                                    if(substr($obj['image_text'], $x, 1) == " " || substr($obj['image_text'], $x, 1) == "."){
+                                        if(substr($obj['image_text'], $x, 1) == "."){
+                                            $dot_status = 1;
+                                        }
+                                        echo substr($obj['image_text'], 0, $x+1);
+                                        break;
                                     }
-                                    echo substr($obj['image_text'], 0, $x+1);
-                                    break;
-                                }
-                                // echo "The number is: $x <br>";
-                            } ?></span>
+                                    // echo "The number is: $x <br>";
+                                } ?>
+                            </span>
                         </a>
-                            <?php if($dot_status == 0) {?>
+                        <?php if($dot_status == 0) {?>
                             <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $obj['article_id']; ?>" class="article_dots_m cursor">...</a>
-                            <?php }?>
+                        <?php }?>
                         </span>
                     </div>
                     <div class="home_heading_l_btmtxtmain dattimeinfo col-middle-date">
@@ -285,15 +285,15 @@
                         <?php endif; ?>
                     </div>
                 </div>
-            <?php if ($count > 2) { ?>
+                <?php if ($count > 2) { ?>
                     <div class="home_artline1_m_div">&nbsp;</div>
-            <?php } ?>
+                <?php } ?>
             </div>
-            <?php $limit+=2; ?>
+            <?php $limit+=1; ?>
             <?php if ($obj_count == 6): ?>
                 <?php
                 $obj_count = 0;
-                $limit += 1;
+                $limit += 0;
                 ?>
             <?php endif; ?>
             <?php $obj_count++; ?>
@@ -302,7 +302,7 @@
         <?php else: ?>
             <?php $cnt++; ?>
         <?php endif; ?>
-                                <?php if ($mCount == 1): ?>
+        <?php if ($mCount == 1): ?>
                 <div class="content_sub_div_center autoheight">
                     <div>
                         <div class="home_head9_m">9 mest lästa artiklar:</div>
@@ -333,13 +333,14 @@
                     <!--<a class="twitter-timeline"  href="https://twitter.com/hashtag/corgi" data-widget-id="700280847123873792">#corgi Tweets</a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 
-                   <!-- <a class="twitter-timeline"  href="https://twitter.com/Borstjanaren" data-widget-id="700569445123493888">Tweets by @Borstjanaren</a>
+                   <a class="twitter-timeline"  href="https://twitter.com/Borstjanaren" data-widget-id="700569445123493888"></a>
                     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                        $( document ).ready(function() {
                             let setItv = setInterval(() => {                   
                                 // console.log("aaaaaa");           
                                 if($('.twitter-timeline').contents().find("head")){     
-                                    // console.log("aaaaaa");                               
+                                    // console.log("aaaaaa");       
+                                    $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-InformationCircle-widgetParent{display: none!important;}  </style>"));                        
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Tweet-text{white-space: normal!important;}  </style>"));
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-Body{border-top: 1px solid #d3d3d3!important;border-bottom: 1px solid #d3d3d3!important;}  </style>"));
                                     $('.twitter-timeline').contents().find("head").append($("<style type='text/css'>  .timeline-TweetList-tweet{border-top: 1px solid #d3d3d3!important;}  </style>"));
@@ -352,11 +353,11 @@
                          
                         });
                                             
-                    </script>-->
+                    </script>
                 </div>
             <?php endif; ?>
         <?php $mCount++; ?>
-    <?php endif; ?>
+        <?php endif; ?>
     <?php $count++; ?>
 
 
