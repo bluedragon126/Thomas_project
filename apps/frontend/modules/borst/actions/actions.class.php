@@ -233,7 +233,7 @@ class borstActions extends sfActions
         $this->article_limit = 23;
         $this->secondLimit = 0;
         
-	$two_column_articles = ArticleTable::getInstance()->getHomeBorstHome(0,$this->article_limit,$isSuperAdmin);
+	$two_column_articles = ArticleTable::getInstance()->getHomeBorstHome(0,$this->article_limit+5,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin,$two_column_articles);
         //var_dump($two_column_articles);
 	$this->left_records = $two_column_articles;
@@ -487,17 +487,17 @@ class borstActions extends sfActions
 	else $isSuperAdmin = 0;
 	//$this->article_limit = 49;
         //$this->article_limit = 148;
-        $this->article_limit = 30;
-        $this->secondLimit = 0;
+        $this->article_limit = 23;
+	$this->secondLimit = 0;
 		// $request->getParameter('kat_id') || $request->getParameter('type_id') || $request->getParameter('obj_id')
 	if($request->getParameter('kat_id')){
-		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'kat',$request->getParameter('kat_id'),$isSuperAdmin);
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit+5,'kat',$request->getParameter('kat_id'),$isSuperAdmin);
 	}
 	if($request->getParameter('type_id')){
-		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'type',$request->getParameter('type_id'),$isSuperAdmin);
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit+5,'type',$request->getParameter('type_id'),$isSuperAdmin);
 	}
 	if($request->getParameter('obj_id')){
-		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,'obj',$request->getParameter('obj_id'),$isSuperAdmin);
+		$two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit+5,'obj',$request->getParameter('obj_id'),$isSuperAdmin);
 	}
 	// $two_column_articles = ArticleTable::getInstance()->getArticleListMenu(0,$this->article_limit,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,10,$isSuperAdmin,$two_column_articles);
@@ -1221,9 +1221,9 @@ class borstActions extends sfActions
 	else $isSuperAdmin = 0;	
 	
         
-        $this->article_limit = 27;
-        $this->secondLimit = 4;
-	$two_column_articles = ArticleTable::getInstance()->getHomeAktier(0,$this->article_limit,$isSuperAdmin);
+	$this->article_limit = 23;
+	$this->secondLimit = 0;
+	$two_column_articles = ArticleTable::getInstance()->getHomeAktier(0,$this->article_limit+5,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
 	$this->left_records = $two_column_articles;
         
@@ -1463,8 +1463,9 @@ class borstActions extends sfActions
 	else $isSuperAdmin = 0;	
 	
         
-        $this->article_limit = 27;
-	$two_column_articles = ArticleTable::getInstance()->getHomeCommodities(0,$this->article_limit,$isSuperAdmin);
+	$this->article_limit = 23;
+	$this->secondLimit = 0;
+	$two_column_articles = ArticleTable::getInstance()->getHomeCommodities(0,$this->article_limit+5,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
 	$this->left_records = $two_column_articles;
         
@@ -1718,8 +1719,9 @@ class borstActions extends sfActions
 	//$two_column_articles = ArticleTable::getInstance()->getHomeCurrencies(0,27,$isSuperAdmin);
 	//$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
         
-        $this->article_limit = 27;
-	$two_column_articles = ArticleTable::getInstance()->getHomeCurrencies(0,$this->article_limit,$isSuperAdmin);
+	$this->article_limit = 23;
+	$this->secondLimit = 0;
+	$two_column_articles = ArticleTable::getInstance()->getHomeCurrencies(0,$this->article_limit+5,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
 	$this->left_records = $two_column_articles;
         
@@ -2216,8 +2218,9 @@ class borstActions extends sfActions
 	//$two_column_articles = ArticleTable::getInstance()->getHomeSubscriberArticle(0,27,$isSuperAdmin);
 	//$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
         
-        $this->article_limit = 27;
-	$two_column_articles = ArticleTable::getInstance()->getHomeSubscriberArticle(0,$this->article_limit,$isSuperAdmin);
+	$this->article_limit = 23;
+	$this->secondLimit = 0;
+	$two_column_articles = ArticleTable::getInstance()->getHomeSubscriberArticle(0,$this->article_limit+5,$isSuperAdmin);
 	$last_column_articles = ArticleTable::getInstance()->getHomeBuySell(0,8,$isSuperAdmin,$two_column_articles);
 	$this->left_records = $two_column_articles;
         
