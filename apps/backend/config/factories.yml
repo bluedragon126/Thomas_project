@@ -16,18 +16,18 @@ prod:
       delivery_strategy: spool
       spool_class:       Swift_FileSpool
       spool_arguments: 
-        path: /var/www/vhosts/hallenborgsandstrom.se/borstjanarentest/borst/spool
+        path: /var/www/vhosts/borstjanaren.se/httpdocs/spool
       #spool_arguments:   ["D:/borst/spool"]	  
 #     delivery_strategy: realtime
       transport:
         class: Swift_SmtpTransport
         param:
           #host:        213.180.95.199
-          host:       mail2.hallenborgsandstrom.se
-          port:       587
-          encryption: ~
-          username:   noreply@hallenborgsandstrom.se
-          password:   Kvtyw63945#
+          host:       email-smtp.eu-west-1.amazonaws.com
+          port:       465
+          encryption: ssl
+          username: AKIAINAMNI2SII45J6UQ  
+          password: Alngsbd4/xC4WM41Z0Ka/XBveQmsfR17FnNpRf180u7Q
           #username:  henrik.hallenborg
           #password:  Ben4President
           #username:   matjare@thephpprojects.com

@@ -20,12 +20,11 @@ prod:
           #host:   83.253.6.204
           #port:   587
           #host:        213.180.95.199
-          #host:       mail.borstjanaren.se
-          host:       mail2.hallenborgsandstrom.se
-          port:       587
-          encryption: ~
-          username:   noreply@hallenborgsandstrom.se
-          password:   Kvtyw63945#
+          host:       email-smtp.eu-west-1.amazonaws.com
+          port:       465
+          encryption: ssl
+          username: AKIAINAMNI2SII45J6UQ  
+          password: Alngsbd4/xC4WM41Z0Ka/XBveQmsfR17FnNpRf180u7Q
           #username:   matjare@thephpprojects.com
           #password:   Matjare456
 

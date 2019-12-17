@@ -5,6 +5,7 @@ prod:
   .settings:
     no_script_name:         true
     logging_enabled:        true
+    default_timezone:       Europe/Stockholm
 
 dev:
   .settings:

@@ -2,3 +2,6 @@ cache
 config
 img
 lib_check
+data
+plugins
+test

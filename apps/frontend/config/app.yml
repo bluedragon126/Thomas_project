@@ -4,6 +4,8 @@
 # default values
 all:
   recaptcha:
+    #public_key:  6LdpSREUAAAAAEh6d5NPSJD0ZY3Eb_jlr81zT0v8
+    #private_key:  6LdpSREUAAAAACyXdc2b-hA9cHT26SkKg8RyjpjY
     public_key:  6LdlbicUAAAAAIUV2X87UN0QjKaJW6UEiYkaKHsa
     private_key:  6LdlbicUAAAAAJNFaWSukC2zni6mejOz5KDXABND
 
@@ -19,10 +21,10 @@ all:
 
   sf_guard_plugin_algorithm_callable: md5
 
-  mail_sender_email: systerbt@borstjanaren.se
-  mail_reply_email: systerbt@borstjanaren.se
-  mail_shop_email_1: info@borstjanaren.se
-  mail_sender_notification: info@borstjanaren.se
+  mail_sender_email: btshop@borstjanaren.se
+  mail_reply_email: btshop@borstjanaren.se
+  mail_shop_email_1: btshop@borstjanaren.se
+  mail_sender_notification: btshop@borstjanaren.se
  
   mail_shop_email: btshop@borstjanaren.se
   

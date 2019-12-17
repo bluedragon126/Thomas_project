@@ -4,8 +4,8 @@
 # default values
 all:
   system_culture: en,es
-  mail_sender_email: systerbt@borstjanaren.se
-  mail_reply_email: systerbt@borstjanaren.se
+  mail_sender_email: btshop@borstjanaren.se
+  mail_reply_email: btshop@borstjanaren.se
   mail_shop_email: btshop@borstjanaren.se
   host_name: www.borstjanaren.se
   newsletter_email: ej_svarsadress@borstjanaren.se

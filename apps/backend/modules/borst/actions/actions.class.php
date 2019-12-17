@@ -1,4 +1,4 @@
-﻿<?php
+﻿﻿<?php
 
 /**
  * borst actions.
@@ -933,7 +933,7 @@ class borstActions extends sfActions
         $number_sent = 0;
         $this->newsletter = Doctrine::getTable("NewsLetter")->getPublishNewsLetter();
         if ($request->isMethod('post')) {
-            file_put_contents($_log_file_name, 0);
+            file_put_contents($_log_file_name, 9);
             $arr = $this->getRequest()->getParameterHolder()->getAll();
             $i = 0;
             $kundgrupp = "";
@@ -972,8 +972,10 @@ class borstActions extends sfActions
             foreach($to as $_to){
                try{
                     $message->setTo($_to);
+
 					if($arr['kundgrupp'] == '4')
                     {$this->getMailer()->sendNextImmediately();}
+                    
                     $number_sent += $this->getMailer()->send($message);
                     //$number_sent += $this->getMailer()->batchSend($message,&$_to);
                     
@@ -1616,8 +1618,6 @@ class borstActions extends sfActions
         $this->userForm = new sfGuardUserForm($sfGuardUser);
         $this->wSchema = $this->userForm->getWidgetSchema();
         $this->wSchema['password'] = new sfWidgetFormInputHidden();*/
-        
-
 
         $this->profileForm = new AddSfGuardUserProfileForm($this->user_data);
         $this->wSchema = $this->profileForm->getWidgetSchema();
@@ -3887,7 +3887,6 @@ class borstActions extends sfActions
      */
     public function executeShopTransactionList(sfWebRequest $request)
     {
-        //echo "<pre>";  print_r($request); die;
         $this->getUser()->setAttribute('parent_menu', 'top_borst_menu');
         $this->getUser()->setAttribute('submenu_menu', 'borst_menu_transaction_list');
         $this->getUser()->setAttribute('third_menu', '');
@@ -3953,9 +3952,6 @@ class borstActions extends sfActions
      */
     public function executeSearchPurchaseOrder(sfWebRequest $request)
     {
-        // ini_set('display_errors', 1);
-        // ini_set('display_startup_errors', 1);
-        // error_reporting(E_ALL);
         $this->host_str = $this->getRequest()->getHost();
         $this->purchasedItem = new PurchasedItem();
         $this->product_article = new BtShopArticle();
@@ -4013,9 +4009,7 @@ class borstActions extends sfActions
                 }
             }
 
-            // echo ("<pre>");
-            // print_r($arr);
-            // die;
+            
 
 
             //$query = PurchaseTable::getInstance()->getAllPurchaseRecords($arr['purchase_order'],$arr['purchase_sort_order']);
@@ -4466,9 +4460,6 @@ class borstActions extends sfActions
      */
     public function executeNewsletterList(sfWebRequest $request)
     {
-        // ini_set('display_errors', 1);
-        // ini_set('display_startup_errors', 1);
-        // error_reporting(E_ALL);
         if ($request->isMethod('post')) {
             $obj = $request->getParameter('publish');
             $id= $request->getParameter('id');
