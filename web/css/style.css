@@ -5635,7 +5635,7 @@ ul.cartStep2 li {
 }
 
 .mbottom_article {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 
@@ -6027,12 +6027,12 @@ ul.cartStep2 li {
 }
 
 .redColor {
-    color: #f58767;
+    color: #f15a22;
 }
 
 .redBorder {
     border: 0.5px solid; 
-	color: #f58767;
+	color: #f15a22;
 }
 
 .registrationValidField {
@@ -6590,7 +6590,7 @@ input.send_forgetpass {
 }
 
 .article_pict_mrg {
-    margin: 32px 0px -7px 0px;
+    margin: 52px 0px -7px 0px;
 }
 
 .width648 {
@@ -6773,18 +6773,18 @@ input.send_forgetpass {
     {color:#3c3a3a;letter-spacing:0.03px;}
 
 .shop_note {
-    color:  #f58767;
+    color:  #f15a22;
     font-family: "Franklin Gothic Book Regular";
     font-size: 1.3em;
     letter-spacing: 0.01em;
-    margin: 26px 0px 10px 0px;
+    margin: 24px 0px 10px 0px;
 }
 
 .shop_note_success {
-    color: #00e0c5;
+    color: #a6cc39;
     font-family: "Franklin Gothic Book Regular";
 	font-size: 1.3em;
-	margin: 36px 0px 0px 0px;
+	margin: 34px 0px 0px 0px;
 }
 
 .shop_1_step_right_panel {
@@ -9012,7 +9012,7 @@ input.send_forgetpass {
 }
 
 .error_valid_email {
-    color: #f58767;
+    color: #f15a22;
     font-family: 'Franklin Gothic Book Regular';
     display: none;
     font-size: 18px;
@@ -9020,7 +9020,7 @@ input.send_forgetpass {
 
 .error_email_exist,
 .success_message {
-    color: #f58767;
+    color: #f15a22;
     font-family: 'Franklin Gothic Book Regular';
     display: none;
     float: left;
@@ -9197,7 +9197,7 @@ input.send_forgetpass {
 .captcha_error {
     float: left;
     position: relative;
-    color: #f58767;
+    color: #f15a22;
 }
 
 .reg_type_chkbox {
@@ -9658,7 +9658,7 @@ input.send_forgetpass {
 
 #btShopProdUrl {
     padding: 50px;
-    color: #f58767;
+    color: #f15a22;
     font-weight: bold;
     float: left
 }
@@ -9711,7 +9711,7 @@ input.send_forgetpass {
 }
 
 #borst_advanced_search #adv_search_error {
-    color: #f58767;
+    color: #f15a22;
     padding: 0px 0px 4px 2px;
 }
 
@@ -9996,7 +9996,7 @@ whp_heading
 }
 
 .chk_error {
-    color: #f58767;
+    color: #f15a22;
     margin-left: 10px;
 }
 
@@ -10075,7 +10075,7 @@ whp_heading
 .enquiry_detail_title_div #post_enquiry_reply_error {
     border: 0px solid red;
     padding-left: 10px;
-    color: #f58767;
+    color: #f15a22;
 }
 
 #enquiry_detail_main_div .name_span {
@@ -10331,7 +10331,7 @@ whp_heading
 }
 
 #edit_analysis .error_list {
-    color: #f58767;
+    color: #f15a22;
     list-style-type: none;
     margin: 0 0 0 10px;
     padding: 0;
@@ -10601,7 +10601,7 @@ whp_heading
 
 #blog_text_error {
     padding: 15px 0 0 30px;
-    color: #f58767;
+    color: #f15a22;
     width: 70%;
 }
 
@@ -11093,7 +11093,7 @@ whp_heading
     position: relative;
     width: 160px;
     padding-left: 5px;
-    color: #f58767;
+    color: #f15a22;
     padding-top: 5px;
 }
 
@@ -11109,7 +11109,7 @@ whp_heading
     position: relative;
     padding-left: 12px;
     width: 500px;
-    color: #f58767;
+    color: #f15a22;
 }
 
 .editaddArticle .article_content .author_name_div {
@@ -11143,7 +11143,7 @@ whp_heading
     float: left;
     position: relative;
     width: 100%;
-    color: #f58767;
+    color: #f15a22;
 }
 
 .editaddArticle .article_content .list_div {
@@ -11273,7 +11273,7 @@ whp_heading
 
 .blog_comment_login_error {
     display: none;
-    color: #f58767;
+    color: #f15a22;
 }
 
 .margin_rgt_icon {
@@ -11381,7 +11381,7 @@ whp_heading
 
 #msg-poll {
     float: left;
-    color: #f58767;
+    color: #f15a22;
     height: 60px;
     position: relative;
     width: 100%;
