@@ -973,10 +973,10 @@ class borstActions extends sfActions
                try{
                     $message->setTo($_to);
 
-					if($arr['kundgrupp'] == '4')
-                    {$this->getMailer()->sendNextImmediately();}
+					//if($arr['kundgrupp'] == '4')
+                    //{$this->getMailer()->sendNextImmediately();}
                     
-                    $number_sent += $this->getMailer()->send($message);
+                    $number_sent += $this->getMailer()->batchSend($message);
                     //$number_sent += $this->getMailer()->batchSend($message,&$_to);
                     
                 }catch (Exception $e)
