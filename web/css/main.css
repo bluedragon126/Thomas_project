@@ -59,10 +59,10 @@ body{
 	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:20px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
 p{line-height:20px;}
-a{text-decoration:none;color:#009cd9;}
+a{text-decoration:none;color:#009cd9;letter-spacing: 0.05px;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}
-.comment_content_wrapper a{color:#009cd9;letter-spacing:0.02px;}
+.comment_content_wrapper a{color:#009cd9;letter-spacing:0.05px;}
 img{border:0;}
 .widthall{width:100%;}
 .float_left{float:left;position:relative;}

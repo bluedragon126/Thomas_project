@@ -118,10 +118,10 @@ include_component('isicsBreadcrumbs', 'show', array(
 
             </div>
 <br /><br />
-<p><strong>OBS!</strong> 
-<br />
+<div class="whp_subheading3">OBS</div>
+
 Prenumerationen på <i>Börstjänarens veckobrev</i> administreras  på <a href="/borst/borstNewsletter"> separat sida.</a></p><br>
-<i>Dagsbrevet</i> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på Börstjänaren och valt att teckna sig för detta brev. 
+<i>Dagsbrevet</i> utkommer normalt varje vardag utom måndag till användare som <a href="/sbt_user/sbtNewRegistration">registrerat ett (gratis) konto</a> på <i>Börstjänaren</i> och valt att teckna sig för detta brev. 
                 
                 
                 <br />

@@ -81,8 +81,8 @@ include_component('isicsBreadcrumbs', 'show', array(
                     
                 </div><div class="float_left">
                 
-                <p><strong>OBS!</strong> 
-                         <br>
+               <div class="whp_subheading3">OBS!</div>
+                         
                   Prenumerationen på <i>Börstjänarens dagsbrev</i> administreras på <a href="/borst/borstDayletter"> separat sida.</a></p>
                  
                     </div>
@@ -94,8 +94,7 @@ include_component('isicsBreadcrumbs', 'show', array(
              <br>  
               
                 
-                   <i>Veckobrevet</i> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <i>VM-Update</i> (utkommer måndagar). Veckobrevet kräver inget          
-                        konto på Börstjänaren.    
+                   <i>Veckobrevet</i> utgörs huvudsakligen av det kostnadsfria marknadsbrevet <i>VM-Update</i> (utkommer måndagar). <i>Veckobrevet</i> kräver inget konto på <i>Börstjänaren.</i> 
                     
                
                 <!--<div class="subcribediv"><a class="main_link_color" href="BT-nytt.html"><img src="/images/Subscribeimg_1.jpg" border="0" alt="imag"/></a>

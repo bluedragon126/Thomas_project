@@ -87,7 +87,10 @@ Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 
 
 <br />
-<strong>Följ oss gärna</strong> på <a href="https://www.youtube.com/channel/UCfSGLtCAxSHqGhMZsQumqaQ" target="_blank" rel="noopener">Youtube, klicka här</a> för att se tidigare inspelade event av Trejdingklubben Online!<strong><br /><br />Har du problem med att ansluta dig,</strong> ring då Citrix support öppet dygnet runt: 
+ Följ oss gärna på <a href="https://www.youtube.com/channel/UCfSGLtCAxSHqGhMZsQumqaQ" target="_blank" rel="noopener">Youtube, klicka här</a> för att se tidigare inspelade event av <i>Trejdingklubben Online!</i>
+ 
+ 
+ <br /><br />Har du problem med att ansluta dig,</strong> ring då <i>Citrix</i> support öppet dygnet runt: 
 <br />
 020 797043 eller 08 525 037 62.
 

@@ -25,13 +25,13 @@
             
                 <div class="whp_title">Välkommen till Börstjänaren!</div>
                 
-                <div class="whp_preamble_head">Börstjänaren är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru-, valuta- och kryptomarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
+                <div class="whp_preamble_head"><i>Börstjänaren</i> är en kostnadsfri sajt för personer med intresse för investeringar i aktie-, råvaru-, valuta- och kryptomarknaderna. Här finner du dagliga tips och analyser samt aktuella grafer över det mesta av intresse.
                 </div>
                 <div class="float_left widthall">
                 
                     <div class="whp_heading">Börstips online sedan 2006</div>
 
-                    Börstjänaren drivs av entusiaster med intresse för utbildning, fria marknader, teknisk trading och investeringar. Sajten Börstjänaren har funnits sedan 2006.
+                    <i>Börstjänaren</i> drivs av entusiaster med intresse för utbildning, fria marknader, teknisk trading och investeringar. Sajten <i>Börstjänaren</i> har funnits sedan 2006.
                   <br>
                     <br>
                 
@@ -42,7 +42,7 @@
                       <br>
                     <br>
                     
-                    <strong>På onsdagkvällar</strong> kl 20.00 håller vi kostnadsfria webinarier,  &quot;Trejdingklubben online&quot;, där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
+                    <strong>På onsdagkvällar kl 20.00</strong> håller vi kostnadsfria webinarier, <i>Trejdingklubben online,</i> där vi går igenom marknaden, svarar på  deltagarnas frågor och ger börstips och investeringsförslag.
 
                     
                     

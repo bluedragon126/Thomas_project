@@ -17,16 +17,12 @@
                 <div class="whp_title">Arkiv</div>
                 <div class="whp_preamble">Under denna vinjett kan du bland annat finna artikelserier, krönikor och andra texter med lite längre hållbarhet. Klicka på texten i en avdelning för att få upp en lista med  respektive  artiklar.
                 </div>
-                 <img src="/images/new_home/ark_PPP.png" width="330" style="margin-top:45px" alt="Rubrik här"/>
+                 <img src="/images/new_home/ark_PPP.png" width="300" style="margin-top:45px" alt="Rubrik här"/>
                  
                      <div class="float_left widthall">
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/11' ?>">
                         <div class="whp_heading"><?php echo __('Riskhantering ') ?></div>
-                        <b>Dessa krönikor är</b>
-                        den allra mest lönsamma läsningen du någonsin<br/>
-                        kommer att finna på Börstjänaren! Riskhantering och money management<br/>
-                        är den oundgängliga nyckeln till vinnande aktiehandel. Läs och lär hur<br/>
-                        man skall tänka och agera för att överleva för att trada även i morgon!
+                        Dessa krönikor är den allra mest lönsamma läsningen du någonsin kommer att finna på Börstjänaren! Riskhantering och money management är den oundgängliga nyckeln till vinnande aktiehandel. Läs och lär hur man skall tänka och agera för att överleva för att trada även i morgon!
                     </a>
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
@@ -35,10 +31,7 @@
                
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/12' ?>">
                         <div class="whp_heading"><?php echo __('Börspsykologi ') ?></div>
-                        <b>Det största hindret</b>
-                        mot en lyckosam tradingkarriär är du själv. I våra<br/>
-                        krönikor om tradingpsykologi får du inblick i vilka psykologiska utmaningar<br/>
-                        som möter en trader och vad som kan göras för att övervinna dem
+                        Det största hindret mot en lyckosam tradingkarriär är du själv. I våra krönikor om tradingpsykologi får du inblick i vilka psykologiska utmaningar som möter en trader och vad som kan göras för att övervinna dem
                     </a>
                <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
@@ -46,34 +39,23 @@
                 <div class="float_left widthall">
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/13' ?>">
                         <div class="whp_heading"><?php echo __('Börsstrategi & börstaktik') ?></div>
-                        <b>Varje framgångsrik trader</b>
-                        har sin egen strategi, sitt eget sätt att <br/>
-                        attackera marknaden. Här kan du bl. a. läsa om de olika strategier <br/>
-                        vi tillämpar i våra analyser och vår trading.
+                        Varje framgångsrik trader har sin egen strategi, sitt eget sätt att attackera marknaden. Här kan du bl. a. läsa om de olika strategier vi tillämpar i våra analyser och vår trading.
                     </a>
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 
-                <img src="/images/new_home/ark_BT_S.png" width="350" style="margin-top:85px" alt="Rubrik här"/>
+                <img src="/images/new_home/ark_BT_S.png" width="300" style="margin-top:85px" alt="Rubrik här"/>
                 <div class="float_left widthall">
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/21' ?>">
                         <div class="whp_heading"><?php echo __('Klassisk teknisk analys') ?></div>
-                        <b>Den sk tekniska aktieanalysen</b>
-                        bygger på studium av grafer och <br/>
-                        grunderna identifiering av trender. I denna digra artikelserie går vi igen <br/> 
-                        i den klassiska tekniska analysen, dvs det som farfar gjorde utan <br/>
-                        datorernas hjälp.
+                        Den sk tekniska aktieanalysen bygger på studium av grafer och grunderna identifiering av trender. I denna digra artikelserie går vi igen i den klassiska tekniska analysen, dvs det som farfar gjorde utan datorernas hjälp.
                     </a>
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 <div class="float_left widthall">
                     <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/16' ?>">
                         <div class="whp_heading"><?php echo __('Derivat') ?></div>
-                        <b>Utbudet av derivatinstrument</b>
-                        har exploderat på senare år. Optioner,<br/>
-                        terminer och warranter har fått sällskap av CFD:er, ETF:er, Open End<br/>
-                        Certifikat mm. Här reder vi ut begreppen och förklarar fördelar<br/>
-                        och risker med produkterna.
+                        Utbudet av derivatinstrument har exploderat på senare år. Optioner, terminer och warranter har fått sällskap av CFD:er, ETF:er, Open End Certifikat mm. Här reder vi ut begreppen och förklarar fördelar och risker med produkterna.
                     </a>
                     <!--<div class="whp-border">&nbsp;</div>-->
                 </div>
@@ -82,13 +64,10 @@
                                    
                      <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/kat_id/9' ?>">
                         <div class="whp_heading"><?php echo __('Bosse Börstjänare ') ?></div>
-                        <b>Bosse Börstjänare</b>
-                        besvarar läsarbrev och ser till att hjälpa dem som <br/>
-                        på olika sätt hamnat i trångmål eller bryderier på börsen. Utmärkt som <br/>
-                        introduktion för mindre erfarna aktiespekulanter.
+                        Bosse Börstjänare besvarar läsarbrev och ser till att hjälpa dem som på olika sätt hamnat i trångmål eller bryderier på börsen. Utmärkt som introduktion för mindre erfarna aktiespekulanter.
                     </a></div>
                     
-                    <img src="/images/new_home/ark_Chro.png" width="350" style="margin-top:85px" alt="Rubrik här"/>
+                    <img src="/images/new_home/ark_Chro.png" width="300" style="margin-top:85px" alt="Rubrik här"/>
                     
                 <div class="float_left widthall">
                 <a class="cursor blackcolor" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/18' ?>"><div class="whp_heading">Gästkrönikor</div>
