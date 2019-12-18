@@ -243,5 +243,5 @@ MM_reloadPage(true);
 
 
 <div id="Layer1" style="position:absolute; width:200px; height:115px; z-index:1; left: 723px; top: 190px;"> 
-<a href="http://www.borstjanaren.se/ccount2/click.php?id=18">
+<a href="https://www.borstjanaren.se/ccount2/click.php?id=18">
 	    <img style="margin: 0px 0px 0px 0px" src="<?=$CFG->imgdir?>/bokhead.png" width="92" height="82" border="0" /></a></div>
