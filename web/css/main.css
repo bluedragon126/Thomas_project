@@ -59,7 +59,7 @@ body{
 	margin:0px;padding:10px 0 200px 0;font-family:Franklin Gothic Book Regular;font-size:14px;line-height:20px;hyphens:auto;word-wrap:break-word;lang:sv;
 	}
 p{line-height:20px;}
-a{text-decoration:none;color:#009cd9;letter-spacing: 0.05px;}
+a{text-decoration:none;color:#009cd9;letter-spacing: 0.5px;}
 .forumnavigationNew a{color:#ffffff;}
 #forumsubmenu_outer a{color:#0d79b0;}
 .comment_content_wrapper a{color:#009cd9;letter-spacing:0.05px;}
@@ -263,11 +263,12 @@ font-size:0;}
 .breadcrumb{float:left;position:relative;width:63%;margin: -3px 40px 0px 0px;padding:0 1px 0 0px;}
 .breadcrumb ul{float:left;position:relative;width:auto;margin:-2px 0px 0px 0px;padding:0 1px 0 0px;display:inline;}
 .breadcrumb ul li{float:left;position:relative;margin:-4px 0px 0px 0px; letter-spacing: 0.2em; padding:0 1px 0 0px;list-style-type:none;}
-.breadcrumb ul li a{color:#979e9f;text-decoration:none;padding:0 1px 0 0px;}
+.breadcrumb ul li a{color:#979e9f;text-decoration:none;padding:0 1px 0 0px;letter-spacing: 0.2em;}
 .breadcrumb ul li a:hover{
 	color:#abb9c8;
 	text-decoration:none;
 	padding:0 1px 0 0px;
+	letter-spacing: 0.2em;
 }
 .breadcrumb ul li a.selected_b{color:#3c3a3a;text-decoration:none;padding:0 1px 0 0px;;font-weight:bold;}
 .in_date{float:right;position:relative;color:#abb9c8;font-size:0.85em; letter-spacing: 0.01em;}
@@ -443,8 +444,8 @@ input.text .submit{height:20px;float:left;position:relative;}
 .menulink ul li span{padding:0 10px 0 10px;}
 .menulink ul li a:hover{color:#bac1ca;}
 .menulink ul li a.selcetdm{color:#bac1ca;}
-.artlineleftdiv{float:left;position:relative;margin-bottom:18px;padding:12px 0px 0px 0px;border-bottom:1px solid #ced9e2;height:1px;font-size:0;width:465px;}
-.artlinerightdiv{float:left;position:relative;margin-bottom:2px;padding:16px 0px 0px 0px;border-bottom:1px solid #ced9e2;height:1px;font-size:0;width:465px;}
+.artlineleftdiv{float:left;position:relative;margin-bottom:18px;padding:12px 0px 0px 0px;border-bottom:1px solid #bac9d7;height:1px;font-size:0;width:465px;}
+.artlinerightdiv{float:left;position:relative;margin-bottom:2px;padding:16px 0px 0px 0px;border-bottom:1px solid #bac9d7;height:1px;font-size:0;width:465px;}
 div.login{background:transparent url(../images/registerbtn_bg.jpg) no-repeat scroll left top;height:20px;padding-left:4px;}
 input.loginbuttontext{background:transparent url(../images/registerbtn_bg.jpg) no-repeat right top;border:0;cursor:pointer;display:block;text-transform:capitalize;font-weight:normal;color:#202021;height:20px;font-size:10px;margin:0 0 0 0;line-height:20px;padding:0 4px 3px 0;width:auto;float:left;position:relative;overflow:visible;letter-spacing:1px;}
 input.text .login{height:20px;float:left;position:relative;}
@@ -628,11 +629,11 @@ padding-left: 6px;
 .cart .info2{float:left;position:relative;width:100%;line-height:18px;margin-bottom:5px;letter-spacing:0.02px;}
 .cart .info .left{float:left;position:relative;width:62%;}
 .cart .info .right{float:left;position:relative;width:34%;text-align:right;}
-.cart .info input{background-color:#FFFFFF;border:1px solid #ced9e2;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0px 3px 1px 3px;}
+.cart .info input{background-color:#FFFFFF;border:1px solid #bac9d7;margin-right:2px;height:16px;line-height:8px;width:26px;padding:0px 3px 1px 3px;}
 .red_button{float:left;}
 .red_button span{background-color:#f15a22;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em; border-radius: 2px;}
 .red_button_r{background-color:#f15a22;cursor:pointer;height:16px;width:40px;color:#ffffff;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 6px;letter-spacing:0.06em !important;margin-left:240px; border-radius: 2px;}
-.grey_button{background-color:#ced9e2;cursor:pointer;height:16px;width:92px;color:#768897;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4.5px 2px 6px;letter-spacing:0.06em;margin-left:188px; border-radius: 2px;}
+.grey_button{background-color:#bac9d7;cursor:pointer;height:16px;width:92px;color:#768897;font-family:"Franklin Gothic Book Regular";font-size:12px;padding:2px 4.5px 2px 6px;letter-spacing:0.06em;margin-left:188px; border-radius: 2px;}
 .wh_button{
 	background-color:#fff;
 	cursor:pointer;
@@ -1673,9 +1674,9 @@ a.bluelink{color:#0094D1;font-weight:normal;text-decoration:none;border:0;margin
 .shop_cart_common{padding:5.5px 0 0;color:#3c3a3a;font-family:"Franklin Gothic Book Italic";font-size:1em;letter-spacing:-0.02em;}
 .breadcrumb_div{width:636px;float:left;}
 .qtyWraper_span{margin-right:6px;}
-.qtyWraper_input{width:32px;height:16px;border:1px solid #ced9e2;text-align:center;color:#3c3a3a;font-size:1em;font-family:"Franklin Gothic Book Regular";}
+.qtyWraper_input{width:32px;height:16px;border:1px solid #bac9d7;text-align:center;color:#3c3a3a;font-size:1em;font-family:"Franklin Gothic Book Regular";}
 .shop_cart_data_div{border-top:1px solid #d4d8e1;padding:5px 0 8px 0;width:565px;}
-.shop_cart_data_div_border{border-bottom:1px solid #ced9e2;}
+.shop_cart_data_div_border{border-bottom:1px solid #bac9d7;}
 .shop_cart_topay_div{width:558px;}
 .user_email_li{width:451px;}
 .user_email_span{margin-left:2px;}

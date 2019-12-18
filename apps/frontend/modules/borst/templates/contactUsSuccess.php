@@ -31,7 +31,7 @@
                 
                 
                 
-                <div class="whp_preamble">
+                <div class="whp_preamble_head">
                     Säkraste och bästa sättet att kontakta Börstjänaren är via e-post. Vi läser mejlen varje dag och  kan ofta svara med vändande post. Det går även att ringa till oss.</div>
                 <div class="float_left widthall"> 
                 <!--<div class="whp_heading"> E-postadresser</div>-->

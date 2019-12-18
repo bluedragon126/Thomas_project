@@ -370,8 +370,8 @@ root {
 .bt_home_plate_head {
     width: 37%;
     float: left;
-    border-left: 1px solid #bac9d7;
-    border-right: 1px solid #bac9d7;
+    border-left: 1px solid #ced9e2;
+    border-right: 1px solid #ced9e2;
     padding-top: 0px;
 }
 
@@ -749,8 +749,8 @@ root {
     float: left;
     /*width: 19%;*/
     width: 183px;
-    border-left: 1px solid #dde3ea;
-    border-right: 1px solid #dde3ea;
+    border-left: 1px solid #ced9e2;
+    border-right: 1px solid #ced9e2;
     /*margin-top: 20px;*/
 }
 
@@ -1414,14 +1414,14 @@ a.article_dots_r {
 .article_list_typ {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #0091bb;
+    color: #007fa4;
     font-weight: normal;
 }
 
 .article_list_objekt {
     font-family: 'Franklin Gothic Book Regular';
     font-size: 0.93em;
-    color: #ec981b;
+    color: #a76abf;
     font-weight: normal;
 }
 
@@ -1469,7 +1469,7 @@ a.article_dots_r {
     margin-bottom: 20px;
     margin-top: 12px;
     font-size: 2.4em;
-    color: #3c3a3a;
+    color: #a3bbcd;
     line-height: 1.3em;
     word-spacing: -0.06em;
     width: 100%;
@@ -1478,20 +1478,20 @@ a.article_dots_r {
 .whp_preamble {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.6em;
+    font-size: 1.55em;
 	letter-spacing: 0.01em;
-    color: #a6b1c2;
-    line-height: 1.6em;
+    color: #a3bbcd;
+    line-height: 1.55em
     margin-bottom: 30px;
 }
 
 .whp_preamble_head {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.6em;
+    font-size: 1.55em;
 	letter-spacing: 0.01em;
-    color: #a6b1c2;
-    line-height: 1.6em;
+    color: #a3bbcd;
+    line-height: 1.55em;
     margin-bottom: 4px;
 }
 
@@ -1500,7 +1500,7 @@ a.article_dots_r {
     float: left;
     font-size: 1.3em;
 	letter-spacing: -0.01em;
-    color: #3c3a3a;
+    color: #a3bbcd;
     line-height: 1.5em;
     margin-bottom: 55px;
 }
@@ -1510,7 +1510,7 @@ a.article_dots_r {
     float: left;
     font-size: 1.35em;
 	letter-spacing: -0.01em;
-    color: #3c3a3a;
+    color: #a3bbcd;
     line-height: 1.45em;
     margin-bottom: 55px;
 	font-style:italic;
@@ -1530,7 +1530,7 @@ a.article_dots_r {
     color: #3c3a3a;
     font-family: 'ITC Cheltenham Book';
     font-size: 1.8em;
-	letter-spacing: -0.01em
+	letter-spacing: -0.01em;
     line-height: 1em;
     margin: 52px 0px 12px;
     width: 100%;
@@ -1542,6 +1542,16 @@ a.article_dots_r {
     font-size: 1.4em;
     line-height: 1.25em;
     margin: 22px 0px 5px;
+    width: 100%;
+}
+
+.whp_heading_spo {
+    color: #3c3a3a;
+    font-family: 'ITC Cheltenham Book';
+    font-size: 1.8em;
+	letter-spacing: -0.01em
+    line-height: 1em;
+    margin: 32px 0px 15px;
     width: 100%;
 }
 
@@ -2512,7 +2522,7 @@ input.rounded {
     font-size: 1.55em;
 	letter-spacing: 0.01em;
     color: #a3bbcd;
-    line-height: 1.5em;
+    line-height: 1.55em;
 }
 
 .shop_detail_order {
@@ -4499,7 +4509,7 @@ ul.cartStep2 li {
 }
 
 .home_artline1_m_div {
-    background-color: #bac9d7;
+    background-color: #ced9e2;
     width: 100%;
     height: 4px;
     float: left;
@@ -4540,7 +4550,7 @@ ul.cartStep2 li {
 }
 
 .home_adline_r_div {
-    background-color: #bac9d7;
+    background-color: #ced9e2;
     /*width: 96%;*/
     width: 300px;
     height: 1px;
@@ -4567,7 +4577,7 @@ ul.cartStep2 li {
     min-height: 1180px;
     width: 658px;
     padding: 0px;
-    border-right: 1px solid #bac9d7;
+    border-right: 1px solid #ced9e2;
 }
 
 .article_payment_shoplist {
@@ -4913,7 +4923,7 @@ ul.cartStep2 li {
     float: left;
     /*width: 27.5%;*/
     width: 183px;
-    border-left: 1px solid #bac9d7;
+    border-left: 1px solid #ced9e2;
     margin-top: 20px;
 }
 
@@ -4963,7 +4973,7 @@ ul.cartStep2 li {
 }
 
 .home_artline_blog {
-    background-color: #bac9d7;
+    background-color: #ced9e2;
     float: left;
     height: 1px;
     margin-bottom: 10px;
@@ -6157,7 +6167,7 @@ ul.cartStep2 li {
 }
 
 #shop_rightbanner {
-    /*border-left: 1px solid #bac9d7;*/
+    /*border-left: 1px solid #ced9e2;*/
     padding-top: 0;
 }
 
@@ -6797,8 +6807,8 @@ input.send_forgetpass {
     height: 100%;
 }
 
-.right_border_payment_type_bac9d7 {
-    border-right: 1px solid #bac9d7;
+.right_border_payment_type_ced9e2 {
+    border-right: 1px solid #ced9e2;
 }
 
 .margin_left_0 {
