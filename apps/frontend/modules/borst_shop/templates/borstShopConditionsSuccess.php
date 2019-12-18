@@ -38,7 +38,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                  
                     <div class="whp_heading">Dina abonnemang</div>
 
-                    Om du är registrerad på Börstänaren, kan du under fliken <a href="http://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile/1">"Abonnemang"</a> i ditt konto administrera dina aktuella abonnemang, förlänga dem, ändra uppgifter och se kommande händelser. 
+                    Om du är registrerad på Börstänaren, kan du under fliken <a href="https://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile/1">"Abonnemang"</a> i ditt konto administrera dina aktuella abonnemang, förlänga dem, ändra uppgifter och se kommande händelser. 
 
                 
 

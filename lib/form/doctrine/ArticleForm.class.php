@@ -30,7 +30,7 @@ class ArticleForm extends BaseArticleForm
 	  'text'         => new sfWidgetFormTextareaTinyMCE(array(
 								  'width'  => 545,
 								  'height' => 350,
-								  'config' => 'theme : "modern",relative_urls : 0,document_base_url:"http://www.borstjanaren.se/",
+								  'config' => 'theme : "modern",relative_urls : 0,document_base_url:"https://www.borstjanaren.se/",
 								   plugins:"emoticons,preview,visualchars,table,image imagetools,code,link",
 								   theme_advanced_disable: "anchor,visualaid",
 								   theme_advanced_buttons1:"bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,fontselect,fontsizeselect",

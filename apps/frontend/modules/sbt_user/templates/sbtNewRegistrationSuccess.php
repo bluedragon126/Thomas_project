@@ -464,7 +464,7 @@ width:34%;
 
                                 <span class="float_left reg_width">
 								
-								<?php echo __('JA TACK, jag vill ha Börstjänarens kostnadsfria veckobrev, "VM-UPDATE" samt "VECKANS TREJD!"') ?> <?php echo __('(Rekommenderas för att få ut det bästa av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy') ?></a></span><a href="http://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:16px 0 0px 24px" width="280" border="0" alt="imag" /></a></td>
+								<?php echo __('JA TACK, jag vill ha Börstjänarens kostnadsfria veckobrev, "VM-UPDATE" samt "VECKANS TREJD!"') ?> <?php echo __('(Rekommenderas för att få ut det bästa av Börstjänaren!)') ?> &nbsp;<a class="main_link_color" href="javascript: openwindow()"><?php echo __('Vår epost-policy') ?></a></span><a href="https://www.borstjanaren.se/borst/articleList/obj_id/1795"> <img src="/images/new_home/VM-Update.png" style="margin:16px 0 0px 24px" width="280" border="0" alt="imag" /></a></td>
                         </tr>
                         <tr>
                             <td  colspan="2">&nbsp;</td>

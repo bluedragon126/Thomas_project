@@ -58,7 +58,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <!-- code added by sandeep for btshop plusarticle start-->
             <?php /* ?>
               <div class="shopblock">
-              <div id="abonnemang_title" class="shop_home_cat_bg"><span class="shop_home_cat">Plus Article</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+              <div id="abonnemang_title" class="shop_home_cat_bg"><span class="shop_home_cat">Plus Article</span> <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
 
               <?php
               $stock_counter = count($plusarticle_data);
@@ -136,7 +136,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </a>    
                     </div>
-                    <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                    <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
 
                 <?php
                 $stock_counter = count($abonnemang_data);
@@ -331,7 +331,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <?php /* ?>
               <div class="shopblock">
-              <div id="marknadsbrev_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Marknadsbrev</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+              <div id="marknadsbrev_title" class="heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">Marknadsbrev</span> <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
 
               <?php
               $stock_counter = count($marknadsbrev_data);
@@ -426,7 +426,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             </div>
                         </a> 
                     </div>
-                <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
+                <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a>--></div>
                 <?php
                 $stock_counter = count($utbildningar_data);
                 $top_mar_12px = "";
@@ -620,7 +620,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             
             <!--<div class="shopblock">
-                <div id="live-utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Live-utbildningar</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a></div>-->
+                <div id="live-utbildningar_title" class="shop_home_cat_bg"><span class="shop_home_cat">Live-utbildningar</span> <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#btcart_title"><img alt="upp1" src="/images/upp1.png" /></a></div>-->
                 <?php
                 $stock_counter = count($liveutbildningar_data);
                 $top_mar_12px = "";
@@ -825,7 +825,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         </div>
                     </a> 
                 </div>
-                 <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
+                 <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                     </a>--></div>	  
                     <?php
                     $stock_counter = count($metastock_data); //die;
@@ -1020,7 +1020,7 @@ foreach ($metastock_data as $article):
             </div>
             <div class="to_page_top <?php echo $top_mar_12px; ?>"><a class="cursor"><!--UPP&nbsp;--><img alt="upp2" src="/images/new_home/up_2.png" class="back_to_top_btn"/></a>&nbsp;</div>
             <div class="shopblock marginBottom0" >
-                    <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="http://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
+                    <div id="" class="marginBottom0 heading_yellow2 shop_home_cat_bg"><span class="shop_home_cat">&nbsp;</span> <!--<a href="https://www.borstjanaren.se/borst_shop/borstShopHome#bocker_title"><img alt="upp1" src="/images/upp1.png" />
                             </a>-->
                             <div class="title_link">  
                     <a href="javascript:void(0);" onclick='gotoDiv("http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#abonnemang_title");'>

@@ -27,7 +27,7 @@ class ArticleTemplateForm extends BaseArticleTemplateForm
 	  'text'          => new sfWidgetFormTextareaTinyMCE(array(
                 'width'  => 622,
                 'height' => 550,
-                'config' => 'theme : "modern",relative_urls:0,document_base_url:"http://www.borstjanaren.se/"
+                'config' => 'theme : "modern",relative_urls:0,document_base_url:"https://www.borstjanaren.se/"
                 ,plugins:"emoticons,preview,visualchars,table,image imagetools,code,link",
                 theme_advanced_buttons1:"undo,redo,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,|,formatselect,fontselect",
                 theme_advanced_buttons2 : "bullist,numlist,|,outdent,indent,|,link,unlink,image,code,|,preview,|,forecolor",

@@ -71,7 +71,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <tr>
                             <td><a href="http://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/99" class="main_link_color">BT-Wizard</a></td>
                             <td>Tillgänglig via <br />inspelning</td>
-                            <td><a href="http://www.borstjanaren.se/borst/contactUs">Kontakta oss</a></td>
+                            <td><a href="https://www.borstjanaren.se/borst/contactUs">Kontakta oss</a></td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>

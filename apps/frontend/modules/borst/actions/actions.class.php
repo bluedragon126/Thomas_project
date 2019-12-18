@@ -821,7 +821,7 @@ class borstActions extends sfActions
 	
 	$html_rec = $article_html->getSelectedHtmlRecord($article_id);
 	if($html_rec) $myFile = sfConfig::get('sf_root_dir').'/web/'.$html_rec->html_file_path;
-	//if($html_rec) $myFile = 'http://www.borstjanaren.se/images/article_images/img10/qq.htm';
+	//if($html_rec) $myFile = 'https://www.borstjanaren.se/images/article_images/img10/qq.htm';
 		
 	// make sure the file is successfully opened before doing anything else
 	//echo sfConfig::get('sf_root_dir').'/web/'; die;

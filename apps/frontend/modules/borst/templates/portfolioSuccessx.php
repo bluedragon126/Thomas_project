@@ -56,7 +56,7 @@
 
                     <div class="whp_heading">Vi som syns på Börstjänaren:</div>
                     
-                                        <p><a href="http://www.borstjanaren.se/borst/articleList/obj_id/368"><img src="../../../../../../images/grafik/HH.png" alt="signHH" width="38"/></a>
+                                        <p><a href="https://www.borstjanaren.se/borst/articleList/obj_id/368"><img src="../../../../../../images/grafik/HH.png" alt="signHH" width="38"/></a>
                                         
                              <br>           
                   
@@ -100,7 +100,7 @@
                     
                     
                     
-                       <a href="http://www.borstjanaren.se/borst/articleList/kat_id/12"><img src="../../../../../../images/grafik/GH.png" alt="signGH" width="38" style="margin-top:5px"/></a>
+                       <a href="https://www.borstjanaren.se/borst/articleList/kat_id/12"><img src="../../../../../../images/grafik/GH.png" alt="signGH" width="38" style="margin-top:5px"/></a>
                                         
                              <br>           
                   
@@ -149,7 +149,7 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
                     <br><br><br>
                     
                     
-                          <a href="http://www.borstjanaren.se/borst/articleList/obj_id/374"><img src="../../../../../../images/grafik/TS.png" alt="signTS" width="38" style="margin-top:5px"/></a>
+                          <a href="https://www.borstjanaren.se/borst/articleList/obj_id/374"><img src="../../../../../../images/grafik/TS.png" alt="signTS" width="38" style="margin-top:5px"/></a>
                                         
                              <br>           
                   

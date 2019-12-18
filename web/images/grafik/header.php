@@ -22,7 +22,7 @@ if (document.prenumererah.email.value=="")
 
 
 
-document.prenumererah.email.value="Fyll i din e-post här!";
+document.prenumererah.email.value="Fyll i din e-post hï¿½r!";
 
 
 
@@ -42,7 +42,7 @@ function pa_mail()
 
 
 
-if (document.prenumererah.email.value=="Fyll i din e-post här!")
+if (document.prenumererah.email.value=="Fyll i din e-post hï¿½r!")
 
 
 
@@ -112,7 +112,7 @@ function openwindow()
 
 {
 
- window.open("http://www.borstjanaren.se/templates/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
+ window.open("https://www.borstjanaren.se/templates/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
 
 }
 

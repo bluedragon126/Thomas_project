@@ -14,11 +14,11 @@ body {
 -->
 </style>
 
-<!-- nifty-corners, teknik i js och css för att få rundande hörn,
+<!-- nifty-corners, teknik i js och css fï¿½r att fï¿½ rundande hï¿½rn,
 funktionsanrop i sidebar.php -->
-<link rel="stylesheet" type="text/css" href="http://www.borstjanaren.se/css/niftyCorners.css">
-<link rel="stylesheet" type="text/css" href="http://www.borstjanaren.se/css/niftyPrint.css" media="print">
-<script type="text/javascript" src="http://www.borstjanaren.se/js/nifty.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.borstjanaren.se/css/niftyCorners.css">
+<link rel="stylesheet" type="text/css" href="https://www.borstjanaren.se/css/niftyPrint.css" media="print">
+<script type="text/javascript" src="https://www.borstjanaren.se/js/nifty.js"></script>
 
 <script type="text/javascript">
 window.onload=function(){

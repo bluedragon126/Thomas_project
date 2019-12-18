@@ -67,7 +67,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                 <div class="whp_title"><?php echo 'Tipsa en vän om vårt dagsbrev!' . $rub ?></div>
                 <div class="float_left width_100_per" >
-                    <img src="http://www.borstjanaren.se/images/new_home/BT_just_nu_head.png" width="180" style="margin-top:7px"/> 
+                    <img src="https://www.borstjanaren.se/images/new_home/BT_just_nu_head.png" width="180" style="margin-top:7px"/> 
                     
                     <div class="whp_heading">Aktuell information från Börstjänaren</div>         
                     

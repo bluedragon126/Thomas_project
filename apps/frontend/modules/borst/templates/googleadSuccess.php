@@ -30,7 +30,7 @@
 
                     <?php if ($sent): ?>
                         <script type="text/javascript">
-                            window.location = 'http://www.borstjanaren.se/borst/googleadThankyou';
+                            window.location = 'https://www.borstjanaren.se/borst/googleadThankyou';
                         </script>
                         <div class="orangetext">
                             <?php echo "Tack för din kursanmälan! Ett bekräftelsemejl har skickat till: " . $email; ?>
@@ -152,7 +152,7 @@
                     <div class="float_left widthall borst_subtitle_4">Så här går det till</div> <br />
                     Efter inskickad anmälan erhåller du  ett mejl med inbjudan till Nybörjarkvällen (Lektion 1-2, torsdag 11 juni kl 19). Därefter avgör du själv om du vill gå vidare med de sex kompletterande lektionerna (15-23 juni), kostnadsfria med sponsring för dig som  bli kund hos AvaTrade. <br />
                     <br />
-                    Har du frågor är du välkommen att kontakta oss via <a href="http://www.borstjanaren.se/borst/contactUs">kontaktformuläret</a> på vår webbplats. 
+                    Har du frågor är du välkommen att kontakta oss via <a href="https://www.borstjanaren.se/borst/contactUs">kontaktformuläret</a> på vår webbplats. 
                     <div class="blank_10h widthall">&nbsp;</div>
                     <div class="blank_15h widthall">&nbsp;</div>
                     <div class="blank_20h widthall">AvaTrade sponsrar även andra kostnadsfria utbildningar på Börstjänaren. <br />

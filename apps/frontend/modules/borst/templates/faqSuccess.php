@@ -31,7 +31,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="inner_page_content_main">
 
 
-                <img src="/images/new_home/quest.png" alt="http://www.borstjanaren.se/images/new_home/quest.png" width="500;"><br /><br />
+                <img src="/images/new_home/quest.png" alt="https://www.borstjanaren.se/images/new_home/quest.png" width="500;"><br /><br />
                 <div class="whp_title">Hjälpsidor - FAQ</div> 
 
                 <div class="whp_preamble_head">Välkommen till Börstjänarens hjälpsidor. Här får du t. ex. instruktioner om hur man registrerar sig, och svar på de vanligaste frågorna folk brukar ställa om vår webbplats. Om du inte finner vad du söker, tveka inte att
