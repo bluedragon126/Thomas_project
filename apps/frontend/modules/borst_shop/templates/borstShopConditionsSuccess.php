@@ -19,53 +19,63 @@ include_component('isicsBreadcrumbs', 'show', array(
                   
                     <div class="whp_heading">Ångerrätt</div>
 
-                    BT-shop följer Konsumentköplagen och E-handelslagen, som finns att läsa på konsumentverkets hemsida. Du som köper varor eller tjänster på nätet har rätt till två ångerveckor enligt distans- och hemförsäljningslagen, som trädde i kraft den 1 april 2005. 
+                    <i>BT-Shop</i> följer Konsumentköplagen och E-handelslagen, som finns att läsa på konsumentverkets hemsida. 
+                    
+                    <br />
+                    <br />
+                    
+                    <strong>Du som köper</strong> varor eller tjänster på nätet har rätt till två ångerveckor enligt distans- och hemförsäljningslagen, som trädde i kraft den 1 april 2005. 
                     <br />
                     <br />
 
-                    Lagen omfattar alla avtal som träffats via internet, per telefon och på andra sätt där parterna inte är närvarande samtidigt.<br />
+                    <strong>Lagen omfattar alla</strong> avtal som träffats via internet, per telefon och på andra sätt där parterna inte är närvarande samtidigt.<br />
                     <br />
-                    Enligt lagen har du alltså 14 dagars ångerrätt.
+                    <strong>Enligt lagen har</strong> du alltså 14 dagars ångerrätt.
                   
                     <div class="whp_heading">Vad kostar frakten?</div>
 
-                    Frakten anges alltid i kassan när du köper en vara på Börstjänaren.
+                    Frakten anges alltid i kassan när du köper en vara på <i>Börstjänaren.</i>
                     Våra e-postabonnemang är fraktfria.
                  
                     <div class="whp_heading">Abonnemang</div>
 
-                    Abonnemangssystemet på Börstjänaren är, liksom för de flesta liknande tjänster, baserat på att avgiften betalas i förskott. Återbetalning medges ej när abonnemanget sägs upp i förtid.
+                    Abonnemangssystemet på <i>Börstjänaren</i> är, liksom för de flesta liknande tjänster, baserat på att avgiften betalas i förskott. Återbetalning medges ej när abonnemanget sägs upp i förtid.
                  
                     <div class="whp_heading">Dina abonnemang</div>
 
-                    Om du är registrerad på Börstänaren, kan du under fliken <a href="https://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile/1">"Abonnemang"</a> i ditt konto administrera dina aktuella abonnemang, förlänga dem, ändra uppgifter och se kommande händelser. 
+                    Om du är registrerad på <i>Börstänaren,</i> kan du under fliken <a href="http://www.borstjanaren.se/sbt/sbtUserProfile/take_to_profile/1">"Abonnemang"</a> i ditt konto administrera dina aktuella abonnemang, förlänga dem, ändra uppgifter och se kommande händelser. 
 
                 
 
                     <div class="whp_heading">Leveransvillkor</div>
 
-                    <strong>Leveranstid</strong>
-                   <br />
+                    
+                    <div class="whp_subheading3">Leveranstid</div>
+                  
+                    
+                  
 
                     Vi expedierar beställningar löpande.
                     <br />
                     <br />
-                    Leveranstiden för lagervaror är 1-4 dagar, med reservation för längre leveranstider på grund av felaktig hantering hos posten eller annat som är utom vår kontroll.
+                    <strong>Leveranstiden för lagervaror</strong> är 1-4 dagar, med reservation för längre leveranstider på grund av felaktig hantering hos posten eller annat som är utom vår kontroll.
                     E-postabonnemang som betalas via BT-shop registreras automatiskt och effektueras omedelbart.
                     <br />
                     <br />
+                    
+                    <div class="whp_subheading3">Transportskada</div>
 
-                    <strong>Transportskada</strong>
-                    <br />
+                  
 
-                    Börstjänaren ansvarar ej för skador eller förlust av gods orsakat av Posten. I händelse av skada skall mottagaren göra en reklamation med begäran om ersättning.
+                    <i>Börstjänaren</i> ansvarar ej för skador eller förlust av gods orsakat av Posten. I händelse av skada skall mottagaren göra en reklamation med begäran om ersättning.
 
                     <br />
                     <br />
-                    <strong>Betalsätt</strong>
-                    <br />
-
-                    <i>Följande betalningsalternativ finns:</i>
+                    
+                    
+                    <div class="whp_subheading3">Betalsätt</div>
+ 
+                   <b>Följande betalningsalternativ finns:</b>
                     <ul>
                         <li>Kortbetalning (Visa, Mastercard)</li>
                         <li>Direktbetalning (via internetbank)</li>
@@ -75,15 +85,17 @@ include_component('isicsBreadcrumbs', 'show', array(
 
                     <div class="blank_20h widthall"> </div>
 
-                    <strong>Betalningsvillkor vid faktura</strong>
-                    <br />
+                    
+                    
+                     <div class="whp_subheading3">Betalningsvillkor vid faktura</div>
                     Faktura skall betalas senast 10 dagar efter orderdatum. Vid betalning efter förfallodagen tillkommer dröjsmålsränta. Uteblir betalning efter påminnelse kopplas inkasso in.
 
                     <br />
                     <br />
-                    <strong>Kvitto</strong>
-                    <br />
-                 Efter erlagd betalning kan du direkt skriva ut ett eget kvitto via en länk i BT-shop. Du får även en bekräftelse på ditt köp via e-post.
+                  
+                    
+                           <div class="whp_subheading3">Kvitto</div>
+                 Efter erlagd betalning kan du direkt skriva ut ett eget kvitto via en länk i <i>BT-Shop.</i> Du får även en bekräftelse på ditt köp via e-post.
   					<br />
                   
               
@@ -104,10 +116,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <br /><br />
                     <b>Kontakt:</b>
                     <br />
-                    info@borstjanaren.se</i>
+                    info@borstjanaren.se
                     <br /><br />
                     
-                    För snabbare svar, använd gärna vårt <a href="<?php echo 'https://' . $host_str . '/borst/contactUs' ?>">kontaktformulär!</a>
+                 
                 </div>
             </div>
             <?php echo include_partial('global/inner_bottom_footer'); ?>

@@ -27,7 +27,7 @@
                                       
                                        <div>
                                        
-                                       <img style="margin-bottom: 15px;" src="/images/new_home/webinarium_title.png" width="350"/>
+                                       <img style="margin-bottom: 15px;" src="/images/new_home/webinarium_title.png" width="400"/>
                                        
                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 10px 0px 42px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></a>
                 

@@ -31,7 +31,7 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="float_l_width_100 mrg_left_70">
             <div class="inner_page_content_main">
                 <div class="whp_title"><?php echo __('V&aring;ra sponsorer') ?></div>
-                <div class="whp_preamble">Stötta gärna v&aring;ra sponsorer, som &auml;r med och m&ouml;jligg&ouml;r vår till stora delar kostnadsfria webbplats f&ouml;r alla b&ouml;rsintresserade!  Du kan bidra till B&ouml;rstj&auml;naren genom att ta del av v&aring;ra sponsorers och samarbetspartners utbud.</div>
+                <div class="whp_preamble_head">Stötta gärna v&aring;ra sponsorer, som &auml;r med och m&ouml;jligg&ouml;r vår till stora delar kostnadsfria webbplats f&ouml;r alla b&ouml;rsintresserade!  Du kan bidra till B&ouml;rstj&auml;naren genom att ta del av v&aring;ra sponsorers och samarbetspartners utbud.</div>
                 <!-- <div class="whp-border">&nbsp;</div>
                     <div class="kronikorinfo">	<h2><span class="bluefont3"><?php echo __('BNP Paribas') ?></span></h2></div>
                     
@@ -89,7 +89,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 <p><img src="../../../../../../images//border-art-spons.png" alt="border_sponsorer" /></p>!-->
 
 
-                <div class="whp_heading_2" id="AVA"><?php echo __('AvaTrade') ?></div>
+                <div class="whp_heading_spo" id="AVA"><?php echo __('AvaTrade') ?></div>
 
                 <a class="main_link_color" href="https://www.avatrade.se/?fbg=2&tag=8947">AvaTrade</a> är en världsledande nätmäklare som erbjuder handel med mer än 200 Forex- och CFD-instrument, inklusive aktier, index, råvaror, obligationer &amp; ETF:er.<br />
                     <br />
@@ -118,7 +118,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
               
 
-                <div class="whp_heading_2"><?php echo __('MetaStock') ?></div>
+                <div class="whp_heading_spo"><?php echo __('MetaStock') ?></div>
                MetaStock &auml;r avsedd att hj&auml;lpa b&ouml;rshandlare p&aring; alla niv&aring;er, som anv&auml;nder teknisk analys f&ouml;r att f&ouml;rb&auml;ttra sina aff&auml;rer. <br />
                 <br />
                <strong>MetaStock Power Tools </strong>l&aring;ter dig: skanna vilken marknad som helst efter k&ouml;p- och s&auml;ljm&ouml;jligheter med <em>The Explorer</em>; testa dina strategier med <em>The Enhanced System Tester</em>, f&ouml;r att se hur dina handelsmetoder har presterat historiskt under realistiska f&ouml;rh&aring;llanden; och  f&aring; expertr&aring;d direkt fr&aring;n dina kursgrafer med <em>The Expert Adviser</em>. <br />
@@ -135,7 +135,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
             
 
-              <div class="whp_heading_2" id="GFF"><?php echo __('GFF Brokers') ?></div>
+              <div class="whp_heading_spo" id="GFF"><?php echo __('GFF Brokers') ?></div>
              Registered with CFTC and a member of NFA, <a href="https://gffbrokers.com/?utm_source=Morningbriefing">Global Futures & Forex  Inc.</a> (GFF Brokers) is an Independent Introducing Brokerage (IIB) firm  located in Glendale, California. As an IIB, we offer futures and options  trading on all major exchanges around the world, in conjunction with  foreign exchange (forex) trading services.<br />
               <br />
               <strong>Supported and enhanced </strong>by  global technology, our platforms are designed to provide powerful,  reliable and valuable brokerage solutions, at a competitive price.<br />
