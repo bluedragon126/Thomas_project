@@ -317,12 +317,22 @@
                     <!-- new payment -->
                     <script charset="UTF-8" src="https://ssl.ditonlinebetalingssystem.dk/integration/ewindow/paymentwindow.js" type="text/javascript"></script>
                     <script type="text/javascript">
+                        // paymentwindow = new PaymentWindow({
+                        //     'merchantnumber': "8036983",
+                        //     'amount': "<?php echo($total_wth_shipping) ?>",
+                        //     'currency': "SEK",
+                        //     'accepturl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentDone",
+                        //     'cancelurl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentFail",
+                        //     'instantcapture':'1',
+                        //     'description':"<?php echo($user_infomation) ?>",
+                        //     'orderid':"<?php echo($purchase_id) ?>"
+                        // });
                         paymentwindow = new PaymentWindow({
-                            'merchantnumber': "8036983",
+                            'merchantnumber': "6298575",
                             'amount': "<?php echo($total_wth_shipping) ?>",
                             'currency': "SEK",
-                            'accepturl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentDone",
-                            'cancelurl':"https://www.thetradingaspirants.com/borst_shop/shopPaymentFail",
+                            'accepturl':"https://www.borstjanaren.se/borst_shop/shopPaymentDone",
+                            'cancelurl':"https://www.borstjanaren.se/borst_shop/shopPaymentFail",
                             'instantcapture':'1',
                             'description':"<?php echo($user_infomation) ?>",
                             'orderid':"<?php echo($purchase_id) ?>"

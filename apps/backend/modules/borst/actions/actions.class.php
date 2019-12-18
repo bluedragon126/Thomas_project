@@ -3288,9 +3288,9 @@ class borstActions extends sfActions
                         $message->setTo($to);
                         $message->setFrom($from);
                         $message->setBody($mailBody, 'text/html');
-                        //$this->getMailer()->send($message);
+                        $this->getMailer()->send($message);
 
-                        echo "<pre>"; print_r($mailBody);
+                        // echo "<pre>"; print_r($mailBody);
                         //echo "<pre>how";  print_r($data->end_date.'=='.$Days.'=='.$seven_days_before_date.'=='.$currentDate.'=='.$to.'=='.$from.'=='.$product_arr[0]['title'].'=='.$pur->firstname.'=='.$pur->lastname.'=='.$pur->email.'=='.'=='.$Days);
                 }
             }
