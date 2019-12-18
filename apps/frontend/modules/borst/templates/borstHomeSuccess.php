@@ -250,8 +250,7 @@
                     </div>
                     <div class="articleinfo home_body_l_1">
                         <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $obj['article_id']; ?>" class="blackcolor cursor">                                                        
-                            <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />   
-                            <span><?php echo $count;?> </span>                      
+                            <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" class="home_square" />                       
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php 
                                 $dot_status = 0;
                                 for ($x = 122; $x > 0; $x--) {
