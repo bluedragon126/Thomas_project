@@ -138,7 +138,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="6" class="main_link_color padding_top_10" height="35 px" vertical-align="bottom"><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
+                                <td colspan="6" class="main_link_color padding_top_10" height="35 px" vertical-align="bottom"><a class="main_link_color" href="<?php echo 'https://' . $host_str . '/user/forgetPassword' ?>"><?php echo __('Glömt lösenord?') ?></a></td>
                             </tr>
                         </table>
                         <div class="blank_2h widthall">&nbsp;</div>
@@ -235,7 +235,7 @@
                         }
                         ?> >                    
                             <td class="orgfont blog_p_table_ava_w pad_lft_5">
-                                <a href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
+                                <a href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
                                     <?php if ($user_arr[$user->user_id] != ''): ?>
                                         <img width="36" height = "36" src="/uploads/userThumbnail/<?php echo str_replace('.', '_mid.', $user_arr[$user->user_id]); ?>" alt="user_photo"/>
                                     <?php else: ?>
@@ -248,7 +248,7 @@
                                 </a>
                             </td>
                             <td class="blog_p_table_user_w ">
-                                <a class="bolg_table_name" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
+                                <a class="bolg_table_name" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
                                     <?php
                                     echo $user->firstname;
                                     if (trim($user->lastname) != '') {

@@ -96,9 +96,9 @@
         }
         ?> >
             <td class="orgfont forum_table_title_w pad_lft_5">
-                <a class="orgfont cursor" href="<?php echo "http://" . $host_str . "/forum/commentOnForumTopic/forumid/" . $forum->id ?>"><span class="forum_table_title_w forum_table_title"><?php echo $forum->rubrik ?></span></a>
+                <a class="orgfont cursor" href="<?php echo "https://" . $host_str . "/forum/commentOnForumTopic/forumid/" . $forum->id ?>"><span class="forum_table_title_w forum_table_title"><?php echo $forum->rubrik ?></span></a>
                 </br>
-                <a class="forum_table_user forum_table_title_w" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $forum->author_id ?>"><?php echo $new_profile->getFullUserName($forum->author_id); ?></a>
+                <a class="forum_table_user forum_table_title_w" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $forum->author_id ?>"><?php echo $new_profile->getFullUserName($forum->author_id); ?></a>
             </td>
             <td class="width_9">&nbsp;</td>
             <td class="width15">

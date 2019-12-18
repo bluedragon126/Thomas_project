@@ -33,7 +33,7 @@ class sfDeprecatedHelpersValidation extends sfValidation
           '  You can find a list of all deprecated helpers under the',
           '  "Helpers" section of the DEPRECATED tutorial:',
           '',
-          '  http://www.symfony-project.org/tutorial/1_4/en/deprecated',
+          '  https://www.symfony-project.org/tutorial/1_4/en/deprecated',
           '',
     );
   }

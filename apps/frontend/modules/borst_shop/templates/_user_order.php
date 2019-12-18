@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
@@ -48,7 +48,7 @@
   <?php if(!$is_Article){ $purchase_product = Doctrine::getTable("BtShopArticle")->find($data->product_id);?>
    <?php if($purchase_product["is_downloadable"]):?>
       <tr><td colspan="3">&nbsp;&nbsp;</td></tr>
-     <tr><td colspan="3">hämta url: <?php echo "http://".sfConfig::get("app_host_name")."/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id?> </td></tr>
+     <tr><td colspan="3">hämta url: <?php echo "https://".sfConfig::get("app_host_name")."/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id?> </td></tr>
   <?php endif; } ?>
     <?php $total = $total + $mul; ?>
     <?php $i++; endforeach; ?>

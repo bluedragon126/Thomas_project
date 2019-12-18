@@ -137,7 +137,7 @@
                         </tr>
 
       <tr><td colspan="3">&nbsp;&nbsp;</td></tr>
-      <tr><td colspan="3">Nedladdningslänk: <a href="<?php echo "http://$host_str/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id."/art/1"?>"><?php echo __('Click Here') ?></a></td></tr>
+      <tr><td colspan="3">Nedladdningslänk: <a href="<?php echo "https://$host_str/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id."/art/1"?>"><?php echo __('Click Here') ?></a></td></tr>
 
 <?php $total = $total + $mul; ?>
                                     </table>

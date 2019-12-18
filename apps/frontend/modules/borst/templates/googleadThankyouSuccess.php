@@ -69,7 +69,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 Om du vill kan du dock redan nu <a href="https://attendee.gotowebinar.com/register/4266190144750066690" target="_blank">registrera dig till lektionerna!</a>
 
                 <br />
-                Och / eller <a href="http://www.avatrade.com/join-ava/demo-account?tradingplatform=2&dealtype=1&mtsrv=mt2&tag=8947&tag2=~profile_AvaPPC_2015" title="AvaTrade Demo" target="_blank">öppna ett demokonto hos AvaTrade!</a>     
+                Och / eller <a href="https://www.avatrade.com/join-ava/demo-account?tradingplatform=2&dealtype=1&mtsrv=mt2&tag=8947&tag2=~profile_AvaPPC_2015" title="AvaTrade Demo" target="_blank">öppna ett demokonto hos AvaTrade!</a>     
             </div>
             <?php echo include_partial('global/bottom_footer_whitepage'); ?>
         </div>

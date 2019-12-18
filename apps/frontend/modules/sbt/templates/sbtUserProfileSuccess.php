@@ -50,7 +50,7 @@
                 twitimagetext = twitimagetext.substring(0,139 - (currentUrl.length + 3));
                 twitimagetext = twitimagetext + "...";
             }
-            var url = "http://twitter.com/share?text="+twitimagetext+"&url="+currentUrl;
+            var url = "https://twitter.com/share?text="+twitimagetext+"&url="+currentUrl;
             window.open(url, "Share on twitter", "top=300,left=350,width=500,height=500");
         });
 		
@@ -172,7 +172,7 @@
 <?php else: ?>
     <div class="forumlistingleftdiv" style="width:964px;">
         <div class="shoph3 widthall">För att se profilen, vänligen välj användare först.</div>
-        <div class="float_left widthall">För att se användarlistan, klicka <a href="<?php echo "http://" . $host_str ?>/sbt/sbtUser">här</a></div>
+        <div class="float_left widthall">För att se användarlistan, klicka <a href="<?php echo "https://" . $host_str ?>/sbt/sbtUser">här</a></div>
         <div class="float_left widthall">&nbsp;</div>
     </div>
 <?php endif; ?>

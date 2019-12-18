@@ -72,7 +72,7 @@
                             <span class="blog_prof_table_date"><?php echo substr($data->andratdatum, 2, 9) ?></span>
                         </li>
                         <li class=" width_337px padding_right_10px">
-                            <a class="blog_table_title cursor" href="<?php echo "http://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
+                            <a class="blog_table_title cursor" href="<?php echo "https://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
                         </li>
                         <li  class="width_80 padding_right_13px" >
                             <span class="blog_table_topic"><?php echo $data->getCategoryName($data->btforum_category_id); ?></span>
@@ -103,7 +103,7 @@
               <tr class="classnot">
               <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
               <td class="width_83"><?php echo substr($data->andratdatum,2,9) ?></td>
-              <td class="main_link_color width_152"><a class="main_link_color cursor" href="<?php echo "http://".$host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="profile_forumlist_title"><?php echo $data->rubrik ?></span></a></td>
+              <td class="main_link_color width_152"><a class="main_link_color cursor" href="<?php echo "https://".$host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="profile_forumlist_title"><?php echo $data->rubrik ?></span></a></td>
               <td class="lightgreenfont width_92"><span class="profile_forumlist_cat"><?php echo $data->getCategoryName($data->btforum_category_id); ?></span></td>
               <td class="lightbluefont width_84"><?php echo '-';//$data->getReplyCount($data->id); ?></td>
               <td class="darkbluefont width_84"><?php echo '-';//$data->visningar ?></td>

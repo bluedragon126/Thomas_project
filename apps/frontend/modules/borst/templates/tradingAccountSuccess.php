@@ -31,12 +31,12 @@
                   Dublinbaserade <i>AvaTrade</i> är en världsledande CFD-mäklare, som vi samarbetat med oavbrutet sedan 2010. Om du vill ha en pålitlig europeisk mäklare med hög integritet och personlig service är <i>AvaTrade,</i> med vår egen personliga mäklare <i>Mark Mates,</i> vår rekommendation. 
 <br />
 <br />
-<strong>AvaTrade är global partner</strong> till <i>Manchester City Football Club.</i> Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/avaTrade">här!</a><br>
+<strong>AvaTrade är global partner</strong> till <i>Manchester City Football Club.</i> Läs mer <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/avaTrade">här!</a><br>
                   <div class="whp_heading">Global Futures &amp; Forex (GFF Brokers)</div>
                     Amerikanska  <i>GFF</i> är vår samarbetspartner sedan 2008 och vår rekommenderade aktör när det gäller terminshandel. <i>GFF</i> är <i>Introducing Broker</i> till vår amerikanska <i>Commodity Trading Advisor-verksamhet.</i> 
 <br />
 <br />
-<strong>Vare sig du vill</strong> handla terminer själv eller följa något av våra <i>CTA-program</i> är <i>Global</i> det självklara valet med pålitlig service och den vassa handelsplattformen <i>Global Zen Trader.</i> Läs mer <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/gffBrokers">här!</a><br>
+<strong>Vare sig du vill</strong> handla terminer själv eller följa något av våra <i>CTA-program</i> är <i>Global</i> det självklara valet med pålitlig service och den vassa handelsplattformen <i>Global Zen Trader.</i> Läs mer <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/gffBrokers">här!</a><br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

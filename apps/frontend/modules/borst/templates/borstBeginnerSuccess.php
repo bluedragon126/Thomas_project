@@ -41,9 +41,9 @@
                     <p class="whp_heading">
                         Våra erbjudanden</p>
                   
-                    Våra bästa gratiserbjudanden är <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome">dagliga börsanalyser,</a> <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter/">veckobrev</a> med vassa marknadsgenomgångar, webinarium varje vecka: <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127">&quot;Trejdingklubben online&quot;,</a> med frågor och svara live på webben och sist men inte minst: lärarledda <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title">sponsrade tradingutbildningar!</a> 
-                    <p><b>För den som</b> har insett att det inte finns några fria luncher här i världen erbjuder vi även betaltjänster och dito utbildningar. Välkommen att ta del av vårt utbud och handla i <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome">BT-Shop!</a>
-                    <p><i>Har du frågor eller funderingar är du alltid hjärtligt välkommen att <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">kontakta oss!</a></i></p>
+                    Våra bästa gratiserbjudanden är <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome">dagliga börsanalyser,</a> <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter/">veckobrev</a> med vassa marknadsgenomgångar, webinarium varje vecka: <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127">&quot;Trejdingklubben online&quot;,</a> med frågor och svara live på webben och sist men inte minst: lärarledda <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#utbildningar_title">sponsrade tradingutbildningar!</a> 
+                    <p><b>För den som</b> har insett att det inte finns några fria luncher här i världen erbjuder vi även betaltjänster och dito utbildningar. Välkommen att ta del av vårt utbud och handla i <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome">BT-Shop!</a>
+                    <p><i>Har du frågor eller funderingar är du alltid hjärtligt välkommen att <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">kontakta oss!</a></i></p>
                    
                           <img src="/images/grafik/TS.png" style="margin:8px 0px 7px" width="38" border="0" alt="TS" />
                    

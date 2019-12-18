@@ -5,7 +5,7 @@
 </div>
 <?php foreach($pager->getResults() as $data): ?>
 <div class="messagewrapper">
-  <div class="float_left"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->message_from ?>">
+  <div class="float_left"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->message_from ?>">
   <?php if($user_photo_arr[$data->message_from]!=''):?>
 	<img src="/uploads/userThumbnail/<?php echo str_replace('.','_semilarge.',$user_photo_arr[$data->message_from]); ?>" alt="user_photo"/>
   <?php else:?>
@@ -13,7 +13,7 @@
   <?php endif;?> 
   </a></div>
   <div class="info">
-    <div class="float_left widthall"><b class="main_link_color"><a class="main_link_color" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->message_from ?>"><?php echo $profile->getFullUserName($data->message_from) ?></a></b> <b class="lightbluefont"><?php echo $data->created_at ?></b></div>
+    <div class="float_left widthall"><b class="main_link_color"><a class="main_link_color" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->message_from ?>"><?php echo $profile->getFullUserName($data->message_from) ?></a></b> <b class="lightbluefont"><?php echo $data->created_at ?></b></div>
     <span class="profile_messagepostlist_title"><?php echo html_entity_decode($data->message_detail)?></span></div>
 </div>
 <?php endforeach; ?>

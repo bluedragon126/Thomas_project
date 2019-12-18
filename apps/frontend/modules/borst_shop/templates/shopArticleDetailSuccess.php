@@ -78,7 +78,7 @@
 
                             <?php //endif;  ?>
                             <?php if ($isAdmin): ?>
-                                    <div class="float_left width_550 edit_this height_16"><a class="float_left width_550 main_link_color height_16" href=<?php echo "http://" . $_SERVER['HTTP_HOST'] . "/backend.php/borst/createShopArticle/edit_shop_article_id/" . $pid; ?>>Editera denna artikel</a></div>
+                                    <div class="float_left width_550 edit_this height_16"><a class="float_left width_550 main_link_color height_16" href=<?php echo "https://" . $_SERVER['HTTP_HOST'] . "/backend.php/borst/createShopArticle/edit_shop_article_id/" . $pid; ?>>Editera denna artikel</a></div>
                             <?php endif ?>
                             <div class="spacer"></div>
                             <div class="spacer"></div>

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>  
         <link rel="shortcut icon" href="/images/favicon.png" />
         <meta name="description" content="<?php echo $metatags_desc ? $metatags_desc : "Vill du tjäna på börsen? Börstjänaren ger dig aktieanalyser, affärsförslag och utbildning!"; ?>" />
@@ -8,10 +8,10 @@
             <meta http-equiv="X-UA-Compatible" content="IE=IE9" />
             <meta property="og:title"         content="<?php echo $sf_user->getAttribute('meta_title_page') ? $sf_user->getAttribute('meta_title_page') : 'Börstjänaren - Aktieanalys och utbildning | Nu med Bitcoin och krypto!'; ?>" />
             <meta property="og:description"   content="<?php echo $sf_user->getAttribute('meta_desc_page') ? $sf_user->getAttribute('meta_desc_page') : 'Vill du tjäna på börsen? Börstjänaren ger dig aktieanalyser, affärsförslag och utbildning!' ?>" />
-            <meta property="og:image"         content="http://www.hallenborgsandstrom.se/images/new_home/borst_facebook_img.png" />
+            <meta property="og:image"         content="https://www.hallenborgsandstrom.se/images/new_home/borst_facebook_img.png" />
             <meta name="title" content="AddThis Tour" /> 
             <meta name="description" content="Watch the AddThis Tour video." />
-            <link rel="image_src" content="http://i2.ytimg.com/vi/1F7DKyFt5pY/default.jpg" />
+            <link rel="image_src" content="https://i2.ytimg.com/vi/1F7DKyFt5pY/default.jpg" />
             <title><?php echo ($metatags_title ? $metatags_title : "Börstjänaren - Aktieanalys och utbildning | Nu med nätverket BT Insider!"); ?></title>
             <link href="/css/print.css" media="print" type="text/css" rel="stylesheet"/>
             <?php include_stylesheets() ?>

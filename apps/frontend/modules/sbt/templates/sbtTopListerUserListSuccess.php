@@ -68,12 +68,12 @@ foreach ($pager->getResults() as $user): ?>
                     <ul class="<?php echo $i % 2 == 0 ? 'classnot' : 'white'; ?>">
                         <li class="dark_blue width_90">
                             <?php if ($user_photo_arr[$user->user_id] != ''): ?>
-                                <a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_small.', $user_photo_arr[$user->user_id]); ?>" alt="user_photo"/></a>
+                                <a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_small.', $user_photo_arr[$user->user_id]); ?>" alt="user_photo"/></a>
                             <?php else: ?>
-                                <a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>"><img src="/images/userphoto.jpg" alt="photo" width="26" height="26" /></a>
+                                <a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>"><img src="/images/userphoto.jpg" alt="photo" width="26" height="26" /></a>
     <?php endif; ?> 
                         </li>
-                        <li class="pink width_350"><a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>" class="lineht_24"><?php echo $profile->getFullUserName($user->user_id) ?></a></li>
+                        <li class="pink width_350"><a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user->user_id; ?>" class="lineht_24"><?php echo $profile->getFullUserName($user->user_id) ?></a></li>
                         <li class="light_blue width_64 float_right" ><span class="float_right lineht_24"><?php echo $user->cnt; ?></span></li>
                         <li class="width_115 float_right"><span class="float_right lineht_24"><?php echo $user->getTotalActivitiesOfUser($user->user_id, $user->firstname . ' ' . $user->lastname); ?></span></li>
 

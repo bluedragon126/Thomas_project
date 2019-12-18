@@ -108,7 +108,7 @@
                         <td align="right" class="prof_table_no" style=" padding-right: 20px;"><?php echo $i; ?></td>
                         <td align="left" class="prof_table_sub"><?php echo ($data->BtShopArticle) ? $data->BtShopArticle->getBtshopArticleTitle() : ''; ?></td>
                         <td align="left" class="blog_prof_table_date"><?php echo date("Y-m-d", strtotime($data->Purchase->getCreatedAt())) ?></td>
-                        <td class="prof_table_download"><a  class="cursor" onclick ="window.location = 'http://'+window.location.hostname+'/borst_shop/saveAsPdf?purchase_id='+<?php echo $data->Purchase->getId() ?>+'&receipt=0' ">Ladda ned</a></td>
+                        <td class="prof_table_download"><a  class="cursor" onclick ="window.location = 'https://'+window.location.hostname+'/borst_shop/saveAsPdf?purchase_id='+<?php echo $data->Purchase->getId() ?>+'&receipt=0' ">Ladda ned</a></td>
                     </tr>
                     </tr>
         <?php $i++;

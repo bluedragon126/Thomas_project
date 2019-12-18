@@ -24,13 +24,13 @@
     <td>&nbsp;&nbsp;</td>
   </tr>
   <tr>
-    <td><?php echo '1. Registrera dig p Brstjnaren, ifall du inte redan gjort det: http://'.$url.'/sbt_user/sbtNewRegistration  ' ?></td>
+    <td><?php echo '1. Registrera dig p Brstjnaren, ifall du inte redan gjort det: https://'.$url.'/sbt_user/sbtNewRegistration  ' ?></td>
   </tr>
   <tr>
     <td><?php echo '2. Betala in kursavgiften 2 500 kr till Brstjnarens Plusgiro 104 66 96-9 eller Bankgiro 5670-5288.' ?></td>
   </tr>
   <tr>
-    <td><?php echo '3. Vill du bli sponsrad av CMC Markets, ppna dep hos dem, ifall du inte redan gjort det: http://www.cmcmarkets.se/' ?></td>
+    <td><?php echo '3. Vill du bli sponsrad av CMC Markets, ppna dep hos dem, ifall du inte redan gjort det: https://www.cmcmarkets.se/' ?></td>
   </tr>
   <tr>
     <td>&nbsp;&nbsp;</td>

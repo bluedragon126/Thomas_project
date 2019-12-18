@@ -227,7 +227,7 @@
                 <div class="blank_60h widthall">&nbsp;</div>
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <div class="blank_15h widthall">&nbsp;</div>
-                <a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/borstShopHome' ?>"><?php echo __('Välkommen att fylla den med produkter!'); ?></a>
+                <a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/borstShopHome' ?>"><?php echo __('Välkommen att fylla den med produkter!'); ?></a>
                 <div class="spacer"></div>
             <?php endif; ?>
             <div class="margin_top_89"></div>

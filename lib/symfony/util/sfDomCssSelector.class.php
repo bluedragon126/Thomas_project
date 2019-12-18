@@ -12,7 +12,7 @@
  * sfDomCssSelector allows to navigate a DOM with CSS selector.
  *
  * Based on getElementsBySelector version 0.4 - Simon Willison, March 25th 2003
- * http://simon.incutio.com/archive/2003/03/25/getElementsBySelector
+ * https://simon.incutio.com/archive/2003/03/25/getElementsBySelector
  *
  * Some methods based on the jquery library
  *

@@ -308,7 +308,7 @@ $(document).ready(function() {
         var current_user = $('#current_user').val();
 
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             showFriendRequest();
             return false;
@@ -1584,7 +1584,7 @@ $(document).ready(function() {
         var current_user = $('#current_user').val();
 
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             allMessageBox('profile_msg_postmessage_dialog', 'profile_msg_postmessage_form', 'msg_post_message');
             return false;
@@ -1601,7 +1601,7 @@ $(document).ready(function() {
         var current_user = $('#current_user').val();
 
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             allMessageBox('profile_msg_postmessage_dialog', 'profile_msg_postmessage_form', 'post_message');
             return false;
@@ -2327,7 +2327,7 @@ $(document).ready(function() {
     $('#changeProfileImage').live("click", function() {
         var current_user = $('#current_user').val();
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             showProfileImageUploadBox();
         }
@@ -2343,7 +2343,7 @@ $(document).ready(function() {
         var current_user = $('#current_user').val();
         var user_id = $(this).attr("name");
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             removeUserProfilePhoto(user_id);
         }
@@ -2358,7 +2358,7 @@ $(document).ready(function() {
     $('#user_blog_profile_image').live("click", function() {
         var current_user = $('#current_user').val();
         if (current_user == '') {
-            window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+            window.location = 'https://' + window.location.hostname + '/user/loginWindow';
         } else {
             showBlogProfileImageUploadBox();
         }
@@ -2586,7 +2586,7 @@ $(document).ready(function() {
                         success: function(data1) {
                             $('.cart_count').html(data1);
                             console.log("success");
-                            window.location = 'http://' + window.location.hostname + '/borst_shop/shopPayment/product_id/' + product_id;
+                            window.location = 'https://' + window.location.hostname + '/borst_shop/shopPayment/product_id/' + product_id;
 
                         }
                     });
@@ -2648,7 +2648,7 @@ $(document).ready(function() {
                     shopChartHeight();
                 }
                 if (id == 'to_payment_article') {
-                    window.location = 'http://' + window.location.hostname + '/borst_shop/shopArticlePayment/product_id/' + product_id;
+                    window.location = 'https://' + window.location.hostname + '/borst_shop/shopArticlePayment/product_id/' + product_id;
                 }
             }
         });
@@ -3138,7 +3138,7 @@ $(document).ready(function() {
         if (email_flag == 0 && firstname_flag == 0 && lastname_flag == 0 && street_flag == 0 && zipcode_flag == 0 && telephone_flag == 0 && city_flag == 0 && country_flag == 0) {
             $.get("/borst_shop/isEmptyCartForPayment", function(data) {
                 if (data == 0) {
-                    window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+                    window.location = 'https://' + window.location.hostname + '/user/loginWindow';
                 }
                 if (data == 1) {
                     $("#empty_cart_for_payment_error").html('Please select a product to Buy.');
@@ -4035,8 +4035,8 @@ $(document).ready(function() {
 
         if (pay_option == 1) para_str = '/typ/' + pay_option;
         if (pay_option == 2) para_str = '/typ/' + pay_option + '/bk/' + pay_option_bank;
-        console.log('http://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str);
-        window.location = 'http://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str;
+        console.log('https://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str);
+        window.location = 'https://' + window.location.hostname + '/borst_shop/shopPaymentDone' + para_str;
     });
 
     /* Used while send a article payment request after confirmation. */
@@ -4053,7 +4053,7 @@ $(document).ready(function() {
         if (pay_option == 1) para_str = '/typ/' + pay_option;
         if (pay_option == 2) para_str = '/typ/' + pay_option + '/bk/' + pay_option_bank;
 
-        window.location = 'http://' + window.location.hostname + '/borst_shop/shopArticlePaymentDone' + para_str;
+        window.location = 'https://' + window.location.hostname + '/borst_shop/shopArticlePaymentDone' + para_str;
     });
 
     /* Used while send a payment request after confirmation. */
@@ -4064,10 +4064,10 @@ $(document).ready(function() {
         var purchase_id = $(this).attr("name");
 
         if (id == 'save_receipt') {
-            window.location = 'http://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=1'
+            window.location = 'https://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=1'
         }
         if (id == 'save_receipt_article') {
-            window.location = 'http://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=1' + '&individual_article=1'
+            window.location = 'https://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=1' + '&individual_article=1'
         }
 
         if (id == 'e_bill') {
@@ -4080,11 +4080,11 @@ $(document).ready(function() {
         }
 
         if (id == 'save_invoice') {
-            window.location = 'http://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=0'
+            window.location = 'https://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=0'
         }
 
         if (id == 'save_invoice_article') {
-            window.location = 'http://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=0' + '&individual_article=1'
+            window.location = 'https://' + window.location.hostname + '/borst_shop/saveAsPdf?purchase_id=' + purchase_id + '&receipt=0' + '&individual_article=1'
         }
 
         if (id == 'print_invoice') {
@@ -4407,7 +4407,7 @@ $(document).ready(function() {
 
 
                 } else {
-                    window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+                    window.location = 'https://' + window.location.hostname + '/user/loginWindow';
                 }
                 $(_this).find(".forum-menu-active-logo").addClass("forum-menu-active-logo-activated");
             }
@@ -4453,7 +4453,7 @@ $(document).ready(function() {
                         });
                     }
                 } else {
-                    window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+                    window.location = 'https://' + window.location.hostname + '/user/loginWindow';
                 }
 
             }
@@ -4837,7 +4837,7 @@ function setYahooUpdates() {
 
 
 
-    /*  url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22USDSEK=X%22%29&env=store://datatables.org/alltableswithkeys";
+    /*  url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22USDSEK=X%22%29&env=store://datatables.org/alltableswithkeys";
                 $.ajax({
                     url: url,
                     cache: false,
@@ -4849,7 +4849,7 @@ function setYahooUpdates() {
                     }
                 });
 
-                url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22EURUSD=X%22%29&env=store://datatables.org/alltableswithkeys";
+                url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22EURUSD=X%22%29&env=store://datatables.org/alltableswithkeys";
                 $.ajax({
                     url: url,
                     cache: false,
@@ -5243,13 +5243,13 @@ function switch_create_div() {
 
 /* To Preview the entered text on create analysis page. */
 function preview_analysis() {
-    var popurl = "http://" + window.location.hostname + "/js/tiny_mce/plugins/preview/preview.html";
+    var popurl = "https://" + window.location.hostname + "/js/tiny_mce/plugins/preview/preview.html";
     winpops = window.open(popurl, "imgupload", "width=340,height=450,scrollbars,resizable");
 }
 
 /* To Preview the entered text on create forum topic page. */
 function preview_forum_topic() {
-    //var popurl="http://"+window.location.hostname+"/js/tiny_mce/plugins/preview/preview.html";
+    //var popurl="https://"+window.location.hostname+"/js/tiny_mce/plugins/preview/preview.html";
     //winpops=window.open(popurl,"imgupload","width=340,height=450,scrollbars,resizable");
 
     var post_url = "/js/tiny_mce/plugins/preview/preview.html";
@@ -5501,7 +5501,7 @@ function fillNewsletterEmailField() {
 
 /* Used for image upload.*/
 function upload(id) {
-    //var popurl="http://"+window.location.hostname+"/sbt/imageUpload/mode/upload/image_path/"+id;
+    //var popurl="https://"+window.location.hostname+"/sbt/imageUpload/mode/upload/image_path/"+id;
     //winpops=window.open(popurl,"imgupload","width=340,height=450,scrollbars,resizable");
     if (id == 'blog') var window_name = 'upload_image_in_blog_detail';
     if (id == 'analysis') var window_name = 'upload_image_in_analysis_detail';
@@ -5521,7 +5521,7 @@ function upload(id) {
 }
 
 function uploadIngressImage() {
-    //var popurl="http://"+window.location.hostname+"/sbt/uploadIngressImage";
+    //var popurl="https://"+window.location.hostname+"/sbt/uploadIngressImage";
     //winpops=window.open(popurl,"ingressImgupload","width=340,height=450,scrollbars,resizable");
 
     var post_url = "/sbt/uploadIngressImage";
@@ -5535,9 +5535,9 @@ function forwardTo() {
     var div_id = $('#blog_article').val();
 
     if (div_id == 'analysis')
-        window.location = 'http://' + window.location.hostname + '/sbt/sbtAddAnalysis/formValidation/0';
+        window.location = 'https://' + window.location.hostname + '/sbt/sbtAddAnalysis/formValidation/0';
     if (div_id == 'blog')
-        window.location = 'http://' + window.location.hostname + '/sbt/sbtAddUserBlog/formValidation/0';
+        window.location = 'https://' + window.location.hostname + '/sbt/sbtAddUserBlog/formValidation/0';
 }
 
 function initCombos(id) {
@@ -5612,7 +5612,7 @@ function show_vote_meter(valid_user) {
         //$('html, body').animate( { scrollTop: 000 }, 0 );
         $('html, body').scrollTo($('#article_vote_option'));
     } else {
-        window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+        window.location = 'https://' + window.location.hostname + '/user/loginWindow';
     }
 }
 
@@ -5745,7 +5745,7 @@ function show_vote_meter_on_blog(valid_user) {
         });
         //$('#vote_symb_top').css({'display':'none','visibility':'hidden'});
     } else {
-        window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+        window.location = 'https://' + window.location.hostname + '/user/loginWindow';
     }
 }
 
@@ -5766,7 +5766,7 @@ function show_vote_meter_on_all_blog_page(valid_user, blog_id) {
         });
         //$('#vote_symb_top').css({'display':'none','visibility':'hidden'});
     } else {
-        window.location = 'http://' + window.location.hostname + '/user/loginWindow';
+        window.location = 'https://' + window.location.hostname + '/user/loginWindow';
     }
 }
 
@@ -5919,7 +5919,7 @@ function show_blog_dates(month, year) {
                     actual_date = brokenstring[i];
 
                 if (one_date == actual_date) {
-                    $(this).addClass("ui-state-active").addClass("white_background").attr("href", "http://" + window.location.hostname);
+                    $(this).addClass("ui-state-active").addClass("white_background").attr("href", "https://" + window.location.hostname);
                 }
             }
         });
@@ -6775,7 +6775,7 @@ function showUploadedImage(profile_image_name) {
     $('#upload_userprofile_image_box').removeClass(classname).addClass('show_div');
 
     //var img = new Image();
-    //img.src = "http://"+window.location.hostname+"/uploads/userThumbnail/"+profile_image_name;
+    //img.src = "https://"+window.location.hostname+"/uploads/userThumbnail/"+profile_image_name;
     //alert(img.width + 'x' + img.height);
     $('#image_container').html('');
     var img_str = "/uploads/userThumbnail/" + profile_image_name;
@@ -6917,7 +6917,7 @@ function showUploadedBlogProfileImage(profile_image_name) {
     $('#upload_bloguserprofile_image_box').removeClass(classname).addClass('show_div');
 
     //var img = new Image();
-    //img.src = "http://"+window.location.hostname+"/uploads/userThumbnail/"+profile_image_name;
+    //img.src = "https://"+window.location.hostname+"/uploads/userThumbnail/"+profile_image_name;
     //alert(img.width + 'x' + img.height);
     $('#blog_image_container').html('');
     var img_str = "/uploads/userBlogProfileImage/" + profile_image_name;
@@ -7236,7 +7236,7 @@ function save_edit_analysis_blog_data(publish_status) {
         data: $('#edit_analysis_form').serialize(),
         url: '/sbt/editAnalysis?article_id=' + article_id,
         success: function(data1) {
-            window.location = 'http://' + window.location.hostname + '/sbt/sbtArticleDetails/article_id/' + data1;
+            window.location = 'https://' + window.location.hostname + '/sbt/sbtArticleDetails/article_id/' + data1;
 
             $.ajax({
                 type: 'POST',
@@ -7624,7 +7624,7 @@ function save_analysis_blog_data(publish_status) {
         data: $('#create_analysis_form').serialize(),
         url: '/sbt/sbtAddAnalysis',
         success: function(data1) {
-            window.location = 'http://' + window.location.hostname + '/sbt/sbtArticleDetails/article_id/' + data1;
+            window.location = 'https://' + window.location.hostname + '/sbt/sbtArticleDetails/article_id/' + data1;
 
             $.ajax({
                 type: 'POST',
@@ -7792,7 +7792,7 @@ function setUserTopListOrderImage(column_id, order) {
 
 /* To show the opened window in center of page. */
 function openWindowInCenter(post_url, new_width, new_height, window_name) {
-    var url = "http://" + window.location.hostname + "/" + post_url;
+    var url = "https://" + window.location.hostname + "/" + post_url;
     var name = window_name;
     var w = new_width;
     var h = new_height;
@@ -7826,7 +7826,7 @@ function openWindowInCenter(post_url, new_width, new_height, window_name) {
     win.moveTo(wleft, wtop);
     win.focus();
 
-    //window.open("http://"+window.location.hostname+"/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
+    //window.open("https://"+window.location.hostname+"/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
 }
 
 function autoHeightOnPage() {
@@ -7918,7 +7918,7 @@ function confirmation_delete_blog_redirect_to_min_list(row_id) {
                 $('#myblog_list_page #' + row_id).remove();
 
                 $.get("/sbt/deleteBlogAndRelatedData?blog_id=" + row_id, function(data) {
-                    window.location.href = 'http://' + window.location.hostname + '/sbt/showListOfUserBlog';
+                    window.location.href = 'https://' + window.location.hostname + '/sbt/showListOfUserBlog';
                 });
             },
             "Cancel": function() {
@@ -7931,7 +7931,7 @@ function confirmation_delete_blog_redirect_to_min_list(row_id) {
 }
 
 function cancelProfileChanges() {
-    window.location = 'http://' + window.location.hostname + '/sbt/sbtUserProfile';
+    window.location = 'https://' + window.location.hostname + '/sbt/sbtUserProfile';
 }
 
 function setHeightOnForum() {

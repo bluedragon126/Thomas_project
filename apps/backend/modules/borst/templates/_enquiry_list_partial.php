@@ -16,7 +16,7 @@
     <?php $i=1; foreach ($pager->getResults() as $enq): ?>
     <tr class="classnot">
       <td><input name="enquiry_ids[]" type="hidden" value="<?php echo $enq->id; ?>"><?php echo $i; ?></td>
-	  <td><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/enquiryDetails/enq_id/'.$enq->id ?>"><?php echo $enq->enq_subject; ?></a></td>
+	  <td><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/enquiryDetails/enq_id/'.$enq->id ?>"><?php echo $enq->enq_subject; ?></a></td>
 	  <td><?php echo $enq->enq_type; ?></td>
 	  <td><?php echo $enq->firstname; ?></td>
 	  <td><?php echo $enq->lastname; ?></td>

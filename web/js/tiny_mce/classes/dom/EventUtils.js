@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /*jshint loopfunc:true*/
@@ -205,7 +205,7 @@ define("tinymce/dom/EventUtils", [
 		function tryScroll() {
 			try {
 				// If IE is used, use the trick by Diego Perini licensed under MIT by request to the author.
-				// http://javascript.nwbox.com/IEContentLoaded/
+				// https://javascript.nwbox.com/IEContentLoaded/
 				doc.documentElement.doScroll("left");
 			} catch (ex) {
 				Delay.setTimeout(tryScroll);

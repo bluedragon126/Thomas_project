@@ -125,7 +125,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $i = 0;
                                 foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas):
                                         ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php
                                     endif;
                                     $i++;
@@ -140,7 +140,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas * 2 && $i >= $item_per_col_lasarnas):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -156,7 +156,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas * 3 && $i >= $item_per_col_lasarnas * 2):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -172,7 +172,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_lasarnas as $stock): if ($i <= $item_per_col_lasarnas * 4 && $i >= $item_per_col_lasarnas * 3):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -210,7 +210,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden):
                                         ?>
                                         <?php if ($stock->sector == 'Sektor'): ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
                                         <?php
                                     endif;
@@ -228,7 +228,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden * 2 && $i >= $item_per_col_varlden):
                                             ?>
                                             <?php if ($stock->sector == 'Sektor'): ?>
-                                                <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
                                             <?php
                                         endif;
@@ -247,7 +247,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden * 3 && $i >= $item_per_col_varlden * 2):
                                             ?>
                                             <?php if ($stock->sector == 'Sektor'): ?>
-                                                <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
                                             <?php
                                         endif;
@@ -266,7 +266,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     foreach ($stock_list_varlden as $stock): if ($i <= $item_per_col_varlden * 4 && $i >= $item_per_col_varlden * 3):
                                             ?>
                                             <?php if ($stock->sector == 'Sektor'): ?>
-                                                <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
                                             <?php
                                         endif;
@@ -281,7 +281,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     foreach ($stock_list_varlden as $stock): if ($i <= $item_per_col_varlden * 4 && $i >= $item_per_col_varlden * 3):
                                             ?>
                                             <?php if ($stock->sector == 'Finans'): ?>
-                                                <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
                                             <?php
                                         endif;
@@ -319,7 +319,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <li><span class="heading_violet_sector">Metaller</span></li>
                                 <?php foreach ($stock_list_Ravaror as $stock): ?>
                                     <?php if ($stock->sector == 'Metaller'): ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                     <?php endif; ?>
                                 <?php endforeach; ?>
                                 <li>&nbsp;</li>
@@ -327,7 +327,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <li id="last-li-chart"> <span class="heading_violet_sector">Energi</span> </li>
                                 <?php foreach ($stock_list_Ravaror as $stock): ?>
                                     <?php if ($stock->sector == 'Energi'): ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                     <?php endif; ?>
                                 <?php endforeach; ?>                
                             </ul>
@@ -338,7 +338,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <li><span class="heading_violet_sector">Spannmål</span></li>                
                                     <?php foreach ($stock_list_Ravaror as $stock): ?>
                                         <?php if ($stock->sector == 'Spannmål'): ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
 
@@ -351,7 +351,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <li><span class="heading_violet_sector">Mat/Fiber/Mjuka</span></li>
                                     <?php foreach ($stock_list_Ravaror as $stock): ?>
                                         <?php if ($stock->sector == 'Mat/Fiber/Mjuka'): ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
                                 </ul>
@@ -363,7 +363,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <li><span class="heading_violet_sector">Kött</span></li>
                                     <?php foreach ($stock_list_Ravaror as $stock): ?>
                                         <?php if ($stock->sector == 'Kött'): ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
                                 </ul>
@@ -396,7 +396,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $i = 0;
                                 foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor):
                                         ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php
                                     endif;
                                     $i++;
@@ -411,7 +411,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor * 2 && $i >= $item_per_col_Valutor):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -427,7 +427,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor * 3 && $i >= $item_per_col_Valutor * 2):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -443,7 +443,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_Valutor as $stock): if ($i <= $item_per_col_Valutor * 4 && $i >= $item_per_col_Valutor * 3):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -479,7 +479,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $i = 0;
                                 foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap):
                                         ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php
                                     endif;
                                     $i++;
@@ -494,7 +494,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap * 2 && $i >= $item_per_col_LargeCap):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -510,7 +510,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap * 3 && $i >= $item_per_col_LargeCap * 2):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -526,7 +526,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_LargeCap as $stock): if ($i <= $item_per_col_LargeCap * 4 && $i >= $item_per_col_LargeCap * 3):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -561,7 +561,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $i = 0;
                                 foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap):
                                         ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php
                                     endif;
                                     $i++;
@@ -576,7 +576,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap * 2 && $i >= $item_per_col_MidCap):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -592,7 +592,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap * 3 && $i >= $item_per_col_MidCap * 2):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -608,7 +608,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_MidCap as $stock): if ($i <= $item_per_col_MidCap * 4 && $i >= $item_per_col_MidCap * 3):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -643,7 +643,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 $i = 0;
                                 foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap):
                                         ?>
-                                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                         <?php
                                     endif;
                                     $i++;
@@ -658,7 +658,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap * 2 && $i >= $item_per_col_SmallCap):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -674,7 +674,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap * 3 && $i >= $item_per_col_SmallCap * 2):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -690,7 +690,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     $i = 0;
                                     foreach ($stock_list_SmallCap as $stock): if ($i <= $item_per_col_SmallCap * 4 && $i >= $item_per_col_SmallCap * 3):
                                             ?>
-                                            <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -723,7 +723,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <?php $adCount = 1; ?>
             <?php foreach ($metastock_data as $article): ?>
                 <?php $modAdCount = $adCount % 2; ?>
-                <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                <a class="blackcolor cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                     <div class="color_plate">
                         <?php if ($article->btshop_product_image): ?>
                             <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>

@@ -73,7 +73,7 @@
                                 </tr>
 <?php foreach ($pager->getResults() as $data): ?>
                                     <tr class="classnot" id="row_<?php echo $data->id; ?>">
-                                        <td> <a class="bluelink" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id ?>/chart_type/1"><?php echo $data->company_name; ?></a> </td>                    
+                                        <td> <a class="bluelink" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $data->company_name); ?>/stock_id/<?php echo $data->id ?>/chart_type/1"><?php echo $data->company_name; ?></a> </td>                    
                                         <td> <?php echo $data->company_symbol; ?> </td>                    
                                         <td> <?php echo $data->country; ?> </td> 
                                         <td> <?php echo $catgeory_arr[$data->company_type_id]; ?> </td>                                       
@@ -137,7 +137,7 @@
         $(".delete_stock").live('click','',function(){
             $flag = window.confirm('Do you want to delete this sotck');
             if($flag){
-                var str = '<?php echo 'http://' . $host_str . '/backend.php/borst/deleteStock/stock_id/' ?>';
+                var str = '<?php echo 'https://' . $host_str . '/backend.php/borst/deleteStock/stock_id/' ?>';
                 str = str+this.id;
                 row_id = this.id;
                 $.post(str, function(data){

@@ -307,7 +307,7 @@ class SbtUserBlog extends BaseSbtUserBlog
 		$str = '';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<span style="color:#000000;">'.substr($list->created_at,0,10).'</span> <a href="http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtBlogDetails/blog_id/'.$list->id.'" style="color:#174E96;">'.$list->ublog_title.'<a/><br/>';
+			$str .= '<span style="color:#000000;">'.substr($list->created_at,0,10).'</span> <a href="https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtBlogDetails/blog_id/'.$list->id.'" style="color:#174E96;">'.$list->ublog_title.'<a/><br/>';
 		}
 		return $str;
 	}

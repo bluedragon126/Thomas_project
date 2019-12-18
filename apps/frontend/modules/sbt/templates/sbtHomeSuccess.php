@@ -44,7 +44,7 @@ $(document).ready(function()
                         <div class="home_heading_l_3_main_div <?php if($i==1){ echo "margin_rgt_0"; } ?>">
                          
                             <div class="home_heading_l_3_img_div">
-                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor float_left">
+                                <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor float_left">
                                     <img src="/uploads/thumbnail/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>" width="223" />
                                     <!--<img src="/images/new_home/home_heading_l_2_img.png" />-->
                                 </a>
@@ -53,7 +53,7 @@ $(document).ready(function()
                         <?php $date = explode('-', substr($arr[$i]['created_at'], 0, 10)); ?>
                             <div class="home_heading_l_3_txt_div mrg_top_6 <?php if($i==1){ echo "margin_rgt_0"; } ?>">
                                 <div class="home_heading_l_txt dattimeinfo col-first-date">
-                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
+                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
                                         <span class="home_date"><?php $date = explode('-', substr($arr[$i]['created_at'], 0, 10)); echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]['analysis_category_id'] ? $cat_arr[$arr[$i]['analysis_category_id']] : '';  ?></span>
                                         <span class="home_cat"><?php echo $arr[$i]['analysis_type_id'] ? $type_arr[$arr[$i]['analysis_type_id']] : ''; ?></span>
@@ -61,16 +61,16 @@ $(document).ready(function()
                                     </a>
                                 </div>
                                 <div class="home_heading_l_c_txt_main">                                
-                                    <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
+                                    <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
                                     <div class="margin_top_11">
                                         <span>
                                             <img class="home_square" src="/images/new_home/red_square.png" style="margin-right: 2px;"/>
                                         </span>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
+                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
                                         </a>
                                         <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
+                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
                                         </span>
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ $(document).ready(function()
                             <?php $date = explode('-', substr($arr[$i]['created_at'], 0, 10)); ?>
                             <div class="home_heading_l_3_txt_div mrg_top_6 <?php if($i==1){ echo "margin_rgt_0"; } ?>">
                                 <div>
-                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
+                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
                                         <span class="home_date"><?php $date = explode('-', substr($arr[$i]['created_at'], 0, 10)); echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]['analysis_category_id'] ? $cat_arr[$arr[$i]['analysis_category_id']] : '';  ?></span>
                                         <span class="home_cat"><?php echo $arr[$i]['analysis_type_id'] ? $type_arr[$arr[$i]['analysis_type_id']] : ''; ?></span>
@@ -90,16 +90,16 @@ $(document).ready(function()
                                     </a>
                                 </div>
                                 <div class="home_heading_l_c_txt_main">                                
-                                    <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
+                                    <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_hor_title[$i]; ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
                                     <div class="margin_top_11">
                                         <span>
                                             <img src="/images/new_home/red_square.png" style="margin-right: 2px;"/>
                                         </span>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
+                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_6_7[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
                                         </a>
                                         <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
+                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
                                         </span>
                                     </div>
                                 </div>
@@ -133,14 +133,14 @@ $(document).ready(function()
                 <?php for ($i = 0; $i < 2; $i++): ?>
                         <div class="home_heading_l_2_main_div">
                             <div class="home_heading_l_2_img_div">
-                                <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor float_left">
+                                <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor float_left">
                                     <img src="/uploads/thumbnail/<?php echo str_replace('.', '_semimid.', $arr[$i]['image']); ?>"  width="200" />
                                     <!--<img src="/images/new_home/home_heading_l_2_img.png" />-->
                                 </a>
                             </div>
                             <div class="home_heading_l_2_txt_div">
                                 <div class="line_height0">
-                                    <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
+                                    <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="cursor">
                                         <span class="home_date"><?php $date = explode('-', substr($arr[$i]['created_at'], 0, 10)); echo $date[2] . ' ' . $month[$date[1]] ?></span>
                                         <span class="home_type"><?php echo $arr[$i]['analysis_category_id'] ? $cat_arr[$arr[$i]['analysis_category_id']] : '' ?><?php //echo $arr[$i]->getArticleCategory()->getCategoryName() ? $arr[$i]->getArticleCategory()->getCategoryName() : '' ?></span>
                                         <span class="home_cat"><?php echo $arr[$i]['analysis_type_id'] ? $type_arr[$arr[$i]['analysis_type_id']] : '' ?><?php //echo $arr[$i]->getArticleType()->getTypeName() ? $arr[$i]->getArticleType()->getTypeName() : '' ?></span>
@@ -148,16 +148,16 @@ $(document).ready(function()
                                     </a>
                                 </div>
                                 <div class="home_heading_l_c_txt_main">                                
-                                    <div><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_ver_title[$i] ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
+                                    <div><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor"><span class="<?php echo $fcol_ver_title[$i] ?>"><?php echo $arr[$i]['analysis_title'] ?></span></a></div>
                                     <div class="margin_top_11">
                                         <span>
                                             <img class="home_square" src="/images/new_home/red_square.png" style="margin-right: 2px;"/>
                                         </span>
-                                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
+                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $arr[$i]['id']; ?>" class="blackcolor cursor">
                                             <span class="<?php echo $fcol_body_text_2_3[$i]; ?>"><?php echo substr($arr[$i]['image_text'],0,122); ?></span>
                                         </a>
                                         <span class="home_body_l_1_red">
-                                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
+                                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
                                         </span>
                                     </div>
                                 </div>
@@ -176,28 +176,28 @@ $(document).ready(function()
             <?php $date = explode('-', substr($obj['created_at'], 0, 10)); ?>
                 <div class="home_heading_l articleftdiv autoheight">
                     <div class="">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink1 cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink1 cursor">
             <?php /* ?><img src="/images/<?php echo $image_arr_13[$i] ?>" alt="photo" /><?php */ ?>
                             <img src="/uploads/thumbnail/<?php echo str_replace('.', '_large.', $obj['image']); ?>" width="465"/>
                                 <!--<img src="/images/new_home/sensex_img.png" />-->
                         </a>
                     </div>
                     <div class="home_heading_l_txt dattimeinfo">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="cursor">
                             <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                             <span class="update home_type"><?php echo $obj['analysis_category_id'] ? $cat_arr[$obj['analysis_category_id']] : ''; ?></span>
                             <span class="bluefont home_cat"><?php echo $obj['analysis_type_id'] ? $type_arr[$obj['analysis_type_id']] : ''; ?></span>
                         </a>
-                        <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['id']; ?>" class="cursor">
+                        <a href="<?php echo 'https://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['id']; ?>" class="cursor">
                             <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['id']) ?></span>
                         </a>
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="colorbandWrapper cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="colorbandWrapper cursor">
                                 <!--<span class="colorband"><img src="/images/new_home/arrow_bt.png" class="margin_rgt_4"/><img src="/images/smallcolorstrip.jpg" alt="strip" /> </span>-->
                         </a>
                     </div>
                     <div class="home_heading_l_bigimg_main">
                         <span class="home_heading_l_bigimg_txt_big">
-                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
+                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
                                 <?php //echo html_entity_decode($col1_13_heading_style_start[$i]) ?>
             <?php //print html_entity_decode($col1_13_heading_style_start[$cnt])    ?><?php //echo $obj['analysis_title']    ?><?php //print html_entity_decode($col1_13_heading_style_end[$cnt])    ?><?php //echo html_entity_decode($col1_13_heading_style_end[$i])       ?>
                                 <span class="<?php echo $fcol_big_title[$cnt] ?>"><?php echo $obj['analysis_title'] ?></span>
@@ -205,12 +205,12 @@ $(document).ready(function()
                         </span>
                     </div>
                     <div class="home_heading_l_small_txt articleinfo">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
                             <img class="home_square" src="/images/new_home/red_square.png" alt="arrow" />
                             <span class="<?php echo $fcol_body_text_1_4_5[$cnt]; ?>"><?php echo substr($obj['image_text'],0,122); ?></span>
                         </a>
                         <span class="home_body_l_1_red">
-                            <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
+                            <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink cursor"> Läs mer...</a>
                         </span>
                     </div>
                 </div>
@@ -240,33 +240,33 @@ $(document).ready(function()
        <?php } ?>
                 <div>
                     <div class="home_heading_c">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink1 cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="bluelink1 cursor">
         <?php /* ?><img src="/images/<?php echo $image_arr_814[$l] ?>" alt="photo" /><?php */ ?>
                             <img src="/uploads/thumbnail/<?php echo str_replace('.', '_small.', $obj['image']); ?>" width="165"  />
                         </a>
                     </div>
                     <div class="home_heading_l_btmtxtmain dattimeinfo">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="cursor">
                             <span class="date home_date"><?php echo $date[2] . ' ' . $month[$date[1]] ?></span>
                             <span class="update home_type"><?php echo $obj['analysis_category_id'] ? $cat_arr[$obj['analysis_category_id']] : '' ?></span>
                             <span class="home_cat"><?php echo $obj['analysis_type_id'] ? $type_arr[$obj['analysis_type_id']] : ''; ?></span>
                         </a>
-                        <a href="<?php echo 'http://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['id']; ?>" class="cursor">
+                        <a href="<?php echo 'https://' . $host_str . '/borst/commentOnBorstArticle/article_id/' . $obj['id']; ?>" class="cursor">
                             <span class="chaticon"><?php echo $comment_cnt->getTotalCommentCount($obj['id']) ?></span>
                         </a>
                     </div>
                     <div class="">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
                             <span class="<?php echo $col1_814_heading_style[$cnt]; ?>"><?php echo $obj['analysis_title'] ?></span>
                         </a>
                     </div>
                     <div class="articleinfo home_body_l_1">
-                        <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
+                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/' . $obj['id']; ?>" class="blackcolor cursor">
                             <img class="home_square" src="/images/new_home/home_square_2.png" alt="arrow" />
                             <span class="<?php echo $mcol_body_text[$cnt]; ?>"><?php echo substr($obj['image_text'],0,122); ?></span>
                         </a>
                         <span class="home_body_l_1_blue">
-                            <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $obj['id']; ?>" class="bluelink"> Läs mer...</a>
+                            <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $obj['id']; ?>" class="bluelink"> Läs mer...</a>
                         </span>
                     </div>
 
@@ -298,7 +298,7 @@ $(document).ready(function()
                     $countSeq = 1;
                     foreach ($top_nine_viewed_articles as $topViewed):
                         ?>
-                        <div class="home_topart"><a class="cursor" href="<?php echo "http://" . $host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $topViewed->article_id ?>"><span class="toplisthome_articletitle home_9read_m"><span class="home_9read_m_count"><?php echo $countSeq++ . '   '; ?></span><span class="home_9read_m_details"><?php echo $topViewed->title ?></span></span></a></div>
+                        <div class="home_topart"><a class="cursor" href="<?php echo "https://" . $host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $topViewed->article_id ?>"><span class="toplisthome_articletitle home_9read_m"><span class="home_9read_m_count"><?php echo $countSeq++ . '   '; ?></span><span class="home_9read_m_details"><?php echo $topViewed->title ?></span></span></a></div>
                         <div class="home_artline_centerdiv">&nbsp;</div>
                     <?php endforeach; ?>
                 </div>
@@ -315,10 +315,10 @@ $(document).ready(function()
 </div>
         <div class="twt_bar_details">
             <!--<a class="twitter-timeline"  href="https://twitter.com/hashtag/corgi" data-widget-id="700280847123873792">#corgi Tweets</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 
             <a class="twitter-timeline"  href="https://twitter.com/Borstjanaren" data-widget-id="700569445123493888">Tweets by @Borstjanaren</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^https:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
     <?php endif;?>
     <?php $mCount++; ?>
@@ -346,33 +346,33 @@ $(document).ready(function()
 		<div class="adline"></div>
 		<?php endif; ?>
 		<div class="dattimeinfo"> 
-			<a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="cursor">
+			<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="cursor">
 				<span class="date"><?php echo $date[2].' '.$month[$date[1]] ?></span> 
                 <span class="update_usart"><?php /*echo __('ANVÄNDARARTIKEL') */?></span> 
 				<span class="update"><?php echo $cat_arr[$twentyeight_2_thirtyfive[$l]['analysis_category_id']] ? $cat_arr[$twentyeight_2_thirtyfive[$l]['analysis_category_id']] : '' ?></span> 
 				<span class="sbt_violet_home_type"><?php echo $type_arr[$twentyeight_2_thirtyfive[$l]['analysis_type_id']] ? $type_arr[$twentyeight_2_thirtyfive[$l]['analysis_type_id']] : '' ?></span> 
 			</a>
-			<a href="<?php echo 'http://'.$host_str.'/sbt/commentOnArticle/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="cursor">
+			<a href="<?php echo 'https://'.$host_str.'/sbt/commentOnArticle/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="cursor">
 				<span class="sbt_violet_chaticon"><?php echo $comment_cnt->getTotalCommentCount($twentyeight_2_thirtyfive[$l]['id']) ?></span>
 			</a>
 			<!--<span class="colorband">-->
-				<a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink cursor"> <!--<img src="/images/smallcolorstrip.jpg" alt="strip" />--></a>
+				<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink cursor"> <!--<img src="/images/smallcolorstrip.jpg" alt="strip" />--></a>
 			</span> 
 		</div>
-		<a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="blackcolor cursor">
+		<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="blackcolor cursor">
 		<div  class="advrtdheading">
 		  <h3 class="<?php echo $last_column_style[$m] ?>"><?php echo $twentyeight_2_thirtyfive[$l]['analysis_title'] ?></h3>
 		</div>
 		</a>
 		<div class="advertinfo font_12"> 
-			<a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="blackcolor cursor">
+			<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="blackcolor cursor">
 			<img src="/images/arrowsister.gif" alt="arrow" />
 			<?php echo $twentyeight_2_thirtyfive[$l]['image_text']?>
 			</a>
-			<a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink"> Läs mer ></a>
+			<a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink"> Läs mer ></a>
 		</div>
 		<div class="advertdiv photo">
-		<a href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink cursor">
+		<a href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$twentyeight_2_thirtyfive[$l]['id']; ?>" class="violetlink cursor">
 			<?php /*?><img src="/images/<?php echo $image_arr_1417[$m] ?>" alt="photo1" /><?php */?>
 			<img src="/uploads/thumbnail/<?php echo str_replace('.','_small.',$twentyeight_2_thirtyfive[$l]['image']); ?>" />
 		</a>
@@ -400,7 +400,7 @@ $(document).ready(function()
             <?php $adCount = 1; ?>
             <?php foreach ($metastock_data as $article): ?>
                 <?php $modAdCount = $adCount % 2; ?>
-                <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                <a class="blackcolor cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                     <div class="color_plate">
                         <?php if ($article->btshop_product_image): ?>
                             <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>

@@ -520,7 +520,7 @@ class sbtActions extends sfActions
 		if($this->blogCommentForm->isValid() && $response["success"] == true)
 		{ 
 			$id = $this->blogCommentForm->save();
-			$url = 'http://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blog_id;
+			$url = 'https://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blog_id;
 			$this->redirect($url);		
 		}
 		else
@@ -1620,7 +1620,7 @@ class sbtActions extends sfActions
 				
 				$profile->updateActivityCount($this->getUser()->getAttribute('user_id', '', 'userProperty'));
 				
-				//$url = 'http://'.$this->host_str.'/sbt/sbtArticleDetails/article_id/'.$new_analysis_data->id;
+				//$url = 'https://'.$this->host_str.'/sbt/sbtArticleDetails/article_id/'.$new_analysis_data->id;
 				//$this->redirect($url);
 				//$this->setTemplate('articleSaved');
 				$cc = new SbtCombinedAnalysisData();
@@ -1737,7 +1737,7 @@ class sbtActions extends sfActions
 			if($this->form->isValid())
 			{
 				$blogdata = $this->form->save();
-				$url = 'http://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blogdata->id;
+				$url = 'https://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blogdata->id;
 				$this->redirect($url);
 				//$this->setTemplate('blogSaved');
 			}
@@ -1983,7 +1983,7 @@ class sbtActions extends sfActions
 				$blogdata = $this->userBlogForm->save();
 				$profile->updateActivityCount($this->getUser()->getAttribute('user_id', '', 'userProperty'));
 				
-				$url = 'http://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blogdata->id;
+				$url = 'https://'.$this->host_str.'/sbt/sbtBlogDetails/blog_id/'.$blogdata->id;
 				$this->redirect($url);
 				//$this->setTemplate('blogSaved');
 			}
@@ -2951,7 +2951,7 @@ class sbtActions extends sfActions
                     //exit;
 					$this->sbtAnalysisCommentForm->save();
 				}
-				$url = 'http://'.$this->host_str.'/sbt/commentOnArticle/article_id/'.$article_id;
+				$url = 'https://'.$this->host_str.'/sbt/commentOnArticle/article_id/'.$article_id;
 				$this->redirect($url);
 			}
 			else
@@ -3324,7 +3324,7 @@ class sbtActions extends sfActions
 				if($this->messageForm->isValid())
 				{
 					$record = $this->messageForm->save();
-					//$url = 'http://'.$this->host_str.'/sbt/sbtMinProfileMessage/id/'.$id;
+					//$url = 'https://'.$this->host_str.'/sbt/sbtMinProfileMessage/id/'.$id;
 					//$this->redirect($url);
 				}
 				else{echo $this->messageForm->getErrorSchema();}
@@ -4133,7 +4133,7 @@ class sbtActions extends sfActions
 				if($this->messageForm->isValid())
 				{
 					$record = $this->messageForm->save();
-					//$url = 'http://'.$this->host_str.'/sbt/sbtMinProfileFriends/id/'.$arr['uid'];
+					//$url = 'https://'.$this->host_str.'/sbt/sbtMinProfileFriends/id/'.$arr['uid'];
 					//$this->redirect($url);
 				}
 				else{
@@ -5209,7 +5209,7 @@ class sbtActions extends sfActions
                                         else
                                         {
 
-                                            $url = 'http://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
+                                            $url = 'https://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
                                             $this->redirect($url);
                                         }
                                     }
@@ -5218,7 +5218,7 @@ class sbtActions extends sfActions
 
                                         $this->getUser()->setAttribute('setUpdateMsg',1,'userProperty');
                                         $this->sbtBlogProfileForm->save();
-                                        $url = 'http://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
+                                        $url = 'https://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
                                         $this->redirect($url);
                                     }//if(($arr['submit']=='SPARA' && $this->profileForm->isValid() && $userPorfileModel->getSbtActive()== 1 && $userPorfileModel->getSbtActive()==1)&& $arr['type_of_speculator']!='' && $sbtBlogProfile_arr['broker_used']!='' && $arr['my_trade']!='' && $arr['my_occupation']!='' && $arr['is_millionaire']!='' && $sbtBlogProfile_arr['my_best_trade']!='' && $sbtBlogProfile_arr['my_worst_trade']!='')
                                     if(($arr['submit']=='SPARA' && $this->profileForm->isValid() ) )
@@ -5367,7 +5367,7 @@ class sbtActions extends sfActions
 			$this->blogProfileForm->save();
 			$this->getUser()->getAttributeHolder()->remove('blog_profile_image_name');
 			
-			$url = 'http://'.$this->host_str.'/sbt/showListOfUserBlog/uid/'.$id;
+			$url = 'https://'.$this->host_str.'/sbt/showListOfUserBlog/uid/'.$id;
 			$this->redirect($url);
 		}
 		$this->user_id = $id;

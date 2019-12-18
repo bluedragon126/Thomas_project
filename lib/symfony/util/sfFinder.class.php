@@ -728,7 +728,7 @@ class sfGlobToRegex
  * The target value may use magnitudes of kilobytes (k, ki),
  * megabytes (m, mi), or gigabytes (g, gi).  Those suffixed
  * with an i use the appropriate 2**n version in accordance with the
- * IEC standard: http://physics.nist.gov/cuu/Units/binary.html
+ * IEC standard: https://physics.nist.gov/cuu/Units/binary.html
  *
  * based on perl Number::Compare module.
  *
@@ -738,7 +738,7 @@ class sfGlobToRegex
  * @author     Richard Clamp <richardc@unixbeard.net> perl version
  * @copyright  2004-2005 Fabien Potencier <fabien.potencier@gmail.com>
  * @copyright  2002 Richard Clamp <richardc@unixbeard.net>
- * @see        http://physics.nist.gov/cuu/Units/binary.html
+ * @see        https://physics.nist.gov/cuu/Units/binary.html
  * @version    SVN: $Id: sfFinder.class.php 23744 2009-11-10 00:52:39Z FabianLange $
  */
 class sfNumberCompare

@@ -69,14 +69,14 @@
         <!--<td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>-->
         <td class="width_82 blog_prof_table_date pad_lft_5"><?php echo substr($data->created_at,0,10) ?></td>
         <td class="width_9">&nbsp;</td>
-        <td class="width_388"><a class="blog_table_title" href="<?php echo 'http://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_blogpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
+        <td class="width_388"><a class="blog_table_title" href="<?php echo 'https://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_blogpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
         <td class="width_9">&nbsp;</td>
         <td class="blog_table_topic width_66"><?php echo $cat_arr[$data->ublog_category_id] ? $cat_arr[$data->ublog_category_id] : '&nbsp;'; ?></td>
         <?php if($logged_user==$data->author_id || $isSuperAdmin): ?>
         	<td class="width51">
             	<span class="floatRight width_38">
                 	<span class="float_left width_18">
-            			<a href="<?php echo 'http://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$data->id;?>"><img src="/images/edit_blog.png" alt="down" width="15" /></a>
+            			<a href="<?php echo 'https://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$data->id;?>"><img src="/images/edit_blog.png" alt="down" width="15" /></a>
                 	</span>
                 	<span class="float_left width_14 ptop_4">
                			<a class="profile_bloglist_row" name="<?php echo 'row_'.$data->id; ?>"><img src="/images/cross.png" alt="cross" width="14" height="14" /></a>

@@ -77,12 +77,12 @@ class SbtCombinedAnalysisData extends BaseSbtCombinedAnalysisData
 				
 				if($i == 0)
 				{
-					if($id && $id > 0)	$str = '<a class="cursor main_link_color" href="http://'.$_SERVER["HTTP_HOST"].'/sbt/sbtMinProfile/id/'.$id.'">'.$arr[$i].'</a>';
+					if($id && $id > 0)	$str = '<a class="cursor main_link_color" href="https://'.$_SERVER["HTTP_HOST"].'/sbt/sbtMinProfile/id/'.$id.'">'.$arr[$i].'</a>';
 					else  $str = $str.$arr[$i];
 				}
 				else
 				{
-					if($id && $id > 0)	$str = $str.',<a class="cursor main_link_color" href="http://'.$_SERVER["HTTP_HOST"].'/sbt/sbtMinProfile/id/'.$id.'">'.$arr[$i].'</a>';
+					if($id && $id > 0)	$str = $str.',<a class="cursor main_link_color" href="https://'.$_SERVER["HTTP_HOST"].'/sbt/sbtMinProfile/id/'.$id.'">'.$arr[$i].'</a>';
 					else $str = $str.$arr[$i];
 				}
 			}

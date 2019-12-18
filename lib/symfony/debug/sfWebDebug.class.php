@@ -258,7 +258,7 @@ class sfWebDebug
 /* <![CDATA[ */
 function sfWebDebugGetElementsByClassName(strClass, strTag, objContElm)
 {
-  // http://muffinresearch.co.uk/archives/2006/04/29/getelementsbyclassname-deluxe-edition/
+  // https://muffinresearch.co.uk/archives/2006/04/29/getelementsbyclassname-deluxe-edition/
   strTag = strTag || "*";
   objContElm = objContElm || document;
   var objColl = (strTag == '*' && document.all) ? document.all : objContElm.getElementsByTagName(strTag);

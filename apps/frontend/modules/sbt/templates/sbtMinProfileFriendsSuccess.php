@@ -1,7 +1,7 @@
 <div class="msgheading"><font color="#c50063"><?php echo count($friend_id) ?></font> Friends</div>
 <?php foreach($pager->getResults() as $data): ?>
 <div class="messagewrapper">
-  <div class="float_left"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->user_id ?>">
+  <div class="float_left"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->user_id ?>">
   <?php if($user_photo_arr[$data->user_id]!=''):?>
 	<img src="/uploads/userThumbnail/<?php echo str_replace('.','_semilarge.',$user_photo_arr[$data->user_id]); ?>" alt="user_photo"/>
   <?php else:?>
@@ -9,7 +9,7 @@
   <?php endif;?> 
   </a></div>
   <div class="info">
-    <div class="float_left widthall"><b class="main_link_color"><a class="main_link_color" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->user_id ?>"><?php echo $profile->getFullUserName($data->user_id) ?></a></b> <b class="lightbluefont"><?php echo substr($data->regdate,0,10) ?></b>
+    <div class="float_left widthall"><b class="main_link_color"><a class="main_link_color" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->user_id ?>"><?php echo $profile->getFullUserName($data->user_id) ?></a></b> <b class="lightbluefont"><?php echo substr($data->regdate,0,10) ?></b>
       <?php if($data->user_id != $logged_user):?>
 <!--      <b class="lightbluefont" style="margin-left:3px;"><a id="comment_on_any_user" name="<?php echo $logged_user.','.$data->user_id.',send_msg_dialog' ?>" style="color:#c50063; cursor:pointer;"><?php echo __('Skicka meddelande')?></a></b>-->
        <b class="lightbluefont" style="margin-left:3px;"><a id="<?php echo $data->user_id;?>" name="<?php echo $logged_user.','.$data->user_id.',send_msg_dialog' ?>" style="color:#c50063; cursor:pointer;"><?php echo __('Skicka meddelande')?></a></b>

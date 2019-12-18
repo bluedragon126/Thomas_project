@@ -188,8 +188,8 @@ function simple_format_text($text, $options = array())
  * Options are :all (default), :email_addresses, and :urls.
  *
  * Example:
- *   auto_link("Go to http://www.symfony-project.com and say hello to fabien.potencier@example.com") =>
- *     Go to <a href="http://www.symfony-project.com">http://www.symfony-project.com</a> and
+ *   auto_link("Go to https://www.symfony-project.com and say hello to fabien.potencier@example.com") =>
+ *     Go to <a href="https://www.symfony-project.com">https://www.symfony-project.com</a> and
  *     say hello to <a href="mailto:fabien.potencier@example.com">fabien.potencier@example.com</a>
  */
 function auto_link_text($text, $link = 'all', $href_options = array(), $truncate = false, $truncate_len = 35, $pad = '...')
@@ -259,7 +259,7 @@ function _auto_link_urls($text, $href_options = array(), $truncate = false, $tru
     $callback_function .= '
       else if (strlen($matches[2].$matches[3]) > '.$truncate_len.')
       {
-        return $matches[1].\'<a href="\'.($matches[2] == "www." ? "http://www." : $matches[2]).$matches[3].\'"'.$href_options.'>\'.substr($matches[2].$matches[3], 0, '.$truncate_len.').\''.$pad.'</a>\'.$matches[4];
+        return $matches[1].\'<a href="\'.($matches[2] == "www." ? "https://www." : $matches[2]).$matches[3].\'"'.$href_options.'>\'.substr($matches[2].$matches[3], 0, '.$truncate_len.').\''.$pad.'</a>\'.$matches[4];
       }
       ';
   }
@@ -267,7 +267,7 @@ function _auto_link_urls($text, $href_options = array(), $truncate = false, $tru
   $callback_function .= '
     else
     {
-      return $matches[1].\'<a href="\'.($matches[2] == "www." ? "http://www." : $matches[2]).$matches[3].\'"'.$href_options.'>\'.$matches[2].$matches[3].\'</a>\'.$matches[4];
+      return $matches[1].\'<a href="\'.($matches[2] == "www." ? "https://www." : $matches[2]).$matches[3].\'"'.$href_options.'>\'.$matches[2].$matches[3].\'</a>\'.$matches[4];
     }
     ';
 

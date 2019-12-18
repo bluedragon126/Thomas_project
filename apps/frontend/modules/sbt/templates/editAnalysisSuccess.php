@@ -12,7 +12,7 @@
         var text = tinyMCE.activeEditor.getContent();
         var dest_path = window.location.hostname+'/uploads/analysisDetailImage/'+filename;
 
-        var str = "<img src='http://"+dest_path+"' alt='img' />";
+        var str = "<img src='https://"+dest_path+"' alt='img' />";
         tinyMCE.activeEditor.setContent(text+str);
     }
 
@@ -28,12 +28,12 @@
             var str1 = window.location.hostname+what;
 
             var newImg = new Image();
-            newImg.src = 'http://'+str1;
+            newImg.src = 'https://'+str1;
             var height = newImg.height;
             var width = newImg.width;
             //alert ('The image size is '+width+'*'+height);
 
-            var str = "<img src='http://"+str1+"' width='"+width+"' height='"+height+"' align='"+align+"'/>";
+            var str = "<img src='https://"+str1+"' width='"+width+"' height='"+height+"' align='"+align+"'/>";
             tinyMCE.activeEditor.setContent(tt+str);
         }
     }

@@ -56,7 +56,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
 		  <tr>
 			<td valign="top"><ul>
                 <?php $i=0; foreach($stock_list as $stock): if($i<$item_per_col): ?>
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                 <?php endif; $i++; endforeach; ?>
 			  </ul>
             </td>
@@ -64,7 +64,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
             <?php if($item_per_col+1 <= $total_count): ?>
             <td valign="top"><ul>
                 <?php $i=0; foreach($stock_list as $stock): if($i<$item_per_col*2 && $i>=$item_per_col): ?>
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                 <?php endif; $i++; endforeach; ?>
 			  </ul>
             </td>
@@ -73,7 +73,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
             <?php if($item_per_col*2+1 <= $total_count): ?>
             <td valign="top"><ul>
                 <?php $i=0; foreach($stock_list as $stock): if($i<$item_per_col*3 && $i>=$item_per_col*2): ?>
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                 <?php endif; $i++; endforeach; ?>
 			  </ul>
             </td>
@@ -82,7 +82,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
             <?php if(($item_per_col*3+1) <= $total_count): ?>
             <td valign="top"><ul>
                 <?php $i=0; foreach($stock_list as $stock): if($i<=$item_per_col*4 && $i>=$item_per_col*3): ?>
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                 <?php endif; $i++; endforeach; ?>
 			  </ul>
             </td>

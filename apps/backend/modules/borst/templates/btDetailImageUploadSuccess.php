@@ -19,7 +19,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 	  <br>
 	  <input type="button" onclick="setIndicators();" value="<?php echo 'OK - Upload'; ?>">
 	</form>
-	<p style="font-size:11px;">[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/show_uploaded_images"><?php echo 'Uploaded images'; ?></a> ]</p>
+	<p style="font-size:11px;">[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/show_uploaded_images"><?php echo 'Uploaded images'; ?></a> ]</p>
 <?php endif; ?>
 
 
@@ -47,18 +47,18 @@ a:active{ color: #ff0000; text-decoration: none; }
    ?>
    <p>
    	<?php if($p>1):?> 
-   		[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/show_uploaded_images/p/<?php echo $p-1; ?>">&laquo;</a> ] 			
+   		[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/show_uploaded_images/p/<?php echo $p-1; ?>">&laquo;</a> ] 			
 	<?php endif; ?>
    	<?php if($p*$images_per_page < $images_count):?> 
-		[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btDetailImageUpload' ?>/mode/show_uploaded_images/p/<?php echo $p+1; ?>">&raquo;</a> ] 
+		[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btDetailImageUpload' ?>/mode/show_uploaded_images/p/<?php echo $p+1; ?>">&raquo;</a> ] 
 	<?php endif; ?>
-   [ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/upload"><?php echo 'Uploaded images'; ?></a> ]
+   [ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/mode/upload"><?php echo 'Uploaded images'; ?></a> ]
    </p>
    <hr />
    <p>
 	<?php if($images_count > 0): ?>
 		<?php for($i=$show_images_from;$i<$show_images_to;$i++)	{	?>
-			<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/uploaded_image_selected/<?php echo $images[$i]; ?>"><img style="margin: 0px 15px 15px 0px;" src="<?php echo "http://".$host_str."/uploads/articleDetailImages/".$images[$i]; ?>" alt="<?php echo $images[$i]; ?>" height="100" border="0"></a>
+			<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btDetailImageUpload'; ?>/uploaded_image_selected/<?php echo $images[$i]; ?>"><img style="margin: 0px 15px 15px 0px;" src="<?php echo "https://".$host_str."/uploads/articleDetailImages/".$images[$i]; ?>" alt="<?php echo $images[$i]; ?>" height="100" border="0"></a>
 		<?php } ?>
     <?php else: ?>
      	<i><?php echo 'No images available.'; ?></i>
@@ -69,7 +69,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 
 <?php if($action_mode == 'uploaded'):?>
    <script language="javascript" type="text/javascript">
-       opener.insert('article_text','<img src=<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>','<img src=<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>');
+       opener.insert('article_text','<img src=<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>','<img src=<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>');
         setTimeout("window.close()",100);
     </script>
 	<?php /*if (isset($_FILES['probe'])):?>
@@ -80,15 +80,15 @@ a:active{ color: #ff0000; text-decoration: none; }
 			<p><?php echo 'Image successful uploaded.'; ?></p>
 		<?php endif; ?>  
 	<?php endif; ?>  
-	<div><img src="<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/'.$filename ?>" alt="" height="100" border="1"></div>
+	<div><img src="<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/'.$filename ?>" alt="" height="100" border="1"></div>
   	<p><?php echo $lang['paste_image']; ?></p>
    	
 	<p>text<br><?php $imageCenter = "style=text-align: center; display: block; margin-left: auto; margin-right: auto"; ?>
-   		<button style="width:25px; height:25px;" title="<?php echo 'Insert image normal'; ?>" onClick="opener.insert('article_text','<img src=<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>'); window.close()"><img src="/images/img_normal.gif" alt="<?php echo 'Insert image normal'; ?>" wifth="11" height="11" /></button>&nbsp;
+   		<button style="width:25px; height:25px;" title="<?php echo 'Insert image normal'; ?>" onClick="opener.insert('article_text','<img src=<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?> ></img>'); window.close()"><img src="/images/img_normal.gif" alt="<?php echo 'Insert image normal'; ?>" wifth="11" height="11" /></button>&nbsp;
 
-  		<button style="width:25px; height:25px;" title="<?php echo 'Insert image floating left'; ?>" onClick="opener.insert('article_text','<img tabindex=0 align=left src=<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?>></img>'); window.close()"><img src="/images/img_left.gif" alt="<?php echo 'Insert image floating left'; ?>" wifth="11" height="11" /></button>&nbsp;
+  		<button style="width:25px; height:25px;" title="<?php echo 'Insert image floating left'; ?>" onClick="opener.insert('article_text','<img tabindex=0 align=left src=<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?>></img>'); window.close()"><img src="/images/img_left.gif" alt="<?php echo 'Insert image floating left'; ?>" wifth="11" height="11" /></button>&nbsp;
 
-  		<button style="width:25px; height:25px;" title="<?php echo 'Insert image floating right'; ?>" onClick="opener.insert('article_text','<img align=right src=<?php echo 'http://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?>></img>'); window.close()"><img src="/images/img_right.gif" alt="<?php echo 'Insert image floating right'; ?>" wifth="11" height="11" /></button>
+  		<button style="width:25px; height:25px;" title="<?php echo 'Insert image floating right'; ?>" onClick="opener.insert('article_text','<img align=right src=<?php echo 'https://'.$host_str.'/uploads/articleDetailImages/' .$filename; ?>></img>'); window.close()"><img src="/images/img_right.gif" alt="<?php echo 'Insert image floating right'; ?>" wifth="11" height="11" /></button>
         </p>
 <?php */ endif; ?>
 </div>

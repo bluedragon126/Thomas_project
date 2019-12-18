@@ -37,11 +37,11 @@
         <?php $i = 0; foreach ($pager->getResults() as $analysis): ?>
          <?php $date = $analysis->updated_at!= NULL ? ($analysis->updated_at == '0000-00-00 00:00:00' ? $analysis->created_at : $analysis->updated_at) : $analysis->created_at; ?>
         <ul class="<?php echo $i%2 == 0 ? 'classnot' : 'white'; ?>">
-          <li class="dark_blue"><a class="cursor" href="<?php echo "http://".$host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $analysis->id ?>">
+          <li class="dark_blue"><a class="cursor" href="<?php echo "https://".$host_str ?>/sbt/sbtArticleDetails/article_id/<?php echo $analysis->id ?>">
           	<span class="analysistoplist_analysistitle"><?php echo $analysis->analysis_title ?></span>
           </a>
           </li>
-          <li class="pink width_125"><a class="cursor" href="<?php echo "http://".$host_str ?>/sbt/sbtMinProfile/id/<?php echo $analysis->author_id; ?>"><span class="analysistoplist_analysisauthor"><?php echo $profile->getFullUserName($analysis->author_id) ?></span></a></li>
+          <li class="pink width_125"><a class="cursor" href="<?php echo "https://".$host_str ?>/sbt/sbtMinProfile/id/<?php echo $analysis->author_id; ?>"><span class="analysistoplist_analysisauthor"><?php echo $profile->getFullUserName($analysis->author_id) ?></span></a></li>
           <li class="faint_blue width_145"><?php echo $date; ?></li>
           <li class="light_blue float_right width_44" ><span class="float_right"><?php echo $type == 'vote' ? $analysis->analysis_votes : $analysis->analysis_views ?></span></li>
         </ul>

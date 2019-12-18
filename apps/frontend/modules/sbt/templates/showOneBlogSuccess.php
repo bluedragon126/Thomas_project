@@ -11,10 +11,10 @@
 	<?php endif; ?>
 <?php endif; ?>
 
-<div class="blog_home_page"><a class="cursor" href="<?php echo 'http://'.$host_str.'/sbt/showListOfUserBlog/uid/'.$one_blog->author_id ?>" name="<?php echo $one_blog->author_id; ?>"><?php echo __('Bloggens Startsida')?></a></div>
+<div class="blog_home_page"><a class="cursor" href="<?php echo 'https://'.$host_str.'/sbt/showListOfUserBlog/uid/'.$one_blog->author_id ?>" name="<?php echo $one_blog->author_id; ?>"><?php echo __('Bloggens Startsida')?></a></div>
 
 <div class="blog_date viocolor">
-	<?php if($user_id == $one_blog->author_id || $isSuperAdmin==1): ?><span style="vertical-align: bottom;"><a href="<?php echo 'http://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$one_blog->id;?>" class="cursor"><img src="/images/edit.png" alt="down" /></a></span>&nbsp;&nbsp;<?php endif;?>
+	<?php if($user_id == $one_blog->author_id || $isSuperAdmin==1): ?><span style="vertical-align: bottom;"><a href="<?php echo 'https://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$one_blog->id;?>" class="cursor"><img src="/images/edit.png" alt="down" /></a></span>&nbsp;&nbsp;<?php endif;?>
 	<?php if($one_blog->updated_at==null) echo "<span>Created At : ".$one_blog->created_at."</span>"; else echo "<span>Updated At : ".$one_blog->updated_at."</span>" ?>
 </div>
 <div class="float_left widthall spacer">
@@ -172,7 +172,7 @@
 <div class="commentheading"><font size="+2" color="#c50063"><?php echo $pager->getNbResults(); ?></font> kommentarer, läs nedan eller <span class="main_link_color"><a id="comment_on" class="main_link_color" rel="nofollow" style="cursor:pointer" href="#comment_on_blog">lägg till en egen</a></span></div>
   <?php foreach($pager->getResults() as $data):?>
 	  <div class="comment_messagewrapper">
-		<div class="float_left" style="width:30px;"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
+		<div class="float_left" style="width:30px;"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
 		<?php if($user_photo_arr[$data->comment_by]!=''):?>
 			<img src="/uploads/userThumbnail/<?php echo str_replace('.','_small.',$user_photo_arr[$data->comment_by]); ?>" alt="user_photo"/>
 		<?php else:?>
@@ -180,7 +180,7 @@
 		<?php endif;?>
 		</a></div>
 		<div class="info">
-		  <div class="float_left widthall"><b class="borst_subtitle_4"><a class="borst_subtitle_4" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <b class="lightbluefont"><?php echo $data->created_at ?></b></div>
+		  <div class="float_left widthall"><b class="borst_subtitle_4"><a class="borst_subtitle_4" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <b class="lightbluefont"><?php echo $data->created_at ?></b></div>
 		  <?php echo $data->blog_comment ?></div>
 	  </div>
   <?php endforeach;?>

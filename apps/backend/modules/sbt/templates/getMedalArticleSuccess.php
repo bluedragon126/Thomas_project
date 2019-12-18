@@ -16,7 +16,7 @@
   <?php $i=1; foreach ($pager->getResults() as $article): ?>
   <tr id="medal_analysis_record_row" class="classnot">
     <td><?php echo $i++; ?></td>
-	<td><a href="<?php echo 'http://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$article->id; ?>" class="cursor"><?php echo $article->analysis_title ?></a></td>
+	<td><a href="<?php echo 'https://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$article->id; ?>" class="cursor"><?php echo $article->analysis_title ?></a></td>
     <td><?php echo $article->analysis_votes; ?></td>
     <td><?php echo $article->created_at ?></td>
   </tr>

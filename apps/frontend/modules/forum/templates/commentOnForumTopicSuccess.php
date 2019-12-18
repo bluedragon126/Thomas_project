@@ -66,7 +66,7 @@
         if (flag == 'forum_comment')
             var dest_path = window.location.hostname + '/uploads/forumCommentImage/' + filename;
 
-        var str = "<img src='http://" + dest_path + "' alt='img' />";
+        var str = "<img src='https://" + dest_path + "' alt='img' />";
         tinyMCE.activeEditor.setContent(text + str);
     }
 
@@ -220,7 +220,7 @@
                                     <div class="forum_comment_top_wraper float_left forum_comment_top_even">
                                         <div class="forum_comment_top_left float_left"><?php echo date('Y-m-d', strtotime($topic_data->datum)); ?></div>
                                         <div class="forum_comment_top_left"></div>
-                                        <div class="forum_comment_top_right float_right"><a href="<?php echo "http://" . $host_str ?>/borst/contactUs/postid/<?php echo $topic_data->id ?>" class="cursor">Rapportera</a></div>
+                                        <div class="forum_comment_top_right float_right"><a href="<?php echo "https://" . $host_str ?>/borst/contactUs/postid/<?php echo $topic_data->id ?>" class="cursor">Rapportera</a></div>
                                         <div class="forum_comment_top_right float_right pad_rgt_13 cursor" onclick="javascript:getFormForreplay(<?php echo $topic_data->id ?>, '<?php echo $new_profile->getFullUserName($topic_data->author_id) ?>');">Citera</div>
                                     </div>
                                     <div class="blank_24h float_left widthall">&nbsp;</div>
@@ -228,12 +228,12 @@
                                     <div class="comment_content_wrapper float_left widthall">
                                         <div class="width_120 float_left comment_content_img_wrapper">
                                             <?php if ($user_arr[$topic_data->skapare] != ''): ?>
-                                                <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$topic_data->skapare]); ?>" alt="user_photo"/></a>
+                                                <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$topic_data->skapare]); ?>" alt="user_photo"/></a>
                                             <?php else: ?>
-                                                <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><img src="/images/new_home/blog_user_img.png" alt="photo" width="110"/></a>
+                                                <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><img src="/images/new_home/blog_user_img.png" alt="photo" width="110"/></a>
                                             <?php endif; ?>
                                             <div class="forum_comment_user_name widthall float_left">
-                                                <?php if ($topic_data->author_id != 0) : ?><a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($topic_data->author_id)); ?></a><?php
+                                                <?php if ($topic_data->author_id != 0) : ?><a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $topic_data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($topic_data->author_id)); ?></a><?php
                                         else: echo $topic_data->skapare;
                                         endif;
                                                 ?>
@@ -301,19 +301,19 @@
                                     ?>">
                                             <div class="forum_comment_top_left float_left"><?php echo date('Y-m-d', strtotime($data->datum)); ?></div>
                                             <div class="forum_comment_top_left"></div>
-                                            <div class="forum_comment_top_right float_right"><a href="<?php echo "http://" . $host_str ?>/borst/contactUs/postid/<?php echo $data->id ?>" class="cursor">Rapportera</a></div>
+                                            <div class="forum_comment_top_right float_right"><a href="<?php echo "https://" . $host_str ?>/borst/contactUs/postid/<?php echo $data->id ?>" class="cursor">Rapportera</a></div>
                                             <div class="forum_comment_top_right float_right pad_rgt_13 cursor" onclick="javascript:getFormForreplay(<?php echo $data->id ?>, '<?php echo $new_profile->getFullUserName($data->author_id) ?>');">Citera</div>
                                         </div>
                                         <div class="blank_24h float_left widthall">&nbsp;</div>
                                         <div class="comment_content_wrapper float_left widthall">
                                             <div class="width_120 float_left comment_content_img_wrapper">
                                                 <?php if ($user_arr[$data->skapare] != ''): ?>
-                                                    <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$data->skapare]); ?>" alt="user_photo"/></a>
+                                                    <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$data->skapare]); ?>" alt="user_photo"/></a>
                                                 <?php else: ?>
-                                                    <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/images/new_home/blog_user_img.png" alt="photo" width="110"/></a>
+                                                    <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/images/new_home/blog_user_img.png" alt="photo" width="110"/></a>
                                                 <?php endif; ?>
                                                 <div class="forum_comment_user_name widthall float_left">
-                                                    <?php if ($data->author_id != 0) : ?><a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($data->author_id)); ?></a><?php
+                                                    <?php if ($data->author_id != 0) : ?><a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($data->author_id)); ?></a><?php
                                             else: echo $data->skapare;
                                             endif;
                                                     ?>
@@ -443,7 +443,7 @@
                                     </div>
                                 <?php else: ?>
                                     <div class="float_left widthall mtop_10 forum_login_reminder">
-                                        <a href="<?php echo "http://" . $host_str ?>/user/loginWindow"><img height="50" class="login_sugg" src="/images/new_home/login_sugg.png"/>
+                                        <a href="<?php echo "https://" . $host_str ?>/user/loginWindow"><img height="50" class="login_sugg" src="/images/new_home/login_sugg.png"/>
                                             <br><?php echo __('Logga in för att svara på detta foruminlägg!') ?></a>
                                         <div class="blank_50h widthall">&nbsp;</div>
                                     </div>

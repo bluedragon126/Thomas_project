@@ -30,11 +30,11 @@
                   <div class="whp_heading">Henry Boy abonnemang</div>
                   <i>Henry Boy Trading</i> är en teknisk sättupp med fasta regler för hur man skall agera vid varje given situation. <i>Henry Boy Trading</i> levereras via  mejl ca en gång per vecka. <br />
 <br />
-<strong>Sedan starten 2010</strong> har signalerna avkastat osannolika 5307%. Läs mer om <i>Henry Boy Trading</i> och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
+<strong>Sedan starten 2010</strong> har signalerna avkastat osannolika 5307%. Läs mer om <i>Henry Boy Trading</i> och abonnera <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/244">här!</a>
                  
                   
                   <div class="whp_heading">Henry Boy Automatic</div>
-                    Om man inte vill lägga order själv, går det bra att teckna sig för <i>Henry Boy Automatic.</i> Det fungerar så att du öppnar konto med vår sponsor <i>AvaTrade</i> och knyter detta konto till vårt <i>Henry Boy-program</i> för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
+                    Om man inte vill lägga order själv, går det bra att teckna sig för <i>Henry Boy Automatic.</i> Det fungerar så att du öppnar konto med vår sponsor <i>AvaTrade</i> och knyter detta konto till vårt <i>Henry Boy-program</i> för automatisk orderläggning. <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
            
         

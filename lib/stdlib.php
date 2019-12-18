@@ -12,11 +12,11 @@ class stdlib
 		$string = preg_replace("#\[b\](.+?)\[/b\]#is", "<b>\\1</b>", $string);
 		$string = preg_replace("#\[i\](.+?)\[/i\]#is", "<i>\\1</i>", $string);
 		$string = preg_replace("#\[u\](.+?)\[/u\]#is", "<u>\\1</u>", $string);
-		$string = preg_replace("#\[link\]www\.(.+?)\[/link\]#is", "<a href=\"http://www.\\1\">www.\\1</a>", $string);
+		$string = preg_replace("#\[link\]www\.(.+?)\[/link\]#is", "<a href=\"https://www.\\1\">www.\\1</a>", $string);
 		$string = preg_replace_callback("#\[link\](.+?)\[/link\]#is", "shorten_link", $string);
 		//$string = preg_replace("#\[link=(.+?)\](.+?)\[/link\]#is", "<a href=\"\\1\" name=\"\\2\">\\2</a>", $string);
 		$string = preg_replace("#\[link=(.+?)\](.+?)\[/link\]#is", "<a href=\"\\1\">\\2</a>", $string);
-		$string = preg_replace("#\[url\]www\.(.+?)\[/url\]#is", "<a href=\"http://www.\\1\">www.\\1</a>", $string);
+		$string = preg_replace("#\[url\]www\.(.+?)\[/url\]#is", "<a href=\"https://www.\\1\">www.\\1</a>", $string);
 		$string = preg_replace_callback("#\[url\](.+?)\[/url\]#is", "shorten_link", $string);
 		$string = preg_replace("#\[url=(.+?)\](.+?)\[/url\]#is", "<a href=\"\\1\">\\2</a>", $string);
 		$string = preg_replace_callback("#\[code\](.+?)\[/code\]#is", "parse_code", $string);
@@ -44,7 +44,7 @@ class stdlib
 	{
 		$string = ' ' . $string;
 		$string = preg_replace_callback("#(^|[\n ])([\w]+?://.*?[^ \"\n\r\t<]*)#is", "shorten_link", $string);
-		$string = preg_replace("#(^|[\n ])((www|ftp)\.[\w\-]+\.[\w\-.\~]+(?:/[^ \"\t\n\r<]*)?)#is", "\\1<a href=\"http://\\2\">\\2</a>", $string);
+		$string = preg_replace("#(^|[\n ])((www|ftp)\.[\w\-]+\.[\w\-.\~]+(?:/[^ \"\t\n\r<]*)?)#is", "\\1<a href=\"https://\\2\">\\2</a>", $string);
 		$string = preg_replace("#(^|[\n ])([a-z0-9&\-_.]+?)@([\w\-]+\.([\w\-\.]+\.)*[\w]+)#i", "\\1<a href=\"mailto:\\2@\\3\">\\2@\\3</a>", $string);
 		$string = substr($string, 1);
 

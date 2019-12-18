@@ -8,8 +8,8 @@ $rss = new UniversalFeedCreator();
 $rss->useCached("feed.xml", 600);
 $rss->title = "Börstjänaren RSS-feed";
 $rss->description = "";
-$rss->link = "http://" . $_SERVER['HTTP_HOST'];
-$rss->syndicationURL = "http://" . $_SERVER['HTTP_HOST'] . "/rss/rss.php";
+$rss->link = "https://" . $_SERVER['HTTP_HOST'];
+$rss->syndicationURL = "https://" . $_SERVER['HTTP_HOST'] . "/rss/rss.php";
 
 
 
@@ -31,11 +31,11 @@ foreach ($articles as $data) {
     $item = new FeedItem();
     $item->title = $data->getTitle();
 
-    $url = "http://" . $_SERVER['HTTP_HOST'] . "/borst/borstArticleDetails/article_id/" . $data->getArticleId();
+    $url = "https://" . $_SERVER['HTTP_HOST'] . "/borst/borstArticleDetails/article_id/" . $data->getArticleId();
 
     $item->link = $url;
 
-    $item->source = "http://" . $_SERVER['HTTP_HOST'];
+    $item->source = "https://" . $_SERVER['HTTP_HOST'];
     $rss->addItem($item);
 }
 

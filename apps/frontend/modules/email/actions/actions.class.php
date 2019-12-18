@@ -96,7 +96,7 @@ class emailActions extends sfActions
 	if($this->getUser()->getAttribute('send_activation_mail','','userProperty') == 1)
 	{
 		$id = $this->getUser()->getAttribute('user_id','', 'userProperty');
-		$url = 'http://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
+		$url = 'https://'.$this->host_str.'/sbt/sbtMinProfile/id/'.$id;
 		$this->redirect($url);
 	}
 	else
@@ -117,7 +117,7 @@ class emailActions extends sfActions
 		$user_profile_data = $user_profile->fetch_user_from_email($this->getUser()->getAttribute('email_for_changed_password'));
 		$one_user = $user_profile->fetchOneUser($user_profile_data->user_id);
 		
-		$lank = "http://".$host_str."/user/changePasswordForm";
+		$lank = "https://".$host_str."/user/changePasswordForm";
 		$support = "info@borstjanaren.se";
 		
 		$mailBody = $this->getPartial('reset_password',array('user'=>$user_profile_data,'host_str'=>$host_str,'username'=>$one_user->username,'lank'=>$lank,'support'=>$support,'changed_password'=>$this->getUser()->getAttribute('changed_password')));

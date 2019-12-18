@@ -44,7 +44,7 @@
 
 <?php foreach ($pager->getResults() as $data): ?>
     <div class="comment_messagewrapper">
-        <div class="float_left comment_user_img"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
+        <div class="float_left comment_user_img"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
                 <?php if ($user_photo_arr[$data->comment_by] != ''): ?>
                     <img src="/uploads/userThumbnail/<?php echo str_replace('.', '_small.', $user_photo_arr[$data->comment_by]); ?>" alt="user_photo" width="72" height="72"/>
                 <?php else: ?>
@@ -52,7 +52,7 @@
                 <?php endif; ?>
             </a></div>
         <div class="info">
-            <div class="float_left widthall"><b class="borst_subtitle_4 blog_username"><a class="borst_subtitle_4" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <span class="float_right blog_main_date"><?php echo substr($data->created_at, 0, 10); ?></span></div>
+            <div class="float_left widthall"><b class="borst_subtitle_4 blog_username"><a class="borst_subtitle_4" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <span class="float_right blog_main_date"><?php echo substr($data->created_at, 0, 10); ?></span></div>
             <span class="blog_comments"><?php echo $data->blog_comment ?></span>
         </div>
     </div>

@@ -78,7 +78,7 @@
         }
         ?> >                    
             <td class="orgfont width_55 pad_lft_5">
-                <a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
+                <a class="bluegrayfont" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
                     <?php if ($user_arr[$user->user_id] != ''): ?>
                         <img width="36" height = "36" src="/uploads/userThumbnail/<?php echo str_replace('.', '_mid.', $user_arr[$user->user_id]); ?>" alt="user_photo"/>
                     <?php else: ?>
@@ -91,7 +91,7 @@
                 </a>
             </td>
             <td class="width_150 ">
-                <a class="bolg_table_name" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
+                <a class="bolg_table_name" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
                     <?php
                     echo $user->firstname;
                     if (trim($user->lastname) != '') {

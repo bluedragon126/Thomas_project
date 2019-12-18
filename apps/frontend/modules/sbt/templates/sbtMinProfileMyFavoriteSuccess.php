@@ -135,7 +135,7 @@
                     ?>	
                     <tr class="classnot">
                         <td class="prof_table_no" width="35" align="center"><?php echo $i; ?></td>
-                        <td class="prof_table_sub" width="370" align="left"><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
+                        <td class="prof_table_sub" width="370" align="left"><a class="main_link_color" href="<?php echo 'https://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
                         <td width="150" align="left">
                             <span class="float_left radio-mrg" id="article_radio">
                                 <input type="radio" class="radio" id="<?php echo $data->id; ?>" name="fav_rec[<?php echo $data->id; ?>]" value="1" <?php if ($data->f_notification == 1) echo "checked"; ?> /><span class="prof_email_y">Ja</span>

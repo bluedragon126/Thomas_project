@@ -55,7 +55,7 @@
 
   </tr>
   <tr>
-    <td><?php echo 'Ladda hem PDF-dokumentet: Fullmakt för Autogiro, på http://'.$url.'/autogiro/fullmakt.pdf.' ?></td>
+    <td><?php echo 'Ladda hem PDF-dokumentet: Fullmakt för Autogiro, på https://'.$url.'/autogiro/fullmakt.pdf.' ?></td>
   </tr>
   <tr>
     <td><?php echo 'Skriv under och posta till nedanstående adress.' ?></td>
@@ -125,7 +125,7 @@
   </tr>
    <?php if($user->sbt_activation_code > 0) { ?>
     <tr><td><?php echo 'Klicka på länken nedan för att aktivera ditt konto!'?></td></tr>
-  <tr><td><a href="<?php echo 'http://'.$url.'/sbt_user/getActivated/chk_code/'.$user->sbt_activation_code; ?>">Activate Now..!</a></td></tr>
+  <tr><td><a href="<?php echo 'https://'.$url.'/sbt_user/getActivated/chk_code/'.$user->sbt_activation_code; ?>">Activate Now..!</a></td></tr>
   <tr>
     <td>&nbsp;&nbsp;</td>
   </tr>

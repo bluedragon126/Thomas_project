@@ -26,12 +26,12 @@ I denna kurs får du lära dig om de bakomliggande fundamentala faktorer som sty
 
                 <div class="whp_heading">Sponsring</div>
                     
-                      Det finns möjlighet att bli sponsrad och få hela kursavgiften tillbaka genom att bli kund hos någon av våra sponsorer <a href="http://www.avatrade.se/?tag=8947">AvaTrade</a> och <a href="http://www.cmcmarkets.se/sv?iaid=446240">CMC Markets.</a> Som sponsrad kund kan du även delta kostnadsfritt i vår tradingverkstad <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14275"> VIP-klubben.</a><br />
+                      Det finns möjlighet att bli sponsrad och få hela kursavgiften tillbaka genom att bli kund hos någon av våra sponsorer <a href="https://www.avatrade.se/?tag=8947">AvaTrade</a> och <a href="https://www.cmcmarkets.se/sv?iaid=446240">CMC Markets.</a> Som sponsrad kund kan du även delta kostnadsfritt i vår tradingverkstad <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14275"> VIP-klubben.</a><br />
                       <br />
              
                <strong>För sponsring – gör så här:</strong> 
                <br />
-               Köp kursen i vår <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">webbshop.</a> Ansök om konto hos någon av våra sponsorer via en länk på Börstjänaren. Sätt in minst 20.000 kr (eller motsvarande belopp i annan valuta) och gör fem affärer inom en månad efter kursens slut och du får hela kursavgiften tillbaka.
+               Köp kursen i vår <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">webbshop.</a> Ansök om konto hos någon av våra sponsorer via en länk på Börstjänaren. Sätt in minst 20.000 kr (eller motsvarande belopp i annan valuta) och gör fem affärer inom en månad efter kursens slut och du får hela kursavgiften tillbaka.
                
                <br />
                 <div class="whp_heading">Kursinfo och anmälan</div>
@@ -40,13 +40,13 @@ I denna kurs får du lära dig om de bakomliggande fundamentala faktorer som sty
                         <strong>Antal lektioner:</strong> 7 – kursen pågår 7 nov-19 dec<br />
                         <strong>Kursdokumentation:</strong> pdf om ca 85 sidor<br />
                         <strong>Kursavgift:</strong> 5.000 kr inkl moms (avgiften kan återfås i sin helhet via sponsring)<br />
-                        <strong>Anmälan:</strong> Du anmäler dig genom att <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">köpa kursen i vår webbshop</a><br />
+                        <strong>Anmälan:</strong> Du anmäler dig genom att <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">köpa kursen i vår webbshop</a><br />
                         <strong>Sponsorer:</strong> AvaTrade och CMC Markets<br />
                         <br />
-                       Ja tack, ta mig till börsen och <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">gör mig till Råvarukung!</a>
+                       Ja tack, ta mig till börsen och <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">gör mig till Råvarukung!</a>
                       <br /> 
-                      Mer info om kursen, kursplan m.m. se <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/15349"> här!</a><br /><br />
-                      <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">Välkommen  att anmäla dig till Råvarukung!</a>
+                      Mer info om kursen, kursplan m.m. se <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/15349"> här!</a><br /><br />
+                      <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/16">Välkommen  att anmäla dig till Råvarukung!</a>
                       <br /><br>
                         <br>
                       </p>

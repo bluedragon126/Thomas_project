@@ -32,9 +32,9 @@
  * <b>Examples:</b>
  * <code>
  *  echo auto_discovery_link_tag('rss', 'module/feed');
- *    => <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.curenthost.com/module/feed" />
+ *    => <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.curenthost.com/module/feed" />
  *  echo auto_discovery_link_tag('rss', 'module/feed', array('title' => 'My RSS'));
- *    => <link rel="alternate" type="application/rss+xml" title="My RSS" href="http://www.curenthost.com/module/feed" />
+ *    => <link rel="alternate" type="application/rss+xml" title="My RSS" href="https://www.curenthost.com/module/feed" />
  * </code>
  *
  * @param string $type        feed type ('rss', 'atom')

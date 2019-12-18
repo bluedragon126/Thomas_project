@@ -68,7 +68,7 @@
         <?php //include_partial('global/ad_message') ?>
         <div style="margin-bottom: 20px;"><img src="/images/new_home/blog_logo.png" width="190"></div>
         <div class="blog_mrg_welc"><span class="blog_welc_welc">Välkommen att skapa!</span></div>
-        <div class="blog_mrg_20"><span class="blog_initial_span"><img src="/images/new_home/initial.png" width="64"/></span><span class="blog_welc_body">är kan du välja att skriva ett blogginlägg, som publiceras direkt i din egen blogg, eller en artikel som kan publiceras på <a href="<?php echo "http://" . $host_str . '/sbt/sbtHome' ?>"> BT Insider</a> – vår experimentsida med användargenererat material.</span></div>
+        <div class="blog_mrg_20"><span class="blog_initial_span"><img src="/images/new_home/initial.png" width="64"/></span><span class="blog_welc_body">är kan du välja att skriva ett blogginlägg, som publiceras direkt i din egen blogg, eller en artikel som kan publiceras på <a href="<?php echo "https://" . $host_str . '/sbt/sbtHome' ?>"> BT Insider</a> – vår experimentsida med användargenererat material.</span></div>
         <div class="blog_mrg_20"><span class="blog_welc_body">Du arbetar med din artikel internt och väljer själv när du vill publicera den på din profilsida. Du kan sedan välja att skicka in din artikel och ansöka om publicering på BT Insider-sidan.</span></div>
         <div class="blog_mrg_20"><span class="blog_welc_body">Efter ett antal godkända artiklar kan du ansöka om att bli publicist på Börstjänaren, sk "murvel", med rätt att själv fatta beslut om publicering av dina artiklar. </span></div> 
         <div class="home_artline_blog">&nbsp;</div>
@@ -107,7 +107,7 @@
                     </div>
                 <?php else: ?>
                     <div class="shopinfo" style="width:100%; margin-top:30px;"><span class="main_link_color"><?php echo __('Du behöver komplettera ditt användarkonto för att blogga eller skriva artiklar.') ?></span></div>
-                    <div><a href="<?php echo "http://" . $host_str . "/sbt/editProfile/edit_user_id/" . $userId; ?>">Komplettera ditt BT-konto nu?</a></div>
+                    <div><a href="<?php echo "https://" . $host_str . "/sbt/editProfile/edit_user_id/" . $userId; ?>">Komplettera ditt BT-konto nu?</a></div>
                 <?php endif; ?>
                 <div id="create_blog" class="form_out"></div>
             </div>

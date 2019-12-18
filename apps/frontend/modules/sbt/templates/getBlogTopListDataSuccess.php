@@ -35,8 +35,8 @@
        <div id="blogtoplist_topic_list">
 		<?php $i = 0; foreach ($pager->getResults() as $blog): ?>
          <ul class="<?php echo $i%2 == 0 ? 'classnot' : 'white'; ?>">
-          <li class="dark_blue "><a class="cursor" href="<?php echo "http://".$host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $blog->id ?>"><span class="blogtoplist_blogtitle"><?php echo html_entity_decode($blog->ublog_title) ?></span></a></li>
-          <li class="pink width_125"><a class="cursor" href="<?php echo "http://".$host_str ?>/sbt/sbtMinProfile/id/<?php echo $blog->author_id; ?>"><span class="blogtoplist_blogauthor"><?php echo $profile->getFullUserName($blog->author_id) ?></span></a></li>
+          <li class="dark_blue "><a class="cursor" href="<?php echo "https://".$host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $blog->id ?>"><span class="blogtoplist_blogtitle"><?php echo html_entity_decode($blog->ublog_title) ?></span></a></li>
+          <li class="pink width_125"><a class="cursor" href="<?php echo "https://".$host_str ?>/sbt/sbtMinProfile/id/<?php echo $blog->author_id; ?>"><span class="blogtoplist_blogauthor"><?php echo $profile->getFullUserName($blog->author_id) ?></span></a></li>
           <li class="faint_blue width_150"><?php echo $blog->updated_at ? $blog->updated_at : $blog->created_at; ?></li>
           <li class="light_blue  float_right <?php echo $type == 'vote' ? 'width_38' : 'width_38'?>" ><span class="float_right"><?php echo $type == 'vote' ? $blog->ublog_votes : $blog->ublog_views ?></span></li>
         </ul>

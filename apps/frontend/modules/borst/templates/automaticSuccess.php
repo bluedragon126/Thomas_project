@@ -27,12 +27,12 @@
                 <div class="whp_preamble2_it">När du ansluter ditt konto</strong> till automatisk handel behöver du inte ha något abonnemang på affärsförslagen.</div> 
                 <div class="float_left widthall"></div>
                   <div class="whp_heading">Henry Boy Automatic</div>
-                  <i>Henry Boy Automatic</i> är en automatisk applikation av vår vinstrika handelsmodell <i>Henry Boy.</i> Det fungerar så att du öppnar konto med vår sponsor <i>AvaTrade</i> och knyter detta konto till vårt <i>Henry Boy-program</i> för automatisk orderläggning. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!
+                  <i>Henry Boy Automatic</i> är en automatisk applikation av vår vinstrika handelsmodell <i>Henry Boy.</i> Det fungerar så att du öppnar konto med vår sponsor <i>AvaTrade</i> och knyter detta konto till vårt <i>Henry Boy-program</i> för automatisk orderläggning. <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!
                   <div class="whp_heading">BT-Multi Automatic</div>
                     Om du vill förvalta dina pengar via en aktiv aktiehandel man inte vill, kan eller hinner lägga order själv, kan du ansluta ditt konto till <i>BT Multi Automatic.</i> 
 <br />
 <br />
-<strong>Öppna då ett konto</strong> med vår sponsor <i>AvaTrade</i> och knyt  det till vårt  program <i>BT Multi</i> för automatisk orderläggning med aktiv handel i aktiemarknaden. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!<br>
+<strong>Öppna då ett konto</strong> med vår sponsor <i>AvaTrade</i> och knyt  det till vårt  program <i>BT Multi</i> för automatisk orderläggning med aktiv handel i aktiemarknaden. <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss </a>för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

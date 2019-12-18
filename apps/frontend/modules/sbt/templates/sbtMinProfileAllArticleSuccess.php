@@ -16,7 +16,7 @@
       <tr class="classnot">
         <td class="width_37"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
         <td class="width_83"><?php echo substr($data->article_date,2,9) ?></td>
-        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'http://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id;?>"><span class="profile_articlelist_title"><?php echo $data->title ?></span></a></td>
+        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'https://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id;?>"><span class="profile_articlelist_title"><?php echo $data->title ?></span></a></td>
         <td class="lightgreenfont width_92"><?php echo $cat_arr[$data->category_id]; ?></td>
         <td class="lightbluefont width_84"><?php echo $type_arr[$data->type_id]; ?></td>
         <td class="darkbluefont width_84"><?php echo $object_arr[$data->object_id]; ?></td>
@@ -41,7 +41,7 @@
 			  <tr class="classnot">
 				<td class="width_37"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
 				<td class="width_83"><?php echo substr($data->created_at,2,9) ?></td>
-				<td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'http://'.$host_str.'/sbt/sbtArticleDetails/article_id/'.$data->id;?>"><span class="profile_articlelist_title"><?php echo $data->analysis_title ?></span></a></td>
+				<td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'https://'.$host_str.'/sbt/sbtArticleDetails/article_id/'.$data->id;?>"><span class="profile_articlelist_title"><?php echo $data->analysis_title ?></span></a></td>
 				<td class="lightgreenfont width_92"><?php echo $cat_arr[$data->analysis_category_id]; ?></td>
 				<td class="lightbluefont width_84"><?php echo $type_arr[$data->analysis_type_id]; ?></td>
 				<td class="darkbluefont width_84">
@@ -49,13 +49,13 @@
 						<?php if($allow_edit == 1):?>
                         		<span class="float_left width_80p"><?php echo $object_arr[$data->analysis_object_id]; ?></span>
 								<span class="float_right width_20p">
-                                	<a href="<?php echo 'http://'.$host_str.'/sbt/editAnalysis/article_id/'.$data->id;?>"><img src="/images/edit.png" alt="down" /></a>
+                                	<a href="<?php echo 'https://'.$host_str.'/sbt/editAnalysis/article_id/'.$data->id;?>"><img src="/images/edit.png" alt="down" /></a>
                                 </span>
 						<?php else:?>
 							<?php if($data->published!=1 && $data->published!=8 && $show_top_links == 1):?>
 								<span class="float_left width_80p"><?php echo $object_arr[$data->analysis_object_id]; ?></span>
 								<span class="float_right width_20p">
-                                	<a href="<?php echo 'http://'.$host_str.'/sbt/editAnalysis/article_id/'.$data->id;?>"><img src="/images/edit.png" alt="down" /></a>
+                                	<a href="<?php echo 'https://'.$host_str.'/sbt/editAnalysis/article_id/'.$data->id;?>"><img src="/images/edit.png" alt="down" /></a>
                                 </span>
 							<?php else:?>
 								<span class="float_left width_99p"><?php echo $object_arr[$data->analysis_object_id]; ?></span>

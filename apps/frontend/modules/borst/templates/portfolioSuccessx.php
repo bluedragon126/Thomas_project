@@ -83,7 +83,7 @@
                     <br>
                     <br>
                     
-                    <strong>Läs mer om</strong> Henrik Hallenborg på vår amerikanska hemsida: <a href="http://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
+                    <strong>Läs mer om</strong> Henrik Hallenborg på vår amerikanska hemsida: <a href="https://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
                     
                     <br>
                     
@@ -168,7 +168,7 @@ Det är alltid en sannolikhetsbedömning. Har man rätt 70 till 80 procent av g�
                     
                     <br><br>
                     
-                    <strong>Läs mer om</strong> Thomas Sandström på vår amerikanska hemsida: <a href="http://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
+                    <strong>Läs mer om</strong> Thomas Sandström på vår amerikanska hemsida: <a href="https://hasafuma.com/hallenborg-sandstrom/">www.hasafuma.com</a>
                     
                     <br>
                     <br>

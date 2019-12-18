@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
 <title> B&ouml;rstj&auml;naren - Aktieanalys, tips och utbildning </title>
 
-<link href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/css/style.css" rel="stylesheet" type="text/css" media="all">
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <style type="text/css">
 <!--

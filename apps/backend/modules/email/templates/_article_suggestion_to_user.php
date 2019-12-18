@@ -12,7 +12,7 @@
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td><?php echo 'Du kan läsa och editera artikeln via följande länk:'?></td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
-	<tr><td><a href="http://<?php echo $host_str ?>/sbt/editAnalysis/article_id/<?php echo $analysis_data->id; ?>"><?php echo 'http://'.$host_str.'/sbt/editAnalysis/article_id/'.$analysis_data->id; ?></a></td></tr>
+	<tr><td><a href="https://<?php echo $host_str ?>/sbt/editAnalysis/article_id/<?php echo $analysis_data->id; ?>"><?php echo 'https://'.$host_str.'/sbt/editAnalysis/article_id/'.$analysis_data->id; ?></a></td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td><?php echo 'Med vänlig hälsning,' ?></td></tr>

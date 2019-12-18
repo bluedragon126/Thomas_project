@@ -6,7 +6,7 @@
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td><?php echo 'Klicka på länken nedan för att aktivera ditt konto!'?></td></tr>
-  <tr><td><a href="<?php echo 'http://'.$url.'/sbt_user/getActivated/chk_code/'.$user->sbt_activation_code; ?>">Aktivera nu!</a></td></tr>
+  <tr><td><a href="<?php echo 'https://'.$url.'/sbt_user/getActivated/chk_code/'.$user->sbt_activation_code; ?>">Aktivera nu!</a></td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td><?php echo 'Med vänlig hälsning'?></td></tr>

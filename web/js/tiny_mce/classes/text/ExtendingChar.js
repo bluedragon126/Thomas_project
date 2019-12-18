@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /**
@@ -17,7 +17,7 @@
  * var isExtending = ExtendingChar.isExtendingChar('a');
  */
 define("tinymce/text/ExtendingChar", [], function() {
-	// Generated from: http://www.unicode.org/Public/UNIDATA/DerivedCoreProperties.txt
+	// Generated from: https://www.unicode.org/Public/UNIDATA/DerivedCoreProperties.txt
 	// Only includes the characters in that fit into UCS-2 16 bit
 	var extendingChars = new RegExp(
 		"[\u0300-\u036F\u0483-\u0487\u0488-\u0489\u0591-\u05BD\u05BF\u05C1-\u05C2\u05C4-\u05C5\u05C7\u0610-\u061A" +

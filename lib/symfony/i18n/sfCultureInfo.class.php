@@ -10,7 +10,7 @@
  *
  * To contact the author write to {@link mailto:qiang.xue@gmail.com Qiang Xue}
  * The latest version of PRADO can be obtained from:
- * {@link http://prado.sourceforge.net/}
+ * {@link https://prado.sourceforge.net/}
  *
  * @author     Wei Zhuo <weizhuo[at]gmail[dot]com>
  * @version    $Id: sfCultureInfo.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
@@ -36,11 +36,11 @@
  * The culture names follow the format "<languagecode>_<country/regioncode>",
  * where <languagecode> is a lowercase two-letter code derived from ISO 639
  * codes. You can find a full list of the ISO-639 codes at
- * http://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
+ * https://www.ics.uci.edu/pub/ietf/http/related/iso639.txt
  *
  * The <country/regioncode2> is an uppercase two-letter code derived from
  * ISO 3166. A copy of ISO-3166 can be found at
- * http://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
+ * https://www.chemie.fu-berlin.de/diverse/doc/ISO_3166.html
  *
  * For example, Australian English is "en_AU".
  *

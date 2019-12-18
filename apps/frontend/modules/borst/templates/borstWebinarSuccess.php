@@ -29,7 +29,7 @@
                                        
                                        <img style="margin-bottom: 15px;" src="/images/new_home/webinarium_title.png" width="350"/>
                                        
-                                       <a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 10px 0px 42px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></a>
+                                       <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 10px 0px 42px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></a>
                 
                 </div>
                 
@@ -82,7 +82,7 @@ Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 </ul>
 </div>
 
-  <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: 10px 0px 0px 75px;" src="/images/new_home/webinarium_wed.png" alt="http://www.thetradingaspirants/images/new_home/webinarium_wed.png" width="325px" /></a></p>
+  <p><a href="https://www2.gotomeeting.com/register/117986234" target="_blank" rel="noopener"> <img class="decoded" style="margin: 10px 0px 0px 75px;" src="/images/new_home/webinarium_wed.png" alt="https://www.thetradingaspirants/images/new_home/webinarium_wed.png" width="325px" /></a></p>
 
 
 
@@ -97,7 +97,7 @@ Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
 <br /><br /><br />
 
                 
-<div class="whp_preamble"><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>">Ta del av tidigare webinarier här!</a></div>
+<div class="whp_preamble"><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>">Ta del av tidigare webinarier här!</a></div>
 
                     
                   

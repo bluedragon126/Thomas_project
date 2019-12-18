@@ -23,7 +23,7 @@
     <?php $i=($page=='')? 1:(($page*25+1)-25); foreach ($pager->getResults() as $enq): ?>
     <tr class="classnot">
       <td><input name="shop_art_ids[]" type="hidden" value="<?php echo $enq->id; ?>"><?php echo $i; ?></td>
-	  <td><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/createShopArticle/edit_shop_article_id/'.$enq->id ?>"><?php echo $enq->btshop_article_title; ?></a></td>
+	  <td><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/createShopArticle/edit_shop_article_id/'.$enq->id ?>"><?php echo $enq->btshop_article_title; ?></a></td>
       <td><select class="float_left" name="shop_art_status[]">
 			<option value="0" <?php if($enq->published == 0) echo 'selected="selected"' ?>><?php echo __('Intern') ?></option>
             <option value="1" <?php if($enq->published == 1) echo 'selected="selected"' ?>><?php echo __('Publik') ?></option>

@@ -10,7 +10,7 @@
  *
  * To contact the author write to {@link mailto:qiang.xue@gmail.com Qiang Xue}
  * The latest version of PRADO can be obtained from:
- * {@link http://prado.sourceforge.net/}
+ * {@link https://prado.sourceforge.net/}
  *
  * @author     Wei Zhuo <weizhuo[at]gmail[dot]com>
  * @version    $Id: sfNumberFormat.class.php 28723 2010-03-23 16:37:43Z FabianLange $
@@ -122,7 +122,7 @@ class sfNumberFormat
     }
 
     // avoid conversion with exponents
-    // see http://trac.symfony-project.org/ticket/5715
+    // see https://trac.symfony-project.org/ticket/5715
     $precision = ini_set('precision', 14);
     $string = $this->fixFloat($number);
     ini_set('precision', $precision);

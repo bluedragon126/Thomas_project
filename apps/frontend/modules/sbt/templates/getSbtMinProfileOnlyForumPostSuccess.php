@@ -69,7 +69,7 @@
                     <span class="blog_prof_table_date"><?php echo substr($data->andratdatum, 2, 9) ?></span>
                 </li>
                 <li class=" width_337px padding_right_10px">
-                    <a class="blog_table_title cursor" href="<?php echo "http://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
+                    <a class="blog_table_title cursor" href="<?php echo "https://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
                 </li>
                 <li  class="width_80 padding_right_13px" >
                     <span class="blog_table_topic"><?php echo $data->getCategoryName($data->btforum_category_id); ?></span>

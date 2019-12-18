@@ -78,7 +78,7 @@
                 foreach ($pager->getResults() as $forum): //echo "<pre>"; print_r($forum->toarray());?>
                         <tr <?php if ($i == 1) {        echo "class='padding_top_table'";    } ?> >
                             <td class="orgfont askBT_table_title_w pad_lft_5">
-                                <a class="cursor" href="<?php echo "http://" . $host_str . "/borst/enquiryDetails/enq_id/" . $forum->id ?>"><span class="width322 askBT_table_title"><?php echo $forum->enq_subject; ?></span></a>
+                                <a class="cursor" href="<?php echo "https://" . $host_str . "/borst/enquiryDetails/enq_id/" . $forum->id ?>"><span class="width322 askBT_table_title"><?php echo $forum->enq_subject; ?></span></a>
                                 </br>
                                 <a class="askBT_table_user askBT_table_title_w" href=""><?php if($forum->faster_ans_flag == 2){ echo $forum->firstname;} else if($forum->faster_ans_flag == 3){ echo $forum->user_signature;} else { echo $forum->firstname.' '.$forum->lastname;} ?></a>
                             </td>                      

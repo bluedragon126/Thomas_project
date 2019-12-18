@@ -59,11 +59,11 @@
                 <div class="info"> 
                     <div class="info"> <a class="empty_cart_article wh_button float_right"><span>Töm varukorg</span></a> </div>
                     <div class="blank_10h widthall">&nbsp;</div>
-                    <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
+                    <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button_r"><span>BETALA</span></a> </div>
                 <div class="blank_50h widthall">&nbsp;</div>
             <?php else: ?>
                 <div class="info"> <div class="blank_12h widthall">&nbsp;</div>
-                    <div class="info"> <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
+                    <div class="info"> <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopArticlePayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
                     <div class="blank_150h widthall">&nbsp;</div>
             <?php endif; ?>
                 </div>
@@ -79,7 +79,7 @@
                     <?php foreach ($plus_article_product_detail as $plus_article_data):
                         if($plus_article_data->article_id != $pid){ ?>
                         <li>
-                            <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><?php echo $plus_article_data->title; ?></a></div>
+                            <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><?php echo $plus_article_data->title; ?></a></div>
                             <div class="shop_r_other_img_main">
                                 <div class="shop_r_other_img_sub">
                                     <?php if ($plus_article_data->image): ?>
@@ -89,14 +89,14 @@
                                     <?php endif; ?>
                                 </div>
                                 <div class="shop_r_other_price_main">
-                                    <font class="shop_home_price"> <b><?php echo $plus_article_data->price ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><span class="shop_heading">KÖP</span></a>
+                                    <font class="shop_home_price"> <b><?php echo $plus_article_data->price ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><span class="shop_heading">KÖP</span></a>
                                 </div>
                             </div>
                             <div class="shop_r_other_subsection float_left">
                                 <?php echo substr(html_entity_decode($plus_article_data->image_text), 0, 100).' ...'; ?>
                             </div>
                             <!--<div class="float_left shop_r_other_bread">
-                                <?php //echo html_entity_decode($plus_article_data->text); ?> <span class="disp_inline"><a class="cursor" href="<?php //echo 'http://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><div class="shop_r_other_rm">Läs mer...&nbsp;</div></a></span>
+                                <?php //echo html_entity_decode($plus_article_data->text); ?> <span class="disp_inline"><a class="cursor" href="<?php //echo 'https://' . $host_str . '/borst_shop/shopArticleDetail/product_id/' . $plus_article_data->article_id; ?>"><div class="shop_r_other_rm">Läs mer...&nbsp;</div></a></span>
 
                             </div>-->
                         </li>

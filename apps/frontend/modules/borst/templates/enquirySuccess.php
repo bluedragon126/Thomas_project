@@ -45,7 +45,7 @@
         if(flag == 'forum_topic') var dest_path = window.location.hostname+'/uploads/forumDetailImage/'+filename;
         if(flag == 'forum_comment')	var dest_path = window.location.hostname+'/uploads/forumCommentImage/'+filename;
 
-        var str = "<img src='http://"+dest_path+"' alt='img' />";
+        var str = "<img src='https://"+dest_path+"' alt='img' />";
         tinyMCE.activeEditor.setContent(text+str);
     }
 
@@ -196,7 +196,7 @@
                                 echo "class='padding_top_table'";
                             } ?> >
                                 <td class="orgfont askBT_table_title_w pad_lft_5">
-                                    <a class="cursor" href="<?php echo "http://" . $host_str . "/borst/enquiryDetails/enq_id/" . $forum->id ?>"><span class="width322 askBT_table_title"><?php echo $forum->enq_subject; ?></span></a>
+                                    <a class="cursor" href="<?php echo "https://" . $host_str . "/borst/enquiryDetails/enq_id/" . $forum->id ?>"><span class="width322 askBT_table_title"><?php echo $forum->enq_subject; ?></span></a>
                                     </br>
                                     <a class="askBT_table_user askBT_table_title_w" href=""><?php if ($forum->faster_ans_flag == 2) {
                                 echo $forum->firstname;

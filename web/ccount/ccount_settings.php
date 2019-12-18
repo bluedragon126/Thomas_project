@@ -6,7 +6,7 @@ if (!defined('IN_SCRIPT')) {die('Invalid attempt!');}
 $ccount_settings['admin_pass']='morning1';
 
 // URL of the click.php file
-$ccount_settings['click_url']='http://www.mangaritrading.com/ccount/click.php';
+$ccount_settings['click_url']='https://www.mangaritrading.com/ccount/click.php';
 
 // Number of hours a visitor is considered as "unique"
 $ccount_settings['unique_hours']=24;

@@ -20,10 +20,10 @@ echo('111'); exit;
   <tr class="classnot">
     <td><img src="/images/<?php echo $flagga?>" width="35" height="20">&nbsp;</td>
     <td><?php echo substr($article->created_at,0,10); ?></td>
-    <td class="sbt_article_title"><a id="sbt_article_title_<?php echo $article->id; ?>" class="topic_title" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><b><?php echo $article->analysis_title; ?></b></a></td>
-    <td><a class="sbt_article_a" href="<?php echo 'http://'.$host_str.'/borst/articleList/sbt_kat_id/'.$article->analysis_category_id; ?>"><?php echo $cat_arr[$article->analysis_category_id]; ?></a></td>
-    <td><a class="sbt_article_a" href="<?php echo 'http://'.$host_str.'/borst/articleList/sbt_type_id/'.$article->analysis_type_id; ?>"><?php echo $type_arr[$article->analysis_type_id]; ?></a></td>
-    <td><a class="sbt_article_a" href="<?php echo 'http://'.$host_str.'/borst/articleList/sbt_obj_id/'.$article->analysis_object_id; ?>"><?php echo $object_arr[$article->analysis_object_id]; ?></a></td>
+    <td class="sbt_article_title"><a id="sbt_article_title_<?php echo $article->id; ?>" class="topic_title" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><b><?php echo $article->analysis_title; ?></b></a></td>
+    <td><a class="sbt_article_a" href="<?php echo 'https://'.$host_str.'/borst/articleList/sbt_kat_id/'.$article->analysis_category_id; ?>"><?php echo $cat_arr[$article->analysis_category_id]; ?></a></td>
+    <td><a class="sbt_article_a" href="<?php echo 'https://'.$host_str.'/borst/articleList/sbt_type_id/'.$article->analysis_type_id; ?>"><?php echo $type_arr[$article->analysis_type_id]; ?></a></td>
+    <td><a class="sbt_article_a" href="<?php echo 'https://'.$host_str.'/borst/articleList/sbt_obj_id/'.$article->analysis_object_id; ?>"><?php echo $object_arr[$article->analysis_object_id]; ?></a></td>
   </tr>
   <?php endforeach; ?>
   <?php else: ?>
@@ -39,10 +39,10 @@ echo('111'); exit;
   <tr class="classnot">
     <td><img src="/images/<?php echo $flagga?>" width="35" height="20">&nbsp;</td>
     <td><?php echo substr($article->article_date,0,10); ?></td>
-    <td><a <?php echo $style ?> href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><b><?php echo $article->title ? $article->title : '&nbsp;'; ?></b></a></td>
-    <td><a class="sbt_article_a" href="<?php echo 'http://'.$host_str.'/borst/articleList/kat_id/'.$article->category_id; ?>"><?php echo $cat_arr[$article->category_id]; ?></a></td>
-    <td><a class="color_489AE7" href="<?php echo 'http://'.$host_str.'/borst/articleList/type_id/'.$article->category_id; ?>"><?php echo $type_arr[$article->type_id]; ?></a></td>
-    <td><a class="color_1A4797" href="<?php echo 'http://'.$host_str.'/borst/articleList/obj_id/'.$article->category_id; ?>"><?php echo $object_arr[$article->object_id]; ?></a></td>
+    <td><a <?php echo $style ?> href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><b><?php echo $article->title ? $article->title : '&nbsp;'; ?></b></a></td>
+    <td><a class="sbt_article_a" href="<?php echo 'https://'.$host_str.'/borst/articleList/kat_id/'.$article->category_id; ?>"><?php echo $cat_arr[$article->category_id]; ?></a></td>
+    <td><a class="color_489AE7" href="<?php echo 'https://'.$host_str.'/borst/articleList/type_id/'.$article->category_id; ?>"><?php echo $type_arr[$article->type_id]; ?></a></td>
+    <td><a class="color_1A4797" href="<?php echo 'https://'.$host_str.'/borst/articleList/obj_id/'.$article->category_id; ?>"><?php echo $object_arr[$article->object_id]; ?></a></td>
   </tr>
   <?php endforeach; ?>
   <?php endif; ?>

@@ -3,8 +3,8 @@
  * This file is part of CCount - PHP Click Counter.
  *
  * (c) Copyright 2016 by Klemen Stirn. All rights reserved.
- * http://www.phpjunkyard.com
- * http://www.phpjunkyard.com/php-click-counter.php
+ * https://www.phpjunkyard.com
+ * https://www.phpjunkyard.com/php-click-counter.php
  *
  * For the full copyright and license agreement information, please view
  * the docs/index.html file that was distributed with this source code.

@@ -174,7 +174,7 @@ class sfValidatorFile extends sfValidatorBase
    * guess the mime type.
    *
    * This method always returns a lower-cased string as mime types are case-insensitive
-   * as per the RFC 2616 (http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.7).
+   * as per the RFC 2616 (https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.7).
    *
    * @param  string $file      The absolute path of a file
    * @param  string $fallback  The default mime type to return if not guessable

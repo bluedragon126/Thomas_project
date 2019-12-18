@@ -6,7 +6,7 @@
 <div class="forumlistingleftdiv" style="width:950px;">
   <div class="forumlistingleftdivinner">
    <div class="shoph3 widthall"></div>
-	<div class="float_left listing"><div class="float_left widthall"><a class="main_link_color cursor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/viewAccount/id/'.$user_data->user_id ?>">View Account</a></div>
+	<div class="float_left listing"><div class="float_left widthall"><a class="main_link_color cursor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/viewAccount/id/'.$user_data->user_id ?>">View Account</a></div>
 	  <div class="float_left widthall">
 	  <form name="user_reg" action="" method="POST" enctype="multipart/form-data">
             <table width="100%"  border="0" cellspacing="3" cellpadding="0" class="om_miginfotable">

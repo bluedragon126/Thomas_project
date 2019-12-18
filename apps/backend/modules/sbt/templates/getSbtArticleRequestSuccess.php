@@ -19,7 +19,7 @@
     <?php $i=1; foreach ($pager->getResults() as $analysis): ?>
     <tr class="classnot">
       <td><?php echo $i++; ?></td>
-      <td><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/sbt/sbtArticleDetails/article_id/'.$analysis->id ?>"><?php echo $analysis->analysis_title; ?></a></td>
+      <td><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/sbt/sbtArticleDetails/article_id/'.$analysis->id ?>"><?php echo $analysis->analysis_title; ?></a></td>
       <td><?php echo $analysis->analysis_votes; ?></td>
       <td><?php echo $profile->getFullUserName($analysis->author_id); ?></td>
       <td><?php echo $analysis->created_at; ?></td>

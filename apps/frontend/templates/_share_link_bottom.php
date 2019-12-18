@@ -1,6 +1,6 @@
 ﻿<!-- AddThis Button BEGIN -->
 <?php /*?><div class="addthis_default_style ">
-<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren" class="addthis_button"  style="text-decoration:none;">
+<a href="https://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren" class="addthis_button"  style="text-decoration:none;">
     <font color="#547184"><?php echo __('Dela') ?> </font>&nbsp;<img alt="strip" src="/images/smallcolorstrip.jpg" />
 </a>
 </div><?php */?>

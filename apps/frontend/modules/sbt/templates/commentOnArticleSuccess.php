@@ -66,7 +66,7 @@
 
                 <div class="float_left widthall mbottom_10">
                     <span class="float_left sbt_violet_font"><b><?php echo __('Författare') ?>:</b></span>
-                    <span class="float_left mleft_5"><a class="cursor main_link_color" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $analysis_data->author_id ?>"><?php echo $profile->getFullUserName($analysis_data->author_id); ?></a></span><br />
+                    <span class="float_left mleft_5"><a class="cursor main_link_color" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $analysis_data->author_id ?>"><?php echo $profile->getFullUserName($analysis_data->author_id); ?></a></span><br />
                     <?php if ($combine_data_str): ?>
                         <span class="float_left sbt_violet_font"><b><?php echo __('Combined Authors') ?>:</b></span>
                         <span class="float_left mleft_5"><?php echo html_entity_decode($combine_data_str); ?></span>
@@ -163,7 +163,7 @@
                 <div class="float_left widthall mbottom_10">
                     <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
                 </div>
-                <div class="float_left widthall"><span class="main_link_color"><?php echo __('To View the Article List, click') ?><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __(' here') ?></a></span></div>	
+                <div class="float_left widthall"><span class="main_link_color"><?php echo __('To View the Article List, click') ?><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __(' here') ?></a></span></div>	
             <?php endif; ?>
         </div>
 

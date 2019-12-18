@@ -25,7 +25,7 @@
 
                     <div class="whp_heading">Mer om kakor</div>
                     
-                    Allmän information om kakor och den nya lagen om elektronisk kommunikation finns på <a class="main_link_color" href="http://www.pts.se/sv/Nyheter/Internet/2016/PTS-tar-fram-vagledning-for-anvandning-av-kakor/">Post- och telestyrelsens webbplats.</a><br>
+                    Allmän information om kakor och den nya lagen om elektronisk kommunikation finns på <a class="main_link_color" href="https://www.pts.se/sv/Nyheter/Internet/2016/PTS-tar-fram-vagledning-for-anvandning-av-kakor/">Post- och telestyrelsens webbplats.</a><br>
                     <br>
 
                 </div>

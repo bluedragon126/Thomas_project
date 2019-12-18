@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /**
@@ -473,8 +473,8 @@ define("tinymce/dom/Selection", [
 		 * @method getRng
 		 * @param {Boolean} w3c Forces a compatible W3C range on IE.
 		 * @return {Range} Internal browser range object.
-		 * @see http://www.quirksmode.org/dom/range_intro.html
-		 * @see http://www.dotvoid.com/2001/03/using-the-range-object-in-mozilla/
+		 * @see https://www.quirksmode.org/dom/range_intro.html
+		 * @see https://www.dotvoid.com/2001/03/using-the-range-object-in-mozilla/
 		 */
 		getRng: function(w3c) {
 			var self = this, selection, rng, elm, doc, ieRng, evt;

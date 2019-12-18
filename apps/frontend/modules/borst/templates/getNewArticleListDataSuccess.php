@@ -117,22 +117,22 @@
 
         <?php if ($show_thumb == 1): ?>
                 <td width="253" class="preamble_title_color">
-                    <a id="sbt_article_title_<?php echo $article->id; ?>" class="topic_title" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>">
+                    <a id="sbt_article_title_<?php echo $article->id; ?>" class="topic_title" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>">
                         <b class="list_topic_2"><?php echo $article->analysis_title; ?></b>
                         <img class="preamble_img" src="/uploads/thumbnail/<?php echo str_replace('.', '_small.', $article->image); ?>">
                     </a><br/>
 
-                    <a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><?php echo $article->image_text; ?></a>
+                    <a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><?php echo $article->image_text; ?></a>
                 </td>
             <?php else: ?>
-                <td width="253"><a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><span class="article_list_text"><?php echo $article->analysis_title; ?></span></a></td>
+                <td width="253"><a id="sbt_article_title_<?php echo $article->id; ?>" class="list_topic" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtArticleDetails/article_id/<?php echo $article->id; ?>"><span class="article_list_text"><?php echo $article->analysis_title; ?></span></a></td>
         <?php endif; ?>
                 <td width="23">&nbsp;</td>
-            <td width="66" class="noclass"><a class="cursor list_heading_kategori" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_kat_id/' . $article->analysis_category_id ?>" id="sbt_kat_id_<?php echo $article->analysis_category_id ?>"><span class="article_list_text"><?php echo $cat_arr[$article->analysis_category_id] ? $cat_arr[$article->analysis_category_id] : '&nbsp;'; ?></span></a></td>
+            <td width="66" class="noclass"><a class="cursor list_heading_kategori" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_kat_id/' . $article->analysis_category_id ?>" id="sbt_kat_id_<?php echo $article->analysis_category_id ?>"><span class="article_list_text"><?php echo $cat_arr[$article->analysis_category_id] ? $cat_arr[$article->analysis_category_id] : '&nbsp;'; ?></span></a></td>
             <td width="11">&nbsp;</td>
-            <td width="80" class="noclass"><a class="cursor list_heading_typ" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_type_id/' . $article->analysis_type_id ?>" id="sbt_type_id_<?php echo $article->analysis_type_id ?>"><span class="article_list_text"><?php echo $type_arr[$article->analysis_type_id] ? $type_arr[$article->analysis_type_id] : '&nbsp;'; ?></span></a></td>
+            <td width="80" class="noclass"><a class="cursor list_heading_typ" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_type_id/' . $article->analysis_type_id ?>" id="sbt_type_id_<?php echo $article->analysis_type_id ?>"><span class="article_list_text"><?php echo $type_arr[$article->analysis_type_id] ? $type_arr[$article->analysis_type_id] : '&nbsp;'; ?></span></a></td>
             <td width="11">&nbsp;</td>
-            <td width="60" class="noclass"><a class="cursor list_heading_objekt" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_obj_id/' . $article->analysis_object_id ?>" id="sbt_obj_id_<?php echo $article->analysis_object_id ?>"><span class="article_list_text"><?php echo $object_arr[$article->analysis_object_id] ? $object_arr[$article->analysis_object_id] : '&nbsp;'; ?></span></a></td>
+            <td width="60" class="noclass"><a class="cursor list_heading_objekt" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/sbt_obj_id/' . $article->analysis_object_id ?>" id="sbt_obj_id_<?php echo $article->analysis_object_id ?>"><span class="article_list_text"><?php echo $object_arr[$article->analysis_object_id] ? $object_arr[$article->analysis_object_id] : '&nbsp;'; ?></span></a></td>
         </tr>
     <?php endforeach; ?>
 <?php else: ?>
@@ -150,22 +150,22 @@
 
         <?php if ($show_thumb == 1): ?>
                 <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>">
-                    <a class="topic_title <?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>">
+                    <a class="topic_title <?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>">
                         <b><?php echo $article->title ? $article->title : '&nbsp;'; ?></b>
                         <img class="preamble_img" src="/uploads/articleIngressImages/<?php echo str_replace('.', '_small.', $article->image); ?>">
                     </a><br/>
 
-                    <a class="topic_title <?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><?php echo $article->title ? $article->image_text : '&nbsp;'; ?></a>
+                    <a class="topic_title <?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><?php echo $article->title ? $article->image_text : '&nbsp;'; ?></a>
                 </td>
             <?php else: ?>
-                <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'topic_title' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
+                <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'topic_title' ?>" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
         <?php endif; ?>
                 <td width="23">&nbsp;</td>
-            <td width="66" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_kategori' ?>" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/kat_id/' . $article->category_id ?>"><span class="article_list_kategori"><?php echo $cat_arr[$article->category_id] ? $cat_arr[$article->category_id] : '&nbsp;'; ?></span></a></td>
+            <td width="66" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_kategori' ?>" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/kat_id/' . $article->category_id ?>"><span class="article_list_kategori"><?php echo $cat_arr[$article->category_id] ? $cat_arr[$article->category_id] : '&nbsp;'; ?></span></a></td>
             <td width="11">&nbsp;</td>
-            <td width="80" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_typ' ?>" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/type_id/' . $article->type_id ?>"><span class="article_list_typ"><?php echo $type_arr[$article->type_id] ? $type_arr[$article->type_id] : '&nbsp;'; ?></span></a></td>
+            <td width="80" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_typ' ?>" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/type_id/' . $article->type_id ?>"><span class="article_list_typ"><?php echo $type_arr[$article->type_id] ? $type_arr[$article->type_id] : '&nbsp;'; ?></span></a></td>
             <td width="11">&nbsp;</td>
-            <td width="60" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_objekt' ?>" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/obj_id/' . $article->object_id ?>"><span class="article_list_objekt"><?php echo $object_arr[$article->object_id] ? $object_arr[$article->object_id] : '&nbsp;'; ?></span></a></td>
+            <td width="60" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_objekt' ?>" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleList/obj_id/' . $article->object_id ?>"><span class="article_list_objekt"><?php echo $object_arr[$article->object_id] ? $object_arr[$article->object_id] : '&nbsp;'; ?></span></a></td>
         </tr>
     <?php endforeach; ?>
 <?php endif; ?>

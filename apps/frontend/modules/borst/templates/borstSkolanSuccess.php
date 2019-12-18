@@ -38,7 +38,7 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="inner_page_content_main">
                 
                 
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/kat_id/9' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/kat_id/9' ?>">
                     
                          <div class="whp_title">BT-skolan</div>
                          
@@ -70,7 +70,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 
                 <div class="kronikorinfo">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/12' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/type_id/12' ?>">
                         <div class="whp_heading"><?php echo __('Börspsykologi ') ?></div>
                         <b>Det största hindret</b>
                         mot en lyckosam tradingkarriär är du själv. I våra<br/>
@@ -80,7 +80,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 <div class="kronikorinfo">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/11' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/type_id/11' ?>">
                         <div class="whp_heading"><?php echo __('Riskhantering ') ?></div>
                         <b>Dessa krönikor är</b>
                         den allra mest lönsamma läsningen du någonsin<br/>
@@ -91,7 +91,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 <div class="kronikorinfo">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/13' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/type_id/13' ?>">
                         <div class="whp_heading"><?php echo __('Börsstrategi & börstaktik') ?></div>
                         <b>Varje framgångsrik trader</b>
                         har sin egen strategi, sitt eget sätt att <br/>
@@ -101,7 +101,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 <div class="kronikorinfo">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/21' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/type_id/21' ?>">
                         <div class="whp_heading"><?php echo __('Klassisk teknisk analys') ?></div>
                         <b>Den sk tekniska aktieanalysen</b>
                         bygger på studium av grafer och <br/>
@@ -112,7 +112,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <!--<div class="whp-border">&nbsp;</div>!-->
                 </div>
                 <div class="kronikorinfo">
-                    <a class="cursor blackcolor" href="<?php echo 'http://' . $host_str . '/borst/articleList/type_id/16' ?>">
+                    <a class="cursor blackcolor" href="<?php echo 'https://' . $host_str . '/borst/articleList/type_id/16' ?>">
                         <div class="whp_heading"><?php echo __('Derivat') ?></div>
                         <b>Utbudet av derivatinstrument</b>
                         har exploderat på senare år. Optioner,<br/>

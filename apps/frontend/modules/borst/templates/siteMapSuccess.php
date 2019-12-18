@@ -15,27 +15,27 @@ include_component('isicsBreadcrumbs', 'show', array(
         <div class="sitemap_button_wrap">
             <ul class="sitemap_button_subwrap">
                 <li class="sitemap_button_1st" id="sitemapbtnhome_1">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><?php echo __('Börstjänaren'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><?php echo __('Börstjänaren'); ?></a></span>
                     <ul class="borstlink">
                         <div class="sitemap_nav_line sitemap_sublink">&nbsp;</div>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_1"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><?php echo __('Hem'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_2"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstShare"><?php echo __('Aktier'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_3"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCommodities"><?php echo __('Råvaror'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_4"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCurrencies"><?php echo __('Valutor'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_5"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstChronicles"><?php echo __('Krönikor'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_6"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSubscriber"><?php echo __('Portfölj'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_7"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList/obj_id/1795"><?php echo __('VM-Update'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_8"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14277"><?php echo __('Veckans trejd'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_9"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_1"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstHome"><?php echo __('Hem'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_2"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstShare"><?php echo __('Aktier'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_3"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCommodities"><?php echo __('Råvaror'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_4"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstCurrencies"><?php echo __('Valutor'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_5"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstChronicles"><?php echo __('Krönikor'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_6"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSubscriber"><?php echo __('Portfölj'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_7"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList/obj_id/1795"><?php echo __('VM-Update'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_8"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14277"><?php echo __('Veckans trejd'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_9"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span></li>
                     </ul>
                 </li>
                 <li class="sitemap_button_2nd" id="sitemapbtnhome_2">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('BT-Shop'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('BT-Shop'); ?></a></span>
                     <ul class="borstlink">
                         <div class="sitemap_nav_line_2nd sitemap_sublink">&nbsp;</div>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_10"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Hem'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_10"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Hem'); ?></a></span></li>
                         <li class="sitemap_sublink">
-                            <span class="sitemap_2nd"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Abonnemang'); ?></a></span>
+                            <span class="sitemap_2nd"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Abonnemang'); ?></a></span>
                             <ul class="bt_shop_subcat">
                                 <?php foreach ($abonnemang_data as $key=>$abonnemang): ?>
                                     <li>
@@ -54,7 +54,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             </ul>
                         </li>
                         <li class="sitemap_sublink">
-                            <span class="sitemap_2nd"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Utbildningar'); ?></a></span>
+                            <span class="sitemap_2nd"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Utbildningar'); ?></a></span>
                             <ul class="bt_shop_subcat_third">
                                 <?php foreach ($utbildningar_data as $key=>$utbildningar): ?>
                                     <li>
@@ -72,7 +72,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             </ul>
                         </li>
                         <li class="sitemap_sublink">
-                            <span class="sitemap_2nd"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Metastock'); ?></a></span>
+                            <span class="sitemap_2nd"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome"><?php echo __('Metastock'); ?></a></span>
                             <ul class="bt_shop_subcat_fourth">
                                 <?php foreach ($metastock_data as $key=>$metastock): ?>
                                     <li>
@@ -89,68 +89,68 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <?php endforeach; ?>
                             </ul>
                         </li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_11"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><?php echo __('Villkor'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_12"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopCart"><?php echo __('Varukorg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_11"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopConditions"><?php echo __('Villkor'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_12"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopCart"><?php echo __('Varukorg'); ?></a></span></li>
                     </ul>
                 </li>
                 <li class="sitemap_button_3rd" id="sitemapbtnhome_3">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstShowChart/stock_name/OMXS30/stock_id/1491/chart_type/1"><?php echo __('BT-Charts'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstShowChart/stock_name/OMXS30/stock_id/1491/chart_type/1"><?php echo __('BT-Charts'); ?></a></span>
                     <ul class="borstlink">
                         <div class="sitemap_nav_line_3rd sitemap_sublink">&nbsp;</div>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_13"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsHome"><?php echo __('Hem'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_14"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsVarlden"><?php echo __('Världen'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_15"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsLargeCap"><?php echo __('Large Cap'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_16"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsMidCap"><?php echo __('Mid Cap'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_17"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsSmallCap"><?php echo __('Small Cap'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_18"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsRavaror"><?php echo __('Råvaror'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_19"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsValutor"><?php echo __('Valutor'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_20"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsSP100"><?php echo __('S&P 100'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_21"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsNQ100"><?php echo __('Nasdaq 100'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_22"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsLasarnas"><?php echo __('Läsarnas val'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_23"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsETF"><?php echo __('ETF:er'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_13"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsHome"><?php echo __('Hem'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_14"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsVarlden"><?php echo __('Världen'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_15"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsLargeCap"><?php echo __('Large Cap'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_16"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsMidCap"><?php echo __('Mid Cap'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_17"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsSmallCap"><?php echo __('Small Cap'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_18"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsRavaror"><?php echo __('Råvaror'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_19"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsValutor"><?php echo __('Valutor'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_20"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsSP100"><?php echo __('S&P 100'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_21"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsNQ100"><?php echo __('Nasdaq 100'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_22"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsLasarnas"><?php echo __('Läsarnas val'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_23"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_charts/borstChartsETF"><?php echo __('ETF:er'); ?></a></span></li>
                     </ul>
                 </li>
                 <li class="sitemap_button_4th" id="sitemapbtnhome_4">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome"><?php echo __('Forum'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome"><?php echo __('Forum'); ?></a></span>
                     <ul class="borstlink">
                         <div class="sitemap_nav_line_4th sitemap_sublink">&nbsp;</div>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_24"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_1"><?php echo __('Börstjänaren'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_25"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_2"><?php echo __('Marknader'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_26"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_3"><?php echo __('Plattformar'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_27"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_4"><?php echo __('Handelsinstrument'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_28"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_5"><?php echo __('Strategi'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_29"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_6"><?php echo __('Marknadsbrus'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_30"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_7"><?php echo __('Fria marknaden'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_31"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_8"><?php echo __('VIP Lounge'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_24"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_1"><?php echo __('Börstjänaren'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_25"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_2"><?php echo __('Marknader'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_26"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_3"><?php echo __('Plattformar'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_27"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_4"><?php echo __('Handelsinstrument'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_28"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_5"><?php echo __('Strategi'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_29"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_6"><?php echo __('Marknadsbrus'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_30"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_7"><?php echo __('Fria marknaden'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_31"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_8"><?php echo __('VIP Lounge'); ?></a></span></li>
                     </ul>
                 </li>
                 <li class="sitemap_button_5th" id="sitemapbtnhome_5">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span>
                     <ul class="borstlink">
                         <div class="sitemap_nav_line_5th sitemap_sublink">&nbsp;</div>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_32"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_33"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/profiler"><?php echo __('Profiler'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_34"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtAddAnalysisBlog"><?php echo __('Skapa Art/Blogg'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_35"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"><?php echo __('Min Profil'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_36"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/showListOfUserBlog"><?php echo __('Min Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_32"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_33"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/profiler"><?php echo __('Profiler'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_34"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtAddAnalysisBlog"><?php echo __('Skapa Art/Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_35"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"><?php echo __('Min Profil'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_36"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/showListOfUserBlog"><?php echo __('Min Blogg'); ?></a></span></li>
                     </ul>
                 </li>
                 <li class="sitemap_button_6th" id="sitemapbtnhome_6">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Profil'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Profil'); ?></a></span>
                     <ul class="borstlink">
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_37"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_38"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/profiler"><?php echo __('Profiler'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_39"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtAddAnalysisBlog"><?php echo __('Skapa Art/Blogg'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_40"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"><?php echo __('Min Profil'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_41"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/showListOfUserBlog"><?php echo __('Min Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_37"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtBlog"><?php echo __('Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_38"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/profiler"><?php echo __('Profiler'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_39"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtAddAnalysisBlog"><?php echo __('Skapa Art/Blogg'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_40"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"><?php echo __('Min Profil'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_41"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/showListOfUserBlog"><?php echo __('Min Blogg'); ?></a></span></li>
                         <div class="sitemap_nav_line_6th sitemap_sublink">&nbsp;</div>
                     </ul>
                 </li>
                 <li class="sitemap_button_7th" id="sitemapbtnhome_7">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14273"><?php echo __('BT-verkstan'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14273"><?php echo __('BT-verkstan'); ?></a></span>
                     <ul class="borstlink">
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_42"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14275"><?php echo __('Hem'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_43"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Sponsrade utbildningar'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_42"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14275"><?php echo __('Hem'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_43"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Sponsrade utbildningar'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_44"><a><?php echo __('CMC'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_45"><a><?php echo __('Ava'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_46"><a><?php echo __('Global Futures'); ?></a></span></li>
@@ -158,7 +158,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </ul>
                 </li>
                 <li class="sitemap_button_8th" id="sitemapbtnhome_8">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtHome"><?php echo __('BT Insider'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtHome"><?php echo __('BT Insider'); ?></a></span>
                     <ul class="borstlink">
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_47"><a><?php echo __('Hem'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_48"><a><?php echo __('Analys'); ?></a></span></li>
@@ -170,7 +170,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     </ul>
                 </li>
                 <li class="sitemap_button_9th" id="sitemapbtnhome_9">
-                    <span class="sitemap_1st"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span>
+                    <span class="sitemap_1st"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span>
                     <ul class="borstlink">
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_53"><a><?php echo __('Hem'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_54"><a><?php echo __('Trading Wizard'); ?></a></span></li>
@@ -185,15 +185,15 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <li class="sitemap_button_10th" id="sitemapbtnhome_10">
                     <span class="sitemap_1st"><?php echo __('Fråga BT'); ?></span>
                     <ul class="borstlink">
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_60"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSubscriber"><?php echo __('Portfölj'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_60"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstSubscriber"><?php echo __('Portfölj'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_61"><a><?php echo __('Henry Boy'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_62"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_63"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127"><?php echo __('Webinarium'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_64"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14273"><?php echo __('BT-verkstan'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_65"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title"><?php echo __('Metastock'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_66"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_5"><?php echo __('Strategi'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_62"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14276"><?php echo __('Utbildningar'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_63"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127"><?php echo __('Webinarium'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_64"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/14273"><?php echo __('BT-verkstan'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_65"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/borstShopHome#metastock_title"><?php echo __('Metastock'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_66"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/forum/forumHome/cat_5"><?php echo __('Strategi'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_67"><a><?php echo __('Förslagslåda'); ?></a></span></li>
-                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_68"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstBeginner"><?php echo __('Nybörjare'); ?></a></span></li>
+                        <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_68"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstBeginner"><?php echo __('Nybörjare'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_69"><a><?php echo __('Kundtjänst'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_70"><a><?php echo __('Övrigt'); ?></a></span></li>
                         <li class="sitemap_sublink"><span class="sitemap_2nd" id="borst_71"><a><?php echo __('Senaste'); ?></a></span></li>
@@ -202,12 +202,12 @@ include_component('isicsBreadcrumbs', 'show', array(
                 </li>
             </ul>
             <div class="sitemap_text_wrap_1st">
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_1"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstBeginner"><?php echo __('Nybörjare'); ?></a></span></div>
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_2"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter/pos/1"><?php echo __('Dagsbrev'); ?></a></span></div>
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_3"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borstNewsletter/pos/1"><?php echo __('Veckobrev'); ?></a></span></div>
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_4"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbtUserProfile/take_to_profile/1"><?php echo __('Öppna konto'); ?></a></span></div>
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_5"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/faq"><?php echo __('Hjälp'); ?></a></span></div>
-                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_6"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/home/sponsorer"><?php echo __('Sponsorer'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_1"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstBeginner"><?php echo __('Nybörjare'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_2"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstNewsletter/pos/1"><?php echo __('Dagsbrev'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_3"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borstNewsletter/pos/1"><?php echo __('Veckobrev'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_4"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbtUserProfile/take_to_profile/1"><?php echo __('Öppna konto'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_5"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/faq"><?php echo __('Hjälp'); ?></a></span></div>
+                <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_6"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/home/sponsorer"><?php echo __('Sponsorer'); ?></a></span></div>
             </div>
         </div>
         
@@ -389,10 +389,10 @@ include_component('isicsBreadcrumbs', 'show', array(
             </div>
         </div>
         <div class="sitemap_text_wrap_2nd">
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_7"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __('Lista'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_8"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127"><?php echo __('Webinairum'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_9"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstAboutUs"><?php echo __('Om oss'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_10"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs"><?php echo __('Kontakta oss'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_7"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __('Lista'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_8"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/2127"><?php echo __('Webinairum'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_9"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstAboutUs"><?php echo __('Om oss'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_10"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs"><?php echo __('Kontakta oss'); ?></a></span></div>
         </div>
         <div class="sitemap_text_wrap_3rd">
             <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_11"><a href="https://twitter.com/borstjanaren" target="_blank"><?php echo __('Twitter'); ?></a></span></div>
@@ -400,11 +400,11 @@ include_component('isicsBreadcrumbs', 'show', array(
             <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_13"><a href="https://www.facebook.com/pages/B%C3%B6rstj%C3%A4naren/193838224060099" target="_blank"><?php echo __('Facebook'); ?></a></span></div>
         </div>
         <div class="sitemap_text_wrap_4th">
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_14"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile/take_to_profile/1"><?php echo __('Mitt konto'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_15"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/342"><?php echo __('A-Ö'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_16"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstRisk"><?php echo __('Riskvarning'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_17"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/rss/rss.php"><?php echo __('RSS'); ?></a></span></div>
-            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_18"><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstAdvanceSearch"><?php echo __('Sök'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_14"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile/take_to_profile/1"><?php echo __('Mitt konto'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_15"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/342"><?php echo __('A-Ö'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_16"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstRisk"><?php echo __('Riskvarning'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_17"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/rss/rss.php"><?php echo __('RSS'); ?></a></span></div>
+            <div class="sitemap_col_text"><span class="sitemap_3rd" id="sitemaplink_18"><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstAdvanceSearch"><?php echo __('Sök'); ?></a></span></div>
         </div>
         
         <div class="sitemap_plus_detail">

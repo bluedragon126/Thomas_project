@@ -21,7 +21,7 @@
                     <br>
                     <div class="whp_heading">Hör gärna av dig</div>
 
-                    Om du stöter på någonting som ser konstigt ut eller inte verkar fungera som det ska, så är du jättevälkommen att höra av dig till oss. T.ex. via vår nya funktion <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/enquiry" <?php echo $parent_menu == '10' ? 'class="selected redmintcolor"' : ''; ?>>Fråga BT!</a><br>
+                    Om du stöter på någonting som ser konstigt ut eller inte verkar fungera som det ska, så är du jättevälkommen att höra av dig till oss. T.ex. via vår nya funktion <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/enquiry" <?php echo $parent_menu == '10' ? 'class="selected redmintcolor"' : ''; ?>>Fråga BT!</a><br>
                     <br><b>Välkommen till en bättre Börstjänare!</b>
 
                  

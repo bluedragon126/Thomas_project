@@ -19,19 +19,19 @@
         } ?>">
                 <div class="forum_comment_top_left float_left"><?php echo $data->datum; ?></div>
                 <div class="forum_comment_top_left"></div>
-                <div class="forum_comment_top_right float_right"><a href="<?php echo "http://" . $host_str ?>/borst/contactUs/postid/<?php echo $data->id ?>" class="cursor">Rapportera</a></div>
+                <div class="forum_comment_top_right float_right"><a href="<?php echo "https://" . $host_str ?>/borst/contactUs/postid/<?php echo $data->id ?>" class="cursor">Rapportera</a></div>
                 <div class="forum_comment_top_right float_right pad_rgt_13 cursor" onclick="javascript:getFormForreplay(<?php echo $data->id ?>, '<?php echo $new_profile->getFullUserName($data->author_id) ?>');">Citera</div>
             </div>
             <div class="blank_24h float_left widthall">&nbsp;</div>
             <div class="comment_content_wrapper float_left widthall">
                 <div class="width_120 float_left comment_content_img_wrapper">
                     <?php if ($user_arr[$data->skapare] != ''): ?>
-                        <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$data->skapare]); ?>" alt="user_photo"/></a>
+                        <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_arr[$data->skapare]); ?>" alt="user_photo"/></a>
         <?php else: ?>
-                        <a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/images/forum_userphoto.png" alt="photo" width="110"/></a>
+                        <a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><img src="/images/forum_userphoto.png" alt="photo" width="110"/></a>
         <?php endif; ?>
                     <div class="forum_comment_user_name widthall float_left">
-                        <?php if ($data->author_id != 0) : ?><a class="" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($data->author_id)); ?></a><?php else: echo $data->skapare;
+                        <?php if ($data->author_id != 0) : ?><a class="" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->author_id ?>"><?php echo ucwords($new_profile->getFullUserName($data->author_id)); ?></a><?php else: echo $data->skapare;
                         endif; ?>
                     </div>
                         <?php $data_arr = $new_profile->fetchRegdateAndTotalLoginById($data->author_id); ?>

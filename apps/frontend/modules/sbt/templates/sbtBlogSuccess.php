@@ -167,9 +167,9 @@
                     }
                     ?> >                    
                         <td class="orgfont blog_table_title_w pad_lft_5">
-                            <a class="cursor" href="<?php echo "http://" . $host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $blog->id ?>"><span class="forum_table_title_w bloglist_blogtitle blog_table_title"><?php echo html_entity_decode($blog->ublog_title) ?></span></a>
+                            <a class="cursor" href="<?php echo "https://" . $host_str ?>/sbt/sbtBlogDetails/blog_id/<?php echo $blog->id ?>"><span class="forum_table_title_w bloglist_blogtitle blog_table_title"><?php echo html_entity_decode($blog->ublog_title) ?></span></a>
                             </br>
-                            <a class="bloglist_blogauthor blog_table_user blog_table_title_w" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $blog->author_id; ?>"><?php echo $profile->getFullUserName($blog->author_id) ?></a>
+                            <a class="bloglist_blogauthor blog_table_user blog_table_title_w" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $blog->author_id; ?>"><?php echo $profile->getFullUserName($blog->author_id) ?></a>
                         </td>
                         <td class="blog_cat blog_table_topic blog_table_cat_w"><a class="blog_cat" name="<?php echo $blog->ublog_category_id ?>"><?php echo $cat_arr[$blog->ublog_category_id]; ?></a></br><span class="forum_table_views">&nbsp;</span></td>
                         <td class="blog_table_post_w" ><span class="blog_table_post"><?php echo $sbt_blog_comment->getBlogCommentsCount($blog->id); ?> inlägg</span></br><span class="forum_table_views"><?php echo $blog->ublog_views ?> visningar</span> </td>

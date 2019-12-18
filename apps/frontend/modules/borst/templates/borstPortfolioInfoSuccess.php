@@ -61,7 +61,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                         <span class="float_left"><b>2.</b> På abonnentsidan finns även länkar till portföljerna, presenterade i excelark, med all information som behövs för du själv skall kunna göra samma affärer samtidigt och sköta ditt aktiekonto på ett professionellt sätt.</span> 
                     </div>
 
-                    <div class="float_left widthall margin_20"><img class="borstportImg" src="<?php echo 'http://' . $host_str . '/images/article_images/img/image1255.jpg' ?>"></div>
+                    <div class="float_left widthall margin_20"><img class="borstportImg" src="<?php echo 'https://' . $host_str . '/images/article_images/img/image1255.jpg' ?>"></div>
                     <div class="float_left widthall whp_heading">Excelarket:</div>
 
                     <div class="float_left widthall margin_10">

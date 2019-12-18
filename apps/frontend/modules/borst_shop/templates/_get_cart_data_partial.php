@@ -133,7 +133,7 @@
                 <div class="blank_30h widthall">&nbsp;</div>
             <?php else: ?>
                 <div class="info"> <div class="blank_12h widthall">&nbsp;</div>
-                    <div class="info"> <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
+                    <div class="info"> <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopPayment' ?>" class="red_button"><span>REDIGERA KORG</span></a> </div>
                     <div class="blank_90h widthall">&nbsp;</div>
                 </div>
                 <?php endif; ?>
@@ -156,7 +156,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($metastock_data as $productMetastock): ?>
-                            <li id="<?php echo $productMetastock->id; ?>" class="shop_r_side_prod <?php if(in_array($productMetastock->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productMetastock->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><?php echo $productMetastock->btshop_article_title; ?></a></li>
+                            <li id="<?php echo $productMetastock->id; ?>" class="shop_r_side_prod <?php if(in_array($productMetastock->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productMetastock->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><?php echo $productMetastock->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -167,7 +167,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($falcon_computer_data as $productFalconcomputer): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productFalconcomputer->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productFalconcomputer->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><?php echo $productFalconcomputer->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productFalconcomputer->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productFalconcomputer->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><?php echo $productFalconcomputer->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -178,7 +178,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($bocker_data as $productBocker): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productBocker->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productBocker->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><?php echo $productBocker->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productBocker->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productBocker->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><?php echo $productBocker->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -189,7 +189,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($utbildningar_data as $productUtbildningar): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productUtbildningar->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productUtbildningar->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><?php echo $productUtbildningar->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productUtbildningar->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productUtbildningar->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><?php echo $productUtbildningar->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -200,7 +200,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($marknadsbrev_data as $productMarknadsbrev): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productMarknadsbrev->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productMarknadsbrev->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><?php echo $productMarknadsbrev->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productMarknadsbrev->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productMarknadsbrev->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><?php echo $productMarknadsbrev->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -211,7 +211,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($abonnemang_data as $productAbonnemang): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productAbonnemang->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productAbonnemang->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><?php echo $productAbonnemang->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productAbonnemang->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productAbonnemang->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><?php echo $productAbonnemang->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -222,7 +222,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($btcart_data as $productBtcart): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productBtcart->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productBtcart->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><?php echo $productBtcart->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productBtcart->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productBtcart->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><?php echo $productBtcart->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -233,7 +233,7 @@
                 <div class="shop_r_side_cat_ul">
                     <ul>
                         <?php foreach ($xmas_offer_data as $productXmasoffer): ?>
-                            <li class="shop_r_side_prod <?php if(in_array($productXmasoffer->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productXmasoffer->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><?php echo $productXmasoffer->btshop_article_title; ?></a></li>
+                            <li class="shop_r_side_prod <?php if(in_array($productXmasoffer->id, $prod_ids)){echo ' shop_r_side_active';}?>"><a class="cursor<?php if(in_array($productXmasoffer->id, $prod_ids)){echo ' shop_r_side_active';}?>" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><?php echo $productXmasoffer->btshop_article_title; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -254,7 +254,7 @@
                             <?php foreach ($metastock_data as $productMetastock): 
                                 if($productMetastock->id != $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><?php echo $productMetastock->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><?php echo $productMetastock->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productMetastock->btshop_product_image): ?>
@@ -264,14 +264,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productMetastock->getLeastPriceOfProduct($productMetastock->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productMetastock->getLeastPriceOfProduct($productMetastock->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productMetastock->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productMetastock->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>">
+                                        <?php echo $productMetastock->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMetastock->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>
@@ -289,7 +289,7 @@
                             <?php foreach ($falcon_computer_data as $productFalconcomputer): 
                                 if($productFalconcomputer->id != $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><?php echo $productFalconcomputer->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><?php echo $productFalconcomputer->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productFalconcomputer->btshop_product_image): ?>
@@ -299,14 +299,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productFalconcomputer->getLeastPriceOfProduct($productFalconcomputer->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><span class="red_button cursor">KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productFalconcomputer->getLeastPriceOfProduct($productFalconcomputer->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>"><span class="red_button cursor">KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productFalconcomputer->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productFalconcomputer->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>">
+                                        <?php echo $productFalconcomputer->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productFalconcomputer->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>
@@ -324,7 +324,7 @@
                             <?php foreach ($bocker_data as $productBocker):
                                 if($productBocker->id!= $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><?php echo $productBocker->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><?php echo $productBocker->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productBocker->btshop_product_image): ?>
@@ -334,14 +334,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productBocker->getLeastPriceOfProduct($productBocker->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productBocker->getLeastPriceOfProduct($productBocker->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productBocker->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productBocker->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>">
+                                        <?php echo $productBocker->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBocker->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>
@@ -359,7 +359,7 @@
                             <?php foreach ($utbildningar_data as $productUtbildningar): 
                                 if($productUtbildningar->id != $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><?php echo $productUtbildningar->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><?php echo $productUtbildningar->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productUtbildningar->btshop_product_image): ?>
@@ -369,14 +369,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productUtbildningar->getLeastPriceOfProduct($productUtbildningar->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productUtbildningar->getLeastPriceOfProduct($productUtbildningar->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productUtbildningar->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productUtbildningar->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>">
+                                        <?php echo $productUtbildningar->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productUtbildningar->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>
@@ -394,7 +394,7 @@
                             <?php foreach ($marknadsbrev_data as $productMarknadsbrev): 
                                 if($productMarknadsbrev->id != $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><?php echo $productMarknadsbrev->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><?php echo $productMarknadsbrev->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productMarknadsbrev->btshop_product_image): ?>
@@ -404,14 +404,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productMarknadsbrev->getLeastPriceOfProduct($productMarknadsbrev->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productMarknadsbrev->getLeastPriceOfProduct($productMarknadsbrev->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productMarknadsbrev->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productMarknadsbrev->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>">
+                                        <?php echo $productMarknadsbrev->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productMarknadsbrev->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>
@@ -430,7 +430,7 @@
                             <?php foreach ($abonnemang_data as $productAbonnemang): 
                                 if($productAbonnemang->id != $productID) {?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><?php echo $productAbonnemang->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><?php echo $productAbonnemang->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productAbonnemang->btshop_product_image): ?>
@@ -440,14 +440,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productAbonnemang->getLeastPriceOfProduct($productAbonnemang->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productAbonnemang->getLeastPriceOfProduct($productAbonnemang->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productAbonnemang->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productAbonnemang->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>">
+                                        <?php echo $productAbonnemang->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productAbonnemang->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                        
                                     </div>
@@ -465,7 +465,7 @@
                             <?php foreach ($btcart_data as $productBtcart): 
                                 if($productBtcart->id != $productID){?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><?php echo $productBtcart->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><?php echo $productBtcart->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productBtcart->btshop_product_image): ?>
@@ -475,14 +475,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productBtcart->getLeastPriceOfProduct($productBtcart->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productBtcart->getLeastPriceOfProduct($productBtcart->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productBtcart->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productBtcart->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>">
+                                        <?php echo $productBtcart->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productBtcart->id; ?>">
                                         <div class="shop_r_other_rm">Läs mer...</div></a></span>
                                         
                                     </div>
@@ -500,7 +500,7 @@
                             <?php foreach ($xmas_offer_data as $productXmasoffer):
                                 if($productXmasoffer->id != $productID) {?>
                                 <li>
-                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><?php echo $productXmasoffer->btshop_article_title; ?></a></div>
+                                    <div class="float_left mrg_btm_7"><a class="cursor shop_r_other_subtitle" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><?php echo $productXmasoffer->btshop_article_title; ?></a></div>
                                     <div class="shop_r_other_img_main">
                                         <div class="shop_r_other_img_sub">
                                             <?php if ($productXmasoffer->btshop_product_image): ?>
@@ -510,14 +510,14 @@
                                             <?php endif; ?>
                                         </div>
                                         <div class="shop_r_other_price_main">
-                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productXmasoffer->getLeastPriceOfProduct($productXmasoffer->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><span>KÖP</span></a>
+                                            <font class="shop_home_price"> <b><?php echo str_replace(',', ' ', number_format($productXmasoffer->getLeastPriceOfProduct($productXmasoffer->id))) ?></b></font>&nbsp;<span class="shop_home_kr">KR</span></div><div class="shop_heading_bg float_left"><a class="red_button cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>"><span>KÖP</span></a>
                                         </div>
                                     </div>
                                     <div class="shop_r_other_subsection float_left">
                                         <?php echo $productXmasoffer->btshop_article_subtitle; ?>
                                     </div>
                                     <div class="float_left shop_r_other_bread">
-                                        <?php echo $productXmasoffer->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>">
+                                        <?php echo $productXmasoffer->btshop_product_intro_text; ?> <span class="disp_inline"><a class="cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $productXmasoffer->id; ?>">
                                         <div class="shop_r_other_rm">LÄS MER</div></a></span>
                                         
                                     </div>

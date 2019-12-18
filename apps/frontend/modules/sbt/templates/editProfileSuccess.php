@@ -17,7 +17,7 @@
     /**
      *
      *  AJAX IFRAME METHOD (AIM)
-     *  http://www.webtoolkit.info/
+     *  https://www.webtoolkit.info/
      *
      **/
 
@@ -104,7 +104,7 @@
                         <?php include_partial('global/profile_menu', array('host_str' => $host_str, 'action' => $action)) ?>
                         <input type="hidden" name="current_user" id="current_user" value="<?php echo $logged_user ?>"/>
                         <?php if ($show_top_links == 1): ?>
-                            <div class="linkwrapper"> <a href="http://<?php echo $host_str ?>/sbt/sbtAddAnalysisBlog" class="main_link_color float_left widthall">Skriv analys/blogginlägg/Skapa blogg?</a> <a href="#"  class="main_link_color float_left widthall">Publicera analys</a> <a href="http://<?php echo $host_str ?>/sbt/viewAllRequest/id/<?php echo $user_id ?>"  class="main_link_color float_left widthall">Skicka meddelande</a> </div>
+                            <div class="linkwrapper"> <a href="https://<?php echo $host_str ?>/sbt/sbtAddAnalysisBlog" class="main_link_color float_left widthall">Skriv analys/blogginlägg/Skapa blogg?</a> <a href="#"  class="main_link_color float_left widthall">Publicera analys</a> <a href="https://<?php echo $host_str ?>/sbt/viewAllRequest/id/<?php echo $user_id ?>"  class="main_link_color float_left widthall">Skicka meddelande</a> </div>
                             <div class="linkwrapper"> <a href="#" class="main_link_color float_left widthall">Mina abonnemang</a> <a href="#"  class="main_link_color float_left widthall">Mina e-postutskick och E-magasin</a> <a href="#" class="main_link_color float_left widthall">Mina favoriter</a></div>
                         <?php endif; ?>                                        
                         <div id="profile_data_container">
@@ -470,7 +470,7 @@
 <?php else: ?>
     <div class="forumlistingleftdiv">
         <div class="shoph3 widthall">Please select the user first to view the Profile..</div>
-        <div class="float_left widthall">To View the User List, click <a href="<?php echo "http://" . $host_str ?>/sbt/sbtUser">here</a></div>
+        <div class="float_left widthall">To View the User List, click <a href="<?php echo "https://" . $host_str ?>/sbt/sbtUser">here</a></div>
         <div class="float_left widthall">&nbsp;</div>
     </div>
 <?php endif; ?>

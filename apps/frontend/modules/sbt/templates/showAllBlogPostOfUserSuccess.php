@@ -84,7 +84,7 @@
                 </div>
                 <!--<h2>-->
                 <span class="blogdetail_title blog_first_header_list">
-                    <a class="simplelink cursor" href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $one_blog->id ?>">
+                    <a class="simplelink cursor" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $one_blog->id ?>">
                         <?php echo $one_blog->ublog_title; ?></a>
                 </span>
                 <!--</h2>-->
@@ -140,7 +140,7 @@
                                 <a class="profile_bloglist_row" name="<?php echo 'row_' . $one_blog->id; ?>"><img src="/images/cross.png" alt="cross" width="15" height="15"/></a>
                             </span>
                             <span class="float_left width_18" style="margin-left: 10px;">
-                                <a href="<?php echo 'http://' . $host_str . '/sbt/sbtEditBlog/blog_id/' . $one_blog->id; ?>" class="cursor"><img src="/images/edit_blog.png" alt="down" width="15"/></a>
+                                <a href="<?php echo 'https://' . $host_str . '/sbt/sbtEditBlog/blog_id/' . $one_blog->id; ?>" class="cursor"><img src="/images/edit_blog.png" alt="down" width="15"/></a>
                             </span>
                         </span>&nbsp;&nbsp;
                     <?php endif; ?>
@@ -182,7 +182,7 @@
                         <a class="profile_bloglist_row" name="<?php echo 'row_' . $one_blog->id; ?>"><img src="/images/cross.png" alt="cross" width="15" height="15"/></a>
                     </span>
                     <span class="float_left width_18 mrg_top_5" style="margin-left: 10px;">
-                        <a href="<?php echo 'http://' . $host_str . '/sbt/sbtEditBlog/blog_id/' . $one_blog->id; ?>" class="cursor"><img src="/images/edit_blog.png" alt="down" width="15"/></a>
+                        <a href="<?php echo 'https://' . $host_str . '/sbt/sbtEditBlog/blog_id/' . $one_blog->id; ?>" class="cursor"><img src="/images/edit_blog.png" alt="down" width="15"/></a>
                     </span>
                 </div>
                 <div id="blog_vote_option_id<?php echo $one_blog->id; ?>" class="float_left widthall" style="padding-top:10px; visibility:hidden; display:none;">
@@ -198,7 +198,7 @@
                     <div class="commentheading blog_comment_count mrg_top_20"><font size="+2"><?php echo $pager->getNbResults(); ?></font> kommentarer, läs nedan eller <a id="comment_on" rel="nofollow" style="cursor:pointer" href="#comment_on_blog">lägg till en egen</a></div>
                     <?php foreach ($pager->getResults() as $data): ?>
                         <div class="comment_messagewrapper">
-                            <div class="float_left comment_user_img"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
+                            <div class="float_left comment_user_img"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
                                     <?php if ($user_photo_arr[$data->comment_by] != ''): ?>
                                         <img src="/uploads/userThumbnail/<?php echo str_replace('.', '_small.', $user_photo_arr[$data->comment_by]); ?>" alt="user_photo" width="72" height="72"/>
                                     <?php else: ?>
@@ -206,7 +206,7 @@
                                     <?php endif; ?>
                                 </a></div>
                             <div class="info">
-                                <div class="float_left widthall"><b class="borst_subtitle_4 blog_username"><a class="borst_subtitle_4" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <span class="float_right blog_main_date"><?php echo substr($data->created_at, 0, 10); ?></span></div>
+                                <div class="float_left widthall"><b class="borst_subtitle_4 blog_username"><a class="borst_subtitle_4" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></b> <span class="float_right blog_main_date"><?php echo substr($data->created_at, 0, 10); ?></span></div>
                                 <span class="blog_comments"><?php echo $data->blog_comment ?></span>
                             </div>
                         </div>

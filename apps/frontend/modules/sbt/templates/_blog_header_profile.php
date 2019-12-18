@@ -20,7 +20,7 @@
     <?php
     if ($blog_profile_details->blog_header_image):
         //getting the image size here
-        $imageUser = getimagesize("http://" . $host_str . "/uploads/userBlogProfileImage/" . $blog_profile_details->blog_header_image . "");
+        $imageUser = getimagesize("https://" . $host_str . "/uploads/userBlogProfileImage/" . $blog_profile_details->blog_header_image . "");
         ?>
         <h1 class="blog_head_title widthall" style="color:<?php echo $blog_profile_details->blog_header_name_color; ?>"><?php echo $blog_profile_details->blog_header_name; ?></h1>
        <style>
@@ -48,7 +48,7 @@
             <?php endif; ?>
             <div class="bhc_h">
                 <?php if ($own_blog == 1): ?>
-                    <div class="blog_head_edit_profile float_right"><a href="<?php echo 'http://' . $host_str . '/sbt/editBlogProfile/edit_user_id/' . $user_id; ?>">Editera blogprofil</a></div>
+                    <div class="blog_head_edit_profile float_right"><a href="<?php echo 'https://' . $host_str . '/sbt/editBlogProfile/edit_user_id/' . $user_id; ?>">Editera blogprofil</a></div>
                 <?php endif; ?>
             </div>
             <div class="blog_main_line height_1px">&nbsp;</div>
@@ -77,7 +77,7 @@
                         <?php endif; ?>
                     <?php endif; ?>
                 </div>
-                <div class="blog_first_detail"><a href="<?php echo 'http://' . $host_str . '/sbt/showListOfUserBlog/uid/' . $one_blog->author_id ?>">Bloggens startstida</a></div>
+                <div class="blog_first_detail"><a href="<?php echo 'https://' . $host_str . '/sbt/showListOfUserBlog/uid/' . $one_blog->author_id ?>">Bloggens startstida</a></div>
             <?php endif; ?> 
             <div class="blog_first_detail_date"><?php if ($one_blog->updated_at == null) echo $one_blog->created_at; else echo $one_blog->updated_at ?></div>
         </div>

@@ -95,8 +95,8 @@ defineGlobal("global!tinymce.DOM", tinymce.DOM);
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.Toolbar', [
@@ -245,8 +245,8 @@ define('tinymce.modern.ui.Toolbar', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.Menubar', [
@@ -379,8 +379,8 @@ defineGlobal("global!tinymce.geom.Rect", tinymce.geom.Rect);
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.ContextToolbars', [
@@ -700,8 +700,8 @@ define('tinymce.modern.ui.ContextToolbars', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.A11y', [
@@ -736,8 +736,8 @@ define('tinymce.modern.ui.A11y', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.Sidebar', [
@@ -870,8 +870,8 @@ define('tinymce.modern.ui.Sidebar', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.SkinLoaded', [
@@ -899,8 +899,8 @@ define('tinymce.modern.ui.SkinLoaded', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.Resize', [
@@ -953,8 +953,8 @@ define('tinymce.modern.ui.Resize', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.modes.Iframe', [
@@ -1092,8 +1092,8 @@ defineGlobal("global!tinymce.ui.FloatPanel", tinymce.ui.FloatPanel);
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.modes.Inline', [
@@ -1240,8 +1240,8 @@ defineGlobal("global!tinymce.ui.Throbber", tinymce.ui.Throbber);
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.ui.ProgressState', [
@@ -1272,8 +1272,8 @@ define('tinymce.modern.ui.ProgressState', [
  * Released under LGPL License.
  * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 define('tinymce.modern.Theme', [

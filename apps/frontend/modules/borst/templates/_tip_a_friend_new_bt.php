@@ -11,7 +11,7 @@
 
 
 <?php echo 'Vill du också anmäla dig till gratisbrevet Börstjänaren JUST NU,'?><br/>
-<?php echo 'gör det här: http://'.$host_str.'/borst/borstDayletter'?><br/><br/>
+<?php echo 'gör det här: https://'.$host_str.'/borst/borstDayletter'?><br/><br/>
 
 
 <?php echo 'Med vänlig hälsning'?><br/>

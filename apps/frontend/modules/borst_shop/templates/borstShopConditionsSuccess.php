@@ -107,7 +107,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     info@borstjanaren.se</i>
                     <br /><br />
                     
-                    För snabbare svar, använd gärna vårt <a href="<?php echo 'http://' . $host_str . '/borst/contactUs' ?>">kontaktformulär!</a>
+                    För snabbare svar, använd gärna vårt <a href="<?php echo 'https://' . $host_str . '/borst/contactUs' ?>">kontaktformulär!</a>
                 </div>
             </div>
             <?php echo include_partial('global/inner_bottom_footer'); ?>

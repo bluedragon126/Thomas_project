@@ -124,9 +124,9 @@ class sfPluginManager
     $version   = isset($options['version']) ? $options['version'] : null;
 
     $isPackage = true;
-    if (0 === strpos($plugin, 'http://') || file_exists($plugin))
+    if (0 === strpos($plugin, 'https://') || file_exists($plugin))
     {
-      if (0 === strpos($plugin, 'http://plugins.symfony-project.'))
+      if (0 === strpos($plugin, 'https://plugins.symfony-project.'))
       {
         throw new sfPluginException("You try to install a symfony 1.0 plugin.\nPlease read the help message of this task to know how to install a plugin for the current version of symfony.");
       }

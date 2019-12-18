@@ -3,8 +3,8 @@
  * This file is part of CCount - PHP Click Counter.
  *
  * (c) Copyright 2016 by Klemen Stirn. All rights reserved.
- * http://www.phpjunkyard.com
- * http://www.phpjunkyard.com/php-click-counter.php
+ * https://www.phpjunkyard.com
+ * https://www.phpjunkyard.com/php-click-counter.php
  *
  * For the full copyright and license agreement information, please view
  * the docs/index.html file that was distributed with this source code.
@@ -156,7 +156,7 @@ cGhpY29uLXRodW1icy11cCI+PC9pPiBWYWxpZDwvc3Bhbj4nOw0KfQ0K',"\104");
                         <label class="col-lg-3 control-label">Script version:</label>
                         <div class="col-lg-9" style="padding-top:7px;margin-bottom:10px">
                             <?php echo $ccount_settings['version']; ?>
-                            [ <a href="http://www.phpjunkyard.com/check4updates.php?s=ccount&amp;v=<?php echo $ccount_settings['version']; ?>">check for updates</a> ]
+                            [ <a href="https://www.phpjunkyard.com/check4updates.php?s=ccount&amp;v=<?php echo $ccount_settings['version']; ?>">check for updates</a> ]
                         </div>
                     </div>
 
@@ -170,7 +170,7 @@ cGhpY29uLXRodW1icy11cCI+PC9pPiBWYWxpZDwvc3Bhbj4nOw0KfQ0K',"\104");
                     <div class="form-group<?php echo isset($error_buffer['click_url']) ? ' has-error' : ''; ?>">
                         <label for="url" class="col-lg-3 control-label bold">URL of click.php file:</label>
                         <div class="col-lg-9">
-                            <input type="url" id="click_url" name="click_url" value="<?php echo stripslashes($ccount_settings['click_url']); ?>" size="50" maxlength="255" class="form-control" placeholder="http://www.example.com/ccount/click.php">
+                            <input type="url" id="click_url" name="click_url" value="<?php echo stripslashes($ccount_settings['click_url']); ?>" size="50" maxlength="255" class="form-control" placeholder="https://www.example.com/ccount/click.php">
                             <p class="help-block"><?php echo isset($error_buffer['click_url']) ? $error_buffer['click_url'] : 'Location of the <b>click.php</b> file on your server.'; ?></p>
                         </div>
                     </div>

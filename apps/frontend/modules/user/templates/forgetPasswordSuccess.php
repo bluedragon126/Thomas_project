@@ -61,10 +61,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                                 <td class="padding_top_10"><input type="submit" class="send_forgetpass submit " value="" name="submit" /></td>
                             </tr>
                             <tr>
-                                <td class="padding_top_10 padding_bottom_0"><a href="http://<?php echo $host_str ?>/user/loginWindow">Logga in</a></td>
+                                <td class="padding_top_10 padding_bottom_0"><a href="https://<?php echo $host_str ?>/user/loginWindow">Logga in</a></td>
                             </tr>
                             <tr>
-                                <td class="padding_top_0"><a href="http://<?php echo $host_str ?>/sbt/sbtHome">Hem</a></td>
+                                <td class="padding_top_0"><a href="https://<?php echo $host_str ?>/sbt/sbtHome">Hem</a></td>
                             </tr>
                            
                             <tr>

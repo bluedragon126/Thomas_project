@@ -13,7 +13,7 @@
             ?>	
             <tr class="classnot">
                 <td align="left"><?php echo $i; ?></td>
-                <td align="left"><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/sbt/sbtArticleDetails/article_id/' . $data->f_id; ?>"><?php echo $data->f_name; ?></a></td>
+                <td align="left"><a class="main_link_color" href="<?php echo 'https://' . $host_str . '/sbt/sbtArticleDetails/article_id/' . $data->f_id; ?>"><?php echo $data->f_name; ?></a></td>
                 <td align="left">
                     <span class="float_left">
                         <input type="radio" class="radio" name="fav_rec[<?php echo $data->id; ?>]" value="1" <?php if ($data->f_notification == 1) echo "checked"; ?> />Yes
@@ -59,7 +59,7 @@
             ?>	
             <tr class="classnot">
                 <td class="prof_table_no" width="35" align="center"><?php echo $i; ?></td>
-                <td class="prof_table_sub" width="370" align="left"><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
+                <td class="prof_table_sub" width="370" align="left"><a class="main_link_color" href="<?php echo 'https://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
                 <td width="150" align="left">
                     <span class="float_left radio-mrg" id="article_radio">
                         <input type="radio" class="radio" id="<?php echo $data->id; ?>" name="fav_rec[<?php echo $data->id; ?>]" value="1" <?php if ($data->f_notification == 1) echo "checked"; ?> /><span class="prof_email_y">Ja</span>
@@ -143,7 +143,7 @@
             ?>	
             <tr class="classnot">
                 <td class="prof_table_no" width="35" align="center"><?php echo $i; ?></td>
-                <td class="prof_table_sub" width="370" align="left"><a class="" href="<?php echo "http://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->f_id ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
+                <td class="prof_table_sub" width="370" align="left"><a class="" href="<?php echo "https://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->f_id ?>"><span class="profile_favoratelist_title"><?php echo $data->f_name; ?></span></a></td>
                 <td width="150" align="left">
                     <span class="float_left radio-mrg" id="forum_radio">
                         <input type="radio" class="radio" id="<?php echo $data->id; ?>" name="fav_rec[<?php echo $data->id; ?>]" value="1" <?php if ($data->f_notification == 1) echo "checked"; ?> /><span class="prof_email_y">Ja</span>
@@ -235,7 +235,7 @@
             ?>	
             <tr class="classnot">
                 <td class="prof_table_no" width="35" align="center"><?php echo $i; ?></td>
-                <td class="prof_table_sub" width="370" align="left"><a class="" href="<?php echo 'http://' . $host_str . '/borst/sbtBlogDetails/blog_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title width_340"><?php echo $data->f_name; ?></span></a></td>
+                <td class="prof_table_sub" width="370" align="left"><a class="" href="<?php echo 'https://' . $host_str . '/borst/sbtBlogDetails/blog_id/' . $data->f_id; ?>"><span class="profile_favoratelist_title width_340"><?php echo $data->f_name; ?></span></a></td>
                 <td width="150" align="left">
                     <span class="float_left radio-mrg" id="blog_radio">
                         <input type="radio" class="radio" id="<?php echo $data->id; ?>" name="fav_rec[<?php echo $data->id; ?>]" value="1" <?php if ($data->f_notification == 1) echo "checked"; ?> /><span class="prof_email_y">Ja</span>
@@ -326,7 +326,7 @@
             ?>	
             <tr class="classnot">
                 <td class="prof_table_no" width="35" align="center"><?php echo $i; ?></td>
-                <td class="prof_table_sub" width="520" align="left"><a class="" href="<?php echo 'http://' . $host_str . '/borst_charts/borstShowChart/stock_id/' . $data->stock_id . '/stock_type/' . $data->stock_type . '/chart_type/' . $data->chart_type; ?>"><span class="profile_favoratelist_title width_350"><?php echo $data->description; ?></span></a></td>
+                <td class="prof_table_sub" width="520" align="left"><a class="" href="<?php echo 'https://' . $host_str . '/borst_charts/borstShowChart/stock_id/' . $data->stock_id . '/stock_type/' . $data->stock_type . '/chart_type/' . $data->chart_type; ?>"><span class="profile_favoratelist_title width_350"><?php echo $data->description; ?></span></a></td>
                 <td width="50" align="left">
                     <span class="float_left mleft_15" id="r_<?php echo $data->id ?>">
                         <img class="remove_from_fav_list" src="/images/cross.png" alt="remove" width="10" height="10" onclick="removeItemFormFavoriteList('<?php echo $data->id ?>', 'fav_chart_listing', 'r_<?php echo $data->id ?>')" />

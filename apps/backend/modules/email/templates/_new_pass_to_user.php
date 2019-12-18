@@ -10,7 +10,7 @@
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td><?php echo 'Det är rekommenderat att du går in på ' ?></td></tr>
-	<tr><td><a href="http://<?php echo $host_str ?>/user/changePasswordForm"><?php echo 'http://'.$host_str.'/user/changePasswordForm' ?></a></td></tr>
+	<tr><td><a href="https://<?php echo $host_str ?>/user/changePasswordForm"><?php echo 'https://'.$host_str.'/user/changePasswordForm' ?></a></td></tr>
 	<tr><td><?php echo 'och ändrar ditt lösenord så snart som möjligt.' ?></td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>
 	<tr><td>&nbsp;&nbsp;</td></tr>

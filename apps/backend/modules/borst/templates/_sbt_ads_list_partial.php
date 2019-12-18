@@ -30,7 +30,7 @@ $typ=array('img'=>'Image File','swf'=>'Flash file(swf)','iframe'=>'Iframe','scri
     <td><?php echo $ccount_link[$ads->id] ? $ccount_link[$ads->id] : '&nbsp;' ?></td>
     <td><?php echo $ads->getDisplayCount(); ?></td>
     <td><?php echo $ads->priority ?></td>
-    <td><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/createAd/editAd_id/'.$ads->id ?>">Edit</a>
+    <td><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/createAd/editAd_id/'.$ads->id ?>">Edit</a>
         &nbsp;&nbsp;&nbsp;<?php if($ads->is_archive == 0)  { ?>
         <a href="javascript:open_confirmation('Do you want to delete this ad <?php echo $ads->ad_title ?>','<?php echo $ads->id; ?>','delete_sbt_ad_confirm_box','delete_sbt_ad_msg')">Delete</a>
             <?php } else { ?>

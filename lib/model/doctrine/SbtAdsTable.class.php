@@ -115,7 +115,7 @@ class SbtAdsTable extends Doctrine_Table {
         $data = $sbt_ad->getPerticularSbtAd($id);
         $return_str = '';
 
-        $other = 'alt="BT-annons" longdesc="http://' . sfConfig::get('app_host_name') . '" border="0"';
+        $other = 'alt="BT-annons" longdesc="https://' . sfConfig::get('app_host_name') . '" border="0"';
 
         if ($data) {
             $conn = sfContext::getInstance()->getDatabaseManager()->getDatabase('doctrine')->getDoctrineConnection();
@@ -151,7 +151,7 @@ class SbtAdsTable extends Doctrine_Table {
                     /* ---------------- */
 
                     //$width = 238; $height = 360;
-                    $return_str = '<div style="float:left;position:relative;" id="imgprev' . $data->ccounter_id . '"><a ' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . ' href="http://' . $_SERVER['HTTP_HOST'] . '/ccount/click.php?id=' . $data->ccounter_id . '" style="z-index: 1000; float:left; position:absolute; border:0px solid blue; width:' . $width . 'px; height:' . $height . 'px;"><img src="http://' . $_SERVER['HTTP_HOST'] . '/uploads/sbtAds/transp.gif" width="' . $width . '" height="' . $height . '" border="0" style="cursor:pointer" /></a><embed src="' . str_replace('$gmt$',time(),$data->ad_name) . '" quality="high" wmode="transparent"  type="application/x-shockwave-flash" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . '></embed></div>';
+                    $return_str = '<div style="float:left;position:relative;" id="imgprev' . $data->ccounter_id . '"><a ' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . ' href="https://' . $_SERVER['HTTP_HOST'] . '/ccount/click.php?id=' . $data->ccounter_id . '" style="z-index: 1000; float:left; position:absolute; border:0px solid blue; width:' . $width . 'px; height:' . $height . 'px;"><img src="https://' . $_SERVER['HTTP_HOST'] . '/uploads/sbtAds/transp.gif" width="' . $width . '" height="' . $height . '" border="0" style="cursor:pointer" /></a><embed src="' . str_replace('$gmt$',time(),$data->ad_name) . '" quality="high" wmode="transparent"  type="application/x-shockwave-flash" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . '></embed></div>';
                     break;
                 case 'img':
                     if ($data->ad_position == 'Header_top1' || $data->ad_position == 'Header_top2') {
@@ -162,7 +162,7 @@ class SbtAdsTable extends Doctrine_Table {
                         $width = 728;/*970;*/
                         $height = 90;
                     }
-                    $return_str = '<a href="http://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '><img src="' . $data->ad_name . '" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . ' ' . $other . '/></a>';
+                    $return_str = '<a href="https://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '><img src="' . $data->ad_name . '" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . ' ' . $other . '/></a>';
                     break;
                 case 'iframe':
                     if ($data->ad_position == 'top_mid') {
@@ -175,12 +175,12 @@ class SbtAdsTable extends Doctrine_Table {
                     else
                         $width_height_str = '';
 
-                    $return_str = '<a href="http://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '><iframe frameborder="0" scrolling="no" bordercolor="#000000" vspace="0" hspace="0" marginheight="0" marginwidth="0" id="aa_if_19144" src="' . str_replace('$gmt$',time(),$data->ad_name) . '" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . ' ' . $other . '></iframe></a>';
+                    $return_str = '<a href="https://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '><iframe frameborder="0" scrolling="no" bordercolor="#000000" vspace="0" hspace="0" marginheight="0" marginwidth="0" id="aa_if_19144" src="' . str_replace('$gmt$',time(),$data->ad_name) . '" ' . ($width != NULL ? 'width="' . $width . '"' : '') . ' ' . ($height != NULL ? 'height="' . $height . '"' : '') . ' ' . $other . '></iframe></a>';
 
                     break;
 
                     case 'script':
-                        $return_str = '<div><a href="http://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '>' .str_replace('$gmt$',time(),$data->ad_name).'</a></div>';
+                        $return_str = '<div><a href="https://' . sfConfig::get('app_host_name') . '/ccount/click.php?id=' . $data->ccounter_id . '"' . ($data->ad_target == 'B' ? ' target=_blank ' : '') . '>' .str_replace('$gmt$',time(),$data->ad_name).'</a></div>';
                         break;
                 default:
                     $return_str = '';

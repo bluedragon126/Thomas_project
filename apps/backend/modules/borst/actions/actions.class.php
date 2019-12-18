@@ -47,11 +47,11 @@ class borstActions extends sfActions
             if ($showdata == 1) {
                 //$this->forward('home', 'adminHome');
             } else {
-                $url = 'http://' . $host_str . '/';
+                $url = 'https://' . $host_str . '/';
                 $this->redirect($url);
             }
         } else {
-            $url = 'http://' . $host_str . '/user/loginWindow';
+            $url = 'https://' . $host_str . '/user/loginWindow';
             $this->redirect($url);
         }
     }
@@ -269,7 +269,7 @@ class borstActions extends sfActions
                                 $article_html->insertNewHtmlRecord($obj->article_id, $arr['external_file'], date
                                     ("Y-m-d H:i:s"));
 
-                            $url = 'http://' . $this->host_str .
+                            $url = 'https://' . $this->host_str .
                                 '/backend.php/borst/createArticle/action_mode/edit_article/article_id/' . $arr['edit_id'];
                             if ($arr['saveOnly'] != 1)
                                 $this->redirect('borst/articleList');
@@ -990,7 +990,7 @@ class borstActions extends sfActions
             if($number_sent){
                 $news_letter_sent->addSentMail($number_sent, $arr);
                 $this->getUser()->setFlash('greenmsg',"Ett mejl har skickats till $number_sent $kundgrupp!");
-                $url = 'http://' . $this->host_str . '/backend.php/borst/newsletterForm';
+                $url = 'https://' . $this->host_str . '/backend.php/borst/newsletterForm';
                 $this->redirect($url);
                 
             }
@@ -1826,7 +1826,7 @@ class borstActions extends sfActions
                                             ->execute();
                 }
                 //code change by sandeep end
-                $url = 'http://' . $this->host_str . '/backend.php/borst/userList';
+                $url = 'https://' . $this->host_str . '/backend.php/borst/userList';
                 $this->redirect($url);
             }
             //}
@@ -2001,7 +2001,7 @@ class borstActions extends sfActions
                         $this->is_sellable = $shopdata['is_sellable'] =1;
                     }
                     $this->isSaved = 1;
-                    $url = 'http://' . $this->host_str.
+                    $url = 'https://' . $this->host_str.
                                 '/backend.php/borst/CreateShopArticle/edit_shop_article_id/' . $edit_shop_article_id;
                 }
                 else
@@ -2972,7 +2972,7 @@ class borstActions extends sfActions
             $this->form->bind($form_arr);
             if ($this->form->isValid()) {
                 $obj = $this->form->save();
-                $url = 'http://' . $this->host_str . '/backend.php/borst/adList';
+                $url = 'https://' . $this->host_str . '/backend.php/borst/adList';
                 $this->redirect($url);
             } else {
                 //echo $this->form->getErrorSchema();

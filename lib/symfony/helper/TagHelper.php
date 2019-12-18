@@ -60,7 +60,7 @@ function cdata_section($content)
  *
  * @return string
  *
- * @see http://msdn.microsoft.com/en-us/library/ms537512(VS.85).aspx
+ * @see https://msdn.microsoft.com/en-us/library/ms537512(VS.85).aspx
  */
 function comment_as_conditional($condition, $content)
 {

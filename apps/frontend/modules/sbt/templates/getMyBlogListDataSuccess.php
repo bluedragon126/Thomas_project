@@ -20,7 +20,7 @@
       <tr id="<?php echo 'row_'.$data->id; ?>" class="classnot">
         <!--<td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>-->
         <td class="width_83 blog_prof_table_date"><?php echo substr($data->created_at,2,9) ?></td>
-        <td class="width_133"><a class="blog_table_title" href="<?php echo 'http://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_blogpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
+        <td class="width_133"><a class="blog_table_title" href="<?php echo 'https://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_blogpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
         <td class="blog_table_topic width_92"><?php echo $cat_arr[$data->ublog_category_id] ? $cat_arr[$data->ublog_category_id] : '&nbsp;'; ?></td>
         <td class="blog_table_topic width_84"><?php echo $type_arr[$data->ublog_type_id] ? $type_arr[$data->ublog_type_id] : '&nbsp;'; ?></td>
         <td class="blog_table_view width_84"><?php echo $object_arr[$data->ublog_object_id] ? $object_arr[$data->ublog_object_id] : '&nbsp;'; ?></td>
@@ -28,7 +28,7 @@
         	<td class="width_55">
                 <span class="float_left width_38">
                 	<span class="float_left width_18">
-            			<a href="<?php echo 'http://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$data->id;?>"><img src="/images/edit_blog.png" alt="down" width="15" /></a>
+            			<a href="<?php echo 'https://'.$host_str.'/sbt/sbtEditBlog/blog_id/'.$data->id;?>"><img src="/images/edit_blog.png" alt="down" width="15" /></a>
                 	</span>
                 	<span class="float_left width_14 ptop_4">
                			<a class="profile_bloglist_row" name="<?php echo 'row_'.$data->id; ?>"><img src="/images/cross.png" alt="cross" width="14" height="14" /></a>

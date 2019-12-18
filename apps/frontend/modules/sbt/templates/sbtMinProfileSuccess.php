@@ -83,10 +83,10 @@
             <?php if($show_top_links == 1):?>
 				<div class="profilelink"> <!--<a href="#">Mina sidor | </a> -->
                 <?php //if($user_data->from_sbt == 1 && $user_data->sbt_active == 1):?>
-                	<?php /*?><a href="http://<?php echo $host_str?>/sbt/editBlogProfile/edit_user_id/<?php echo $user_id ?>">Editera Blog profil | </a><?php */?>
+                	<?php /*?><a href="https://<?php echo $host_str?>/sbt/editBlogProfile/edit_user_id/<?php echo $user_id ?>">Editera Blog profil | </a><?php */?>
                 <?php //endif; 
                 /*?>
-                <a href="http://<?php echo $host_str?>/sbt/editProfile/edit_user_id/<?php echo $user_id ?>">Editera profil</a> </div>
+                <a href="https://<?php echo $host_str?>/sbt/editProfile/edit_user_id/<?php echo $user_id ?>">Editera profil</a> </div>
 			<?php endif; ?>
           </div>
           </div><?php */?>
@@ -128,7 +128,7 @@
 	<?php else: ?>
 	<div class="forumlistingleftdiv" style="width:964px;">
 		<div class="shoph3 widthall">För att se profilen, vänligen välj användare först.</div>
-		<div class="float_left widthall">För att se användarlistan, klicka <a href="<?php echo "http://".$host_str ?>/sbt/sbtUser">här</a></div>
+		<div class="float_left widthall">För att se användarlistan, klicka <a href="<?php echo "https://".$host_str ?>/sbt/sbtUser">här</a></div>
 		<div class="float_left widthall">&nbsp;</div>
 	</div>
 	<?php endif; ?>

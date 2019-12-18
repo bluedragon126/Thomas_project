@@ -180,7 +180,7 @@ abstract class sfAction extends sfComponent
    * Redirects current request to a new URL.
    *
    * 2 URL formats are accepted :
-   *  - a full URL: http://www.google.com/
+   *  - a full URL: https://www.google.com/
    *  - an internal URL (url_for() format): module/action
    *
    * This method stops the action. So, no code is executed after a call to this method.

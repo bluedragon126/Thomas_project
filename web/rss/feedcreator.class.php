@@ -111,13 +111,13 @@ $rss->description = "daily news from the PHP scripting world";
 $rss->descriptionTruncSize = 500;
 $rss->descriptionHtmlSyndicated = true;
 
-$rss->link = "http://www.dailyphp.net/news"; 
-$rss->syndicationURL = "http://www.dailyphp.net/".$_SERVER["PHP_SELF"]; 
+$rss->link = "https://www.dailyphp.net/news"; 
+$rss->syndicationURL = "https://www.dailyphp.net/".$_SERVER["PHP_SELF"]; 
 
 $image = new FeedImage(); 
 $image->title = "dailyphp.net logo"; 
-$image->url = "http://www.dailyphp.net/images/logo.gif"; 
-$image->link = "http://www.dailyphp.net"; 
+$image->url = "https://www.dailyphp.net/images/logo.gif"; 
+$image->link = "https://www.dailyphp.net"; 
 $image->description = "Feed provided by dailyphp.net. Click to visit."; 
 
 //optional
@@ -140,7 +140,7 @@ while ($data = mysql_fetch_object($res)) {
     item->descriptionHtmlSyndicated = true;
 
     $item->date = $data->newsdate; 
-    $item->source = "http://www.dailyphp.net"; 
+    $item->source = "https://www.dailyphp.net"; 
     $item->author = "John Doe"; 
      
     $rss->addItem($item); 
@@ -794,7 +794,7 @@ class FeedDate {
 /**
  * RSSCreator10 is a FeedCreator that implements RDF Site Summary (RSS) 1.0.
  *
- * @see http://www.purl.org/rss/1.0/
+ * @see https://www.purl.org/rss/1.0/
  * @since 1.3
  * @author Kai Blankenhorn <kaib@bitfolge.de>
  */
@@ -810,14 +810,14 @@ class RSSCreator10 extends FeedCreator {
 		$feed = "<?xml version=\"1.0\" encoding=\"".$this->encoding."\"?>\n";
 		$feed.= $this->_createGeneratorComment();
 		if ($this->cssStyleSheet=="") {
-			$cssStyleSheet = "http://www.w3.org/2000/08/w3c-synd/style.css";
+			$cssStyleSheet = "https://www.w3.org/2000/08/w3c-synd/style.css";
 		}
 		$feed.= $this->_createStylesheetReferences();
 		$feed.= "<rdf:RDF\n";
-		$feed.= "    xmlns=\"http://purl.org/rss/1.0/\"\n";
-		$feed.= "    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n"; 
-		$feed.= "    xmlns:slash=\"http://purl.org/rss/1.0/modules/slash/\"\n";
-		$feed.= "    xmlns:dc=\"http://purl.org/dc/elements/1.1/\">\n";
+		$feed.= "    xmlns=\"https://purl.org/rss/1.0/\"\n";
+		$feed.= "    xmlns:rdf=\"https://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n"; 
+		$feed.= "    xmlns:slash=\"https://purl.org/rss/1.0/modules/slash/\"\n";
+		$feed.= "    xmlns:dc=\"https://purl.org/dc/elements/1.1/\">\n";
 		$feed.= "    <channel rdf:about=\"".$this->syndicationURL."\">\n";
 		$feed.= "        <title>".htmlspecialchars($this->title)."</title>\n";
 		$feed.= "        <description>".htmlspecialchars($this->description)."</description>\n";
@@ -874,7 +874,7 @@ class RSSCreator10 extends FeedCreator {
 /**
  * RSSCreator091 is a FeedCreator that implements RSS 0.91 Spec, revision 3.
  *
- * @see http://my.netscape.com/publish/formats/rss-spec-0.91.html
+ * @see https://my.netscape.com/publish/formats/rss-spec-0.91.html
  * @since 1.3
  * @author Kai Blankenhorn <kaib@bitfolge.de>
  */
@@ -1012,7 +1012,7 @@ class RSSCreator091 extends FeedCreator {
 /**
  * RSSCreator20 is a FeedCreator that implements RDF Site Summary (RSS) 2.0.
  *
- * @see http://backend.userland.com/rss
+ * @see https://backend.userland.com/rss
  * @since 1.3
  * @author Kai Blankenhorn <kaib@bitfolge.de>
  */
@@ -1027,7 +1027,7 @@ class RSSCreator20 extends RSSCreator091 {
 
 /**
  * PIECreator01 is a FeedCreator that implements the emerging PIE specification,
- * as in http://intertwingly.net/wiki/pie/Syntax.
+ * as in https://intertwingly.net/wiki/pie/Syntax.
  *
  * @deprecated
  * @since 1.3
@@ -1042,7 +1042,7 @@ class PIECreator01 extends FeedCreator {
 	function createFeed() {
 		$feed = "<?xml version=\"1.0\" encoding=\"".$this->encoding."\"?>\n";
 		$feed.= $this->_createStylesheetReferences();
-		$feed.= "<feed version=\"0.1\" xmlns=\"http://example.com/newformat#\">\n"; 
+		$feed.= "<feed version=\"0.1\" xmlns=\"https://example.com/newformat#\">\n"; 
 		$feed.= "    <title>".FeedCreator::iTrunc(htmlspecialchars($this->title),100)."</title>\n";
 		$this->truncSize = 500;
 		$feed.= "    <subtitle>".$this->getDescription()."</subtitle>\n";
@@ -1065,7 +1065,7 @@ class PIECreator01 extends FeedCreator {
 				$feed.="        </author>\n";
 			}
 			$feed.= "        <content type=\"text/html\" xml:lang=\"en-us\">\n";
-			$feed.= "            <div xmlns=\"http://www.w3.org/1999/xhtml\">".$this->items[$i]->getDescription()."</div>\n";
+			$feed.= "            <div xmlns=\"https://www.w3.org/1999/xhtml\">".$this->items[$i]->getDescription()."</div>\n";
 			$feed.= "        </content>\n";
 			$feed.= "    </entry>\n";
 		}
@@ -1077,7 +1077,7 @@ class PIECreator01 extends FeedCreator {
 
 /**
  * AtomCreator03 is a FeedCreator that implements the atom specification,
- * as in http://www.intertwingly.net/wiki/pie/FrontPage.
+ * as in https://www.intertwingly.net/wiki/pie/FrontPage.
  * Please note that just by using AtomCreator03 you won't automatically
  * produce valid atom files. For example, you have to specify either an editor
  * for the feed or an author for every single feed item.
@@ -1102,7 +1102,7 @@ class AtomCreator03 extends FeedCreator {
 		$feed = "<?xml version=\"1.0\" encoding=\"".$this->encoding."\"?>\n";
 		$feed.= $this->_createGeneratorComment();
 		$feed.= $this->_createStylesheetReferences();
-		$feed.= "<feed version=\"0.3\" xmlns=\"http://purl.org/atom/ns#\"";
+		$feed.= "<feed version=\"0.3\" xmlns=\"https://purl.org/atom/ns#\"";
 		if ($this->language!="") {
 			$feed.= " xml:lang=\"".$this->language."\"";
 		}
@@ -1155,7 +1155,7 @@ class AtomCreator03 extends FeedCreator {
 
 /**
  * MBOXCreator is a FeedCreator that implements the mbox format
- * as described in http://www.qmail.org/man/man5/mbox.html
+ * as described in https://www.qmail.org/man/man5/mbox.html
  *
  * @since 1.3
  * @author Kai Blankenhorn <kaib@bitfolge.de>
@@ -1243,7 +1243,7 @@ class MBOXCreator extends FeedCreator {
 /**
  * OPMLCreator is a FeedCreator that implements OPML 1.0.
  * 
- * @see http://opml.scripting.com/spec
+ * @see https://opml.scripting.com/spec
  * @author Dirk Clemens, Kai Blankenhorn
  * @since 1.5
  */
@@ -1257,7 +1257,7 @@ class OPMLCreator extends FeedCreator {
 		$feed = "<?xml version=\"1.0\" encoding=\"".$this->encoding."\"?>\n";
 		$feed.= $this->_createGeneratorComment();
 		$feed.= $this->_createStylesheetReferences();
-		$feed.= "<opml xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n";
+		$feed.= "<opml xmlns:xsd=\"https://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"https://www.w3.org/2001/XMLSchema-instance\">\n";
 		$feed.= "    <head>\n";
 		$feed.= "        <title>".htmlspecialchars($this->title)."</title>\n";
 		if ($this->pubDate!="") {
@@ -1497,15 +1497,15 @@ $rss->description = "daily news from the PHP scripting world";
 //optional
 //$rss->descriptionTruncSize = 500;
 //$rss->descriptionHtmlSyndicated = true;
-//$rss->xslStyleSheet = "http://feedster.com/rss20.xsl";
+//$rss->xslStyleSheet = "https://feedster.com/rss20.xsl";
 
-$rss->link = "http://www.dailyphp.net/news"; 
-$rss->feedURL = "http://www.dailyphp.net/".$PHP_SELF; 
+$rss->link = "https://www.dailyphp.net/news"; 
+$rss->feedURL = "https://www.dailyphp.net/".$PHP_SELF; 
 
 $image = new FeedImage(); 
 $image->title = "dailyphp.net logo"; 
-$image->url = "http://www.dailyphp.net/images/logo.gif"; 
-$image->link = "http://www.dailyphp.net"; 
+$image->url = "https://www.dailyphp.net/images/logo.gif"; 
+$image->link = "https://www.dailyphp.net"; 
 $image->description = "Feed provided by dailyphp.net. Click to visit."; 
 
 //optional
@@ -1520,7 +1520,7 @@ $rss->image = $image;
 //while ($data = mysql_fetch_object($res)) { 
 	$item = new FeedItem(); 
 	$item->title = "This is an the test title of an item"; 
-	$item->link = "http://localhost/item/"; 
+	$item->link = "https://localhost/item/"; 
 	$item->description = "<b>description in </b><br/>HTML"; 
 	
 	//optional
@@ -1528,7 +1528,7 @@ $rss->image = $image;
 	$item->descriptionHtmlSyndicated = true;
 	
 	$item->date = time(); 
-	$item->source = "http://www.dailyphp.net"; 
+	$item->source = "https://www.dailyphp.net"; 
 	$item->author = "John Doe"; 
 	 
 	$rss->addItem($item); 

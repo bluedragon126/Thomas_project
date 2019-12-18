@@ -28,11 +28,11 @@
                 <div class="whp_preamble2_it">Tradingportföljen</strong> kan du sköta själv via ett abonnemang eller knyta ditt konto till automatisk handel.</div>
 <div class="float_left widthall"></div>
                   <div class="whp_heading">Tradingportföljen abonnemang</div>
-                  Med <i>Tradingportföljen</i> kan du lära sig riktig trading med sunda principer för att hantera risken. Ett abonnemang ger dig insikt i en verklig portfölj och hur den förvaltas med tekniska kvantitativa modeller som grund. Läs mer och abonnera <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a>
+                  Med <i>Tradingportföljen</i> kan du lära sig riktig trading med sunda principer för att hantera risken. Ett abonnemang ger dig insikt i en verklig portfölj och hur den förvaltas med tekniska kvantitativa modeller som grund. Läs mer och abonnera <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst_shop/shopProductDetail/product_id/245">här!</a>
                  
                   
                   <div class="whp_heading">BT Multi Automatic</div>
-                    Om du inte vill lägga order själv, kan du teckna dig för automatisk orderläggning. Det fungerar så att du öppnar ett konto med vår sponsor <i>AvaTrade</i> och knyter det till handelsprogrammet <i>BT Multi Automatic</i> som lägger order på ditt konto enligt samma principer som vårt portföljabonnemang. <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
+                    Om du inte vill lägga order själv, kan du teckna dig för automatisk orderläggning. Det fungerar så att du öppnar ett konto med vår sponsor <i>AvaTrade</i> och knyter det till handelsprogrammet <i>BT Multi Automatic</i> som lägger order på ditt konto enligt samma principer som vårt portföljabonnemang. <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/contactUs">Kontakta oss</a> för mer information!<br>
                 <?php echo include_partial('global/bottom_footer_whitepage'); ?>
             </div>
         </div>

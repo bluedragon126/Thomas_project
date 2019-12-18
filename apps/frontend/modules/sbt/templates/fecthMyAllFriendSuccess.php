@@ -3,7 +3,7 @@
 <a href="#" class="main_link_color float_right"><?php echo count($friend_id) > 8 ? 'More' : '' ?></a>
 <div class="float_left widthall">
 	<?php for($i=0 ; $i<count($friend_id) ; $i++):?>
-		<a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $friend_id[$i] ?>">
+		<a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $friend_id[$i] ?>">
 		<span class="photo_container">
 			<?php if($user_photo_arr[$friend_id[$i]]!=''):?>
 				<img src="/uploads/userThumbnail/<?php echo str_replace('.','_semilarge.',$user_photo_arr[$friend_id[$i]]); ?>" alt="user_photo" class="float_left"/>

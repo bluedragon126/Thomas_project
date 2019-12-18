@@ -27,7 +27,7 @@
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li class=" width_433">
-                        <a class="blog_table_title cursor" href="<?php echo 'http://' . $host_str . '/sbt/sbtBlogDetails/blog_id/' . $data->id; ?>"><span class="width_100per"><?php echo $data->ublog_title ?></span></a>
+                        <a class="blog_table_title cursor" href="<?php echo 'https://' . $host_str . '/sbt/sbtBlogDetails/blog_id/' . $data->id; ?>"><span class="width_100per"><?php echo $data->ublog_title ?></span></a>
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li  class="width_72" >
@@ -118,7 +118,7 @@
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li class=" width_433">
-                        <a class="blog_table_title cursor" href="<?php echo "http://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
+                        <a class="blog_table_title cursor" href="<?php echo "https://" . $host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="width_100per"><?php echo $data->rubrik ?></span></a>
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li  class="width_72" >
@@ -210,7 +210,7 @@
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li class=" width_433">
-                        <a class="blog_table_title cursor" href="<?php echo 'http://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->article_id; ?>"><span class="width_100per"><?php echo $data->title ?></span></a>
+                        <a class="blog_table_title cursor" href="<?php echo 'https://' . $host_str . '/borst/borstArticleDetails/article_id/' . $data->article_id; ?>"><span class="width_100per"><?php echo $data->title ?></span></a>
                     </li>
                     <li class="width_9">&nbsp;</li>
                     <li  class="width_72" >

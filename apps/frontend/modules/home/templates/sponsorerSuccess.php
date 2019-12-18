@@ -43,7 +43,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                  <span id="ctl00_globalWebPartManager_wp233491831_wp924290177"><strong>Under ett antal år</strong> har BNP Paribas byggt upp en framgångsrik verksamhet inom börshandlade investeringsprodukter som mini futures och turbowarranter, och  blivit en av de ledande aktörerna i exempelvis Tyskland och Frankrike. Under 2012 lanseras denna verksamhet även i Sverige.</span>
                  <br />
                    <br />
-                   <span id="ctl00_globalWebPartManager_wp233491831_wp924290177"><strong>Websida:</strong> <a class="main_link_color" href="http://www.educatedtrading.bnpparibas.se" target="_blank">educatedtrading.bnpparibas.se</a><br />
+                   <span id="ctl00_globalWebPartManager_wp233491831_wp924290177"><strong>Websida:</strong> <a class="main_link_color" href="https://www.educatedtrading.bnpparibas.se" target="_blank">educatedtrading.bnpparibas.se</a><br />
                      <strong>E-post:</strong> <a class="main_link_color" href="mailto:listedproducts.sweden@bnpparibas.com">listedproducts.sweden@bnpparibas.com</a><br />
                  <strong>Trading support:</strong> 0200-870&nbsp;900 eller <a class="main_link_color" href="mailto:trading.support@ngm.se">trading.support@ngm.se</a></span><br />
                          
@@ -65,7 +65,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     &nbsp;<br /> <strong>I Sverige har Vontobel </strong>funnits sedan januari 2015. Vår produktportfölj är noterad på derivatbörserna Nordic Growth Market (NGM) och kan handlas överallt där aktier handlas, t.ex hos din vanliga mäklare, eller nätmäklare. Vi har öppet mellan 9.00 och 17.25. Vi erbjuder alltid handelsbara köp- och säljkurser. Våra produkters market making kännetecknas av kontinuitet och likviditet.</p>
 
                 
-                    <p><a href="https://certificates.vontobel.com/SE/SV/Hem"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_Von.png" alt="http://www.pursegainer.com/images/new_home/Se Vontobels utbud här!.png" width="310;" /></a></p>-->
+                    <p><a href="https://certificates.vontobel.com/SE/SV/Hem"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_Von.png" alt="https://www.pursegainer.com/images/new_home/Se Vontobels utbud här!.png" width="310;" /></a></p>-->
                     
                     
                     
@@ -74,7 +74,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     
 
                <!-- <div class="whp_heading_2" id="CMC"><?php echo __('CMC Markets') ?></div>
-                	<a href="http://www.cmcmarkets.se/sv?iaid=446240">CMC Markets</a> grundades 1989 i London och är idag en av världens största CFD-aktörer med fler än 60 000 kunder. Företaget är börsnoterat på London Stock Exchange och finns etablerat med kontor i 15 länder. Det svenska kontoret öppnade 2007 och därifrån sköts all kundservice och utbildning av svenska kunder. <br />
+                	<a href="https://www.cmcmarkets.se/sv?iaid=446240">CMC Markets</a> grundades 1989 i London och är idag en av världens största CFD-aktörer med fler än 60 000 kunder. Företaget är börsnoterat på London Stock Exchange och finns etablerat med kontor i 15 länder. Det svenska kontoret öppnade 2007 och därifrån sköts all kundservice och utbildning av svenska kunder. <br />
                   <br />
                   <strong>Hos CMC Markets </strong>handlar du courtagefritt i index, råvaror, räntepapper samt valutor och du har tillgång till fler än 20 aktiemarknader. All handel sker via vår prisbelönta handelsplattform.<br />
                   <br />
@@ -83,7 +83,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 <strong>Under åren har </strong>CMC Markets fått en mängd priser och utmärkelser för sin handelsplattform, erbjudande och kundservice. 2016 röstade bland annat Financial Times läsare fram oss till bästa CFD-aktör.</p>
                 
                 
-<p><a href="http://www.cmcmarkets.se/sv?iaid=446240"> <img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_CMC.png" alt="http://www.pursegainer.com/images/new_home/Öppna konto hos CMC Markets här!.png" width="310;" /></a></p>
+<p><a href="https://www.cmcmarkets.se/sv?iaid=446240"> <img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_CMC.png" alt="https://www.pursegainer.com/images/new_home/Öppna konto hos CMC Markets här!.png" width="310;" /></a></p>
 
 
 <p><img src="../../../../../../images//border-art-spons.png" alt="border_sponsorer" /></p>!-->
@@ -108,7 +108,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                    <li>Fullständigt EU-reglerad och efterlever MiFID-direktiven</li>
                     </ul>
                 
-                    <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_AT.png" alt="http://www.pursegainer.com/images/new_home/Öppna konto hos Ava Trade här!.png" width="310;" /></a></p>
+                    <p><a href="https://www.avatrade.se/?fbg=2&tag=8947"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_AT.png" alt="https://www.pursegainer.com/images/new_home/Öppna konto hos Ava Trade här!.png" width="310;" /></a></p>
                     
                     
                     
@@ -127,7 +127,7 @@ include_component('isicsBreadcrumbs', 'show', array(
 
 
 
-                <p><a class="main_link_color" href="/borst_shop/borstShopHome#metastock_title"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_MetaS.png" alt="http://www.pursegainer.com/images/new_home/Se MetaStocks utbud i BT-shop!.png" width="310;" /></a></p>
+                <p><a class="main_link_color" href="/borst_shop/borstShopHome#metastock_title"><img style="margin: 12px 0px 70px 0px;" src="../../../../../../images/new_home/open_MetaS.png" alt="https://www.pursegainer.com/images/new_home/Se MetaStocks utbud i BT-shop!.png" width="310;" /></a></p>
 
 
 
@@ -147,7 +147,7 @@ include_component('isicsBreadcrumbs', 'show', array(
              
              
              
-                 <p><a href="https://gffbrokers.com/?utm_source=Morningbriefing"><img style="margin: 12px 0px 45px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="http://www.pursegainer.com/images/new_home/Öppna konto hos GFF brokers här!.png" width="310;" /></a></p>
+                 <p><a href="https://gffbrokers.com/?utm_source=Morningbriefing"><img style="margin: 12px 0px 45px 0px;" src="../../../../../../images/new_home/open_GFF.png" alt="https://www.pursegainer.com/images/new_home/Öppna konto hos GFF brokers här!.png" width="310;" /></a></p>
              
              
              
@@ -170,7 +170,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 
                 
                 
-                <strong><a class="main_link_color" href="http://www.ohmancapital.se/">Läs mer på www.ohmancapital.se.</a></strong>-->
+                <strong><a class="main_link_color" href="https://www.ohmancapital.se/">Läs mer på www.ohmancapital.se.</a></strong>-->
 
             </div>
             <?php echo include_partial('global/inner_bottom_footer'); ?>

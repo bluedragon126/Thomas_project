@@ -1291,12 +1291,12 @@ $(document).ready(function()
 		{
 			$('#sf_admin_container').find("a").each(function(index){
 				var ref = $(this).attr("href");
-				$(this).attr("href",'http://'+window.location.hostname+'/backend.php'+ref);	
+				$(this).attr("href",'https://'+window.location.hostname+'/backend.php'+ref);	
 			});
 			
 			$('#sf_admin_container').find("form").each(function(index){
 				var action = $(this).attr("action");
-				$(this).attr("action",'http://'+window.location.hostname+'/backend.php'+action);	
+				$(this).attr("action",'https://'+window.location.hostname+'/backend.php'+action);	
 			});
 
 			
@@ -2390,11 +2390,11 @@ $(document).ready(function()
 		
 		if(id == 'save_receipt')
 		{
-			window.location = 'http://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=1'
+			window.location = 'https://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=1'
 		}
 		if(id == 'save_receipt_article')
 		{
-			window.location = 'http://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=1'+'&individual_article=1'
+			window.location = 'https://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=1'+'&individual_article=1'
 		}
 		/*if(id == 'e_bill')
 		{
@@ -2409,12 +2409,12 @@ $(document).ready(function()
 		
 		if(id == 'save_invoice')
 		{
-			window.location = 'http://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=0'
+			window.location = 'https://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=0'
 		}
                 
                 if(id == 'save_invoice_article')
                 {
-                    window.location = 'http://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=0'+'&individual_article=1'
+                    window.location = 'https://'+window.location.hostname+'/backend.php/borst/saveAsPdf?purchase_id='+purchase_id+'&receipt=0'+'&individual_article=1'
                 }
 		
 		if(id == 'print_invoice')
@@ -2891,7 +2891,7 @@ function change_template()
 {
 	var tmp_name = $('#filenames').val();
 	$('#temp_switch').val(tmp_name);
-	var popurl="http://"+window.location.hostname+"/backend.php/borst/createArticle/template_id/"+tmp_name;
+	var popurl="https://"+window.location.hostname+"/backend.php/borst/createArticle/template_id/"+tmp_name;
 	window.location = popurl;
 }
 
@@ -3963,7 +3963,7 @@ function upload_img_for_bt(id)
 /* To show the opened window in center of page. */
 function openWindowInCenter(post_url,new_width,new_height,window_name)
 {
-	var url = "http://"+window.location.hostname+"/"+post_url;
+	var url = "https://"+window.location.hostname+"/"+post_url;
 	var name = window_name;
 	var w = new_width;
 	var h = new_height;
@@ -3997,7 +3997,7 @@ function openWindowInCenter(post_url,new_width,new_height,window_name)
 	win.moveTo(wleft, wtop);
 	win.focus();
 	
-	//window.open("http://"+window.location.hostname+"/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
+	//window.open("https://"+window.location.hostname+"/epolicy.php","mywindow","menubar=1,resizable=1,width=500,height=525");
 }
 
 

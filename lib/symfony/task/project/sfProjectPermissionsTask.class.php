@@ -110,7 +110,7 @@ EOF;
   /**
    * Captures those chmod commands that fail.
    * 
-   * @see http://www.php.net/set_error_handler
+   * @see https://www.php.net/set_error_handler
    */
   public function handleError($no, $string, $file, $line, $context)
   {

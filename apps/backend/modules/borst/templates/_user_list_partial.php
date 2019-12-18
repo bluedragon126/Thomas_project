@@ -78,8 +78,8 @@
 		else $stopdate = "";
 		?>
         <input class="<?php echo $class ?>" name="stopdate[]" type="text" style="width: 70px; <?php $style ?>" value="<?php echo $stopdate; ?>"></td>
-		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo $user->kundnr ?></a></td>
-		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo substr($user->username, 0, 10) ?></a></td>
+		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo $user->kundnr ?></a></td>
+		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo substr($user->username, 0, 10) ?></a></td>
 		<td class="<?php echo $class ?>"><?php echo substr($user->firstname, 0, 10); ?></td>
 		<td class="<?php echo $class ?>"><?php echo substr($user->lastname, 0, 15); ?></td>
 		<td class="<?php echo $class ?>"><?php echo $user->city ?></td>

@@ -1558,7 +1558,7 @@ class borst_shopActions extends sfActions {
             $purchase_record->save();
 
             $host_str = $this->getRequest()->getHost();
-            $url = 'http://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
+            $url = 'https://'. $host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$order_no;
           
             // $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no,'url'=>$url));
             // $to = array(sfConfig::get('app_mail_to_1'));
@@ -1627,7 +1627,7 @@ class borst_shopActions extends sfActions {
               $IP = "127.0.0.1"; */
 
             // Check the manual for additional data types / flags
-            $URL = "http://unix.telluspay.com/Add/?TP01=$DirectCapture&TP700=$TellusPayID&TP701=$OrderNo&TP740=$Data&TP901=$TransactionType&TP491=$ISOLanguage&TP490=$ISOCurrency&TP801=$Email&TP8021=$FirstName&TP8022=$LastName&TP803=$Address&TP804=$ZipCode&TP805=$City&TP806=$Country&TP8071=$ID&TP5411=$Shipping&TP900=$IP&TP950=$ExtraData";
+            $URL = "https://unix.telluspay.com/Add/?TP01=$DirectCapture&TP700=$TellusPayID&TP701=$OrderNo&TP740=$Data&TP901=$TransactionType&TP491=$ISOLanguage&TP490=$ISOCurrency&TP801=$Email&TP8021=$FirstName&TP8022=$LastName&TP803=$Address&TP804=$ZipCode&TP805=$City&TP806=$Country&TP8071=$ID&TP5411=$Shipping&TP900=$IP&TP950=$ExtraData";
 
 
             $handle = fopen($URL, "r");
@@ -2205,7 +2205,7 @@ class borst_shopActions extends sfActions {
             if ($arr_article == 1) {
                 $product = Doctrine::getTable("Article")->find($product_id);
                 $host_str = $this->getRequest()->getHost();
-                $url = 'http://' . $host_str . '/borst/borstArticleDetails/article_id/' . $product_id
+                $url = 'https://' . $host_str . '/borst/borstArticleDetails/article_id/' . $product_id
                 ;
                 $this->redirect($url);
             } else {
@@ -2408,7 +2408,7 @@ class borst_shopActions extends sfActions {
             $purchase_record->payment_method = $payment_mtd[$transaction_type];
             $purchase_record->save();
 
-            $url = 'http://' . $host_str . '/backend.php/borst/viewPurchaseDetail/id/' . $order_no;
+            $url = 'https://' . $host_str . '/backend.php/borst/viewPurchaseDetail/id/' . $order_no;
 
             $mailBody = $this->getPartial('processed_order_mail1', array('order_no' => $order_no, 'url' => $url));
             $to = array(sfConfig::get('app_mail_to_1'));
@@ -2475,7 +2475,7 @@ class borst_shopActions extends sfActions {
               $IP = "127.0.0.1"; */
 
             // Check the manual for additional data types / flags
-            $URL = "http://unix.telluspay.com/Add/?TP01=$DirectCapture&TP700=$TellusPayID&TP701=$OrderNo&TP740=$Data&TP901=$TransactionType&TP491=$ISOLanguage&TP490=$ISOCurrency&TP801=$Email&TP8021=$FirstName&TP8022=$LastName&TP803=$Address&TP804=$ZipCode&TP805=$City&TP806=$Country&TP8071=$ID&TP5411=$Shipping&TP900=$IP&TP950=$ExtraData";
+            $URL = "https://unix.telluspay.com/Add/?TP01=$DirectCapture&TP700=$TellusPayID&TP701=$OrderNo&TP740=$Data&TP901=$TransactionType&TP491=$ISOLanguage&TP490=$ISOCurrency&TP801=$Email&TP8021=$FirstName&TP8022=$LastName&TP803=$Address&TP804=$ZipCode&TP805=$City&TP806=$Country&TP8071=$ID&TP5411=$Shipping&TP900=$IP&TP950=$ExtraData";
 
             $handle = fopen($URL, "r");
             $TellusPay_Key = str_replace(' ', '%20', fread($handle, 1000000));

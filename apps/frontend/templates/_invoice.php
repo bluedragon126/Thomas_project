@@ -150,7 +150,7 @@
                         <?php $purchase_product = Doctrine::getTable("BtShopArticle")->find($data->product_id);?>
          <?php if($purchase_product["is_downloadable"]):?>
       <tr><td colspan="3">&nbsp;&nbsp;</td></tr>
-      <tr><td colspan="3">hämta url: <?php echo "http://".sfConfig::get("app_host_name")."/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id?> </td></tr>
+      <tr><td colspan="3">hämta url: <?php echo "https://".sfConfig::get("app_host_name")."/borst_shop/btShopeProductUrl/link/".$purchase_rec->getId()."_".$data->product_id?> </td></tr>
   <?php endif;?>
 <?php $total = $total + $mul; ?>
                                     </table>

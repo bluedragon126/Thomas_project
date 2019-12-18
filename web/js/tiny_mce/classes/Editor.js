@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /*jshint scripturl:true */
@@ -136,7 +136,7 @@ define("tinymce/Editor", [
 			visual: true,
 			font_size_style_values: 'xx-small,x-small,small,medium,large,x-large,xx-large',
 
-			// See: http://www.w3.org/TR/CSS2/fonts.html#propdef-font-size
+			// See: https://www.w3.org/TR/CSS2/fonts.html#propdef-font-size
 			font_size_legacy_values: 'xx-small,small,medium,large,x-large,xx-large,300%',
 			forced_root_block: 'p',
 			hidden_input: true,

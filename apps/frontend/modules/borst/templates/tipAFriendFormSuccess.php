@@ -73,7 +73,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                     {
                         echo $rub;
                     }else{
-                        echo '<a href="http://'.$_SERVER['HTTP_HOST'].'">Börstjänaren</a>';
+                        echo '<a href="https://'.$_SERVER['HTTP_HOST'].'">Börstjänaren</a>';
                     }
                 ?>
                 </h1>

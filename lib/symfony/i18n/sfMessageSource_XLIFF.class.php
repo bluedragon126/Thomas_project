@@ -10,7 +10,7 @@
  *
  * To contact the author write to {@link mailto:qiang.xue@gmail.com Qiang Xue}
  * The latest version of PRADO can be obtained from:
- * {@link http://prado.sourceforge.net/}
+ * {@link https://prado.sourceforge.net/}
  *
  * @author     Wei Zhuo <weizhuo[at]gmail[dot]com>
  * @version    $Id: sfMessageSource_XLIFF.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
@@ -24,8 +24,8 @@
  * Using XML XLIFF format as the message source for translation.
  * Details and example of XLIFF can be found in the following URLs.
  *
- * # http://www.opentag.com/xliff.htm
- * # http://www-106.ibm.com/developerworks/xml/library/x-localis2/
+ * # https://www.opentag.com/xliff.htm
+ * # https://www-106.ibm.com/developerworks/xml/library/x-localis2/
  *
  * See the MessageSource::factory() method to instantiate this class.
  *
@@ -84,7 +84,7 @@ class sfMessageSource_XLIFF extends sfMessageSource_File
   protected function createDOMDocument($xml = null)
   {
     $domimp = new DOMImplementation();
-    $doctype = $domimp->createDocumentType('xliff', '-//XLIFF//DTD XLIFF//EN', 'http://www.oasis-open.org/committees/xliff/documents/xliff.dtd');
+    $doctype = $domimp->createDocumentType('xliff', '-//XLIFF//DTD XLIFF//EN', 'https://www.oasis-open.org/committees/xliff/documents/xliff.dtd');
     $dom = $domimp->createDocument('', '', $doctype);
     $dom->formatOutput = true;
     $dom->preserveWhiteSpace = false;
@@ -434,7 +434,7 @@ class sfMessageSource_XLIFF extends sfMessageSource_File
 
     return <<<EOD
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "https://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
 <xliff version="1.0">
   <file source-language="EN" target-language="{$this->culture}" datatype="plaintext" original="$catalogue" date="$date" product-name="$catalogue">
     <header />

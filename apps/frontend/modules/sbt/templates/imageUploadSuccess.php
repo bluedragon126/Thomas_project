@@ -10,7 +10,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 <div id="img_upload">
 <?php if($action_mode == 'upload'): ?>
 	<h1><?php echo 'Upload image'; ?></h1>
-	<p class="caution"><strong><?php echo 'Note:' ?></strong><?php echo 'Endast JPG-, GIF- och PNG-bilder kan laddas upp. Maximal storlek för en bild är 495 x 1000 px och 150 KB. Större bilder kommer, om möjligt, att skalas ned.' ?></p>
+	<p class="caution"><strong><?php echo 'Note:' ?></strong><?php echo 'Endast JPG-, GIF- och PNG-bilder kan laddas upp. Maximal storlek fï¿½r en bild ï¿½r 495 x 1000 px och 150 KB. Stï¿½rre bilder kommer, om mï¿½jligt, att skalas ned.' ?></p>
 	<ul>
 	  <?php foreach($errors as $f) { ?>
 	  <li><?php echo $f; ?></li>
@@ -35,7 +35,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 			<p><?php echo 'Image successful uploaded.'; ?></p>
 		<?php endif; ?>  
 	<?php endif; ?>  
-	<div><img src="<?php echo 'http://'.$host_str.'/images/analysis_images/'.$filename ?>" alt="" height="100" border="1"></div>
+	<div><img src="<?php echo 'https://'.$host_str.'/images/analysis_images/'.$filename ?>" alt="" height="100" border="1"></div>
   	<p><?php echo $lang['paste_image']; ?></p>
   	<p>ingress<br>
   		<button style="width:25px; height:25px;" title="<?php echo 'Insert image normal'; ?>" onClick="opener.insert('<?php echo $image_path; ?>','<?php echo '/images/analysis_images/' .$filename; ?>'); window.close()"><img src="/images/img_normal.gif" alt="<?php echo 'Insert image normal'; ?>" width="11" height="11" /></button>

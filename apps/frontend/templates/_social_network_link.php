@@ -9,7 +9,7 @@
     <?php $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];?>
     <div class='floatLeft margin_rgt_share' data-href="https://www.borstjanaren.se/" data-layout="button_count" data-size="large" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $url; ?>&amp;src=sdkpreparse"><img src="/images/new_home/gilla.png" height="15"/></a></div>
 
-    <!--<div class='floatLeft'><a class="addthis_button_google_plusone_share" href="http://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren"><img src="/images/new_home/gilla.png" /></a></div>-->
+    <!--<div class='floatLeft'><a class="addthis_button_google_plusone_share" href="https://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren"><img src="/images/new_home/gilla.png" /></a></div>-->
     <!--code by sandeep  End -->
 
     <!--<div class='floatLeft margin_rgt_7'><a href="https://www.addthis.com/bookmark.php?v=250&amp;username=borstjanaren" class="addthis_button"><img src="/images/new_home/dela.png" height="15"/></a></div>-->

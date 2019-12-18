@@ -121,7 +121,7 @@ class SbtAnalysis extends BaseSbtAnalysis
 		$str = '<table cellpadding="0" cellspacing="0" border="0">';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<tr><td style="color:#000000;">'.substr($list->created_at,0,10).'</td><td><a class="float_left" href="http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$list->id.'" style="color:#174E96;">&nbsp;'.$list->analysis_title.'<a/></td></tr>';
+			$str .= '<tr><td style="color:#000000;">'.substr($list->created_at,0,10).'</td><td><a class="float_left" href="https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$list->id.'" style="color:#174E96;">&nbsp;'.$list->analysis_title.'<a/></td></tr>';
 		}
 		$str .= '</table>';
 		return $str;
@@ -144,7 +144,7 @@ class SbtAnalysis extends BaseSbtAnalysis
 		$str = '';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<span style="color:#000000;">'.substr($list->created_at,0,10).'</span> <a href="http://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$list->id.'" style="color:#174E96;">'.$list->analysis_title.'<a/><br/>';
+			$str .= '<span style="color:#000000;">'.substr($list->created_at,0,10).'</span> <a href="https://'.$_SERVER['HTTP_HOST'].'/sbt/sbtArticleDetails/article_id/'.$list->id.'" style="color:#174E96;">'.$list->analysis_title.'<a/><br/>';
 		}
 		return $str;
 	}    
@@ -401,7 +401,7 @@ class SbtAnalysis extends BaseSbtAnalysis
                 $str .= '<table cellpadding="0" cellspacing="0" border="0">';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<tr><td class="related_article_date">' .substr($list->created_at,0,10) . '</td><td><a class="related_article_title" href="http://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/'.$list->id.'">'.$list->analysis_title.'<a/></td></tr>';
+			$str .= '<tr><td class="related_article_date">' .substr($list->created_at,0,10) . '</td><td><a class="related_article_title" href="https://' . $_SERVER['HTTP_HOST'] . '/sbt/sbtArticleDetails/article_id/'.$list->id.'">'.$list->analysis_title.'<a/></td></tr>';
 		}
                 $str .= '</table>';
 		return $str;

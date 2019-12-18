@@ -5,7 +5,7 @@
 	<div class="float_left widthall art_topic">
 		<table cellpadding="0" cellspacing="0" border="0">
 			<?php foreach ($pagerForSimilarArticles->getResults() as $list){
-						echo '<tr><td class="related_article_date">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="http://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">'.$list->title.'<a/></td></tr>';
+						echo '<tr><td class="related_article_date">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="https://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">'.$list->title.'<a/></td></tr>';
 					}
 			?>
 		</table>

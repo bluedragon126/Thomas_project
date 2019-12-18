@@ -97,7 +97,7 @@
                         if (data && data.status == "PAID") {
                             // Perform redirect to order confirmation
                             //console.log("Order completed.");                                
-                            window.location = 'http://'+window.location.hostname+'/borst_shop/shopArticlePaymentDone?typ=4&swishRes='+swishRes;
+                            window.location = 'https://'+window.location.hostname+'/borst_shop/shopArticlePaymentDone?typ=4&swishRes='+swishRes;
                         } else {
                             if (data.status == 'ERROR' || data.status == 'DECLINED') {
                                 //console.log('error');
@@ -109,7 +109,7 @@
                                 }else{
                                     $("#msg-poll").html(errCode[data.errorCode]);
                                 }
-                                //window.location = 'http://'+window.location.hostname+'/borst_shop/shopArticlePaymentDone?typ=4&swishRes='+swishRes;
+                                //window.location = 'https://'+window.location.hostname+'/borst_shop/shopArticlePaymentDone?typ=4&swishRes='+swishRes;
                             } else {
                                 //console.log('success');
                                 poll();
@@ -270,7 +270,7 @@
                     <li>
                         <span class="span1"><input type="radio" class="radio" checked="checked" value="1" name="pay_option" onchange="paymentMethod('1')"></span>
                         <span class="shop_payment_type span2">Kortbetalning</span>
-                        <span class="span3"><img src="<?php echo 'http://' . $host_str . '/images/new_home/visa-mastercard.png'; ?>" width="60" height="19" alt="Visa" /></span>
+                        <span class="span3"><img src="<?php echo 'https://' . $host_str . '/images/new_home/visa-mastercard.png'; ?>" width="60" height="19" alt="Visa" /></span>
                     </li>
                     <li>
                         <span class="span1"><input type="radio" class="radio" name="pay_option" value="3" onchange="paymentMethod('3')"></span>

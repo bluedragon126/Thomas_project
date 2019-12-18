@@ -1,7 +1,7 @@
 <div class="blog_comment_heading"><?php echo $pager->getNbResults(); ?> kommentarer, läs nedan eller <span class="main_link_color"><a id="comment_on" class="main_link_color cursor" rel="nofollow" href="#comment_on_blog">lägg till en egen</a></span></div>
 <?php foreach ($pager->getResults() as $data): ?>
     <div class="comment_messagewrapper width_100per">
-        <div class="float_left width_96"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
+        <div class="float_left width_96"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>">
                 <?php if ($user_photo_arr[$data->comment_by] != ''): ?>
                     <img width="72" height="72" src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $user_photo_arr[$data->comment_by]); ?>" alt="user_photo"/>
                 <?php else: ?>
@@ -10,7 +10,7 @@
             </a></div>
         <div class="info width_490px paddingLeft0px" >
             <div class="float_left widthall">
-                <div class="blog_username float_left"><a class="borst_subtitle_4" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></div>
+                <div class="blog_username float_left"><a class="borst_subtitle_4" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $data->comment_by ?>"><?php echo $profile->getFullUserName($data->comment_by) ?></a></div>
                 <div class="blog_main_date fontItalic float_right"><?php echo $data->created_at ?></div>
             </div>
             <span class="blog_comments width_100per"><?php echo $data->blog_comment ?></span>

@@ -14,7 +14,7 @@
         </tr>
         <?php foreach ($pager->getResults() as $user): ?>
             <tr class="classnot">
-                <td class="padding_right_10px"><a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
+                <td class="padding_right_10px"><a class="bluegrayfont" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>">
                         <?php if ($user_arr[$user->user_id] != ''): ?>
                             <img src="/uploads/userThumbnail/<?php echo str_replace('.', '_mid.', $user_arr[$user->user_id]); ?>" alt="user_photo"/>
                         <?php else: ?>
@@ -25,7 +25,7 @@
                             <?php endif; ?>
                         <?php endif; ?>
                     </a></td>
-                <td class="bluegrayfont padding_right_10px padding_left_5px">&nbsp;&nbsp;<a class="bluegrayfont" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>"><?php echo $user->firstname . ' ' . $user->lastname ?></a></td>
+                <td class="bluegrayfont padding_right_10px padding_left_5px">&nbsp;&nbsp;<a class="bluegrayfont" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user->user_id; ?>"><?php echo $user->firstname . ' ' . $user->lastname ?></a></td>
                 <td class="skincolor padding_right_10px" ><?php echo $user->how_is_user($user->user_id) ?></td>
                 <td><?php echo substr($user->regdate, 0, 10); ?></td>
                 <td class="bluegrayfont padding_right_10px"  align="center"><?php echo $user->getTotalMessagesReceived($user->user_id) ?></td>

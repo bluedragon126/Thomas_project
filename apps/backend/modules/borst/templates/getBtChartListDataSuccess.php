@@ -1,7 +1,7 @@
 	<div id="subscription_other_links" class="float_left widthall" style="width:900px; margin-bottom:20px;">
-		<a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
-        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
+		<a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
+        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
 	</div>
     
     <div class="shoph3 widthall"> <span style="float: left;"> Stock List </span> </div>
@@ -54,7 +54,7 @@
                         <input type="radio" value="disable" name="stock[<?php echo $data->id; ?>]" id="<?php echo $data->id; ?>" <?php if($data->active!=1)echo "checked='checked'"; ?> />InActive
                     </td>                    
                     <td> 
-                        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#" id="<?php echo $data->id ?>" class="delete_stock"><img src="/images/cross.png" /> </a>
                     </td>
                     <td>  </td>                

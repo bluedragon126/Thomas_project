@@ -11,12 +11,12 @@
         <div class="comment_content_wrapper float_left widthall">
             <div class="width_120 float_left comment_content_img_wrapper">
                 <?php if ($preview_information['user_photo'] != ''): ?>
-                    <a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $preview_information['user_photo']); ?>" alt="user_photo"/></a>
+                    <a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><img src="/uploads/userThumbnail/<?php echo str_replace('.', '_large.', $preview_information['user_photo']); ?>" alt="user_photo"/></a>
                 <?php else: ?>
-                    <a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><img src="/images/forum_userphoto.png" alt="photo" width="110" /></a>
+                    <a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><img src="/images/forum_userphoto.png" alt="photo" width="110" /></a>
                 <?php endif; ?>
                 <div class="forum_comment_user_name widthall float_left">
-                    <a href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><?php echo ($new_profile && $sf_user->getGuardUser()) ? ucwords($new_profile->getFullUserName($sf_user->getGuardUser()->getId())) : ucwords($preview_information['name']); ?> </a></div>
+                    <a href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class=""><?php echo ($new_profile && $sf_user->getGuardUser()) ? ucwords($new_profile->getFullUserName($sf_user->getGuardUser()->getId())) : ucwords($preview_information['name']); ?> </a></div>
                 <div class="forum_comment_detail float_left">
                     <div class="widthall float_left"></div>
                     <div class="widthall float_left">Aktiv: <?php echo $preview_information['user_active']; ?></div>

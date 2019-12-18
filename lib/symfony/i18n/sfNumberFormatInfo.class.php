@@ -10,7 +10,7 @@
  *
  * To contact the author write to {@link mailto:qiang.xue@gmail.com Qiang Xue}
  * The latest version of PRADO can be obtained from:
- * {@link http://prado.sourceforge.net/}
+ * {@link https://prado.sourceforge.net/}
  *
  * @author     Wei Zhuo <weizhuo[at]gmail[dot]com>
  * @version    $Id: sfNumberFormatInfo.class.php 28725 2010-03-23 16:56:48Z FabianLange $
@@ -294,7 +294,7 @@ class sfNumberFormatInfo
     else
     {
       // use the positive prefix and postfix and add the NegativeSign
-      // http://www.unicode.org/reports/tr35/tr35-15.html#Number_Format_Patterns
+      // https://www.unicode.org/reports/tr35/tr35-15.html#Number_Format_Patterns
       // If there is no explicit negative subpattern, the negative subpattern is the localized minus sign prefixed to the positive subpattern.
       $info['negPref'] = $this->getNegativeSign().$info['posPref'];
       $info['negPost'] = $info['posPost'];

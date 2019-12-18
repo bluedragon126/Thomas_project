@@ -129,31 +129,31 @@
                             <?php if ((in_array("BT Utbrott", $show_button1) && $validUser) || $admin || $freeChartsPeriod): ?>
                                 <a id="4" class="btn_chart cursor"><span class="charts_btn_active"><span class="charts_button_text_4">BT Utbrott</span></span></a>
                             <?php else: ?>
-                                <a id="4" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/29' ?>"><span class="charts_btn_4"><span class="charts_button_text_4">BT Utbrott</span></span></a>
+                                <a id="4" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/29' ?>"><span class="charts_btn_4"><span class="charts_button_text_4">BT Utbrott</span></span></a>
                             <?php endif; ?>
 
                             <?php if ((in_array("BT Trend", $show_button1) && $validUser) || $admin || $freeChartsPeriod): ?>
                                 <a id="5" class="btn_chart cursor"><span class="charts_btn_active"><span class="charts_button_text_5">BT Trend</span></span></a>
                             <?php else: ?>
-                                <a id="5" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/30' ?>"><span class="charts_btn_5"><span class="charts_button_text_5">BT Trend</span></span></a>
+                                <a id="5" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/30' ?>"><span class="charts_btn_5"><span class="charts_button_text_5">BT Trend</span></span></a>
                             <?php endif; ?>
 
                             <?php if ((in_array("BT Kanalen", $show_button1) && $validUser) || $admin || $freeChartsPeriod): ?>        
                                 <a id="6" class="btn_chart cursor"><span class="charts_btn_active"><span class="charts_button_text_6">BT-kanalen</span></span></a>
                             <?php else: ?>
-                                <a id="6" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/28' ?>"><span class="charts_btn_6"><span class="charts_button_text_6">BT-kanalen</span></span></a>
+                                <a id="6" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/28' ?>"><span class="charts_btn_6"><span class="charts_button_text_6">BT-kanalen</span></span></a>
                             <?php endif; ?>
 
                             <?php if ((in_array("Henry Boy", $show_button1) && $validUser) || $admin || $freeChartsPeriod): ?>
                                 <a id="7" class="btn_chart cursor"><span class="charts_btn_active"><span class="charts_button_text_7">BT Insider</span></span></a>
                             <?php else: ?>
-                                <a id="7" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/31' ?>"><span class="charts_btn_7"><span class="charts_button_text_7">BT Insider</span></span></a>
+                                <a id="7" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/31' ?>"><span class="charts_btn_7"><span class="charts_button_text_7">BT Insider</span></span></a>
                             <?php endif; ?>
 
                             <?php if ((in_array("Kandelaber", $show_button1) && $validUser) || $admin || $freeChartsPeriod): ?>
                                 <a id="8" class="btn_chart cursor"><span class="charts_btn_active"><span class="charts_button_text_8">Kandelaber</span></span></a>
                             <?php else: ?>
-                                <a id="8" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/23' ?>"><span class="charts_btn_8"><span class="charts_button_text_8">Kandelaber</span></span></a>
+                                <a id="8" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/23' ?>"><span class="charts_btn_8"><span class="charts_button_text_8">Kandelaber</span></span></a>
     <?php endif; ?>
 
                     </div>
@@ -172,7 +172,7 @@
                                     <table cellpadding="0" cellspacing="0" border="0">
                                         <?php
                                         foreach ($pagerForSimilarArticles->getResults() as $list) {
-                                            echo '<tr><td class="related_article_date">' . substr($list->article_date, 0, 10) . '</td><td><a class="main_link_color" href="http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $list->article_id . '">&nbsp;' . $list->title . '<a/></td></tr>';
+                                            echo '<tr><td class="related_article_date">' . substr($list->article_date, 0, 10) . '</td><td><a class="main_link_color" href="https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $list->article_id . '">&nbsp;' . $list->title . '<a/></td></tr>';
                                         }
                                         ?>
                                     </table>
@@ -246,7 +246,7 @@
                                     $i = 0;
                                     foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -261,7 +261,7 @@
                                         $i = 0;
                                         foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas * 2 && $i >= $item_per_col_lasarnas):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -277,7 +277,7 @@
                                         $i = 0;
                                         foreach ($stock_list_lasarnas as $stock): if ($i < $item_per_col_lasarnas * 3 && $i >= $item_per_col_lasarnas * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -293,7 +293,7 @@
                                         $i = 0;
                                         foreach ($stock_list_lasarnas as $stock): if ($i <= $item_per_col_lasarnas * 4 && $i >= $item_per_col_lasarnas * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -331,7 +331,7 @@
                                     foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden):
                                             ?>
                                             <?php if ($stock->sector == 'Sektor'): ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
                                             <?php
                                         endif;
@@ -349,7 +349,7 @@
                                         foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden * 2 && $i >= $item_per_col_varlden):
                                                 ?>
                                                 <?php if ($stock->sector == 'Sektor'): ?>
-                                                    <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                    <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php endif; ?>
                                                 <?php
                                             endif;
@@ -368,7 +368,7 @@
                                         foreach ($stock_list_varlden as $stock): if ($i < $item_per_col_varlden * 3 && $i >= $item_per_col_varlden * 2):
                                                 ?>
                                                 <?php if ($stock->sector == 'Sektor'): ?>
-                                                    <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                    <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php endif; ?>
                                                 <?php
                                             endif;
@@ -387,7 +387,7 @@
                                         foreach ($stock_list_varlden as $stock): if ($i <= $item_per_col_varlden * 4 && $i >= $item_per_col_varlden * 3):
                                                 ?>
                                                 <?php if ($stock->sector == 'Sektor'): ?>
-                                                    <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                    <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php endif; ?>
                                                 <?php
                                             endif;
@@ -402,7 +402,7 @@
                                         foreach ($stock_list_varlden as $stock): if ($i <= $item_per_col_varlden * 4 && $i >= $item_per_col_varlden * 3):
                                                 ?>
                                                 <?php if ($stock->sector == 'Finans'): ?>
-                                                    <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                    <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php endif; ?>
                                                 <?php
                                             endif;
@@ -440,7 +440,7 @@
                                     <li><span class="heading_violet_sector charts_market_subheading">Metaller</span></li>
                                     <?php foreach ($stock_list_Ravaror as $stock): ?>
                                         <?php if ($stock->sector == 'Metaller'): ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
 <?php endforeach; ?>
                                     <li>&nbsp;</li>
@@ -448,7 +448,7 @@
                                     <li id="last-li-chart"> <span class="heading_violet_sector charts_market_subheading">Energi</span> </li>
                                     <?php foreach ($stock_list_Ravaror as $stock): ?>
                                         <?php if ($stock->sector == 'Energi'): ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                         <?php endif; ?>
 <?php endforeach; ?>                
                                 </ul>
@@ -459,7 +459,7 @@
                                         <li><span class="heading_violet_sector charts_market_subheading">Spannmål</span></li>                
                                         <?php foreach ($stock_list_Ravaror as $stock): ?>
                                             <?php if ($stock->sector == 'Spannmål'): ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
     <?php endforeach; ?>
 
@@ -472,7 +472,7 @@
                                         <li><span class="heading_violet_sector charts_market_subheading">Mat/Fiber/Mjuka</span></li>
                                         <?php foreach ($stock_list_Ravaror as $stock): ?>
                                             <?php if ($stock->sector == 'Mat/Fiber/Mjuka'): ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
     <?php endforeach; ?>
                                     </ul>
@@ -484,7 +484,7 @@
                                         <li><span class="heading_violet_sector charts_market_subheading">Kött</span></li>
                                         <?php foreach ($stock_list_Ravaror as $stock): ?>
                                             <?php if ($stock->sector == 'Kött'): ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php endif; ?>
     <?php endforeach; ?>
                                     </ul>
@@ -517,7 +517,7 @@
                                     $i = 0;
                                     foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -532,7 +532,7 @@
                                         $i = 0;
                                         foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor * 2 && $i >= $item_per_col_Valutor):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -548,7 +548,7 @@
                                         $i = 0;
                                         foreach ($stock_list_Valutor as $stock): if ($i < $item_per_col_Valutor * 3 && $i >= $item_per_col_Valutor * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -564,7 +564,7 @@
                                         $i = 0;
                                         foreach ($stock_list_Valutor as $stock): if ($i <= $item_per_col_Valutor * 4 && $i >= $item_per_col_Valutor * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -600,7 +600,7 @@
                                     $i = 0;
                                     foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -615,7 +615,7 @@
                                         $i = 0;
                                         foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap * 2 && $i >= $item_per_col_LargeCap):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -631,7 +631,7 @@
                                         $i = 0;
                                         foreach ($stock_list_LargeCap as $stock): if ($i < $item_per_col_LargeCap * 3 && $i >= $item_per_col_LargeCap * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -647,7 +647,7 @@
                                         $i = 0;
                                         foreach ($stock_list_LargeCap as $stock): if ($i <= $item_per_col_LargeCap * 4 && $i >= $item_per_col_LargeCap * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -683,7 +683,7 @@
                                     $i = 0;
                                     foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -698,7 +698,7 @@
                                         $i = 0;
                                         foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap * 2 && $i >= $item_per_col_MidCap):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -714,7 +714,7 @@
                                         $i = 0;
                                         foreach ($stock_list_MidCap as $stock): if ($i < $item_per_col_MidCap * 3 && $i >= $item_per_col_MidCap * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -730,7 +730,7 @@
                                         $i = 0;
                                         foreach ($stock_list_MidCap as $stock): if ($i <= $item_per_col_MidCap * 4 && $i >= $item_per_col_MidCap * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -766,7 +766,7 @@
                                     $i = 0;
                                     foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -781,7 +781,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap * 2 && $i >= $item_per_col_SmallCap):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -797,7 +797,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SmallCap as $stock): if ($i < $item_per_col_SmallCap * 3 && $i >= $item_per_col_SmallCap * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -813,7 +813,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SmallCap as $stock): if ($i <= $item_per_col_SmallCap * 4 && $i >= $item_per_col_SmallCap * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -852,7 +852,7 @@
                                     $i = 0;
                                     foreach ($stock_list_SP100 as $stock): if ($i < $item_per_col_SP100):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -867,7 +867,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SP100 as $stock): if ($i < $item_per_col_SP100 * 2 && $i >= $item_per_col_SP100):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -883,7 +883,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SP100 as $stock): if ($i < $item_per_col_SP100 * 3 && $i >= $item_per_col_SP100 * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -899,7 +899,7 @@
                                         $i = 0;
                                         foreach ($stock_list_SP100 as $stock): if ($i <= $item_per_col_SP100 * 4 && $i >= $item_per_col_SP100 * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -938,7 +938,7 @@
                                     $i = 0;
                                     foreach ($stock_list_NQ100 as $stock): if ($i < $item_per_col_NQ100):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -953,7 +953,7 @@
                                         $i = 0;
                                         foreach ($stock_list_NQ100 as $stock): if ($i < $item_per_col_NQ100 * 2 && $i >= $item_per_col_NQ100):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -969,7 +969,7 @@
                                         $i = 0;
                                         foreach ($stock_list_NQ100 as $stock): if ($i < $item_per_col_NQ100 * 3 && $i >= $item_per_col_NQ100 * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -985,7 +985,7 @@
                                         $i = 0;
                                         foreach ($stock_list_NQ100 as $stock): if ($i <= $item_per_col_NQ100 * 4 && $i >= $item_per_col_NQ100 * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -1024,7 +1024,7 @@
                                     $i = 0;
                                     foreach ($stock_list_ETF as $stock): if ($i < $item_per_col_ETF):
                                             ?>
-                                            <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                            <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                             <?php
                                         endif;
                                         $i++;
@@ -1039,7 +1039,7 @@
                                         $i = 0;
                                         foreach ($stock_list_ETF as $stock): if ($i < $item_per_col_ETF * 2 && $i >= $item_per_col_ETF):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -1055,7 +1055,7 @@
                                         $i = 0;
                                         foreach ($stock_list_ETF as $stock): if ($i < $item_per_col_ETF * 3 && $i >= $item_per_col_ETF * 2):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -1071,7 +1071,7 @@
                                         $i = 0;
                                         foreach ($stock_list_ETF as $stock): if ($i <= $item_per_col_ETF * 4 && $i >= $item_per_col_ETF * 3):
                                                 ?>
-                                                <li class='width_140'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
+                                                <li class='width_140'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/", "_", $stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/<?php echo $c_type; ?>"><?php echo $stock->company_name ?></a></li>
                                                 <?php
                                             endif;
                                             $i++;
@@ -1109,7 +1109,7 @@
             <?php $adCount = 1; ?>
             <?php foreach ($metastock_data as $article): ?>
     <?php $modAdCount = $adCount % 2; ?>
-                <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                <a class="blackcolor cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                     <div class="color_plate">
                         <?php if ($article->btshop_product_image): ?>
                             <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>
@@ -1164,18 +1164,18 @@
         $(".btn_chart").bind('click', '', function () {
             stock_id = <?php echo $stock_2->id; ?>;
             company_name = '<?php echo BtchartCompanyDetails::removeCharacters($stock_2->company_name); ?>';
-            window.location = 'http://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + this.id + '/stock_id/' + stock_id;
+            window.location = 'https://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + this.id + '/stock_id/' + stock_id;
         });
         $(".prev_stock").bind('click', '', function () {
             chart_type = '<?php echo $chart_type; ?>';
             company_name = $(this).attr('name').replace("/", "_").replace(" ", "_");
-            window.location = 'http://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + chart_type + '/stock_id/' + this.id;
+            window.location = 'https://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + chart_type + '/stock_id/' + this.id;
         });
         $(".next_stock").bind('click', '', function () {
             chart_type = '<?php echo $chart_type; ?>';
             company_name = $(this).attr('name').replace("/", "_").replace(" ", "_");
             ;
-            window.location = 'http://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + chart_type + '/stock_id/' + this.id;
+            window.location = 'https://' + window.location.hostname + '/borst_charts/borstShowChart/stock_name/' + company_name + '/chart_type/' + chart_type + '/stock_id/' + this.id;
         });
         $(".add_to_favorite_borst_chart").bind('click', '', function () {
             if ($(this).find('img').attr('class') == 'NotlogUser') {

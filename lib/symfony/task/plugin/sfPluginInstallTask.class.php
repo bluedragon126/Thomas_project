@@ -75,7 +75,7 @@ You can specify another channel with the [channel|COMMENT] option:
 
 You can also install PEAR packages hosted on a website:
 
-  [./symfony plugin:install http://somewhere.example.com/sfGuardPlugin-1.0.0.tgz|INFO]
+  [./symfony plugin:install https://somewhere.example.com/sfGuardPlugin-1.0.0.tgz|INFO]
 
 Or local PEAR packages:
 

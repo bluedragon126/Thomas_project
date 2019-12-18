@@ -50,10 +50,10 @@ include_component('isicsBreadcrumbs', 'show', array(
                     <div class="float_left widthall margin_10"><b>Kanalportföljen:</b> Riskjusterad modellportfölj med svenska aktier.</div><br />
 
                 </div>
-                <div class="float_left widthall"><b>Se</b> exempel på <a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/borst/borstArticleDetails/article_id/4553' ?>">daglig portföljuppdatering! </a></div>
-                <div class="float_left widthall"><b>Läs</b> mer om <a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/borst/borstPortfolioInfo' ?>">Börstjänarens portföljabonnemang! </a></div>
-                <div class="float_left widthall"><b>Prova</b> portföljabonnemang <a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/sbt_user/sbtNewRegistration' ?>">gratis! </a></div>
-                <div class="float_left widthall"><b>Uppgradera</b> till <a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/borst/changeSetting' ?>">portföljabonnemang! </a></div>
+                <div class="float_left widthall"><b>Se</b> exempel på <a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/borst/borstArticleDetails/article_id/4553' ?>">daglig portföljuppdatering! </a></div>
+                <div class="float_left widthall"><b>Läs</b> mer om <a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/borst/borstPortfolioInfo' ?>">Börstjänarens portföljabonnemang! </a></div>
+                <div class="float_left widthall"><b>Prova</b> portföljabonnemang <a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/sbt_user/sbtNewRegistration' ?>">gratis! </a></div>
+                <div class="float_left widthall"><b>Uppgradera</b> till <a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/borst/changeSetting' ?>">portföljabonnemang! </a></div>
 
             </div>
             <?php echo include_partial('global/bottom_footer_whitepage'); ?>

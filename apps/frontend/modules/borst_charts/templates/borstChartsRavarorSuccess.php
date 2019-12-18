@@ -54,7 +54,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
              <li><span class="heading_violet_sector">Metaller</span></li>
                 <?php foreach($stock_list as $stock): ?>
                     <?php if($stock->sector == 'Metaller'): ?>
-                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                     <?php endif; ?>
                 <?php endforeach; ?>
                 <li>&nbsp;</li>
@@ -62,7 +62,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
                 <li> <span class="heading_violet_sector">Energi</span> </li>
                 <?php foreach($stock_list as $stock): ?>
                     <?php if($stock->sector == 'Energi'): ?>
-                        <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                        <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                     <?php endif; ?>
                 <?php endforeach; ?>
 			  </ul>
@@ -73,7 +73,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
              <li><span class="heading_violet_sector">Spannmål</span></li>
                 <?php foreach($stock_list as $stock): ?>
                    <?php if($stock->sector == 'Spannmål'): ?> 
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                    <?php endif; ?>
                 <?php endforeach; ?>
 			  </ul>
@@ -85,7 +85,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
              <li><span class="heading_violet_sector">Mat/Fiber/Mjuka</span></li>
                 <?php foreach($stock_list as $stock): ?>
                    <?php if($stock->sector == 'Mat/Fiber/Mjuka'): ?> 
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                    <?php endif; ?>
                 <?php endforeach; ?>
 			  </ul>
@@ -97,7 +97,7 @@ $(".rightbanner").css({"height":maxHeight+"px"});
              <li><span class="heading_violet_sector">Kött</span></li>
                 <?php foreach($stock_list as $stock): ?>
                  <?php if($stock->sector == 'Kött'): ?>
-                    <li class='width_138'><a class="main_link_color" href="http://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
+                    <li class='width_138'><a class="main_link_color" href="https://<?php echo $host_str ?>/borst_charts/borstShowChart/stock_name/<?php echo str_replace("/","_",$stock->company_name); ?>/stock_id/<?php echo $stock->id ?>/chart_type/1"><?php echo $stock->company_name ?></a></li>
                  <?php endif; ?>   
                 <?php endforeach; ?>
 			  </ul>

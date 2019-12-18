@@ -42,7 +42,7 @@
                         <em>Lär dig börshandel av proffs!</em>&nbsp;</div>
                     <div class="blank_10h widthall"></div><div class="blank_10h widthall">&nbsp;</div>
                     <div class="float_left widthall">
-                        <div><a class="cursor main_link_color" href="http://www.avafx.com/lp/lp-sv/?tag=25581&target=_blank"><img src="/images/avafx_1.png" alt="img" border="0" /></a></div>
+                        <div><a class="cursor main_link_color" href="https://www.avafx.com/lp/lp-sv/?tag=25581&target=_blank"><img src="/images/avafx_1.png" alt="img" border="0" /></a></div>
                         <br />
                         <br />
                         <div class="whp_preamble">
@@ -161,7 +161,7 @@
                     <div class="float_left widthall borst_subtitle_4"></div>
                     <div class="blank_10h widthall">&nbsp;</div>
                     <div class="blank_10h widthall">&nbsp;</div>
-                    <div><a href="http://www.avafx.com/lp/lp-sv/?tag=25581&target=_blank"><img src="/FX-update/ava/newLogoBlue.ashx.png" width="264" height="42" alt="img" style="margin: 10px 0px 0px 0xp" /></a></div>
+                    <div><a href="https://www.avafx.com/lp/lp-sv/?tag=25581&target=_blank"><img src="/FX-update/ava/newLogoBlue.ashx.png" width="264" height="42" alt="img" style="margin: 10px 0px 0px 0xp" /></a></div>
 
                     <?php echo include_partial('global/inner_bottom_footer'); ?>
                 </div>

@@ -41,7 +41,7 @@
                 <div class="spacer"></div>
                 <div class="shoph3 widthall"><?php echo __('Transaktionen misslyckades') ?></div>
                 <div class="float_left widthall"><?php echo __('Kortbetalningen gick dessvärre inte igenom.') ?></div>
-                <div class="float_left widthall"><?php echo __('Om du vill kan du') ?><b><a href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . '/borst_shop/shopCart'; ?>"><?php echo __(' gå till varukorgen') ?></a></b><?php echo __(' och göra ett nytt försök, eller byta betalsätt.') ?></div>
+                <div class="float_left widthall"><?php echo __('Om du vill kan du') ?><b><a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst_shop/shopCart'; ?>"><?php echo __(' gå till varukorgen') ?></a></b><?php echo __(' och göra ett nytt försök, eller byta betalsätt.') ?></div>
                 <div class="float_left widthall">
                     <span class="errormsg float_left"></span>
                 </div> 

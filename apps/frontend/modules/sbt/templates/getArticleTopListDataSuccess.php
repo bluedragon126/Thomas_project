@@ -51,10 +51,10 @@
         <div id="articletoplist_topic_list">
         <?php $i = 0; foreach ($pager->getResults() as $article): ?>
         <ul class="<?php echo $i%2 == 0 ? 'classnot' : 'white'; ?>">
-          <li class="dark_blue width_210 pright_10"><a href="<?php echo "http://".$host_str."/borst/borstArticleDetails/article_id/".$article->article_id ?>"><?php echo $article->title ?></a></li>
+          <li class="dark_blue width_210 pright_10"><a href="<?php echo "https://".$host_str."/borst/borstArticleDetails/article_id/".$article->article_id ?>"><?php echo $article->title ?></a></li>
           <li class="pink width_168">
           <?php if($profile->getUserFromFullName($article->author)):?>
-          	<a href="<?php echo "http://".$host_str."/sbt/sbtMinProfile/id/".$profile->getUserFromFullName($article->author); ?>"><?php echo $article->author ?></a>
+          	<a href="<?php echo "https://".$host_str."/sbt/sbtMinProfile/id/".$profile->getUserFromFullName($article->author); ?>"><?php echo $article->author ?></a>
           <?php else: ?>
           	<?php echo $article->author ?>
           <?php endif; ?>

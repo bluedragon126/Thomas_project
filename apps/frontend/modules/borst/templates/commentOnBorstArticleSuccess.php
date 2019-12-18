@@ -65,12 +65,12 @@
                     <div class="float_left widthall mbottom_20">
                         <?php if ($article_data->author_id): ?>
                             <span class="float_left width_100_per>
-                                  <a class="width_100_per cursor main_link_color" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>">
+                                  <a class="width_100_per cursor main_link_color" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>">
                                   <img src="/images/grafik/<?php echo $author->code ?>.gif"/>
                                 </a>
                             </span>
 
-                            <span class="float_left  main_link_color"><a class="cursor main_link_color" href="<?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span><br />
+                            <span class="float_left  main_link_color"><a class="cursor main_link_color" href="<?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $article_data->author_id ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span><br />
                         <?php endif; ?>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                 <br />
                 <br />
                 <div class="shoph3 widthall width_100_per margin_top_25"><?php echo __('Article does not exist..') ?></div>
-                <div class="float_left width_100_per margin_top_25"><span class="main_link_color"><?php echo __('To View the Article List, click') ?><a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __(' here') ?></a></span></div>	
+                <div class="float_left width_100_per margin_top_25"><span class="main_link_color"><?php echo __('To View the Article List, click') ?><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/articleList"><?php echo __(' here') ?></a></span></div>	
             <?php endif; ?>
         </div>
 

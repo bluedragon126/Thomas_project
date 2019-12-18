@@ -13,7 +13,7 @@ Kursen sker online och startar med introduktionen 'Nybörjarkväll' torsdag 11 j
     <tr><td><?php echo "Om du gillar vår introduktion och tycker upplägget verkar lovande, kan du sedan kostnadsfritt ta del av intensivkursens kompletterande lektioner (15-23 juni) via sponsring från AvaTrade, genom att bli kund hos dem med en insättning på minst $3.000 eller motsvarande."?>
         
   <tr><td></td></tr>  <tr><td>&nbsp;&nbsp;</td></tr>
-      <tr><td><?php echo "Du är även välkommen att öppna ett kostnadsfritt demokonto hos AvaTrade, där du kan bekanta dig med handelsplattformen och göra affärer on line i realtid med fiktiva pengar. "?><a alt="Demo" href="http://www.avatrade.com/join-ava/demo-account?tradingplatform=2&dealtype=1&mtsrv=mt2&tag=8947&tag2=~profile_AvaPPC_2015"><?php echo "Öppna ett demokonto hos AvaTrade här!"?></a> </td></tr>
+      <tr><td><?php echo "Du är även välkommen att öppna ett kostnadsfritt demokonto hos AvaTrade, där du kan bekanta dig med handelsplattformen och göra affärer on line i realtid med fiktiva pengar. "?><a alt="Demo" href="https://www.avatrade.com/join-ava/demo-account?tradingplatform=2&dealtype=1&mtsrv=mt2&tag=8947&tag2=~profile_AvaPPC_2015"><?php echo "Öppna ett demokonto hos AvaTrade här!"?></a> </td></tr>
   <tr><td></td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td><?php echo "Om du har några frågor, välkommen att ställa dem via länken "?><a alt="Contact us" href="https://www.borstjanaren.se/borst/contactUs"><?php echo " Kontakta oss"?></a><?php echo "  på Börstjänarens webbplats." ?></td></tr>

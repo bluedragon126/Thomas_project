@@ -3,7 +3,7 @@
     /**
      *
      *  AJAX IFRAME METHOD (AIM)
-     *  http://www.webtoolkit.info/
+     *  https://www.webtoolkit.info/
      *
      **/
  
@@ -209,7 +209,7 @@
     <?php else: ?>
         <div class="forumlistingleftdiv" id="forumlistingleftdiv">
             <div class="shoph3 widthall">Please select the user first to view the Profile..</div>
-            <div class="float_left widthall">To View the User List, click <a href="<?php echo "http://" . $host_str ?>/sbt/sbtUser">here</a></div>
+            <div class="float_left widthall">To View the User List, click <a href="<?php echo "https://" . $host_str ?>/sbt/sbtUser">here</a></div>
             <div class="float_left widthall">&nbsp;</div>
         </div>
     <?php endif; ?>

@@ -16,7 +16,7 @@
 	<?php if($user_photo_data): 
     
           //getting the image size here
-      $imageUser = getimagesize("http://".$host_str."/uploads/userThumbnail/".str_replace('.','_large.',$user_photo_data->profile_photo_name));
+      $imageUser = getimagesize("https://".$host_str."/uploads/userThumbnail/".str_replace('.','_large.',$user_photo_data->profile_photo_name));
       ?>
       <style>
       .user_img{
@@ -55,7 +55,7 @@
 	  <?php if($bronze_cnt > 0):?>
 		  <div class="float_left" style="width:100%;"><img src="/images/medal_bronze.png" alt="bronze_star" height="18" width="18" /> <?php echo __('Most Popular Author : ').$bronze_cnt ?></div>
 	  <?php endif;?>
-        <div class="userinfo_min"> <!--<img src="/images/thumbsmall_pphoto.gif" alt="photo" />--><font  class="main_link_color"><a class="main_link_color" href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_details->user_id ?>"><img src="/images/new_home/blog_goto.png" alt="Blog goto" width="85"/></a></font><br /><br/>
+        <div class="userinfo_min"> <!--<img src="/images/thumbsmall_pphoto.gif" alt="photo" />--><font  class="main_link_color"><a class="main_link_color" href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_details->user_id ?>"><img src="/images/new_home/blog_goto.png" alt="Blog goto" width="85"/></a></font><br /><br/>
       <!--<img src="/images/redarrow.gif" alt="photo" /><font  class="main_link_color"> Markera som läst </font><br />-->
     <span class="blog_welc_info_q">Medlem sedan:</span><span class="blog_welc_info_a"> <?php echo substr($user_details->regdate,0,10) ?></span><br />
       <?php /*?>Plats:<font color="#014c8f"> <?php echo ucfirst($user_details->street) ?> , <?php echo ucfirst($user_details->city) ?></font><br /><?php */?>
@@ -143,9 +143,9 @@
 		  <?php $j=0; foreach($visitor_name_id_arr as $key=>$value):?>
 			<?php //if($j > 1) break; ?>
 			<?php if($j==0):?>
-					<a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $key; ?>"><span  class="main_link_color l18_height"><?php echo $value; ?></span></a>
+					<a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $key; ?>"><span  class="main_link_color l18_height"><?php echo $value; ?></span></a>
 			<?php else: ?>
-					<a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $key; ?>"><span  class="main_link_color l18_height"><?php echo ' , '.$value; ?></span></a>
+					<a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $key; ?>"><span  class="main_link_color l18_height"><?php echo ' , '.$value; ?></span></a>
 			<?php endif; ?>
 		  <?php $j++; endforeach;?><br />   
     	</span>

@@ -780,7 +780,7 @@ EOF
       );
 
       ob_start();
-      // see http://trac.symfony-project.org/ticket/5437 for the explanation on the weird "cd" thing
+      // see https://trac.symfony-project.org/ticket/5437 for the explanation on the weird "cd" thing
       passthru(sprintf('cd & %s %s 2>&1', escapeshellarg($this->php_cli), escapeshellarg($test_file)), $return);
       ob_end_clean();
       unlink($test_file);
@@ -989,7 +989,7 @@ echo '<PHP_SER>'.serialize(xdebug_get_code_coverage()).'</PHP_SER>';
 EOF;
       file_put_contents($tmp_file, $tmp);
       ob_start();
-      // see http://trac.symfony-project.org/ticket/5437 for the explanation on the weird "cd" thing
+      // see https://trac.symfony-project.org/ticket/5437 for the explanation on the weird "cd" thing
       passthru(sprintf('cd & %s %s 2>&1', escapeshellarg($this->harness->php_cli), escapeshellarg($tmp_file)), $return);
       $retval = ob_get_clean();
 

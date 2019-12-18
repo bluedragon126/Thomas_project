@@ -134,13 +134,13 @@ class Adstest{
 		//switch($aAds[$adIndex]['ad_type']){
 		switch($arr[$adIndex]['ad_type']){
 			case 'swf':	
-						$return_str='<div style="float:left;position:relative;" id="imgprev'.$arr[$adIndex]['id'].'"><a '.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').' href="http://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'" style="z-index: 1000; float:left; position:absolute; border:0px solid blue; width:'.$width.'px; height:'.$height.'px;"><img src="http://'.$_SERVER['HTTP_HOST'].'/images/reklam/transp.gif" width="'.$width.'" height="'.$height.'" border="0" style="cursor:pointer" /></a><embed src="'.$path.'" quality="high" wmode="transparent"  type="application/x-shockwave-flash" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').'></embed></div>';
+						$return_str='<div style="float:left;position:relative;" id="imgprev'.$arr[$adIndex]['id'].'"><a '.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').' href="https://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'" style="z-index: 1000; float:left; position:absolute; border:0px solid blue; width:'.$width.'px; height:'.$height.'px;"><img src="https://'.$_SERVER['HTTP_HOST'].'/images/reklam/transp.gif" width="'.$width.'" height="'.$height.'" border="0" style="cursor:pointer" /></a><embed src="'.$path.'" quality="high" wmode="transparent"  type="application/x-shockwave-flash" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').'></embed></div>';
 						break;
 			case 'img':
-						$return_str= '<a href="http://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'"'.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').'><img src="'.$path.'" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').' '.$other.'/></a>';
+						$return_str= '<a href="https://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'"'.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').'><img src="'.$path.'" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').' '.$other.'/></a>';
 						break;
 			case 'iframe':
-						$return_str= '<a href="http://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'"'.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').'><iframe frameborder="0" scrolling="no" bordercolor="#000000" vspace="0" hspace="0" marginheight="0" marginwidth="0" id="aa_if_19144" src="'.$path.'" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').' '.$other.'></iframe></a>';				
+						$return_str= '<a href="https://'.$_SERVER['HTTP_HOST'].'/ccount/click.php?id='.$arr[$adIndex]['ccounter_id'].'"'.($arr[$adIndex]['ad_target']=='B'?' target=_blank ':'').'><iframe frameborder="0" scrolling="no" bordercolor="#000000" vspace="0" hspace="0" marginheight="0" marginwidth="0" id="aa_if_19144" src="'.$path.'" '.($width!=NULL?'width="'.$width.'"':'').' '.($height!=NULL?'height="'.$height.'"':'').' '.$other.'></iframe></a>';				
 						break;
 			default:
 					$return_str='';

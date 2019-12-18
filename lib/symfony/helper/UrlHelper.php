@@ -99,7 +99,7 @@ function url_for1($internal_uri, $absolute = false)
  *  echo url_for('@my_rule');
  *    => /path/to/my/action 
  *  echo url_for('@my_rule', true);
- *    => http://myapp.example.com/path/to/my/action
+ *    => https://myapp.example.com/path/to/my/action
  * </code>
  *
  * @param  string $internal_uri  'module/action' or '@rule' of the action
@@ -147,10 +147,10 @@ function url_for()
  * <code>
  *  echo link_to('Delete this page', 'my_module/my_action');
  *    => <a href="/path/to/my/action">Delete this page</a>
- *  echo link_to('Visit Hoogle', 'http://www.hoogle.com');
- *    => <a href="http://www.hoogle.com">Visit Hoogle</a>
+ *  echo link_to('Visit Hoogle', 'https://www.hoogle.com');
+ *    => <a href="https://www.hoogle.com">Visit Hoogle</a>
  *  echo link_to('Delete this page', 'my_module/my_action', array('id' => 'myid', 'confirm' => 'Are you sure?', 'absolute' => true));
- *    => <a href="http://myapp.example.com/path/to/my/action" id="myid" onclick="return confirm('Are you sure?');">Delete this page</a>
+ *    => <a href="https://myapp.example.com/path/to/my/action" id="myid" onclick="return confirm('Are you sure?');">Delete this page</a>
  * </code>
  *
  * @param  string $name          name of the link, i.e. string to appear between the <a> tags

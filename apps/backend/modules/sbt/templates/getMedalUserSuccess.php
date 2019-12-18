@@ -27,7 +27,7 @@
 			<?php $i=1; foreach ($pager->getResults() as $user): ?>
 			<tr id="medal_user_record_row" class="classnot">
 				<td><?php echo $i++; ?></td>
-				<td><a class="cursor" href="<?php echo 'http://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$user->user_id; ?>" class="cursor"><?php echo $user->firstname.' '.$user->lastname ?></a></td>
+				<td><a class="cursor" href="<?php echo 'https://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$user->user_id; ?>" class="cursor"><?php echo $user->firstname.' '.$user->lastname ?></a></td>
 				<td><?php echo $user->getTotalVotesReceived($user->user_id); ?></td>
 				<td><?php echo $user->regdate ?></td>
 			</tr>

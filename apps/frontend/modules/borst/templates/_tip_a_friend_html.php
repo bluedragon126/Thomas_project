@@ -9,8 +9,8 @@
   <tr><td><?php echo html_entity_decode($user['rub']) ?></td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
-  <tr><td><a href="<?php echo 'http://'.$host_str.'/borst/borstArticleDetails/article_id/'.$user['article_id'] ?>"><?php echo 'Läs hela artikeln'?></a></td></tr>
+  <tr><td><a href="<?php echo 'https://'.$host_str.'/borst/borstArticleDetails/article_id/'.$user['article_id'] ?>"><?php echo 'Läs hela artikeln'?></a></td></tr>
   <tr><td>&nbsp;&nbsp;</td></tr>
-  <tr><td><a href="<?php echo 'http://'.$host_str ?>"><?php echo 'http://'.$host_str ?></a></td></tr>
+  <tr><td><a href="<?php echo 'https://'.$host_str ?>"><?php echo 'https://'.$host_str ?></a></td></tr>
   </tr>
 </table>

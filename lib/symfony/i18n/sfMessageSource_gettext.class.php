@@ -10,7 +10,7 @@
  *
  * To contact the author write to {@link mailto:qiang.xue@gmail.com Qiang Xue}
  * The latest version of PRADO can be obtained from:
- * {@link http://prado.sourceforge.net/}
+ * {@link https://prado.sourceforge.net/}
  *
  * @author     Wei Zhuo <weizhuo[at]gmail[dot]com>
  * @version    $Id: sfMessageSource_gettext.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $

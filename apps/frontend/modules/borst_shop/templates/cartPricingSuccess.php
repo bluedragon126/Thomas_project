@@ -38,7 +38,7 @@
     endforeach; ?>
     <div class="blank_20h widthall">&nbsp;</div>
         <ul class="rows5">                        
-                <li class="floatRightNew"><a href="<?php echo 'http://' . $host_str . '/borst_shop/shopPayment'?>" class="red_button cursor"style="margin-right: 9px;"><span>GÅ TILL KASSAN</span></a></li>
+                <li class="floatRightNew"><a href="<?php echo 'https://' . $host_str . '/borst_shop/shopPayment'?>" class="red_button cursor"style="margin-right: 9px;"><span>GÅ TILL KASSAN</span></a></li>
         </ul>
     <?php } else {?>
                 <div class="height_41"></div>
@@ -49,7 +49,7 @@
                 <div class="my_order_text"><?php echo __('Din varukorg är tom.') ?></div>
                 <span><img class="shop_cart_logo" src="/images/new_home/bt-shop_logo_fyrk.png" width="60"></span>
                 <div class="blank_1h widthall">&nbsp;</div>
-                <a class="shop_cart_fill_prod cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/borstShopHome' ?>"><?php echo __('Välkommen att fylla den med produkter!'); ?></a>
+                <a class="shop_cart_fill_prod cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/borstShopHome' ?>"><?php echo __('Välkommen att fylla den med produkter!'); ?></a>
                 <div class="spacer"></div>
                 <span><img class="margin_top_2" src="/images/new_home/bt-shop_cart_empty.png" width="500"></span>
     <?php }?>

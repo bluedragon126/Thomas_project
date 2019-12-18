@@ -10,7 +10,7 @@
 </script>
 <?php $month = array('01' => 'JAN', '02' => 'FEB', '03' => 'MAR', '04' => 'APR', '05' => 'MAJ', '06' => 'JUN', '07' => 'JUL', '08' => 'AUG', '09' => 'SEP', '10' => 'OKT', '11' => 'NOV', '12' => 'DEC'); ?>
 <?php $article_name = "article"; ?>
-<?php $host = 'http://' . sfConfig::get('app_host_name'); ?>
+<?php $host = 'https://' . sfConfig::get('app_host_name'); ?>
 <table width="826"  style="border-left: 1px solid #d3d3d3; border-right: 1px solid #d3d3d3; margin-bottom:5px;" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
     <tbody>
         <tr style="width:786px;float:left">
@@ -113,7 +113,7 @@
                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                             </span>
                                             <span style="color: #3c3a3a; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
-                                            <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
+                                            <span><a href="https://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
                                                     <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
                                                         <?php echo html_entity_decode($ads[0]); ?></span></a></span>
                                                         <div style="border-bottom: 2px solid #d4dae4;height: 10px; margin: 4px 0px 5px;">&nbsp;</div>
@@ -153,7 +153,7 @@
                                             <table cellpadding="0" cellspacing="0" width="300" style="background-color: #f99d1e;border-top-left-radius: 18px;border-bottom-right-radius: 18px;height: 176px;padding-left: 10px;">
                                                 <tr>
                                                     <td style="padding: 10px 10px 5px 10px;">
-                                                        <a href="http://http://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
+                                                        <a href="https://https://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
 
                                                         <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 22px; color: #ffffff;float: left; margin: 14px 0px -2px 0px; padding-left:2px; font-weight: 300;">Aktuella forumtrådar</span>
 

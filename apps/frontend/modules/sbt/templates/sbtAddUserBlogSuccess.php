@@ -7,13 +7,13 @@ function uploadMessage(msg_div_id,message,filename)
 	var dest_path = window.location.hostname+'/uploads/blogDetailImage/'+filename;
 
 	//var newImg = new Image();
-	//newImg.src = 'http://'+dest_path;
+	//newImg.src = 'https://'+dest_path;
 	//var height = newImg.height;
 	//var width = newImg.width;
 	//alert ('The image size is '+width+'*'+height);
 
-	//var str = "<img src='http://"+dest_path+"' width='"+width+"' height='"+height+"' align='"+align+"'/>";
-	var str = "<img src='http://"+dest_path+"' alt='img' />";
+	//var str = "<img src='https://"+dest_path+"' width='"+width+"' height='"+height+"' align='"+align+"'/>";
+	var str = "<img src='https://"+dest_path+"' alt='img' />";
 	tinyMCE.activeEditor.setContent(text+str);
 }
 </script>

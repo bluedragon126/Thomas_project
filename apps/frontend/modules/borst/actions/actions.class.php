@@ -265,7 +265,7 @@ class borstActions extends sfActions
 			$one_2_three[$i]['category_id'] = $data->category_id;
 			$one_2_three[$i]['type_id'] = $data->type_id;
 			$one_2_three[$i]['image_text'] = $data->image_text;
-			//$one_2_three[$i]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$one_2_three[$i]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$one_2_three[$i]['image'] = $data->image;
 			$one_2_three[$i]['title'] = $data->title;
 			$i++;
@@ -277,7 +277,7 @@ class borstActions extends sfActions
 			$four_2_five[$j]['category_id'] = $data->category_id;
 			$four_2_five[$j]['type_id'] = $data->type_id;
 			$four_2_five[$j]['image_text'] = $data->image_text;
-			//$four_2_five[$j]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$four_2_five[$j]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$four_2_five[$j]['image'] = $data->image;
 			$four_2_five[$j]['title'] = $data->title;
 			$j++;
@@ -289,7 +289,7 @@ class borstActions extends sfActions
 			$six_2_eight[$k]['category_id'] = $data->category_id;
 			$six_2_eight[$k]['type_id'] = $data->type_id;
 			$six_2_eight[$k]['image_text'] = $data->image_text;
-			//$six_2_eight[$k]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$six_2_eight[$k]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$six_2_eight[$k]['image'] = $data->image;
 			$six_2_eight[$k]['title'] = $data->title;
 			$k++;
@@ -301,7 +301,7 @@ class borstActions extends sfActions
 			$nine_2_ten[$l]['category_id'] = $data->category_id;
 			$nine_2_ten[$l]['type_id'] = $data->type_id;
 			$nine_2_ten[$l]['image_text'] = $data->image_text;
-			//$nine_2_ten[$l]['image'] =  getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$nine_2_ten[$l]['image'] =  getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$nine_2_ten[$l]['image'] =  $data->image;
 			$nine_2_ten[$l]['title'] = $data->title;
 			$l++;
@@ -313,7 +313,7 @@ class borstActions extends sfActions
 			$eleven_2_thirteen[$m]['category_id'] = $data->category_id;
 			$eleven_2_thirteen[$m]['type_id'] = $data->type_id;
 			$eleven_2_thirteen[$m]['image_text'] = $data->image_text;
-			//$eleven_2_thirteen[$m]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$eleven_2_thirteen[$m]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$eleven_2_thirteen[$m]['image'] = $data->image;
 			$eleven_2_thirteen[$m]['title'] = $data->title;
 			$m++;
@@ -325,7 +325,7 @@ class borstActions extends sfActions
 			$fourteen_2_fifteen[$n]['category_id'] = $data->category_id;
 			$fourteen_2_fifteen[$n]['type_id'] = $data->type_id;
 			$fourteen_2_fifteen[$n]['image_text'] = $data->image_text;
-			//$fourteen_2_fifteen[$n]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$fourteen_2_fifteen[$n]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$fourteen_2_fifteen[$n]['image'] = $data->image;
 			$fourteen_2_fifteen[$n]['title'] = $data->title;
 			$n++;
@@ -337,7 +337,7 @@ class borstActions extends sfActions
 			$sixteen_2_nineteen[$p]['category_id'] = $data->category_id;
 			$sixteen_2_nineteen[$p]['type_id'] = $data->type_id;
 			$sixteen_2_nineteen[$p]['image_text'] = $data->image_text;
-			//$sixteen_2_nineteen[$p]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$sixteen_2_nineteen[$p]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$sixteen_2_nineteen[$p]['image'] = $data->image;
 			$sixteen_2_nineteen[$p]['title'] = $data->title;
 			$p++;
@@ -349,7 +349,7 @@ class borstActions extends sfActions
 			$twenty_2_twentythree[$q]['category_id'] = $data->category_id;
 			$twenty_2_twentythree[$q]['type_id'] = $data->type_id;
 			$twenty_2_twentythree[$q]['image_text'] = $data->image_text;
-			//$twenty_2_twentythree[$q]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$twenty_2_twentythree[$q]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$twenty_2_twentythree[$q]['image'] = $data->image;
 			$twenty_2_twentythree[$q]['title'] = $data->title;
 			$q++;
@@ -361,7 +361,7 @@ class borstActions extends sfActions
 			$twentyfour_2_twentyseven[$r]['category_id'] = $data->category_id;
 			$twentyfour_2_twentyseven[$r]['type_id'] = $data->type_id;
 			$twentyfour_2_twentyseven[$r]['image_text'] = $data->image_text;
-			//$twentyfour_2_twentyseven[$r]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$twentyfour_2_twentyseven[$r]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$twentyfour_2_twentyseven[$r]['image'] = $data->image;
 			$twentyfour_2_twentyseven[$r]['title'] = $data->title;
 			$r++;
@@ -531,7 +531,7 @@ class borstActions extends sfActions
 			$one_2_three[$i]['category_id'] = $data->category_id;
 			$one_2_three[$i]['type_id'] = $data->type_id;
 			$one_2_three[$i]['image_text'] = $data->image_text;
-			//$one_2_three[$i]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$one_2_three[$i]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$one_2_three[$i]['image'] = $data->image;
 			$one_2_three[$i]['title'] = $data->title;
 			$i++;
@@ -543,7 +543,7 @@ class borstActions extends sfActions
 			$four_2_five[$j]['category_id'] = $data->category_id;
 			$four_2_five[$j]['type_id'] = $data->type_id;
 			$four_2_five[$j]['image_text'] = $data->image_text;
-			//$four_2_five[$j]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$four_2_five[$j]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$four_2_five[$j]['image'] = $data->image;
 			$four_2_five[$j]['title'] = $data->title;
 			$j++;
@@ -555,7 +555,7 @@ class borstActions extends sfActions
 			$six_2_eight[$k]['category_id'] = $data->category_id;
 			$six_2_eight[$k]['type_id'] = $data->type_id;
 			$six_2_eight[$k]['image_text'] = $data->image_text;
-			//$six_2_eight[$k]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$six_2_eight[$k]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$six_2_eight[$k]['image'] = $data->image;
 			$six_2_eight[$k]['title'] = $data->title;
 			$k++;
@@ -567,7 +567,7 @@ class borstActions extends sfActions
 			$nine_2_ten[$l]['category_id'] = $data->category_id;
 			$nine_2_ten[$l]['type_id'] = $data->type_id;
 			$nine_2_ten[$l]['image_text'] = $data->image_text;
-			//$nine_2_ten[$l]['image'] =  getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$nine_2_ten[$l]['image'] =  getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$nine_2_ten[$l]['image'] =  $data->image;
 			$nine_2_ten[$l]['title'] = $data->title;
 			$l++;
@@ -579,7 +579,7 @@ class borstActions extends sfActions
 			$eleven_2_thirteen[$m]['category_id'] = $data->category_id;
 			$eleven_2_thirteen[$m]['type_id'] = $data->type_id;
 			$eleven_2_thirteen[$m]['image_text'] = $data->image_text;
-			//$eleven_2_thirteen[$m]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
+			//$eleven_2_thirteen[$m]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_large.',$data->image)) ? $data->image : '';
 			$eleven_2_thirteen[$m]['image'] = $data->image;
 			$eleven_2_thirteen[$m]['title'] = $data->title;
 			$m++;
@@ -591,7 +591,7 @@ class borstActions extends sfActions
 			$fourteen_2_fifteen[$n]['category_id'] = $data->category_id;
 			$fourteen_2_fifteen[$n]['type_id'] = $data->type_id;
 			$fourteen_2_fifteen[$n]['image_text'] = $data->image_text;
-			//$fourteen_2_fifteen[$n]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
+			//$fourteen_2_fifteen[$n]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$data->image)) ? $data->image : '';
 			$fourteen_2_fifteen[$n]['image'] = $data->image;
 			$fourteen_2_fifteen[$n]['title'] = $data->title;
 			$n++;
@@ -603,7 +603,7 @@ class borstActions extends sfActions
 			$sixteen_2_nineteen[$p]['category_id'] = $data->category_id;
 			$sixteen_2_nineteen[$p]['type_id'] = $data->type_id;
 			$sixteen_2_nineteen[$p]['image_text'] = $data->image_text;
-			//$sixteen_2_nineteen[$p]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$sixteen_2_nineteen[$p]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$sixteen_2_nineteen[$p]['image'] = $data->image;
 			$sixteen_2_nineteen[$p]['title'] = $data->title;
 			$p++;
@@ -615,7 +615,7 @@ class borstActions extends sfActions
 			$twenty_2_twentythree[$q]['category_id'] = $data->category_id;
 			$twenty_2_twentythree[$q]['type_id'] = $data->type_id;
 			$twenty_2_twentythree[$q]['image_text'] = $data->image_text;
-			//$twenty_2_twentythree[$q]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$twenty_2_twentythree[$q]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$twenty_2_twentythree[$q]['image'] = $data->image;
 			$twenty_2_twentythree[$q]['title'] = $data->title;
 			$q++;
@@ -627,7 +627,7 @@ class borstActions extends sfActions
 			$twentyfour_2_twentyseven[$r]['category_id'] = $data->category_id;
 			$twentyfour_2_twentyseven[$r]['type_id'] = $data->type_id;
 			$twentyfour_2_twentyseven[$r]['image_text'] = $data->image_text;
-			//$twentyfour_2_twentyseven[$r]['image'] = getimagesize('http://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
+			//$twentyfour_2_twentyseven[$r]['image'] = getimagesize('https://'.$this->host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image)) ? $data->image : '';
 			$twentyfour_2_twentyseven[$r]['image'] = $data->image;
 			$twentyfour_2_twentyseven[$r]['title'] = $data->title;
 			$r++;
@@ -774,12 +774,12 @@ class borstActions extends sfActions
         $permission_reply = $article->checkArticlePermission($this->article_data);         
 	if($permission_reply == '2')
 	{
-		$url = 'http://'.$this->host_str.'/borst/borstArticleDetails/article_id/241';
+		$url = 'https://'.$this->host_str.'/borst/borstArticleDetails/article_id/241';
 		$this->redirect($url);
 	}
 	if($permission_reply == '3')
 	{
-		//$url = 'http://'.$this->host_str.'/borst/commentOnBorstArticle/article_id/'.$article_id;
+		//$url = 'https://'.$this->host_str.'/borst/commentOnBorstArticle/article_id/'.$article_id;
 		//$this->redirect($url);
 		$this->redirect('user/loginWindow');
 	}
@@ -3255,7 +3255,7 @@ class borstActions extends sfActions
 			else
 				$this->borstArticleCommentForm->save();
 				
-			$url = 'http://'.$this->host_str.'/borst/commentOnBorstArticle/article_id/'.$article_id;
+			$url = 'https://'.$this->host_str.'/borst/commentOnBorstArticle/article_id/'.$article_id;
 			$this->redirect($url);
 		}
 		else
@@ -4198,7 +4198,7 @@ class borstActions extends sfActions
 		{
 			$btforum = new Btforum();
 			$post_data = $btforum->fetchTopic($postid);
-			$rr = str_replace('/uploads','http://'.$this->host_str.'/uploads',$post_data->textarea);
+			$rr = str_replace('/uploads','https://'.$this->host_str.'/uploads',$post_data->textarea);
 		}
 		
 		$this->contactEnqForm = new ContactEnquiryForm();
@@ -4287,7 +4287,7 @@ class borstActions extends sfActions
                                         ->where('id = ?', $id)
                                         ->execute();
 				}
-                                $url = 'http://'. $host_str . '/backend.php/borst/enquiryDetails/enq_id/'.$id;
+                                $url = 'https://'. $host_str . '/backend.php/borst/enquiryDetails/enq_id/'.$id;
                                 $mailBody = $this->getPartial('enquiry_mail', array('enquiry_no' => $id,'url'=>$url));
                                 
                                 if($contactEnqForm_arr['enq_type']== 'Thomas Sandström')
@@ -4970,7 +4970,7 @@ class borstActions extends sfActions
 	
 	if($userId)
 	{
-		$url = 'http://'.$host_str.'/sbt/editProfile/edit_user_id/'.$userId;
+		$url = 'https://'.$host_str.'/sbt/editProfile/edit_user_id/'.$userId;
 		$this->redirect($url);		
 	}
 	else
@@ -5026,12 +5026,12 @@ class borstActions extends sfActions
 			
 			$path_to_image = '';
 		
-			$start = strpos($ingress , "http://".$this->host_str);
+			$start = strpos($ingress , "https://".$this->host_str);
 			$stop = strpos($ingress , "[/img]");
 			$length = $stop - $start;
 			$path_to_image = substr($ingress, $start, $length);
 			if(strpos($ingress , "[/img]")===false)
-			$path_to_image='http://'.$this->host_str.'/'.str_replace('artiklar','images/article_images',$article_data->image);
+			$path_to_image='https://'.$this->host_str.'/'.str_replace('artiklar','images/article_images',$article_data->image);
 			
 			
 			$ingress = preg_replace("#\[img\](.+?)\[/img\]#is", "<img src=\"\\1\" alt=\"[image]\" style=\"margin: 0px 0px 25px\" /><br>", $ingress);
@@ -5234,19 +5234,19 @@ class borstActions extends sfActions
       switch($field)
       {
           case 'omx':
-              $url="http://$yahoo_host/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
+              $url="https://$yahoo_host/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
 			  $file = 'c:\\systerbt\\yahoo_data\omx.xml';
 			  
               break;
           case 'sp':
-              $url="http://$yahoo_host/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^GSPC%22%29&env=store://datatables.org/alltableswithkeys";
+              $url="https://$yahoo_host/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^GSPC%22%29&env=store://datatables.org/alltableswithkeys";
 			  $file = 'c:\\systerbt\\yahoo_data\sp.xml';
               break;
          /* case 'gold':
-              $url="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
+              $url="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
               break;
           case 'oil':
-              $url="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
+              $url="https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20%28%22^OMXS30%22%29&env=store://datatables.org/alltableswithkeys";
               break;*/
       }
 	  
@@ -5372,7 +5372,7 @@ class borstActions extends sfActions
 		{
 			$btforum = new Btforum();
 			$post_data = $btforum->fetchTopic($postid);
-			$rr = str_replace('/uploads','http://'.$this->host_str.'/uploads',$post_data->textarea);
+			$rr = str_replace('/uploads','https://'.$this->host_str.'/uploads',$post_data->textarea);
 		}
 		
 		$this->contactEnqForm = new ContactEnquiryForm();
@@ -5499,7 +5499,7 @@ class borstActions extends sfActions
 	}
 	
 	public function executeYahooFinance(sfWebRequest $request){
-		$Url = 'http://finance.yahoo.com/webservice/v1/symbols/^OMX,^gspc/quote?format=json&view=detail';
+		$Url = 'https://finance.yahoo.com/webservice/v1/symbols/^OMX,^gspc/quote?format=json&view=detail';
 		//$agent= 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)';
                 $agent= "'User-Agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E230 Safari/601.1";
                 

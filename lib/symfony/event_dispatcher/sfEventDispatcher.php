@@ -13,7 +13,7 @@ require_once dirname(__FILE__).'/sfEvent.php';
 /**
  * sfEventDispatcher implements a dispatcher object.
  *
- * @see http://developer.apple.com/documentation/Cocoa/Conceptual/Notifications/index.html Apple's Cocoa framework
+ * @see https://developer.apple.com/documentation/Cocoa/Conceptual/Notifications/index.html Apple's Cocoa framework
  *
  * @package    symfony
  * @subpackage event_dispatcher

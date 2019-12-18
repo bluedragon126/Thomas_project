@@ -525,7 +525,7 @@ abstract class sfCommandApplication
   /**
    * Fixes php behavior if using cgi php.
    *
-   * @see http://www.sitepoint.com/article/php-command-line-1/3
+   * @see https://www.sitepoint.com/article/php-command-line-1/3
    */
   protected function fixCgi()
   {

@@ -132,7 +132,7 @@
                         if (data && data.status == "PAID") {
                             // Perform redirect to order confirmation
                             //console.log("Order completed.");                                
-                            window.location = 'http://'+window.location.hostname+'/borst_shop/shopPaymentDone?typ=4&swishRes='+swishRes;
+                            window.location = 'https://'+window.location.hostname+'/borst_shop/shopPaymentDone?typ=4&swishRes='+swishRes;
                         } else {
                             if (data.status == 'ERROR' || data.status == 'DECLINED') {
                                 //console.log('error');

@@ -301,7 +301,7 @@ class sbt_userActions extends sfActions
         $postData['response'] = urlencode($arr['recaptcha_response_field']);
         $postData['remoteip'] = $_SERVER['REMOTE_ADDR'];
         $postData['privatekey'] = sfConfig::get('app_recaptcha_private_key');
-        $ch = curl_init("http://api-verify.recaptcha.net/verify");
+        $ch = curl_init("https://api-verify.recaptcha.net/verify");
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $data = curl_exec($ch);

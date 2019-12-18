@@ -7,13 +7,13 @@
 <div class="forumlistingleftdiv">
   <div class="forumlistingleftdivinner">
   <div id="newsletter_other_links" class="float_left widthall" style="width:950px; margin-bottom:20px;">
-  <a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/newsletterForm' ?>">Skicka newsletter</a>&nbsp;&nbsp;
-  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/sentMailList' ?>">Skickade newsletter</a>&nbsp;&nbsp;
-  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addRemoveEmail' ?>">L&auml;gg till/ta bort Mejl</a>&nbsp;&nbsp;
-  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/newsletterUser' ?>">Lista komma-separerad</a> &nbsp;&nbsp;
-  <a  href="<?php echo 'http://'.$host_str.'/backend.php/borst/semicolonSeperater'?>">Lista semicolon-separerad</a> &nbsp;&nbsp;
-  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/createNewsletter' ?>">Add Newsletter</a> &nbsp;&nbsp;
-  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/searchNewsletterSubscriber' ?>">Search Newsletter Subscriber</a>
+  <a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/newsletterForm' ?>">Skicka newsletter</a>&nbsp;&nbsp;
+  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/sentMailList' ?>">Skickade newsletter</a>&nbsp;&nbsp;
+  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addRemoveEmail' ?>">L&auml;gg till/ta bort Mejl</a>&nbsp;&nbsp;
+  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/newsletterUser' ?>">Lista komma-separerad</a> &nbsp;&nbsp;
+  <a  href="<?php echo 'https://'.$host_str.'/backend.php/borst/semicolonSeperater'?>">Lista semicolon-separerad</a> &nbsp;&nbsp;
+  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/createNewsletter' ?>">Add Newsletter</a> &nbsp;&nbsp;
+  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/searchNewsletterSubscriber' ?>">Search Newsletter Subscriber</a>
   </div>
      <div style="border: 1px solid; float: left; width: 167px; margin-right: 30px; display: none" id="hidespool">
         <span style="float: right; color:red; margin-right:50px;  padding:5px 0 5px 0; font-size:13px; font-weight: bold; margin-right:50px; " id="poolStatus"></span>

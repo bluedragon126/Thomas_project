@@ -15,9 +15,9 @@
    <div class="forumlistingleftdivinner" style="width:95%;">
    <div id="btchart_list_outer"> 
 	<div id="subscription_other_links" class="float_left widthall" style="width:900px; margin-bottom:20px;">
-		<a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
-        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
+		<a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
+        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
 	</div>
 
   	<input type="hidden" id="btchart_column_order" name="shop_article_column_order" value="<?php echo $current_column_order; ?>"/>
@@ -70,7 +70,7 @@
                         <input type="radio" value="disable" name="stock[<?php echo $data->id; ?>]" id="<?php echo $data->id; ?>" <?php if($data->active!=1)echo "checked='checked'"; ?> />InActive
                     </td>                    
                     <td> 
-                        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#" id="<?php echo $data->id ?>" class="delete_stock"><img src="/images/cross.png" /> </a>
                     </td>
                     <td>  </td>                
@@ -114,7 +114,7 @@ $(document).ready(function() {
     $(".delete_stock").live('click','',function(){
         $flag = window.confirm('Do you want to delete this sotck');
         if($flag){
-            var str = '<?php echo 'http://'.$host_str.'/backend.php/borst/deleteStock/stock_id/'?>';
+            var str = '<?php echo 'https://'.$host_str.'/backend.php/borst/deleteStock/stock_id/'?>';
             str = str+this.id;
             row_id = this.id;
             $.post(str, function(data){

@@ -2,7 +2,7 @@
 
 
 
-<!-- Script made by Omid Rouhani from http://www.JavaScript.nu/
+<!-- Script made by Omid Rouhani from https://www.JavaScript.nu/
 
 
 

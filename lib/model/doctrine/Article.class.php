@@ -142,7 +142,7 @@ class Article extends BaseArticle
 		$str = '<table cellpadding="0" cellspacing="0" border="0">';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<tr><td style="color:#000000;">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="http://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">&nbsp;'.$list->title.'<a/></td></tr>';
+			$str .= '<tr><td style="color:#000000;">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="https://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">&nbsp;'.$list->title.'<a/></td></tr>';
 		}
 		$str .= '</table>';
 
@@ -185,7 +185,7 @@ class Article extends BaseArticle
 		$str = '<table cellpadding="0" cellspacing="0" border="0">';
 		foreach($similar_article_data as $list)
 		{
-			$str .= '<tr><td style="color:#000000;">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="http://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">&nbsp;'.$list->title.'<a/></td></tr>';
+			$str .= '<tr><td style="color:#000000;">'.substr($list->article_date,0,10).'</td><td><a class="main_link_color" href="https://'.$_SERVER['HTTP_HOST'].'/borst/borstArticleDetails/article_id/'.$list->article_id.'">&nbsp;'.$list->title.'<a/></td></tr>';
 		}
 		$str .= '</table>';
 

@@ -48,7 +48,7 @@ class Dailyfx extends BaseDailyfx
 		$weekDayNumberForThisWeek = $date['wday']; //1-7 depending on weekday
 		$dayNumberForThisWeeksSunday = $this->leadingZeros($currentDayInMonthNumber - $weekDayNumberForThisWeek,2); //Calculate the date for this week's sunday
 	
-		$url = "http://www.dailyfx.com/files/Calendar-".$month."-".$dayNumberForThisWeeksSunday . "-". $year.".csv";
+		$url = "https://www.dailyfx.com/files/Calendar-".$month."-".$dayNumberForThisWeeksSunday . "-". $year.".csv";
 	
 		$lines = $this->get_url_contents($url);
 		

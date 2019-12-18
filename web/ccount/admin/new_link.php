@@ -3,8 +3,8 @@
  * This file is part of CCount - PHP Click Counter.
  *
  * (c) Copyright 2016 by Klemen Stirn. All rights reserved.
- * http://www.phpjunkyard.com
- * http://www.phpjunkyard.com/php-click-counter.php
+ * https://www.phpjunkyard.com
+ * https://www.phpjunkyard.com/php-click-counter.php
  *
  * For the full copyright and license agreement information, please view
  * the docs/index.html file that was distributed with this source code.
@@ -139,7 +139,7 @@ require 'admin_header.inc.php';
                     <div class="form-group<?php echo isset($error_buffer['url']) ? ' has-error' : ''; ?>">
                         <label for="url" class="col-lg-3 control-label bold">Link URL:</label>
                         <div class="col-lg-9">
-                            <input type="url" id="url" name="url" value="<?php echo $url; ?>" size="50" maxlength="255" class="form-control" placeholder="http://www.example.com">
+                            <input type="url" id="url" name="url" value="<?php echo $url; ?>" size="50" maxlength="255" class="form-control" placeholder="https://www.example.com">
                             <p class="help-block"><?php echo isset($error_buffer['url']) ? $error_buffer['url'] : 'URL of the link you wish to count clicks on.'; ?></p>
                         </div>
                     </div>

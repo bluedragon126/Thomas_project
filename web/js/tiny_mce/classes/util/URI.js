@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /**
@@ -53,7 +53,7 @@ define("tinymce/util/URI", [
 			url = (baseUri ? baseUri.protocol || 'http' : 'http') + '://mce_host' + url;
 		}
 
-		// Relative path http:// or protocol relative //path
+		// Relative path https:// or protocol relative //path
 		if (!/^[\w\-]*:?\/\//.test(url)) {
 			base_url = settings.base_uri ? settings.base_uri.path : new URI(location.href).directory;
 			if (settings.base_uri.protocol === "") {
@@ -64,7 +64,7 @@ define("tinymce/util/URI", [
 			}
 		}
 
-		// Parse URL (Credits goes to Steave, http://blog.stevenlevithan.com/archives/parseuri)
+		// Parse URL (Credits goes to Steave, https://blog.stevenlevithan.com/archives/parseuri)
 		url = url.replace(/@@/g, '(mce_at)'); // Zope 3 workaround, they use @@something
 
 		/*jshint maxlen: 255 */
@@ -139,7 +139,7 @@ define("tinymce/util/URI", [
 		 * @return {String} Relative URI from the point specified in the current URI instance.
 		 * @example
 		 * // Converts an absolute URL to an relative URL url will be somedir/somefile.htm
-		 * var url = new tinymce.util.URI('http://www.site.com/dir/').toRelative('http://www.site.com/dir/somedir/somefile.htm');
+		 * var url = new tinymce.util.URI('https://www.site.com/dir/').toRelative('https://www.site.com/dir/somedir/somefile.htm');
 		 */
 		toRelative: function(uri) {
 			var self = this, output;
@@ -186,8 +186,8 @@ define("tinymce/util/URI", [
 		 * @param {Boolean} noHost No host and protocol prefix.
 		 * @return {String} Absolute URI from the point specified in the current URI instance.
 		 * @example
-		 * // Converts an relative URL to an absolute URL url will be http://www.site.com/dir/somedir/somefile.htm
-		 * var url = new tinymce.util.URI('http://www.site.com/dir/').toAbsolute('somedir/somefile.htm');
+		 * // Converts an relative URL to an absolute URL url will be https://www.site.com/dir/somedir/somefile.htm
+		 * var url = new tinymce.util.URI('https://www.site.com/dir/').toAbsolute('somedir/somefile.htm');
 		 */
 		toAbsolute: function(uri, noHost) {
 			uri = new URI(uri, {base_uri: this});

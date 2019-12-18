@@ -129,16 +129,16 @@
                     <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
                     <tr class="classnot">
                         <td align="right" class="prof_table_no padding_right_13"><?php echo $i; ?></td>
-                        <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
+                        <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
                         <td align="left" class="blog_prof_table_date"><?php echo $data->start_date; ?></td>	
                         <td align="left" class="blog_prof_table_date"><?php echo $data->end_date; ?></td>	
                         <td align="left" class="prof_table_stat"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'Betald' : ''); ?>
                             <?php $days = (strtotime(date("Y-m-d")) - strtotime(substr($data->end_date, 0, 10))) / (60 * 60 * 24); ?></td>
                         <td align="left"><?php if ($days < 0 && $days >= -5): ?>
-                                <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förlänga?</a>
+                                <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förlänga?</a>
                             <?php endif; ?>
                             <?php if ($days > 0): ?>
-                                <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förnya ></a>
+                                <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förnya ></a>
                             <?php endif; ?></td>	
                     </tr>
                     <?php
@@ -219,16 +219,16 @@
                     <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
                     <tr class="classnot">
                         <td align="right" class="prof_table_no padding_right_13"><?php echo $i; ?></td>
-                        <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
+                        <td align="left"><a class="cursor prof_table_sub" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>"><?php echo $product_arr[0]['title']; ?></a></td>
                         <td align="left" class="blog_prof_table_date"><?php echo $data->start_date; ?></td>	
                         <td align="left" class="blog_prof_table_date"><?php echo $data->end_date; ?></td>	
                         <td align="left" class="prof_table_stat"><?php echo $purchase->getPaymentStatus($data->purchase_id) == '0' ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == '1' ? 'Betald' : ''); ?>
                             <?php $days = (strtotime(date("Y-m-d")) - strtotime(substr($data->end_date, 0, 10))) / (60 * 60 * 24); ?></td>
                         <td align="left"><?php if ($days < 0 && $days >= -5): ?>
-                                <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förlänga?</a>
+                                <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förlänga?</a>
                             <?php endif; ?>
                             <?php if ($days > 0): ?>
-                                <a href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förnya ></a>
+                                <a href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $data->product_id; ?>" class="prof_table_act cursor">Förnya ></a>
                             <?php endif; ?></td>	
                     </tr>
                     <?php

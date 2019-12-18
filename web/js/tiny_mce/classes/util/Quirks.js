@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  *
  * @ignore-file
  */
@@ -958,7 +958,7 @@ define("tinymce/util/Quirks", [
 			editor.on('click', function(e) {
 				var target = e.target;
 
-				// Workaround for bug, http://bugs.webkit.org/show_bug.cgi?id=12250
+				// Workaround for bug, https://bugs.webkit.org/show_bug.cgi?id=12250
 				// WebKit can't even do simple things like selecting an image
 				// Needs to be the setBaseAndExtend or it will fail to select floated images
 				if (/^(IMG|HR)$/.test(target.nodeName) && dom.getContentEditableParent(target) !== "false") {

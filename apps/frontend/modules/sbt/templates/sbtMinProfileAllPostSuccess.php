@@ -20,7 +20,7 @@
       <tr class="classnot">
         <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
         <td class="width_83"><?php echo substr($data->article_date,2,9) ?></td>
-        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'http://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id;?>"><span class="profile_allpostlist_title"><?php echo $data->title ?></span></a></td>
+        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'https://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id;?>"><span class="profile_allpostlist_title"><?php echo $data->title ?></span></a></td>
         <td class="lightgreenfont width_92"><?php echo $cat_arr[$data->category_id] ? $cat_arr[$data->category_id] : '-'; ?></td>
         <td class="lightbluefont width_84"><?php echo $type_arr[$data->type_id] ? $type_arr[$data->type_id] : '-'; ?></td>
         <td class="darkbluefont width_84"><?php echo $object_arr[$data->object_id] ? $object_arr[$data->object_id] : '-'; ?></td>
@@ -44,7 +44,7 @@
       <tr class="classnot">
         <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
         <td class="width_83"><?php echo substr($data->created_at,2,9) ?></td>
-        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'http://'.$host_str.'/sbt/sbtArticleDetails/article_id/'.$data->id;?>"><span class="profile_allpostlist_title"><?php echo $data->analysis_title ?></span></a></td>
+        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'https://'.$host_str.'/sbt/sbtArticleDetails/article_id/'.$data->id;?>"><span class="profile_allpostlist_title"><?php echo $data->analysis_title ?></span></a></td>
         <td class="lightgreenfont width_92"><?php echo $cat_arr[$data->analysis_category_id] ? $cat_arr[$data->analysis_category_id] : '-'; ?></td>
         <td class="lightbluefont width_84"><?php echo $type_arr[$data->analysis_type_id] ? $type_arr[$data->analysis_type_id] : '-'; ?></td>
         <td class="darkbluefont width_84"><?php echo $object_arr[$data->analysis_object_id] ? $object_arr[$data->analysis_object_id] : '-'; ?></td>
@@ -68,7 +68,7 @@
       <tr class="classnot">
         <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
         <td class="width_83"><?php echo substr($data->created_at,2,9) ?></td>
-        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'http://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_allpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
+        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo 'https://'.$host_str.'/sbt/sbtBlogDetails/blog_id/'.$data->id;?>"><span class="profile_allpostlist_title"><?php echo $data->ublog_title ?></span></a></td>
         <td class="lightgreenfont width_92"><?php echo $cat_arr[$data->ublog_category_id] ? $cat_arr[$data->ublog_category_id] : '-'; ?></td>
         <td class="lightbluefont width_84"><?php echo $type_arr[$data->ublog_type_id] ? $type_arr[$data->ublog_type_id] : '-'; ?></td>
         <td class="darkbluefont width_84"><?php echo $object_arr[$data->ublog_object_id] ? $object_arr[$data->ublog_object_id] : '-'; ?></td>
@@ -92,7 +92,7 @@
       <tr class="classnot">
         <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
         <td class="width_83"><?php echo substr($data->andratdatum,2,9) ?></td>
-        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo "http://".$host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="profile_allpostlist_title"><?php echo $data->rubrik ?></span></a></td>
+        <td class="main_link_color width_152"><a class="main_link_color" href="<?php echo "https://".$host_str ?>/forum/commentOnForumTopic/forumid/<?php echo $data->koppling ?>"><span class="profile_allpostlist_title"><?php echo $data->rubrik ?></span></a></td>
         <td class="lightgreenfont width_92"><span class="profile_forumlist_cat"><?php echo $data->getCategoryName($data->btforum_category_id); ?></span></td>
         <td class="lightbluefont width_84"><?php echo '-';//$data->getReplyCount($data->id); ?></td>
         <td class="darkbluefont width_84"><?php echo '-';//$data->visningar ?></td>

@@ -91,7 +91,7 @@ class mymarket
 	function generate_password($maxlen=10) 
 	{
 		/* returns a randomly generated password of length $maxlen.  inspired by
-		 * http://www.phpbuilder.com/columns/jesus19990502.php3 */
+		 * https://www.phpbuilder.com/columns/jesus19990502.php3 */
 	
 		global $CFG;
 	
@@ -198,7 +198,7 @@ class mymarket
 			else
 				$without_align = trim($str); 
 				
-			$path = 'http://'.$host_str.'/'.$without_align;
+			$path = 'https://'.$host_str.'/'.$without_align;
 		}
 		else
 		{

@@ -10,14 +10,14 @@
 	    <p>För att aktivera ditt konto, klicka på aktiveringslänken i mejlet.<br />
         (Om du inte hittar mejlet kolla skräpkorg och ev. spamfilter.)
 	      <br />
-        Om du vill ändra lösenord, gör det här: <a href="<?php echo 'http://'.$host_str.'/user/changePasswordForm';?>">Ändra lösenord.</a><br></p>
-			<p>Välkommen att <a href="<?php echo 'http://'.$host_str.'/user/loginWindow';?>">logga in!</a></p>
+        Om du vill ändra lösenord, gör det här: <a href="<?php echo 'https://'.$host_str.'/user/changePasswordForm';?>">Ändra lösenord.</a><br></p>
+			<p>Välkommen att <a href="<?php echo 'https://'.$host_str.'/user/loginWindow';?>">logga in!</a></p>
 
 		<?php else: ?>
 			<p>Du är nu registerad på Börstjänaren. <br />Ditt användarnamn är: <b><?php echo $username; ?></b></p>
 			<p>Användarnamn och lösenord har mejlats till: <b><?php echo $email; ?></b></p>
-			<p>Om du vill ändra lösenord, gör det här: <a href="<?php echo 'http://'.$host_str.'/user/changePasswordForm';?>">Ändra lösenord.</a><br></p>
-			<p>Välkommen att <a href="<?php echo 'http://'.$host_str.'/user/loginWindow';?>">logga in!</a></p>
+			<p>Om du vill ändra lösenord, gör det här: <a href="<?php echo 'https://'.$host_str.'/user/changePasswordForm';?>">Ändra lösenord.</a><br></p>
+			<p>Välkommen att <a href="<?php echo 'https://'.$host_str.'/user/loginWindow';?>">logga in!</a></p>
 		<?php endif; ?>
 	  </div>
 	</div>

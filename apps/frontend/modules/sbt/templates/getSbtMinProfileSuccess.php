@@ -55,7 +55,7 @@
 
     <div class="denna_sida_detail widthall">
         <div class="prof_subheader widthall mrg_btm_10 mrg_top_30">Denna sida:</div>
-        <span class="prof_q"><a href="http://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class="viocolor"><?php echo 'http://' . $host_str . '/sbt/sbtMinProfile/id/' . $user_id ?></a></span><br/>
+        <span class="prof_q"><a href="https://<?php echo $host_str ?>/sbt/sbtMinProfile/id/<?php echo $user_id ?>" class="viocolor"><?php echo 'https://' . $host_str . '/sbt/sbtMinProfile/id/' . $user_id ?></a></span><br/>
     </div>
 
     <div class="statistik_detail widthall">
@@ -97,7 +97,7 @@
 
     <div class="statistik_detail widthall">
         <div class="blog_prof_stat widthall mrg_top_30">Blogg</div>
-        <span class="prof_q"><a class="main_link_color cursor" href="<?php echo 'http://' . $host_str . '/sbt/showListOfUserBlog/uid/' . $user_data->user_id ?>"><?php echo 'Visa alla blogbesök till ' . $user_profile->getFullUserName($user_id); ?></a></span><br/>
+        <span class="prof_q"><a class="main_link_color cursor" href="<?php echo 'https://' . $host_str . '/sbt/showListOfUserBlog/uid/' . $user_data->user_id ?>"><?php echo 'Visa alla blogbesök till ' . $user_profile->getFullUserName($user_id); ?></a></span><br/>
     </div>
 
     <div class="blogg_detail widthall">

@@ -4,8 +4,8 @@
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
  *
- * License: http://www.tinymce.com/license
- * Contributing: http://www.tinymce.com/contributing
+ * License: https://www.tinymce.com/license
+ * Contributing: https://www.tinymce.com/contributing
  */
 
 /**
@@ -165,7 +165,7 @@ define("tinymce/EditorManager", [
 			// Get base URL for the current document
 			documentBaseURL = URI.getDocumentBaseUrl(document.location);
 
-			// Check if the URL is a document based format like: http://site/dir/file and file:///
+			// Check if the URL is a document based format like: https://site/dir/file and file:///
 			// leave other formats like applewebdata://... intact
 			if (/^[^:]+:\/\/\/?[^\/]+\//.test(documentBaseURL)) {
 				documentBaseURL = documentBaseURL.replace(/[\?#].*$/, '').replace(/[\/\\][^\/]+$/, '');

@@ -2,7 +2,7 @@
 /**
  *
  *  AJAX IFRAME METHOD (AIM)
- *  http://www.webtoolkit.info/
+ *  https://www.webtoolkit.info/
  *
  **/
  
@@ -71,7 +71,7 @@ AIM = {
    {
    		document.getElementById('product_image').value = arr[1];
 		
-		var str = '<img id="product_short_img" class="float_right" src="http://'+window.location.hostname+'/uploads/btshopThumbnail/'+arr[1]+'"/>';
+		var str = '<img id="product_short_img" class="float_right" src="https://'+window.location.hostname+'/uploads/btshopThumbnail/'+arr[1]+'"/>';
 	    document.getElementById('preview_product_img').innerHTML = str;
    }
    //window.location.reload();
@@ -163,7 +163,7 @@ AIM = {
                 <td><?php echo $form['btshop_product_image']->render(array('id'=>'product_image','class'=>'float_left width_165'));	?><span id="upload_link"><a id="productImage" name="productImage" class="font_family_arial font_11 cursor mleft_10">Upload Image</a></span>
 				<span id="upload_msg redcolor"></span>
 				<span class="float_right" id="preview_product_img">
-				<?php if($form['btshop_product_image']->getValue()): ?><img id="product_short_img" class="float_right" src="<?php echo 'http://'.$host_str.'/uploads/btshopThumbnail/'.$form['btshop_product_image']->getValue(); ?>"/><?php endif; ?>
+				<?php if($form['btshop_product_image']->getValue()): ?><img id="product_short_img" class="float_right" src="<?php echo 'https://'.$host_str.'/uploads/btshopThumbnail/'.$form['btshop_product_image']->getValue(); ?>"/><?php endif; ?>
 				</span></td>
               </tr>
 			  <tr>
@@ -232,7 +232,7 @@ AIM = {
                   <td>&nbsp;</td>
                 <td>
 
-                    <b><a  href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/borst_shop/shopProductDetail/product_id/'.$shopId?>">GÅ TILL ARTIKEL (spara först!)</a></b>
+                    <b><a  href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/borst_shop/shopProductDetail/product_id/'.$shopId?>">GÅ TILL ARTIKEL (spara först!)</a></b>
                 </td>
               </tr>
               <?php endif;?>
@@ -273,7 +273,7 @@ AIM = {
     $(document).ready(function(){
        $("#bt_shop_article_btshop_type_id").change(function(){
             if(this.value==7){
-                url = 'http://'+window.location.hostname+'/backend.php/borst/getChartTypes';
+                url = 'https://'+window.location.hostname+'/backend.php/borst/getChartTypes';
                 $.post(url,'',function(data){
                   $("#chart_types").html(data);  
 				  $('#chart_type_id option[value="1"]').remove();

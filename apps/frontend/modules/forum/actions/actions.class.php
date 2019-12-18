@@ -338,7 +338,7 @@ class forumActions extends sfActions
 			
 			$profile->updateActivityCount($user_id);
 			
-			$url = 'http://'.$this->host_str .'/forum/commentOnForumTopic/forumid/'.$id;
+			$url = 'https://'.$this->host_str .'/forum/commentOnForumTopic/forumid/'.$id;
 			//$this->redirect('forum/forumHome');		
 			$this->redirect($url);		
 		}

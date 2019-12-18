@@ -112,11 +112,11 @@ include_component('isicsBreadcrumbs', 'show', array(
                                     <!--<tr class="classnot">
                                        <td class="width_30"><img src="/images/rect_red.gif" alt="rect" width="29" height="16" /></td>
                                        <td class="datefont width_66"><?php echo substr($data->article_date, 2, 9) ?></td>
-                                       <td class="main_link_color width_160"><a class="main_link_color float_left cursor" href="http://<?php echo $host_str ?>/borst/borstArticleDetails/article_id/<?php echo $data->article_id ?>"><span class="search_result_title"><?php echo $data->title ? $data->title : '&nbsp;'; ?></span></a></td>
+                                       <td class="main_link_color width_160"><a class="main_link_color float_left cursor" href="https://<?php echo $host_str ?>/borst/borstArticleDetails/article_id/<?php echo $data->article_id ?>"><span class="search_result_title"><?php echo $data->title ? $data->title : '&nbsp;'; ?></span></a></td>
                                        <td class="lightgreenfont width_90"><span class="search_result_cat"><a class="article_cat cursor" name="<?php echo "bt_" . $data->category_id; ?>"><?php echo $bt_cat_arr[$data->category_id] ? $bt_cat_arr[$data->category_id] : '&nbsp;'; ?></a></span></td>
                                        <td class="lightbluefont width_80"><a class="article_type cursor" name="<?php echo "bt_" . $data->type_id; ?>"><?php echo $bt_type_arr[$data->type_id] ? $bt_type_arr[$data->type_id] : '&nbsp;'; ?></a></td>
                                        <td class="darkbluefont width_81"><a class="article_object cursor" name="<?php echo "bt_" . $data->object_id; ?>"><?php echo $bt_object_arr[$data->object_id] ? $bt_object_arr[$data->object_id] : '&nbsp;'; ?></a></td>
-                                       <td class="pinkfont width_122"><a class="pinkfont" href="<?php echo "http://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $data->author ? $data->author : '&nbsp;'; ?></a></td>
+                                       <td class="pinkfont width_122"><a class="pinkfont" href="<?php echo "https://" . $host_str . "/sbt/sbtMinProfile/id/" . $data->author_id ?>" ><?php echo $data->author ? $data->author : '&nbsp;'; ?></a></td>
                                     </tr> -->                       
 
                             <?php
@@ -128,7 +128,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                             <tr class="classnot">
                                 <td width="71" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?> list_date"><?php echo substr($article->article_date, 0, 10); ?></td>
                                 <td width="16">&nbsp;</td>
-                                <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'list_topic' ?>" href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
+                                <td width="253" class="<?php echo $article->art_statid == 2 ? 'redcolor' : '' ?>"><a class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'list_topic' ?>" href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/borstArticleDetails/article_id/<?php echo $article->article_id; ?>"><span class="article_list_text"><?php echo $article->title ? $article->title : '&nbsp;'; ?></span></a></td>
                                 <td width="23">&nbsp;</td>
                                 <td width="66" class=" <?php echo $article->art_statid == 2 ? 'redcolor' : 'noclass' ?>"><a name="<?php echo "bt_" . $article->category_id; ?>" class="article_cat <?php echo $article->art_statid == 2 ? 'redcolor' : 'cursor list_heading_kategori' ?>"><span class="article_list_kategori"><?php echo $bt_cat_arr[$article->category_id] ? $bt_cat_arr[$article->category_id] : '&nbsp;'; ?></span></a></td>
                                 <td width="11">&nbsp;</td>
@@ -186,7 +186,7 @@ include_component('isicsBreadcrumbs', 'show', array(
                 }
                             ?> >                    
                                 <td class="orgfont width326 pad_lft_5" style="color:#5a7692"><?php echo $data->btshop_article_subtitle; ?></td>
-                                <td class="width136"><a class="blog_table_topic" style="color:#5ec5ed" href="http://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
+                                <td class="width136"><a class="blog_table_topic" style="color:#5ec5ed" href="https://<?php echo $host_str ?>/borst_shop/shopProductDetail/product_id/<?php echo $data->id; ?>"><?php echo $data->btshop_article_title; ?></a></td>
                                 <td class="width108"><a class="btshop_table_post shop_type cursor" style="color:#171200" name="<?php echo $data->btshop_type_id ?>"><?php echo $data->BtShopArticleType->btshop_type_name; ?></a></td>
                                 <td class="forum_table_date_w"><a class="blog_prof_table_date main_link_color" style="color:#e53520"><?php echo  BtShopPriceDetails::getMinPriceOfArticle($data->id, $order); ?></a></td>
 

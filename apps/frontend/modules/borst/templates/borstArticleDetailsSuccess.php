@@ -42,7 +42,7 @@
                 twitimagetext = twitimagetext.substring(0,139 - (currentUrl.length + 3));
                 twitimagetext = twitimagetext + "...";
             }
-            var url = "http://twitter.com/share?text="+twitimagetext+"&url="+currentUrl;
+            var url = "https://twitter.com/share?text="+twitimagetext+"&url="+currentUrl;
             window.open(url, "Share on twitter", "top=300,left=350,width=500,height=500");
         });
 		
@@ -178,19 +178,19 @@
                         <div class="float_left widthall mbottom_article">
                             <?php if ($article_data->author_id): ?>
                                 <span class="float_left width_100_per">
-                                    <a  class="cursor main_link_color" href="<?php echo 'http://' . $host_str . '/borst/contactUs' ?>">
+                                    <a  class="cursor main_link_color" href="<?php echo 'https://' . $host_str . '/borst/contactUs' ?>">
                                         <img src="/images/grafik/<?php echo $author->code ?>.png"  width="38"/>
                                     </a>
                                 </span>
 
-                                <span class="float_left  main_link_color"><a class="cursor main_link_col2" href="<?php echo 'http://' . $host_str . '/borst/contactUs' ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span>
+                                <span class="float_left  main_link_color"><a class="cursor main_link_col2" href="<?php echo 'https://' . $host_str . '/borst/contactUs' ?>"><?php echo $author->name ? $author->name : ($profile->getFullUserName($article_data->author_id) ? $profile->getFullUserName($article_data->author_id) : ''); ?></a></span>
                                 
                                 <div class="float_left mtop_5 width_640"> 
                         <?php
                         //code change by sandeep only condition added for publisher
                         if ($sf_user->isAuthenticated() && $sf_user->getAttribute('isSuperAdmin', '', 'userProperty') == '1' || $sf_user->hasGroup('Publisher')) : //
                             ?><br />
-                            <a class="main_link_color edit_this" href="<?php echo 'http://' . $host_str . '/backend.php/borst/createArticle/action_mode/edit_article/article_id/' . $article_data->article_id ?>">Editera denna artikel</a>
+                            <a class="main_link_color edit_this" href="<?php echo 'https://' . $host_str . '/backend.php/borst/createArticle/action_mode/edit_article/article_id/' . $article_data->article_id ?>">Editera denna artikel</a>
                         <?php endif; ?>
                     </div>
                                 <br />
@@ -212,7 +212,7 @@
                                 <table cellpadding="0" cellspacing="0" border="0">
                                     <?php
                                     foreach ($pagerForSimilarArticles->getResults() as $list) {
-                                        echo '<tr><td class="related_article_date">' . substr($list->article_date, 0, 10) . '</td><td><a class="related_article_title" href="http://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $list->article_id . '">' . $list->title . '<a/></td></tr>';                                        
+                                        echo '<tr><td class="related_article_date">' . substr($list->article_date, 0, 10) . '</td><td><a class="related_article_title" href="https://' . $_SERVER['HTTP_HOST'] . '/borst/borstArticleDetails/article_id/' . $list->article_id . '">' . $list->title . '<a/></td></tr>';                                        
                                     }
                                     ?>
                                 </table>
@@ -276,7 +276,7 @@
                             <?php $adCount = 1; ?>
                             <?php foreach ($adData as $article): ?>
                                 <?php $modAdCount = $adCount % 2; ?>
-                                <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                                <a class="blackcolor cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                                     <div class="color_plate">
                                         <?php if ($article->btshop_product_image): ?>
                                             <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>
@@ -332,7 +332,7 @@
                 <div class="float_left widthall mbottom_10">
                     <div class="float_left widthall mtop_25 mbottom_12">&nbsp;</div>
                 </div>
-                <div class="float_left widthall"><span class="main_link_color"><?php echo __('För att se en lista över artiklar, klicka') ?><a class="main_link_color" href="<?php echo 'http://' . $host_str . '/borst/articleList' ?>"><?php echo __(' här') ?></a></span></div>	
+                <div class="float_left widthall"><span class="main_link_color"><?php echo __('För att se en lista över artiklar, klicka') ?><a class="main_link_color" href="<?php echo 'https://' . $host_str . '/borst/articleList' ?>"><?php echo __(' här') ?></a></span></div>	
             <?php endif; ?>
         </div>
 
@@ -362,7 +362,7 @@
                 <?php $adCount = 1; ?>
                 <?php foreach ($metastock_data as $article): ?>
                     <?php $modAdCount = $adCount % 2; ?>
-                    <a class="blackcolor cursor" href="<?php echo 'http://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
+                    <a class="blackcolor cursor" href="<?php echo 'https://' . $host_str . '/borst_shop/shopProductDetail/product_id/' . $article->id; ?>">
                         <div class="color_plate">
                             <?php if ($article->btshop_product_image): ?>
                                 <div class="color_plate_img"><img src="/uploads/btshopThumbnail/<?php echo $article->btshop_product_image; ?>" width="102" height="94" class="color_plate_img_radius"/></div>

@@ -30,7 +30,7 @@
     <?php $info_arr = $purchasedItem->getOnePurchasedItem($trans->id);?>
 	<tr class="classnot">
 		<td><input name="purchase_ids[]" type="hidden" value="<?php echo $trans->id ?>"><?php echo $i; ?></td>
-		<td><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$trans->id ?>"><?php echo $trans->id; ?></a></td>
+		<td><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/viewPurchaseDetail/id/'.$trans->id ?>"><?php echo $trans->id; ?></a></td>
 		<td><?php echo substr($trans->created_at, 0, 10); ?></td>
     	<td><?php echo $trans->firstname.' '.$trans->lastname; ?></td>
 		<td><?php echo $info_arr['title'] ?></td>

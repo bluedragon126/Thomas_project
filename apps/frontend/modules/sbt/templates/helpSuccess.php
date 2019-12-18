@@ -46,9 +46,9 @@
                         <strong>V&auml;lkommen ocks&aring; att registrera till  BT Insider, </strong>B&ouml;rstj&auml;narens n&auml;tverk f&ouml;r dig som vill blogga och skriva egna artiklar eller kommentarer. <br />
                         Medlemskap i BT Insider &auml;r kostnadsfritt men kr&auml;ver en n&aring;got utf&ouml;rligare registrering, d&auml;r du &auml;ven beh&ouml;ver aktivera ditt konto via epost. <br />
                         <br />
-                        <strong>F&ouml;r att registrera dig p&aring; BT Insider</strong>, klicka p&aring; texten &quot;Vill du kunna blogga och publicera artiklar?&quot; i <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt_user/sbtNewRegistration">registeringsformul&auml;ret.</a><br />
+                        <strong>F&ouml;r att registrera dig p&aring; BT Insider</strong>, klicka p&aring; texten &quot;Vill du kunna blogga och publicera artiklar?&quot; i <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt_user/sbtNewRegistration">registeringsformul&auml;ret.</a><br />
                         <br />
-                        <strong>Om du redan &auml;r registrerad B&ouml;rstj&auml;nare</strong> kan du  ut&ouml;ka ditt medlemskap till BT Insider genom att g&aring; till  &quot;Mitt konto&quot;och v&auml;lja <a href="http://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"> Editera profil.</a>
+                        <strong>Om du redan &auml;r registrerad B&ouml;rstj&auml;nare</strong> kan du  ut&ouml;ka ditt medlemskap till BT Insider genom att g&aring; till  &quot;Mitt konto&quot;och v&auml;lja <a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/sbt/sbtUserProfile"> Editera profil.</a>
                         <span class="whp-border">&nbsp;</span> <br />
                         <br />
                         <br/>

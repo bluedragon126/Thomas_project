@@ -41,7 +41,7 @@
         if (flag == 'forum_comment')
             var dest_path = window.location.hostname + '/uploads/forumCommentImage/' + filename;
 
-        var str = "<img src='http://" + dest_path + "' alt='img' />";
+        var str = "<img src='https://" + dest_path + "' alt='img' />";
         tinyMCE.activeEditor.setContent(text + str);
     }
 
@@ -203,10 +203,10 @@
                         }
                             ?> >
                                 <td class="orgfont forum_table_title_w pad_lft_5">
-                                    <a class="cursor" href="<?php echo "http://" . $host_str . "/forum/commentOnForumTopic/forumid/" . $forum->id ?>">
+                                    <a class="cursor" href="<?php echo "https://" . $host_str . "/forum/commentOnForumTopic/forumid/" . $forum->id ?>">
                                     <span class="forum_table_title"><?php echo $forum->rubrik ?></span></a>
                                     </br>
-                                    <a class="forum_table_user forum_table_title_w" href="<?php echo "http://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $forum->author_id //$profile->getUserFromFullName($forum->skapare)      ?>"><?php echo $profile->getFullUserName($forum->author_id); ?></a>
+                                    <a class="forum_table_user forum_table_title_w" href="<?php echo "https://" . $host_str ?>/sbt/sbtMinProfile/id/<?php echo $forum->author_id //$profile->getUserFromFullName($forum->skapare)      ?>"><?php echo $profile->getFullUserName($forum->author_id); ?></a>
                                 </td>
                                 <td class="width_9">&nbsp;</td>
                                 <td class="width15">
