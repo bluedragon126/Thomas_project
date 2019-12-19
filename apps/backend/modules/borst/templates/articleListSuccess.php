@@ -8,7 +8,7 @@
 </script>
 <div class="maincontentpage">
   <div class="forumlistingleftdiv">
-  <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/createArticle/mode/create_new_article'?>">Lägg till artikel</a></b></div>
+  <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/createArticle/mode/create_new_article'?>">Lägg till artikel</a></b></div>
   <div class="forumlistingleftdivinner">
     <form id="search_article_form" class="backend_search_section" name="search_article_form" method="POST" action="<?php echo url_for('borst/articleList') ?>">
   <table width="80%" border="0" cellspacing="0" cellpadding="0" id="back_article_list">
@@ -136,3 +136,4 @@
 		<td id="delete_article_msg">Message:</td>
 	</tr>
  </table>
+</div>

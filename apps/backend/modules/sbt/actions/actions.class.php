@@ -46,13 +46,13 @@ class sbtActions extends sfActions
 		}
 		else
 		{
-			$url = 'https://'.$host_str.'/';
+			$url = 'http://'.$host_str.'/';
 			$this->redirect($url);		
 		}
 	}
 	else
 	{
-		$url = 'https://'.$host_str.'/user/loginWindow';
+		$url = 'http://'.$host_str.'/user/loginWindow';
 		$this->redirect($url);
 	}
   }
@@ -208,7 +208,7 @@ class sbtActions extends sfActions
 					$this->forward('email','sendRejectAnalysisMail');
 				}
 				
-				//$url = 'https://'.$this->host_str.'/backend.php/sbt/SbtArticleRequest';
+				//$url = 'http://'.$this->host_str.'/backend.php/sbt/SbtArticleRequest';
 				//$this->redirect($url);
 			}
 			else

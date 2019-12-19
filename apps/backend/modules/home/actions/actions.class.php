@@ -46,13 +46,13 @@ class homeActions extends sfActions
 			}
 			else
 			{
-				$url = 'https://'.$host_str.'/';
+				$url = 'http://'.$host_str.'/';
 				$this->redirect($url);		
 			}
 		}
 		else
 		{
-			$url = 'https://'.$host_str.'/user/loginWindow';
+			$url = 'http://'.$host_str.'/user/loginWindow';
 			$this->redirect($url);
 		}
 	} 

@@ -10,7 +10,7 @@
 </script>
 <?php $month = array('01' => 'JAN', '02' => 'FEB', '03' => 'MAR', '04' => 'APR', '05' => 'MAJ', '06' => 'JUN', '07' => 'JUL', '08' => 'AUG', '09' => 'SEP', '10' => 'OKT', '11' => 'NOV', '12' => 'DEC'); ?>
 <?php $article_name = "article"; ?>
-<?php $host = 'https://' . sfConfig::get('app_host_name'); ?>
+<?php $host = 'http://' . sfConfig::get('app_host_name'); ?>
 <table width="826"  style="border-left: 1px solid #d3d3d3; border-right: 1px solid #d3d3d3; margin-bottom:5px;" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
     <tbody>
         <tr style="width:786px;float:left">
@@ -22,37 +22,42 @@
                             <td colspan="3" style="float: left; overflow: hidden;">
                                 <table width="789" border="0">
                                     <tr>
-                                        <td width="180"><img src="<?php echo $host; ?>/images/new_home/BT_just_nu_head.png" width="160" style="margin: 2px 0px 6px 0px;"/></td>
+                                        <td width="184"><img src="<?php echo $host; ?>/images/new_home/BT_just_nu_head.png" width="160" style="margin: 2px 0px 6px 0px;"/></td>
                                         
                                         
                                         
                                         
-                                        <td width="226"><span style="float: left; margin-top: 4px; margin-left: 2px;color: #3c3a3a;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 23px; line-height:30px; font-weight:100; letter-spacing: -0.1px;">Aktuell <br>
+                                        <td width="209"><span style="float: left; margin-top: -1px; margin-left: 2px;color: #52595b;  font-family: Georgia, 'Times New Roman', Times, serif; font-size: 21px; line-height:24px; font-weight:100; letter-spacing: -0.7px;">Aktuell <br>
                                                 information 
                                                 <br> 
                                                 från Börstjänaren</span></td>
                                                 
                                               
-                                      <td width="82">
-                                      <table width="64" style="margin-top:0px">
+                                      <td width="86">
+                                      <table width="44" style="margin-top:0px">
                                                 
                                                 <tr>
-                                                     <td style="margin-left:auto; margin-right:auto; background-color: #ffffff; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 44px; line-height:44px; font-family: FranklinGothicCondensed,Arial,Helvetica,sans-serif; color: #3c3a3a; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
+                                                     <td style="margin-left:auto; margin-right:auto; background-color: #f15a22; border-top-left-radius: 6px;border-bottom-right-radius: 6px;"><div style="font-size: 20px; line-height:24px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; color: #ffffff; font-weight:700; letter-spacing: 1px; text-align:center;"><?php echo date("d") . ' ' ?> </td>
                                                 </tr>
                                                 <tr>
-                                                   <td height="10" style="font-size: 18px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #3c3a3a;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 6px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
+                                                   <td height="10" style="font-size: 13px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif;  color: #232222;line-height: 2px; letter-spacing:1px; text-align:center; padding-top: 7px;"><?php echo date("M") == 'May' ? 'MAJ' : (date("M") == 'Oct' ? 'OKT' : strtoupper(date("M"))); ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif; color: #3c3a3a; font-weight:800; line-height: 18px; text-align:center; padding-top: 8px;"><?php echo ' ' . date("Y"); ?></td>
+                                                    <td style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:700; line-height: 18px; text-align:center; padding-top: 0px;"><?php echo ' ' . date("Y"); ?></td>
                                                 </tr>
-                                               
+                                                <tr>
+                                                  <td style="font-size: 14px; font-family: Georgia, 'Times New Roman', Times, serif; color: #232222; font-weight:700; line-height: 18px; text-align:center; height: 38px;">&nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                   
+                                                </tr>
                                             </table></td>
                                         <td style="border-left: 1px solid #D3D6E1;padding: 3px 0 3px 10px;" width="148">
-                                         <a href="https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/20"> <img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" alt="" name="Ad" width="148" height="101" id="Ad" /></a></td>
+                                         <a href="https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/20"> <img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" alt="" name="Ad" width="148" height="101" id="Ad" /></a></td>
                                         <td width="148">
                                                 
                                                
-                                            <a href="https://https://www.thetradingaspirants.com/borst_shopshopProductDetail/product_id/20"><img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" style="float:right;" alt="" name="Ad2" width="148" height="101" id="Ad2" /></a></td>
+                                            <a href="https://www.borstjanaren.se/borst_shop/shopProductDetail/product_id/20"><img src="https://www.borstjanaren.se/uploads_ad_bt/BT_ad_HenryBoy_148x100.gif" style="float:right;" alt="" name="Ad2" width="148" height="101" id="Ad2" /></a></td>
                                     </tr>
                                 </table>
                           </td>
@@ -65,17 +70,17 @@
                                         <tr style="background: #ffffff;width:786px;float:left; height: 4px; vertical-align: middle; margin-top:2px;"  >
                                             <td colspan="5" style="vertical-align: middle;">&nbsp;</td>
                                         </tr>
-                                        <tr style="background: #f15822;width:786px;float:left; height:28px;  vertical-align: middle; margin-top:2px; margin-bottom:4px;"  >
+                                        <tr style="background: #9aadc4;width:786px;float:left; height:26px;  vertical-align: middle; margin-top:2px; margin-bottom:4px;"  >
                                         
-                                            <td align="left" valign="middle" style="height:26px"><a href="https://www.borstjanaren.se/" style="padding-top: 3px; float:left;font-family: Arial,Helvetica,sans-serif; text-transform: uppercase; position: relative;font-size: 12px; color: #FFFFFF; font-weight: 100; letter-spacing: 0.8px; text-decoration: none; width: 156px;">&nbsp;&nbsp;Läs på webben</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/" style="letter-spacing: 0.6px; padding-left: 0px; float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 13px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px; text-decoration: none; width: 148px;">&nbsp;&nbsp;&nbsp;Läs på webben</a></td>
                                             
-                                            <td align="left" valign="middle" style="height:26px"><a href="https://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="padding-top: 3px;float:left;font-family: Arial,Helvetica,sans-serif;text-transform: uppercase;position: relative;font-size: 12px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.8px;  text-decoration: none; width: 133px;">Gratis konto&nbsp;&nbsp;</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 13px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 132px;">&nbsp;Gratis konto </a></td>
                                             
-                                            <td align="left" valign="middle" style="height:26px"><a href="https://www.borstjanaren.se/borst/borstSubscriber" style="padding-top: 3px;float:left;font-family: Arial,Helvetica,sans-serif;text-transform: uppercase;position: relative;font-size: 12px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.8px;  text-decoration: none; width: 106px;">Portfölj&nbsp;&nbsp;</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/borst/borstSubscriber" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 13px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 102px;">&nbsp;&nbsp;Portfölj</a></td>
                                             
-                                            <td align="left" valign="middle" style="height:26px"><a href="https://www.borstjanaren.se/borst/borstNewsletter" style="padding-top: 3px;float:left;font-family: Arial,Helvetica,sans-serif;text-transform: uppercase;position: relative;font-size: 12px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.8px;  text-decoration: none; width: 145px;">Avregistrera&nbsp;&nbsp;</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/borst/borstNewsletter" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 13px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 132px;">&nbsp;&nbsp;Avregistrera</a></td>
                                             
-                                            <td align="left" valign="middle" style="height:26px"><a href="https://www.borstjanaren.se/borst/tipAFriendNewBt" style="padding-top: 3px;float:left;font-family: Arial,Helvetica,sans-serif;text-transform: uppercase;position: relative;font-size: 12px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.8px;  text-decoration: none; width: 137px;">Tipsa en vän</a></td>
+                                            <td align="left" valign="middle" style="height:26px"><a href="http://www.borstjanaren.se/borst/tipAFriendNewBt" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 13px; color: #FFFFFF;font-weight:normal; letter-spacing: 0.2px;  text-decoration: none; width: 132px;">&nbsp;&nbsp;Tipsa en vän</a></td>
                                             
                                         </tr>
                                     </tbody>
@@ -112,48 +117,21 @@
                                                 <span class="next_nobj"></span>
                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                             </span>
-                                            <span style="color: #3c3a3a; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS</span>
-                                            <span><a href="https://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px;float: left;width: 100%; margin: -2px 0px 4px 0px;">ANNONS:</span>
+                                            <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
                                                     <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
                                                         <?php echo html_entity_decode($ads[0]); ?></span></a></span>
                                                         <div style="border-bottom: 2px solid #d4dae4;height: 10px; margin: 4px 0px 5px;">&nbsp;</div>
                                         </td>
                                     </tr>
-<tr style="width: 300px;float: left;">
-                                        <td style="width:100%;padding: 14px 0px 5px 0px;">
 
-                                            <img width="300px" style="margin: 2px 0px 4px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles1.png" alt="" />
-
-                                        </td>
-                                    </tr>
-
-                                    <tr style="width: 300px;float: left;">
-                                        <!-- latest BT article  -->
-                                        <td>
-                                            <ul style="padding-left: 15px; width: 225px;padding-bottom: 2px;color: #3c3a3a; list-style-position: inside;margin: 0;  font-family: Georgia, 'Times New Roman', Times, serif; line-height: 20px;">
-                                                <?php $link_type = '/borst/borstArticleDetails/article_id/'; ?>
-                                                <?php foreach ($btList as $data): ?>
-                                                    <li style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: 100; letter-spacing:-0.1px; color: #f15a22;list-style-position: outside;width: 300px;"><a style="word-wrap:break-word;width: 300px;color: #3c3a3a; text-decoration: none; font-size: 13px; line-height:21px;" href="<?php echo $host . $link_type . $data->article_id ?>"><?php echo $data->title; ?></a></li>
-                                                <?php endforeach; ?>
-                                            </ul>
-
-                                        </td>
-                                    </tr>
-
-                                    <tr style="width: 300px;float: left;">
-                                        <td style="width:100%;padding: 8px 0px 5px 0px;">
-
-                                            <img width="300px" style="margin: 0px 0px -3px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles2.png" alt="" />
-
-                                        </td>
-                                    </tr>
                                     <tr style="width: 300px;float: left;">
                                         <!-- forum post -->
                                         <td style="padding-top: 10px;">
                                             <table cellpadding="0" cellspacing="0" width="300" style="background-color: #f99d1e;border-top-left-radius: 18px;border-bottom-right-radius: 18px;height: 176px;padding-left: 10px;">
                                                 <tr>
                                                     <td style="padding: 10px 10px 5px 10px;">
-                                                        <a href="https://https://www.thetradingaspirants.com/borst_shop/borstShopHome" title="BT-SHOP"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/bt-shop_logo_BJN.png" width="150" alt="BT-SHOP"/></a>
+                                                        <a href="http://www.borstjanaren.se/forum/forumHome" title="BT-FORUM"><img style="margin: 3px 0px 0px 1px;" src="<?php echo $host; ?>/images/new_home/forum_logo_white.png" width="253" alt="BT-FORUM"/></a>
 
                                                         <span style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-size: 22px; color: #ffffff;float: left; margin: 14px 0px -2px 0px; padding-left:2px; font-weight: 300;">Aktuella forumtrådar</span>
 
@@ -174,7 +152,34 @@
                                         </td>
                                     </tr>
 
-                                    
+                                    <tr style="width: 300px;float: left;">
+                                        <td style="width:100%;padding: 14px 0px 5px 0px;">
+
+                                            <img width="300px" style="margin: 2px 0px 4px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles1.png" alt="" />
+
+                                        </td>
+                                    </tr>
+
+                                    <tr style="width: 300px;float: left;">
+                                        <!-- latest BT article  -->
+                                        <td>
+                                            <ul style="padding-left: 15px; width: 225px;padding-bottom: 2px;color: #232222; list-style-position: inside;margin: 0;  font-family: Georgia, 'Times New Roman', Times, serif; line-height: 20px;">
+                                                <?php $link_type = '/borst/borstArticleDetails/article_id/'; ?>
+                                                <?php foreach ($btList as $data): ?>
+                                                    <li style="font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: 600; letter-spacing:-0.1px; color: #0ddbf4;list-style-position: outside;width: 300px;"><a style="word-wrap:break-word;width: 300px;color: #232222; text-decoration: none; font-size: 13px; line-height:17px;" href="<?php echo $host . $link_type . $data->article_id ?>"><?php echo $data->title; ?></a></li>
+                                                <?php endforeach; ?>
+                                            </ul>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr style="width: 300px;float: left;">
+                                        <td style="width:100%;padding: 8px 0px 5px 0px;">
+
+                                            <img width="300px" style="margin: 0px 0px -3px 0px;" src="<?php echo $host ?>/images/new_home/bt_just_nu_latest_articles2.png" alt="" />
+
+                                        </td>
+                                    </tr>
 
                                     <tr id="blog_1" style="width: 300px;float: left;">
                                         <!-- popular bloggar -->
@@ -235,7 +240,7 @@
                                             <div style="border-bottom: 2px solid #f15a22; margin-top: 12px; height: 0px;">&nbsp;</div>
 
 
-                                            <span style="color: #3c3a3a; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.8px;float: left;width: 100%; margin: 8px 0px 4px 0px;">ANNONS</span>
+                                            <span style="color: #232222; font-size: 10px; font-family: Franklin Gothic Book Regular,Arial,Helvetica,sans-serif; font-weight: normal; letter-spacing:0.5px; margin: 8px 0px 4px 0px; float: left;">ANNONS:</span>
 
                                             <span><?php echo html_entity_decode($ads[1]); ?></span>
 
@@ -299,7 +304,7 @@
                     
                     
                    
-      <td colspan="3" style="float: left; color: #fff; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 0.5px; padding-left: 2px; width: 100%; background-color: #3d567c; padding: 7px 0px;">
+      <td colspan="3" style="float: left; color: #232222; font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: -0.3px; padding-left: 2px; width: 100%; background-color: #9aadc4; padding: 7px 0px;">
                             <span style="padding-left: 7px;">© Copyright Morningbriefing Börstjänaren AB <?php echo date('Y'); ?>
 </span>
 </tr>

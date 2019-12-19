@@ -21,13 +21,13 @@
 <thead>
   <tr id="subscriber_list_column_row">
 	<th scope="col" width="5%">Nr</th>
-	<th scope="col" width="15%"><a id="sortby_name" class="float_left cursor"><span class="float_left width_125">Subscription name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th scope="col" width="15%"><a id="sortby_name" class="float_left cursor"><span class="float_left width_125">Subscription name<img src="/images/bg.gif" alt="down" /></span></a></th>
 	<th scope="col" width="10%">Order nr</th>
-	<th scope="col" width="10%"><a id="sortby_startdate" class="float_left cursor"><span class="float_left width_80">Start Date<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-	<th scope="col" width="10%"><a id="sortby_stopdate" class="float_left cursor"><span class="float_left width_80">Stop Date<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-	<th scope="col" width="10%"><a id="sortby_firstname" class="float_left cursor"><span class="float_left width_75">Förnamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-	<th scope="col" width="10%"><a id="sortby_lastname" class="float_left cursor"><span class="float_left width_80">Efternamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
-	<th scope="col" width="10%"><a id="sortby_email" class="float_left cursor"><span class="float_left width_55">E-mail<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+	<th scope="col" width="10%"><a id="sortby_startdate" class="float_left cursor"><span class="float_left width_80">Start Date<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th scope="col" width="10%"><a id="sortby_stopdate" class="float_left cursor"><span class="float_left width_80">Stop Date<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th scope="col" width="10%"><a id="sortby_firstname" class="float_left cursor"><span class="float_left width_75">Förnamn<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th scope="col" width="10%"><a id="sortby_lastname" class="float_left cursor"><span class="float_left width_80">Efternamn<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th scope="col" width="10%"><a id="sortby_email" class="float_left cursor"><span class="float_left width_55">E-mail<img src="/images/bg.gif" alt="down" /></span></a></th>
 	<th scope="col" width="10%">Status</th>
         <!--<th scope="col" width="10%">Send Coupon Code</th>-->
   </tr>
@@ -63,7 +63,7 @@ if(count($pager)>0)
 	<td><input name="subscriber_email[]" type="hidden" value="<?php echo $pur->email; ?>" id="subscriber_email"></td>
 	<td><input name="subscriber_userid[]" type="hidden" value="<?php echo $pur->user_id; ?>" id="subscriber_userid">
             <input name="article_id[]" type="hidden" value="<?php echo $data->product_id; ?>" id="article_id">
-            &nbsp;&nbsp;<?php echo $purchase->getPaymentStatus($data->purchase_id) == 0 ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == 1 ? 'Betald' : '') ?></td>
+            &nbsp;&nbsp;<?php echo $purchase->getPaymentStatus($data->purchase_id) == 0 ? 'Obetald' : ($purchase->getPaymentStatus($data->purchase_id) == 1 ? 'betald' : '') ?></td>
         <!--<td><input name="subscriber_check[]" type="checkbox" value="<?php //echo $j; ?>" id="subscriber_check"></td>-->
 </tr>
 <?php $i++; $j++; endforeach;

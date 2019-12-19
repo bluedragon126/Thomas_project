@@ -14,10 +14,10 @@
 
 		<tr><td>
 		<?php if ($data->image != ""): ?>
-		<img src="<?php echo 'https://'.$host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image); ?>" style="padding-right:10px;" />
+		<img src="<?php echo 'http://'.$host_str.'/uploads/articleIngressImages/'.str_replace('.','_mid.',$data->image); ?>" style="padding-right:10px;" />
 		<?php endif; ?>
 		<?php echo '<br>'.$imagetext; ?>
-		<br><a href="<?php echo 'https://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id; ?>">Läs artikeln!</a>
+		<br><a href="<?php echo 'http://'.$host_str.'/borst/borstArticleDetails/article_id/'.$data->article_id; ?>">Läs artikeln!</a>
 		</td></tr> 
 		
 	<?php $i++; endforeach;	?>

@@ -20,7 +20,7 @@ function insert(id, what)
 	if(id=='ingress_bild')
 	{
 		document.getElementById(id).value = what;
-		var str = '<img id="article_short_img" class="float_right" src="https://'+window.location.hostname+'/uploads/articleIngressImages/'+what.replace(".","_semimid.")+'"/>';
+		var str = '<img id="article_short_img" class="float_right" src="http://'+window.location.hostname+'/uploads/articleIngressImages/'+what.replace(".","_semimid.")+'"/>';
 		document.getElementById('preview_art_img').innerHTML = str;
 	}
 	else
@@ -35,7 +35,7 @@ function showUploadMessage(msg_div_id,message,field_id,field_val)
 	document.getElementById(field_id).value = field_val;
 	document.getElementById(msg_div_id).innerHTML = message;
 	
-	var str = '<img id="article_short_img" class="float_right" src="https://'+window.location.hostname+'/uploads/articleIngressImages/'+field_val.replace(".","_semimid.")+'"/>';
+	var str = '<img id="article_short_img" class="float_right" src="http://'+window.location.hostname+'/uploads/articleIngressImages/'+field_val.replace(".","_semimid.")+'"/>';
 	document.getElementById('preview_art_img').innerHTML = str;
 }
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
                     <?php endforeach; ?>
                   </select>
 				  <input type="hidden" name="template_name" id="template_name" value="<?php echo $template_name_list ?>">
-				  <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/deleteTemplate/template_id/'.$tmplt_id ?>">&nbsp;&nbsp;Delete Template</a></td>
+				  <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/deleteTemplate/template_id/'.$tmplt_id ?>">&nbsp;&nbsp;Delete Template</a></td>
                 <td>&nbsp;</td>
               </tr>
               <tr>
@@ -166,7 +166,7 @@ $(document).ready(function(){
 				?>
 				<a name="imgupload" class="float_left" style="cursor:pointer; font-family:Verdana,Arial,Helvetica,sans-serif; font-size:11px; margin-left:10px;" onclick="upload_img_for_bt('ingress');">Upload Image</a>
 				<div id="bt_art_ingress_upload_msg" class="float_left" style="margin-left:10px; color:#FF0000;"></div>
-				<div class="float_right" id="preview_art_img"><?php if($form['image']->getValue()): ?><img id="article_short_img" class="float_right" src="<?php echo 'https://'.$host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$form['image']->getValue()); ?>"/><?php endif; ?></div></td>
+				<div class="float_right" id="preview_art_img"><?php if($form['image']->getValue()): ?><img id="article_short_img" class="float_right" src="<?php echo 'http://'.$host_str.'/uploads/articleIngressImages/'.str_replace('.','_semimid.',$form['image']->getValue()); ?>"/><?php endif; ?></div></td>
                 <td>&nbsp;</td>
               </tr>
 			  <tr>
@@ -230,7 +230,7 @@ $(document).ready(function(){
 			  <?php if($article_id > 0): ?>
 			  <tr>
                 <td>&nbsp;</td>
-                <td><b><a href="<?php echo 'https://'.$host_str.'/borst/borstArticleDetails/article_id/'.$article_id ?>"><?php echo __('GÅ TILL ARTIKEL (spara först!)')?></a></b></td>
+                <td><b><a href="<?php echo 'http://'.$host_str.'/borst/borstArticleDetails/article_id/'.$article_id ?>"><?php echo __('GÅ TILL ARTIKEL (spara först!)')?></a></b></td>
                 <td>&nbsp;</td>
               </tr>
 			  <?php endif; ?>
