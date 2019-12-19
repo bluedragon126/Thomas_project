@@ -2,7 +2,7 @@
 /**
  *
  *  AJAX IFRAME METHOD (AIM)
- *  https://www.webtoolkit.info/
+ *  http://www.webtoolkit.info/
  *
  **/
  
@@ -71,7 +71,7 @@ AIM = {
    {
    		document.getElementById('product_image').value = arr[1];
 		
-		var str = '<img id="product_short_img" class="float_right" src="https://'+window.location.hostname+'/uploads/btshopThumbnail/'+arr[1]+'"/>';
+		var str = '<img id="product_short_img" class="float_right" src="http://'+window.location.hostname+'/uploads/btshopThumbnail/'+arr[1]+'"/>';
 	    document.getElementById('preview_product_img').innerHTML = str;
    }
    //window.location.reload();
@@ -163,7 +163,7 @@ AIM = {
                 <td><?php echo $form['btshop_product_image']->render(array('id'=>'product_image','class'=>'float_left width_165'));	?><span id="upload_link"><a id="productImage" name="productImage" class="font_family_arial font_11 cursor mleft_10">Upload Image</a></span>
 				<span id="upload_msg redcolor"></span>
 				<span class="float_right" id="preview_product_img">
-				<?php if($form['btshop_product_image']->getValue()): ?><img id="product_short_img" class="float_right" src="<?php echo 'https://'.$host_str.'/uploads/btshopThumbnail/'.$form['btshop_product_image']->getValue(); ?>"/><?php endif; ?>
+				<?php if($form['btshop_product_image']->getValue()): ?><img id="product_short_img" class="float_right" src="<?php echo 'http://'.$host_str.'/uploads/btshopThumbnail/'.$form['btshop_product_image']->getValue(); ?>"/><?php endif; ?>
 				</span></td>
               </tr>
 			  <tr>
@@ -200,10 +200,10 @@ AIM = {
 						<span class="float_left" style="margin:0 5px 0 5px;">Price Text:</span>
 						<input type="text" name="shop_product_text[]" class="float_left" size="25" />
 
-						<span class="float_left tem">&nbsp;<img src="/images/minusicon.png" alt="arrow" /></span>
+						<span class="float_left tem">&nbsp;<img src="/images/minusicon.jpg" alt="arrow" /></span>
 					</div>
 				</div>
-				<img src="/images/addplusicon.png" class="temp_class" alt="arrow" style="float:left; position:relative;" />
+				<img src="/images/addplusicon.jpg" class="temp_class" alt="arrow" style="float:left; position:relative;" />
 				<div id="price_detail_error" class="float_left redcolor pleft_2"></div>
 				</td>
               </tr>
@@ -232,7 +232,7 @@ AIM = {
                   <td>&nbsp;</td>
                 <td>
 
-                    <b><a  href="<?php echo 'https://'.$_SERVER['HTTP_HOST'].'/borst_shop/shopProductDetail/product_id/'.$shopId?>">GÅ TILL ARTIKEL (spara först!)</a></b>
+                    <b><a  href="<?php echo 'http://'.$_SERVER['HTTP_HOST'].'/borst_shop/shopProductDetail/product_id/'.$shopId?>">GÅ TILL ARTIKEL (spara först!)</a></b>
                 </td>
               </tr>
               <?php endif;?>
@@ -273,7 +273,7 @@ AIM = {
     $(document).ready(function(){
        $("#bt_shop_article_btshop_type_id").change(function(){
             if(this.value==7){
-                url = 'https://'+window.location.hostname+'/backend.php/borst/getChartTypes';
+                url = 'http://'+window.location.hostname+'/backend.php/borst/getChartTypes';
                 $.post(url,'',function(data){
                   $("#chart_types").html(data);  
 				  $('#chart_type_id option[value="1"]').remove();

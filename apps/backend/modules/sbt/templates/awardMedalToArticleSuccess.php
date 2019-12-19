@@ -56,7 +56,7 @@
 				<?php $i=1; foreach ($analysis_data as $article): ?>
 				<tr id="medal_analysis_record_row" class="classnot">
 					<td style="text-align:center;font-weight:normal;"><?php echo $i++; ?></td>
-					<td style="font-weight:normal;"><a href="<?php echo 'https://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$article->id; ?>" class="cursor"><?php echo $article->analysis_title ?></a></td>
+					<td style="font-weight:normal;"><a href="<?php echo 'http://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$article->id; ?>" class="cursor"><?php echo $article->analysis_title ?></a></td>
 					<td style="font-weight:normal;"><?php echo $article->created_at ?></td>
 				</tr>
 				<?php endforeach; ?>

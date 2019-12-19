@@ -1,7 +1,7 @@
 <?php //use_helper('Pagination') ?>
 <div class="maincontentpage">
 <div class="forumlistingleftdiv">
-  <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editObject/mode/create_new_object'?>">Lägg till objekt</a></b></td></div>
+  <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editObject/mode/create_new_object'?>">Lägg till objekt</a></b></td></div>
   <div class="forumlistingleftdivinner">
   <form id="search_object_form" name="search_object_form" method="POST" action="<?php //echo url_for('borst/listObject') ?>">
   <table width="60%" border="0" cellspacing="0" cellpadding="0" id="back_object_list">

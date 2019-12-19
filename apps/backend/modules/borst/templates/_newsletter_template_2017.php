@@ -10,7 +10,7 @@
     </script>
 <?php $month = array('01' => 'JAN', '02' => 'FEB', '03' => 'MAR', '04' => 'APR', '05' => 'MAJ', '06' => 'JUN', '07' => 'JUL', '08' => 'AUG', '09' => 'SEP', '10' => 'OKT', '11' => 'NOV', '12' => 'DEC'); ?>
 <?php $article_name = "article"; ?>
-<?php $host = 'https://' . sfConfig::get('app_host_name'); ?>
+<?php $host = 'http://' . sfConfig::get('app_host_name'); ?>
     <table width="745"  style="float:left;" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
         <tbody>
             <tr style="width:745px;float:left">
@@ -151,7 +151,7 @@
                                               <td colspan="5" style="vertical-align: middle;">&nbsp;</td>
                                             </tr>
                                             <tr style="background: #15a5db;width:715px;float:left; height:21px;  vertical-align: middle; margin-top:2px;"  >
-                                                <td style="vertical-align: middle;height: 22px;"><a href="https://www.borstjanaren.se/" style="letter-spacing: 0.6px;padding-left: 10px; float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px; text-decoration: none; width: 120px;">&nbsp;LÄS PÅ WEBBEN    </a>   <a href="https://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;GRATIS KONTO    </a> <a href="https://www.borstjanaren.se/borst/borstSubscriber" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 82px;">&nbsp;PORTFÖLJ    </a> <a href="https://www.borstjanaren.se/borst/borstNewsletter" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;AVREGISTRERA    </a> <a href="https://www.borstjanaren.se/borst/tipAFriendNewBt" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;TIPSA EN VÄN    </a></td>
+                                                <td style="vertical-align: middle;height: 22px;"><a href="http://www.borstjanaren.se/" style="letter-spacing: 0.6px;padding-left: 10px; float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px; text-decoration: none; width: 120px;">&nbsp;LÄS PÅ WEBBEN    </a>   <a href="http://www.borstjanaren.se/sbt_user/sbtNewRegistration" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;GRATIS KONTO    </a> <a href="http://www.borstjanaren.se/borst/borstSubscriber" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 82px;">&nbsp;PORTFÖLJ    </a> <a href="http://www.borstjanaren.se/borst/borstNewsletter" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;AVREGISTRERA    </a> <a href="http://www.borstjanaren.se/borst/tipAFriendNewBt" style="letter-spacing: 0.6px;float:left;font-family: Arial,Helvetica,sans-serif;position: relative;font-size: 11px; color: #FFFFFF;font-weight:normal; letter-spacing: 1px;  text-decoration: none; width: 112px;">&nbsp;TIPSA EN VÄN    </a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -217,8 +217,8 @@
                                                                 <span class="next_nobj"></span>
                                                                 <input type="hidden" value="<?php echo "Click to edit Ad -1" ?>" class="hidden_vals"/>
                                                             </span>
-                                                            <p style="color: #68778b; font-size: 13px;font-family: Arial,Helvetica,sans-serif;font-weight: 300;margin: 0px; letter-spacing: 0px; padding: 10px 0px 3px 0px; font-weight:bold; letter-spacing: 1px;">Annons</p>
-                                                            <span><a href="https://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
+                                                            <p style="color: #68778b; font-size: 13px;font-family: Arial,Helvetica,sans-serif;font-weight: 300;margin: 0px; letter-spacing: 0px; padding: 10px 0px 3px 0px; font-weight:bold; letter-spacing: 1px;">ANNONS</p>
+                                                            <span><a href="http://dagensindustri.se/kampanj/borstjan/" class="simplelink" style="text-align: center;">
 <span class="float_left pbottom_5 ieadj" style="  width: 100%;">
 <?php echo html_entity_decode($ads[0]); ?></span>
                                                         </td>
@@ -230,7 +230,7 @@
                                                                 <table cellpadding="0" cellspacing="0" width="240">
                                                                     <tr>
                                                                         <td>
-                                                                        <a href="https://www.borstjanaren.se/forum/forumHome" title="BT-FORUM"><img style="margin: 11px 0px 0px 0px;" src="<?php echo $host; ?>/newsletter/BT_FORUM_news.png" alt="BT-FORUM"/></a>
+                                                                        <a href="http://www.borstjanaren.se/forum/forumHome" title="BT-FORUM"><img style="margin: 11px 0px 0px 0px;" src="<?php echo $host; ?>/newsletter/BT_FORUM_news.png" alt="BT-FORUM"/></a>
 <p style="padding: 3px 0px 6px 0px;font-family: Arial,Helvetica,sans-serif;font-size: 17px; color: #EE8501;font-weight:normal; margin: 7px 0px -4px 0px;">Aktuella forumtrådar</p>
                                                                         </td>
                                                                     </tr>
@@ -321,14 +321,14 @@
                                                                             <tr style="width: 200px;float:left;height: 52px;padding-bottom: 4px;">
                                                                                 <td valign="top" style="float: left;width: 52px;height: 52px;">
                                                                     <?php if ($popular_blog->author_id != '' && $profile_photo->profile_photo_name != ''): ?>
-                                                                        <a style="text-decoration: none;color: #272a31;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' ?><?php echo $popular_blog->author_id; ?>"><img src="<?php echo $host; ?>/uploads/userThumbnail/<?php echo str_replace('.', '_semilarge.', $profile_photo->profile_photo_name); ?>" alt="Thumb Image" /></a>
+                                                                        <a style="text-decoration: none;color: #272a31;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' ?><?php echo $popular_blog->author_id; ?>"><img src="<?php echo $host; ?>/uploads/userThumbnail/<?php echo str_replace('.', '_semilarge.', $profile_photo->profile_photo_name); ?>" alt="Thumb Image" /></a>
                                                                     <?php else: ?>
-                                                                            <a style="text-decoration: none;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' ?><?php echo $popular_blog->author_id; ?>"><img src="<?php echo $host; ?>/images/small_userphoto.jpg" alt="photo"  /></a>
+                                                                            <a style="text-decoration: none;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' ?><?php echo $popular_blog->author_id; ?>"><img src="<?php echo $host; ?>/images/small_userphoto.jpg" alt="photo"  /></a>
                                                                     <?php endif; ?>
                                                                         </td>
                                                                         <td valign="top" style="width: 80px; padding-left: 5px;"><?php $profile = new SfGuardUserProfile(); ?>
                                                                             <p style="margin: 0px">
-                                                                                <a style="text-decoration: none;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' . $popular_blog->author_id; ?>">
+                                                                                <a style="text-decoration: none;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtMinProfile/id/' . $popular_blog->author_id; ?>">
                                                                                     <span style="font-size: 11px; line-height: 11px; color: #5589ad;font-weight: bold;font-family: Arial,Helvetica,sans-serif;"><?php echo $profile->getFullUserName($popular_blog->author_id) ?></span>
                                                                                 </a>
                                                                             </p>
@@ -348,7 +348,7 @@
                                                         <tr style="background: #fadbd9;">
                                                             <td style="width: 6px;">&nbsp;</td>
                                                             <td style='padding: 0 2px;width: 186px; float: left;'>
-                                                                <a style="text-decoration: none;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>">
+                                                                <a style="text-decoration: none;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>">
                                                                     <span style="padding:5px 0px 5px 0px;color: #D04373;float: left;font-family: Arial,Helvetica,sans-serif;font-size: 12px;font-weight: bold; height: 10px;overflow-y: hidden;position: relative;text-align: left;text-decoration: none;width: 170px;word-wrap: break-word;"><?php echo $popular_blog->ublog_title; ?></span>
                                                                 </a>
                                                             </td>
@@ -358,7 +358,7 @@
                                                         <tr style="background: #fadbd9;">
                                                             <td style="width: 6px;">&nbsp;</td>
                                                             <td style='padding: 0 2px;width: 186px; float: left;">
-                                                                <a style="max-height: 150px;overflow: hidden;font-family: Arial,Helvetica,sans-serif;font-size: 11px; text-decoration: none;color: #272a31;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>">
+                                                                <a style="max-height: 150px;overflow: hidden;font-family: Arial,Helvetica,sans-serif;font-size: 11px; text-decoration: none;color: #272a31;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>">
                                                             <?php
                                                                             $search = array('<p', '</p>');
                                                                             $replace = array('<span', '</span>');
@@ -417,7 +417,7 @@
                                                                 <tr style="background: #fadbd9;">
                                                                     <td style="width: 10px;">&nbsp;</td>
                                                                     <td style='padding: 0 2px;width: 186px; float: left;'>
-                                                                        <a style="text-decoration: none;" href="<?php echo "https://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>" >
+                                                                        <a style="text-decoration: none;" href="<?php echo "http://" . $_SERVER['HTTP_HOST'] . '/sbt/sbtBlogDetails/blog_id/' . $popular_blog->id; ?>" >
                                                                             <span style="padding-top: 5px;color: #D04373;float: left;font-family: Arial,Helvetica,sans-serif;font-size: 12px;font-weight: bold;height: 29px;overflow-y: hidden;position: relative;text-align: left;text-decoration: none;width: 170px;word-wrap: break-word;"><?php echo 'Läs mer >'; ?></span>
                                                                         </a>
                                                                     </td>
@@ -465,7 +465,7 @@
                                                                         <span style="visibility:hidden" class="next_nobj" ></span>
                                                                         <input type="hidden" value="<?php echo "Click to edit Ad -2" ?>" class="hidden_vals"/>
                                                                     </span>
-                                                                    <p style="color: #68778b; font-size: 13px;font-family: Arial,Helvetica,sans-serif;font-weight: 300;margin: 0px; letter-spacing: 0px; padding: 5px 0px 3px 0px; font-weight:bold; letter-spacing: 1px;">Annons</p>
+                                                                    <p style="color: #68778b; font-size: 13px;font-family: Arial,Helvetica,sans-serif;font-weight: 300;margin: 0px; letter-spacing: 0px; padding: 5px 0px 3px 0px; font-weight:bold; letter-spacing: 1px;">ANNONS</p>
                                                                     <span><?php echo html_entity_decode($ads[1]); ?></span><br/>
                                                                     
                                                                     <img style="margin: 15px 0px 10px 0px;" src="<?php echo $host; ?>/newsletter/newsletter_streck1.png" alt="streck"/>

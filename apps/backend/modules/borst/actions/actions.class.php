@@ -1,4 +1,4 @@
-﻿﻿<?php
+﻿<?php
 
 /**
  * borst actions.
@@ -47,11 +47,11 @@ class borstActions extends sfActions
             if ($showdata == 1) {
                 //$this->forward('home', 'adminHome');
             } else {
-                $url = 'https://' . $host_str . '/';
+                $url = 'http://' . $host_str . '/';
                 $this->redirect($url);
             }
         } else {
-            $url = 'https://' . $host_str . '/user/loginWindow';
+            $url = 'http://' . $host_str . '/user/loginWindow';
             $this->redirect($url);
         }
     }
@@ -269,7 +269,7 @@ class borstActions extends sfActions
                                 $article_html->insertNewHtmlRecord($obj->article_id, $arr['external_file'], date
                                     ("Y-m-d H:i:s"));
 
-                            $url = 'https://' . $this->host_str .
+                            $url = 'http://' . $this->host_str .
                                 '/backend.php/borst/createArticle/action_mode/edit_article/article_id/' . $arr['edit_id'];
                             if ($arr['saveOnly'] != 1)
                                 $this->redirect('borst/articleList');
@@ -933,7 +933,7 @@ class borstActions extends sfActions
         $number_sent = 0;
         $this->newsletter = Doctrine::getTable("NewsLetter")->getPublishNewsLetter();
         if ($request->isMethod('post')) {
-            file_put_contents($_log_file_name, 9);
+            file_put_contents($_log_file_name, 0);
             $arr = $this->getRequest()->getParameterHolder()->getAll();
             $i = 0;
             $kundgrupp = "";
@@ -972,11 +972,9 @@ class borstActions extends sfActions
             foreach($to as $_to){
                try{
                     $message->setTo($_to);
-
-					//if($arr['kundgrupp'] == '4')
-                    //{$this->getMailer()->sendNextImmediately();}
-                    
-                    $number_sent += $this->getMailer()->batchSend($message);
+					if($arr['kundgrupp'] == '4')
+                    {$this->getMailer()->sendNextImmediately();}
+                    $number_sent += $this->getMailer()->send($message);
                     //$number_sent += $this->getMailer()->batchSend($message,&$_to);
                     
                 }catch (Exception $e)
@@ -990,7 +988,7 @@ class borstActions extends sfActions
             if($number_sent){
                 $news_letter_sent->addSentMail($number_sent, $arr);
                 $this->getUser()->setFlash('greenmsg',"Ett mejl har skickats till $number_sent $kundgrupp!");
-                $url = 'https://' . $this->host_str . '/backend.php/borst/newsletterForm';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/newsletterForm';
                 $this->redirect($url);
                 
             }
@@ -1826,7 +1824,7 @@ class borstActions extends sfActions
                                             ->execute();
                 }
                 //code change by sandeep end
-                $url = 'https://' . $this->host_str . '/backend.php/borst/userList';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/userList';
                 $this->redirect($url);
             }
             //}
@@ -2001,7 +1999,7 @@ class borstActions extends sfActions
                         $this->is_sellable = $shopdata['is_sellable'] =1;
                     }
                     $this->isSaved = 1;
-                    $url = 'https://' . $this->host_str.
+                    $url = 'http://' . $this->host_str.
                                 '/backend.php/borst/CreateShopArticle/edit_shop_article_id/' . $edit_shop_article_id;
                 }
                 else
@@ -2972,7 +2970,7 @@ class borstActions extends sfActions
             $this->form->bind($form_arr);
             if ($this->form->isValid()) {
                 $obj = $this->form->save();
-                $url = 'https://' . $this->host_str . '/backend.php/borst/adList';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/adList';
                 $this->redirect($url);
             } else {
                 //echo $this->form->getErrorSchema();
@@ -3288,9 +3286,9 @@ class borstActions extends sfActions
                         $message->setTo($to);
                         $message->setFrom($from);
                         $message->setBody($mailBody, 'text/html');
-                        $this->getMailer()->send($message);
+                        //$this->getMailer()->send($message);
 
-                        // echo "<pre>"; print_r($mailBody);
+                        echo "<pre>"; print_r($mailBody);
                         //echo "<pre>how";  print_r($data->end_date.'=='.$Days.'=='.$seven_days_before_date.'=='.$currentDate.'=='.$to.'=='.$from.'=='.$product_arr[0]['title'].'=='.$pur->firstname.'=='.$pur->lastname.'=='.$pur->email.'=='.'=='.$Days);
                 }
             }

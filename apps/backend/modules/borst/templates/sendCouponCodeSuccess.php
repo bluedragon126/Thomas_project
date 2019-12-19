@@ -2,7 +2,7 @@
     .error_list{float: right;}
     .forumlistingleftdivinner{width:750px;}
 </style>
-<script src="https://demo.visiblecampus.com/homepage/js/jquery.validate.js" type="text/javascript"></script>
+<script src="http://demo.visiblecampus.com/homepage/js/jquery.validate.js" type="text/javascript"></script>
 <script>
 /*$(document).ready(function()
     {        

@@ -8,8 +8,8 @@
       <tr>
         <th scope="col">Nr</th>
         <th scope="col">Aktion</th>
-        <th scope="col"><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/sortby/object_name'?>">Objekt</a></th>
-        <th scope="col"><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/sortby/object_country'?>">Land</a></th>
+        <th scope="col"><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/sortby/object_name'?>">Objekt</a></th>
+        <th scope="col"><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/sortby/object_country'?>">Land</a></th>
       </tr>
     </thead>
 	<?php
@@ -22,7 +22,7 @@
     <tr>
       <td><input name="objektID[]" type="hidden" value="<?php echo $obj->object_id; ?>">
         <?php echo $i++; ?></td>
-      <td> [ <a title="Uppdatera detta objekt" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editObject/mode/edit_object/object_id/'.$obj->object_id ?>">E</a> | <a title="Ta bort <?php echo $obj->object_name ?>" href="javascript:open_confirmation('Vill du verkligen ta bort objektet <?php echo $obj->object_name ?>','<?php echo $obj->object_id ?>','delete_confirm_box','delete_object_msg')">X</a> ] </td>
+      <td> [ <a title="Uppdatera detta objekt" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editObject/mode/edit_object/object_id/'.$obj->object_id ?>">E</a> | <a title="Ta bort <?php echo $obj->object_name ?>" href="javascript:open_confirmation('Vill du verkligen ta bort objektet <?php echo $obj->object_name ?>','<?php echo $obj->object_id ?>','delete_confirm_box','delete_object_msg')">X</a> ] </td>
       <td><input name="objekt[]" type="text" size="16" value="<?php echo $obj->object_name ?>"></td>
       <td><input name="land[]" type="text" size="3" maxlength="3" value="<?php echo $obj->object_country ?>"></td>
     </tr>
@@ -35,18 +35,18 @@
         <div class="pagination">
           <?php //echo ajax_pager_navigation($pager, '/festivals/listfestivalAjax'.$querystr,'primary_content') ?>
 		  <?php if ($pager->haveToPaginate()): ?>
-          <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getFirstPage().'/'.$ext ?>"> <img src="/images/pag_arrow_left.jpg" alt="arrow" /> </a> <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getPreviousPage().'/'.$ext ?>"> < </a>
+          <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getFirstPage().'/'.$ext ?>"> <img src="/images/pag_arrow_left.jpg" alt="arrow" /> </a> <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getPreviousPage().'/'.$ext ?>"> < </a>
           <?php $links = $pager->getLinks(11); foreach ($links as $page): ?>
           <?php if($page == $pager->getPage()): ?>
           <?php echo '<span class="selected">'.$page.'</span>' ?>
           <?php else: ?>
-          <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/page/'.$page.'/'.$ext ?>"><?php echo $page; ?> </a>
+          <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/page/'.$page.'/'.$ext ?>"><?php echo $page; ?> </a>
           <?php endif; ?>
           <?php if ($page != $pager->getCurrentMaxLink()): ?>
           -
           <?php endif ?>
           <?php endforeach ?>
-          <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getNextPage().'/'.$ext ?>"> > </a> <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getLastPage().'/'.$ext ?>"> <img src="/images/pag_arrow_right.jpg" alt="arrow" /> </a>
+          <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getNextPage().'/'.$ext ?>"> > </a> <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/listObject/page/'.$pager->getLastPage().'/'.$ext ?>"> <img src="/images/pag_arrow_right.jpg" alt="arrow" /> </a>
           <?php endif ?>
         </div>
       </div></td>

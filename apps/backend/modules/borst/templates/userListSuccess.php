@@ -1,8 +1,8 @@
 <div class="maincontentpage">
   <div class="forumlistingleftdiv">
- <?php /*?> <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/createUser/mode/create_new_user'?>">Lägg till användare</a></b></td></div><?php */?>
+ <?php /*?> <div class="float_left widthall"><b><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/createUser/mode/create_new_user'?>">Lägg till användare</a></b></td></div><?php */?>
   
-  <div class="float_left width_915"><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/sbtInactiveUserList' ?>" class="cursor blackcolor">Inactive UserList</a></div>
+  <div class="float_left width_915"><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/sbtInactiveUserList' ?>" class="cursor blackcolor">Inactive UserList</a></div>
   
   <div class="float_left" id="search_user_error" style="width:915px; color:#FF0000">&nbsp;</div>
   

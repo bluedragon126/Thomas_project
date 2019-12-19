@@ -2,7 +2,7 @@
 /**
  *
  *  AJAX IFRAME METHOD (AIM)
- *  https://www.webtoolkit.info/
+ *  http://www.webtoolkit.info/
  *
  **/
  
@@ -80,10 +80,10 @@ AIM = {
    <div class="forumlistingleftdivinner" style="width:915px;">
    
 	<div id="subscription_other_links" class="float_left widthall" style="width:900px; margin-bottom:20px;">
-		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
-		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
-        <a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/uploadChart' ?>">Add chart</a>&nbsp;&nbsp;
-        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;
+		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
+		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
+        <a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/uploadChart' ?>">Add chart</a>&nbsp;&nbsp;
+        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;
 	</div>
     
     <div class="shoph3 widthall">Upload Chart</div>

@@ -27,7 +27,7 @@
                        
 
                         <?php $count = 1; ?>
-                        
+
 
                         <?php $count = 1; ?>
                         <?php foreach ($ads as $obj): ?>

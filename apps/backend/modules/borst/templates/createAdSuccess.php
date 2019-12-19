@@ -54,7 +54,7 @@
 			    <td colspan="2">&nbsp;</td>
               </tr>
 			  <tr>
-			    <td style="padding-left:5px;"><a href="<?php echo 'https://'.$host_str.'/backend.php/borst/adList' ?>">List</a></td>
+			    <td style="padding-left:5px;"><a href="<?php echo 'http://'.$host_str.'/backend.php/borst/adList' ?>">List</a></td>
                 <td style="text-align:right;"><input type="submit" class="button" name="submitme" value="save">
                   <input type="reset" class="button"></td>
               </tr>
