@@ -1,7 +1,7 @@
 <script language="javascript" type="text/javascript" src="/ccount/display.php"></script>
 <div class="maincontentpage">
   <div class="forumlistingleftdiv">
-  <div class="float_left widthall" style="padding:10px 0 10px 0;"><b><a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/createAd'?>">Create Advertisement</a>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;<a class="blackcolor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/adList'?>">Ad List</a></b></b></div>
+  <div class="float_left widthall" style="padding:10px 0 10px 0;"><b><a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/createAd'?>">Create Advertisement</a>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;<a class="blackcolor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/adList'?>">Ad List</a></b></b></div>
    <div class="forumlistingleftdivinner" style="width:915px;">
 
 	<div class="float_left"> 

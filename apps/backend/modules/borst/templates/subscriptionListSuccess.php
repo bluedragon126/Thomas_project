@@ -11,11 +11,11 @@
    <div class="forumlistingleftdivinner" style="width:915px;">
    
 	<div id="subscription_other_links" class="widthall" style="width:900px; margin-bottom:20px;">
-		<a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/subscriptionList' ?>">Subscription List</a>&nbsp;&nbsp;
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/sendSubscription' ?>">Send Subscription</a>&nbsp;&nbsp;
-                <?php /*<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/commaSeperatedList' ?>">Lista komma-separerad</a>&nbsp;&nbsp; */ ?>
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/filteredSubscriberList' ?>">Lista semicolon-separerad</a>&nbsp;&nbsp;
-                <a href="<?php echo 'http://'.$host_str.'/backend.php/reminderSubscription' ?>">Subscription Reminder List</a>&nbsp;&nbsp;
+		<a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/subscriptionList' ?>">Subscription List</a>&nbsp;&nbsp;
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/sendSubscription' ?>">Send Subscription</a>&nbsp;&nbsp;
+                <?php /*<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/commaSeperatedList' ?>">Lista komma-separerad</a>&nbsp;&nbsp; */ ?>
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/filteredSubscriberList' ?>">Lista semicolon-separerad</a>&nbsp;&nbsp;
+                <a href="<?php echo 'https://'.$host_str.'/backend.php/reminderSubscription' ?>">Subscription Reminder List</a>&nbsp;&nbsp;
                 
 	</div>
     <div class="subscriptionlistingleftdivinner">

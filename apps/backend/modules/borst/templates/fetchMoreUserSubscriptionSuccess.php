@@ -5,16 +5,16 @@
 		<th scope="col" width="35%" align="left">Subscription Name</th>
 		<th scope="col" width="15%" align="left">Start Date</th>
 		<th scope="col" width="15%" align="left">End Date</th>
-		<th scope="col" width="30%" align="left">Atgärd</th>
+		<th scope="col" width="30%" align="left">Åtgärd</th>
 	</tr>
 <?php $i = 1; foreach($pager->getResults() as $data): ?>	
 <?php $product_arr = $product->getProductName($data->product_id, $data->btchart_type_id); ?>
 	<tr class="classnot">
 		<td align="left"><?php echo $i; ?></td>
-		<td align="left"><a class="main_link_color cursor" href="<?php echo 'http://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>"><?php echo $product_arr[0]['title']; ?></a></td>
+		<td align="left"><a class="main_link_color cursor" href="<?php echo 'https://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>"><?php echo $product_arr[0]['title']; ?></a></td>
 		<td align="left"><?php echo $data->start_date; ?></td>	
 		<td align="left"><?php echo $data->end_date; ?></td>	
-		<td align="left"><?php if(date("Y-m-d") >= $data->end_date):?><a href="<?php echo 'http://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>" class="main_link_color cursor">Förnya abonnemang</a><?php else: ?>&nbsp;<?php endif; ?></td>	
+		<td align="left"><?php if(date("Y-m-d") >= $data->end_date):?><a href="<?php echo 'https://'.$host_str.'/borst_shop/shopProductDetail/product_id/'.$data->product_id;?>" class="main_link_color cursor">Förnya abonnemang</a><?php else: ?>&nbsp;<?php endif; ?></td>	
 	</tr>
 <?php $i++;  endforeach;?>
 	<tr><td colspan="5"><input type="hidden" name="acc_id" id="acc_id" value="<?php echo $acc_id ?>" /> </td></tr>	

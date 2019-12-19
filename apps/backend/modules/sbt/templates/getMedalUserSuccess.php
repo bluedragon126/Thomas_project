@@ -18,16 +18,16 @@
 			<thead>
 				<tr id="medal_user_list_column_row">
 				<th scope="col" width="5%">Nr</th>
-				<th scope="col" width="55%"><a id="sortby_author" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:85px;">Användare<img src="/images/bg.gif" alt="down" /></span></a></th>
-				<th scope="col" width="20%"><a id="sortby_vote" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:105px;">Vote Received<img src="/images/bg.gif" alt="down" /></span></a></th>
-				<th scope="col" width="20%"><a id="sortby_regdate" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:70px;">Regdate<img src="/images/bg.gif" alt="down" /></span></a></th>
+				<th scope="col" width="55%"><a id="sortby_author" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:85px;">Användare<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+				<th scope="col" width="20%"><a id="sortby_vote" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:105px;">Vote Received<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+				<th scope="col" width="20%"><a id="sortby_regdate" style="cursor:pointer;" class="float_left"><span class="float_left" style="width:70px;">Regdate<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
 				</tr>
 			</thead>
 			<?php if($pager->getNbResults()):?>
 			<?php $i=1; foreach ($pager->getResults() as $user): ?>
 			<tr id="medal_user_record_row" class="classnot">
 				<td><?php echo $i++; ?></td>
-				<td><a class="cursor" href="<?php echo 'http://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$user->user_id; ?>" class="cursor"><?php echo $user->firstname.' '.$user->lastname ?></a></td>
+				<td><a class="cursor" href="<?php echo 'https://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$user->user_id; ?>" class="cursor"><?php echo $user->firstname.' '.$user->lastname ?></a></td>
 				<td><?php echo $user->getTotalVotesReceived($user->user_id); ?></td>
 				<td><?php echo $user->regdate ?></td>
 			</tr>

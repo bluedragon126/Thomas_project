@@ -151,7 +151,7 @@
 							<tr>
 								<td class="column_heading" style="width:110px; height:22px;">&nbsp;</td>
 								<td class="bold_black" style="width:290px;">Varav moms 6%:</td>
-								<td class="pleft_10" align="right"><?php echo number_format($vat, 2); ?></td>
+								<td class="pleft_10" align="right"><?php echo number_format($vat, 2 , ",", " "); ?></td>
 							</tr>
 							<tr>
 								<td class="column_heading" style="width:110px; height:22px;">&nbsp;</td>

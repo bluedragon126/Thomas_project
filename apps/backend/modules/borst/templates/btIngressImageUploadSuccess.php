@@ -19,7 +19,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 	  <br>
 	  <input type="submit" value="<?php echo 'OK - Upload'; ?>">
 	</form>
-	<p style="font-size:11px;">[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/show_uploaded_images"><?php echo 'Uploaded images'; ?></a> ]</p>
+	<p style="font-size:11px;">[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/show_uploaded_images"><?php echo 'Uploaded images'; ?></a> ]</p>
 <?php endif; ?>
 
 
@@ -48,18 +48,18 @@ a:active{ color: #ff0000; text-decoration: none; }
    ?>
    <p>
    	<?php if($p>1):?> 
-   		[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/show_uploaded_images/p/<?php echo $p-1; ?>">&laquo;</a> ] 			
+   		[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/show_uploaded_images/p/<?php echo $p-1; ?>">&laquo;</a> ] 			
 	<?php endif; ?>
    	<?php if($p*$images_per_page < $images_count):?> 
-		[ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btIngressImageUpload' ?>/mode/show_uploaded_images/p/<?php echo $p+1; ?>">&raquo;</a> ] 
+		[ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btIngressImageUpload' ?>/mode/show_uploaded_images/p/<?php echo $p+1; ?>">&raquo;</a> ] 
 	<?php endif; ?>
-   [ <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/upload"><?php echo 'Uploaded images'; ?></a> ]
+   [ <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/mode/upload"><?php echo 'Uploaded images'; ?></a> ]
    </p>
    <hr />
    <p>
 	<?php if($images_count > 0): ?>
 		<?php for($i=$show_images_from;$i<$show_images_to;$i++)	{	?>
-			<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/uploaded_image_selected/<?php echo $images[$i]; ?>"><img style="margin: 0px 15px 15px 0px;" src="<?php echo "http://".$host_str."/uploads/articleIngressImages/".$images[$i]; ?>" alt="<?php echo $images[$i]; ?>" height="100" border="0"></a>
+			<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btIngressImageUpload'; ?>/uploaded_image_selected/<?php echo $images[$i]; ?>"><img style="margin: 0px 15px 15px 0px;" src="<?php echo "https://".$host_str."/uploads/articleIngressImages/".$images[$i]; ?>" alt="<?php echo $images[$i]; ?>" height="100" border="0"></a>
 		<?php } ?>
     <?php else: ?>
      	<i><?php echo 'No images available.'; ?></i>
@@ -77,7 +77,7 @@ a:active{ color: #ff0000; text-decoration: none; }
 			<p><?php echo 'Image successful uploaded.'; ?></p>
 		<?php endif; ?>  
 	<?php endif; ?>  
-	<div><img src="<?php echo 'http://'.$host_str.'/uploads/articleIngressImages/'.$filename ?>" alt="" height="100" border="1"></div>
+	<div><img src="<?php echo 'https://'.$host_str.'/uploads/articleIngressImages/'.$filename ?>" alt="" height="100" border="1"></div>
   	<p><?php echo $lang['paste_image']; ?></p>
   	<p><button title="<?php echo 'Insert image normal'; ?>" onClick="opener.insert('ingress_bild','<?php echo str_replace('_large.','.',$filename); ?>'); window.close()">Done</button>
   	</p>

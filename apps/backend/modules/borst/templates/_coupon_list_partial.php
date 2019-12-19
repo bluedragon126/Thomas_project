@@ -16,9 +16,9 @@
 <thead>
   <tr id="coupon_list_column_row">
 	<th scope="col" width="5%"><input name="coupon_ids_check_uncheck" type="checkbox" value="" id="coupon_ids_check_uncheck">Nr</th>
-	<th scope="col" width="15%"><a id="sortby_code" class="float_left cursor"><span class="float_left width_125">Coupon Code<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="15%"><a id="sortby_status" class="float_left cursor"><span class="float_left width_125">Status<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="15%"><a id="sortby_date" class="float_left cursor"><span class="float_left width_125">Date<img src="/images/bg.gif" alt="down" /></span></a></th>
+	<th scope="col" width="15%"><a id="sortby_code" class="float_left cursor"><span class="float_left width_125">Coupon Code<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="15%"><a id="sortby_status" class="float_left cursor"><span class="float_left width_125">Status<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="15%"><a id="sortby_date" class="float_left cursor"><span class="float_left width_125">Date<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
         <th scope="col" width="15%">Action</th>
   </tr>
 </thead>

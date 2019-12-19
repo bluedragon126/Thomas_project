@@ -6,7 +6,7 @@
 <div class="forumlistingleftdiv" style="width:950px;">
   <div class="forumlistingleftdivinner">
    <div class="shoph3 widthall"></div>
-	<div class="float_left listing"><div class="float_left widthall"><a class="main_link_color cursor" href="<?php echo 'http://'.$host_str.'/backend.php/borst/viewAccount/id/'.$user_data->user_id ?>">View Account</a></div>
+	<div class="float_left listing"><div class="float_left widthall"><a class="main_link_color cursor" href="<?php echo 'https://'.$host_str.'/backend.php/borst/viewAccount/id/'.$user_data->user_id ?>">View Account</a></div>
 	  <div class="float_left widthall">
 	  <form name="user_reg" action="" method="POST" enctype="multipart/form-data">
             <table width="100%"  border="0" cellspacing="3" cellpadding="0" class="om_miginfotable">
@@ -19,75 +19,75 @@
                 <td class="heading" colspan="2" >Edit Profile</td>
               </tr>
 			  <tr>
-                <td colspan="2" class="padtop_10"><?php /*?><input class="checkbox" type="checkbox" name="use_email_as_username" id="use_email_as_username" <?php echo $checked ?> value="ON" />&nbsp;&nbsp;<?php echo __('Jag vill ha min e-postadress som användarnamn') ?><?php */?></td>
+                <td colspan="2" class="padtop_5"><?php /*?><input class="checkbox" type="checkbox" name="use_email_as_username" id="use_email_as_username" <?php echo $checked ?> value="ON" />&nbsp;&nbsp;<?php echo __('Jag vill ha min e-postadress som användarnamn') ?><?php */?></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Användarnamn')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Användarnamn')?>:</b></td>
                 <td class=""><?php //echo $user_data->username ?><?php echo $profileForm['username']->render(array('id'=>'username','class'=>'input174'))?>
 				<font color="#FF0000" style="<?php echo $hide_username_error; ?>"><?php echo $username_red; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b>E-post: </b></td>
+                <td class="padtop_5"><b>E-post: </b></td>
                 <td  class="viocolor">
                     <?php //echo $user_data->email ?>
                         <?php echo $profileForm['email']->render(array('id'=>'email','class'=>'input174'))?>
 				<font color="#FF0000"><?php echo $email_red ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Födelseår') ?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Födelseår') ?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['year_of_birth']->render(array('id'=>'year_of_birth'))?></td>
               </tr>
               <tr>
-                <td class="padtop_10">&nbsp;</td>
+                <td class="padtop_5">&nbsp;</td>
                 <td class="viocolor"><input type="radio" class="radio" name="gender" value="2" <?php if ($gender == 2) echo "checked"; ?> />
                   &nbsp;<?php echo __('Kvinna') ?></td>
               </tr>
               <tr>
-                <td class="padtop_10">&nbsp;</td>
+                <td class="padtop_5">&nbsp;</td>
                 <td class="viocolor"><input type="radio" class="radio" name="gender" value="1" <?php if ($gender == 1) echo "checked"; ?> />
                   &nbsp;<?php echo __('Man') ?></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Förnamn')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Förnamn')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['firstname']->render(array('id'=>'firstname','class'=>'input174'))?>
 				<font color="#FF0000"><?php echo $firstname_error; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Efternamn')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Efternamn')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['lastname']->render(array('id'=>'lastname','class'=>'input174'))?>
 				<font color="#FF0000"><?php echo $lastname_error; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Gatuadress')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Gatuadress')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['street']->render(array('id'=>'street','class'=>'input174'))?>
 				<font color="#FF0000"><?php echo $street_error; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Postnr / Ort')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Postnr / Ort')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['zipcode']->render(array('id'=>'zipcode','class'=>'input65','size'=>'6','maxlength'=>'6'))?> <?php echo $profileForm['city']->render(array('id'=>'city','class'=>'input105 float_left','size'=>'14'))?>
 				<font color="#FF0000" style="margin-left:10px;"><?php echo $zipcode_error; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10"><b><?php echo __('Telefon')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Telefon')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['phone']->render(array('id'=>'phone','class'=>'input174',))?>
 				<font color="#FF0000"><?php echo $phone_error; ?></font></td>
               </tr>
               <tr>
-                <td class="padtop_10">&nbsp;</td>
+                <td class="padtop_5">&nbsp;</td>
                 <td class="viocolor"><?php echo $profileForm['land']->render(array('id'=>'phone','class'=>'input174',))?></td>
               </tr>
               <!-- added signature column by sandeep-->
               <tr>
-                <td class="padtop_10"><b><?php echo __('Signature')?>:</b></td>
+                <td class="padtop_5"><b><?php echo __('Signature')?>:</b></td>
                 <td class="viocolor"><?php echo $profileForm['signature']->render(array('id'=>'signature','class'=>'input174','size'=>'32','maxlength'=>'32'))?>
 				</td>
               </tr>
               <tr>
-                <td class="padtop_10">&nbsp;</td>
+                <td class="padtop_5">&nbsp;</td>
                 <td class="viocolor">&nbsp;</td>
               </tr>
 			  <tr>
-                <td colspan="2" class="borst_subtitle_4"><b><img id="blog_rights_plus" src="/images/addplusicon.jpg"  alt="icon" /> <?php echo __('Vill du kunna blogga och publicera artiklar?') ?> </b></td>
+                <td colspan="2" class="borst_subtitle_4"><b><img id="blog_rights_plus" src="/images/addplusicon.png"  alt="icon" /> <?php echo __('Vill du kunna blogga och publicera artiklar?') ?> </b></td>
               </tr>
               <tr class="blog_rights">
                 <td colspan="2" class="blank_10h"><b>&nbsp;</b></td>

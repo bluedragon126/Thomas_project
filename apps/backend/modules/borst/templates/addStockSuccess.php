@@ -13,9 +13,9 @@
    <div class="forumlistingleftdivinner">
    
 	<div id="subscription_other_links" class="float_left widthall" style="width:900px; margin-bottom:20px;">
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
-		<a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
-        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
+		<a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
+        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;
 	</div>
     
     <div class="shoph3 widthall">Add Stock</div>
@@ -24,7 +24,7 @@
     
     <div class="float_left widthall">
     	<div class="float_left widthall" style="margin-bottom:20px;">
-        <form action="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock/' ?>" method="post" onsubmit="return checkAddStockFormValidation()">
+        <form action="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock/' ?>" method="post" onsubmit="return checkAddStockFormValidation()">
         <?php echo $form->renderHiddenFields()?>
     		<table>
                 <tr>

@@ -1,7 +1,7 @@
 	<div id="subscription_other_links" class="float_left widthall" style="width:900px; margin-bottom:20px;">
-		<a style="font-weight:bold;" href="<?php echo 'http://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
-		<a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
-        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
+		<a style="font-weight:bold;" href="<?php echo 'https://'.$host_str.'/backend.php/borst/btchart?stock_type=all' ?>">Stock List</a>&nbsp;&nbsp;
+		<a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addStock' ?>">Add Stock</a>&nbsp;&nbsp;
+        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/addChartType' ?>">Add chart Type</a>&nbsp;&nbsp;        
 	</div>
     
     <div class="shoph3 widthall"> <span style="float: left;"> Stock List </span> </div>
@@ -28,14 +28,14 @@
     <form name="stock_list_main" action="" id="stock_list_main" method="post" >
         <table align="left" style="" cellpadding="0" cellspacing="0">
             <tr id="btchart_stock_list">
-                <td class="heading" style="width: 15%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2">Stock Name<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2">Stock Symbol<img src="/images/bg.gif" alt="down" /></span></strong></a></td>
-                <td class="heading" style="width: 8%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Country<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Stock Type<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">List<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sector<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
+                <td class="heading" style="width: 15%;"><strong><a id="sortby_stockname" class="float_left cursor"><span id="sortby_stockname2">Stock Name<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocksymbol" class="float_left cursor"><span id="sortby_stocksymbol2">Stock Symbol<img src="/images/bg.gif" alt="down" width = '20' /></span></strong></a></td>
+                <td class="heading" style="width: 8%;"><strong><a id="sortby_country" class="float_left cursor"><span id="sortby_country2">Country<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_stocktype" class="float_left cursor"><span id="sortby_stocktype2">Stock Type<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_list" class="float_left cursor"><span id="sortby_list2">List<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_sector" class="float_left cursor"><span id="sortby_sector2">Sector<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
                 <!--//change by sandeep-->
-                <td class="heading" style="width: 12%;"><strong><a id="sortby_object" class="float_left cursor"><span id="sortby_object2">Object<img src="/images/bg.gif" alt="down" /></span></a></strong></td>
+                <td class="heading" style="width: 12%;"><strong><a id="sortby_object" class="float_left cursor"><span id="sortby_object2">Object<img src="/images/bg.gif" alt="down" width = '20' /></span></a></strong></td>
                 <!--//change by sandeep end-->
                 <td class="heading" style="width: 12%;"><strong>Enable / Disable</strong></td>
                 <td colspan="2"><input type="button" value="Save Changes" class="registerbuttontext submit" style="float:left;" id="btchart_list_button" /></td>
@@ -54,7 +54,7 @@
                         <input type="radio" value="disable" name="stock[<?php echo $data->id; ?>]" id="<?php echo $data->id; ?>" <?php if($data->active!=1)echo "checked='checked'"; ?> />InActive
                     </td>                    
                     <td> 
-                        <a href="<?php echo 'http://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="<?php echo 'https://'.$host_str.'/backend.php/borst/editStock/stock_id/'.$data->id; ?>" id="<?php echo $data->id ?>" class="edit_stock"><img src="/images/edit.png" /> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#" id="<?php echo $data->id ?>" class="delete_stock"><img src="/images/cross.png" /> </a>
                     </td>
                     <td>  </td>                

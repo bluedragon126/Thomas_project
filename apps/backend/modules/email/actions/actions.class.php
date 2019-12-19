@@ -166,7 +166,7 @@ class emailActions extends sfActions
 			
 		$this->getUser()->setAttribute('reminduser_greenmsg',$reminduser_greenmsg);
 
-		$url = 'http://'.$host_str.'/backend.php/borst/remindUser';
+		$url = 'https://'.$host_str.'/backend.php/borst/remindUser';
 		$this->redirect($url);
 		//return sfView::NONE;
 	}
@@ -200,7 +200,7 @@ class emailActions extends sfActions
 		$message->setBody($mailBody, 'text/html');
 		$this->getMailer()->send($message);
 		
-		$url = 'http://'.$host_str.'/backend.php/sbt/sbtArticleRequest';
+		$url = 'https://'.$host_str.'/backend.php/sbt/sbtArticleRequest';
 		$this->redirect($url);
 	}
 	
@@ -232,7 +232,7 @@ class emailActions extends sfActions
 		$message->setBody($mailBody, 'text/html');
 		$this->getMailer()->send($message);
 		
-		$url = 'http://'.$host_str.'/backend.php/sbt/sbtArticleRequest';
+		$url = 'https://'.$host_str.'/backend.php/sbt/sbtArticleRequest';
 		$this->redirect($url);
 	}
 	
@@ -262,7 +262,7 @@ class emailActions extends sfActions
 		$this->getMailer()->send($message);
 		
 		$this->getUser()->setAttribute('award_to_author','Medal has been succesfully awarded to user','userProperty');
-		$url = 'http://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$awarded_author_data->user_id;
+		$url = 'https://'.$host_str.'/backend.php/sbt/awardMedalToUser/author_id/'.$awarded_author_data->user_id;
 		$this->redirect($url);
 	}
 	
@@ -293,7 +293,7 @@ class emailActions extends sfActions
 		$this->getMailer()->send($message);
 		
 		$this->getUser()->setAttribute('award_to_analysis','Medal has been succesfully awarded to analysis '.$awarded_analysis_data->analysis_title,'userProperty');
-	    $url = 'http://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$awarded_analysis_data->id;
+	    $url = 'https://'.$host_str.'/backend.php/sbt/awardMedalToArticle/analysis_id/'.$awarded_analysis_data->id;
 		$this->redirect($url);
 	}
 	
@@ -386,12 +386,11 @@ class emailActions extends sfActions
 				
 		$mailBody = $this->getPartial('enquiry_reply_mail',array('user'=>$user,'host_str'=>$host_str,'comm_id'=>$comm_id));
 		//echo 'email:'.$user->email;	
-		$to = $user->email;		
+		$to = $user->email;
 		$from = sfConfig::get('app_mail_reply_email'); 
 		
 		$message = $this->getMailer()->compose();
 		$message->setSubject('Svar på förfrågan');
-
 		$message->setTo($to);
 		$message->setFrom($from);
 		$message->setBody($mailBody, 'text/html');

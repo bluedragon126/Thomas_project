@@ -7,23 +7,23 @@
       <tr id="update_user_form_column_row">
         <th scope="col" width="2%">Nr</th>
         <th scope="col" width="3%">Aktion</th>
-        <th scope="col" width="5%"><a id="sortby_regdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Reg<img src="/images/bg.gif" alt="down" /></span></a></th>
+        <th scope="col" width="5%"><a id="sortby_regdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Reg<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
         <th scope="col" width="2%">&nbsp;</th>
-		<th scope="col" width="5%"><a id="sortby_betdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Bet<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="5%"><a id="sortby_stopdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Stop<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="5%"><a id="sortby_kundnr" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Kundnr<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="5%"><a id="sortby_username" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">User<img src="/images/bg.gif" alt="down" /></span></a></th>
-        <th scope="col" width="5%"><a id="sortby_firstname" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Förnamn<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="7%"><a id="sortby_lastname" style="cursor:pointer; width:95px;" class="float_left"><span class="float_left">Efternamn<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="3%"><a id="sortby_city" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Ort<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="10%"><a id="sortby_email" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">E-mail<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="5%"><a id="sortby_abonid" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Abonn<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="5%"><a id="sortby_userstatid" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Status<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="3%"><a id="sortby_inlog" style="cursor:pointer; width:65px;" class="float_left"><span class="float_left">Inlog<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="10%"><a id="sortby_inlogdate" style="cursor:pointer; width:110px;" class="float_left"><span class="float_left">Senaste inlog<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="10%"><a id="sortby_total" style="cursor:pointer; width:70px;" class="float_left"><span class="float_left">Totalt<img src="/images/bg.gif" alt="down" /></span></a></th>
-		<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer; width:75px;" class="float_left"><span class="float_left">Belopp<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
-		<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer; width:75px;" class="float_left"><span class="float_left">SBT Active<!--<img src="/images/bg.gif" alt="down" />--></span></a></th>
+		<th scope="col" width="5%"><a id="sortby_betdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Bet<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="5%"><a id="sortby_stopdate" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Stop<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="5%"><a id="sortby_kundnr" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Kundnr<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="5%"><a id="sortby_username" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">User<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+        <th scope="col" width="5%"><a id="sortby_firstname" style="cursor:pointer; width:90px;" class="float_left"><span class="float_left">Förnamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="7%"><a id="sortby_lastname" style="cursor:pointer; width:95px;" class="float_left"><span class="float_left">Efternamn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="3%"><a id="sortby_city" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Ort<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="10%"><a id="sortby_email" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">E-mail<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="5%"><a id="sortby_abonid" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Abonn<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="5%"><a id="sortby_userstatid" style="cursor:pointer; width:80px;" class="float_left"><span class="float_left">Status<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="3%"><a id="sortby_inlog" style="cursor:pointer; width:65px;" class="float_left"><span class="float_left">Inlog<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="10%"><a id="sortby_inlogdate" style="cursor:pointer; width:110px;" class="float_left"><span class="float_left">Senaste inlog<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="10%"><a id="sortby_total" style="cursor:pointer; width:70px;" class="float_left"><span class="float_left">Totalt<img src="/images/bg.gif" alt="down" width = '20' /></span></a></th>
+		<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer; width:75px;" class="float_left"><span class="float_left">Belopp<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
+		<th scope="col" width="10%"><a id="sortby_regdate" style="cursor:pointer; width:75px;" class="float_left"><span class="float_left">SBT Active<!--<img src="/images/bg.gif" alt="down" width = '20' />--></span></a></th>
       </tr>
     </thead>
 	<?php
@@ -78,8 +78,8 @@
 		else $stopdate = "";
 		?>
         <input class="<?php echo $class ?>" name="stopdate[]" type="text" style="width: 70px; <?php $style ?>" value="<?php echo $stopdate; ?>"></td>
-		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo $user->kundnr ?></a></td>
-		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'http://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo substr($user->username, 0, 10) ?></a></td>
+		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo $user->kundnr ?></a></td>
+		<td class="<?php echo $class ?>"><a class="<?php echo $class ?>" title="Edit this user" href="<?php echo 'https://'.$host_str.'/backend.php/borst/editProfile/edit_user_id/'.$user->user_id?>"><?php echo substr($user->username, 0, 10) ?></a></td>
 		<td class="<?php echo $class ?>"><?php echo substr($user->firstname, 0, 10); ?></td>
 		<td class="<?php echo $class ?>"><?php echo substr($user->lastname, 0, 15); ?></td>
 		<td class="<?php echo $class ?>"><?php echo $user->city ?></td>
