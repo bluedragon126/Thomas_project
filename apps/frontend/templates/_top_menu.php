@@ -121,7 +121,7 @@ endforeach;
             </li>
             <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/services"><span class="text-uppercase tjanster <?php echo $parent_menu == 'services' ? 'nav-active' : '' ?>">Tjänster</span></a>
                 <ul class="nav-bar-sub" id="third">
-                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/services"><span style="margin-left:242px">Hem</span></a></li>
+                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/services"><span style="margin-left:148px">Hem</span></a></li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/henryBoy"><span>Henry Boy</span></a></li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/portfolio"><span>Tradingportföljen</span></a></li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/automatic"><span>Automatic</span></a></li>
@@ -129,7 +129,7 @@ endforeach;
             </li> 
             <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/tradingAccount"><span class="text-uppercase tradingkonto <?php echo $parent_menu == 'tradingaccount' ? 'nav-active' : '' ?>">Tradingkonto</span></a>
                 <ul class="nav-bar-sub" id="fourth">
-                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/tradingAccount"><span style="margin-left:342px">Hem</span></a></li>
+                    <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/tradingAccount"><span style="margin-left:263px">Hem</span></a></li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/gffBrokers"><span>GFF Brokers</span></a></li>
                     <li><a href="https://<?php echo $_SERVER['HTTP_HOST'] ?>/borst/avaTrade"><span>AvaTrade</span></a></li>
                 </ul>
