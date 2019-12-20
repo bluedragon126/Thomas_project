@@ -27,7 +27,7 @@
                                       
                                        <div>
                                        
-                                       <img style="margin-bottom: 15px;" src="/images/new_home/webinarium_title.png" width="400"/>
+                                       <img style="margin-bottom: 15px;" src="/images/new_home/webinarium_title.png" width="500"/>
                                        
                                        <a href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/borst/articleListMenu/type_id/23'; ?>"><img style="margin: 10px 0px 42px 0px;" src="/images/new_home/webinarium_more.png" width="500"/></a>
                 
@@ -59,22 +59,26 @@ Registrera dig via länken ovan ovan <a href="https://www2.gotomeeting.com/regis
 
 
 <li>
-Du får en bekräftelse skickad till din e-post.
+Du får en bekräftelse skickad till din e-post
 </li>
 
 
 <li>
-I god tid före webinariet skickas ett påminnelsemejl ut.
+I god tid före webinariet skickas ett påminnelsemejl ut
 </li>
 
 
 <li>
-Logga in till webinariet via den länk som skickas ut i påminnelsemejlet.
+Logga in till webinariet via länk i påminnelsemejlet
 </li>
 
 
 <li>
-Träffen sker via Internet och du kan ställa frågor i programmets chat-ruta.
+Träffen sker via Internet
+</li>
+
+<li>
+Du kan ställa frågor i programmets chat-ruta
 </li>
 
 
