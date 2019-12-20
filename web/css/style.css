@@ -663,7 +663,7 @@ root {
 .home_body_l_1x {
     font-family: "Georgia";
     color: #3c3a3a;
-    font-size: 1.38em;
+    font-size: 1.35em;
     line-height: 1.35em;
     word-wrap: break-word;
 }
@@ -1478,7 +1478,7 @@ a.article_dots_r {
 .whp_preamble {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.55em;
+    font-size: 1.5em;
 	letter-spacing: 0.01em;
     color: #a3bbcd;
     line-height: 1.55em;
@@ -1488,7 +1488,7 @@ a.article_dots_r {
 .whp_preamble_head {
     font-family: 'Georgia';
     float: left;
-    font-size: 1.55em;
+    font-size: 1.5em;
 	letter-spacing: 0.01em;
     color: #a3bbcd;
     line-height: 1.55em;
@@ -1511,7 +1511,7 @@ a.article_dots_r {
     font-size: 1.35em;
 	letter-spacing: -0.01em;
     color: #a3bbcd;
-    line-height: 1.45em;
+    line-height: 1.5em;
     margin-bottom: 55px;
 	font-style:italic;
 }
@@ -3201,9 +3201,9 @@ blank_4h {
 .shop_r_other_subsection {
     font-family: 'ITC Cheltenham Italic';
 	color:#3c3a3a;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 1.2em;
-	letter-spacing: 0.06em;
+	letter-spacing: 0.04em;
 	margin: 14px 0px 3px;
 	width: 294px;
 	word-spacing: -0.03em;
@@ -3249,7 +3249,7 @@ blank_4h {
 }
 
 .shop_r_other_price_main {
-    margin-top: 12px;
+    margin-top: 18px;
 }
 
 
@@ -4327,7 +4327,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #3c3a3a;
     float: left;
-    margin: 4px 0px 4px;
+    margin: 5px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4341,7 +4341,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #3c3a3a;
     float: left;
-    margin: 4px 0px 4px;
+    margin: 5px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4355,7 +4355,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #3c3a3a;
     float: left;
-    margin: 4px 0px 4px;
+    margin: 5px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -4369,7 +4369,7 @@ ul.cartStep2 li {
     word-spacing: -0.08em;
     color: #3c3a3a;
     float: left;
-    margin: 4px 0px 4px;
+    margin: 5px 0px 4px;
     width: 165px;
     word-wrap: break-word;
     hyphens: none;
@@ -11890,8 +11890,8 @@ h2 {
     float: left;
     font-size: 1.5em;
 	letter-spacing: 0.01em;
-    color: #a6b1c2;
-    line-height: 1.6em;
+    color: #a3bbcd;
+    line-height: 1.55em;
     margin-bottom: 20px;
 }
 
