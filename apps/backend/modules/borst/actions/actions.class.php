@@ -933,7 +933,7 @@ class borstActions extends sfActions
         $number_sent = 0;
         $this->newsletter = Doctrine::getTable("NewsLetter")->getPublishNewsLetter();
         if ($request->isMethod('post')) {
-            file_put_contents($_log_file_name, 9);
+            file_put_contents($_log_file_name, 0);
             $arr = $this->getRequest()->getParameterHolder()->getAll();
             $i = 0;
             $kundgrupp = "";
@@ -972,11 +972,9 @@ class borstActions extends sfActions
             foreach($to as $_to){
                try{
                     $message->setTo($_to);
-
-					//if($arr['kundgrupp'] == '4')
-                    //{$this->getMailer()->sendNextImmediately();}
-                    
-                    $number_sent += $this->getMailer()->batchSend($message);
+					if($arr['kundgrupp'] == '4')
+                    {$this->getMailer()->sendNextImmediately();}
+                    $number_sent += $this->getMailer()->send($message);
                     //$number_sent += $this->getMailer()->batchSend($message,&$_to);
                     
                 }catch (Exception $e)
@@ -990,7 +988,7 @@ class borstActions extends sfActions
             if($number_sent){
                 $news_letter_sent->addSentMail($number_sent, $arr);
                 $this->getUser()->setFlash('greenmsg',"Ett mejl har skickats till $number_sent $kundgrupp!");
-                $url = 'https://' . $this->host_str . '/backend.php/borst/newsletterForm';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/newsletterForm';
                 $this->redirect($url);
                 
             }

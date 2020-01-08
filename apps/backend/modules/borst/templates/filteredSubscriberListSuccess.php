@@ -46,8 +46,10 @@
                                 <td>
                                     <select id="filter_subscription_id" name="filter_subscription_id">
                                             <?php foreach($data as $list): ?>
-                                            <option value="<?php echo $list->id; ?>"><?php echo $list->btshop_article_title; ?></option>
-                                            <?php endforeach; ?>
+												<?php if($list->btshop_type_id == 6){?>
+                                            		<option value="<?php echo $list->id; ?>"><?php echo $list->btshop_article_title; ?></option>
+												<?php }?>
+											<?php endforeach; ?>
                                     </select>
                                 </td>
                                 <?php endif; ?>
