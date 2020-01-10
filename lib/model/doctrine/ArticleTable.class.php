@@ -533,9 +533,10 @@ class ArticleTable extends Doctrine_Table
 	{ 
 		$query = Doctrine_Query::create()->from('Article ba');
 		
-		if($colname=='kat') $query = $query->where('ba.category_id = ? AND ba.article_date <= ? ', array($id, date('Y-m-d H:i:s')));
-		if($colname=='type') $query = $query->where('ba.type_id = ? AND ba.article_date <= ?', array($id, date('Y-m-d H:i:s')));
-		if($colname=='obj') $query = $query->where('ba.object_id = ? AND ba.article_date <= ?', array($id, date('Y-m-d H:i:s')));
+		if($colname=='kat') $query = $query->where('ba.category_id = ? AND ba.article_date <= ? AND ba.art_statID = ? ', array($id, date('Y-m-d H:i:s'), 3));
+		if($colname=='type') $query = $query->where('ba.type_id = ? AND ba.article_date <= ? AND ba.art_statID = ?', array($id, date('Y-m-d H:i:s'), 3));
+		if($colname=='obj') $query = $query->where('ba.object_id = ? AND ba.article_date <= ? AND ba.art_statID = ?', array($id, date('Y-m-d H:i:s'), 3));
+		// $query = $query->where('ba.art_statID = ? ', 3);
 		$query = $query->orderBy('ba.article_date DESC');
 		$query = $query->offset($start);
 		$query = $query->limit($end);

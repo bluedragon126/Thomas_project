@@ -47,11 +47,11 @@ class borstActions extends sfActions
             if ($showdata == 1) {
                 //$this->forward('home', 'adminHome');
             } else {
-                $url = 'https://' . $host_str . '/';
+                $url = 'http://' . $host_str . '/';
                 $this->redirect($url);
             }
         } else {
-            $url = 'https://' . $host_str . '/user/loginWindow';
+            $url = 'http://' . $host_str . '/user/loginWindow';
             $this->redirect($url);
         }
     }
@@ -269,7 +269,7 @@ class borstActions extends sfActions
                                 $article_html->insertNewHtmlRecord($obj->article_id, $arr['external_file'], date
                                     ("Y-m-d H:i:s"));
 
-                            $url = 'https://' . $this->host_str .
+                            $url = 'http://' . $this->host_str .
                                 '/backend.php/borst/createArticle/action_mode/edit_article/article_id/' . $arr['edit_id'];
                             if ($arr['saveOnly'] != 1)
                                 $this->redirect('borst/articleList');
@@ -1824,7 +1824,7 @@ class borstActions extends sfActions
                                             ->execute();
                 }
                 //code change by sandeep end
-                $url = 'https://' . $this->host_str . '/backend.php/borst/userList';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/userList';
                 $this->redirect($url);
             }
             //}
@@ -1999,7 +1999,7 @@ class borstActions extends sfActions
                         $this->is_sellable = $shopdata['is_sellable'] =1;
                     }
                     $this->isSaved = 1;
-                    $url = 'https://' . $this->host_str.
+                    $url = 'http://' . $this->host_str.
                                 '/backend.php/borst/CreateShopArticle/edit_shop_article_id/' . $edit_shop_article_id;
                 }
                 else
@@ -2970,7 +2970,7 @@ class borstActions extends sfActions
             $this->form->bind($form_arr);
             if ($this->form->isValid()) {
                 $obj = $this->form->save();
-                $url = 'https://' . $this->host_str . '/backend.php/borst/adList';
+                $url = 'http://' . $this->host_str . '/backend.php/borst/adList';
                 $this->redirect($url);
             } else {
                 //echo $this->form->getErrorSchema();
@@ -4307,6 +4307,7 @@ class borstActions extends sfActions
      */
     public function executeNewsletterManager(sfWebRequest $request)
     {
+
         $this->article = $request->getParameter('article');
        $articleCount = $request->getParameter("articleCount");
        if(!$articleCount)
@@ -4314,7 +4315,7 @@ class borstActions extends sfActions
        
         if(!count($this->article)){
             $this->article = array();
-            $arr = Doctrine::getTable('NewsLetter')->getDefaultNewsletterArticle(array(),$articleCount-count($this->article));
+            $arr = Doctrine::getTable('NewsLetter')->getDefaultNewsletterArticle(array(),$articleCount-count($article));
             $ccount = 0;
             foreach($arr as $key =>$value){
                            
